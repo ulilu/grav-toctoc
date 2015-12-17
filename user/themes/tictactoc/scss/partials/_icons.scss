@@ -1,0 +1,232 @@
+//	#########################################################################
+//	Icons
+//	######################################################################### */
+
+// ATTENTION
+// Due to the attachment of the icons via :before, this technique will fail on IE < 8.
+// Meaning the website should only be optimized from IE 8 upwards.
+//
+
+// Use the following CSS code if you want to have a class per icon
+[class^="icon-"]:before, 
+[class*=" icon-"]:before {
+	font-family: 'gd-fontregular';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	// Better Font Rendering
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+//	Socialmedia-icons
+.socialbut[class*="icon-"]:before {
+    font-size: 24px;
+}
+
+.icon-pinterest:before {
+	content: "\31";
+}
+.icon-google-plus:before {
+	content: "\32";
+}
+.icon-facebook:before {
+	content: "\33";
+}
+.icon-twitter:before {
+	content: "\34";
+}
+.icon-vimeo:before {
+	content: "\35";
+}
+.icon-stumbleupon:before {
+	content: "\36";
+}
+
+//	Heading- & Info-Submenu-Icons
+.heading-title[class*="icon-"]:before {
+	color: #aaa;
+	font-size: 21px;
+	padding-right: 6px;
+}
+
+.submenuitem[class*="icon-"]:before {
+	display: inline-block;
+	text-align: center;
+	width: 18px;
+	font-size: 16px;
+	padding: 0 12px 0 0;
+	vertical-align: -5%;
+}
+
+
+.icon-feather:before {
+	content: "\41";
+}
+.icon-user:before {
+	content: "\42";
+}
+.icon-tools:before {
+	content: "\43";
+}
+.icon-share:before {
+	content: "\44";
+}
+.icon-book-alt2:before {
+	content: "\45";
+}
+.icon-mail:before {
+	content: "\46";
+}
+.icon-mail2:before {
+	content: "\47";
+}
+
+//	Sidebar-Icons
+  .pane-icon[class*="icon-"]:before,
+  .pane-cell[class*="icon-"]:before {
+    display: inline-block;
+    text-align: center;
+    width: 18px;
+    font-size: 15px;
+    margin-right: 6px;
+    vertical-align: -8%;
+    // to vertically center all icons to the following label-text
+  }
+
+.icon-star:before {
+	content: "\4e";
+}
+.icon-signpost:before {
+	content: "\4f";
+}
+.icon-clock:before {
+	content: "\50";
+}
+.icon-check:before {
+	content: "\51";
+}
+.icon-chevron-down:before {
+	content: "\52";
+}
+.icon-chevron-up:before {
+	content: "\53";
+}
+.icon-triangle-down:before {
+	content: "\54";
+}
+.icon-triangle-up:before {
+	content: "\55";
+}
+.icon-phone:before {
+	content: "\61";
+}
+.icon-mobile:before {
+	content: "\62";
+}
+.icon-pointer:before {
+	content: "\63";
+}
+.icon-creative-commons:before {
+	content: "\6d";
+}
+.icon-calendar:before {
+	content: "\6a";
+}
+.icon-paperclip:before {
+	content: "\69";
+}
+.icon-card:before {
+	content: "\68";
+}
+.icon-clock2:before {
+	content: "\67";
+}
+.icon-map-pin-fill:before {
+	content: "\66";
+}
+.icon-at:before {
+	content: "\65";
+}
+.icon-mouse:before {
+	content: "\64";
+}
+.icon-eye:before {
+	content: "\6f";
+}
+
+.pane-icon.icon-map-pin-fill:before,
+.pane-icon.icon-clock:before {
+    color: #aaa;
+    margin-top: 6px;
+    vertical-align: -10%;
+  }
+
+//	Footer Icons
+  .icon-creative-commons:before {
+    content: "\6d";
+    font-size: 14px !important;
+    padding: 0 4px !important;
+    vertical-align: -20%;
+  }
+
+
+//	Logo
+.icon-logo-bg:before {
+	content: "\48";
+}
+.icon-logo-lig:before {
+	content: "\49";
+}
+.icon-logo-type:before {
+	content: "\4a";
+}
+.icon-logo-type-short:before {
+	content: "\4b";
+}
+.icon-logo-type-short2:before {
+	content: "\4c";
+}
+
+
+//	Product Silhouettes
+.icon-plustish:before {
+	content: "\4d";
+}
+.icon-decktish:before {
+	content: "\56";
+}
+.icon-shwingsitz:before {
+	content: "\57";
+}
+.icon-klubstool:before {
+	content: "\58";
+}
+.icon-kneestool:before {
+	content: "\59";
+}
+.icon-steckbord:before {
+	content: "\5a";
+}
+.icon-phonodeck:before {
+	content: "\5b";
+}
+.icon-doubledeck:before {
+	content: "\5c";
+}
+.icon-singledeck:before {
+	content: "\5d";
+}
+.icon-goldshine:before {
+	content: "\6b";
+}
+.icon-deckshine:before {
+	content: "\6c";
+}
+.icon-kippshine:before {
+	content: "\6e";
+}

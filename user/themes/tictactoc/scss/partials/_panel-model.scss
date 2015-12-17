@@ -1,0 +1,151 @@
+//	#########################################################################
+//	Panel.MODEL in .productpage
+//	#########################################################################
+//  Lastest Changes 151019
+
+.model-panel {
+
+	& + .pane	{
+		border-top:none;
+	}
+
+	@media only screen and (min-width: $break-tablet-small) {
+		// margin-top: -18px;
+		padding-right: 18px;
+		border-right: 0;
+		
+		.but30 {
+			padding-left: 6px;
+			padding-right: 6px;
+		}
+	}
+	@media only screen and (min-width: $break-tablet-large) {
+	    right: 0;
+    	margin-left: 0;
+    	padding-right: 24px;
+    	
+    	.but30 {
+				padding-left: 12px;
+				padding-right: 12px;
+			}
+    
+    	.sidefade {
+    		right: 0;
+    		background: none;
+    		@include background(linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)));
+  		}
+	}
+	
+	@media only screen and (min-width: $break-desktop) {
+	    right: -12px;
+	    padding-right: 24px;
+	    margin-left: -12px;
+    
+		.but30 {
+	    	padding-left: 18px;
+	    	padding-right: 18px;
+	    }
+	}
+}
+
+
+.model-row	{
+	display: table;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
+	padding: 9px 0;
+	margin: 0;
+	width: 100% !important;  // to stretch across the whole parent element
+
+		&:last-child	{  // DOESNT WORK in ie 6-8
+		border-bottom: none;
+		padding-top: 12px;
+		padding-bottom: 18px;
+	}
+}
+
+.model-cell	{
+	display: table-cell;
+	vertical-align: middle;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+
+	.but	{
+		float:right;
+	}
+}
+
+.variant	{
+	line-height: 16px;
+	color: #333;
+	
+	small	{
+		line-height: 16px;
+		color: #888;
+	}
+}
+
+.price	{
+	text-align: center;
+	font-weight: 700;
+	color:$color-darkorange;
+	width: 35%;
+}
+
+.shopinfo   {
+	display: block;
+	vertical-align: middle;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 12px;
+}
+
+.shoplink   {
+	display:inline-block;
+	float:left;
+	width:auto;
+	padding:0 7px 0 0;
+	margin:0 7px 12px 0;
+	border-right: 1px solid $color-puregrey;
+}
+
+.shoplink:last-of-type   {
+	padding-right:0;
+	margin-right:0;
+	border:0;
+}
+
+.note,
+.note strong	{
+	font-size: 12px;
+	line-height: 18px;
+	color:$color-puregrey;
+	margin:0 0 24px;
+}
+
+.showroom p,
+.vcard p	{
+	color:$color-puregrey;
+}
+
+a.tel,
+a.street-address	{
+	color:$color-puregrey;
+
+	&:hover	{
+		color:$color-purered;
+	}
+	&:active	{
+		color:$color-red;
+	}
+}
+
+.opening-times	{
+	color:$color-puregrey;
+	font-style: italic;
+}
+
+.organization-name	{
+	font-weight: bold;
+}

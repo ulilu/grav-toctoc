@@ -1,0 +1,154 @@
+// All Fixes for IE 9
+
+.ie9	{
+
+.pane-table 	{
+	overflow:hidden;	// necessary to make list-bullets invisible
+}
+
+
+//	#########################################################################
+//	SVG-SUPPORT for all gradients inside rounded elements
+//	http://abouthalf.com/development/internet-explorer-9-gradients-with-rounded-corners/
+//	#########################################################################
+	
+.butgold, 
+.butgold:link, 
+.butgold:visited, 
+.butgold:hover, 	
+.butgold:active,
+
+.butorange, 
+.butorange:link, 
+.butorange:visited, 
+.butorange:hover, 
+.butorange:active,
+
+.butred, 
+.butred:link, 
+.butred:visited, 
+.butred:hover, 
+.butred:active,
+
+.butblue, 
+.butblue:link, 
+.butblue:visited, 
+.butblue:hover, 
+.butblue:active,
+
+.butsilver, 
+.butsilver:link, 
+.butsilver:visited, 
+.butsilver:hover, 
+.butsilver:active,
+
+.info .menuitem, 	
+.info .menuitem:link, 
+.info .menuitem:visited, 
+.info .menuitem:hover, 
+.info .menuitem:active,
+
+.slidecontrol label,
+.pagefooter,
+.panel.news-panel,
+.panel.model-panel,
+.panel.contact-panel,
+.panel.toc-panel   {
+	filter:none !important;
+	background-image: inline-image("/browser-ie/gradient-sprite-ie9.svg");
+	background-size: 100% 1200%; /* horz vert */
+	background-repeat: repeat-x;
+}
+// Compass: Embedding of SVG by base64-encoding:
+// https://github.com/chriseppstein/compass/commit/5a015b3824f280af56f1265bf8c3a7c64a252621#L2R4
+
+.butgold, 
+.butgold:link, 
+.butgold:visited	{
+	background-position:0 36.4%;
+}	
+.butgold:hover, 	
+.butgold:active	{
+	background-position:0 45.5%;
+}	
+
+
+
+.butorange, 
+.butorange:link, 
+.butorange:visited	{
+	background-position:0 54.6%
+}	
+.butorange:hover, 	
+.butorange:active	{
+	background-position:0 63.7%;
+}	
+
+
+
+.butred, 
+.butred:link, 
+.butred:visited	{
+	background-position:0 72.7%
+}	
+.butred:hover, 	
+.butred:active	{
+	background-position:0 81.8%
+}	
+
+
+
+.butblue, 
+.butblue:link, 
+.butblue:visited	{
+	background-position:0 90.9%
+}	
+.butblue:hover, 	
+.butblue:active	{
+	background-position:0 100%;
+}	
+
+.pagefooter,
+.slidecontrol label,
+.butsilver, 
+.butsilver:link, 
+.butsilver:visited	{
+	background-position:0 0;
+}
+
+.slidecontrol label:hover,	
+.butsilver:hover	{
+	background-position:0 9.1%;
+} 	
+.butsilver:active	{
+	background-position:0 18.2%;
+}	
+
+
+.info .menuitem, 	
+.info .menuitem:link, 
+.info .menuitem:visited	{
+	background-position:0 0;
+}
+
+.info .menuitem:hover, 
+.info .menuitem:active,
+.info .menuitem.is-open,
+.info .menuitem.is-open:hover   {
+	background-position:0 27.3%;
+}
+
+
+.panel.news-panel,
+.panel.model-panel,
+.panel.contact-panel,
+.panel.toc-panel	{
+	background-size: 100% 3600%; /* horz vert */
+	background-position:0 2%;
+}
+
+//  Achtung: Since styles.css doesn't contain the base64-svg's anymore (due to newly defined compass-variables before import), wenn need to define all linear-gradients separately for ie9+
+// But we need to distinguish betwween gradients allready being present in the "gradient-sprite-ie9.svg" and other, new one - which have to be included with @include background-compass-mixin
+  
+  
+}

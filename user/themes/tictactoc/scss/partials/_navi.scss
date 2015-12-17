@@ -1,0 +1,717 @@
+//	#########################################################################
+//	NAVIGATION - Mobile first, responsive, CSS3-based, Jquery-enhanced Menu
+//	#########################################################################
+
+
+// <nav>-element, the overall wrapper for the main menu,  initially hidden
+.navi	{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+  @include box-sizing(content-box);
+
+  // preventing firefox from showing dotted border when clicked
+  a:focus	{
+    outline: none;
+  }
+
+  // for breakpoint > 750 show .navi
+  @media only screen and (min-width: $break-tablet-small) {
+    & {
+      display: block;
+      top:82px;
+      overflow: visible;
+    }								
+
+    // hide all No-JS-elements
+    &.back, &.is-active .back {
+      display: none;
+    }				
+  }
+
+  // if menu or submenu is active (either via click or hover), show "nav"
+  &.is-active,
+  #menu:target ~ &,	// :target DOESNT WORK in IE 6-8
+  #sm01:target ~ &,
+  #sm02:target ~ &,
+  #sm03:target ~ &,
+  #sm04:target ~ &,
+  #sm05:target ~ &,
+  #sm06:target ~ &,	{
+    display: block;
+  }
+
+  //	NO-JS:	a.back
+  // 	display background-linkarea with target:#site, to hide .navi via click outside its boundaries
+  #menu:target ~ & .back,
+  #sm01:target ~ & .back,
+  #sm02:target ~ & .back,
+  #sm03:target ~ & .back,
+  #sm04:target ~ & .back,
+  #sm05:target ~ & .back,
+  #sm06:target ~ & .back	{
+    display: block;
+    position: absolute;
+    top: -700px;
+    bottom: -700px;
+    left: 0;
+    right: 0;
+    text-indent: -999em;	// maybe another IR-technique?
+    z-index: 0;
+    height: auto;
+    background: transparent;
+    border: 0;
+    line-height: 1;
+  }
+}
+
+//	=========================================================================
+//	.NAVIBUT - only visible on small screens. omitted at larger screens
+//	=========================================================================
+// ATTENTION: There are 2 .navibut - one is contained in .navi (close), the other is a part of .header (open)
+
+.navibut	{				// <a>-element
+  display: block;			// initially show navibut (assuming you're on a small screen device)
+  position: absolute;
+  top: 22px;
+  right: 12px;
+  z-index: 201;
+  width: 42px;
+  height: 43px;
+  overflow: hidden;
+  @include btn-silver();
+  @include but-inset();			// inheriting border-radius and box-shadow from .butinset
+  border: 1px solid $color-puregrey;
+  border-bottom: 0;
+  border-bottom-left-radius: 0;	// overriding the settings from .butinset
+  border-bottom-right-radius: 0;	// overriding the settings from .butinset
+
+  .navi.is-active &,		// definition of active .navibut
+  #menu:target ~ .navi &,	// :target DOESNT WORK in IE 6-8
+  #sm01:target ~ .navi &,
+  #sm02:target ~ .navi &,
+  #sm03:target ~ .navi &,
+  #sm04:target ~ .navi &,
+  #sm05:target ~ .navi &,
+  #sm06:target ~ .navi &	{
+    width:40px;
+    border: 1px solid #777;
+    border-bottom: 2px solid #333;
+    background: #333333;
+    @include background(linear-gradient(#bfbfbf, #333333));
+  }
+
+  &:focus	{				// preventing firefox from showing dotted border when clicked
+    outline: none;
+  }
+
+  @media only screen and (min-width: 750px) {
+    display: none;		// hide .navibut for screen width > 750
+  }
+
+
+  //	=========================================================================
+  // .NAVIICON - only visible on small screens. omitted at larger screens
+  // =========================================================================
+  
+  .naviicon	{			// <span>-element inside <a.navibut>
+    display: block;
+    width: 42px;
+    height: 45px;
+    text-indent:-9999em;
+    background-image: inline-image('ui/icn-menu.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    
+    // @include background-2x($sprite-navi, png, 50px, 500px);
+    // background-position: 0;
+    // background-repeat: no-repeat;		
+  }
+
+  & .icnopen,				// same as <span.naviicon>, setting background-position for "three lines"-icon
+  &:link .icnopen	{		
+    background-position: 8px 13px;
+    // background-position: 8px 12px;
+  }
+  &:hover .icnopen,
+  &:active .icnopen {
+    background-image: inline-image('ui/icn-menu-active.png');
+    background-size: 25px 25px;
+    background-position: 8px 12px;
+    background-repeat: no-repeat;
+    // background-position: 8px -39px;
+  }
+  &:active .icnopen	{
+    background-position: 8px 13px;
+    // background-position: 8px -38px;
+  }
+
+
+  & .icnclose	{			// same as <span.naviicon>, setting background-position for [X]-icon
+    display: none;		// initially hidden
+  }
+  .navi.is-active & .icnclose,	// :target DOESNT WORK in IE 6-8
+  #menu:target ~ .navi & .icnclose,
+  #sm01:target ~ .navi & .icnclose,
+  #sm02:target ~ .navi & .icnclose,
+  #sm03:target ~ .navi & .icnclose,
+  #sm04:target ~ .navi & .icnclose,
+  #sm05:target ~ .navi & .icnclose,
+  #sm06:target ~ .navi & .icnclose	{
+    display: block;		// displaying [X]-icon on .navi.is-active (JS) or active :target (NO-JS).
+    background-image: inline-image('ui/icn-close.png');
+    background-size: 25px 25px;
+    background-position: 8px 12px;
+    background-repeat: no-repeat;
+    // background-position: 8px -88px;
+  }
+
+  .navi.is-active &:hover .icnclose,
+  #menu:target ~ .navi &:hover .icnclose,
+  #sm01:target ~ .navi &:hover .icnclose,
+  #sm02:target ~ .navi &:hover .icnclose,
+  #sm03:target ~ .navi &:hover .icnclose,
+  #sm04:target ~ .navi &:hover .icnclose,
+  #sm05:target ~ .navi &:hover .icnclose,
+  #sm06:target ~ .navi &:hover .icnclose,
+  .navi.is-active &:active .icnclose,
+  #menu:target ~ .navi &:active .icnclose,
+  #sm01:target ~ .navi &:active .icnclose,
+  #sm02:target ~ .navi &:active .icnclose,
+  #sm03:target ~ .navi &:active .icnclose,
+  #sm04:target ~ .navi &:active .icnclose,
+  #sm05:target ~ .navi &:active .icnclose,
+  #sm06:target ~ .navi &:active .icnclose{
+    background-image: inline-image('ui/icn-close-active.png');
+    background-size: 25px 25px;
+    background-position: 8px 11px;
+    background-repeat: no-repeat;
+    // background-position: 8px -139px;
+  }
+
+  .navi.is-active &:active .icnclose,
+  #menu:target ~ .navi &:active .icnclose,
+  #sm01:target ~ .navi &:active .icnclose,
+  #sm02:target ~ .navi &:active .icnclose,
+  #sm03:target ~ .navi &:active .icnclose,
+  #sm04:target ~ .navi &:active .icnclose,
+  #sm05:target ~ .navi &:active .icnclose,
+  #sm06:target ~ .navi &:active .icnclose	{
+    background-position: 8px 12px;
+    // background-position: 8px -138px;
+  }
+}
+
+
+//	=========================================================================
+//	.MENUBAR & .MENUWRAPPER - only on screen width > 750
+//	=========================================================================
+
+.menubar  {
+  position: relative;
+  top:0;
+
+  @media only screen and (min-width: $break-tablet-small) {
+    top: 0;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #000;
+    background: #222;
+    @include background(linear-gradient(#444, #333 3%, #111 50%, black));
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.67);
+  }
+}
+
+
+.menuwrapper  {
+  position: relative;
+  top:66px;
+
+  @media only screen and (min-width: $break-tablet-small) {
+    top:0;
+    width: 99.8%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}	
+
+
+//	=========================================================================
+//	.MENULIST
+//	=========================================================================
+
+.menulist	{	
+  width: 100%;		//  full width for small screens
+  position: relative;
+
+  // each <li> contains <a.hide-submenu> & <a.menuitem> with <ul.submenu> with <li a.submenuitem>
+  li	{
+    position: relative;
+    list-style: none;
+    display: block;	
+    width: 100%;
+    border-top: 2px solid #222;
+    background-color: #222;
+  }
+
+  // setting all links within nav to appear above the .back-layer
+  a	{
+    z-index: 1;
+  }
+}
+
+//	=========================================================================
+//	.Menulist .PRODUCTS > 750px - display <li's> as table-cells
+//	=========================================================================
+
+.menulist.products {
+
+  @media only screen and (min-width: $break-tablet-small) {
+    top: 0;
+    display: table;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+
+    // only first children, not grand children in deeper <ul>s
+    > li {	
+      @include box-sizing(border-box);
+      display: table-cell;
+      width: 20%;
+      text-align: center;
+      vertical-align: top;
+      border: 0;
+      background-color: transparent;	// to let the gradient of the menubar show through
+
+      // Positioning of last menuitem in .product to the right of the menubar, to prevent overlapping when opened
+      &:last-child .submenu {  // DOESNT WORK in ie 6-8
+        right: 0;
+      }
+    }
+  }
+}
+
+// =========================================================================
+// .Menulist .INFO
+// =========================================================================
+
+.menulist.info	{
+  box-shadow: 0 12px 30px rgba(0,0,0,0.67);
+
+  @media only screen and (min-width: $break-tablet-small) {
+    border: 0;
+    position: absolute;
+    z-index: 1000;	// Wicked: Setting a high z-index prevented the flickering of the info-menu between lis
+    top: -62px;		// Setting negative value, to push element above the preceeding product-menu
+    right: 12px;
+    width: 160px;
+    height: 36px;
+    text-align: left;
+    box-shadow: none;
+
+    > li {
+      border-top: 0;
+      background: 0;
+    }
+  }
+}				
+
+
+
+//	=========================================================================
+//	.MENUITEM on small screens
+//	=========================================================================
+
+// setting the line-height to the same value as the height of the link centers the type. see also method 5 on: http://blog.themeforest.net/tutorials/vertical-centering-with-css/
+// unfortunately this does not work on opera mini or sony xperia go's android browser. any workarounds here?
+// workaround for opera: serve additional stylesheet with js
+
+.menuitem	{				// <a>-element
+
+  display: block;
+  position: relative;
+  color: #999;
+  font-size: 18px;
+  height: 47px;
+  line-height: 46px; 
+  padding: 0 0 0 20px;
+  background-color: #333;
+  border-top: 1px solid #333;
+  @include text-shadow_b-12(.67);
+
+
+  &:hover	{
+    height: 48px;
+    color: #ddd;
+    background-color: #444;
+    border: 0;
+    @include text-shadow_b-12(.75);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2);
+  }
+
+  &:active	{
+    line-height: 48px;
+    color: #eee;
+    box-shadow: none;
+  }	
+
+  //	=========================================================================
+  //	.MENUITEM on screenwidth > 750
+  //	=========================================================================
+
+  @media only screen and (min-width: $break-tablet-small) {
+
+    height: 48px;
+    line-height: 48px; 
+    max-width: 100%;
+    font-size: 16px;
+    padding: 0;
+    background-color: transparent;	    // to let the gradient of the menubar shine through
+
+    &:hover	{
+      color: #ddd;
+      border-top: 1px solid #bbb;
+      line-height: 46px;
+      @include gradient-menuitem-active();
+    }
+
+    &:active	{
+      line-height: 48px;
+    }
+
+
+    //	=========================================================================
+    // .INFO .menuitem on screenwidth > 750
+    // =========================================================================
+
+    .info &	{
+      height: 36px;
+      line-height: 36px;
+      padding-left: 20px;
+      color: #666;
+      @include text-shadow_w11(1);
+      @include btn-silver();
+      border: 1px solid $color-puregrey;
+      border-radius: 6px;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3), 0 1px 1px rgba(255, 255, 255, .5);
+    }
+
+    .info &:hover {
+      line-height: 34px;
+      color: #333;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2), 0 1px 1px rgba(255, 255, 255, .8);
+    }
+
+    .info &:active {
+      line-height: 36px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, .35), 0 1px 1px rgba(255, 255, 255, 1);
+    } 
+
+    .info &:after	{				// setting expand-icon via iconfont	// DOESNT WORK in IE 6-7
+      font-family: 'gd-fontregular';
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      line-height: 1;
+      content: "\52";
+      position: absolute;
+      right: 18px;
+      top: 11px;
+    }	
+
+    .info &:hover:after	{
+      top: 10px;
+    }
+    .info &:active:after	{
+      top: 11px;
+    }
+  }
+}
+
+
+//	=========================================================================
+//	.Menuitem ACTIVE
+//	=========================================================================
+
+.menuitem.is-open,
+.menuitem.is-open:link, 
+#sm01:target ~ .navi a[href="#sm01"],	// NO-JS-Version	// :target DOESNT WORK in IE 6-8
+#sm02:target ~ .navi a[href="#sm02"],
+#sm03:target ~ .navi a[href="#sm03"],
+#sm04:target ~ .navi a[href="#sm04"],
+#sm05:target ~ .navi a[href="#sm05"],
+#sm06:target ~ .navi a[href="#sm06"] {
+  color: #ddd;
+  border-top: 1px solid #bbb;
+  height: 48px;
+  line-height: 48px;
+  @include gradient-menuitem-active();
+}
+
+
+//	=========================================================================
+//	.INFO .Menuitem ACTIVE
+//	=========================================================================
+
+@media only screen and (min-width: $break-tablet-small) {
+
+  .info .menuitem.is-open,
+  .info .menuitem.is-open:link,				// Active Info-Button (on hover)
+  #sm06:target ~ .navi a[href="#sm06"] {		// NO-JS-Version (on click)  // :target DOESNT WORK in IE 6-7
+    color: #ddd;
+    @include text-shadow_b-12(.67);
+    border: 1px solid #777;
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  // Setting the expand-icon
+  .info .menuitem.is-open:after,	// DOESNT WORK in IE 6-7
+  #sm06:target ~ .navi a[href="#sm06"]:after	{	
+    content: "\53";
+    top: 16px;
+  }
+}
+
+
+//	=========================================================================
+//	NO-JS: .hide-submenu
+//	=========================================================================
+
+.hide-submenu	{
+  display: none;
+
+  //  setting a.hide-submenu above a.menuitem, to evoke target:#menu on click
+  #sm01:target ~ .navi a[href="#sm01"] ~ &,		// :target DOESNT WORK in IE 6-8
+  #sm02:target ~ .navi a[href="#sm02"] ~ &,
+  #sm03:target ~ .navi a[href="#sm03"] ~ &,
+  #sm04:target ~ .navi a[href="#sm04"] ~ &,
+  #sm05:target ~ .navi a[href="#sm05"] ~ &,
+  #sm06:target ~ .navi a[href="#sm06"] ~ &	{
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    width: 100%;	// Problematic for firefox... (?)
+    height: 48px;
+    background: none;
+  }
+
+  @media only screen and (min-width: $break-tablet-small) {
+    #sm01:target ~ .navi a[href="#sm01"] ~ &,
+    #sm02:target ~ .navi a[href="#sm02"] ~ &,
+    #sm03:target ~ .navi a[href="#sm03"] ~ &,
+    #sm04:target ~ .navi a[href="#sm04"] ~ &,
+    #sm05:target ~ .navi a[href="#sm05"] ~ & {
+      position: relative;			// To be able to assign a max-width, relative to the parent
+      margin-top: -48px;			// To push the invisible menulink up and display above the pressed menuitem
+      background: transparent;	// To prevent clollaps-icon from showing up
+      max-width: 100%;			// To stretch over the whole table-cell
+    }
+  }
+}
+
+
+//	=========================================================================
+//	SUBMENU
+//	=========================================================================
+
+.submenu	{
+  display: none;			// initially hidden
+  padding-left: 20px;
+  background-color: #666;
+
+  li	{
+    border-top: 2px solid #444;
+  }
+
+  //	Submenu-States
+  .menuitem.is-open ~ &,
+  #sm01:target ~ .navi a[href="#sm01"] ~ &,
+  #sm02:target ~ .navi a[href="#sm02"] ~ &,
+  #sm03:target ~ .navi a[href="#sm03"] ~ &,
+  #sm04:target ~ .navi a[href="#sm04"] ~ &,
+  #sm05:target ~ .navi a[href="#sm05"] ~ &,
+  #sm06:target ~ .navi a[href="#sm06"] ~ &	{
+    display: block;
+  }
+
+  @media only screen and (min-width: $break-tablet-small) {
+    position: absolute;
+    text-align: left;
+    width: 300px;
+    padding-left: 0;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.67);
+  }
+
+  .info &	{
+    border-bottom: 2px solid #444;
+
+    @media only screen and (min-width: $break-tablet-small) {
+      width: 160px;
+      padding-left: 0;
+    }
+  }
+}
+
+
+//	=========================================================================
+//	SUBMENUITEM
+//	=========================================================================
+
+.submenuitem	{
+
+  &, &:link, &:visited	{
+    display: block;
+    position: relative;
+    height: 47px;
+    line-height: 46px; 	
+    font-size: 18px;
+    padding-left: 66px;
+    color:#ddd;
+    background-color:#666;
+    border-top: 1px solid #666;
+    text-shadow: none;
+  }
+
+  &:hover	{
+    color:#fff;
+    height: 47px;
+    background-color:#7e7e7e;
+    border: 0;
+    border-bottom: 1px solid #7e7e7e;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2);
+  }
+
+  &:active	{
+    height: 47px;
+    color: #eee;
+    border: 0;
+    border-top: 1px solid #7e7e7e;
+    box-shadow: none;
+  }
+
+  @media only screen and (min-width: $break-tablet-small) {
+
+    &, &:link, &:visited {
+      font-size: 16px;
+    }
+  }
+
+  //	=========================================================================
+  //	.submenuitem .PRODUCTS
+  //	=========================================================================
+
+
+  .products &:before {
+    position: absolute;
+    display: inline-block;
+    left: 12px;
+    top: 3px;
+    width: 48px;
+    height: 46px;
+    overflow:hidden;
+    font-size: 54px;
+    line-height:50px;
+    font-family: 'gd-fontregular';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    -webkit-font-smoothing: antialiased;	// Better Font Rendering
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .products &:hover:before {height:47px;}
+  .products &:active:before {height:46px;}
+
+
+  &.plustish:before		{content: "\4d";}
+  &.decktish:before		{content: "\56";}
+  &.shwingsitz:before		{content: "\57";}
+  &.klubstool:before		{content: "\58";}
+  &.kneestool:before		{content: "\59";}
+  &.steckbord:before		{content: "\5a";}
+  &.phonodeck:before		{content: "\5b";}
+  &.doubledeck:before		{content: "\5c"; font-size: 58px;}
+  &.singledeck:before		{content: "\5d"; font-size: 58px;}
+  &.goldshine:before		{content: "\6b"; font-size: 58px;}
+  &.deckshine:before		{content: "\6c"; font-size: 60px;}
+  &.kippshine:before		{content: "\6e"; font-size: 58px;}
+
+
+  /*	
+  .products & {
+  @include background-2x($sprite-product, png, 44px, 487px);
+  background-repeat: no-repeat;
+}
+
+  &.plustish		{background-position: 0 4px;}
+  &.decktish		{background-position: 0 -45px;}
+  &.shwingsitz	{background-position: 0 -85px;}
+  &.klubstool		{background-position: 0 -132px;}
+  &.kneestool		{background-position: 0 -175px;}
+  &.steckbord		{background-position: 0 -221px;}
+  &.phonodeck		{background-position: 0 -267px;}
+  &.doubledeck	{background-position: 0 -314px;}
+  &.monodeck		{background-position: 0 -450px;}
+  &.goldshine		{background-position: 0 -353px;}
+  &.deckshine		{background-position: 0 -402px;}
+  &.kippshine		{background-position: 0 -3000px;}
+
+  @media only screen and (min-width: $break-tablet-small) {
+
+  &.plustish {background-position: 12px 4px;}	
+  &.decktish {background-position: 12px -45px;}
+  &.shwingsitz {background-position: 12px -85px;}
+  &.klubstool {background-position: 12px -132px;}
+  &.kneestool {background-position: 12px -175px;}
+  &.steckbord {background-position: 12px -221px;}
+  &.phonodeck {background-position: 12px -267px;}
+  &.doubledeck {background-position: 12px -314px;}
+  &.monodeck {background-position: 12px -450px;}
+  &.goldshine {background-position: 12px -353px;}
+  &.deckshine {background-position: 12px -402px;}
+  &.kippshine {background-position: 12px -3000px;}
+}	
+
+  @media only screen and (min-width: $break-tablet-small) {
+
+  &.plustish {background-position: 12px 4px;}	
+  &.decktish {background-position: 12px -45px;}
+  &.shwingsitz {background-position: 12px -85px;}
+  &.klubstool {background-position: 12px -132px;}
+  &.kneestool {background-position: 12px -175px;}
+  &.steckbord {background-position: 12px -221px;}
+  &.phonodeck {background-position: 12px -267px;}
+  &.doubledeck {background-position: 12px -314px;}
+  &.monodeck {background-position: 12px -450px;}
+  &.goldshine {background-position: 12px -353px;}
+  &.deckshine {background-position: 12px -402px;}
+  &.kippshine {background-position: 12px -3000px;}
+}	
+  */
+
+
+
+
+
+  //	=========================================================================
+  // .submenuitem .INFO
+  // =========================================================================
+
+  .info &	{
+    padding-left: 12px;
+
+    @media only screen and (min-width: $break-tablet-small) {
+      padding-left: 20px;	
+    }
+  }	  
+}
+

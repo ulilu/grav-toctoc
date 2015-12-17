@@ -1,0 +1,16 @@
+{% set collection = page.collection() %}
+
+{% set childtype = page.header.childtype %}
+{# can be "example", "service", "item" #}
+
+{% set childtemplate = 'partials/item_' ~ childtype ~ '.html.twig' %}
+
+<div class="modular-block  modular--{{ childtype|pluralize }}">
+
+  <h1>{{ page.header.headline }}</h1>
+
+  {% for child in collection %}
+    {% include childtemplate with {'page':child, 'truncate':true} %}
+  {% endfor %}
+</div>
+

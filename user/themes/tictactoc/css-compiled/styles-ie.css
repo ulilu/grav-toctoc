@@ -1,0 +1,119 @@
+.color-logo0 {
+  color: #00aabd; }
+
+.color-logo1 {
+  color: #3e0000; }
+
+.color-red0 {
+  color: #3d0000; }
+
+.color-red1 {
+  color: #860714; }
+
+.color-red2 {
+  color: #a62826; }
+
+.color-red3 {
+  color: #c14e46; }
+
+.color-red4 {
+  color: #ffc4bf; }
+
+.color-red5 {
+  color: #ffe0de; }
+
+.color-orange0 {
+  color: #cc6221; }
+
+.color-orange1 {
+  color: #f58b4a; }
+
+.color-orange2 {
+  color: #f8a468; }
+
+.color-orange3 {
+  color: #fab780; }
+
+.color-orange4 {
+  color: #ffdec2; }
+
+.color-orange5 {
+  color: #fff1e8; }
+
+.color-green0 {
+  color: #06756d; }
+
+.color-green1 {
+  color: #009c90; }
+
+.color-green2 {
+  color: #18b8ad; }
+
+.color-green3 {
+  color: #33ccc8; }
+
+.color-green4 {
+  color: #b8fbff; }
+
+.color-green5 {
+  color: #e3feff; }
+
+.color-blue0 {
+  color: #097287; }
+
+.color-blue1 {
+  color: #0b90ab; }
+
+.color-blue2 {
+  color: #1da5c2; }
+
+.color-blue3 {
+  color: #32bdd9; }
+
+.color-blue4 {
+  color: #87e8fa; }
+
+.color-blue5 {
+  color: #c9f6ff; }
+
+.color-grey0 {
+  color: #aaaaaa; }
+
+.color-grey1 {
+  color: #cccccc; }
+
+.color-grey2 {
+  color: #dddddd; }
+
+.color-grey3 {
+  color: #e7e7e7; }
+
+.color-grey4 {
+  color: #eeeeee; }
+
+.color-grey5 {
+  color: #f8f8f8; }
+
+.color-white {
+  color: #ffffff; }
+
+/*
+
+//	=========================================================================
+//	Google Webfont Declaration
+//	========================================================================= 
+
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic&subset=latin);
+*/
+/*
+
+@import "modules/cssfx";
+
+@import "helper/lt-ie8";
+@import "helper/lt-ie9";
+@import "helper/lt-ie10";
+@import "helper/ie9";
+
+*/
+
+/*# sourceMappingURL=styles-ie.css.map */

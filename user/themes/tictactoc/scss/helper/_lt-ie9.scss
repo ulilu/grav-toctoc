@@ -1,0 +1,255 @@
+// All Fixes for IE < 9
+
+.lt-ie9	{
+
+
+//	#########################################################################
+//	HEADER
+//	#########################################################################
+
+.logo-nu	{
+	text-indent: -999em;
+	width:380px;
+	height:60px;
+	display:block;
+	position: absolute;
+	background: url(/assets/img/browser-ie/logo-greimdesign_regular.png) no-repeat;
+	
+	left: 20px;
+	top: 11px;
+	
+	@media only screen and (min-width: $break-phone-landscape) {
+		left: 30px;
+	}
+	@media only screen and (min-width: $break-tablet-small) {
+		left: 36px;
+		top: 18px;
+	}
+	@media only screen and (min-width: $break-tablet-regular) {
+		left: 42px;
+	}
+	@media only screen and (min-width: $break-tablet-large) {
+		left: 48px;
+	}
+
+}
+	
+	
+//	=========================================================================
+//	.NAVI & .NAVIBUT
+//	=========================================================================
+.navi.is-active	{
+	display: block;
+		
+	.navibut	{
+		top:83px;
+		border: 1px solid #777;
+		border-bottom: 2px solid #333;
+		background: #333333;
+		
+		& .icnclose	{
+			display: block;		// displaying [X]-icon on .navi.is-active (JS) or active :target (NO-JS).
+			background-position: 9px -68px;
+		}
+
+		&:hover .icnclose	{
+			background-position: 9px -109px;
+		}
+
+		&:active .icnclose	{
+			background-position: 9px -108px;
+		}
+	}
+}
+
+	
+//	=========================================================================
+//	.MENUBAR & .MENUWRAPPER - only on screen width > 750
+//	=========================================================================
+.menubar	{
+    position: relative;
+	top:63px;
+	
+	@media only screen and (min-width: $break-tablet-small) {
+		top:118px;
+	}
+}
+
+
+//	=========================================================================
+//	Last .Menuitem in .MENUBAR
+//	=========================================================================
+
+.menuitem[href="#sm05"] ~ .submenu	{
+	@media only screen and (min-width: $break-tablet-small) {
+		right: 0 !important;
+	}
+}
+	
+
+
+//	=========================================================================
+//	.Menuitem ACTIVE
+//	=========================================================================
+// :target DOESNT WORK in ie 6-8. 
+// furthermore: if target is used in a selector, all other selectors in this group won't be interpreted.
+// therefore: all concerned declarations need to be corrected for ie
+.menuitem.is-open,
+.menuitem.is-open:link {
+	color: #ddd;
+	border-top: 1px solid #bbb;
+	height: 48px;
+	line-height: 48px;
+}
+
+
+//	=========================================================================
+//	.INFO .Menuitem ACTIVE
+//	=========================================================================
+	
+@media only screen and (min-width: $break-tablet-small) {
+  	
+	.info .menuitem.is-open,
+	.info .menuitem.is-open:link	{		// NO-JS-Version (on click)
+		color: #ddd;
+		@include text-shadow_b-12(.67);
+		border: 1px solid #777;
+		border-bottom: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+	}
+	
+	// Setting the expand-icon
+	.info .menuitem.is-open:after	{	
+		content: "\53";
+		top: 16px;
+	}
+}
+
+.products .submenuitem:before {
+	
+}
+
+
+/*
+// Trying out Font-Smoothing for the Silhouettes
+.submenuitem	{
+	&.plustish:before		{content: "\4d ";}
+	&.decktish:before		{content: "\56 ";}
+	&.shwingsitz:before		{content: "\57 ";}
+	&.klubstool:before		{content: "\58 ";}
+	&.kneestool:before		{content: "\59 ";}
+	&.steckbord:before		{content: "\5a ";}
+	&.phonodeck:before		{content: "\5b ";}
+	&.doubledeck:before		{content: "\5c "; font-size: 58px;}
+	&.singledeck:before		{content: "\5d "; font-size: 58px;}
+	&.goldshine:before		{content: "\6b "; font-size: 58px;}
+	&.deckshine:before		{content: "\6c "; font-size: 60px;}
+	&.kippshine:before		{content: "\6e "; font-size: 58px;}
+}
+*/
+
+  
+//	#########################################################################
+//	Removing all transitions
+//	#########################################################################
+
+.slidecontrol	{
+	
+	.slidetitle,
+	.indicator	{
+		transition:none;
+	}
+}
+
+	
+//	=========================================================================
+//	Slideshow-States
+// =========================================================================
+
+//	Display each banner after click on label, targetting hidden radiobutton "sbxx"
+// :checked DOESNT WORK in IE 6-8 - the following workaround is ok for setting a value via css.
+// unfortunately :checked does not work when set by unser interaction
+#sb04[type="radio"][checked="checked"] ~ .stage #sbpic04	{
+   display: block;
+	opacity: 1;
+	max-height: 600px;
+}
+
+// for that reason it is not possible to show multiple news on ie 8 and below
+// so only the latest news-item will be displayed.
+// older news including all controll-widgets will be omitted	
+#sb04[type="radio"][checked="checked"] ~ .wrapper #sbbut01 .slidetitle,
+#sb04[type="radio"][checked="checked"] ~ .wrapper #sbbut02 .slidetitle,
+#sb04[type="radio"][checked="checked"] ~ .wrapper #sbbut03 .slidetitle	{
+	display:none;
+	
+}
+	
+//	Color current label after click
+#sb04[type="radio"][checked="checked"] ~ .wrapper #sbbut04 .slidetitle	{
+    opacity:.95;
+    padding-bottom:72px;
+}
+
+
+//	=========================================================================
+//	Slidecontrol - ul with label, triggering hidden radio-buttons
+//	=========================================================================
+
+.slidecontrol label	{
+	// the pseudo-element :checked does not work properly in IE 6-8. 
+	// therefore only the first news-item will be displayed.
+	// all other unused elements (labels, indicator, etc..) will be hidden.
+	display: none;
+}
+	
+
+//	#########################################################################
+//	Panel
+//	#########################################################################
+	
+#sb04[type="radio"][checked="checked"] ~ .wrapper .news04	{
+	height:auto;
+}
+.datebox:after	{
+	background:none;
+}
+
+.panel.news-panel,
+.panel.model-panel,
+.panel.contact-panel,
+.panel.toc-panel	{
+	border:2px solid #ccc;
+}
+
+.panel.news-panel,
+.panel.toc-panel	{
+	border-top:0;
+	border-right:0;
+}
+
+.panel.model-panel	{
+	border-right: 0;
+}
+.panel.contact-panel	{
+	border-left: 0;
+}
+
+.toc-panel	{
+	padding:0;
+}
+
+
+
+//	=========================================================================
+//	Footer
+//	=========================================================================
+	
+.pagefooter	{
+	//border-top: 2px solid #ccc;
+}
+
+
+}

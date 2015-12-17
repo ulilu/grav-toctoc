@@ -1,0 +1,63 @@
+//	#########################################################################
+//	BASIC STYLES
+//	#########################################################################
+//
+//  1. necessary to fix the ios orientation change bug
+//
+//  2. to produce a lighter font, see: 
+//     http://maxvoltar.com/archive/-webkit-font-smoothing 
+//     http://www.usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+//
+//  3. box-sizing for the win: 
+//     http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+//     http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+//
+html	{
+  font-family: $base-font-family;
+  font-weight: $base-font-weight; 
+  -webkit-text-size-adjust: 100%;	// 1
+  -ms-text-size-adjust: 100%;
+  //	-webkit-font-smoothing: antialiased;	// 2
+    box-sizing: border-box;       // 3
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;      // 3
+}
+
+//  1.  Hack to enable correct behaviour for .slidecontrol in android 2.3 standard browser, see: 
+// http://css-tricks.com/forums/discussion/18225/checkbox-hack-on-mobile-webkit/p1
+
+body	{
+  background-color: #000;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-animation: bugfix infinite 1s;  //  1
+}
+
+@-webkit-keyframes bugfix { 
+  from { padding: 0; } 
+  to { padding: 0; } 
+}
+
+a	{
+  // @include text-shadow_w11(.5);
+  color: $color-logo0;
+  text-decoration: none;
+
+  &:hover {
+    // @include text-shadow_w11(.75);
+    color: $color-logo1;
+  }
+  &:active {
+    color: $color-logo1;
+  }
+}
+
+hr	{
+  clear: both;
+  margin:0;
+  padding:0;
+  height:0;
+  border:0;
+}

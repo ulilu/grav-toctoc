@@ -1,0 +1,128 @@
+//	#########################################################################
+//	Panel.TOC in glossary
+//	#########################################################################
+
+.toc-panel	{
+	background-color:#fafafa;
+	padding: 0;
+	z-index: 100;
+	
+	@media only screen and (min-width: $break-tablet-small) {
+	    float: right;
+	    width: 35%;
+	    clear: none;
+	    border-right: 0;
+	    @include border-bottom-left-radius(6px);
+	    margin-bottom: -6px;
+  	}
+  	
+  	@media only screen and (min-width: $break-tablet-large) {
+	    @include border-radius(6px);
+  	}
+	
+	a	{	// all links in toc
+		display: block;
+		width: 100%;
+		//@include box-sizing(border-box);
+		padding: 12px 20px;
+		border-bottom: 1px solid #ddd;
+		line-height: 21px;
+		font-size: 15px;
+		
+		@media only screen and (min-width: $break-phone-landscape) {
+			padding: 12px 24px;
+		}
+		
+		&:link, &:visited	{
+			background-color:#fafafa;
+		}
+		&:hover	{
+			background:#fff;
+		}
+		&:active	{
+			background: none;
+		}
+		
+		&:first-child	{	// DOESNT WORK in ie 6-8
+			@media only screen and (min-width: $break-tablet-small) {
+		    	@include border-top-right-radius(4px);
+		    	@include border-top-left-radius(4px);
+ 	 		}
+		}
+
+		&:last-child	{	// DOESNT WORK in ie 6-8
+			border: 0;
+			@media only screen and (min-width: $break-tablet-small) {
+		    	@include border-bottom-right-radius(4px);
+		    	@include border-bottom-left-radius(4px);
+		    }
+		}
+	}
+}
+
+//	=========================================================================
+//	Invisible input type=checkbox (before .page-body) to set via label-button :after .has-toc
+//	=========================================================================
+	
+#showtoc	{
+	visibility: hidden;
+	position: absolute;
+	left:-999em;
+	top:-999em;
+	
+	//	Hide .toc-panel on click on tocbut-label
+	&:checked ~ .toc-panel	{
+		display: none;
+	}
+	
+	//	Change text of label, after .toc-panel is hidden
+	&:checked ~ .has-toc .tocbut:after	{
+		content:'Index anzeigen';
+	}
+	
+	@media only screen and (min-width: $break-tablet-small) {
+		display: none;
+	}
+}
+
+//	=========================================================================
+//	"label for=showtoc"-Button to show / hide toc - only until 750px 
+//	=========================================================================
+
+
+.tocbut	{
+	display: block;
+	cursor: pointer;
+	float:right;
+	margin-top: -3px;
+	margin-right: 0;
+	
+	&:after	{
+		display: block;
+		z-index: 1;
+		content:'Index ausblenden';
+		font-size: 14px;
+		padding: 0 18px;
+		border: 1px solid #ccc;
+		@include border-radius(6px);
+		background: #eeeeee;
+		@include text-shadow(#fff 0 1px 1px);
+		@include btn-silver();
+		@include box-shadow(rgba(0,0,0,0.1) 0 1px 1px 0 inset);
+		
+		@media only screen and (min-width: $break-tablet-small) {
+			display: none;
+		}
+	}
+	
+	&:hover:after	{
+		border: 1px solid #bbb;
+		color:$color-purered;
+		@include box-shadow(rgba(0,0,0,0.2) 0 1px 1px 0 inset);
+	}
+	
+	&:active:after	{
+		color:$color-purered;
+		@include box-shadow(rgba(0,0,0,0.3) 0 1px 3px 0 inset);	
+	}
+}

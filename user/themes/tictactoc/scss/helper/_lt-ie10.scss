@@ -1,0 +1,227 @@
+// All Fixes for IE < 10
+
+//	=========================================================================
+//	Menuitem active
+//	=========================================================================
+
+@mixin gradient-menuitem-active-ie()	{
+	@include filter-gradient(#999999, #676767, vertical);
+}
+
+//	=========================================================================
+//	Button-Colorschemes
+//	=========================================================================
+
+@mixin btn-theme-ie($basecolor, $lightcolor, $midcolor) {
+    
+    &, &:link, &:visited, &:active	{
+		@include filter-gradient($lightcolor, $basecolor, vertical);
+	}
+    &:hover { 
+		@include filter-gradient($lightcolor, $midcolor, vertical);
+	}
+}
+
+//	=========================================================================
+//	Button-Color: Silver
+//	=========================================================================
+
+@mixin btn-silver-ie() {
+
+	&, &:link, &:visited	{
+		@include filter-gradient(white, $color-grey, vertical);
+	}
+	&:hover	{
+		@include filter-gradient(white, $color-midgrey, vertical);
+	}
+	&:active	{
+		@include filter-gradient(white, $color-puregrey, vertical);
+	}
+}
+
+
+.lt-ie10	{
+
+//	#########################################################################
+//	BUTTONS
+//	#########################################################################
+	
+.butgold {
+   @include btn-theme-ie($color-gold, $color-lightgold, $color-midgold);
+}
+.butorange {
+   @include btn-theme-ie($color-orange, $color-lightorange, $color-midorange);
+}
+.butred {
+   @include btn-theme-ie($color-red, $color-lightred, $color-midred);
+}
+.butblue {
+   @include btn-theme-ie($color-blue, $color-lightblue, $color-midblue);
+}
+.butsilver	{
+	color:#666;
+	border: 1px solid #aaa;
+	@include btn-silver-ie();
+}
+input.but30 {
+	height: 30px;
+	line-height: 28px;
+}
+
+
+//	#########################################################################
+//	FORMS
+//	#########################################################################
+
+fieldset {
+	border:0;
+}
+
+textarea	{
+	margin-bottom:12px;
+}
+
+button,
+input[type="text"],
+input[type="submit"]	{
+	line-height:28px;
+}
+
+
+//	#########################################################################
+//	HEADER
+//	#########################################################################
+
+  .header	{
+	@include filter-gradient(white, #c8c8c8, vertical);
+}
+
+
+//	=========================================================================
+//	.NAVI & .NAVIBUT
+//	=========================================================================
+
+  .navibut	{
+	@include btn-silver-ie();
+}	
+	
+.navi.is-active .navibut	{
+	@include filter-gradient(#bfbfbf, #333333, vertical);	
+}
+
+
+//	=========================================================================
+//	.MENUBAR & .MENUWRAPPER - only on screen width > 750
+//	=========================================================================
+  
+.menubar	{
+	@media only screen and (min-width: $break-tablet-small) {
+		@include filter-gradient(#333333, #000000, vertical);
+	}
+}
+
+
+//	=========================================================================
+//	.INFO .MENUITEM
+//	=========================================================================
+  
+.info .menuitem	{
+	@media only screen and (min-width: $break-tablet-small) {
+		@include btn-silver-ie();
+		&:hover	{
+			@include gradient-menuitem-active-ie();
+		}
+	}
+}
+
+
+//	=========================================================================
+//	.MENUITEM ACTIVE
+//	=========================================================================
+  
+.menuitem.is-open,
+.menuitem.is-open:link,
+.info .menuitem.is-open,
+.info .menuitem.is-open:link {
+	@include gradient-menuitem-active-ie();
+}
+
+
+//	#########################################################################
+//	STAGE
+//	#########################################################################
+.stage {
+	@media only screen and (min-width: $break-tablet-large) {
+  		.stagefade {
+			// the first pair of digits in "startcolor" / "endcolor" describes the alpha value
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#c0000000',GradientType=0 );
+		}
+	}
+}
+
+
+//	#########################################################################
+//	CONTAINERS & BLOCKS
+//	#########################################################################
+
+.panel	{
+	@include filter-gradient(#fafafa, #eeeeee, vertical);
+}
+
+.pane {
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cccccc', endColorstr='#14cccccc',GradientType=0 );
+// attention: filter-values for ie highly experimental (including alpha values)	
+}
+
+.page-sidebar	{
+// @include filter-gradient(#eeeeee, #fafafa, horizontal);	
+}
+
+.pagefooter	{
+	@include filter-gradient(#ffffff, #dddddd, vertical);
+}
+
+
+
+//	#########################################################################
+//	Panel.CONTACT
+//	#########################################################################
+
+.contact-panel	{
+	@media only screen and (min-width: $break-tablet-large) {
+ 		.sidefade {
+    		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#da000000', endColorstr='#00000000',GradientType=1 );
+    	}
+  	}
+}
+
+
+
+//	#########################################################################
+//	Panel.MODEL
+//	#########################################################################
+
+.model-panel	{
+	@media only screen and (min-width: $break-tablet-large) {
+ 		.sidefade {
+    		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#da000000',GradientType=1 );
+    	}
+  	}
+}
+
+
+//	=========================================================================
+//	Slidecontrol - ul with label, triggering hidden radio-buttons
+//	=========================================================================
+
+.slidecontrol label	{
+	@include btn-silver-ie();	
+}
+
+s.idecontrol .slidetitle	{
+//	@include filter-gradient($color-blue, $color-darkblue, vertical);
+}
+
+
+}
+	

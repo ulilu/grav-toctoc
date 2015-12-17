@@ -1,0 +1,34 @@
+name: tictactoc
+version: 0.0.1
+description: "Custom theme for toctocMarseille. Based on theme Photographer v.1.3.0"
+icon: group
+author:
+  name: Uli Straub
+  email: uli.straub@kontinui.de
+  url: http://kontinui.de
+homepage: https://github.com/getgrav/grav-theme-photographer
+demo: http://demo.getgrav.org/photographer-skeleton
+keywords: photographer, theme, bootstrap, modern, fast, responsive, html5, css3
+bugs: https://github.com/getgrav/grav-theme-photographer/issues
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+
+    color:
+        type: text
+        label: Color
+        default: 'blue'
+        validate:
+          type: text

@@ -1,0 +1,268 @@
+//	=========================================================================
+// PANEL in .page-body
+// ==========================================================================
+//  Lastest Changes 151019
+
+.panel	{
+  @include contentblock();
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background: #fafafa;
+  @include text-shadow_w11(1);
+  box-shadow: 0 1px 12px rgba(0,0,0,.4);
+  @include background(linear-gradient(#fafafa, #eeeeee));
+
+  @media only screen and (min-width: $break-tablet-small) {
+    border: 2px solid #fff;
+  }
+}
+
+.sidefade {
+  @media only screen and (min-width: $break-tablet-large){
+    position: absolute;
+    top: -2px;
+    padding-bottom: 4px;
+    width: 12px;
+    height: 100%;
+    zoom: 1;	// necessary to give element "hasLayout" in IE
+    @include opacity(.5);
+    @include box-sizing(content-box);   // necessary to prevent overlapping of bottom border
+  }
+
+  @media only screen and (min-width: $break-desktop) {
+    @include opacity(1);
+  }
+}
+
+.panel.panelleft  {
+  z-index: 200;
+  padding:24px 24px 0;
+
+  @media only screen and (min-width: $break-tablet-small) {
+    float: left;
+    width: 61.6%;             // Fallback-value for Android < 4.4
+    width: calc(64.9% - 24px);
+    padding-left: 36px;
+    margin-bottom: 42px;
+    margin-left: -12px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  @media only screen and (min-width: $break-tablet-regular) {
+    width: 61.3%;         // Fallback-value for Android < 4.4
+    width: calc(64.9% - 36px);
+    padding-left: 48px;
+    margin-bottom: 48px;
+  }
+
+  @media only screen and (min-width: $break-tablet-large) {
+    margin-bottom: 54px;
+
+    .sidefade {
+      left: -2px;
+      background: none;
+      @include background(linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)));
+    }
+  }
+
+  @media only screen and (min-width: $break-desktop) {
+  }
+}
+
+.panel.panelleft:after  {
+  display: block; 
+}
+
+
+.panel.panelright {
+  @media only screen and (min-width: $break-tablet-small) {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  } 
+}
+
+
+
+//	=========================================================================
+// PART in .page-header, .page-body, .page-footer
+// =========================================================================
+
+.part	{	
+  @include contentblock();
+  margin-bottom: 30px;
+
+
+  @media only screen and (min-width: $break-phone-landscape) {
+    margin-bottom: 30px;
+    padding: 0 30px 0 24px;
+  }
+
+  @media only screen and (min-width: $break-tablet-mini) {
+    margin-bottom: 36px;
+    padding: 0 36px 0 30px;
+  }
+  @media only screen and (min-width: $break-tablet-small) {
+    margin-bottom: 30px;
+    padding: 0 36px 0 30px;
+  }
+  @media only screen and (min-width: $break-tablet-regular) {
+    margin-bottom: 36px;
+    padding: 0 48px 0 42px;
+  }
+  @media only screen and (min-width: $break-tablet-large) {
+    padding: 0 48px 0 48px;
+  }
+
+  & *:last-child {  // very important to get rid of last-elements bottom-margin
+    margin-bottom:0; 
+  }
+}
+
+
+
+//	=========================================================================
+// PANE in .page-sidebar
+// =========================================================================
+
+.pane	{
+  @include contentblock();	
+  color:#999;
+  border-top: 1px solid #fff;
+  border-bottom: 2px solid #ddd;
+  @include text-shadow_w11(1);
+  @include background(linear-gradient(0deg, rgba(204, 204, 204, .1), rgba(204, 204, 204, .01) 50px, rgba(204, 204, 204, 0) 51px ));
+
+  .divider  {
+    display: block;
+    clear:both;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 24px;
+  }
+
+  ul	{
+    margin-bottom:18px;
+    list-style-position: inside;	
+  }
+
+  li	{
+    min-height:27px;
+  }	
+
+  p	{
+    margin-bottom:18px;
+  }
+
+  .but30	{
+    display: inline-block;
+    margin-bottom:18px;
+  }
+  
+  &:last-child {
+    border-bottom:0;
+  }
+
+  // targetting the second to last element in any .pane - the last one always being an <hr>
+  // setting a uniform bottom-margin
+  & > :nth-last-child(2) {
+    margin-bottom:24px;
+  }
+
+  @media only screen and (min-width: $break-tablet-small)	{
+
+    &  {
+      border-bottom: 1px solid #fff; // $color-grey;
+      padding-right:24px;
+      padding-left:24px;
+    }
+
+    &:first-child {	// DOESNT WORK on ie 6-8
+      border-top: 0;
+      padding-top: 12px;
+    }
+
+    // fadeout at the bottom of the sidebar
+    &:last-child {	// DOESNT WORK in IE 6-8
+      padding-bottom: 36px;
+      margin-bottom: 0;	// to set it atop the footer-border
+      border-bottom: 0;
+      background: none;
+      @include background(linear-gradient(rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.01) 100px, rgba(255, 255, 255, 1)));
+    }
+  }
+
+}
+
+
+
+.pane-table	{
+  width: 100%;
+  display: table;
+  min-height: 27px;
+  @include clearfix-html5bp;
+
+  li	{
+    display: table-row;
+    list-style: none;
+  }
+
+  & > li:last-of-type ul	{	// DOESNT WORK on ie6-8
+    margin-bottom:0;	// to reduce distance to bottom end
+  }
+}
+
+.pane-cell	{
+  display: table-cell;
+  float:left;
+  height: 27px;
+  padding: 0;
+  min-width: 65%;
+  width: auto;
+
+  &.label	{
+    color:#aaa;
+    font-style: italic;
+    width: 30%;
+    max-width: 100px;
+    min-width: 68px;  }
+
+}
+
+.pane-icon	{
+  display:block;
+}
+
+
+/* NEW 151019 */
+
+.measurements li {
+  position: relative;
+  padding: 3px 0;
+
+  &:after {
+    content: "";
+    display: table;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid $color-midgrey;
+  }
+
+  &:last-child:after {
+    border: none;
+  }
+  
+  .pane-cell {
+    margin: 4px 0;
+  }
+
+  .pane-cell:nth-child(3) {
+    margin-top: -4px;
+  }
+
+  .label {
+    color:#666;
+    font-style: normal;
+  }
+}

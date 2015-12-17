@@ -1,0 +1,34 @@
+// All Fixes for IE < 8
+
+.lt-ie8	{
+
+  img{
+    -ms-interpolation-mode: bicubic // IE < 8 does not scale images well
+  }
+
+//	=========================================================================
+// .Menulist .PRODUCTS > 750px - display <li's> as table-cells
+// =========================================================================
+
+  .menulist.products {
+    @media only screen and (min-width: $break-tablet-small) {
+      > li {	// target only the first children, not the grand children in deeper <ul>s
+        float:left;
+      }
+    }
+  }
+
+  a.menuitem:hover .submenu	{	
+    @media only screen and (min-width: $break-tablet-small) {
+      display:block;
+      position: absolute;
+      text-align: left;
+      width: 300px;
+      padding-left: 0;
+      border-bottom: 2px solid #444;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.67);
+    }
+  }
+
+
+}

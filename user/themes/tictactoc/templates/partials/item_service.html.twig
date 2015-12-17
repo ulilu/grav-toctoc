@@ -1,0 +1,14 @@
+{% if uri.path() == '/services' %}	
+
+	<div class="service">
+    {{ page.content }}
+	</div>
+
+{% elseif uri.path() == '/' %}
+
+	<a class="service" href="{{ page.url }}">
+		<h3>{{ page.header.title }}</h3>
+		<p>{{ page.header.blurb }}</p>
+	</a>
+	
+{% endif %}

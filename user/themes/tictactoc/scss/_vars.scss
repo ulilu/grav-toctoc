@@ -1,0 +1,108 @@
+// Breakpoints
+$break-phone-portrait:	320px;
+$break-phone-landscape:	480px;
+$break-tablet-mini:		600px;
+$break-tablet-small:	   750px;
+$break-tablet-regular:	850px;
+$break-tablet-large:	   1000px;
+$break-desktop:			1024px;
+$break-cinema:			   1280px;
+
+// Font Weights
+$regular: 400;
+$bold: 700;
+
+// Base Font - used to be "ReykjavikOne OT", unfortunately not available as webfont.
+$base-font-family:  Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-weight:  $regular;
+$base-font-size:    16px; //0.9375em;		// 15px
+$base-line-height:  25px; //1.4667em;	// 22px
+
+$font-light: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif;
+
+// Sprite Paths
+// $sprite-product:    '/assets/img/ui/sprite-product_03';
+// $sprite-navi:       '/assets/img/ui/sprite-navi_06c';
+// $sprite-bullet:     '/assets/img/ui/sprite-bullet_04';
+
+// Color Values
+
+$color-logo0: 			#00aabd;
+$color-logo1: 			#3e0000; 
+
+$color-red0:   			#3d0000;
+$color-red1:   			#860714;
+$color-red2:   			#a62826;
+$color-red3:    		#c14e46;
+$color-red4:    		#ffc4bf;
+$color-red5:        #ffe0de;
+
+$color-orange0:   	#cc6221;
+$color-orange1:   	#f58b4a;
+$color-orange2:   	#f8a468;
+$color-orange3:    	#fab780;
+$color-orange4:    	#ffdec2;
+$color-orange5:     #fff1e8;
+
+$color-green0:   		#06756d;
+$color-green1:   		#009c90;
+$color-green2:   		#18b8ad;
+$color-green3:    	#33ccc8;
+$color-green4:    	#b8fbff;
+$color-green5:      #e3feff;
+
+$color-blue0:   		#097287;
+$color-blue1:   		#0b90ab;
+$color-blue2:   		#1da5c2;
+$color-blue3:    		#32bdd9;
+$color-blue4:    		#87e8fa;
+$color-blue5:       #c9f6ff;
+
+$color-grey0:    		#aaaaaa;
+$color-grey1:    		#cccccc;
+$color-grey2:       #dddddd;
+$color-grey3:     	#e7e7e7;
+$color-grey4:   		#eeeeee;
+$color-grey5:   		#f8f8f8;
+$color-white:   		#ffffff;
+
+
+.color-logo0 { color: $color-logo0; }  
+.color-logo1 { color: $color-logo1; }
+
+.color-red0 { color: $color-red0; }  
+.color-red1 { color: $color-red1; }   
+.color-red2 { color: $color-red2; }   
+.color-red3 { color: $color-red3; }   
+.color-red4 { color: $color-red4; }   
+.color-red5 { color: $color-red5; }   
+
+.color-orange0 { color: $color-orange0; }
+.color-orange1 { color: $color-orange1; }
+.color-orange2 { color: $color-orange2; }
+.color-orange3 { color: $color-orange3; }
+.color-orange4 { color: $color-orange4; }
+.color-orange5 { color: $color-orange5; }
+
+.color-green0 { color: $color-green0; }
+.color-green1 { color: $color-green1; }
+.color-green2 { color: $color-green2; }
+.color-green3 { color: $color-green3; }
+.color-green4 { color: $color-green4; }
+.color-green5 { color: $color-green5; }
+
+.color-blue0 { color: $color-blue0; } 
+.color-blue1 { color: $color-blue1; } 
+.color-blue2 { color: $color-blue2; } 
+.color-blue3 { color: $color-blue3; } 
+.color-blue4 { color: $color-blue4; } 
+.color-blue5 { color: $color-blue5; } 
+
+.color-grey0 { color: $color-grey0; }
+.color-grey1 { color: $color-grey1; } 
+.color-grey2 { color: $color-grey2; } 
+.color-grey3 { color: $color-grey3; } 
+.color-grey4 { color: $color-grey4; } 
+.color-grey5 { color: $color-grey5; } 
+
+.color-white { color: $color-white; } 

@@ -1,0 +1,170 @@
+//	#########################################################################
+//	HEADER
+//	#########################################################################
+
+.header	{
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 66px;
+	overflow: hidden;
+	background: #fff;
+	@include background(linear-gradient(white, #eee 30%, #ddd 80%, #ccc 97%, #aaa ));
+	box-shadow: 0 3px 8px rgba(0,0,0,0.67);
+	
+	@media only screen and (min-width: $break-tablet-small) {
+	    height: 82px;
+  	}
+}
+
+// necessary for absolute logo-positioning, relative to max-width 1000px
+.topbar	{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	height: 66px;
+	margin: 0 auto;
+	
+	@media only screen and (min-width: $break-tablet-small) {
+	    height: 82px;
+  	}
+}
+
+// Logo-Img-Replacement w/ Logo-Glyphs in gd-menufont + additional Styling!
+
+.logo-nu	{
+	border: 0;	// html5bp-hack to remove text
+  	font: 0/0 a;
+  	color: transparent;
+  	display:block;	// attention: all the following values are necessary for the replacement to work!
+	position: absolute;
+	left: 20px;
+	top: 8px;
+	height: 60px;
+	width:200px;
+  z-index:501;
+	
+	@media only screen and (min-width: $break-phone-landscape) {
+		left: 24px;
+		width:380px;
+	}
+	@media only screen and (min-width: $break-tablet-small) {
+		left: 30px;
+		top: 15px;
+	}
+	@media only screen and (min-width: $break-tablet-regular) {
+		left: 36px;
+	}
+	@media only screen and (min-width: $break-tablet-large) {
+		left: 48px;
+	}
+}
+
+.logo-nu:link,
+.logo-nu:visited	{color:#000; }
+.logo-nu:hover		{color:#222; }
+.logo-nu:active	{color:#000; }
+
+
+
+// setting the glyphs of gd-menufont to create logo
+.logo-nu:before	{	// DOESNT WORK in IE 6-7
+	position:absolute;
+   z-index: 502;  // to set atop navi-container
+	display:block;
+	font-family: 'gd-fontregular';
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing:5px;
+	content:"\48\4c";
+	font-size: 61px;
+	overflow:hidden;
+	line-height: 1;
+	@include text-shadow_w11(1);
+	
+	@media only screen and (min-width: $break-phone-landscape) {
+		content:"\48\4a";
+	}
+}
+
+// putting a gradient-element above the logo-mark, to overlay a gradient (same colorvalues than the bg-fade, less alpha)
+// see: https://stackoverflow.com/questions/8005447/cross-browser-text-gradient-pure-css-without-using-background-image - scroll down
+.logo-nu:after	{	// DOESNT WORK in IE 6-7
+	content: '';
+	position:absolute;
+   z-index: 503;
+    display:block;
+    top:0;
+    left:0;
+    height:43px;
+    width:48px;
+    @include background(linear-gradient(rgba(238,238,238,0), rgba(238,238,238,.5) 1%, rgba(228,228,228,.01) 50%, rgba(228,228,228,0) 51%, rgba(187,187,187,0) ));
+}
+
+
+/* Old Logo with image and retina replacement
+
+.logo	{
+	position: absolute;
+	left: 20px;
+	top: 11px;
+	
+	@media only screen and (min-width: $break-phone-landscape) {
+		display: block;
+		left: 30px;
+	}
+	@media only screen and (min-width: $break-tablet-small) {
+		left: 36px;
+		top: 18px;
+	}
+	@media only screen and (min-width: $break-tablet-regular) {
+		left: 42px;
+	}
+	@media only screen and (min-width: $break-tablet-large) {
+		left: 48px;
+	}
+	
+	& img {	// Image-Replacement by setting w/h of orig. img to 0 an then showing background via additional padding
+		width: 0;
+    	height: 0;
+    	padding-left: 380px;
+    	padding-top: 88px;
+    	background: url(../img/logo-greimdesign_small.png) no-repeat;
+	
+		// Retina-Image-Replacement, set to work with nexus 7 (reportedly claiming 1.3 dpr)
+		@media
+		only screen and (-webkit-min-device-pixel-ratio: 	1.3), 
+		only screen and (     -o-min-device-pixel-ratio: 	4/3),
+		only screen and (				 min-resolution: 	192dpi)	{ 
+    		background: url(../img/logo-greimdesign_small@2x.png) no-repeat;
+			@include scale(.5);
+			@include transform-origin(0,0);
+		}
+		
+		@media only screen and (min-width: $break-phone-landscape) {
+			// Setting no background, to show regular img src 
+			width: auto;
+			height: auto;
+			padding: 0;
+			background: none;
+			
+			// Retina-Image-Replacement
+			@media
+			only screen and (-webkit-min-device-pixel-ratio: 	1.3), 
+			only screen and (     -o-min-device-pixel-ratio: 	4/3),
+			only screen and (				 min-resolution: 	192dpi)	{ 
+        		width: 0;
+    			height: 0;
+    			padding-left: 688px;
+    			padding-top: 88px;
+    			background: url(../img/logo-greimdesign_regular@2x.png) no-repeat;
+    			@include scale(.5);
+    			@include transform-origin(0,0);
+    		}
+		}
+	}
+}
+
+*/

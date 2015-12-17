@@ -1,0 +1,98 @@
+//	#########################################################################
+// STAGE
+// #########################################################################
+//  Lastest Changes 151019
+
+
+.stage	{
+  position:relative;
+  top:0;
+  width:100%;
+  max-height:280px;
+  text-align: center;
+  background: #000;
+  @include background(linear-gradient(black, #222 78.8%, #111 78.9%, black));
+
+  @media only screen and (min-width: $break-tablet-mini) {
+    max-height: 360px;
+  }
+
+  @media only screen and (min-width: $break-tablet-small) {
+    max-height: 480px;
+  }
+
+  @media only screen and (min-width: $break-tablet-large) {
+    max-height: 480px;
+    
+    .stagefade {
+      position: absolute;
+      z-index:20;
+      width: 100%;
+      height: 16%;  // hmm, strange, when set to 15%, it produces a visible top-border on the ipad
+      bottom: 0;
+      left: 0;
+      background: none;
+      @include background(linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, .3)));
+      zoom: 1;  // necessary to give element "hasLayout" in IE
+    }
+  }
+}
+
+.productpage .stage	{
+  display:none;
+  @media only screen and (min-width: $break-phone-landscape) {
+    display: block;
+  }
+  @media only screen and (min-width: $break-tablet-small) {
+    max-height: 540px;
+  }
+}
+
+
+.stage-wrapper,
+.moodpic-wrapper {
+  position:relative;
+  width:100%;
+  max-width:1280px;
+  text-align: center;
+  z-index:10;
+  margin:0 auto;
+  height:0;
+
+  img	{
+    max-width:100%;
+    margin:0 auto;
+    //  NEW 151019, see below for explanation
+    // box-shadow: 0 3px 8px rgba(0, 0, 0, 1);
+  }
+
+  @media only screen and (min-width: $break-tablet-small) {
+    font-size: 0;
+  }
+}
+
+
+.stage-wrapper  {
+  padding-bottom:40%;   // to preserve the intrinsic proportions-ratio of 100:40% (width:height) or 1200 * 480 px of newspics
+}
+.moodpic-wrapper {
+  padding-bottom:47%;   // to preserve the intrinsic proportions-ratio of 100:47% (width:height) or 1200 * 564 px of moodpics
+  
+//  NEW 151019
+// In order to make the appearance of the productmood even more dramatic, we create an additional pseudo-element behind it - but only as high as the moodpic without it's bottom reflection. this after-element gets placed behind the moodpic and casts it's - wider - shadow on the underlying background.
+
+  &:after {
+    content: "";
+    display: table;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    max-width: 1200px;
+    height: 424px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    box-shadow: 0 12px 120px rgba(0, 0, 0, 1);
+  }
+}

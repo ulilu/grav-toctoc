@@ -1,0 +1,29 @@
+//	#########################################################################
+// Overrides
+// #########################################################################
+
+.loading,
+.mfp-preloader {
+  background: inline-image("ui/loading.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 64px 64px; // necessary, otherwise indicator would be huge in moodpic-wrapper
+  opacity: 0.7; // same as prev-/next-buttons in magnific
+}
+
+
+.mfp-preloader {
+  width:64px;
+  height:64px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-32px; // to make space for possible error-messages
+  margin-left:-32px;
+}
+
+.mfp-s-error .mfp-preloader  {
+  background:none;  // hide loading-indicator if eror message is shown.
+  width:50%;        // enlarge element to reduce line-wraps in error message.
+  margin-left:-25%;
+}

@@ -1,0 +1,32 @@
+//  Using borders / outlines for certain elements to allow for better comparison of white space 
+
+*:hover	{
+	outline:1px solid #ccc;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	outline: 1px dotted #6c3;
+}
+
+p	{
+	outline:1px dotted #f3c;	
+}
+
+
+ul {
+	//outline: 1px dotted #3fc;
+}
+
+
+.part	{
+	outline: 1px dotted #fc3;
+}
+
+.pic	{
+	outline:1px dotted #c3f;
+}
+
+.pic img	{
+	outline:1px dotted #3cf;	
+}

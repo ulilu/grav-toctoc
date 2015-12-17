@@ -1,0 +1,10 @@
+{% set collection = page.collection() %}
+
+<div class="modular-block  modular--examples">
+
+  <h1>{{ page.header.headline }}</h1>
+
+  {% for child in collection %}
+    {% include 'partials/example.html.twig' with {'page':child, 'truncate':true} %}
+  {% endfor %}
+</div>

@@ -1,0 +1,11 @@
+{% set collection = page.collection() %}
+
+<div class="modular-block  modular--services">
+
+	<h1>{{ page.header.headline }}</h1>
+
+  {% for child in collection %}
+    {% include 'partials/service.html.twig' with {'page':child, 'truncate':true} %}
+  {% endfor %}
+</div>
+

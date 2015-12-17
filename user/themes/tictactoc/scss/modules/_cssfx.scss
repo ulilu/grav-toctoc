@@ -1,0 +1,43 @@
+//	#########################################################################
+//	CSS EFFECTS (Gradients, Shadows, ...)
+//	#########################################################################
+
+@mixin text-shadow_w11($opacity)	{
+	text-shadow: 0 1px 1px rgba(white, $opacity);
+}
+
+@mixin text-shadow_w12($opacity)	{
+	text-shadow: 0 1px 2px rgba(white, $opacity);
+}
+
+@mixin text-shadow_b-11($opacity)	{
+	text-shadow: 0 -1px 1px rgba(black, $opacity);
+}
+
+@mixin text-shadow_b-12($opacity)	{
+	text-shadow: 0 -1px 2px rgba(black, $opacity);
+}
+
+@mixin text-shadow_b11($opacity)	{
+	text-shadow: 0 1px 1px rgba(black, $opacity);
+}
+
+@mixin text-shadow_b26($opacity)	{
+	text-shadow: 0 2px 6px rgba(black, $opacity);
+}
+
+@mixin gradient-menuitem-active()	{
+	background: #666;
+	@include background(linear-gradient(#999, #8e8e8e 28%, #717171 74%, #676767));
+}
+
+@mixin material-card1()	{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
+  
+  &:hover {
+	  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+}
+
+

@@ -1,0 +1,14 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+<div class="stage">
+    <h1 class="gamma">{{ page.header.headline }}</h1>
+    {{ page.media[page.header.image] }}
+</div>
+
+<div class="modular-block  modular--examples">
+    {{ page.content }}
+</div>
+
+{% endblock %}
