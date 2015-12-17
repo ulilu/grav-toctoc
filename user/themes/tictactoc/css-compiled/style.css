@@ -1020,10 +1020,10 @@ header {
     display: block;
     padding: 6px;
     white-space: nowrap;
-    color: #00aabd; }
+    color: #3e0000; }
   .navigation .active a,
   .navigation a:hover {
-    background: #00aabd;
+    background: red;
     color: #fff;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px; }
