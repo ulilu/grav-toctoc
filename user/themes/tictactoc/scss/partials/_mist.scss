@@ -11,7 +11,7 @@ body {
 header {
   position: relative;
   height: 110px;
-  border-bottom: 2px solid $color-logo0;
+  border-bottom: 2px solid $color-logo1;
 }
 
 .logo-main {
@@ -51,12 +51,12 @@ header {
     display: block;
     padding: 6px;
     white-space: nowrap;
-    color: $color-logo1;
+    color: $color-logo0;
   }
 
   .active a,
   a:hover {
-    background: red;
+    background: $color-logo1;
     color: #fff;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
