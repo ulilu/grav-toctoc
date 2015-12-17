@@ -51,12 +51,12 @@ header {
     display: block;
     padding: 6px;
     white-space: nowrap;
-    color: $color-logo0;
+    color: $color-logo1;
   }
 
   .active a,
   a:hover {
-    background: $color-logo0;
+    background: $color-logo1;
     color: #fff;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
