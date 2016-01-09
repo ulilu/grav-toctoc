@@ -17,9 +17,9 @@
 {% endmacro %}
 
 <ul class="navigation">
-    {% if config.themes.photographer.dropdown.enabled %}
+{#     {% if config.themes.tictactoc.dropdown.enabled %}
         {{ _self.loop(pages) }}
-    {% else %}
+    {% else %} #}
         {% for page in pages.children %}
             {% if page.visible %}
                 {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
@@ -27,12 +27,27 @@
                     <a href="{{ page.url }}">
                         {{ page.menu }}
                     </a>
+
+                   {#  {% if page.children and page.menu == 'Services' %}
+
+                    <ul class="submenu">
+                        {% for childpage in page.children %}
+                        <li>
+                            <a href="{{ childpage.link }}">
+                                {{ childpage.menu }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    {% endif %} #}
                 </li>
+
             {% endif %}
         {% endfor %}
-    {% endif %}
+    {# {% endif %} #}
 
-    {% for mitem in site.menu %}
+    {# {% for mitem in site.menu %}
         <li>
             <a href="{{ mitem.link }}">
                 {{ mitem.text }}
@@ -60,5 +75,5 @@
                 </ul>
             {% endif %}
         </li>
-    {% endfor %}
+    {% endfor %} #}
 </ul>   

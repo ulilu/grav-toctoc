@@ -1,7 +1,8 @@
 ---
 title: 'General conditions'
-headline: 'General conditions of sale'
 ---
+
+# General Conditions
 
 ### ARTICLE I - Scope
 

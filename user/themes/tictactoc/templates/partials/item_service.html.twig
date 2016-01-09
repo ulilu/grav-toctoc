@@ -7,7 +7,7 @@
 {% elseif uri.path() == '/' %}
 
 	<a class="service" href="{{ page.url }}">
-		<h3>{{ page.header.title }}</h3>
+		<h3>{{ page.title }}{{ page.header.byline }}</h3>
 		<p>{{ page.header.blurb }}</p>
 	</a>
 	

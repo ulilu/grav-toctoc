@@ -1,8 +1,8 @@
 ---
-title: Legal
-headline: 'Legal notice & Credits'
-date: '14-12-2015 22:12'
+title: 'Legal notice & credits'
 ---
+
+# Legal Notice & Credits
 
 #### Website Design and Development
 Uli Straub : http://www.kontinui.de  

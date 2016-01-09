@@ -10,10 +10,11 @@ languages:
   translations: true
   translations_fallback: true
   session_store_active: false
-  http_accept_language: false
+  http_accept_language: true
   override_locale: false
 home:
   alias: /welcome
+  hide_in_urls: false
 pages:
   theme: tictactoc
   order:
@@ -23,12 +24,13 @@ pages:
     count: 20
   dateformat:
     default: 'd-m-Y H:i'
-    short: 'jS M Y'
-    long: 'F jS \a\t g:ia'
+    short: 'D, d M Y G:i:s'
+    long: 'D, d M Y G:i:s'
   publish_dates: true
   process:
     markdown: true
     twig: false
+  twig_first: false
   events:
     page: true
     twig: true
@@ -108,3 +110,5 @@ session:
   enabled: true
   timeout: 1800
   name: grav-site
+  secure: false
+  httponly: true

@@ -1,56 +1,51 @@
-title: toctocMarseille - Holiday Planner
+title: 'toctocMarseille - Holiday Planner'
 author:
-  name: Uli Straub
-  email: 'uli.straub@kontinui.de'
+  name: 'Uli Straub'
+  email: uli.straub@kontinui.de
+taxonomies:
+  - category
+  - tag
+  - example
 metadata:
-    refresh: 30
-    generator: 'Grav'
-    description: ''
-    keywords: 'Holiday Planner'
-    author: 'Uli Straub'
-    robots: 'noindex, nofollow'
-taxonomies: [category,tag,example]
+  refresh: '60'
+  generator: Grav
+  description: ''
+  keywords: 'Holiday Planner'
+  author: 'Uli Straub'
+  robots: 'noindex, nofollow'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects:
+  /redirect-test: /
+  '/old/(.*)': /new/$1
+routes:
+  /something/else: /blog/sample-3
+  '/new/(.*)': /blog/$1
 blog:
-  route: '/blog'      
-# Site settings
-title: toctocMarseille.com - Tailor-made holidays
+  route: /blog
 email: toctocMarseille@gmail.com
 description: ''
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  -  url: 'https://www.facebook.com/toctocMarseille'
-     icon: facebook
-  -  url: 'https://www.instagram.com/toctocmarseille/'
-     icon: instagram
-  -  url: 'https://twitter.com/toctocmarseille'
-     icon: twitter
-  -  url: 'blog.rss'
-     icon: rss
-
-copyright: 
+  -
+    url: 'https://www.facebook.com/toctocMarseille'
+    icon: facebook
+  -
+    url: 'https://www.instagram.com/toctocmarseille/'
+    icon: instagram
+  -
+    url: 'https://twitter.com/toctocmarseille'
+    icon: twitter
+  -
+    url: blog.rss
+    icon: rss
+copyright:
   line1: Untitled
-  line2: Design:
-  url: http://www.kontinui.de
+  line2: 'Design:'
+  url: 'http://www.kontinui.de'
   url_label: Kontinui
-    
 logo:
-  text1: "tictactoc"
-  text2: "by Kontinui"
-
-# Main Menu
-# menu:
-# - text: "submenu"
-#   submenu:
-#     - text: "info"
-#       link: "#"
-#     - text: "profile"
-#       link: "#"  
-#     - text: "news"
-#       link: "#"
-#       submenu:
-#         - text: "fresh"
-#           link: "#"
-#         - text: "archive"
-#           link: "#"  
-#   link: "#" 
+  text1: tictactoc
+  text2: 'by Kontinui'

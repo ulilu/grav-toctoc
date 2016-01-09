@@ -684,6 +684,27 @@ textarea {
 .color-white {
   color: #ffffff; }
 
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'Linotte-Regular';
+  src: url("../fonts/2FCE8F_0_0.eot");
+  src: url("../fonts/2FCE8F_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2FCE8F_0_0.woff2") format("woff2"), url("../fonts/2FCE8F_0_0.woff") format("woff"), url("../fonts/2FCE8F_0_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Linotte-Light';
+  src: url("../fonts/2FCE8F_1_0.eot");
+  src: url("../fonts/2FCE8F_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2FCE8F_1_0.woff2") format("woff2"), url("../fonts/2FCE8F_1_0.woff") format("woff"), url("../fonts/2FCE8F_1_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Linotte-Bold';
+  src: url("../fonts/2FCE8F_2_0.eot");
+  src: url("../fonts/2FCE8F_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2FCE8F_2_0.woff2") format("woff2"), url("../fonts/2FCE8F_2_0.woff") format("woff"), url("../fonts/2FCE8F_2_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Linotte-Heavy';
+  src: url("../fonts/2FCE8F_3_0.eot");
+  src: url("../fonts/2FCE8F_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2FCE8F_3_0.woff2") format("woff2"), url("../fonts/2FCE8F_3_0.woff") format("woff"), url("../fonts/2FCE8F_3_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Linotte-SemiBold';
+  src: url("../fonts/2FCE8F_4_0.eot");
+  src: url("../fonts/2FCE8F_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2FCE8F_4_0.woff2") format("woff2"), url("../fonts/2FCE8F_4_0.woff") format("woff"), url("../fonts/2FCE8F_4_0.ttf") format("truetype"); }
 html {
   font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -981,61 +1002,111 @@ li	{
 }
 
 */
+.Linotte-Regular {
+  font-family: Linotte-Regular;
+  font-weight: normal;
+  font-style: normal; }
+
+.Linotte-Light {
+  font-family: Linotte-Light;
+  font-weight: normal;
+  font-style: normal; }
+
+.Linotte-Bold {
+  font-family: Linotte-Bold;
+  font-weight: normal;
+  font-style: normal; }
+
+.Linotte-Heavy {
+  font-family: Linotte-Heavy;
+  font-weight: normal;
+  font-style: normal; }
+
+.Linotte-SemiBold {
+  font-family: Linotte-SemiBold;
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-family: Linotte-Regular; }
+
 body {
   background: #fff; }
 
 header {
   position: relative;
-  height: 110px;
-  border-bottom: 2px solid #3e0000; }
+  height: 128px;
+  margin: 0 auto;
+  max-width: 1200px; }
 
 .logo-main {
   font-size: 36px;
   position: absolute;
-  top: 9px;
-  left: 50%;
-  transform: translateX(-50%); }
+  top: 12px;
+  left: 30px; }
 
 .logo-part1 {
-  font-family: "Linotte-Light"; }
+  font-family: Linotte-Light; }
 
 .navigation {
   list-style: none;
   position: absolute;
   display: table;
+  background: #00aabd;
+  border-radius: 9px;
   margin: 0;
+  padding: 6px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   text-align: center; }
   .navigation li {
     display: table-cell;
     vertical-align: middle;
     width: 1%;
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    padding: 0 3px; }
   .navigation a {
     display: block;
     padding: 6px;
     white-space: nowrap;
-    color: #00aabd; }
+    color: white; }
   .navigation .active a,
   .navigation a:hover {
-    background: #3e0000;
-    color: #fff;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px; }
-  .navigation ul {
-    display: none; }
+    background: white;
+    color: #00aabd;
+    border-radius: 6px; }
+
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  z-index: 100000;
+  width: 100%;
+  height: 100; }
+  .submenu li {
+    display: block;
+    width: 100%;
+    height: 42px;
+    background: #3e0000; }
+  .submenu li a {
+    border-radius: 0; }
+
+a:hover + .submenu {
+  display: table-row; }
 
 .menuheader {
   z-index: 2; }
 
 /* Modular Block for Clearfix and side-padding */
 .modular-block {
+  margin: 0 auto;
   min-height: 12px;
+  max-width: 1200px;
   border-bottom: 2px solid #e7e7e7;
   padding: 24px 30px 18px; }
   .modular-block:before, .modular-block:after {

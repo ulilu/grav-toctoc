@@ -7,10 +7,11 @@
 
 <div class="modular-block  modular--{{ childtype|pluralize }}">
 
-  <h1>{{ page.header.headline }}</h1>
+	{{ page.content }}
 
   {% for child in collection %}
     {% include childtemplate with {'page':child, 'truncate':true} %}
   {% endfor %}
+
 </div>
 

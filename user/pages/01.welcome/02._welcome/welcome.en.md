@@ -1,5 +1,5 @@
 ---
-title: _Welcome
+title: Welcome
 videosrc1: 'https://www.youtube.com/watch?v=Wft6dOmYMng'
 videotitle: 'Video Interview with Citypost.fr (in french)'
 ---

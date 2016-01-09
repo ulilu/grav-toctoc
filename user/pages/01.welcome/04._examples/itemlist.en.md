@@ -1,6 +1,5 @@
 ---
-title: _Examples
-headline: Examples
+title: Examples
 childtype: example
 content:
     items:
@@ -10,3 +9,4 @@ content:
         dir: asc
 ---
 
+# Examples

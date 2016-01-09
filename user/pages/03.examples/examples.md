@@ -1,6 +1,5 @@
 ---
 title: Examples
-headline: Examples
 content:
     items: '@self.children'
     order:
@@ -8,4 +7,4 @@ content:
         dir: asc
 ---
 
-<!--- Content for this page is pulled in from page subfolders -->
+# Examples

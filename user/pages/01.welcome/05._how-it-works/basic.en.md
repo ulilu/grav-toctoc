@@ -1,5 +1,5 @@
 ---
-title: '_How it works'
-headline: 'How it works'
+title: 'How it works'
 ---
 
+# How it works

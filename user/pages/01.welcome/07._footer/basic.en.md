@@ -1,5 +1,5 @@
 ---
-title: _Footer
+title: Footer
 about:
     title: 'About me'
     title2: 'Vivamus eget'
