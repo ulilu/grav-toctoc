@@ -1,11 +1,11 @@
 <header class="header">
 
-  {% include 'partials/langswitcher.html.twig' %}
+  <div class="wrapper">
+    {% include 'partials/langswitcher.html.twig' %}
 
-  <div class="logo-main"><a href="{{ base_url_absolute }}" alt="< back to Homepage"><img src="{{ theme_url }}/img/logo_icon.svg" alt="toctocMarseille Logo" width="54" height="60"><span class="color-logo1 logo-part1">toctoc</span><span class="color-logo0 logo-part2">Marseille</span></a></div>
+    <nav role="navigation">
+      <div class="logo-main"><a href="{{ base_url_absolute }}" alt="< back to Homepage"><img src="{{ theme_url }}/img/logo_icon.svg" alt="toctocMarseille Logo" width="81" height="90"><span class="color-logo1 logo-part1">toctoc</span><span class="color-logo0 logo-part2">Marseille</span></a></div>
 
-  <div class="container">
-    <nav class="" role="navigation">
       {% include 'partials/navigation.html.twig' %}
     </nav>
   </div>

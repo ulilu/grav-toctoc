@@ -1035,35 +1035,53 @@ body {
 
 header {
   position: relative;
-  height: 154px;
-  margin: 0 auto;
-  max-width: 1200px; }
+  margin: 0 0 18px; }
 
-.logo-main {
-  font-size: 36px;
+.wrapper {
+  position: relative;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%; }
+
+.hero > .wrapper {
+  height: 0;
+  padding-top: 37%; }
+
+/* LANGSWITCHER PLUGIN-STYLES MODIFIED */
+.langswitcher {
   position: absolute;
   top: 12px;
-  left: 30px; }
+  right: 30px;
+  list-style: none; }
+
+.langswitcher li {
+  display: inline-block;
+  float: left;
+  padding: 0 0 0 24px;
+  line-height: 1rem; }
+
+.langswitcher .active {
+  color: #3e0000; }
+
+/* LOGO */
+.logo-main {
+  font-size: 42px;
+  margin: 0;
+  padding: 6px 0 9px 30px;
+  width: 80%; }
 
 .logo-part1 {
   font-family: Linotte-Light; }
 
-nav {
-  padding: 0 30px; }
-
 .navigation {
   list-style: none;
-  position: absolute;
+  position: relative;
   display: table;
   background: #00aabd;
-  border-radius: 9px;
   margin: 0;
   padding: 6px;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
-  max-width: 1200px;
   text-align: center; }
   .navigation li {
     display: table-cell;
@@ -1134,13 +1152,13 @@ a:hover + .submenu {
   height: 0; }
   .hero h1, .hero h2 {
     position: absolute;
-    bottom: 120px;
+    bottom: 30%;
     left: 30px;
     z-index: 10;
     padding-right: 30px;
     text-shadow: 1px 0 6px #000; }
   .hero h2 {
-    bottom: 30px; }
+    bottom: 5%; }
 
 .hero-bg video, .hero-bg img {
   position: absolute;
@@ -1279,22 +1297,6 @@ a:hover + .submenu {
 
 .footer {
   background: #eeeeee; }
-
-/* LANGSWITCHER PLUGIN-STYLES MODIFIED */
-.langswitcher {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  list-style: none; }
-
-.langswitcher li {
-  display: inline-block;
-  float: left;
-  padding: 0 0 0 24px;
-  line-height: 1rem; }
-
-.langswitcher .active {
-  color: #3e0000; }
 
 /*
 @import "partials/images";
