@@ -1035,7 +1035,7 @@ body {
 
 header {
   position: relative;
-  height: 128px;
+  height: 154px;
   margin: 0 auto;
   max-width: 1200px; }
 
@@ -1048,6 +1048,9 @@ header {
 .logo-part1 {
   font-family: Linotte-Light; }
 
+nav {
+  padding: 0 30px; }
+
 .navigation {
   list-style: none;
   position: absolute;
@@ -1056,7 +1059,7 @@ header {
   border-radius: 9px;
   margin: 0;
   padding: 6px;
-  bottom: 0;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
