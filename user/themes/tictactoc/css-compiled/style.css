@@ -1034,8 +1034,7 @@ body {
   background: #fff; }
 
 header {
-  position: relative;
-  margin: 0 0 18px; }
+  position: relative; }
 
 .wrapper {
   position: relative;
@@ -1046,12 +1045,12 @@ header {
 
 .hero > .wrapper {
   height: 0;
-  padding-top: 37%; }
+  padding-bottom: 37.79%; }
 
 /* LANGSWITCHER PLUGIN-STYLES MODIFIED */
 .langswitcher {
   position: absolute;
-  top: 12px;
+  top: 24px;
   right: 30px;
   list-style: none; }
 
@@ -1062,27 +1061,34 @@ header {
   line-height: 1rem; }
 
 .langswitcher .active {
-  color: #3e0000; }
+  color: #3e0000;
+  text-decoration: none; }
 
 /* LOGO */
 .logo-main {
   font-size: 42px;
   margin: 0;
-  padding: 6px 0 9px 30px;
+  padding: 6px 0 6px 30px;
   width: 80%; }
 
 .logo-part1 {
   font-family: Linotte-Light; }
 
 .navigation {
+  z-index: 2;
   list-style: none;
   position: relative;
   display: table;
   background: #00aabd;
+  border-radius: 9px;
   margin: 0;
   padding: 6px;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out; }
+  .navigation:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
   .navigation li {
     display: table-cell;
     vertical-align: middle;
@@ -1090,6 +1096,10 @@ header {
     text-align: center;
     margin: 0;
     padding: 0 3px; }
+  .navigation li:first-of-type {
+    padding-left: 0; }
+  .navigation li:last-of-type {
+    padding-right: 0; }
   .navigation a {
     display: block;
     padding: 6px;
@@ -1149,7 +1159,8 @@ a:hover + .submenu {
   z-index: 1;
   position: relative;
   padding-bottom: 37.79%;
-  height: 0; }
+  height: 0;
+  margin: -24px 0 0; }
   .hero h1, .hero h2 {
     position: absolute;
     bottom: 30%;
