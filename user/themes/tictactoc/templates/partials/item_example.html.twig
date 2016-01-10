@@ -5,10 +5,10 @@
 	<div class="example__info">
 		<h3>{{ page.title }}</h3>
 
-		{% if uri.path() == '/examples' %}	
-			{{ page.summary }}
-		{% elseif uri.path() == '/' %}
+		{% if uri.path() == '/' %}
 			<p>{{ page.header.blurb }}</p>
+		{% else %}	
+			{{ page.summary }}
   	{% endif %}
 
   </div>

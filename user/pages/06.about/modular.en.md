@@ -1,5 +1,6 @@
 ---
 title: About
+body_classes: page-about
 content:
     order:
         dir: asc

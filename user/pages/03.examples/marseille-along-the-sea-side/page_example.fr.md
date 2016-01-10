@@ -1,5 +1,6 @@
 ---
 title: 'Marseille - A stroll along the sea side'
+body_classes: page-examples
 taxonomy:
     tag:
         - tour
@@ -13,7 +14,8 @@ As we leave the Old Port, I often go south. From the **Catalans beach**, 14 km o
 
 There are many beautiful tours to be done, with stops in little fishing harbors, heavenly swimming areas, and breath-taking views.  
 
-#### Possible stops: 
+#### Possible stops:
+
 * Snack break in a bakery
 * pizza picnic with your feet in the water
 * swimming...

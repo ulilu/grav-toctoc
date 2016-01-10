@@ -1,5 +1,6 @@
 ---
 title: 'How it works'
+body_classes: page-how-it-works
 content:
     order:
         dir: asc

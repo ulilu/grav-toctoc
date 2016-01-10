@@ -16,10 +16,14 @@
     {% endfor %}
 {% endmacro %}
 
-<ul class="navigation">
+<ul class="main-nav">
 {#     {% if config.themes.tictactoc.dropdown.enabled %}
         {{ _self.loop(pages) }}
     {% else %} #}
+        <li class="main-nav__home">
+            <a href="/" title="< back to Homepage">
+                <img src="{{ theme_url }}/img/logo_icon.svg" alt="toctocMarseille Logo" width="30" height="36">
+            </a>
         {% for page in pages.children %}
             {% if page.visible %}
                 {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}

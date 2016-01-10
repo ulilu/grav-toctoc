@@ -1,5 +1,6 @@
 ---
 title: toctocGuide
+body_classes: page-services
 byline: ' - For a true Marseille experience'
 blurb: 'Whether it’s a picnic or a culinary walk, a tour of the old harbour or a trip to the surrounding nature - Let me be your guide.'
 pricing: '150€ / half a day'

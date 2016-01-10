@@ -1,5 +1,6 @@
 ---
 title: 'Historical and contemporary Marseille'
+body_classes: page-examples
 taxonomy:
     tag:
         - tour
@@ -14,6 +15,7 @@ This is my favorite walk to **discover Marseille's must-sees**. The visit begins
 I go there to walk in the pedestrian alleys, and especially to eat the famous navettes, and the **best ice-cream in town**. I often prolong the tour to the new **MuCEM museum**, which boasts one of my favorite views of the city and the sea.
 
 #### Possible stops:
+
 * A coffee break in a typical Old Port bistro
 * Snack breaks to taste navettes and artisanal ice-cream
 * Discovering the pétanque musem

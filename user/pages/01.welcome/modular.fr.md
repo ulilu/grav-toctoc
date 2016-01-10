@@ -1,5 +1,6 @@
 ---
 title: Bienvenue
+body_classes: page-welcome
 slug: bienvenue
 content:
     order:

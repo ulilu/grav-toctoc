@@ -1,5 +1,6 @@
 ---
 title: 'Marseille - A stroll along the sea side'
+body_classes: page-examples
 taxonomy:
     tag:
         - tour

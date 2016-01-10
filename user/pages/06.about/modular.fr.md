@@ -1,5 +1,6 @@
 ---
 title: 'À propos'
+body_classes: page-about
 slug: a-propos
 content:
     order:

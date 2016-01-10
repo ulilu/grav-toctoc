@@ -1,5 +1,6 @@
 ---
 title: Exemples
+body_classes: page-examples
 slug: exemples
 content:
     items: '@self.children'

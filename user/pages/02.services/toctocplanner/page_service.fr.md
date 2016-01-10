@@ -1,5 +1,6 @@
 ---
 title: toctocPlanner
+body_classes: page-services
 byline: ' - A precious resource when planning your vacation'
 blurb: 'A personal reception, a custom-made holiday program and a hotline for all your questions while you’re in town.'
 pricing: '150€ / group'

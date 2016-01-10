@@ -684,6 +684,105 @@ textarea {
 .color-white {
   color: #ffffff; }
 
+.bgcolor-logo0 {
+  background: #00aabd; }
+
+.bgcolor-logo1 {
+  background: #3e0000; }
+
+.bgcolor-red0 {
+  background: #3d0000; }
+
+.bgcolor-red1 {
+  background: #860714; }
+
+.bgcolor-red2 {
+  background: #a62826; }
+
+.bgcolor-red3 {
+  background: #c14e46; }
+
+.bgcolor-red4 {
+  background: #ffc4bf; }
+
+.bgcolor-red5 {
+  background: #ffe0de; }
+
+.bgcolor-orange0 {
+  background: #cc6221; }
+
+.bgcolor-orange1 {
+  background: #f58b4a; }
+
+.bgcolor-orange2 {
+  background: #f8a468; }
+
+.bgcolor-orange3 {
+  background: #fab780; }
+
+.bgcolor-orange4 {
+  background: #ffdec2; }
+
+.bgcolor-orange5 {
+  background: #fff1e8; }
+
+.bgcolor-green0 {
+  background: #06756d; }
+
+.bgcolor-green1 {
+  background: #009c90; }
+
+.bgcolor-green2 {
+  background: #18b8ad; }
+
+.bgcolor-green3 {
+  background: #33ccc8; }
+
+.bgcolor-green4 {
+  background: #b8fbff; }
+
+.bgcolor-green5 {
+  background: #e3feff; }
+
+.bgcolor-blue0 {
+  background: #097287; }
+
+.bgcolor-blue1 {
+  background: #0b90ab; }
+
+.bgcolor-blue2 {
+  background: #1da5c2; }
+
+.bgcolor-blue3 {
+  background: #32bdd9; }
+
+.bgcolor-blue4 {
+  background: #87e8fa; }
+
+.bgcolor-blue5 {
+  background: #c9f6ff; }
+
+.bgcolor-grey0 {
+  background: #aaaaaa; }
+
+.bgcolor-grey1 {
+  background: #cccccc; }
+
+.bgcolor-grey2 {
+  background: #dddddd; }
+
+.bgcolor-grey3 {
+  background: #e7e7e7; }
+
+.bgcolor-grey4 {
+  background: #eeeeee; }
+
+.bgcolor-grey5 {
+  background: #f8f8f8; }
+
+.bgcolor-white {
+  background: #ffffff; }
+
 /* @import must be at top of file, otherwise CSS will not work */
 @font-face {
   font-family: 'Linotte-Regular';
@@ -1034,7 +1133,8 @@ body {
   background: #fff; }
 
 header {
-  position: relative; }
+  position: relative;
+  height: 150px; }
 
 .wrapper {
   position: relative;
@@ -1074,42 +1174,137 @@ header {
 .logo-part1 {
   font-family: Linotte-Light; }
 
-.navigation {
+.main-nav {
   z-index: 2;
+  background: #00aabd;
+  padding: 6px;
   list-style: none;
   position: relative;
   display: table;
-  background: #00aabd;
-  border-radius: 9px;
   margin: 0;
-  padding: 6px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.2s ease-in-out; }
-  .navigation:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-  .navigation li {
+  @media (min-width: 1200px) {
+    .main-nav {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.2s ease-in-out;
+      border-radius: 9px; }
+      .main-nav:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); } }
+  .main-nav li {
     display: table-cell;
     vertical-align: middle;
     width: 1%;
     text-align: center;
     margin: 0;
     padding: 0 3px; }
-  .navigation li:first-of-type {
+  .main-nav li:first-of-type {
     padding-left: 0; }
-  .navigation li:last-of-type {
+  .main-nav li:nth-of-type(2) {
+    padding-left: 0; }
+  .main-nav li:last-of-type {
     padding-right: 0; }
-  .navigation a {
+  .main-nav a {
     display: block;
     padding: 6px;
     white-space: nowrap;
-    color: white; }
-  .navigation .active a,
-  .navigation a:hover {
+    color: white;
+    font-size: 18px; }
+  .main-nav .active a,
+  .main-nav a:hover {
     background: white;
-    color: #00aabd;
     border-radius: 6px; }
+  .main-nav a:hover {
+    color: #444; }
+
+.is-sticky .main-nav {
+  position: fixed;
+  max-width: 1200px;
+  top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out; }
+  .is-sticky .main-nav:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.main-nav .main-nav__home {
+  display: table-cell;
+  text-align: center;
+  width: 0.001%;
+  opacity: 0;
+  padding: 0;
+  transition: all 0.2s ease-in-out; }
+  .main-nav .main-nav__home a {
+    display: none; }
+
+.is-sticky .main-nav .main-nav__home {
+  width: 1%;
+  opacity: 1;
+  transition: all 0.2s ease-in-out; }
+  .is-sticky .main-nav .main-nav__home a {
+    display: inline-block;
+    padding: 0;
+    width: 36px;
+    background: #fff;
+    border-radius: 50%; }
+
+.page-welcome .main-nav {
+  background: #00aabd; }
+  .page-welcome .main-nav .active a {
+    color: #00aabd; }
+
+.page-welcome .logo-part2 {
+  color: #00aabd; }
+
+.page-services .main-nav {
+  background: #f58b4a; }
+  .page-services .main-nav .active a {
+    color: #f58b4a; }
+
+.page-services .logo-part2 {
+  color: #f58b4a; }
+
+.page-examples .main-nav {
+  background: #18b8ad; }
+  .page-examples .main-nav .active a {
+    color: #18b8ad; }
+
+.page-examples .logo-part2 {
+  color: #18b8ad; }
+
+.page-pricing .main-nav {
+  background: #1da5c2; }
+  .page-pricing .main-nav .active a {
+    color: #1da5c2; }
+
+.page-pricing .logo-part2 {
+  color: #1da5c2; }
+
+.page-how-it-works .main-nav {
+  background: #c14e46; }
+  .page-how-it-works .main-nav .active a {
+    color: #c14e46; }
+
+.page-how-it-works .logo-part2 {
+  color: #c14e46; }
+
+.page-about .main-nav {
+  background: #0b90ab; }
+  .page-about .main-nav .active a {
+    color: #0b90ab; }
+
+.page-about .logo-part2 {
+  color: #0b90ab; }
+
+.page-contact .main-nav {
+  background: #009c90; }
+  .page-contact .main-nav .active a {
+    color: #009c90; }
+
+.page-contact .logo-part2 {
+  color: #009c90; }
 
 .submenu {
   display: none;
@@ -1209,9 +1404,6 @@ a:hover + .submenu {
   height: 100%; }
 
 /* Modular Examples on Homepage */
-.modular--examples {
-  background: #eeeeee; }
-
 .example {
   display: block;
   position: relative;
@@ -1259,21 +1451,18 @@ a:hover + .submenu {
   position: relative;
   width: 100%;
   height: 30em;
-  margin: 0 auto;
+  margin: -24px auto 0;
   overflow: hidden;
   background: #2980b9; }
   .stage img {
     position: relative;
-    max-height: 100%;
-    left: 0;
-    transform: translateX(-50%); }
+    width: 100%;
+    bottom: 20%;
+    left: 0; }
     @media (min-width: 800px) {
       .stage img {
-        top: 50%;
         left: 0;
-        max-height: none;
-        width: 100%;
-        transform: translateY(-50%); } }
+        max-height: none; } }
 
 /*  General Image Styles */
 .full {

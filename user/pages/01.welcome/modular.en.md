@@ -1,5 +1,6 @@
 ---
 title: Welcome
+body_classes: page-welcome
 content:
     order:
         dir: asc

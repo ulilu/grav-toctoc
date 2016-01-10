@@ -1,5 +1,6 @@
 ---
 title: Examples
+body_classes: page-examples
 content:
     items: '@self.children'
     order:

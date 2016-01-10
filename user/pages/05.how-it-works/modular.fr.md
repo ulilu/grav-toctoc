@@ -1,5 +1,6 @@
 ---
 title: 'Comment ça marche'
+body_classes: page-how-it-works
 slug: comment-ca-marche
 content:
     order:
