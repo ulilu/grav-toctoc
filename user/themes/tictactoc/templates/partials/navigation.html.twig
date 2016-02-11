@@ -20,31 +20,31 @@
 {#     {% if config.themes.tictactoc.dropdown.enabled %}
         {{ _self.loop(pages) }}
     {% else %} #}
-        <li class="main-nav__home">
+        <li class="main-nav__item  main-nav__item--home">
             <a href="/" title="< back to Homepage">
                 <img src="{{ theme_url }}/img/logo_icon.svg" alt="toctocMarseille Logo" width="30" height="36">
             </a>
         {% for page in pages.children %}
             {% if page.visible %}
                 {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-                <li class="{{ current_page }}">
-                    <a href="{{ page.url }}">
+                <li class="main-nav__item {{ current_page }}">
+                    <a class="main-nav__link" href="{{ page.url }}">
                         {{ page.menu }}
                     </a>
 
-                   {#  {% if page.children and page.menu == 'Services' %}
+                    {% if page.children and page.menu == 'Services' %}
 
-                    <ul class="submenu">
+                    <ul class="sub-nav">
                         {% for childpage in page.children %}
-                        <li>
-                            <a href="{{ childpage.link }}">
+                        <li class="sub-nav__item">
+                            <a class="sub-nav__link" href="{{ childpage.link }}">
                                 {{ childpage.menu }}
                             </a>
                         </li>
                         {% endfor %}
                     </ul>
 
-                    {% endif %} #}
+                    {% endif %}
                 </li>
 
             {% endif %}

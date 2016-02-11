@@ -1,0 +1,6 @@
+defaults:
+  image:
+    filters:
+      default:
+        - enableProgressive
+        - [cropResize, 2000, 2000]

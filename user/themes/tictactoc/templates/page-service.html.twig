@@ -1,0 +1,28 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+
+{% set childtype = 'example' %}
+{# can be "example", "service", "item" #}
+
+{% set childtemplate = 'partials/listitem-' ~ childtype ~ '.html.twig' %}
+
+{% block content %}
+
+<div class="block  block--service">
+	<svg class="icon--service" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="{{ page.find('/images').media['icons-global_rdcd.svg'].url() }}#{{ page.header.icon }}" /></svg>
+  <h1>{{ page.title }}</h1>
+  {{ page.content }}
+</div>
+
+<div class="block  block--example block--stretch">
+	<div class="block">
+		<h2>{{ page.find('/examples').title }}</h2>
+		{% for child in collection %}
+	    {% include childtemplate with {'page':child, 'truncate':true} %}
+	  {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
+

@@ -7,7 +7,7 @@ taxonomies:
   - tag
   - example
 metadata:
-  refresh: '60'
+  # refresh: '60'
   generator: Grav
   description: ''
   keywords: 'Holiday Planner'

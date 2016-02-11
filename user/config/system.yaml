@@ -12,7 +12,9 @@ languages:
   http_accept_language: false
   override_locale: false
 home:
-  alias: /welcome
+  alias:
+    en: /welcome
+    fr: /bienvenue
 pages:
   theme: tictactoc
   order:
@@ -95,8 +97,9 @@ debugger:
     close_connection: true
   twig: true
 images:
-  default_image_quality: 85
-  cache_all: false
+  default_image_quality: 90
+  cache_all: true 
+  # changed according to: https://getgrav.org/forum#!/theme-development:automatic-image-resizing
   debug: false
 media:
   enable_media_timestamp: false

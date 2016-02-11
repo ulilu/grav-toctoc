@@ -1,0 +1,11 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+<div class="block  block--article">
+	<h1>{{ page.header.headline }}</h1>
+	{{ page.media[page.header.image] }}
+  {{ page.content }}
+</div>
+
+{% endblock %}

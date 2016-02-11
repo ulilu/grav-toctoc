@@ -39,25 +39,3 @@ body	{
   from { padding: 0; } 
   to { padding: 0; } 
 }
-
-a	{
-  // @include text-shadow_w11(.5);
-  color: $color-logo0;
-  text-decoration: none;
-
-  &:hover {
-    // @include text-shadow_w11(.75);
-    color: $color-logo1;
-  }
-  &:active {
-    color: $color-logo1;
-  }
-}
-
-hr	{
-  clear: both;
-  margin:0;
-  padding:0;
-  height:0;
-  border:0;
-}

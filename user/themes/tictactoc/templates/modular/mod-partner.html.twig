@@ -1,0 +1,12 @@
+<div class="block">
+	
+	{{ page.content }}
+
+	{% for partner in page.header.partners %}
+		<div class="partner">
+			<a href="{{ partner.link }}" target="_new">{{ page.media[partner.image].cropResize(300, 300).html() }}</a>
+			<h3><a href="{{ partner.link }}" target="_new">{{ partner.name }}</a></h3>
+			<p>{{ partner.text }}<p>
+		</div>
+	{% endfor %}
+</div>

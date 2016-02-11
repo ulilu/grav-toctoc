@@ -15,6 +15,50 @@
 
 */
 
+body {
+  font-size: 18px;
+  line-height: 27px;
+  color:#444;
+  font-family: $font-light;
+}
+
+p {
+  margin: 0 0 30px; 
+}
+
+a {
+  // @include text-shadow_w11(.5);
+  color: $color-logo1;
+  text-decoration: none;
+
+  &:hover {
+    // @include text-shadow_w11(.75);
+    color: $color-logo1;
+  }
+  &:active {
+    color: $color-logo1;
+  }
+}
+
+b,
+strong {
+  font-family: $font-regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style-position: inside;
+}
+
+li  {
+  margin: 0 0 9px;
+}
+
+
 //	=========================================================================
 //	Headlines
 //	=========================================================================
@@ -23,34 +67,63 @@ h1, h2, h3, h4, h5, h6	{
   font-weight: normal;
   padding: 0;
   margin:0;
-  margin:0 0 1.2rem;
+  margin:0 0 24px;
+  font-family: $font-regular;
+  
+  &.fa {
+    display: block;
+    font-family: $font-regular;
+    font-size: inherit;
+  }
+
+  &[class*="fa-"]:before {
+    display: inline-block;
+    padding-right: 0.5em; 
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 
-h1	{
-  font-size: 42px;
-  line-height: 45px;
+h1, h1.fa	{
+  font-size: 48px;
+  // font-size: 10vW; // = 32px in 320px, 64px in 640px, 96px in 960px, 
+  line-height: 54px;
 }
 
+h2, h2.fa  {
+  font-size: 36px;
+  line-height: 42px;
 
-h2  {
-  font-size: 33px;
+}
+
+h3, h3.fa	{
+  font-size: 30px;
   line-height: 36px;
 
 }
 
-
-h3	{
-  font-size: 27px;
+h4, h4.fa	{
+  font-size: 24px;
   line-height: 30px;
-
 }
 
-
-h4	{
+h5, h5.fa  {
   font-size: 21px;
-  line-height: 24px;
+  line-height: 27px;
 }
+
+h6, h6.fa  {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+
 
 
 
@@ -72,6 +145,20 @@ h4	{
 .delta {
   font-size: 48px;
   line-height: 54px;
+}
+
+
+hr  {
+  clear: both;
+  height: 2px;
+  background: $color-green3;
+  padding:0;
+  border:0;
+  margin: 30px 0;
+
+  &.has-bullet {
+    margin: 48px 0 18px 60px;
+  }
 }
 
 
@@ -237,12 +324,7 @@ h4	{
 //	Paragraphs
 //	=========================================================================
 
-p {
-  color:#666;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 0 1rem;
-  font-family: $font-light;  
+
 
   // @media only screen and (min-width: $break-phone-landscape) {
   //   line-height: 25px;
@@ -286,22 +368,12 @@ p {
   }
 */
 
-}
 
 //	=========================================================================
 //	Lists
 //	=========================================================================
 
-ul,
-ol {
-  margin: 0 0 2rem;
-  padding: 0;
-  list-style-position: inside;
-}
 
-li  {
-  margin: 0 0 .5rem;
-}
 
 /* 
 li	{
