@@ -121,8 +121,8 @@ body {
 .langswitcher {
     font-family: $font-regular;
     position: absolute;
-    top: 24px;
-    right: 30px;
+    top: 24px !important;
+    right: 30px !important;
     list-style: none;
 }
 
@@ -978,7 +978,9 @@ body {
   }
 }
 
-
+ul p {
+  margin-bottom: 0;
+}
 
 /*---------------------------------------------------------------------------*\
     Welcome page: Slider / Carousel Testimonials

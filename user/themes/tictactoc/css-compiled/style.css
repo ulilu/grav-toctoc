@@ -1230,8 +1230,8 @@ body {
 .langswitcher {
   font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
   position: absolute;
-  top: 24px;
-  right: 30px;
+  top: 24px !important;
+  right: 30px !important;
   list-style: none; }
 
 .langswitcher li {
@@ -1854,6 +1854,9 @@ body {
     margin-right: 9px; }
   .bullet + p {
     text-indent: 48px; }
+
+ul p {
+  margin-bottom: 0; }
 
 /*---------------------------------------------------------------------------*\
     Welcome page: Slider / Carousel Testimonials
