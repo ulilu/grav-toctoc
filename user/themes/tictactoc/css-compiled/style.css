@@ -1244,7 +1244,8 @@ body {
 
 .langswitcher .active {
   color: #3e0000;
-  border: none; }
+  border: none;
+  text-decoration: none !important; }
 
 /*------------------------------------*\
   Main nav
