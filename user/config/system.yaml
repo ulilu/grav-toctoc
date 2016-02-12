@@ -15,7 +15,6 @@ home:
   aliases: 
     en: '/welcome'
     fr: '/bienvenue'
-  hide_in_urls: true
 
 pages:
   theme: tictactoc
