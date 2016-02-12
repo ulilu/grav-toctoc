@@ -43,7 +43,7 @@ La visite peut commencer dans le quartier animé du **Cours Julien**. Ce quartie
 
 On peut ensuite continuer la découverte de la ville par le quartier de **Noailles**, carrefour des immigrations, où l’on trouve toutes les communautés d’Afrique et d’ailleurs réunies. C'est là qu'on découvre la mixité et la variété de la ville. On y trouve des échoppes de tous les pays et un marché quotidien rempli de fruit et légumes tous plus colorés les uns que les autre		
 
-<figure class="image-row width-33-66">
+<figure class="image-row row-33-67">
 
 {{ page.media['IMG_5010.JPG'].lightbox(1000).cropResize(600).html() }}
 
@@ -59,7 +59,7 @@ On peut ensuite continuer la découverte de la ville par le quartier de **Noaill
 
 On termine le circuit par la descente de la fameuse **Canebière** jusqu'à l'incontournable **Vieux Port**. On pourra y admirer l'oeuvre archtiecturale "**L'Ombrière**" et découvrir le fruit de la pêche du matin au marché quotidien.
 
-<figure class="image-row width-25-50-25">
+<figure class="image-row row-25-50-25">
 
 {{ page.media['IMG_7059.JPG'].lightbox(1000).cropResize(600).html() }}
 

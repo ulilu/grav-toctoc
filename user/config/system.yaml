@@ -12,9 +12,11 @@ languages:
   http_accept_language: false
   override_locale: false
 home:
-  alias:
-    en: /welcome
-    fr: /bienvenue
+  aliases: 
+    en: '/welcome'
+    fr: '/bienvenue'
+  hide_in_urls: true
+
 pages:
   theme: tictactoc
   order:
@@ -89,7 +91,7 @@ assets:
   collections:
     jquery: 'system://assets/jquery/jquery-2.1.4.min.js'
 errors:
-  display: false
+  display: true
   log: true
 debugger:
   enabled: false
