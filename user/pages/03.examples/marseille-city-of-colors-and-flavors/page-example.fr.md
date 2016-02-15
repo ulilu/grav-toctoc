@@ -11,7 +11,7 @@ blurb: 'Marseille is made of 111 neighborhoods, each one different from the last
 image: IMG_5027.JPG
 ---
 
-Marseille est constituée de **111 quartiers**, tous différents les uns des autres. En plein centre, j’aime passer de l’un à l’autre et me sentir voyager.
+Marseille est une ville d'une mixité incroyable. En passant d'un quartier à l'autre, c'est un réel voyage qui s'offre à nous. 
 
 ===
 
@@ -25,7 +25,7 @@ La visite peut commencer dans le quartier animé du **Cours Julien**. Ce quartie
 
 
 
-<figure class="image-row">
+<figure class="image-row row-30-30-40">
 
 {{ page.media['IMG_2939.JPG'].lightbox(1000).cropResize(600).html() }}
 
@@ -43,13 +43,13 @@ La visite peut commencer dans le quartier animé du **Cours Julien**. Ce quartie
 
 On peut ensuite continuer la découverte de la ville par le quartier de **Noailles**, carrefour des immigrations, où l’on trouve toutes les communautés d’Afrique et d’ailleurs réunies. C'est là qu'on découvre la mixité et la variété de la ville. On y trouve des échoppes de tous les pays et un marché quotidien rempli de fruit et légumes tous plus colorés les uns que les autre		
 
-<figure class="image-row image-row-text row-20-40-40">
-
-<figcaption class="bgcolor-red3">Les délices de Noailles</figcaption>
+<figure class="image-row row-33-67">
 
 {{ page.media['IMG_5010.JPG'].lightbox(1000).cropResize(600).html() }}
 
 {{ page.media['IMG_7008.JPG'].lightbox(1000).cropResize(600).html() }}
+
+<figcaption>Les délices de Noailles</figcaption>
 
 </figure>
 
@@ -61,7 +61,7 @@ On termine le circuit par la descente de la fameuse **Canebière** jusqu'à l'in
 
 <figure class="image-row row-25-50-25">
 
-{{ page.media['IMG_7059.JPG'].lightbox(1000).cropResize(600).html() }}
+{{ page.media['IMG_4058.JPG'].lightbox(1000).cropResize(600).html() }}
 
 {{ page.media['IMG_3786.JPG'].lightbox(1000).cropResize(600).html() }}
 
@@ -75,6 +75,7 @@ C’est un circuit riche en couleur et en saveur.
 
 <div class="cell cell--feature width-50" markdown="1">
 
+
 ### Escales possibles:   {.fa .fa-map-signs}
 
 * dégustation de pâtisseries orientales  
@@ -84,8 +85,8 @@ C’est un circuit riche en couleur et en saveur.
 * marché alimentaire
   
 * shopping dans les boutiques de créateurs marseillais…
-  
-  </div>
+
+</div>
 
 <div class="cell cell--info width-50" markdown="1">
 
