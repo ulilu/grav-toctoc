@@ -785,10 +785,12 @@ body {
     Image row with table-cell-spacing: Each image gets an equal width
 \*---------------------------------------------------------------------------*/
 
-.image-row {
+.image-row,
+.image-row-headline {
   padding: 0;
-  margin: 0 0 30px;
+  margin: 0 -6px 30px;
   overflow: hidden;
+  border-spacing: 6px;
   
   & + & {
     margin-bottom: 0;
@@ -797,7 +799,7 @@ body {
   a {
     display: table-cell;
     width: 1%;
-    padding-right: 6px;
+    // padding-right: 6px;
   }
 
   a:last-of-type {
@@ -809,18 +811,44 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
+    max-height: 40vmin;
+    
+    @media only screen and (min-width: 700px) {
+      max-height: 50vmin;
+    }
+    @media only screen and (min-width: 1000px) {
+      max-height: 60vmin;
+    }
+    @media only screen and (min-width: 1200px) {
+      max-height: 70vmin;
+    }
   }
 
   figcaption {
     font-size: 14px;
     color: #888;
     background: #EEE;
-    margin-top: 6px;
+    margin: 0 6px;
     border-radius: 4px; 
     padding: 6px 6px 6px 12px;
   }
 }
 
+.image-row-text figcaption {
+  display: table-cell;
+  color: #fff;
+  font-size: calc(1.5vw + 1.5vh + 3vmin);
+  line-height: 120%;
+  // line-height: calc(2vw + 2vh + 3vmin);
+  // word-break: break-all;
+  // text-transform: lowercase;
+  // text-align: justify;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  vertical-align: middle;
+  padding: 1.5vw;
+  margin: 0;
+}
 
 /*---------------------------------------------------------------------------*\
     Manual image-widths: Based on additional class on .image-row
@@ -831,30 +859,30 @@ body {
 \*------------------------------------*/
 
 .row-40-60 {
-  a:nth-child(1) {width: 40% !important;}
-  a:nth-child(2) {width: 60% !important;}
+  > *:nth-child(1) {width: 40% !important;}
+  > *:nth-child(2) {width: 60% !important;}
 }
 .row-60-40 {
-  a:nth-child(1) {width: 60% !important;}
-  a:nth-child(2) {width: 40% !important;}
+  > *:nth-child(1) {width: 60% !important;}
+  > *:nth-child(2) {width: 40% !important;}
 }
 
 .row-33-67 {
-  a:nth-child(1) {width: 33% !important;}
-  a:nth-child(2) {width: 67% !important;}
+  > *:nth-child(1) {width: 33% !important;}
+  > *:nth-child(2) {width: 67% !important;}
 }
 .row-67-33 {
-  a:nth-child(1) {width: 67% !important;}
-  a:nth-child(2) {width: 33% !important;}
+  > *:nth-child(1) {width: 67% !important;}
+  > *:nth-child(2) {width: 33% !important;}
 }
 
 .row-25-75 {
-  a:nth-child(1) {width: 25% !important;}
-  a:nth-child(2) {width: 75% !important;}
+  > *:nth-child(1) {width: 25% !important;}
+  > *:nth-child(2) {width: 75% !important;}
 }
 .row-75-25 {
-  a:nth-child(1) {width: 75% !important;}
-  a:nth-child(2) {width: 25% !important;}
+  > *:nth-child(1) {width: 75% !important;}
+  > *:nth-child(2) {width: 25% !important;}
 }
 
 
@@ -862,36 +890,51 @@ body {
   3 Images per row
 \*------------------------------------*/
 
+.row-20-40-40 {
+  > *:nth-child(1) {width: 20% !important;}
+  > *:nth-child(2) {width: 40% !important;}
+  > *:nth-child(3) {width: 40% !important;}
+}
+.row-40-20-40 {
+  > *:nth-child(1) {width: 40% !important;}
+  > *:nth-child(2) {width: 20% !important;}
+  > *:nth-child(3) {width: 40% !important;}
+}
+.row-40-40-20 {
+  > *:nth-child(1) {width: 40% !important;}
+  > *:nth-child(2) {width: 40% !important;}
+  > *:nth-child(3) {width: 20% !important;}
+}
 .row-30-30-40 {
-  a:nth-child(1) {width: 30% !important;}
-  a:nth-child(2) {width: 30% !important;}
-  a:nth-child(3) {width: 40% !important;}
+  > *:nth-child(1) {width: 30% !important;}
+  > *:nth-child(2) {width: 30% !important;}
+  > *:nth-child(3) {width: 40% !important;}
 }
 .row-30-40-30 {
-  a:nth-child(1) {width: 30% !important;}
-  a:nth-child(2) {width: 40% !important;}
-  a:nth-child(3) {width: 30% !important;}
+  > *:nth-child(1) {width: 30% !important;}
+  > *:nth-child(2) {width: 40% !important;}
+  > *:nth-child(3) {width: 30% !important;}
 }
 .row-40-30-30 {
-  a:nth-child(1) {width: 40% !important;}
-  a:nth-child(2) {width: 30% !important;}
-  a:nth-child(3) {width: 30% !important;}
+  > *:nth-child(1) {width: 40% !important;}
+  > *:nth-child(2) {width: 30% !important;}
+  > *:nth-child(3) {width: 30% !important;}
 }
 
 .row-25-25-50 {
-  a:nth-child(1) {width: 25% !important;}
-  a:nth-child(2) {width: 25% !important;}
-  a:nth-child(3) {width: 50% !important;}
+  > *:nth-child(1) {width: 25% !important;}
+  > *:nth-child(2) {width: 25% !important;}
+  > *:nth-child(3) {width: 50% !important;}
 }
 .row-25-50-25 {
-  a:nth-child(1) {width: 25% !important;}
-  a:nth-child(2) {width: 50% !important;}
-  a:nth-child(3) {width: 25% !important;}
+  > *:nth-child(1) {width: 25% !important;}
+  > *:nth-child(2) {width: 50% !important;}
+  > *:nth-child(3) {width: 25% !important;}
 }
 .row-50-25-25 {
-  a:nth-child(1) {width: 50% !important;}
-  a:nth-child(2) {width: 25% !important;}
-  a:nth-child(3) {width: 25% !important;}
+  > *:nth-child(1) {width: 50% !important;}
+  > *:nth-child(2) {width: 25% !important;}
+  > *:nth-child(3) {width: 25% !important;}
 }
 
 
@@ -1070,7 +1113,6 @@ ul p {
     font-family: $font-light;
   }
 }
-
 
 
 

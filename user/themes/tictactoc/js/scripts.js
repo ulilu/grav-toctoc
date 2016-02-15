@@ -12,3 +12,13 @@
 //         }
 //     });
 // });
+
+/*
+ * Document ready start
+ */
+
+$(document).ready(function() {
+
+  jQuery(".image-row-text figcaption").fitText(0.4);
+
+});

@@ -43,13 +43,13 @@ La visite peut commencer dans le quartier animé du **Cours Julien**. Ce quartie
 
 On peut ensuite continuer la découverte de la ville par le quartier de **Noailles**, carrefour des immigrations, où l’on trouve toutes les communautés d’Afrique et d’ailleurs réunies. C'est là qu'on découvre la mixité et la variété de la ville. On y trouve des échoppes de tous les pays et un marché quotidien rempli de fruit et légumes tous plus colorés les uns que les autre		
 
-<figure class="image-row row-33-67">
+<figure class="image-row image-row-text row-20-40-40">
+
+<figcaption class="bgcolor-red3">Les délices de Noailles</figcaption>
 
 {{ page.media['IMG_5010.JPG'].lightbox(1000).cropResize(600).html() }}
 
 {{ page.media['IMG_7008.JPG'].lightbox(1000).cropResize(600).html() }}
-
-<figcaption>Les délices de Noailles</figcaption>
 
 </figure>
 
