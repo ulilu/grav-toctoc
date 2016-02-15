@@ -799,12 +799,13 @@ body {
   a {
     display: table-cell;
     width: 1%;
+    
     // padding-right: 6px;
   }
 
-  a:last-of-type {
-    padding: 0;
-  }
+  // a:last-of-type {
+  //   padding: 0;
+  // }
 
   img {
     width: 100%;

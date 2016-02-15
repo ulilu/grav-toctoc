@@ -1700,9 +1700,6 @@ body {
   .image-row-headline a {
     display: table-cell;
     width: 1%; }
-  .image-row a:last-of-type,
-  .image-row-headline a:last-of-type {
-    padding: 0; }
   .image-row img,
   .image-row-headline img {
     width: 100%;
