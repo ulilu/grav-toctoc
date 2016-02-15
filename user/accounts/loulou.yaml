@@ -1,0 +1,11 @@
+email: toctocmarseille@gmail.com
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Loulou Collange'
+title: null
+state: enabled
+hashed_password: $2y$10$1vty0hZzYvScUd68SpWijeFX08uL1tvHxTq3ihnENH9aYy1oCyuzC
