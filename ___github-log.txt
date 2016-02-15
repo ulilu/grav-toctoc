@@ -1,0 +1,314 @@
+2015-12-17, 06:34:50
+
+GitHub Pull
+============================
+Already up-to-date.
+
+----------------------------
+2015-12-17, 06:35:51
+
+GitHub Pull
+============================
+Already up-to-date.
+
+----------------------------
+2015-12-17, 06:52:57
+
+GitHub Pull
+============================
+Already up-to-date.
+
+----------------------------
+2015-12-17, 06:56:44
+
+GitHub Pull
+============================
+Updating c10a56a..f9bb65f
+Fast-forward
+ user/pages/01.welcome/01._hero/hero.en.md |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+----------------------------
+2015-12-17, 07:54:51
+
+GitHub Pull
+============================
+Updating f9bb65f..02bf776
+
+----------------------------
+2015-12-17, 08:33:06
+
+GitHub Pull
+============================
+Updating f9bb65f..781c588
+
+----------------------------
+2015-12-17, 08:37:09
+
+GitHub Pull
+============================
+Updating f9bb65f..781c588
+
+----------------------------
+2015-12-17, 09:37:42
+
+GitHub Pull
+============================
+U	user/pages/01.welcome/01._hero/hero.en.md
+U	user/pages/01.welcome/02._welcome/welcome.en.md
+
+----------------------------
+2015-12-17, 09:43:57
+
+GitHub Pull
+============================
+Updating 451c720..ea398a4
+Fast-forward
+ user/pages/01.welcome/01._hero/hero.en.md |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+----------------------------
+2015-12-17, 09:48:02
+
+GitHub Pull
+============================
+Updating ea398a4..9c0d64c
+Fast-forward
+ user/themes/tictactoc/scss/partials/_mist.scss |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+----------------------------
+2015-12-17, 09:51:09
+
+GitHub Pull
+============================
+Updating 9c0d64c..36760c3
+Fast-forward
+ user/themes/tictactoc/scss/partials/_mist.scss |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+----------------------------
+2015-12-17, 09:56:08
+
+GitHub Pull
+============================
+Updating 36760c3..0a0e6fa
+Fast-forward
+ user/themes/tictactoc/css-compiled/style.css     |    4 ++--
+ user/themes/tictactoc/css-compiled/style.css.map |    2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+----------------------------
+2015-12-17, 09:57:34
+
+GitHub Pull
+============================
+Updating 0a0e6fa..3d53f74
+Fast-forward
+ user/themes/tictactoc/css-compiled/style.css     |    6 +++---
+ user/themes/tictactoc/css-compiled/style.css.map |    2 +-
+ user/themes/tictactoc/scss/partials/_mist.scss   |    6 +++---
+ 3 files changed, 7 insertions(+), 7 deletions(-)
+
+----------------------------
+2015-12-17, 10:10:27
+
+GitHub Pull
+============================
+Updating 3d53f74..42b5f1c
+Fast-forward
+ user/pages/01.welcome/01._hero/hero.en.md |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+----------------------------
+2015-12-17, 11:51:56
+
+GitHub Pull
+============================
+Updating 42b5f1c..d633c5d
+Fast-forward
+ user/pages/01.welcome/01._hero/hero.en.md |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+----------------------------
+2016-01-09, 19:00:10
+
+GitHub Pull
+============================
+
+----------------------------
+2016-01-09, 20:45:42
+
+GitHub Pull
+============================
+Updating bfd85a2..38c9da4
+Fast-forward
+ user/themes/tictactoc/css-compiled/style.css     | 7 +++++--
+ user/themes/tictactoc/css-compiled/style.css.map | 2 +-
+ user/themes/tictactoc/scss/partials/_mist.scss   | 8 ++++++--
+ 3 files changed, 12 insertions(+), 5 deletions(-)
+
+----------------------------
+2016-01-09, 22:02:18
+
+GitHub Pull
+============================
+Updating 38c9da4..99fded9
+Fast-forward
+ user/themes/tictactoc/css-compiled/style.css       | 66 ++++++++---------
+ user/themes/tictactoc/css-compiled/style.css.map   |  2 +-
+ user/themes/tictactoc/scss/partials/_mist.scss     | 84 +++++++++++-----------
+ .../tictactoc/templates/modular/hero.html.twig     |  4 +-
+ .../tictactoc/templates/partials/header.html.twig  |  8 +--
+ 5 files changed, 86 insertions(+), 78 deletions(-)
+
+----------------------------
+2016-01-09, 23:12:45
+
+GitHub Pull
+============================
+Updating 99fded9..fddfbd7
+Fast-forward
+ user/themes/tictactoc/css-compiled/style.css     | 27 +++++++++++++++++-------
+ user/themes/tictactoc/css-compiled/style.css.map |  4 ++--
+ user/themes/tictactoc/scss/partials/_mist.scss   | 27 +++++++++++++++++++-----
+ 3 files changed, 43 insertions(+), 15 deletions(-)
+
+----------------------------
+2016-01-10, 03:53:41
+
+GitHub Pull
+============================
+Updating fddfbd7..98b9e7a
+Fast-forward
+ user/pages/01.welcome/modular.en.md                |   1 +
+ user/pages/01.welcome/modular.fr.md                |   1 +
+ user/pages/02.services/services.en.md              |   1 +
+ user/pages/02.services/services.fr.md              |   1 +
+ user/pages/02.services/services.md                 |   2 +-
+ .../02.services/toctocguide/page_service.en.md     |   1 +
+ .../02.services/toctocguide/page_service.fr.md     |   1 +
+ .../02.services/toctocplanner/page_service.en.md   |   1 +
+ .../02.services/toctocplanner/page_service.fr.md   |   1 +
+ user/pages/03.examples/examples.en.md              |   1 +
+ user/pages/03.examples/examples.fr.md              |   1 +
+ user/pages/03.examples/examples.md                 |   3 +-
+ .../page_example.en.md                             |   2 +
+ .../page_example.fr.md                             |   2 +
+ .../page_example.en.md                             |   1 +
+ .../page_example.fr.md                             |   4 +-
+ .../page_example.en.md                             |   5 +-
+ .../page_example.fr.md                             |   5 +-
+ user/pages/04.pricing/default.en.md                |   1 +
+ user/pages/04.pricing/default.fr.md                |   1 +
+ user/pages/05.how-it-works/modular.en.md           |   1 +
+ user/pages/05.how-it-works/modular.fr.md           |   1 +
+ user/pages/06.about/modular.en.md                  |   1 +
+ user/pages/06.about/modular.fr.md                  |   1 +
+ user/pages/08.contact/contact.en.md                |   1 +
+ user/pages/08.contact/contact.fr.md                |   1 +
+ user/themes/tictactoc/css-compiled/style.css       | 243 ++++++++++++++++++---
+ user/themes/tictactoc/css-compiled/style.css.map   |   2 +-
+ user/themes/tictactoc/css-compiled/styles-ie.css   |  99 +++++++++
+ .../tictactoc/css-compiled/styles-ie.css.map       |   2 +-
+ user/themes/tictactoc/js/scripts.js                |  14 ++
+ user/themes/tictactoc/scss/_vars.scss              |  43 +++-
+ user/themes/tictactoc/scss/partials/_mist.scss     | 153 +++++++++++--
+ .../tictactoc/templates/modular/hero.html.twig     |  36 +--
+ .../tictactoc/templates/partials/base.html.twig    |   3 +-
+ .../tictactoc/templates/partials/header.html.twig  |   2 +-
+ .../templates/partials/item_example.html.twig      |   6 +-
+ .../templates/partials/navigation.html.twig        |   6 +-
+ 38 files changed, 570 insertions(+), 81 deletions(-)
+ create mode 100644 user/themes/tictactoc/js/scripts.js
+
+----------------------------
+2016-02-12, 02:30:39
+
+GitHub Pull
+============================
+Updating 2af5360..eb6c3fb
+
+----------------------------
+2016-02-12, 03:02:58
+
+GitHub Pull
+============================
+Updating eb6c3fb..c779f6f
+Fast-forward
+ user/themes/tictactoc/css-compiled/style.css     | 3 ++-
+ user/themes/tictactoc/css-compiled/style.css.map | 2 +-
+ user/themes/tictactoc/scss/partials/_mist.scss   | 1 +
+ 3 files changed, 4 insertions(+), 2 deletions(-)
+
+----------------------------
+2016-02-12, 03:05:09
+
+GitHub Pull
+============================
+Updating c779f6f..21373c6
+Fast-forward
+ user/themes/tictactoc/css-compiled/style.css     | 3 ++-
+ user/themes/tictactoc/css-compiled/style.css.map | 2 +-
+ user/themes/tictactoc/scss/partials/_mist.scss   | 1 +
+ 3 files changed, 4 insertions(+), 2 deletions(-)
+
+----------------------------
+2016-02-12, 03:06:21
+
+GitHub Pull
+============================
+Updating 21373c6..812435a
+Fast-forward
+ user/themes/tictactoc/css-compiled/style.css     | 4 ++--
+ user/themes/tictactoc/css-compiled/style.css.map | 2 +-
+ user/themes/tictactoc/scss/partials/_mist.scss   | 4 ++--
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+
+----------------------------
+2016-02-12, 03:29:04
+
+GitHub Pull
+============================
+Updating 812435a..fa8ee2e
+Fast-forward
+ user/config/system.yaml | 1 -
+ 1 file changed, 1 deletion(-)
+
+----------------------------
+2016-02-12, 03:31:12
+
+GitHub Pull
+============================
+Updating fa8ee2e..4e28d4c
+Fast-forward
+ user/config/system.yaml | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+----------------------------
+2016-02-12, 03:40:36
+
+GitHub Pull
+============================
+Updating 4e28d4c..1328874
+Fast-forward
+ user/themes/tictactoc/css-compiled/style.css     | 7 +++++--
+ user/themes/tictactoc/css-compiled/style.css.map | 2 +-
+ user/themes/tictactoc/scss/partials/_mist.scss   | 8 +++++---
+ 3 files changed, 11 insertions(+), 6 deletions(-)
+
+----------------------------
+2016-02-15, 21:16:40
+
+GitHub Pull
+============================
+Updating 1328874..e812f06
+
+----------------------------
+2016-02-15, 21:20:47
+
+GitHub Pull
+============================
+Updating 1328874..e812f06
+
+----------------------------
