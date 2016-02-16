@@ -73,12 +73,12 @@ C'est parti pour l'ascension jusqu'à Notre Dame de la Garde avec son panorama e
 
 A la fin de la journée, nous pourrons profiter du convivial et alternatif quartier **le Cours Julien**. Les artistes et créateurs de la ville ont pris possession de ses petites rues piétonnes. L'occasion de découvrir l'artisanat local et de savouré un apéritif local sur l'une des nombreuses terrasses. 
 
-<figure class="image-row row-25-50-25">
-{{ page.media['IMG_7125.JPG'].lightbox(1000).cropResize(600).html() }}
+<figure class="image-row image-row-text row-25-25-50">
 {{ page.media['DSCF1447.JPG'].lightbox(1000).cropResize(600).html() }}
-{{ page.media['IMG_3011.JPG'].lightbox(1000).cropResize(600).html() }}
 
-<figcaption>Cours Julien</figcaption>
+<figcaption class="bgcolor-orange1">Cours Julien</figcaption>
+
+{{ page.media['IMG_3011.JPG'].lightbox(1000).cropResize(600).html() }}
 </figure>
 
 
