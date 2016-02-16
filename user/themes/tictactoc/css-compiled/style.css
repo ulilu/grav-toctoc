@@ -1627,11 +1627,7 @@ body {
   .stage img.bottom {
     object-position: bottom; }
   .stage img + img {
-    position: absolute;
-    top: 0;
-    -webkit-mask: -webkit-linear-gradient(transparent 50%, black);
-    -webkit-mask: linear-gradient(transparent 50%, black);
-    -webkit-filter: blur(5px); }
+    display: none; }
 
 /*---------------------------------------------------------------------------*\
     General Image Styles
