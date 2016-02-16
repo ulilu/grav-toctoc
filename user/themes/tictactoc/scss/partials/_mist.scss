@@ -725,11 +725,12 @@ body {
   }
 
   img + img {
-    position: absolute;
-    top: 0;
-    -webkit-mask: -webkit-linear-gradient(transparent 50%, black);
-    -webkit-mask: linear-gradient(transparent 50%, black);
-    -webkit-filter: blur(5px);
+    display: none;
+    // position: absolute;
+    // top: 0;
+    // -webkit-mask: -webkit-linear-gradient(transparent 50%, black);
+    // -webkit-mask: linear-gradient(transparent 50%, black);
+    // -webkit-filter: blur(5px);
   }
 }
 
