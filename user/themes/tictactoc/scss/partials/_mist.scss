@@ -46,16 +46,20 @@ html {
 
 body {
   position: relative;
+  min-height: 100%;
   background: #fff; 
   padding-bottom: 60px;
-  min-height: 100%;
 }
 
 .header {
   position: relative;
   width: 100%;
-  height: 150px;
+  // height: 120px;
   color: $color-logo0;
+  
+  // @media only screen and (min-width: 650px) {
+  //   height: 150px;
+  // }
 }
 
 .main {
@@ -63,8 +67,11 @@ body {
   padding-bottom: 60px;
 }
 
+/*
+ *  [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt
+ */
 .footer {
-  position: absolute;
+  position: absolute;  /* [1] */
   right: 0;
   bottom: 0;
   left: 0;
@@ -83,7 +90,7 @@ body {
   display: block;
   max-width: 1200px;
   margin: 0 auto;
-  height: 100%;
+  // height: 100%;
 }
 
 
@@ -92,13 +99,56 @@ body {
 \*------------------------------------*/
 
 .logo-main {
-  font-size: 42px;
+  position: relative;
+  width: 75%;
+  padding-right: 12px;
   margin: 0;
-  padding: 6px 0 6px 30px;
-  width: 80%;
+  
+  @media only screen and (min-width: 650px) {
+    width: 65%;
+    padding-right: 18px;
+  }
+
+  @media only screen and (min-width: 750px) {
+    width: 60%;
+    padding-right: 24px;
+  }
+  
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 6px 15px 12px;
+    
+    // @media only screen and (min-width: 650px) {
+    //   height: 66px;
+    // }
+
+    @media only screen and (min-width: 750px) {
+      margin-left: 1.8%;
+    }
+  }
   
   a {
+    display: block;
     color: currentColor;
+  }
+}
+
+
+[class*="logo-part"] {
+  font-size: 30px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30px;
+  
+  @media only screen and (min-width: 450px) {
+    width: auto;
+    font-size: 36px;
+  }
+
+  @media only screen and (min-width: 700px) {
+    font-size: 42px;
   }
 }
 
@@ -119,29 +169,31 @@ body {
 /* LANGSWITCHER PLUGIN-STYLES MODIFIED */
 
 .langswitcher {
-    font-family: $font-regular;
-    position: absolute;
-    top: 24px !important;
-    right: 30px !important;
-    list-style: none;
+  display: none;
+  font-family: $font-regular;
+  position: absolute;
+  top: 24px !important;
+  right: 30px !important;
+  list-style: none;
+  margin: 0;
 }
 
 .langswitcher li {
-    display: inline-block;
-    float: left;
-    padding: 0 0 0 24px;
-    
-    a {
-      color: $color-logo1;
-      border-bottom: 1px solid $color-logo1;
-    }
+  display: inline-block;
+  float: left;
+  padding: 0 0 0 24px;
+  
+  a {
+    color: $color-logo1;
+    border-bottom: 1px solid $color-logo1;
+  }
 }
 
 .langswitcher .active {
-    color: $color-logo1;
-    border: none;
-    text-decoration: none;
-    font-weight: normal;
+  color: $color-logo1;
+  border: none;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 
@@ -149,23 +201,70 @@ body {
   Main nav
 \*------------------------------------*/
 
-.main-nav {
-  font-family: $font-regular;
-  z-index:2;
-  background: #C16844; // roof tiles of marseille
-  background: linear-gradient(#D28B6F, #A56C56); // Bronze gradient
-  padding: 6px;
-  list-style: none;
+.nav-bar {
   position: relative;
-  display: table;
-  margin: 0;
+  height: 51px; 
+
+  @media only screen and (min-width: 1200px) {
+    overflow: visible;
+    // bottom: -24px;
+  }
+}
+
+.main-nav__wrapper {
+  position: relative;
+  z-index: 2;
   width: 100%;
+  overflow: hidden;
+
+  
+  @media only screen and (min-width: 700px) {
+    overflow: visible;
+  }
+
+  @media only screen and (max-width: 700px) {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 51px;
+      width: 100px;
+      pointer-events: none;
+      background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6) );
+    }
+  }
+}
+
+.main-nav {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  margin: 0;
+
+  font-family: $font-regular;
   text-align: center;
+  list-style: none;
+  // background: #C16844; // roof tiles of marseille
+  // background: linear-gradient(#D28B6F, #A56C56); // Bronze gradient
+  background: #9B2E36;
+  
   transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;  /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */
+  -webkit-transform: translate3d(0,0,0);
+  
+  @media only screen and (min-width: 700px) {
+    display: table;
+    overflow: auto;
+  }
 
-  @media(min-width: 1200px) {
+  @media only screen and (min-width: 1200px) {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
-
     // @include material-card1();
     border-radius: 9px;
   }
@@ -270,8 +369,9 @@ body {
   width: 200px;
   overflow: hidden;
   // background: currentColor;
-  background: #C16844; // roof tiles of marseille
-  background: #A96F58; // Bronze
+  // background: #C16844; // roof tiles of marseille
+  // background: #A96F58; // Bronze
+  background: #9B2E36;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24)
@@ -361,7 +461,24 @@ body {
 // }
 
 
+/*---------------------------------------------------------------------------*\
+    New additional colors (mostly pastels)
+\*---------------------------------------------------------------------------*/
 
+/*
+toctocMenü   #9B2E36
+text:     #FFE8E8
+
+bienvenue < start:      #FCF6E7   (façades)
+
+bienvenue < services:     #F1E4C6   (sable)
+
+bienvenue < examples:     #948EBD   (lavende)
+
+bienvenue < comment     #B5BF52   (olives)
+
+bienvenue < temoignages     #FFFB9F   (pastis)
+*/
 
 
 /*---------------------------------------------------------------------------*\
@@ -774,6 +891,10 @@ body {
 .width-33 { width: 33% !important; }
 .width-67 { width: 67% !important; }
 
+.width-30 { width: 30% !important; }
+.width-70 { width: 70% !important; }
+
+
 .width-25 { width: 25% !important; }
 .width-75 { width: 75% !important; }
 
@@ -860,6 +981,11 @@ body {
   2 images per row
 \*------------------------------------*/
 
+.row-50-50 {
+  > *:nth-child(1) {width: 50% !important;}
+  > *:nth-child(2) {width: 50% !important;}
+}
+
 .row-40-60 {
   > *:nth-child(1) {width: 40% !important;}
   > *:nth-child(2) {width: 60% !important;}
@@ -887,10 +1013,26 @@ body {
   > *:nth-child(2) {width: 25% !important;}
 }
 
+.row-20-80 {
+  > *:nth-child(1) {width: 20% !important;}
+  > *:nth-child(2) {width: 80% !important;}
+}
+.row-80-20 {
+  > *:nth-child(1) {width: 80% !important;}
+  > *:nth-child(2) {width: 20% !important;}
+}
+
 
 /*------------------------------------*\
   3 Images per row
 \*------------------------------------*/
+
+.row-33-33-33 {
+  > *:nth-child(1) {width: 33.3333% !important;}
+  > *:nth-child(2) {width: 33.3333% !important;}
+  > *:nth-child(3) {width: 33.3333% !important;}
+}
+
 
 .row-20-40-40 {
   > *:nth-child(1) {width: 20% !important;}
@@ -907,6 +1049,8 @@ body {
   > *:nth-child(2) {width: 40% !important;}
   > *:nth-child(3) {width: 20% !important;}
 }
+
+
 .row-30-30-40 {
   > *:nth-child(1) {width: 30% !important;}
   > *:nth-child(2) {width: 30% !important;}
@@ -923,6 +1067,7 @@ body {
   > *:nth-child(3) {width: 30% !important;}
 }
 
+
 .row-25-25-50 {
   > *:nth-child(1) {width: 25% !important;}
   > *:nth-child(2) {width: 25% !important;}
@@ -938,6 +1083,29 @@ body {
   > *:nth-child(2) {width: 25% !important;}
   > *:nth-child(3) {width: 25% !important;}
 }
+
+
+.row-20-30-50 {
+  > *:nth-child(1) {width: 20% !important;}
+  > *:nth-child(2) {width: 30% !important;}
+  > *:nth-child(3) {width: 50% !important;}
+}
+.row-20-50-30 {
+  > *:nth-child(1) {width: 20% !important;}
+  > *:nth-child(2) {width: 50% !important;}
+  > *:nth-child(3) {width: 30% !important;}
+}
+.row-50-20-30 {
+  > *:nth-child(1) {width: 50% !important;}
+  > *:nth-child(2) {width: 20% !important;}
+  > *:nth-child(3) {width: 30% !important;}
+}
+.row-50-30-20 {
+  > *:nth-child(1) {width: 50% !important;}
+  > *:nth-child(2) {width: 30% !important;}
+  > *:nth-child(3) {width: 20% !important;}
+}
+
 
 
 
@@ -959,6 +1127,11 @@ body {
     padding: 0 0 12px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover > img {
+    transform: scale(110%);
   }
 
   &.width-25 {
@@ -1118,3 +1291,43 @@ ul p {
 
 
 
+
+.partner {
+  width: 23.5%;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  min-height: 360px;
+  // border: 1px solid #ccc;
+  margin-bottom: 2%;
+  padding: 0 12px 0;
+  
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
+
+  > a {
+    display: block;
+    min-height: 200px;
+    margin-bottom: 18px;
+  }
+
+  img {
+    width: calc(100% + 24px);
+    object-fit: cover;
+    height: 200px;
+    margin-left: -12px;
+  }
+
+  h3 {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 18px;
+  }
+
+  p {
+    min-height: 54px;
+    margin-bottom: 0;
+  }
+}
