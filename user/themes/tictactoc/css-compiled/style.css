@@ -506,7 +506,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 /*------------------------------------*\ Langswitcher plugin styles - modified
 \*------------------------------------*/
 /* LANGSWITCHER PLUGIN-STYLES MODIFIED */
-.langswitcher { display: none; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif; position: absolute; top: 24px !important; right: 30px !important; list-style: none; margin: 0; }
+.langswitcher { display: block; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif; position: absolute; top: 24px !important; right: 30px !important; list-style: none; margin: 0; }
 
 .langswitcher li { display: inline-block; float: left; padding: 0 0 0 24px; }
 .langswitcher li a { color: #3e0000; border-bottom: 1px solid #3e0000; }

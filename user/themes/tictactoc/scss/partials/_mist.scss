@@ -169,7 +169,8 @@ body {
 /* LANGSWITCHER PLUGIN-STYLES MODIFIED */
 
 .langswitcher {
-  display: none;
+  // display: none;
+  display: block;
   font-family: $font-regular;
   position: absolute;
   top: 24px !important;
