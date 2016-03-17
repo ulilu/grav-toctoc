@@ -861,7 +861,7 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 
 .full {
   max-width: 100% !important; 
-  max-height: 600px;
+  max-height: 50vmin;
 }
 
 .float-left { 
@@ -943,9 +943,9 @@ bienvenue < temoignages     #FFFB9F   (pastis)
     @media only screen and (min-width: 1000px) {
       max-height: 55vmin;
     }
-    @media only screen and (min-width: 1200px) {
-      max-height: 60vmin;
-    }
+    // @media only screen and (min-width: 1200px) {
+    //   max-height: 60vmin;
+    // }
   }
 
   figcaption {
