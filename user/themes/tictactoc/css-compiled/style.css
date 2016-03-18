@@ -832,10 +832,10 @@ ul p { margin-bottom: 0; }
 .page-header { padding: 24px; margin: 0 0 30px; color: #fff; }
 .page-header h4 { font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; }
 
-.partner { width: 23.5%; overflow: hidden; display: inline-block; float: left; margin-right: 2%; min-height: 360px; margin-bottom: 2%; padding: 0 12px 0; }
+.partner { width: 23.5%; overflow: hidden; display: inline-block; float: left; margin-right: 2%; min-height: 360px; margin-bottom: 2%; padding: 0 12px 18px; }
 .partner:nth-child(5n) { margin-right: 0; }
 .partner:nth-child(6n) { clear: both; }
-.partner > a { display: block; min-height: 200px; margin-bottom: 18px; }
+.partner > a { display: block; min-height: 200px; margin-bottom: 12px; }
 .partner img { width: calc(100% + 24px); object-fit: cover; height: 200px; margin-left: -12px; }
 .partner h3 { font-size: 21px; line-height: 28px; margin-bottom: 18px; }
 .partner p { min-height: 54px; margin-bottom: 0; }
