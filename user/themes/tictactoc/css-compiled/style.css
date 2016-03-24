@@ -1008,7 +1008,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .block > .block { padding: 0; }
 @media only screen and (min-width: 1200px) { .block > .block { max-width: 1140px; } }
 
-.block--scroll { overflow-x: scroll; overflow-y: hidden; width: 100%; margin: 0 0 -24px !important; /* to hide otherwise visible scrollbar */ max-width: 100% !important; }
+.block--scroll { width: 100%; margin: 0 0 -24px !important; /* to hide otherwise visible scrollbar */ max-width: 100% !important; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
 
 .block__scroll-wrapper { white-space: nowrap; position: relative; vertical-align: top; margin-bottom: 48px; /* to make room for hidden scrollbar, see above */ padding: 0 30px; }
 @media only screen and (min-width: 1200px) { .block__scroll-wrapper { padding-left: calc((100vw - 1146px) / 2); padding-right: calc((100vw - 1146px) / 2); } }

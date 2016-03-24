@@ -146,11 +146,13 @@ body {
 
 
 .block--scroll {
-  overflow-x: scroll;
-  overflow-y: hidden;
   width: 100%;
   margin: 0 0 -24px !important;  /* to hide otherwise visible scrollbar */
   max-width: 100% !important;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;  /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */
+  -webkit-transform: translate3d(0,0,0);
 }
 
 .block__scroll-wrapper {
