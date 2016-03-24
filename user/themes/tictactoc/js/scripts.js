@@ -21,4 +21,13 @@ $(document).ready(function() {
 
   jQuery(".image-row-text figcaption").fitText(0.4);
 
+  // Move tapped menu item to the left
+  // var nav = $('.main-nav');
+  // var scrollleft = nav.scrollLeft();
+  // var offset = $(this).offset();
+  // var offsetleft = offset.left;
+  // var elementwidth = $(this).width();
+  // var screenwidth = $(window).width();
+  // nav.animate({scrollLeft:  (offsetleft + scrollleft) + (elementwidth /2) - (screenwidth / 2)}, 200);
+
 });

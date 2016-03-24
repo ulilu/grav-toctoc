@@ -1,16 +1,18 @@
 <a class="service-link" href="{{ page.url }}">
-
 {% if uri.path() == '/services' %}	
 
-		<svg class="icon--service" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="{{ page.find('/images').media['icons-global_rdcd.svg'].url() }}#{{ page.header.icon }}" /></svg>
-    <h3>{{ page.title }}</h3>
-		<div class="item__summary">{{ page.summary }}</div>
+		<div class="imgfade">
+			{{ page.media[page.header.image].cropResize(800).html() }}
+		</div>
+
+    <h2 class="gamma color-{{ page.header.page_color }}"><svg class="icon--service" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="{{ page.find('/images').media['icons-global_rdcd.svg'].url() }}#{{ page.header.icon }}" /></svg><span class="font-light">toctoc</span>{{ page.title|slice(6) }}</h2>
+		<div class="item__summary card bgcolor-{{ page.header.page_color }}">
+	{{ page.summary }}</div>
 </a>
 
 {% elseif uri.path() == '/' %}
 
-		<svg class="icon--service" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="{{ page.find('/images').media['icons-global_rdcd.svg'].url() }}#{{ page.header.icon }}" /></svg>
-		<h2 class="color-{{ page.header.page_color }}">{{ page.title }}</h2>
+		<h2 class="beta color-{{ page.header.page_color }}"><svg class="icon--service" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="{{ page.find('/images').media['icons-global_rdcd.svg'].url() }}#{{ page.header.icon }}" /></svg><span class="font-light">toctoc</span>{{ page.title|replace({"toctoc": ""}) }}</h2>
 		<h4>{{ page.header.preview_welcome1 }}</h4>
 		<p>{{ page.header.preview_welcome2 }}</p>
 </a>

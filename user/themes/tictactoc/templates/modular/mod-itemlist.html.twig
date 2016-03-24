@@ -3,16 +3,26 @@
 {% set childtype = page.header.childtype %}
 {# can be "example", "service", "item" #}
 
+{% set overflow = page.header.overflow %}
+{# setting the block to scroll horizontally #}
+
 {% set childtemplate = 'partials/listitem-' ~ childtype ~ '.html.twig' %}
 
 <div class="block  block--stretch  block--{{ childtype }}">
 
-	<div class="block">
-		{{ page.content }}
+	{% if page.content %}
+		<div class="block">
+			{{ page.content }}
+		</div>
+	{% endif %}
 
-  	{% for child in collection %}
-    	{% include childtemplate with {'page':child, 'truncate':true} %}
-  	{% endfor %}
+	<div class="block{% if overflow %}--scroll{% endif %}">
+
+		{% if overflow %}<div class="block__scroll-wrapper">{% endif %}
+	  	{% for child in collection %}
+	    	{% include childtemplate with {'page':child, 'truncate':true} %}
+	  	{% endfor %}
+  	{% if overflow %}</div>{% endif %}
 	</div>
 
 </div>

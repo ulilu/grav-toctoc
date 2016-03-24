@@ -1,0 +1,224 @@
+/*------------------------------------*\
+  Main nav w/ priority+ menu
+\*------------------------------------*/
+
+.nav-bar {
+  position: relative;
+  height: 51px; 
+
+  @media only screen and (min-width: 1200px) {
+    overflow: visible;
+  }
+}
+
+.main-nav__wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+
+  
+  @media only screen and (min-width: 700px) {
+    overflow: visible;
+  }
+
+  /* fade-out element on right side of main-nav, only on mobile */
+  @media only screen and (max-width: 700px) {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 51px;
+      width: 100px;
+      pointer-events: none;
+      background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6) );
+    }
+  }
+}
+
+.main-nav {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 6px 6px 15px;
+  margin: 0 0 -9px;
+
+  font-family: $font-regular;
+  text-align: center;
+  list-style: none;
+  background: #9B2E36;
+  
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;  /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */
+  -webkit-transform: translate3d(0,0,0);
+  
+  @media only screen and (min-width: 700px) {
+    margin: 0 0 -24px;
+    display: table;
+    overflow: auto;
+    padding: 6px;
+    margin: 0;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
+    // @include material-card1();
+    border-radius: 9px;
+  }
+}
+
+.main-nav__item {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  text-align: center;
+  margin: 0;
+  padding: 0 3px;
+  // border: 1px solid #ddd;
+
+  &:first-of-type{
+    width: 0.5%;
+    padding-left: 0;
+  }
+
+  &:nth-of-type(2){
+    display: none;
+    padding-left: 0;
+  }
+
+  &:last-of-type{
+    padding-right: 0;
+  }
+}
+
+.main-nav__item--home a {
+  display: block;
+  line-height: 36px;
+  font-size: 21px;
+  color: #fff;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 6px;
+  white-space: nowrap;
+  color: white;
+  font-size: 18px;
+
+  .active &,
+  &:hover {
+    background: white;
+    border-radius: 6px;
+  }
+
+  &:hover {
+    color: currentColor;
+  }
+
+  .active &,
+  .active &:hover {
+    color: $color-logo1 !important;
+  }
+}
+
+/*  Main nav when sticky
+
+.is-sticky .main-nav {
+  position: fixed;
+  max-width: 1200px;
+  top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  @include material-card1();
+}
+
+.main-nav__item--home {
+  display: table-cell;
+  text-align: center;
+  width: 0.001%;
+  opacity: 0;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  
+  a {
+    display: none;
+  }
+}
+
+.is-sticky .main-nav__item--home {
+  width: 1%;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  
+  a {
+    display: inline-block;
+    padding: 0;
+    width: 36px;
+    background: #fff;
+    border-radius: 50%;
+  }
+}
+*/
+
+
+/*------------------------------------*\
+  Sub nav
+\*------------------------------------*/
+
+.sub-nav {
+  display: none;
+  position: absolute;
+  left: -3px;
+  padding: 6px 6px 0;
+  width: 200px;
+  overflow: hidden;
+  // background: currentColor;
+  // background: #C16844; // roof tiles of marseille
+  // background: #A96F58; // Bronze
+  background: #9B2E36;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24)
+}
+
+.sub-nav__item {
+  display: block;
+  position: relative;
+}
+
+.sub-nav__link {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  color: $color-white;
+  
+  &:hover {
+    background: $color-white;
+    // color: currentColor;
+    color: $color-logo1;
+  }
+}
+
+
+.main-nav__item:hover {
+
+  > a {
+    background: white;
+    border-radius: 6px;
+    // color: currentColor;
+    color: $color-logo1;
+  }
+
+  .sub-nav {
+    display: block;
+  }
+}

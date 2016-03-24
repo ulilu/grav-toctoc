@@ -197,138 +197,15 @@ textarea { resize: vertical; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
-.color-logo0 { color: #00aabd !important; }
-
-.color-logo1 { color: #3e0000 !important; }
-
-.color-red0 { color: #3d0000 !important; }
-
-.color-red1 { color: #860714 !important; }
-
-.color-red2 { color: #a62826 !important; }
-
-.color-red3 { color: #c14e46 !important; }
-
-.color-red4 { color: #ffc4bf !important; }
-
-.color-red5 { color: #ffe0de !important; }
-
-.color-orange0 { color: #cc6221 !important; }
-
-.color-orange1 { color: #f58b4a !important; }
-
-.color-orange2 { color: #f8a468 !important; }
-
-.color-orange3 { color: #fab780 !important; }
-
-.color-orange4 { color: #ffdec2 !important; }
-
-.color-orange5 { color: #fff1e8 !important; }
-
-.color-green0 { color: #06756d !important; }
-
-.color-green1 { color: #009c90 !important; }
-
-.color-green2 { color: #18b8ad !important; }
-
-.color-green3 { color: #33ccc8 !important; }
-
-.color-green4 { color: #b8fbff !important; }
-
-.color-green5 { color: #e3feff !important; }
-
-.color-blue0 { color: #097287 !important; }
-
-.color-blue1 { color: #0b90ab !important; }
-
-.color-blue2 { color: #1da5c2 !important; }
-
-.color-blue3 { color: #32bdd9 !important; }
-
-.color-blue4 { color: #87e8fa !important; }
-
-.color-blue5 { color: #c9f6ff !important; }
-
-.color-grey0 { color: #aaaaaa !important; }
-
-.color-grey1 { color: #cccccc !important; }
-
-.color-grey2 { color: #dddddd !important; }
-
-.color-grey3 { color: #e7e7e7 !important; }
-
-.color-grey4 { color: #eeeeee !important; }
-
-.color-grey5 { color: #f8f8f8 !important; }
-
-.color-white { color: #ffffff !important; }
-
-.bgcolor-logo0 { background: #00aabd !important; }
-
-.bgcolor-logo1 { background: #3e0000 !important; }
-
-.bgcolor-red0 { background: #3d0000 !important; }
-
-.bgcolor-red1 { background: #860714 !important; }
-
-.bgcolor-red2 { background: #a62826 !important; }
-
-.bgcolor-red3 { background: #c14e46 !important; }
-
-.bgcolor-red4 { background: #ffc4bf !important; }
-
-.bgcolor-red5 { background: #ffe0de !important; }
-
-.bgcolor-orange0 { background: #cc6221 !important; }
-
-.bgcolor-orange1 { background: #f58b4a !important; }
-
-.bgcolor-orange2 { background: #f8a468 !important; }
-
-.bgcolor-orange3 { background: #fab780 !important; }
-
-.bgcolor-orange4 { background: #ffdec2 !important; }
-
-.bgcolor-orange5 { background: #fff1e8 !important; }
-
-.bgcolor-green0 { background: #06756d !important; }
-
-.bgcolor-green1 { background: #009c90 !important; }
-
-.bgcolor-green2 { background: #18b8ad !important; }
-
-.bgcolor-green3 { background: #33ccc8 !important; }
-
-.bgcolor-green4 { background: #b8fbff !important; }
-
-.bgcolor-green5 { background: #e3feff !important; }
-
-.bgcolor-blue0 { background: #097287 !important; }
-
-.bgcolor-blue1 { background: #0b90ab !important; }
-
-.bgcolor-blue2 { background: #1da5c2 !important; }
-
-.bgcolor-blue3 { background: #32bdd9 !important; }
-
-.bgcolor-blue4 { background: #87e8fa !important; }
-
-.bgcolor-blue5 { background: #c9f6ff !important; }
-
-.bgcolor-grey0 { background: #aaaaaa !important; }
-
-.bgcolor-grey1 { background: #cccccc !important; }
-
-.bgcolor-grey2 { background: #dddddd !important; }
-
-.bgcolor-grey3 { background: #e7e7e7 !important; }
-
-.bgcolor-grey4 { background: #eeeeee !important; }
-
-.bgcolor-grey5 { background: #f8f8f8 !important; }
-
-.bgcolor-white { background: #ffffff !important; }
-
+/******************************************************************************
+*   Breakpoints
+******************************************************************************/
+/******************************************************************************
+*   Units
+******************************************************************************/
+/******************************************************************************
+*   Font sizes
+******************************************************************************/
 /* @import must be at top of file, otherwise CSS will not work */
 @font-face { font-family: 'Linotte-Regular'; src: url("../fonts/2FCE8F_0_0.eot"); src: url("../fonts/2FCE8F_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2FCE8F_0_0.woff2") format("woff2"), url("../fonts/2FCE8F_0_0.woff") format("woff"), url("../fonts/2FCE8F_0_0.ttf") format("truetype"); }
 @font-face { font-family: 'Linotte-Light'; src: url("../fonts/2FCE8F_1_0.eot"); src: url("../fonts/2FCE8F_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2FCE8F_1_0.woff2") format("woff2"), url("../fonts/2FCE8F_1_0.woff") format("woff"), url("../fonts/2FCE8F_1_0.ttf") format("truetype"); }
@@ -357,14 +234,14 @@ a { color: #3e0000; text-decoration: none; }
 a:hover { color: #3e0000; }
 a:active { color: #3e0000; }
 
-b, strong { font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; }
+b, strong { font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; }
 
 ul, ol { margin: 0 0 30px; padding: 0; list-style-position: inside; }
 
 li { margin: 0 0 9px; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; padding: 0; margin: 0; margin: 0 0 24px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif; }
-h1.fa, h2.fa, h3.fa, h4.fa, h5.fa, h6.fa { display: block; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif; font-size: inherit; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; padding: 0; margin: 0; margin: 0 0 24px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h1.fa, h2.fa, h3.fa, h4.fa, h5.fa, h6.fa { display: block; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: inherit; }
 h1[class*="fa-"]:before, h2[class*="fa-"]:before, h3[class*="fa-"]:before, h4[class*="fa-"]:before, h5[class*="fa-"]:before, h6[class*="fa-"]:before { display: inline-block; padding-right: 0.5em; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 h1, h1.fa { font-size: 48px; line-height: 54px; }
@@ -379,13 +256,19 @@ h5, h5.fa { font-size: 21px; line-height: 27px; }
 
 h6, h6.fa { font-size: 18px; line-height: 27px; }
 
-.alpha { font-size: 72px; line-height: 78px; }
+.alpha { font-size: 48px !important; line-height: 54px; }
+@media only screen and (min-width: 450px) { .alpha { font-size: 54px !important; line-height: 60px; } }
+@media only screen and (min-width: 550px) { .alpha { font-size: 72px !important; line-height: 78px; } }
 
-.beta { font-size: 60px; line-height: 66px; }
+.beta { font-size: 42px !important; line-height: 46px; }
+@media only screen and (min-width: 450px) { .beta { font-size: 48px !important; line-height: 54px; } }
+@media only screen and (min-width: 550px) { .beta { font-size: 60px !important; line-height: 66px; } }
 
-.gamma { font-size: 54px; line-height: 60px; }
+.gamma { font-size: 36px !important; line-height: 42px; }
+@media only screen and (min-width: 450px) { .gamma { font-size: 42px !important; line-height: 48px; } }
+@media only screen and (min-width: 550px) { .gamma { font-size: 54px !important; line-height: 60px; } }
 
-.delta { font-size: 48px; line-height: 54px; }
+.delta { font-size: 48px !important; line-height: 54px; }
 
 hr { clear: both; height: 2px; background: #33ccc8; padding: 0; border: 0; margin: 30px 0; }
 hr.has-bullet { margin: 48px 0 18px 60px; }
@@ -457,79 +340,468 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 }
 
 */
-/*---------------------------------------------------------------------------*\ Font declarations
+/*---------------------------------------------------------------------------*\ Generic Styles
 \*---------------------------------------------------------------------------*/
-.Linotte-Regular { font-family: Linotte-Regular; font-weight: normal; font-style: normal; }
+.full { max-width: 100% !important; max-height: 50vmin; }
 
-.Linotte-Light { font-family: Linotte-Light; font-weight: normal; font-style: normal; }
+.four-fifths, .width-80 { width: 80% !important; }
 
-.Linotte-Bold { font-family: Linotte-Bold; font-weight: normal; font-style: normal; }
+.three-quarters, .width-75 { width: 75% !important; }
 
-.Linotte-Heavy { font-family: Linotte-Heavy; font-weight: normal; font-style: normal; }
+.width-70 { width: 70% !important; }
 
-.Linotte-SemiBold { font-family: Linotte-SemiBold; font-weight: normal; font-style: normal; }
+.two-thirds, .width-67 { width: 67% !important; }
 
-/*---------------------------------------------------------------------------*\ Top level elements
-\*---------------------------------------------------------------------------*/
-html { font-family: Linotte-Regular; height: 100%; }
+.three-fifths, .width-60 { width: 60% !important; }
 
-body { position: relative; min-height: 100%; background: #fff; padding-bottom: 60px; }
+.one-half, .width-50 { width: 50% !important; }
 
-.header { position: relative; width: 100%; color: #00aabd; }
+.two-fifths, .width-40 { width: 40% !important; }
 
-.main { position: relative; padding-bottom: 60px; }
+.one-third, .width-33 { width: 33% !important; }
 
-/* [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt */
-.footer { position: absolute; /* [1] */ right: 0; bottom: 0; left: 0; width: 100%; height: 60px; background: #eeeeee; }
+.width-30 { width: 30% !important; }
 
-/*---------------------------------------------------------------------------*\ Wrapper on .page-welcome (similar to .stage on other pages)
-\*---------------------------------------------------------------------------*/
-.wrapper { position: relative; display: block; max-width: 1200px; margin: 0 auto; }
+.one-quarter, .width-25 { width: 25% !important; }
 
-/*------------------------------------*\ Logo
-\*------------------------------------*/
-.logo-main { position: relative; width: 75%; padding-right: 12px; margin: 0; }
-@media only screen and (min-width: 650px) { .logo-main { width: 65%; padding-right: 18px; } }
-@media only screen and (min-width: 750px) { .logo-main { width: 60%; padding-right: 24px; } }
-.logo-main img { display: inline-block; vertical-align: middle; padding: 12px 6px 15px 12px; }
-@media only screen and (min-width: 750px) { .logo-main img { margin-left: 1.8%; } }
-.logo-main a { display: block; color: currentColor; }
+.one-fifth, .width-20 { width: 20% !important; }
 
-[class*="logo-part"] { font-size: 30px; width: 100px; display: inline-block; vertical-align: middle; font-size: 30px; }
-@media only screen and (min-width: 450px) { [class*="logo-part"] { width: auto; font-size: 36px; } }
-@media only screen and (min-width: 700px) { [class*="logo-part"] { font-size: 42px; } }
+/******************************************************************************
+*   Layout classes
+*   Prefixed with l-, usually only containing one single style
+******************************************************************************/
+/************************
+*   Floats (for image / text combinations in backend)
+************************/
+.float-left { float: left !important; margin-right: 30px !important; }
+.float-left + .float-left { margin-right: 0 !important; margin-left: -30px !important; }
 
-.logo-part1 { color: #3e0000; }
+.float-right { float: right !important; margin-left: 30px !important; }
+.float-right + .float-right { margin-left: 0 !important; margin-right: -30px !important; }
 
-.logo-part2 { color: #00aabd; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif; }
+/************************
+*   Alignment
+************************/
+.l-left { float: left !important; }
 
-/*------------------------------------*\ Langswitcher plugin styles - modified
-\*------------------------------------*/
-/* LANGSWITCHER PLUGIN-STYLES MODIFIED */
-.langswitcher { display: block; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif; position: absolute; top: 24px !important; right: 30px !important; list-style: none; margin: 0; }
+.l-right { float: right !important; }
 
-.langswitcher li { display: inline-block; float: left; padding: 0 0 0 24px; }
-.langswitcher li a { color: #3e0000; border-bottom: 1px solid #3e0000; }
+.l-nofloat { float: none !important; }
 
-.langswitcher .active { color: #3e0000; border: none; text-decoration: none; font-weight: normal; }
+.l-center { text-align: center !important; }
 
-/*------------------------------------*\ Main nav
+.l-middle { vertical-align: middle !important; }
+
+/************************
+*   Margins
+************************/
+.l-m_0 { margin: 0 !important; }
+
+.l-m_xs { margin: 6px !important; }
+
+.l-m_s { margin: 12px !important; }
+
+.l-m_m { margin: 18px !important; }
+
+.l-m_l { margin: 24px !important; }
+
+.l-m_xl { margin: 24px !important; }
+
+.l-mt_0 { margin-top: 0 !important; }
+
+.l-mt_xs { margin-top: 6px !important; }
+
+.l-mt_s { margin-top: 12px !important; }
+
+.l-mt_m { margin-top: 18px !important; }
+
+.l-mt_l { margin-top: 24px !important; }
+
+.l-mt_xl { margin-top: 30px !important; }
+
+.l-mt_-xs { margin-top: -6px !important; }
+
+.l-mt_-s { margin-top: -12px !important; }
+
+.l-mt_-m { margin-top: -18px !important; }
+
+.l-mt_-l { margin-top: -24px !important; }
+
+.l-mr_0 { margin-right: 0 !important; }
+
+.l-mr_xs { margin-right: 6px !important; }
+
+.l-mr_s { margin-right: 12px !important; }
+
+.l-mr_m { margin-right: 18px !important; }
+
+.l-mr_l { margin-right: 24px !important; }
+
+.l-mr_xl { margin-right: 30px !important; }
+
+.l-mr_-xs { margin-right: -6px !important; }
+
+.l-mr_-s { margin-right: -12px !important; }
+
+.l-mr_-m { margin-right: -18px !important; }
+
+.l-mr_-l { margin-right: -24px !important; }
+
+.l-mb_0 { margin-bottom: 0 !important; }
+
+.l-mb_xs { margin-bottom: 6px !important; }
+
+.l-mb_s { margin-bottom: 12px !important; }
+
+.l-mb_m { margin-bottom: 18px !important; }
+
+.l-mb_l { margin-bottom: 24px !important; }
+
+.l-mb_xl { margin-bottom: 30px !important; }
+
+.l-mb_-xs { margin-bottom: -6px !important; }
+
+.l-mb_-s { margin-bottom: -12px !important; }
+
+.l-mb_-m { margin-bottom: -18px !important; }
+
+.l-mb_-l { margin-bottom: -24px !important; }
+
+.l-ml_0 { margin-left: 0 !important; }
+
+.l-ml_xs { margin-left: 6px !important; }
+
+.l-ml_s { margin-left: 12px !important; }
+
+.l-ml_m { margin-left: 18px !important; }
+
+.l-ml_l { margin-left: 24px !important; }
+
+.l-ml_xl { margin-left: 30px !important; }
+
+.l-ml_-xs { margin-left: -6px !important; }
+
+.l-ml_-s { margin-left: -12px !important; }
+
+.l-ml_-m { margin-left: -18px !important; }
+
+.l-ml_-l { margin-left: -24px !important; }
+
+/************************
+*   Paddings
+************************/
+.l-p_0 { padding: 0 !important; }
+
+.l-p_xs { padding: 6px !important; }
+
+.l-p_s { padding: 12px !important; }
+
+.l-p_m { padding: 18px !important; }
+
+.l-p_l { padding: 24px !important; }
+
+.l-p_xl { padding: 30px !important; }
+
+.l-pt_0 { padding-top: 0 !important; }
+
+.l-pt_xs { padding-top: 6px !important; }
+
+.l-pt_s { padding-top: 12px !important; }
+
+.l-pt_m { padding-top: 18px !important; }
+
+.l-pt_l { padding-top: 24px !important; }
+
+.l-pt_xl { padding-top: 30px !important; }
+
+.l-pt_-xs { padding-top: -6px !important; }
+
+.l-pt_-s { padding-top: -12px !important; }
+
+.l-pt_-m { padding-top: -18px !important; }
+
+.l-pt_-l { padding-top: -24px !important; }
+
+.l-pr_0 { padding-right: 0 !important; }
+
+.l-pr_xs { padding-right: 6px !important; }
+
+.l-pr_s { padding-right: 12px !important; }
+
+.l-pr_m { padding-right: 18px !important; }
+
+.l-pr_l { padding-right: 24px !important; }
+
+.l-pr_xl { padding-right: 30px !important; }
+
+.l-pr_-xs { padding-right: -6px !important; }
+
+.l-pr_-s { padding-right: -12px !important; }
+
+.l-pr_-m { padding-right: -18px !important; }
+
+.l-pr_-l { padding-right: -24px !important; }
+
+.l-pb_0 { padding-bottom: 0 !important; }
+
+.l-pb_xs { padding-bottom: 6px !important; }
+
+.l-pb_s { padding-bottom: 12px !important; }
+
+.l-pb_m { padding-bottom: 18px !important; }
+
+.l-pb_l { padding-bottom: 24px !important; }
+
+.l-pb_xl { padding-bottom: 30px !important; }
+
+.l-pb_-xs { padding-bottom: -6px !important; }
+
+.l-pb_-s { padding-bottom: -12px !important; }
+
+.l-pb_-m { padding-bottom: -18px !important; }
+
+.l-pb_-l { padding-bottom: -24px !important; }
+
+.l-pl_0 { padding-left: 0 !important; }
+
+.l-pl_xs { padding-left: 6px !important; }
+
+.l-pl_s { padding-left: 12px !important; }
+
+.l-pl_m { padding-left: 18px !important; }
+
+.l-pl_l { padding-left: 24px !important; }
+
+.l-pl_xl { padding-left: 30px !important; }
+
+.l-pl_-xs { padding-left: -6px !important; }
+
+.l-pl_-s { padding-left: -12px !important; }
+
+.l-pl_-m { padding-left: -18px !important; }
+
+.l-pl_-l { padding-left: -24px !important; }
+
+/************************
+*   Layout helper class
+*   Display as inline block
+*   Necessary to be able to apply padding/margin to <em>, <strong>, <span>
+************************/
+.l-d_ib { display: inline-block !important; }
+
+.l-d_b { display: block !important; }
+
+/************************
+*   Layout helper class
+*   Disable automatic linking of potential telephone numbers
+************************/
+.disable-link { pointer-events: none; text-decoration: none; color: inherit; }
+
+/************************
+*   Color classes
+************************/
+.color-logo0 { color: #00aabd !important; }
+
+.color-logo1 { color: #3e0000 !important; }
+
+.color-red0 { color: #3d0000 !important; }
+
+.color-red1 { color: #860714 !important; }
+
+.color-red2 { color: #a62826 !important; }
+
+.color-red3 { color: #c14e46 !important; }
+
+.color-red4 { color: #ffc4bf !important; }
+
+.color-red5 { color: #ffe0de !important; }
+
+.color-orange0 { color: #cc6221 !important; }
+
+.color-orange1 { color: #f58b4a !important; }
+
+.color-orange2 { color: #f8a468 !important; }
+
+.color-orange3 { color: #fab780 !important; }
+
+.color-orange4 { color: #ffdec2 !important; }
+
+.color-orange5 { color: #fff1e8 !important; }
+
+.color-green0 { color: #06756d !important; }
+
+.color-green1 { color: #009c90 !important; }
+
+.color-green2 { color: #18b8ad !important; }
+
+.color-green3 { color: #33ccc8 !important; }
+
+.color-green4 { color: #b8fbff !important; }
+
+.color-green5 { color: #e3feff !important; }
+
+.color-blue0 { color: #097287 !important; }
+
+.color-blue1 { color: #0b90ab !important; }
+
+.color-blue2 { color: #1da5c2 !important; }
+
+.color-blue3 { color: #32bdd9 !important; }
+
+.color-blue4 { color: #87e8fa !important; }
+
+.color-blue5 { color: #c9f6ff !important; }
+
+.color-grey0 { color: #aaaaaa !important; }
+
+.color-grey1 { color: #cccccc !important; }
+
+.color-grey2 { color: #dddddd !important; }
+
+.color-grey3 { color: #e7e7e7 !important; }
+
+.color-grey4 { color: #eeeeee !important; }
+
+.color-grey5 { color: #f8f8f8 !important; }
+
+.bgcolor-logo0 { background: #00aabd !important; }
+
+.bgcolor-logo1 { background: #3e0000 !important; }
+
+.bgcolor-red0 { background: #3d0000 !important; }
+
+.bgcolor-red1 { background: #860714 !important; }
+
+.bgcolor-red2 { background: #a62826 !important; }
+
+.bgcolor-red3 { background: #c14e46 !important; }
+
+.bgcolor-red4 { background: #ffc4bf !important; }
+
+.bgcolor-red5 { background: #ffe0de !important; }
+
+.bgcolor-orange0 { background: #cc6221 !important; }
+
+.bgcolor-orange1 { background: #f58b4a !important; }
+
+.bgcolor-orange2 { background: #f8a468 !important; }
+
+.bgcolor-orange3 { background: #fab780 !important; }
+
+.bgcolor-orange4 { background: #ffdec2 !important; }
+
+.bgcolor-orange5 { background: #fff1e8 !important; }
+
+.bgcolor-green0 { background: #06756d !important; }
+
+.bgcolor-green1 { background: #009c90 !important; }
+
+.bgcolor-green2 { background: #18b8ad !important; }
+
+.bgcolor-green3 { background: #33ccc8 !important; }
+
+.bgcolor-green4 { background: #b8fbff !important; }
+
+.bgcolor-green5 { background: #e3feff !important; }
+
+.bgcolor-blue0 { background: #097287 !important; }
+
+.bgcolor-blue1 { background: #0b90ab !important; }
+
+.bgcolor-blue2 { background: #1da5c2 !important; }
+
+.bgcolor-blue3 { background: #32bdd9 !important; }
+
+.bgcolor-blue4 { background: #87e8fa !important; }
+
+.bgcolor-blue5 { background: #c9f6ff !important; }
+
+.bgcolor-grey0 { background: #aaaaaa !important; }
+
+.bgcolor-grey1 { background: #cccccc !important; }
+
+.bgcolor-grey2 { background: #dddddd !important; }
+
+.bgcolor-grey3 { background: #e7e7e7 !important; }
+
+.bgcolor-grey4 { background: #eeeeee !important; }
+
+.bgcolor-grey5 { background: #f8f8f8 !important; }
+
+/************************
+*   Additional color classes
+************************/
+.color-red { color: #e01e25 !important; }
+
+.color-yellow { color: #fec73a !important; }
+
+.color-green { color: #7bb729 !important; }
+
+.color-blue { color: #1f79bf !important; }
+
+.color-pink { color: #eb48dd !important; }
+
+.color-beige { color: #f3e5c0 !important; }
+
+.color-orange { color: #f98231 !important; }
+
+.color-brown { color: #7c4b33 !important; }
+
+.color-purple { color: #782cfb !important; }
+
+.color-turquoise { color: #00c5e9 !important; }
+
+.color-black { color: #000 !important; }
+
+.color-grey { color: #808080 !important; }
+
+.color-white { color: #fff !important; }
+
+.bgolor-red { background-color: #e01e25 !important; }
+
+.bgolor-yellow { background-color: #fec73a !important; }
+
+.bgolor-green { background-color: #7bb729 !important; }
+
+.bgolor-blue { background-color: #1f79bf !important; }
+
+.bgolor-pink { background-color: #eb48dd !important; }
+
+.bgolor-beige { background-color: #f3e5c0 !important; }
+
+.bgolor-orange { background-color: #f98231 !important; }
+
+.bgolor-brown { background-color: #7c4b33 !important; }
+
+.bgolor-purple { background-color: #782cfb !important; }
+
+.bgolor-turquoise { background-color: #00c5e9 !important; }
+
+.bgolor-black { background-color: #000 !important; }
+
+.bgolor-grey { background-color: #808080 !important; }
+
+.bgolor-white { background-color: #fff !important; }
+
+/*------------------------------------*\ Main nav w/ priority+ menu
 \*------------------------------------*/
 .nav-bar { position: relative; height: 51px; }
 @media only screen and (min-width: 1200px) { .nav-bar { overflow: visible; } }
 
-.main-nav__wrapper { position: relative; z-index: 2; width: 100%; overflow: hidden; }
+.main-nav__wrapper { position: relative; z-index: 2; width: 100%; overflow: hidden; /* fade-out element on right side of main-nav, only on mobile */ }
 @media only screen and (min-width: 700px) { .main-nav__wrapper { overflow: visible; } }
 @media only screen and (max-width: 700px) { .main-nav__wrapper:after { content: ""; display: block; position: absolute; right: 0; top: 0; height: 51px; width: 100px; pointer-events: none; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.6)); } }
 
-.main-nav { position: relative; display: block; width: 100%; padding: 6px; margin: 0; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif; text-align: center; list-style: none; background: #9B2E36; transition: all 0.2s ease-in-out; white-space: nowrap; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
-@media only screen and (min-width: 700px) { .main-nav { display: table; overflow: auto; } }
+.main-nav { position: relative; display: block; width: 100%; padding: 6px 6px 15px; margin: 0 0 -9px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; list-style: none; background: #9B2E36; transition: all 0.2s ease-in-out; white-space: nowrap; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
+@media only screen and (min-width: 700px) { .main-nav { margin: 0 0 -24px; display: table; overflow: auto; padding: 6px; margin: 0; } }
 @media only screen and (min-width: 1200px) { .main-nav { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24); border-radius: 9px; } }
 
 .main-nav__item { position: relative; display: table-cell; vertical-align: middle; width: 1%; text-align: center; margin: 0; padding: 0 3px; }
-.main-nav__item:first-of-type { display: none; padding-left: 0; }
-.main-nav__item:nth-of-type(2) { padding-left: 0; }
+.main-nav__item:first-of-type { width: 0.5%; padding-left: 0; }
+.main-nav__item:nth-of-type(2) { display: none; padding-left: 0; }
 .main-nav__item:last-of-type { padding-right: 0; }
+
+.main-nav__item--home a { display: block; line-height: 36px; font-size: 21px; color: #fff; text-align: center; padding: 0 12px; }
 
 .main-nav__link { display: block; padding: 6px; white-space: nowrap; color: white; font-size: 18px; }
 .active .main-nav__link, .main-nav__link:hover { background: white; border-radius: 6px; }
@@ -558,135 +830,6 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 .main-nav__item:hover > a { background: white; border-radius: 6px; color: #3e0000; }
 .main-nav__item:hover .sub-nav { display: block; }
-
-/*---------------------------------------------------------------------------*\ Different page colors
-\*---------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------*\ New additional colors (mostly pastels)
-\*---------------------------------------------------------------------------*/
-/*
-toctocMenü   #9B2E36
-text:     #FFE8E8
-
-bienvenue < start:      #FCF6E7   (façades)
-
-bienvenue < services:     #F1E4C6   (sable)
-
-bienvenue < examples:     #948EBD   (lavende)
-
-bienvenue < comment     #B5BF52   (olives)
-
-bienvenue < temoignages     #FFFB9F   (pastis)
-*/
-/*---------------------------------------------------------------------------*\ General block element to set unified position, padding & margin across all pages
-\*---------------------------------------------------------------------------*/
-.block { margin: 0 auto; max-width: 1200px; padding: 30px; /* Collapse bottom-margin on every direct :last-child */ }
-.block:before, .block:after { content: " "; display: table; }
-.block:after { clear: both; }
-.block > *:last-child { margin-bottom: 0; }
-.footer .block { padding: 18px 24px 16px; }
-
-/* While a regular block is limited to 1200px width, .block--strech fills the entire width of the browser-window. It should be used to set different background (colors, images) to different sections within a page. */
-.block--stretch { margin: 0; max-width: 100%; overflow: hidden; /* for intended use of cropped icons in background */ }
-
-/* When using .block-stretch, you can have a second .block inside it, to keep the centered positioning of the content block. */
-.block > .block { padding: 0; }
-@media only screen and (min-width: 1200px) { .block > .block { max-width: 1140px; } }
-
-/*---------------------------------------------------------------------------*\ .cell This is a wrapper element, to appear within .block. Use in conjunction with the single properties classes like "width-50"
-\*---------------------------------------------------------------------------*/
-.cell { display: table-cell; width: 100%; }
-
-.cell--padded { padding: 24px; }
-
-.cell--feature { padding: 24px; background: #18b8a0; color: #fff; margin: 0 0 24px; }
-.cell--feature > *:last-child { margin-bottom: 0; padding-bottom: 0; }
-
-.cell--info { padding: 24px; background: #EEEEEE; margin: 0 0 24px; }
-.cell--info > *:last-child { margin-bottom: 0; padding-bottom: 0; }
-
-/*---------------------------------------------------------------------------*\ Page adaptations
-\*---------------------------------------------------------------------------*/
-/*------------------------------------*\ Welcome page
-\*------------------------------------*/
-.page-welcome .block--service { padding-top: 48px; color: #fff; background-color: #F1E4C6; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' id='bonne-mere' viewBox='0 0 864 864'%3E %3Cpath fill='%23FCF6E7' d='M827 289.6v2c0 10-7 19-12 24v486c0 7-5 12-12 12H59c-7 0-12-5-12-12v-276c0-5 3-9 7-11l11-5v-104c0-22 7-60 26-93s45-52 76-56v-7c0-7 5-12 12-12s12 5 12 12v7c31 4 57 23 76 56s26 70 26 93v48h330v-138c-5-5-12-14-12-24v-3c0-8-1-23 2-38 5-27 19-35 29-37 9-2 18 1 25 6 1 2 3 3 4 5v-29c0-6 5-11 11-12-1-4-3-9-4-14-2-4-1-8 1-11s5-4 8-5l4-41c-2-4-4-14-5-22 0-10-1-16 4-23 1-2 2-3 3-4-2-3-3-7-3-12 0-16 13-30 29-30s29 14 29 30c0 5-1 9-3 12 1 1 2 2 3 4 5 7 4 13 4 23-1 8-3 18-5 22l4 41c3 1 6 2 8 5s3 7 1 11c-1 5-3 10-4 14 6 1 11 6 11 12v28l3-3c5-4 13-9 25-7 33 5 32 58 32 76zm-566 308v192h26v-257l-108-54-108 54v257h26v-192c0-45 37-82 82-82s82 37 82 82zm-172-100l85-43c3-1 7-1 10 0l85 43v-81l-24-36-16 24c-2 3-4 4-7 5-3 0-6-1-8-4l-35-39-35 39c-2 3-5 4-8 4-3-1-5-2-7-5l-16-24-24 36v81zm3-120l13-19c2-3 5-5 8-5s6 2 8 5l17 25 34-38c2-2 4-4 7-4s5 2 7 4l34 38 17-25c2-3 5-4 8-4s6 1 8 4l13 19c-3-16-9-35-19-53-12-20-34-45-68-45s-56 25-68 45c-10 18-16 37-19 53zm31 46v18c0 5-5 10-10 10s-10-5-10-10v-18c0-5 5-10 10-10s10 5 10 10zm118 174c0-34-28-62-62-62s-62 28-62 62v192h124v-192zm-74 42v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm12-24c-13 0-24-11-24-24s11-24 24-24 24 11 24 24-11 24-24 24zm12-186c0 7-5 12-12 12s-12-5-12-12v-18c0-7 5-12 12-12s12 5 12 12v18zm24 210v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm20-198v-18c0-5 5-10 10-10s10 5 10 10v18c0 5-5 10-10 10s-10-5-10-10zm58 36v32l11 5c4 2 7 6 7 11v30h312v-78h-26v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-32zm230 154c12-19 32-32 56-32 17 0 32 7 44 17v-37H311v37c12-10 27-17 44-17 24 0 44 13 56 32 12-19 32-32 56-32s44 13 56 32zm-122 34c0-26-20-46-46-46-20 0-38 13-44 31v139h90v-124zm-34 10v36c0 7-5 12-12 12s-12-5-12-12v-36c0-7 5-12 12-12s12 5 12 12zm146-10c0-26-20-46-46-46s-46 20-46 46v124h92v-124zm-34 10v36c0 7-5 12-12 12s-12-5-12-12v-36c0-7 5-12 12-12s12 5 12 12zm54 114h90v-139c-6-18-24-31-44-31-26 0-46 20-46 46v124zm34-78v-36c0-7 6-12 12-12 7 0 12 5 12 12v36c0 7-5 12-12 12-6 0-12-5-12-12zm68-424v4c0 2 4 6 7 8h155c3-3 6-6 6-8v-2c0-7 0-21-2-34-2-10-6-18-9-18-4-1-6 0-6 1-3 2-6 9-6 29 0 5-3 9-7 11-2 1-4 1-6 1h-96c-1 0-3 0-4-1-5-1-8-6-8-11 0-14-3-26-8-29 0-1-1-2-5-1-3 0-12 6-11 50zm156 502v-470H647v470h20v-54c0-28 24-52 52-52s52 24 52 52v54h20zm-102-432v48c0 7-5 12-12 12s-12-5-12-12v-48c0-7 5-12 12-12s12 5 12 12zm62 378c0-18-14-32-32-32s-32 14-32 32v54h64v-54zm-56-480h48v-50c-7-3-12-9-12-16 0-3 1-7 2-12h-28c1 5 2 9 2 12 0 7-5 13-12 16v50zm10-167c0 7 3 17 4 20 1 1 1 3 1 4l-4 41h26l-4-41c0-1 0-3 1-4 1-3 4-13 4-20 1-8 0-9-1-11l-5-4c-3-1-5-4-5-7-1-4 1-7 4-9 1-1 4-3 4-6 0-5-5-11-11-11s-11 6-11 11c0 3 4 6 4 6 3 2 5 5 4 9 0 3-2 6-5 7-2 1-4 3-5 4-1 2-2 3-1 11zm26 269v48c0 7-5 12-12 12s-12-5-12-12v-48c0-7 5-12 12-12s12 5 12 12zm0 120v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm0 108v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm42-228v48c0 7-5 12-12 12s-12-5-12-12v-48c0-7 5-12 12-12s12 5 12 12z'/%3E %3C/svg%3E"); background-size: 420px; background-position: 95% 54px; background-repeat: no-repeat; }
-.page-welcome .block--example { background-color: #858AA5; }
-.page-welcome .block--example h1 { color: #fff; }
-
-.example__info { padding: 0 18px 0px; }
-
-/*------------------------------------*\ Hero element (similar to .stage)
-\*------------------------------------*/
-.hero { z-index: 1; position: relative; margin: -24px 0 0; }
-.hero > .wrapper { height: 0; height: 70vH; max-height: 300px; transition: all 0.3s ease-in-out; }
-@media only screen and (min-width: 600px) { .hero > .wrapper { max-height: 400px; } }
-@media only screen and (min-width: 900px) { .hero > .wrapper { max-height: 500px; } }
-.hero h1, .hero h2 { position: absolute; bottom: 9vw; left: 30px; z-index: 10; font-size: 6.5vw; line-height: 130%; padding-right: 30px; text-shadow: 1px 0 6px #000; }
-@media only screen and (min-width: 1200px) { .hero h1, .hero h2 { font-size: 80px; bottom: 110px; } }
-.hero h2 { display: inline-block; bottom: 2vW; font-size: 2.8vW; max-width: 90%; }
-@media only screen and (min-width: 1200px) { .hero h2 { font-size: 30px; bottom: 36px; max-width: 100%; } }
-
-/*------------------------------------*\ Hero Image & Fade
-\*------------------------------------*/
-.hero-bg video, .hero-bg img { position: absolute; display: inline-block; top: 0; left: 0; width: 100%; height: 70vH; object-fit: cover; max-height: 300px; transition: all 0.3s ease-in-out; }
-@media only screen and (min-width: 600px) { .hero-bg video, .hero-bg img { max-height: 400px; } }
-@media only screen and (min-width: 900px) { .hero-bg video, .hero-bg img { max-height: 500px; } }
-.hero-bg img + img { -webkit-mask: -webkit-linear-gradient(transparent 40%, black 70%); -webkit-mask: linear-gradient(transparent 40%, black 70%); -webkit-filter: blur(6px); mask: url("#mask-linear"); filter: url("#filtre2"); }
-.hero-bg:after { content: ""; display: block; width: 100%; position: absolute; left: 0; top: 50%; right: 0; bottom: 0; background: linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.4) 100%); }
-
-/* Welcome Video on Homepage */
-.video-container { float: right; width: calc(50% - 30px); margin: 42px 0 24px 30px; }
-
-.video-wrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; }
-
-.video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
-/*---------------------------------------------------------------------------*\ Stage - used on example.twig.html
-\*---------------------------------------------------------------------------*/
-.stage { position: relative; height: 70vH; max-height: 300px; margin: -24px auto 0; transition: all 0.3s ease-in-out; }
-@media only screen and (min-width: 600px) { .stage { max-height: 400px; } }
-@media only screen and (min-width: 900px) { .stage { max-height: 500px; } }
-@media only screen and (min-width: 1200px) { .stage { max-height: 600px; } }
-.stage h1 { position: absolute; bottom: 30px; z-index: 2; color: #fff; margin: 0 auto; text-shadow: 1px 0 6px #000; width: calc(100% - 60px); max-width: 1200px; left: calc(50%); transform: translateX(-50%); }
-.stage:after { content: ""; display: block; width: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.5) 95%); }
-.stage img { width: 100%; height: 70vH; max-height: 300px; object-fit: cover; object-position: center; transition: all 0.3s ease-in-out; }
-@media only screen and (min-width: 600px) { .stage img { max-height: 400px; } }
-@media only screen and (min-width: 900px) { .stage img { max-height: 500px; } }
-@media only screen and (min-width: 1200px) { .stage img { max-height: 600px; } }
-.stage img.top { object-position: top; }
-.stage img.bottom { object-position: bottom; }
-.stage img + img { display: none; }
-
-/*---------------------------------------------------------------------------*\ General Image Styles
-\*---------------------------------------------------------------------------*/
-.full { max-width: 100% !important; max-height: 50vmin; }
-
-.float-left { float: left !important; margin-right: 30px !important; }
-.float-left + .float-left { margin-right: 0 !important; margin-left: -30px !important; }
-
-.float-right { float: right !important; margin-left: 30px !important; }
-.float-right + .float-right { margin-left: 0 !important; margin-right: -30px !important; }
-
-.width-50 { width: 50% !important; }
-
-.width-40 { width: 40% !important; }
-
-.width-60 { width: 60% !important; }
-
-.width-33 { width: 33% !important; }
-
-.width-67 { width: 67% !important; }
-
-.width-30 { width: 30% !important; }
-
-.width-70 { width: 70% !important; }
-
-.width-25 { width: 25% !important; }
-
-.width-75 { width: 75% !important; }
-
-.width-20 { width: 20% !important; }
-
-.width-80 { width: 80% !important; }
 
 /*---------------------------------------------------------------------------*\ Image row with table-cell-spacing: Each image gets an equal width
 \*---------------------------------------------------------------------------*/
@@ -787,15 +930,160 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 .row-50-30-20 > *:nth-child(2) { width: 30% !important; }
 .row-50-30-20 > *:nth-child(3) { width: 20% !important; }
 
+/*------------------------------------*\ Logo
+\*------------------------------------*/
+.logo-main { position: relative; width: 75%; padding-right: 12px; margin: 0; }
+@media only screen and (min-width: 650px) { .logo-main { width: 65%; padding-right: 18px; } }
+@media only screen and (min-width: 750px) { .logo-main { width: 60%; padding-right: 24px; } }
+.logo-main img { display: inline-block; vertical-align: middle; padding: 12px 6px 15px 12px; }
+@media only screen and (min-width: 750px) { .logo-main img { margin-left: 1.8%; } }
+.logo-main a { display: block; color: currentColor; }
+
+[class*="logo-part"] { font-size: 30px; width: 100px; display: inline-block; vertical-align: middle; font-size: 30px; }
+@media only screen and (min-width: 500px) { [class*="logo-part"] { width: auto; font-size: 36px; } }
+@media only screen and (min-width: 700px) { [class*="logo-part"] { font-size: 42px; } }
+
+.logo-part1 { color: #3e0000; }
+
+.logo-part2 { color: #00aabd; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/*------------------------------------*\ Langswitcher plugin styles - modified
+\*------------------------------------*/
+/* LANGSWITCHER PLUGIN-STYLES MODIFIED */
+.langswitcher { display: table; position: absolute; top: 0; right: 30px; height: 90px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; list-style: none; margin: 0; }
+
+.langswitcher li { display: table-cell; position: relative; line-height: 24px; vertical-align: middle; padding: 0 0 0 24px; margin: 0; }
+.langswitcher li a { color: #00aabd; border-bottom: 1px solid #ccc; }
+.langswitcher li a:hover { border-bottom: 1px solid #00aabd; }
+
+.full-lang { display: none; }
+
+.short-lang { display: inline-block; }
+
+@media only screen and (min-width: 700px) { .full-lang { display: inline-block; }
+  .short-lang { display: none; } }
+.langswitcher .active { color: #333; border: none; text-decoration: none; cursor: default; font-family: Linotte-Semibold; border-bottom: 1px solid #fff !important; }
+
+/*---------------------------------------------------------------------------*\ Font declarations
+\*---------------------------------------------------------------------------*/
+.Linotte-Light, .font-light { font-family: Linotte-Light; font-weight: normal; font-style: normal; }
+
+.Linotte-Regular, .font-regular { font-family: Linotte-Regular; font-weight: normal; font-style: normal; }
+
+.Linotte-SemiBold, .font-semibold { font-family: Linotte-SemiBold; font-weight: normal; font-style: normal; }
+
+.Linotte-Bold, .font-bold { font-family: Linotte-Bold; font-weight: normal; font-style: normal; }
+
+.Linotte-Heavy, .font-heavy { font-family: Linotte-Heavy; font-weight: normal; font-style: normal; }
+
+/*---------------------------------------------------------------------------*\ Top level elements
+\*---------------------------------------------------------------------------*/
+html { font-family: Linotte-Regular; height: 100%; }
+
+body { position: relative; min-height: 100%; background: #fff; padding-bottom: 60px; }
+
+.header { position: relative; width: 100%; }
+
+.main { position: relative; padding-bottom: 60px; }
+
+/* [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt */
+.footer { position: absolute; /* [1] */ right: 0; bottom: 0; left: 0; width: 100%; height: 60px; background: #eeeeee; }
+
+/*---------------------------------------------------------------------------*\ Wrapper on .page-welcome (similar to .stage on other pages)
+\*---------------------------------------------------------------------------*/
+.wrapper { position: relative; display: block; max-width: 1200px; margin: 0 auto; }
+
+/*---------------------------------------------------------------------------*\ General block element to set unified position, padding & margin across all pages
+\*---------------------------------------------------------------------------*/
+.block { margin: 0 auto; max-width: 1200px; padding: 30px; /* Collapse bottom-margin on every direct :last-child */ }
+.block:before, .block:after { content: " "; display: table; }
+.block:after { clear: both; }
+.block > *:last-child { margin-bottom: 0; }
+.footer .block { padding: 18px 24px 16px; }
+
+/* While a regular block is limited to 1200px width, .block--strech fills the entire width of the browser-window. It should be used to set different background (colors, images) to different sections within a page. */
+.block--stretch { margin: 0; max-width: 100%; overflow: hidden; /* for intended use of cropped icons in background */ }
+
+/* When using .block-stretch, you can have a second .block inside it, to keep the centered positioning of the content block. */
+.block > .block { padding: 0; }
+@media only screen and (min-width: 1200px) { .block > .block { max-width: 1140px; } }
+
+.block--scroll { overflow-x: scroll; overflow-y: hidden; width: 100%; margin: 0 0 -24px !important; /* to hide otherwise visible scrollbar */ max-width: 100% !important; }
+
+.block__scroll-wrapper { white-space: nowrap; position: relative; vertical-align: top; margin-bottom: 48px; /* to make room for hidden scrollbar, see above */ padding: 0 30px; }
+@media only screen and (min-width: 1200px) { .block__scroll-wrapper { padding-left: calc((100vw - 1146px) / 2); padding-right: calc((100vw - 1146px) / 2); } }
+
+/*---------------------------------------------------------------------------*\ .cell This is a wrapper element, to appear within .block. Use in conjunction with the single properties classes like "width-50"
+\*---------------------------------------------------------------------------*/
+.cell { display: table-cell !important; width: 100%; }
+
+.cell--padded { padding: 24px; }
+
+.cell--feature { padding: 24px; background: #18b8a0; color: #fff; margin: 0 0 24px; }
+.cell--feature > *:last-child { margin-bottom: 0; padding-bottom: 0; }
+
+.cell--info { padding: 24px; background: #EEEEEE; margin: 0 0 24px; }
+.cell--info > *:last-child { margin-bottom: 0; padding-bottom: 0; }
+
 /*---------------------------------------------------------------------------*\ Card - used on example.twig.html
 \*---------------------------------------------------------------------------*/
-.card { display: block; position: relative; float: left; background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); transition: all 0.2s ease-in-out; }
+.card { display: block; position: relative; float: left; background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); transition: all 0.2s ease-in-out; min-width: 272px; /* one card visible on iphone3 with 320px screenwidth*/ margin-bottom: 24px; }
 .card:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-.card img { position: relative; width: 100%; padding: 0 0 12px; border-top-left-radius: 6px; border-top-right-radius: 6px; transition: all 0.3s ease-in-out; }
-.card:hover > img { transform: scale(110%); }
 .card.width-25 { width: 22%; width: -webkit-calc(25% - 18px) !important; width: calc(25% - 18px) !important; margin-right: 24px; }
 .card.width-33 { width: 30%; width: -webkit-calc(33.33% - 16px) !important; width: calc(33.33% - 16px) !important; margin-right: 24px; }
+.card.width-33:nth-child(4n) { margin-right: 0; }
+.card.width-33:nth-child(5n) { clear: both; }
 .card[class*='width-']:last-of-type { margin-right: 0 !important; }
+
+.card__img { border-top-left-radius: 5px; border-top-right-radius: 5px; overflow: hidden; /* this fixes the overflow:hidden in Chrome */ -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); }
+.card__img img { position: relative; display: inline-block; width: 100%; max-height: 320px; object-fit: cover; padding: 0 0 12px; transition-duration: 0.5s; transform: scale(1); transform-origin: 50% 100%; }
+.card:hover .card__img img { transform: scale(1.1); transform-origin: 50% 100%; /* pan towards bottom of image */ }
+
+.card__info { padding: 0 18px 0px; }
+.card__info h3 { font-size: 24px; line-height: 30px; }
+
+/*------------------------------------*\ Hero element (similar to .stage)
+\*------------------------------------*/
+.hero { z-index: 1; position: relative; margin: -24px 0 0; }
+.hero > .wrapper { height: 0; height: 70vH; max-height: 300px; transition: all 0.3s ease-in-out; }
+@media only screen and (min-width: 600px) { .hero > .wrapper { max-height: 400px; } }
+@media only screen and (min-width: 900px) { .hero > .wrapper { max-height: 500px; } }
+.hero h1, .hero h2 { position: absolute; bottom: 9vw; left: 30px; z-index: 10; font-size: 6.5vw; line-height: 130%; padding-right: 30px; text-shadow: 1px 0 6px #000; }
+@media only screen and (min-width: 1200px) { .hero h1, .hero h2 { font-size: 80px; bottom: 110px; } }
+.hero h2 { display: inline-block; bottom: 2vW; font-size: 2.8vW; max-width: 90%; }
+@media only screen and (min-width: 1200px) { .hero h2 { font-size: 30px; bottom: 36px; max-width: 100%; } }
+
+/*------------------------------------*\ Hero Image & Fade
+\*------------------------------------*/
+.hero-bg video, .hero-bg img { position: absolute; display: inline-block; top: 0; left: 0; width: 100%; height: 70vH; object-fit: cover; max-height: 300px; transition: all 0.3s ease-in-out; }
+@media only screen and (min-width: 600px) { .hero-bg video, .hero-bg img { max-height: 400px; } }
+@media only screen and (min-width: 900px) { .hero-bg video, .hero-bg img { max-height: 500px; } }
+.hero-bg img + img { -webkit-mask: -webkit-linear-gradient(transparent 40%, black 70%); -webkit-mask: linear-gradient(transparent 40%, black 70%); -webkit-filter: blur(6px); mask: url("#mask-linear"); filter: url("#filtre2"); }
+.hero-bg:after { content: ""; display: block; width: 100%; position: absolute; left: 0; top: 50%; right: 0; bottom: 0; background: linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.4) 100%); }
+
+/* Welcome Video on Homepage */
+.video-container { width: 100%; margin: 0 0 30px; }
+@media only screen and (min-width: 650px) { .video-container { float: right; width: calc(50% - 30px); margin: 72px 0 24px 30px; } }
+
+.video-wrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; }
+
+.video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/*---------------------------------------------------------------------------*\ Stage - used on example.twig.html
+\*---------------------------------------------------------------------------*/
+.stage { position: relative; height: 70vH; max-height: 300px; margin: -24px auto 0; transition: all 0.3s ease-in-out; }
+@media only screen and (min-width: 600px) { .stage { max-height: 400px; } }
+@media only screen and (min-width: 900px) { .stage { max-height: 500px; } }
+@media only screen and (min-width: 1200px) { .stage { max-height: 600px; } }
+.stage h1 { position: absolute; bottom: 30px; z-index: 2; color: #fff; margin: 0 auto; text-shadow: 1px 0 6px #000; width: calc(100% - 60px); max-width: 1200px; left: calc(50%); transform: translateX(-50%); }
+.stage:after { content: ""; display: block; width: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.5) 95%); }
+.stage img { width: 100%; height: 70vH; max-height: 300px; object-fit: cover; object-position: center; transition: all 0.3s ease-in-out; }
+@media only screen and (min-width: 600px) { .stage img { max-height: 400px; } }
+@media only screen and (min-width: 900px) { .stage img { max-height: 500px; } }
+@media only screen and (min-width: 1200px) { .stage img { max-height: 600px; } }
+.stage img.top { object-position: top; }
+.stage img.bottom { object-position: bottom; }
+.stage img + img { display: none; }
 
 /*---------------------------------------------------------------------------*\ Text / Headline styles (used on page-example)
 \*---------------------------------------------------------------------------*/
@@ -815,23 +1103,29 @@ ul p { margin-bottom: 0; }
 
 .lSSlideOuter .lSPager.lSpg > li a { height: 12px !important; width: 12px !important; border-radius: 100% !important; }
 
-/*------------------------------------*\ Contact page
+/*------------------------------------*\ Services link
 \*------------------------------------*/
-.map { max-width: 100%; height: 400px; margin: 0 0 30px; }
+.icon--service { float: left; width: 54px; height: 54px; margin: -6px 12px 18px -3px; }
+@media only screen and (min-width: 550px) { .icon--service { width: 60px; height: 60px; margin: -6px 18px 18px -6px; } }
+@media only screen and (min-width: 550px) { .icon--service { width: 75px; height: 75px; margin-right: 24px; } }
 
-/*------------------------------------*\ Services page
-\*------------------------------------*/
-.icon--service { float: left; width: 120px; margin: -18px 30px 24px 0; }
-
-.service-link { display: block; margin-bottom: 24px; }
+.service-link { display: block; width: 100%; margin-bottom: 18px; }
 .service-link:before, .service-link:after { content: " "; display: table; }
 .service-link:after { clear: both; }
-.service-link h2 { font-size: 48px; padding-top: 0; margin-bottom: 0; }
-.service-link h4 { padding-top: 12px; margin-bottom: 12px; }
+@media only screen and (min-width: 1100px) { .service-link { display: table-cell; width: 50%; }
+  .service-link:first-of-type { padding: 0 15px 0 0; }
+  .service-link:last-of-type { padding: 0 0 0 15px; } }
+.service-link h2 { padding-top: 0; margin-bottom: 12px; }
+.service-link h2 span { display: block; }
+.service-link h4 { clear: both; margin-bottom: 12px; }
+@media only screen and (min-width: 380px) { .service-link h2 { margin-bottom: 0; }
+  .service-link h2 span { display: inline-block; } }
+.service-link p { margin: 0; }
 
-.page-header { padding: 24px; margin: 0 0 30px; color: #fff; }
-.page-header h4 { font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; }
+.page-header { padding: 24px; margin: 0 0 30px; }
 
+/*------------------------------------*\ Partner cards (on About page)
+\*------------------------------------*/
 .partner { width: 23.5%; overflow: hidden; display: inline-block; float: left; margin-right: 2%; min-height: 360px; margin-bottom: 2%; padding: 0 12px 18px; }
 .partner:nth-child(5n) { margin-right: 0; }
 .partner:nth-child(6n) { clear: both; }
@@ -840,6 +1134,55 @@ ul p { margin-bottom: 0; }
 .partner h3 { font-size: 21px; line-height: 28px; margin-bottom: 18px; }
 .partner p { min-height: 54px; margin-bottom: 0; }
 
+/*---------------------------------------------------------------------------*\ Page adaptations
+\*---------------------------------------------------------------------------*/
+/*------------------------------------*\ Welcome page
+\*------------------------------------*/
+.page-welcome .block--service { padding-top: 36px; padding-bottom: 36px; color: #fff; background-color: #F1E4C6; }
+.page-welcome .block--service .service-link:first-of-type { padding-bottom: 24px; border-bottom: 2px solid #FCF6E7; margin-bottom: 30px; }
+@media only screen and (min-width: 1100px) { .page-welcome .block--service .service-link:first-of-type { padding: 0 30px 0 0; border-bottom: none; border-right: 2px solid #FCF6E7; margin: 0; }
+  .page-welcome .block--service .service-link:last-of-type { padding: 0 0 0 30px; } }
+.page-welcome .block--example { position: relative; overflow: hidden; padding: 0; background-color: #858AA5; }
+.page-welcome .block--example:after { content: ""; display: block; position: absolute; z-index: 1; right: 0; top: 0; width: 25vw; height: 100%; pointer-events: none; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25)); }
+.page-welcome .block--example .block { padding: 30px; }
+@media only screen and (min-width: 1200px) { .page-welcome .block--example .block { padding-left: 0; } }
+.page-welcome .block--example h1 { color: #fff; }
+.page-welcome .card.width-33 { z-index: 2; display: inline-block; float: none; white-space: normal; vertical-align: top; margin-bottom: 0; }
+.page-welcome .card.width-33:nth-child(4n), .page-welcome .card.width-33:last-of-type { margin-right: 24px !important; }
+
+/*------------------------------------*\ Services page
+\*------------------------------------*/
+.page-services .imgfade { position: relative; bottom: 0; }
+.page-services .imgfade:after { content: ""; position: absolute; z-index: 0; bottom: -102px; left: 0; height: 67%; width: 100%; background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75) 50%); border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+.page-services .imgfade img { position: relative; display: inline-block; width: 100%; max-height: 480px; object-fit: cover; margin: 0 0 -102px; border-radius: 6px; }
+.page-services .icon--service { margin: 0 18px 18px 0; }
+.page-services .item__summary { padding: 18px; margin: 0 24px 18px; }
+.page-services h2 { position: relative; z-index: 2; margin: -60px 0 0 24px; text-shadow: 0 4px 12px black; }
+.page-services h3 { color: #fff; font-size: 24px; line-height: 30px; }
+.page-services p { margin-bottom: 0; background: #fff; margin: -9px -18px -18px; padding: 18px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+/*------------------------------------*\ Contact page
+\*------------------------------------*/
+.map { max-width: 100%; height: 400px; margin: 0 0 30px; }
+
+/*---------------------------------------------------------------------------*\ New additional colors (mostly pastels)
+\*---------------------------------------------------------------------------*/
+/*
+toctocMenü   #9B2E36
+text:     #FFE8E8
+
+bienvenue < start:      #FCF6E7   (façades)
+
+bienvenue < services:     #F1E4C6   (sable)
+
+bienvenue < examples:     #948EBD   (lavende)
+
+bienvenue < comment     #B5BF52   (olives)
+
+bienvenue < temoignages     #FFFB9F   (pastis)
+*/
+/*---------------------------------------------------------------------------*\ Different page colors
+\*---------------------------------------------------------------------------*/
 /*
 @import "partials/images";
 // @import "partials/videos";

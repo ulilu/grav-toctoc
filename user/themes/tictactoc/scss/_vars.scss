@@ -1,4 +1,6 @@
-// Breakpoints
+/******************************************************************************
+*   Breakpoints
+******************************************************************************/
 $break-phone-portrait:	320px;
 $break-phone-landscape:	480px;
 $break-tablet-mini:		600px;
@@ -7,6 +9,49 @@ $break-tablet-regular:	850px;
 $break-tablet-large:	   1000px;
 $break-desktop:			1024px;
 $break-cinema:			   1280px;
+
+
+/******************************************************************************
+*   Units
+******************************************************************************/
+
+// Base unit
+$base-unit:		6px;
+
+// Padding & Margin Units
+$gutter-xs: 	$base-unit;
+$gutter-s: 		$base-unit * 2;
+$gutter-m: 		$base-unit * 3;
+$gutter-l: 		$base-unit * 4;
+$gutter-xl:     $base-unit * 5;
+$gutter-xxl:    $base-unit * 6;
+$gutter-xxxl:   $base-unit * 6;
+
+// Typographic Units
+$fontsize-base: 16px;
+$lineheight-base: 1.4;
+
+// Border-radius
+$radius-m: 4px;
+
+
+
+/******************************************************************************
+*   Font sizes
+******************************************************************************/
+
+// Modular Scale w/ base size 16px @ 1:1.25
+// see: http://modularscale.com/scale/?px1=16&px2=&ra1=1.25&ra2=0
+$font-xxs:   8px;
+$font-xs:   10px;
+$font-s:    13px;
+$font-m:    16px;
+$font-l:    20px;
+$font-xl:   25px;
+$font-xxl:  31px;
+
+
+
 
 // Font Weights
 $regular: 400;
@@ -19,8 +64,8 @@ $base-font-size:    16px; //0.9375em;		// 15px
 $base-line-height:  25px; //1.4667em;	// 22px
 
 $font-light: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif;
-$font-regular: Linotte-Regular, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
-$font-semibold: Linotte-SemiBold, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-regular: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-semibold: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Sprite Paths
 // $sprite-product:    '/assets/img/ui/sprite-product_03';
@@ -67,85 +112,3 @@ $color-grey3:     	#e7e7e7;
 $color-grey4:   		#eeeeee;
 $color-grey5:   		#f8f8f8;
 $color-white:   		#ffffff;
-
-
-.color-logo0 { color: $color-logo0 !important;}  
-.color-logo1 { color: $color-logo1 !important;} 
-
-.color-red0 { color: $color-red0 !important;}   
-.color-red1 { color: $color-red1 !important;}    
-.color-red2 { color: $color-red2 !important;}    
-.color-red3 { color: $color-red3 !important;}    
-.color-red4 { color: $color-red4 !important;}    
-.color-red5 { color: $color-red5 !important;}    
-
-.color-orange0 { color: $color-orange0 !important;} 
-.color-orange1 { color: $color-orange1 !important;} 
-.color-orange2 { color: $color-orange2 !important;} 
-.color-orange3 { color: $color-orange3 !important;} 
-.color-orange4 { color: $color-orange4 !important;} 
-.color-orange5 { color: $color-orange5 !important;} 
-
-.color-green0 { color: $color-green0 !important;} 
-.color-green1 { color: $color-green1 !important;} 
-.color-green2 { color: $color-green2 !important;} 
-.color-green3 { color: $color-green3 !important;} 
-.color-green4 { color: $color-green4 !important;} 
-.color-green5 { color: $color-green5 !important;} 
-
-.color-blue0 { color: $color-blue0 !important;}  
-.color-blue1 { color: $color-blue1 !important;}  
-.color-blue2 { color: $color-blue2 !important;}  
-.color-blue3 { color: $color-blue3 !important;}  
-.color-blue4 { color: $color-blue4 !important;}  
-.color-blue5 { color: $color-blue5 !important;}  
-
-.color-grey0 { color: $color-grey0 !important;} 
-.color-grey1 { color: $color-grey1 !important;}  
-.color-grey2 { color: $color-grey2 !important;}  
-.color-grey3 { color: $color-grey3 !important;}  
-.color-grey4 { color: $color-grey4 !important;}  
-.color-grey5 { color: $color-grey5 !important;}  
-
-.color-white { color: $color-white !important;}  
-
-
-.bgcolor-logo0 { background: $color-logo0 !important;}   
-.bgcolor-logo1 { background: $color-logo1 !important;} 
-
-.bgcolor-red0 { background: $color-red0 !important;}   
-.bgcolor-red1 { background: $color-red1 !important;}    
-.bgcolor-red2 { background: $color-red2 !important;}    
-.bgcolor-red3 { background: $color-red3 !important;}    
-.bgcolor-red4 { background: $color-red4 !important;}    
-.bgcolor-red5 { background: $color-red5 !important;}    
-
-.bgcolor-orange0 { background: $color-orange0 !important;} 
-.bgcolor-orange1 { background: $color-orange1 !important;} 
-.bgcolor-orange2 { background: $color-orange2 !important;} 
-.bgcolor-orange3 { background: $color-orange3 !important;} 
-.bgcolor-orange4 { background: $color-orange4 !important;} 
-.bgcolor-orange5 { background: $color-orange5 !important;} 
-
-.bgcolor-green0 { background: $color-green0 !important;} 
-.bgcolor-green1 { background: $color-green1 !important;} 
-.bgcolor-green2 { background: $color-green2 !important;} 
-.bgcolor-green3 { background: $color-green3 !important;} 
-.bgcolor-green4 { background: $color-green4 !important;} 
-.bgcolor-green5 { background: $color-green5 !important;} 
-
-.bgcolor-blue0 { background: $color-blue0 !important;}  
-.bgcolor-blue1 { background: $color-blue1 !important;}  
-.bgcolor-blue2 { background: $color-blue2 !important;}  
-.bgcolor-blue3 { background: $color-blue3 !important;}  
-.bgcolor-blue4 { background: $color-blue4 !important;}  
-.bgcolor-blue5 { background: $color-blue5 !important;}  
-
-.bgcolor-grey0 { background: $color-grey0 !important;} 
-.bgcolor-grey1 { background: $color-grey1 !important;}  
-.bgcolor-grey2 { background: $color-grey2 !important;}  
-.bgcolor-grey3 { background: $color-grey3 !important;}  
-.bgcolor-grey4 { background: $color-grey4 !important;}  
-.bgcolor-grey5 { background: $color-grey5 !important;}  
-
-.bgcolor-white { background: $color-white !important;}  

@@ -22,8 +22,7 @@
             {{ _self.loop(pages) }}
         {% else %} #}
             <li class="main-nav__item  main-nav__item--home">
-                <a href="/" title="< back to Homepage">
-                    <img src="{{ theme_url }}/img/logo_icon.svg" alt="toctocMarseille Logo" width="30" height="36">
+                <a href="{{ base_url_absolute }}" class="fa fa-home" title="< back to Homepage">
                 </a>
             {% for page in pages.children %}
                 {% if page.visible %}

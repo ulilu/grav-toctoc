@@ -8,31 +8,41 @@
     Font declarations
 \*---------------------------------------------------------------------------*/
 
-.Linotte-Regular { 
-  font-family: Linotte-Regular;
-  font-weight: normal;
-  font-style: normal;
-}
-.Linotte-Light { 
+.Linotte-Light,
+.font-light { 
   font-family: Linotte-Light;
   font-weight: normal;
   font-style: normal;
 }
-.Linotte-Bold { 
-  font-family: Linotte-Bold;
+
+.Linotte-Regular,
+.font-regular { 
+  font-family: Linotte-Regular;
   font-weight: normal;
   font-style: normal;
 }
-.Linotte-Heavy { 
-  font-family: Linotte-Heavy;
-  font-weight: normal;
-  font-style: normal;
-}
-.Linotte-SemiBold { 
+
+.Linotte-SemiBold,
+.font-semibold { 
   font-family: Linotte-SemiBold;
   font-weight: normal;
   font-style: normal;
 }
+
+.Linotte-Bold,
+.font-bold { 
+  font-family: Linotte-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Linotte-Heavy,
+.font-heavy { 
+  font-family: Linotte-Heavy;
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 /*---------------------------------------------------------------------------*\
@@ -54,12 +64,6 @@ body {
 .header {
   position: relative;
   width: 100%;
-  // height: 120px;
-  color: $color-logo0;
-  
-  // @media only screen and (min-width: 650px) {
-  //   height: 150px;
-  // }
 }
 
 .main {
@@ -90,397 +94,7 @@ body {
   display: block;
   max-width: 1200px;
   margin: 0 auto;
-  // height: 100%;
 }
-
-
-/*------------------------------------*\
-  Logo
-\*------------------------------------*/
-
-.logo-main {
-  position: relative;
-  width: 75%;
-  padding-right: 12px;
-  margin: 0;
-  
-  @media only screen and (min-width: 650px) {
-    width: 65%;
-    padding-right: 18px;
-  }
-
-  @media only screen and (min-width: 750px) {
-    width: 60%;
-    padding-right: 24px;
-  }
-  
-  img {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 12px 6px 15px 12px;
-    
-    // @media only screen and (min-width: 650px) {
-    //   height: 66px;
-    // }
-
-    @media only screen and (min-width: 750px) {
-      margin-left: 1.8%;
-    }
-  }
-  
-  a {
-    display: block;
-    color: currentColor;
-  }
-}
-
-
-[class*="logo-part"] {
-  font-size: 30px;
-  width: 100px;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 30px;
-  
-  @media only screen and (min-width: 450px) {
-    width: auto;
-    font-size: 36px;
-  }
-
-  @media only screen and (min-width: 700px) {
-    font-size: 42px;
-  }
-}
-
-.logo-part1 {
-  color: $color-logo1;
-}
-
-.logo-part2 {
-  color: $color-logo0;
-  font-family: $font-regular;
-}
-
-
-/*------------------------------------*\
-  Langswitcher plugin styles - modified
-\*------------------------------------*/
-
-/* LANGSWITCHER PLUGIN-STYLES MODIFIED */
-
-.langswitcher {
-  // display: none;
-  display: block;
-  font-family: $font-regular;
-  position: absolute;
-  top: 24px !important;
-  right: 30px !important;
-  list-style: none;
-  margin: 0;
-}
-
-.langswitcher li {
-  display: inline-block;
-  float: left;
-  padding: 0 0 0 24px;
-  
-  a {
-    color: $color-logo1;
-    border-bottom: 1px solid $color-logo1;
-  }
-}
-
-.langswitcher .active {
-  color: $color-logo1;
-  border: none;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-
-/*------------------------------------*\
-  Main nav
-\*------------------------------------*/
-
-.nav-bar {
-  position: relative;
-  height: 51px; 
-
-  @media only screen and (min-width: 1200px) {
-    overflow: visible;
-    // bottom: -24px;
-  }
-}
-
-.main-nav__wrapper {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  overflow: hidden;
-
-  
-  @media only screen and (min-width: 700px) {
-    overflow: visible;
-  }
-
-  @media only screen and (max-width: 700px) {
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: 51px;
-      width: 100px;
-      pointer-events: none;
-      background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6) );
-    }
-  }
-}
-
-.main-nav {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding: 6px;
-  margin: 0;
-
-  font-family: $font-regular;
-  text-align: center;
-  list-style: none;
-  // background: #C16844; // roof tiles of marseille
-  // background: linear-gradient(#D28B6F, #A56C56); // Bronze gradient
-  background: #9B2E36;
-  
-  transition: all 0.2s ease-in-out;
-  white-space: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;  /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */
-  -webkit-transform: translate3d(0,0,0);
-  
-  @media only screen and (min-width: 700px) {
-    display: table;
-    overflow: auto;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
-    // @include material-card1();
-    border-radius: 9px;
-  }
-}
-
-.main-nav__item {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  width: 1%;
-  text-align: center;
-  margin: 0;
-  padding: 0 3px;
-  // border: 1px solid #ddd;
-
-  &:first-of-type{
-    display: none;
-    padding-left: 0;
-  }
-
-  &:nth-of-type(2){
-    padding-left: 0;
-  }
-
-  &:last-of-type{
-    padding-right: 0;
-  }
-}
-
-.main-nav__link {
-  display: block;
-  padding: 6px;
-  white-space: nowrap;
-  color: white;
-  font-size: 18px;
-
-  .active &,
-  &:hover {
-    background: white;
-    border-radius: 6px;
-  }
-
-  &:hover {
-    color: currentColor;
-  }
-
-  .active &,
-  .active &:hover {
-    color: $color-logo1 !important;
-  }
-}
-
-/*  Main nav when sticky
-
-.is-sticky .main-nav {
-  position: fixed;
-  max-width: 1200px;
-  top: 0;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  @include material-card1();
-}
-
-.main-nav__item--home {
-  display: table-cell;
-  text-align: center;
-  width: 0.001%;
-  opacity: 0;
-  padding: 0;
-  transition: all 0.2s ease-in-out;
-  
-  a {
-    display: none;
-  }
-}
-
-.is-sticky .main-nav__item--home {
-  width: 1%;
-  opacity: 1;
-  transition: all 0.2s ease-in-out;
-  
-  a {
-    display: inline-block;
-    padding: 0;
-    width: 36px;
-    background: #fff;
-    border-radius: 50%;
-  }
-}
-*/
-
-
-/*------------------------------------*\
-  Sub nav
-\*------------------------------------*/
-
-.sub-nav {
-  display: none;
-  position: absolute;
-  left: -3px;
-  padding: 6px 6px 0;
-  width: 200px;
-  overflow: hidden;
-  // background: currentColor;
-  // background: #C16844; // roof tiles of marseille
-  // background: #A96F58; // Bronze
-  background: #9B2E36;
-  border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24)
-}
-
-.sub-nav__item {
-  display: block;
-  position: relative;
-}
-
-.sub-nav__link {
-  display: block;
-  width: 100%;
-  padding: 6px;
-  border-radius: 6px;
-  color: $color-white;
-  
-  &:hover {
-    background: $color-white;
-    // color: currentColor;
-    color: $color-logo1;
-  }
-}
-
-
-.main-nav__item:hover {
-
-  > a {
-    background: white;
-    border-radius: 6px;
-    // color: currentColor;
-    color: $color-logo1;
-  }
-
-  .sub-nav {
-    display: block;
-  }
-}
-
-
-/*---------------------------------------------------------------------------*\
-    Different page colors
-\*---------------------------------------------------------------------------*/
-
-// .page-welcome {
-//   header {
-//     color: $color-logo0;
-//   }
-// }
-
-.page-services {
-  // background: #F1E4C6;
-//   header, h1 {
-//     color: $color-orange1;
-//   }
-}
-
-
-// .page-examples {
-//   header, h1 {
-//     color: $color-green2;
-//   }
-// }
-
-// .page-pricing {
-//   header, h1 {
-//     color: $color-blue2;
-//   }
-// }
-
-// .page-how-it-works {
-//   header, h1 {
-//     color: $color-red3;
-//   }
-// }
-
-// .page-about {
-//   header, h1 {
-//     color: $color-blue1;
-//   }
-// }
-
-// .page-contact {
-//   header, h1 {
-//     color: $color-green1;
-//   }
-// }
-
-
-/*---------------------------------------------------------------------------*\
-    New additional colors (mostly pastels)
-\*---------------------------------------------------------------------------*/
-
-/*
-toctocMenü   #9B2E36
-text:     #FFE8E8
-
-bienvenue < start:      #FCF6E7   (façades)
-
-bienvenue < services:     #F1E4C6   (sable)
-
-bienvenue < examples:     #948EBD   (lavende)
-
-bienvenue < comment     #B5BF52   (olives)
-
-bienvenue < temoignages     #FFFB9F   (pastis)
-*/
-
 
 /*---------------------------------------------------------------------------*\
     General block element
@@ -517,6 +131,7 @@ bienvenue < temoignages     #FFFB9F   (pastis)
   overflow: hidden; /* for intended use of cropped icons in background */
 }
 
+
 /*
  *  When using .block-stretch, you can have a second .block inside it, to
  *  keep the centered positioning of the content block.
@@ -530,6 +145,26 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 }
 
 
+.block--scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  margin: 0 0 -24px !important;  /* to hide otherwise visible scrollbar */
+  max-width: 100% !important;
+}
+
+.block__scroll-wrapper {
+  white-space: nowrap;
+  position: relative;
+  vertical-align: top;
+  margin-bottom: 48px; /* to make room for hidden scrollbar, see above */
+  padding: 0 30px;
+  
+  @media only screen and (min-width:1200px) {
+    padding-left: calc((100vw - 1146px) / 2);
+    padding-right: calc((100vw - 1146px) / 2);
+  }
+}
 
 /*---------------------------------------------------------------------------*\
     .cell
@@ -539,7 +174,7 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 
 
 .cell {
-  display: table-cell;
+  display: table-cell !important;
   width: 100%;
 }
 
@@ -572,58 +207,78 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 }
 
 
-
 /*---------------------------------------------------------------------------*\
-    Page adaptations
+    Card - used on example.twig.html
 \*---------------------------------------------------------------------------*/
 
+.card {
+  display: block;
+  position: relative;
+  float: left;
+  background: #fff;
+  border-radius: 6px;
+  @include material-card1();
+  min-width: 272px;  /* one card visible on iphone3 with 320px screenwidth*/
+  margin-bottom: 24px;
 
-/*------------------------------------*\
-  Welcome page
-\*------------------------------------*/
-
-.page-welcome {
-
-  header {
-    //   position: absolute;
-    //   top: 24px;
-    //   z-index: 2;
-    //   background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
-    // }
+  &.width-25 {
+    width: 22%;
+    width: -webkit-calc(25% - 18px) !important;
+    width: calc(25% - 18px) !important;
+    margin-right: 24px;
   }
 
-  .block--welcome {
-
-  }
-
-  .block--service {
-    padding-top: 48px;
-    color: #fff;
-    background-color: #F1E4C6;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' id='bonne-mere' viewBox='0 0 864 864'%3E %3Cpath fill='%23FCF6E7' d='M827 289.6v2c0 10-7 19-12 24v486c0 7-5 12-12 12H59c-7 0-12-5-12-12v-276c0-5 3-9 7-11l11-5v-104c0-22 7-60 26-93s45-52 76-56v-7c0-7 5-12 12-12s12 5 12 12v7c31 4 57 23 76 56s26 70 26 93v48h330v-138c-5-5-12-14-12-24v-3c0-8-1-23 2-38 5-27 19-35 29-37 9-2 18 1 25 6 1 2 3 3 4 5v-29c0-6 5-11 11-12-1-4-3-9-4-14-2-4-1-8 1-11s5-4 8-5l4-41c-2-4-4-14-5-22 0-10-1-16 4-23 1-2 2-3 3-4-2-3-3-7-3-12 0-16 13-30 29-30s29 14 29 30c0 5-1 9-3 12 1 1 2 2 3 4 5 7 4 13 4 23-1 8-3 18-5 22l4 41c3 1 6 2 8 5s3 7 1 11c-1 5-3 10-4 14 6 1 11 6 11 12v28l3-3c5-4 13-9 25-7 33 5 32 58 32 76zm-566 308v192h26v-257l-108-54-108 54v257h26v-192c0-45 37-82 82-82s82 37 82 82zm-172-100l85-43c3-1 7-1 10 0l85 43v-81l-24-36-16 24c-2 3-4 4-7 5-3 0-6-1-8-4l-35-39-35 39c-2 3-5 4-8 4-3-1-5-2-7-5l-16-24-24 36v81zm3-120l13-19c2-3 5-5 8-5s6 2 8 5l17 25 34-38c2-2 4-4 7-4s5 2 7 4l34 38 17-25c2-3 5-4 8-4s6 1 8 4l13 19c-3-16-9-35-19-53-12-20-34-45-68-45s-56 25-68 45c-10 18-16 37-19 53zm31 46v18c0 5-5 10-10 10s-10-5-10-10v-18c0-5 5-10 10-10s10 5 10 10zm118 174c0-34-28-62-62-62s-62 28-62 62v192h124v-192zm-74 42v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm12-24c-13 0-24-11-24-24s11-24 24-24 24 11 24 24-11 24-24 24zm12-186c0 7-5 12-12 12s-12-5-12-12v-18c0-7 5-12 12-12s12 5 12 12v18zm24 210v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm20-198v-18c0-5 5-10 10-10s10 5 10 10v18c0 5-5 10-10 10s-10-5-10-10zm58 36v32l11 5c4 2 7 6 7 11v30h312v-78h-26v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-32zm230 154c12-19 32-32 56-32 17 0 32 7 44 17v-37H311v37c12-10 27-17 44-17 24 0 44 13 56 32 12-19 32-32 56-32s44 13 56 32zm-122 34c0-26-20-46-46-46-20 0-38 13-44 31v139h90v-124zm-34 10v36c0 7-5 12-12 12s-12-5-12-12v-36c0-7 5-12 12-12s12 5 12 12zm146-10c0-26-20-46-46-46s-46 20-46 46v124h92v-124zm-34 10v36c0 7-5 12-12 12s-12-5-12-12v-36c0-7 5-12 12-12s12 5 12 12zm54 114h90v-139c-6-18-24-31-44-31-26 0-46 20-46 46v124zm34-78v-36c0-7 6-12 12-12 7 0 12 5 12 12v36c0 7-5 12-12 12-6 0-12-5-12-12zm68-424v4c0 2 4 6 7 8h155c3-3 6-6 6-8v-2c0-7 0-21-2-34-2-10-6-18-9-18-4-1-6 0-6 1-3 2-6 9-6 29 0 5-3 9-7 11-2 1-4 1-6 1h-96c-1 0-3 0-4-1-5-1-8-6-8-11 0-14-3-26-8-29 0-1-1-2-5-1-3 0-12 6-11 50zm156 502v-470H647v470h20v-54c0-28 24-52 52-52s52 24 52 52v54h20zm-102-432v48c0 7-5 12-12 12s-12-5-12-12v-48c0-7 5-12 12-12s12 5 12 12zm62 378c0-18-14-32-32-32s-32 14-32 32v54h64v-54zm-56-480h48v-50c-7-3-12-9-12-16 0-3 1-7 2-12h-28c1 5 2 9 2 12 0 7-5 13-12 16v50zm10-167c0 7 3 17 4 20 1 1 1 3 1 4l-4 41h26l-4-41c0-1 0-3 1-4 1-3 4-13 4-20 1-8 0-9-1-11l-5-4c-3-1-5-4-5-7-1-4 1-7 4-9 1-1 4-3 4-6 0-5-5-11-11-11s-11 6-11 11c0 3 4 6 4 6 3 2 5 5 4 9 0 3-2 6-5 7-2 1-4 3-5 4-1 2-2 3-1 11zm26 269v48c0 7-5 12-12 12s-12-5-12-12v-48c0-7 5-12 12-12s12 5 12 12zm0 120v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm0 108v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm42-228v48c0 7-5 12-12 12s-12-5-12-12v-48c0-7 5-12 12-12s12 5 12 12z'/%3E %3C/svg%3E");
-    background-size: 420px;
-    background-position: 95% 54px;
-    background-repeat: no-repeat;
-  }
-
-  .block--example {
-    // background: #526165;
-    // background: #4F6F88;
-    // background: #6D898C;
-    background-color: #858AA5; // lavender
-    // background-size: 420px;
-    // background-position: 95% 54px;
-    // background-repeat: no-repeat;
-    // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='864' height='864' viewBox='0 0 864 864'%3E %3Cpath fill='%23EEEEEE' d='M204 475.6c5 0 10 4 10 10l-1 24 15-14v-1h1c1-2 3-2 6-2l103 2c5 0 10 4 10 10-1 5-5 9-10 9l-94-2v59l-1 1v2h-1v1h-1l-2 2h-2v1h-33c-3 0-6-1-8-3-1-2-2-4-2-7v-73l-173-6v83c0 5-4 9-9 9l-12 1v-19h2v-84c0-2 1-5 3-6 2-2 4-3 7-3l192 6zm107 113c6 0 10 4 10 10 1 5-4 9-9 10l-312 11v-19l311-12zm-203 81c5 0 8 3 8 8s-3 9-8 9H0v-16c9 0 13 0 18-1h90zm70 42c0 5-4 9-9 9-9 0-13 1-17 1h-17c-8 0-12 1-16 1s-9 1-18 1H67c-9 0-13-1-18-1-4-1-7-1-15-1H0v-19h34c9 0 13 0 18 1 4 0 8 1 15 1h34c8 0 12-1 16-1 4-1 9-1 18-1h16c4-1 9-1 18-1 5 0 9 4 9 10zm27 30c4 0 7 1 14 1h15c4-1 8-1 16-1 6 0 11 5 11 11s-5 11-11 11h-15c-4 0-8 1-16 1-9 0-14-1-18-2s-7-1-14-1c-6 0-10 0-13 1-4 0-9 1-18 1-7 0-11 0-15 1h-16c-9 0-14-1-18-2-3-1-7-1-13-1H79c-4 0-8 1-17 1-6 0-10 0-13 1-4 1-9 1-18 1H16c-4 1-8 1-16 1v-22h31c7 0 10-1 14-1 4-1 9-2 17-2h15c4-1 9-1 17-1 9 0 13 1 18 2 3 1 6 1 13 1h31c7 0 10-1 14-2 4 0 9-1 17-1 9 0 14 1 18 2zm149 48c4 1 7 2 13 2 7 0 12 5 12 12s-5 12-12 12c-10 0-16-2-21-4-3-1-6-2-12-2-7 0-10 1-14 2-5 1-10 2-20 2s-15-1-19-2-7-2-14-2c-8 0-11 1-15 1-4 1-9 2-18 2h-16c-4 1-9 1-18 1s-13 0-17-1h-32c-4 1-9 1-18 1s-15-1-19-2-7-2-14-2-10 1-14 1c-5 1-10 3-19 3H51c-4 0-9 1-18 1-10 0-15-2-20-3-3-1-6-2-13-2v-24c10 0 16 1 20 3 4 1 7 2 13 2 8 0 12-1 16-1h18c7 0 10-1 14-2s9-2 19-2 15 1 20 2c4 1 7 2 13 2h16c5-1 9-1 18-1h17c4 1 8 1 16 1s12 0 16-1h18c7 0 10-1 14-2 5 0 10-1 19-1 10 0 15 1 20 3 3 1 6 1 13 1s10 0 14-1c5-2 10-3 20-3s16 2 20 4zm-294-284c2 0 3 2 3 3v17c0 2-1 3-3 3H45c-1 0-3-1-3-3v-17c0-2 2-3 3-3h15zm0 36c2 0 3 1 3 2v17c0 2-1 3-3 3H45c-1 0-3-1-3-3v-17c0-1 2-2 3-2h15zm201-201l7 19v39l3 7 1-1c3-2 7-3 11-1l18 8 32 4c5 0 9 5 8 11 0 5-5 9-10 8l-34-4c-1 0-2-1-2-1l-15-6-6 6c-2 2-6 3-9 2s-5-3-6-6l-9-21c-1-1-1-3-1-4v-1h-4l-15 1h-1c-3 0-7-3-8-6 0 1-1 1-1 2v26c-1 4-2 7-5 8-3 2-7 2-10 1l-5-3v1c-2 2-5 4-8 4l-29 1-17 9c-2 1-3 2-5 2h-14l-12 6-1 1-29 12c-2 0-3 1-4 1-4 0-7-3-9-6-2-5 0-11 5-13l29-12 14-7c2-1 3-2 5-2h13l17-9c2-1 3-2 5-2h26l3-4c2-4 8-6 12-4v-13c1-5 5-23 19-23 7 0 12 4 15 9v-17c0-1 0-2 1-3l7-19c1-4 5-6 9-6s7 2 9 6zm-162 166c1 0 3 1 3 3v16c0 2-2 3-3 3H84c-2 0-3-1-3-3v-16c0-2 1-3 3-3h15zm0 34c2 0 3 2 3 3v17c0 1-1 2-3 2H84c-1 0-2-1-2-2v-17c0-1 1-3 2-3h15zm38-33c2 0 3 1 3 2v17c0 1-1 3-3 3h-14c-2 0-3-2-3-3v-17c0-1 1-2 3-2h14zm0 33c2 0 3 2 3 3v16c0 2-1 3-3 3h-15c-1 0-2-1-2-3v-16c0-1 1-3 2-3h15zm38-32c2 0 3 1 3 2v16c0 1-1 3-3 3h-15c-1 0-3-2-3-3v-16c0-1 2-3 3-3l15 1zm0 32c2 0 3 2 3 3v16c0 1-1 2-3 2h-15c-1 0-3-1-3-2v-16c0-1 2-3 3-3h15zm193-255l12 306c5 4 28 10 49 12h36c5 0 10 5 10 10-1 5-5 10-10 10l-37-1h-1s-13-1-28-4c-13-3-22-6-28-10-16 16-40 37-41 38l-5 3-58 14 1 1 61-1 37 49-83-5c-3 0-6-2-7-4l-24-29-14-7c-3-1-6-5-5-9 0-4 3-8 7-9l79-19c6-5 29-26 42-39l-12-306c0-5 4-9 9-10 5 0 10 4 10 10zm-93 239c2 0 3 0 3 2v12c0 1-1 2-3 2h-12c-2 0-3-1-3-2v-13c0-1 1-1 3-1h12zm0 26c2 0 3 1 3 2v13c0 1-1 1-3 1l-12 1c-2 0-3-1-3-2v-13c0-1 1-2 3-2h12zm32-26c1 0 2 1 2 2v12c0 1-1 2-2 2h-13c-1 0-2-1-2-2v-12c0-1 1-2 2-2h13zm0 26c1 0 2 1 2 2v12c0 1-1 2-2 2h-13c-1 0-2-1-2-2v-12c0-1 1-2 2-2h13zm29-26c2 0 3 1 3 2v12c0 1-1 2-3 2h-12c-1 0-2-1-2-2v-12c0-1 1-2 2-2h12zm176-360l5 444 51 1 33 4c6 0 10 5 9 11 0 6-5 10-11 9l-33-3-56-2-8 6-19 17c-2 1-4 2-6 2l-31 3-20 11h-2l-35 11 1 2h41l31 51-48-2h-7c-4 0-6-2-8-4l-36-47c-2-3-2-6-1-9s3-6 7-7l48-14 22-11c1-1 2-1 4-1l29-3 16-14c1 0 1 0 1-1l7-5-4-449c0-5 4-10 10-10s10 5 10 10zm-36 303c4 0 8 4 8 8 0 5-4 9-9 8l-62-2v83c0 5-4 8-9 8-4 0-8-3-8-8v-92c0-2 1-4 2-6 2-2 4-2 7-2l71 3zm-32 27c1 0 2 1 2 2v12c0 1-1 2-2 2h-13c-2 0-3-1-3-2v-13c0-1 1-2 3-2l13 1zm0 27c1 0 2 1 2 2v13c0 1-1 2-2 2h-13c-2 0-3-1-3-2v-13c0-1 1-2 3-2h13zm28-26c2 0 3 0 3 1v13c0 1-1 2-3 2l-12-1c-1 0-2 0-2-1v-13c0-1 1-2 2-2l12 1zm153-407l24 540 15-8c1-1 3-2 4-2l86-9c6 0 12 4 13 11 0 6-4 11-11 12l-83 9-57 32c-2 1-4 1-5 1l-55 4-68 15 26 42 37 1h14l18 23h-40v-1h-36c-4 0-8-2-10-6l-37-62c-2-3-2-7-1-10 2-3 5-6 8-7l43-8 43-9 54-4 20-11-24-552c-1-6 4-12 10-12 7 0 12 5 12 11zm-32 393c4 0 8 4 8 8v77c0 5-4 8-8 8-5 0-9-3-9-8v-69l-44-1c-5 0-9-4-8-9 0-5 4-8 8-8l53 2zm-24 28c1 0 2 0 2 1v13c0 1-1 1-2 1h-12c-1 0-2-1-2-2v-12c0-1 1-2 2-2l12 1zm0 26c1 0 2 1 2 2v12c0 1-1 2-2 2h-12c-1 0-2-1-2-2v-12c0-1 1-2 2-2h12zm222-506l12 640 14-1 47-4v24l-45 4h-1l-92 5-44 11-71 15 3 4 250-1v74c-110-4-227-10-228-11-3 0-7-2-9-4l-46-62c-3-4-3-8-2-12 2-4 5-6 9-7l89-19 44-11c1-1 2-1 2-1l56-3-12-641c0-6 5-12 11-12 7 0 13 5 13 12zm-84 393c2 0 4 1 5 2l30 28c2 1 3 4 3 6v108c0 5-4 9-9 9-4 0-8-4-8-9v-12h-37c-3 0-7-3-7-7s3-7 7-7l37-1v-15l-38-1-8 1c-3 0-6-2-7-6s2-7 6-8l8-1h39v-16l-38-1-6 1c-4 1-8-1-9-5s1-8 5-9l8-2h2l38 2v-14l-37-3-7 2c-3 2-8 0-9-4s1-8 5-9l7-3h3l24 1-11-10-12-1-5 2-4 1c-3 0-6-2-7-5-2-5 0-10 4-11l7-3c1-1 3-1 4-1l17 1zm157 198v25c-1 0-2-1-3-1l-38-10c-6-2-10-9-8-15s8-10 15-8l34 9z'/%3E %3C/svg%3E");
+  &.width-33 {
+    width: 30%;
+    width: -webkit-calc(33.33% - 16px) !important;
+    width: calc(33.33% - 16px) !important;
+    margin-right: 24px;
     
-    h1 {
-      color: #fff;
+    &:nth-child(4n) {
+      margin-right:0;
     }
+    &:nth-child(5n) {
+      clear: both;
+    }
+  }
+  
+  &[class*='width-']:last-of-type {
+    margin-right: 0 !important;
   }
 }
 
-.example__info {
+.card__img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  /* this fixes the overflow:hidden in Chrome */
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+  img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    padding: 0 0 12px;
+    transition-duration: 0.5s;
+    transform: scale(1.0);
+    transform-origin: 50% 100%;
+  }
+
+  .card:hover & img {
+    transform: scale(1.1);
+    transform-origin: 50% 100%;  /* pan towards bottom of image */
+  }
+}
+
+.card__info {
   padding: 0 18px 0px;
+  
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 /*------------------------------------*\
@@ -760,9 +415,14 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 /* Welcome Video on Homepage */
 
 .video-container {
-  float:right;
-  width: calc(50% - 30px);
-  margin: 42px 0 24px 30px;
+  width: 100%;
+  margin: 0 0 30px;
+  
+  @media only screen and (min-width: 650px) { 
+    float:right;
+    width: calc(50% - 30px);
+    margin: 72px 0 24px 30px;
+  }
 }
 
 .video-wrapper {
@@ -853,312 +513,6 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 }
 
 
-
-/*---------------------------------------------------------------------------*\
-    General Image Styles
-\*---------------------------------------------------------------------------*/
-
-
-.full {
-  max-width: 100% !important; 
-  max-height: 50vmin;
-}
-
-.float-left { 
-  float: left !important; 
-  margin-right: 30px !important;
-  
-  & + & {
-    margin-right: 0 !important;
-    margin-left: -30px !important;
-  }
-}
-
-.float-right { 
-  float: right !important; 
-  margin-left: 30px !important;
-  
-  & + & {
-    margin-left: 0 !important;
-    margin-right: -30px !important;
-  }
-}
-
-.width-50 { width: 50% !important; }
-
-.width-40 { width: 40% !important; }
-.width-60 { width: 60% !important; }
-
-.width-33 { width: 33% !important; }
-.width-67 { width: 67% !important; }
-
-.width-30 { width: 30% !important; }
-.width-70 { width: 70% !important; }
-
-
-.width-25 { width: 25% !important; }
-.width-75 { width: 75% !important; }
-
-.width-20 { width: 20% !important; }
-.width-80 { width: 80% !important; }
-
-
-
-/*---------------------------------------------------------------------------*\
-    Image row with table-cell-spacing: Each image gets an equal width
-\*---------------------------------------------------------------------------*/
-
-.image-row,
-.image-row-headline {
-  padding: 0;
-  margin: 0 -6px 30px;
-  overflow: hidden;
-  border-spacing: 6px;
-  
-  & + & {
-    margin-bottom: 0;
-  }
-
-  a {
-    display: table-cell;
-    width: 1%;
-    
-    // padding-right: 6px;
-  }
-
-  // a:last-of-type {
-  //   padding: 0;
-  // }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-    max-height: 40vmin;
-    
-    // @media only screen and (min-width: 700px) {
-    //   max-height: 50vmin;
-    // }
-    // @media only screen and (min-width: 1000px) {
-    //   max-height: 55vmin;
-    // }
-    // @media only screen and (min-width: 1200px) {
-    //   max-height: 60vmin;
-    // }
-  }
-
-  figcaption {
-    font-size: 14px;
-    color: #888;
-    background: #EEE;
-    margin: 0 6px;
-    border-radius: 4px; 
-    padding: 6px 6px 6px 12px;
-    word-break: break-word;
-    -webkit-hyphens: auto;
-  hyphens: auto;
-  }
-}
-
-.image-row-text figcaption {
-  display: table-cell;
-  color: #fff;
-  font-size: calc(1.5vw + 1.5vh + 3vmin);
-  line-height: 120%;
-  // line-height: calc(2vw + 2vh + 3vmin);
-  // word-break: break-all;
-  // text-transform: lowercase;
-  // text-align: justify;
-  letter-spacing: 2px;
-  text-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  vertical-align: middle;
-  padding: 1.5vw;
-  margin: 0;
-}
-
-/*---------------------------------------------------------------------------*\
-    Manual image-widths: Based on additional class on .image-row
-\*---------------------------------------------------------------------------*/
-
-/*------------------------------------*\
-  2 images per row
-\*------------------------------------*/
-
-.row-50-50 {
-  > *:nth-child(1) {width: 50% !important;}
-  > *:nth-child(2) {width: 50% !important;}
-}
-
-.row-40-60 {
-  > *:nth-child(1) {width: 40% !important;}
-  > *:nth-child(2) {width: 60% !important;}
-}
-.row-60-40 {
-  > *:nth-child(1) {width: 60% !important;}
-  > *:nth-child(2) {width: 40% !important;}
-}
-
-.row-33-67 {
-  > *:nth-child(1) {width: 33% !important;}
-  > *:nth-child(2) {width: 67% !important;}
-}
-.row-67-33 {
-  > *:nth-child(1) {width: 67% !important;}
-  > *:nth-child(2) {width: 33% !important;}
-}
-
-.row-25-75 {
-  > *:nth-child(1) {width: 25% !important;}
-  > *:nth-child(2) {width: 75% !important;}
-}
-.row-75-25 {
-  > *:nth-child(1) {width: 75% !important;}
-  > *:nth-child(2) {width: 25% !important;}
-}
-
-.row-20-80 {
-  > *:nth-child(1) {width: 20% !important;}
-  > *:nth-child(2) {width: 80% !important;}
-}
-.row-80-20 {
-  > *:nth-child(1) {width: 80% !important;}
-  > *:nth-child(2) {width: 20% !important;}
-}
-
-
-/*------------------------------------*\
-  3 Images per row
-\*------------------------------------*/
-
-.row-33-33-33 {
-  > *:nth-child(1) {width: 33.3333% !important;}
-  > *:nth-child(2) {width: 33.3333% !important;}
-  > *:nth-child(3) {width: 33.3333% !important;}
-}
-
-
-.row-20-40-40 {
-  > *:nth-child(1) {width: 20% !important;}
-  > *:nth-child(2) {width: 40% !important;}
-  > *:nth-child(3) {width: 40% !important;}
-}
-.row-40-20-40 {
-  > *:nth-child(1) {width: 40% !important;}
-  > *:nth-child(2) {width: 20% !important;}
-  > *:nth-child(3) {width: 40% !important;}
-}
-.row-40-40-20 {
-  > *:nth-child(1) {width: 40% !important;}
-  > *:nth-child(2) {width: 40% !important;}
-  > *:nth-child(3) {width: 20% !important;}
-}
-
-
-.row-30-30-40 {
-  > *:nth-child(1) {width: 30% !important;}
-  > *:nth-child(2) {width: 30% !important;}
-  > *:nth-child(3) {width: 40% !important;}
-}
-.row-30-40-30 {
-  > *:nth-child(1) {width: 30% !important;}
-  > *:nth-child(2) {width: 40% !important;}
-  > *:nth-child(3) {width: 30% !important;}
-}
-.row-40-30-30 {
-  > *:nth-child(1) {width: 40% !important;}
-  > *:nth-child(2) {width: 30% !important;}
-  > *:nth-child(3) {width: 30% !important;}
-}
-
-
-.row-25-25-50 {
-  > *:nth-child(1) {width: 25% !important;}
-  > *:nth-child(2) {width: 25% !important;}
-  > *:nth-child(3) {width: 50% !important;}
-}
-.row-25-50-25 {
-  > *:nth-child(1) {width: 25% !important;}
-  > *:nth-child(2) {width: 50% !important;}
-  > *:nth-child(3) {width: 25% !important;}
-}
-.row-50-25-25 {
-  > *:nth-child(1) {width: 50% !important;}
-  > *:nth-child(2) {width: 25% !important;}
-  > *:nth-child(3) {width: 25% !important;}
-}
-
-
-.row-20-30-50 {
-  > *:nth-child(1) {width: 20% !important;}
-  > *:nth-child(2) {width: 30% !important;}
-  > *:nth-child(3) {width: 50% !important;}
-}
-.row-20-50-30 {
-  > *:nth-child(1) {width: 20% !important;}
-  > *:nth-child(2) {width: 50% !important;}
-  > *:nth-child(3) {width: 30% !important;}
-}
-.row-50-20-30 {
-  > *:nth-child(1) {width: 50% !important;}
-  > *:nth-child(2) {width: 20% !important;}
-  > *:nth-child(3) {width: 30% !important;}
-}
-.row-50-30-20 {
-  > *:nth-child(1) {width: 50% !important;}
-  > *:nth-child(2) {width: 30% !important;}
-  > *:nth-child(3) {width: 20% !important;}
-}
-
-
-
-
-/*---------------------------------------------------------------------------*\
-    Card - used on example.twig.html
-\*---------------------------------------------------------------------------*/
-
-.card {
-  display: block;
-  position: relative;
-  float: left;
-  background: #fff;
-  border-radius: 6px;
-  @include material-card1();
-  
-  img {
-    position: relative;
-    width: 100%;
-    padding: 0 0 12px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover > img {
-    transform: scale(110%);
-  }
-
-  &.width-25 {
-    width: 22%;
-    width: -webkit-calc(25% - 18px) !important;
-    width: calc(25% - 18px) !important;
-    margin-right: 24px;
-  }
-
-  &.width-33 {
-    width: 30%;
-    width: -webkit-calc(33.33% - 16px) !important;
-    width: calc(33.33% - 16px) !important;
-    margin-right: 24px;
-  }
-  
-  &[class*='width-']:last-of-type {
-    margin-right: 0 !important;
-  }
-}
-
-
-
 /*---------------------------------------------------------------------------*\
     Text / Headline styles (used on page-example)
 \*---------------------------------------------------------------------------*/
@@ -1204,6 +558,7 @@ ul p {
   margin-bottom: 0;
 }
 
+
 /*---------------------------------------------------------------------------*\
     Welcome page: Slider / Carousel Testimonials
 \*---------------------------------------------------------------------------*/
@@ -1242,42 +597,74 @@ ul p {
 
 
 /*------------------------------------*\
-  Contact page
-\*------------------------------------*/
-
-
-.map {
-  max-width: 100%;
-  height: 400px;
-  margin: 0 0 30px;
-}
-
-
-
-/*------------------------------------*\
-  Services page
+  Services link
 \*------------------------------------*/
 
 .icon--service {
   float: left;
-  width: 120px;
-  margin: -18px 30px 24px 0;
+  width: 54px;
+  height: 54px;
+  margin: -6px 12px 18px -3px;
+  
+  @media only screen and (min-width: 550px) {
+    width: 60px;
+    height: 60px;
+    margin: -6px 18px 18px -6px;
+  }
+  
+  @media only screen and (min-width: 550px) {
+    width: 75px;
+    height: 75px;
+    margin-right: 24px
+  }
 }
+
 
 .service-link {
   display: block;
-  margin-bottom: 24px;
+  width: 100%;
+  margin-bottom: 18px;
   @include clearfix-html5bp;
+
+  @media only screen and (min-width: 1100px) {
+    display: table-cell;
+    width: 50%;
+    
+    &:first-of-type {
+      padding: 0 15px 0 0;
+    }
+
+    &:last-of-type {
+      padding: 0 0 0 15px;
+    }
+  }
   
   h2 {
-    font-size: 48px;
     padding-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 12px;
+    
+    span {
+      display: block;
+    }
   }
 
   h4 {
-    padding-top: 12px;
+    clear: both;
     margin-bottom: 12px;
+  }
+
+  @media only screen and (min-width: 380px) {
+    
+    h2 {
+      margin-bottom: 0;
+      span {  
+        display: inline-block;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
   }
 }
 
@@ -1286,14 +673,12 @@ ul p {
 .page-header {
   padding: 24px;
   margin: 0 0 30px;
-  color: #fff;
-  
-  h4 {
-    font-family: $font-light;
-  }
 }
 
 
+/*------------------------------------*\
+  Partner cards (on About page)
+\*------------------------------------*/
 
 
 .partner {
@@ -1305,16 +690,20 @@ ul p {
   min-height: 360px;
   // border: 1px solid #ccc;
   margin-bottom: 2%;
-  padding: 0 12px 0;
+  padding: 0 12px 18px;
   
   &:nth-child(5n) {
     margin-right: 0;
   }
 
+  &:nth-child(6n) {
+    clear: both;
+  }
+
   > a {
     display: block;
     min-height: 200px;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
   }
 
   img {
@@ -1335,3 +724,259 @@ ul p {
     margin-bottom: 0;
   }
 }
+
+
+
+/*---------------------------------------------------------------------------*\
+    Page adaptations
+\*---------------------------------------------------------------------------*/
+
+
+/*------------------------------------*\
+  Welcome page
+\*------------------------------------*/
+
+.page-welcome {
+
+  .block--welcome {
+  }
+
+  .block--service {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    color: #fff;
+    background-color: #F1E4C6;
+    // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' id='bonne-mere' viewBox='0 0 864 864'%3E %3Cpath fill='%23FCF6E7' d='M827 289.6v2c0 10-7 19-12 24v486c0 7-5 12-12 12H59c-7 0-12-5-12-12v-276c0-5 3-9 7-11l11-5v-104c0-22 7-60 26-93s45-52 76-56v-7c0-7 5-12 12-12s12 5 12 12v7c31 4 57 23 76 56s26 70 26 93v48h330v-138c-5-5-12-14-12-24v-3c0-8-1-23 2-38 5-27 19-35 29-37 9-2 18 1 25 6 1 2 3 3 4 5v-29c0-6 5-11 11-12-1-4-3-9-4-14-2-4-1-8 1-11s5-4 8-5l4-41c-2-4-4-14-5-22 0-10-1-16 4-23 1-2 2-3 3-4-2-3-3-7-3-12 0-16 13-30 29-30s29 14 29 30c0 5-1 9-3 12 1 1 2 2 3 4 5 7 4 13 4 23-1 8-3 18-5 22l4 41c3 1 6 2 8 5s3 7 1 11c-1 5-3 10-4 14 6 1 11 6 11 12v28l3-3c5-4 13-9 25-7 33 5 32 58 32 76zm-566 308v192h26v-257l-108-54-108 54v257h26v-192c0-45 37-82 82-82s82 37 82 82zm-172-100l85-43c3-1 7-1 10 0l85 43v-81l-24-36-16 24c-2 3-4 4-7 5-3 0-6-1-8-4l-35-39-35 39c-2 3-5 4-8 4-3-1-5-2-7-5l-16-24-24 36v81zm3-120l13-19c2-3 5-5 8-5s6 2 8 5l17 25 34-38c2-2 4-4 7-4s5 2 7 4l34 38 17-25c2-3 5-4 8-4s6 1 8 4l13 19c-3-16-9-35-19-53-12-20-34-45-68-45s-56 25-68 45c-10 18-16 37-19 53zm31 46v18c0 5-5 10-10 10s-10-5-10-10v-18c0-5 5-10 10-10s10 5 10 10zm118 174c0-34-28-62-62-62s-62 28-62 62v192h124v-192zm-74 42v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm12-24c-13 0-24-11-24-24s11-24 24-24 24 11 24 24-11 24-24 24zm12-186c0 7-5 12-12 12s-12-5-12-12v-18c0-7 5-12 12-12s12 5 12 12v18zm24 210v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm20-198v-18c0-5 5-10 10-10s10 5 10 10v18c0 5-5 10-10 10s-10-5-10-10zm58 36v32l11 5c4 2 7 6 7 11v30h312v-78h-26v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-22v42c0 5-5 10-10 10s-10-5-10-10v-42h-32zm230 154c12-19 32-32 56-32 17 0 32 7 44 17v-37H311v37c12-10 27-17 44-17 24 0 44 13 56 32 12-19 32-32 56-32s44 13 56 32zm-122 34c0-26-20-46-46-46-20 0-38 13-44 31v139h90v-124zm-34 10v36c0 7-5 12-12 12s-12-5-12-12v-36c0-7 5-12 12-12s12 5 12 12zm146-10c0-26-20-46-46-46s-46 20-46 46v124h92v-124zm-34 10v36c0 7-5 12-12 12s-12-5-12-12v-36c0-7 5-12 12-12s12 5 12 12zm54 114h90v-139c-6-18-24-31-44-31-26 0-46 20-46 46v124zm34-78v-36c0-7 6-12 12-12 7 0 12 5 12 12v36c0 7-5 12-12 12-6 0-12-5-12-12zm68-424v4c0 2 4 6 7 8h155c3-3 6-6 6-8v-2c0-7 0-21-2-34-2-10-6-18-9-18-4-1-6 0-6 1-3 2-6 9-6 29 0 5-3 9-7 11-2 1-4 1-6 1h-96c-1 0-3 0-4-1-5-1-8-6-8-11 0-14-3-26-8-29 0-1-1-2-5-1-3 0-12 6-11 50zm156 502v-470H647v470h20v-54c0-28 24-52 52-52s52 24 52 52v54h20zm-102-432v48c0 7-5 12-12 12s-12-5-12-12v-48c0-7 5-12 12-12s12 5 12 12zm62 378c0-18-14-32-32-32s-32 14-32 32v54h64v-54zm-56-480h48v-50c-7-3-12-9-12-16 0-3 1-7 2-12h-28c1 5 2 9 2 12 0 7-5 13-12 16v50zm10-167c0 7 3 17 4 20 1 1 1 3 1 4l-4 41h26l-4-41c0-1 0-3 1-4 1-3 4-13 4-20 1-8 0-9-1-11l-5-4c-3-1-5-4-5-7-1-4 1-7 4-9 1-1 4-3 4-6 0-5-5-11-11-11s-11 6-11 11c0 3 4 6 4 6 3 2 5 5 4 9 0 3-2 6-5 7-2 1-4 3-5 4-1 2-2 3-1 11zm26 269v48c0 7-5 12-12 12s-12-5-12-12v-48c0-7 5-12 12-12s12 5 12 12zm0 120v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm0 108v42c0 7-5 12-12 12s-12-5-12-12v-42c0-7 5-12 12-12s12 5 12 12zm42-228v48c0 7-5 12-12 12s-12-5-12-12v-48c0-7 5-12 12-12s12 5 12 12z'/%3E %3C/svg%3E");
+    // background-size: 40vw;
+    // background-position: 100% 100%;
+    // background-repeat: no-repeat;
+    
+  
+    .service-link {
+      
+      &:first-of-type {
+        padding-bottom: 24px;
+        border-bottom: 2px solid #FCF6E7;
+        margin-bottom: 30px;
+      }
+
+      @media only screen and (min-width: 1100px) {
+
+        &:first-of-type {
+          padding: 0 30px 0 0;
+          border-bottom: none;
+          border-right: 2px solid #FCF6E7;
+          margin: 0;
+        }
+
+        &:last-of-type {
+          padding: 0 0 0 30px;
+        }
+      }
+    }
+  }
+
+  .block--example {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    background-color: #858AA5; // lavender
+    // background: #526165;
+    // background: #4F6F88;
+    // background: #6D898C;
+    // background-size: 420px;
+    // background-position: 95% 54px;
+    // background-repeat: no-repeat;
+    // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='864' height='864' viewBox='0 0 864 864'%3E %3Cpath fill='%23EEEEEE' d='M204 475.6c5 0 10 4 10 10l-1 24 15-14v-1h1c1-2 3-2 6-2l103 2c5 0 10 4 10 10-1 5-5 9-10 9l-94-2v59l-1 1v2h-1v1h-1l-2 2h-2v1h-33c-3 0-6-1-8-3-1-2-2-4-2-7v-73l-173-6v83c0 5-4 9-9 9l-12 1v-19h2v-84c0-2 1-5 3-6 2-2 4-3 7-3l192 6zm107 113c6 0 10 4 10 10 1 5-4 9-9 10l-312 11v-19l311-12zm-203 81c5 0 8 3 8 8s-3 9-8 9H0v-16c9 0 13 0 18-1h90zm70 42c0 5-4 9-9 9-9 0-13 1-17 1h-17c-8 0-12 1-16 1s-9 1-18 1H67c-9 0-13-1-18-1-4-1-7-1-15-1H0v-19h34c9 0 13 0 18 1 4 0 8 1 15 1h34c8 0 12-1 16-1 4-1 9-1 18-1h16c4-1 9-1 18-1 5 0 9 4 9 10zm27 30c4 0 7 1 14 1h15c4-1 8-1 16-1 6 0 11 5 11 11s-5 11-11 11h-15c-4 0-8 1-16 1-9 0-14-1-18-2s-7-1-14-1c-6 0-10 0-13 1-4 0-9 1-18 1-7 0-11 0-15 1h-16c-9 0-14-1-18-2-3-1-7-1-13-1H79c-4 0-8 1-17 1-6 0-10 0-13 1-4 1-9 1-18 1H16c-4 1-8 1-16 1v-22h31c7 0 10-1 14-1 4-1 9-2 17-2h15c4-1 9-1 17-1 9 0 13 1 18 2 3 1 6 1 13 1h31c7 0 10-1 14-2 4 0 9-1 17-1 9 0 14 1 18 2zm149 48c4 1 7 2 13 2 7 0 12 5 12 12s-5 12-12 12c-10 0-16-2-21-4-3-1-6-2-12-2-7 0-10 1-14 2-5 1-10 2-20 2s-15-1-19-2-7-2-14-2c-8 0-11 1-15 1-4 1-9 2-18 2h-16c-4 1-9 1-18 1s-13 0-17-1h-32c-4 1-9 1-18 1s-15-1-19-2-7-2-14-2-10 1-14 1c-5 1-10 3-19 3H51c-4 0-9 1-18 1-10 0-15-2-20-3-3-1-6-2-13-2v-24c10 0 16 1 20 3 4 1 7 2 13 2 8 0 12-1 16-1h18c7 0 10-1 14-2s9-2 19-2 15 1 20 2c4 1 7 2 13 2h16c5-1 9-1 18-1h17c4 1 8 1 16 1s12 0 16-1h18c7 0 10-1 14-2 5 0 10-1 19-1 10 0 15 1 20 3 3 1 6 1 13 1s10 0 14-1c5-2 10-3 20-3s16 2 20 4zm-294-284c2 0 3 2 3 3v17c0 2-1 3-3 3H45c-1 0-3-1-3-3v-17c0-2 2-3 3-3h15zm0 36c2 0 3 1 3 2v17c0 2-1 3-3 3H45c-1 0-3-1-3-3v-17c0-1 2-2 3-2h15zm201-201l7 19v39l3 7 1-1c3-2 7-3 11-1l18 8 32 4c5 0 9 5 8 11 0 5-5 9-10 8l-34-4c-1 0-2-1-2-1l-15-6-6 6c-2 2-6 3-9 2s-5-3-6-6l-9-21c-1-1-1-3-1-4v-1h-4l-15 1h-1c-3 0-7-3-8-6 0 1-1 1-1 2v26c-1 4-2 7-5 8-3 2-7 2-10 1l-5-3v1c-2 2-5 4-8 4l-29 1-17 9c-2 1-3 2-5 2h-14l-12 6-1 1-29 12c-2 0-3 1-4 1-4 0-7-3-9-6-2-5 0-11 5-13l29-12 14-7c2-1 3-2 5-2h13l17-9c2-1 3-2 5-2h26l3-4c2-4 8-6 12-4v-13c1-5 5-23 19-23 7 0 12 4 15 9v-17c0-1 0-2 1-3l7-19c1-4 5-6 9-6s7 2 9 6zm-162 166c1 0 3 1 3 3v16c0 2-2 3-3 3H84c-2 0-3-1-3-3v-16c0-2 1-3 3-3h15zm0 34c2 0 3 2 3 3v17c0 1-1 2-3 2H84c-1 0-2-1-2-2v-17c0-1 1-3 2-3h15zm38-33c2 0 3 1 3 2v17c0 1-1 3-3 3h-14c-2 0-3-2-3-3v-17c0-1 1-2 3-2h14zm0 33c2 0 3 2 3 3v16c0 2-1 3-3 3h-15c-1 0-2-1-2-3v-16c0-1 1-3 2-3h15zm38-32c2 0 3 1 3 2v16c0 1-1 3-3 3h-15c-1 0-3-2-3-3v-16c0-1 2-3 3-3l15 1zm0 32c2 0 3 2 3 3v16c0 1-1 2-3 2h-15c-1 0-3-1-3-2v-16c0-1 2-3 3-3h15zm193-255l12 306c5 4 28 10 49 12h36c5 0 10 5 10 10-1 5-5 10-10 10l-37-1h-1s-13-1-28-4c-13-3-22-6-28-10-16 16-40 37-41 38l-5 3-58 14 1 1 61-1 37 49-83-5c-3 0-6-2-7-4l-24-29-14-7c-3-1-6-5-5-9 0-4 3-8 7-9l79-19c6-5 29-26 42-39l-12-306c0-5 4-9 9-10 5 0 10 4 10 10zm-93 239c2 0 3 0 3 2v12c0 1-1 2-3 2h-12c-2 0-3-1-3-2v-13c0-1 1-1 3-1h12zm0 26c2 0 3 1 3 2v13c0 1-1 1-3 1l-12 1c-2 0-3-1-3-2v-13c0-1 1-2 3-2h12zm32-26c1 0 2 1 2 2v12c0 1-1 2-2 2h-13c-1 0-2-1-2-2v-12c0-1 1-2 2-2h13zm0 26c1 0 2 1 2 2v12c0 1-1 2-2 2h-13c-1 0-2-1-2-2v-12c0-1 1-2 2-2h13zm29-26c2 0 3 1 3 2v12c0 1-1 2-3 2h-12c-1 0-2-1-2-2v-12c0-1 1-2 2-2h12zm176-360l5 444 51 1 33 4c6 0 10 5 9 11 0 6-5 10-11 9l-33-3-56-2-8 6-19 17c-2 1-4 2-6 2l-31 3-20 11h-2l-35 11 1 2h41l31 51-48-2h-7c-4 0-6-2-8-4l-36-47c-2-3-2-6-1-9s3-6 7-7l48-14 22-11c1-1 2-1 4-1l29-3 16-14c1 0 1 0 1-1l7-5-4-449c0-5 4-10 10-10s10 5 10 10zm-36 303c4 0 8 4 8 8 0 5-4 9-9 8l-62-2v83c0 5-4 8-9 8-4 0-8-3-8-8v-92c0-2 1-4 2-6 2-2 4-2 7-2l71 3zm-32 27c1 0 2 1 2 2v12c0 1-1 2-2 2h-13c-2 0-3-1-3-2v-13c0-1 1-2 3-2l13 1zm0 27c1 0 2 1 2 2v13c0 1-1 2-2 2h-13c-2 0-3-1-3-2v-13c0-1 1-2 3-2h13zm28-26c2 0 3 0 3 1v13c0 1-1 2-3 2l-12-1c-1 0-2 0-2-1v-13c0-1 1-2 2-2l12 1zm153-407l24 540 15-8c1-1 3-2 4-2l86-9c6 0 12 4 13 11 0 6-4 11-11 12l-83 9-57 32c-2 1-4 1-5 1l-55 4-68 15 26 42 37 1h14l18 23h-40v-1h-36c-4 0-8-2-10-6l-37-62c-2-3-2-7-1-10 2-3 5-6 8-7l43-8 43-9 54-4 20-11-24-552c-1-6 4-12 10-12 7 0 12 5 12 11zm-32 393c4 0 8 4 8 8v77c0 5-4 8-8 8-5 0-9-3-9-8v-69l-44-1c-5 0-9-4-8-9 0-5 4-8 8-8l53 2zm-24 28c1 0 2 0 2 1v13c0 1-1 1-2 1h-12c-1 0-2-1-2-2v-12c0-1 1-2 2-2l12 1zm0 26c1 0 2 1 2 2v12c0 1-1 2-2 2h-12c-1 0-2-1-2-2v-12c0-1 1-2 2-2h12zm222-506l12 640 14-1 47-4v24l-45 4h-1l-92 5-44 11-71 15 3 4 250-1v74c-110-4-227-10-228-11-3 0-7-2-9-4l-46-62c-3-4-3-8-2-12 2-4 5-6 9-7l89-19 44-11c1-1 2-1 2-1l56-3-12-641c0-6 5-12 11-12 7 0 13 5 13 12zm-84 393c2 0 4 1 5 2l30 28c2 1 3 4 3 6v108c0 5-4 9-9 9-4 0-8-4-8-9v-12h-37c-3 0-7-3-7-7s3-7 7-7l37-1v-15l-38-1-8 1c-3 0-6-2-7-6s2-7 6-8l8-1h39v-16l-38-1-6 1c-4 1-8-1-9-5s1-8 5-9l8-2h2l38 2v-14l-37-3-7 2c-3 2-8 0-9-4s1-8 5-9l7-3h3l24 1-11-10-12-1-5 2-4 1c-3 0-6-2-7-5-2-5 0-10 4-11l7-3c1-1 3-1 4-1l17 1zm157 198v25c-1 0-2-1-3-1l-38-10c-6-2-10-9-8-15s8-10 15-8l34 9z'/%3E %3C/svg%3E");
+    
+    // @media only screen and (max-width: 700px) {
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        width: 25vw;
+        height: 100%;
+        pointer-events: none;
+        background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.25) );
+      }
+    // }
+
+    .block {
+      padding: 30px; 
+      
+      @media only screen and (min-width:1200px) {
+        padding-left: 0;
+      }
+    }
+
+    h1 {
+      color: #fff;
+    }
+  }
+
+  .card.width-33 {
+    z-index: 2;
+    display: inline-block;
+    float: none;
+    white-space: normal;
+    vertical-align: top;
+    margin-bottom: 0;
+    
+    &:nth-child(4n),
+    &:last-of-type {
+      margin-right: 24px !important;
+    }
+  }
+}
+
+
+/*------------------------------------*\
+  Services page
+\*------------------------------------*/
+
+.page-services {
+
+  .imgfade {
+    position: relative;
+    bottom: 0;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      bottom: -102px;
+      left: 0;
+      height: 67%;
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%);
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    
+    img {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      margin: 0 0 -102px;
+      border-radius: 6px;
+    }
+  }
+
+  .icon--service {
+    margin: 0 18px 18px 0;
+  }
+
+  .item__summary {
+    padding: 18px;
+    margin: 0 24px 18px;
+  }
+
+  h2 {
+    position: relative;
+    z-index: 2;
+    margin: -60px 0 0 24px;
+    text-shadow: 0 4px 12px rgba(0,0,0,1);
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  p {
+    margin-bottom: 0;
+    background: #fff;
+    margin: -9px -18px -18px;
+    padding: 18px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+}
+
+
+
+/*------------------------------------*\
+  Contact page
+\*------------------------------------*/
+
+
+.map {
+  max-width: 100%;
+  height: 400px;
+  margin: 0 0 30px;
+}
+
+
+/*---------------------------------------------------------------------------*\
+    New additional colors (mostly pastels)
+\*---------------------------------------------------------------------------*/
+
+/*
+toctocMenü   #9B2E36
+text:     #FFE8E8
+
+bienvenue < start:      #FCF6E7   (façades)
+
+bienvenue < services:     #F1E4C6   (sable)
+
+bienvenue < examples:     #948EBD   (lavende)
+
+bienvenue < comment     #B5BF52   (olives)
+
+bienvenue < temoignages     #FFFB9F   (pastis)
+*/
+
+/*---------------------------------------------------------------------------*\
+    Different page colors
+\*---------------------------------------------------------------------------*/
+
+// .page-welcome {
+//   header {
+//     color: $color-logo0;
+//   }
+// }
+
+.page-services {
+  // background: #F1E4C6;
+//   header, h1 {
+//     color: $color-orange1;
+//   }
+}
+
+
+// .page-examples {
+//   header, h1 {
+//     color: $color-green2;
+//   }
+// }
+
+// .page-pricing {
+//   header, h1 {
+//     color: $color-blue2;
+//   }
+// }
+
+// .page-how-it-works {
+//   header, h1 {
+//     color: $color-red3;
+//   }
+// }
+
+// .page-about {
+//   header, h1 {
+//     color: $color-blue1;
+//   }
+// }
+
+// .page-contact {
+//   header, h1 {
+//     color: $color-green1;
+//   }
+// }
