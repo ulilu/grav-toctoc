@@ -80,7 +80,9 @@
   height: 90px;
   font-family: $font-regular;
   list-style: none;
-  margin: 0;
+  margin: 0 !important;
+  transform: none;
+  -webkit-transform: none;
 }
 
 .langswitcher li {
