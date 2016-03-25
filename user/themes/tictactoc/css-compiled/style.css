@@ -792,14 +792,20 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 @media only screen and (min-width: 700px) { .main-nav__wrapper { overflow: visible; } }
 @media only screen and (max-width: 700px) { .main-nav__wrapper:after { content: ""; display: block; position: absolute; right: 0; top: 0; height: 51px; width: 100px; pointer-events: none; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.6)); } }
 
-.main-nav { position: relative; display: block; width: 100%; padding: 6px 6px 15px; margin: 0 0 -9px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; list-style: none; background: #9B2E36; transition: all 0.2s ease-in-out; white-space: nowrap; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
+/* scroll-button on right side of main-nav, only on mobile */
+.scrollmenu { display: none; position: absolute; z-index: 3; bottom: 0; right: 0; width: 42px; height: 51px; cursor: pointer; background-color: rgba(0, 0, 0, 0.75); background-color: #9B2E36; border-left: 2px solid #fff; }
+@media only screen and (max-width: 700px) { .scrollmenu { display: block; } }
+.scrollmenu:after { content: ""; display: block; position: absolute; right: 12px; top: 16px; height: 0; width: 0; border-top: 9px solid transparent; border-left: 15px solid #fff; border-bottom: 9px solid transparent; transition: all 0.35s; }
+.scrollmenu.active:after { transform: rotate(180deg); right: 15px; }
+
+.main-nav { position: relative; display: block; width: 100%; padding: 6px 6px 15px; margin: 0 0 -9px 0; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; list-style: none; background: #9B2E36; transition: all 0.2s ease-in-out; white-space: nowrap; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
 @media only screen and (min-width: 700px) { .main-nav { margin: 0 0 -24px; display: table; overflow: auto; padding: 6px; margin: 0; } }
 @media only screen and (min-width: 1200px) { .main-nav { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24); border-radius: 9px; } }
 
 .main-nav__item { position: relative; display: table-cell; vertical-align: middle; width: 1%; text-align: center; margin: 0; padding: 0 3px; }
 .main-nav__item:first-of-type { width: 0.5%; padding-left: 0; }
-.main-nav__item:nth-of-type(2) { display: none; padding-left: 0; }
-.main-nav__item:last-of-type { padding-right: 0; }
+.main-nav__item:last-of-type { padding-right: 48px; }
+@media only screen and (min-width: 700px) { .main-nav__item:last-of-type { padding-right: 0; } }
 
 .main-nav__item--home a { display: block; line-height: 36px; font-size: 21px; color: #fff; text-align: center; padding: 0 12px; }
 
@@ -1134,6 +1140,11 @@ ul p { margin-bottom: 0; }
 .partner h3 { font-size: 21px; line-height: 28px; margin-bottom: 18px; }
 .partner p { min-height: 54px; margin-bottom: 0; }
 
+/*------------------------------------*\ Scroll to top button
+\*------------------------------------*/
+.scrolltop { display: none; z-index: 999; position: fixed; bottom: 12px; right: 12px; width: 66px; height: 66px; border-radius: 50%; cursor: pointer; text-indent: -9999em; background-color: #000; opacity: 0.4; border: 3px solid #fff; }
+.scrolltop:after { content: ""; display: block; position: absolute; top: 14px; right: 14px; height: 0; width: 0; border-left: 16px solid transparent; border-bottom: 25px solid #dbdad7; border-right: 16px solid transparent; }
+
 /*---------------------------------------------------------------------------*\ Page adaptations
 \*---------------------------------------------------------------------------*/
 /*------------------------------------*\ Welcome page
@@ -1152,9 +1163,13 @@ ul p { margin-bottom: 0; }
 
 /*------------------------------------*\ Services page
 \*------------------------------------*/
+.page-services .block--service { padding: 0 0 30px; }
+@media only screen and (min-width: 600px) { .page-services .block--service { padding: 30px; } }
 .page-services .imgfade { position: relative; bottom: 0; }
-.page-services .imgfade:after { content: ""; position: absolute; z-index: 0; bottom: -102px; left: 0; height: 67%; width: 100%; background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75) 50%); border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
-.page-services .imgfade img { position: relative; display: inline-block; width: 100%; max-height: 480px; object-fit: cover; margin: 0 0 -102px; border-radius: 6px; }
+.page-services .imgfade:after { content: ""; position: absolute; z-index: 0; bottom: -102px; left: 0; height: 67%; width: 100%; background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75) 50%); }
+@media only screen and (min-width: 600px) { .page-services .imgfade:after { border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; } }
+.page-services .imgfade img { position: relative; display: inline-block; width: 100%; max-height: 480px; object-fit: cover; margin: 0 0 -102px; }
+@media only screen and (min-width: 600px) { .page-services .imgfade img { border-radius: 6px; } }
 .page-services .icon--service { margin: 0 18px 18px 0; }
 .page-services .item__summary { padding: 18px; margin: 0 24px 18px; }
 .page-services h2 { position: relative; z-index: 2; margin: -60px 0 0 24px; text-shadow: 0 4px 12px black; }
