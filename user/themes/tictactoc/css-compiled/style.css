@@ -796,7 +796,7 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .scrollmenu { display: none; position: absolute; z-index: 3; bottom: 0; right: 0; width: 42px; height: 51px; cursor: pointer; background-color: rgba(0, 0, 0, 0.75); background-color: #9B2E36; border-left: 2px solid #fff; }
 @media only screen and (max-width: 700px) { .scrollmenu { display: block; } }
 .scrollmenu:after { content: ""; display: block; position: absolute; right: 12px; top: 16px; height: 0; width: 0; border-top: 9px solid transparent; border-left: 15px solid #fff; border-bottom: 9px solid transparent; transition: all 0.35s; }
-.scrollmenu.active:after { transform: rotate(180deg); right: 15px; }
+.scrollmenu.active:after { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); right: 15px; }
 
 .main-nav { position: relative; display: block; width: 100%; padding: 6px 6px 15px; margin: 0 0 -9px 0; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; list-style: none; background: #9B2E36; transition: all 0.2s ease-in-out; white-space: nowrap; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
 @media only screen and (min-width: 700px) { .main-nav { margin: 0 0 -24px; display: table; overflow: auto; padding: 6px; margin: 0; } }
@@ -810,9 +810,9 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .main-nav__item--home a { display: block; line-height: 36px; font-size: 21px; color: #fff; text-align: center; padding: 0 12px; }
 
 .main-nav__link { display: block; padding: 6px; white-space: nowrap; color: white; font-size: 18px; }
-.active .main-nav__link, .main-nav__link:hover { background: white; border-radius: 6px; }
+.active .main-nav__link, .focus .main-nav__link, .main-nav__link:hover { background: white; border-radius: 6px; }
 .main-nav__link:hover { color: currentColor; }
-.active .main-nav__link, .active .main-nav__link:hover { color: #3e0000 !important; }
+.active .main-nav__link, .focus .main-nav__link, .active .main-nav__link:hover { color: #3e0000 !important; }
 
 /*  Main nav when sticky
 
