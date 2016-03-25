@@ -422,6 +422,7 @@ body {
   
   @media only screen and (min-width: 650px) { 
     float:right;
+    width: -webkit-calc(50% - 30px);
     width: calc(50% - 30px);
     margin: 72px 0 24px 30px;
   }
@@ -462,14 +463,18 @@ body {
   
   h1 {
     position: absolute;
-    bottom: 30px;
     z-index: 2;
+    left: -webkit-calc(50%);
+    left: calc(50%);
+    bottom: 30px;
+    width: -webkit-calc(100% - 60px);
+    width: calc(100% - 60px);
+    max-width: 1200px;
     color: #fff;
     margin: 0 auto;
     text-shadow: 1px 0 6px #000;
-    width: calc(100% - 60px);
-    max-width: 1200px;
-    left: calc(50%);
+
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
   
@@ -542,6 +547,7 @@ body {
     height: 100%;
     border: 2px solid #fff;
     border-radius: 50% 50% 0 50%;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     background: $color-green2;
   }

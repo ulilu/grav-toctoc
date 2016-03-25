@@ -1069,7 +1069,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /* Welcome Video on Homepage */
 .video-container { width: 100%; margin: 0 0 30px; }
-@media only screen and (min-width: 650px) { .video-container { float: right; width: calc(50% - 30px); margin: 72px 0 24px 30px; } }
+@media only screen and (min-width: 650px) { .video-container { float: right; width: -webkit-calc(50% - 30px); width: calc(50% - 30px); margin: 72px 0 24px 30px; } }
 
 .video-wrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; }
 
@@ -1081,7 +1081,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 @media only screen and (min-width: 600px) { .stage { max-height: 400px; } }
 @media only screen and (min-width: 900px) { .stage { max-height: 500px; } }
 @media only screen and (min-width: 1200px) { .stage { max-height: 600px; } }
-.stage h1 { position: absolute; bottom: 30px; z-index: 2; color: #fff; margin: 0 auto; text-shadow: 1px 0 6px #000; width: calc(100% - 60px); max-width: 1200px; left: calc(50%); transform: translateX(-50%); }
+.stage h1 { position: absolute; z-index: 2; left: -webkit-calc(50%); left: calc(50%); bottom: 30px; width: -webkit-calc(100% - 60px); width: calc(100% - 60px); max-width: 1200px; color: #fff; margin: 0 auto; text-shadow: 1px 0 6px #000; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .stage:after { content: ""; display: block; width: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.5) 95%); }
 .stage img { width: 100%; height: 70vH; max-height: 300px; object-fit: cover; object-position: center; transition: all 0.3s ease-in-out; }
 @media only screen and (min-width: 600px) { .stage img { max-height: 400px; } }
@@ -1094,7 +1094,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 /*---------------------------------------------------------------------------*\ Text / Headline styles (used on page-example)
 \*---------------------------------------------------------------------------*/
 .bullet { display: inline-block; position: absolute; z-index: 1; float: left; width: 44px; height: 44px; line-height: 50px; margin: 0 18px 12px 0; color: #fff; text-align: center; }
-.bullet:after { content: ''; position: absolute; z-index: -1; display: block; left: 0; top: 0; width: 100%; height: 100%; border: 2px solid #fff; border-radius: 50% 50% 0 50%; transform: rotate(45deg); background: #18b8ad; }
+.bullet:after { content: ''; position: absolute; z-index: -1; display: block; left: 0; top: 0; width: 100%; height: 100%; border: 2px solid #fff; border-radius: 50% 50% 0 50%; -webkit-transform: rotate(45deg); transform: rotate(45deg); background: #18b8ad; }
 .has-bullet + .bullet { margin-top: -36px; margin-right: 9px; }
 .bullet + p { text-indent: 48px; }
 
