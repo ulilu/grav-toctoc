@@ -859,7 +859,7 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 @media only screen and (min-width: 1050px) { .image-row { display: inline-block; width: 70%; } }
 
-.image-row-text figcaption { display: table-cell; color: #fff; line-height: 120%; letter-spacing: 2px; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); vertical-align: middle; padding: 18px; margin: 0; }
+.image-row-text figcaption { display: table-cell; color: #fff; line-height: 120%; letter-spacing: 2px; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); vertical-align: middle; padding: 12px; margin: 0; }
 @media only screen and (min-width: 750px) { .image-row-text figcaption { padding: 1.5vw; } }
 
 /*---------------------------------------------------------------------------*\ Text / Headline styles (used on page-example)
