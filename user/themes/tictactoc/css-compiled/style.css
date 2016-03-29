@@ -852,8 +852,8 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .image-row + .image-row.width-100, .image-row-headline + .image-row.width-100, .image-row + .image-row-headline.width-100, .image-row-headline + .image-row-headline.width-100 { width: auto !important; }
 @media only screen and (min-width: 750px) { .image-row + .image-row.width-100, .image-row-headline + .image-row.width-100, .image-row + .image-row-headline.width-100, .image-row-headline + .image-row-headline.width-100 { width: calc(100% + 12px) !important; } }
 .image-row a, .image-row-headline a { display: table-cell; width: 1%; }
-.image-row img, .image-row-headline img { width: 100%; height: 100%; object-fit: cover; max-height: 40vmin; }
-@media only screen and (min-width: 750px) { .image-row img, .image-row-headline img { border-radius: 4px; } }
+.image-row img, .image-row-headline img { width: 100%; height: 100%; object-fit: cover; max-height: 50vmin; }
+@media only screen and (min-width: 750px) { .image-row img, .image-row-headline img { border-radius: 4px; max-height: 40vmin; } }
 .image-row figcaption, .image-row-headline figcaption { color: #888; background: #EEE; border-radius: 0; padding: 6px 18px 6px 36px; margin: 0; }
 @media only screen and (min-width: 750px) { .image-row figcaption, .image-row-headline figcaption { border-radius: 4px; padding: 6px 6px 6px 12px; margin: 6px 5px 0; } }
 
