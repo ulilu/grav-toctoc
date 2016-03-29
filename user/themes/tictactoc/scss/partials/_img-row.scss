@@ -1,3 +1,11 @@
+/*------------------------------------*\
+  1. necessary to get automatic numbering of headlines, see:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
+\*------------------------------------*/
+.page-example {
+  counter-reset: step  /* 1.  */ 
+}
+
 /*---------------------------------------------------------------------------*\
     Image row with table-cell-spacing: Each image gets an equal width
 \*---------------------------------------------------------------------------*/
@@ -5,12 +13,36 @@
 .image-row,
 .image-row-headline {
   padding: 0;
-  margin: 0 -6px 30px;
+  margin: 0 -36px 30px;
   overflow: hidden;
-  border-spacing: 6px;
-  
+  border-spacing: 0;
+
+  @media only screen and (min-width:750px) {
+    margin: 6px -6px 30px;
+    border-spacing: 6px 0;
+  }
+
+  // @media only screen and (min-width:1050px) {
+  //   margin: 0 0 30px;
+  // }
+
   & + & {
-    margin-bottom: 0;
+    margin-top: -30px;
+    @media only screen and (min-width:750px) {
+      margin-top: -24px;
+    }
+
+    @media only screen and (min-width:1050px) {
+      margin-top: -33px;
+    }
+  }
+
+  & + &.width-100 {
+    width: auto !important;
+    
+    @media only screen and (min-width:750px) {
+      width: calc(100% + 12px) !important;
+    }
   }
 
   a {
@@ -28,8 +60,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 4px;
     max-height: 40vmin;
+    
+    @media only screen and (min-width: 750px) {
+      border-radius: 4px;
+    }
     
     // @media only screen and (min-width: 700px) {
     //   max-height: 50vmin;
@@ -42,18 +77,48 @@
     // }
   }
 
+  // a:first-of-type img {
+  //   @media only screen and (max-width: 650px) {
+  //     border-top-left-radius: 0;
+  //     border-bottom-left-radius: 0;
+  //   }
+  // }
+
+  // a:last-of-type img {
+  //   @media only screen and (max-width: 650px) {
+  //     border-top-right-radius: 0;
+  //     border-bottom-right-radius: 0;
+  //   }
+  // }
+
   figcaption {
     // font-size: 14px;
     color: #888;
     background: #EEE;
-    margin: 0 6px;
-    border-radius: 4px; 
-    padding: 6px 6px 6px 12px;
+    border-radius: 0; 
+    padding: 6px 18px 6px 36px;
+    margin: 0;
     // word-break: break-word;
     // -webkit-hyphens: auto;
     // hyphens: auto;
+    @media only screen and (min-width: 750px) {
+      border-radius: 4px;
+      padding: 6px 6px 6px 12px;
+      margin: 6px 5px 0;
+    }
   }
 }
+
+.image-row {
+  
+  @media only screen and (min-width:1050px) {
+    display: inline-block;
+    // vertical-align: middle;
+    width: 70%;
+    // margin-bottom: 0;
+  }
+}
+
 
 .image-row-text figcaption {
   display: table-cell;
@@ -67,9 +132,109 @@
   letter-spacing: 2px;
   text-shadow: 0 2px 2px rgba(0,0,0,0.3);
   vertical-align: middle;
-  padding: 1.5vw;
+  padding: 18px;
   margin: 0;
+  
+  @media only screen and (min-width:750px) {
+    padding: 1.5vw;
+  }
 }
+
+
+/*---------------------------------------------------------------------------*\
+    Text / Headline styles (used on page-example)
+\*---------------------------------------------------------------------------*/
+
+hr.has-bullet {
+  background-color: #ccc;
+  margin: 45px 0 18px 60px;
+  
+  @media only screen and (min-width:1050px) {
+    margin: 0 0 18px 60px;
+  }
+}
+
+.bullet {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  width: 44px;
+  height: 44px;
+  line-height: 50px;
+  margin: 0 18px 12px 0;
+  color: $color-logo0;
+  text-align: center;
+  background: none;
+  font-size: 0;
+  // text-indent: -10px;
+
+
+/*------------------------------------*\
+  1. Increment the section counter
+  2. Display the counter 
+\*------------------------------------*/
+
+  &:before {
+    counter-increment: step;                
+    content: counter(step); 
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  &:after {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 50% 50% 0 50%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: currentColor;
+  }
+
+  .has-bullet + & {
+    margin-top: -36px;
+    margin-right: 9px;
+  }
+
+  & + p {
+    text-indent: 48px;
+  
+    @media only screen and (min-width:1050px) {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(30% + 6px);
+      padding-right: 30px; 
+    }
+  }
+
+  &.bullet-text-right + p {
+    @media only screen and (min-width:1050px) {
+      float: right;
+      padding-right: 0;
+      padding-left: 18px;
+      margin-bottom: 48px;
+      text-indent: 0;
+    }
+  }
+}
+
+
+ul p {
+  margin-bottom: 0;
+}
+
 
 /*---------------------------------------------------------------------------*\
     Manual image-widths: Based on additional class on .image-row
@@ -78,6 +243,10 @@
 /*------------------------------------*\
   2 images per row
 \*------------------------------------*/
+
+.row-100 {
+  width: 100% !important;
+}
 
 .row-50-50 {
   > *:nth-child(1) {width: 50% !important;}

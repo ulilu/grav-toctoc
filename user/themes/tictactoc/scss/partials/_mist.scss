@@ -103,6 +103,7 @@ body {
 
 
 .block {
+  position: relative;
   margin: 0 auto;
   max-width: 1200px;
   padding: 30px; 
@@ -171,13 +172,33 @@ body {
 /*---------------------------------------------------------------------------*\
     .cell
     This is a wrapper element, to appear within .block.
+    Creates elements of equal height.
+
     Use in conjunction with the single properties classes like "width-50"
+    ==> Not really necessary i think - table-cells will automatically share the
+    available width, no?
 \*---------------------------------------------------------------------------*/
 
 
 .cell {
-  display: table-cell !important;
-  width: 100%;
+  display: block;
+  margin: 0 -30px;
+  
+  @media only screen and (min-width:650px) {
+    margin: 0;
+  }
+
+  @media only screen and (min-width:800px) {
+    display: table-cell !important;
+    width: 50%;
+    padding-right: 24px;
+    margin-bottom: 36px;
+  }
+  
+  > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 .cell--padded {
@@ -188,24 +209,12 @@ body {
   padding: 24px;
   background: #18b8a0;
   color: #fff;
-  margin: 0 0 24px;
-  
-  > *:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
 }
 
 
 .cell--info {
   padding: 24px;
   background: #EEEEEE;
-  margin: 0 0 24px;
-  
-  > *:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
 }
 
 
@@ -219,30 +228,48 @@ body {
   float: left;
   background: #fff;
   border-radius: 6px;
-  @include material-card1();
-  min-width: 272px;  /* one card visible on iphone3 with 320px screenwidth*/
+  // min-width: 272px;  /* one card visible on iphone3 with 320px screenwidth*/
   margin-bottom: 24px;
+  @include material-card1();
+  width: 100%;
+
+
+  &.width-33,
+  &.width-25 {
+
+    @media only screen and (min-width:800px) {
+      width: 30%;
+      width: -webkit-calc(33.33% - 16px) !important;
+      width: calc(33.33% - 16px) !important;
+      margin-right: 24px;
+      
+      &:nth-child(4n) {
+        margin-right:0;
+      }
+      &:nth-child(5n) {
+        clear: both;
+      }
+    }
+  }
 
   &.width-25 {
-    width: 22%;
-    width: -webkit-calc(25% - 18px) !important;
-    width: calc(25% - 18px) !important;
-    margin-right: 24px;
+
+    @media only screen and (min-width:1050px) {
+      width: 22%;
+      width: -webkit-calc(25% - 18px) !important;
+      width: calc(25% - 18px) !important;
+      margin-right: 24px;
+      
+      &:nth-child(4n) {
+        margin-right:0;
+      }
+      &:nth-child(5n) {
+        clear: both;
+      }
+    }
   }
 
-  &.width-33 {
-    width: 30%;
-    width: -webkit-calc(33.33% - 16px) !important;
-    width: calc(33.33% - 16px) !important;
-    margin-right: 24px;
-    
-    &:nth-child(4n) {
-      margin-right:0;
-    }
-    &:nth-child(5n) {
-      clear: both;
-    }
-  }
+  
   
   &[class*='width-']:last-of-type {
     margin-right: 0 !important;
@@ -520,51 +547,7 @@ body {
 }
 
 
-/*---------------------------------------------------------------------------*\
-    Text / Headline styles (used on page-example)
-\*---------------------------------------------------------------------------*/
 
-.bullet {
-  display: inline-block;
-  position: absolute;
-  z-index: 1;
-  float: left;
-  width: 44px;
-  height: 44px;
-  line-height: 50px;
-  margin: 0 18px 12px 0;
-  color: #fff;
-  text-align: center;
-
-  &:after {
-    content:'';
-    position: absolute;
-    z-index: -1;
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #fff;
-    border-radius: 50% 50% 0 50%;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background: $color-green2;
-  }
-
-  .has-bullet + & {
-    margin-top: -36px;
-    margin-right: 9px;
-  }
-
-  & + p {
-    text-indent: 48px;
-  }
-}
-
-ul p {
-  margin-bottom: 0;
-}
 
 
 /*---------------------------------------------------------------------------*\
