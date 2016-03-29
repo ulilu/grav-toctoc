@@ -228,29 +228,68 @@ body {
   float: left;
   background: #fff;
   border-radius: 6px;
-  // min-width: 272px;  /* one card visible on iphone3 with 320px screenwidth*/
+  min-width: 224px;  /* one card visible on iphone3 with 320px screenwidth*/
   margin-bottom: 24px;
   @include material-card1();
-  width: 100%;
+  width: 100% !important;
 
 
   &.width-33,
   &.width-25 {
+
+    @media only screen and (min-width: 536px) {
+      width: 48%;
+      width: -webkit-calc(50% - 9px) !important;
+      width: calc(50% - 9px) !important;
+      margin-right: 18px;
+    }
 
     @media only screen and (min-width:800px) {
       width: 30%;
       width: -webkit-calc(33.33% - 16px) !important;
       width: calc(33.33% - 16px) !important;
       margin-right: 24px;
-      
-      &:nth-child(4n) {
-        margin-right:0;
+    }
+  }
+
+  &.width-33,
+  &.width-25 {
+
+    @media only screen and (min-width: 536px) {
+    
+      &:nth-of-type(2n) {
+        margin-right: 0;
       }
-      &:nth-child(5n) {
+
+      &:nth-of-type(2n+3) {
+        clear: both;
+      }
+    }
+
+    @media only screen and (min-width:800px) {
+
+      &:nth-of-type(2n) {
+        margin-right: 24px;
+      }
+
+      &:nth-of-type(2n+3) {
+        clear: none;
+      }
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(4n) {
+        margin-right: 24px;
+      }
+
+      &:nth-of-type(3n+4) {
         clear: both;
       }
     }
   }
+
 
   &.width-25 {
 
@@ -260,10 +299,19 @@ body {
       width: calc(25% - 18px) !important;
       margin-right: 24px;
       
-      &:nth-child(4n) {
-        margin-right:0;
+      &:nth-of-type(3n) {
+        margin-right: 24px;
       }
-      &:nth-child(5n) {
+      
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(3n+4) {
+        clear: none;
+      }
+
+      &:nth-of-type(4n+5) {
         clear: both;
       }
     }
@@ -673,23 +721,15 @@ body {
 
 
 .partner {
-  width: 23.5%;
+  // width: 23.5%;
   overflow: hidden;
-  display: inline-block;
-  float: left;
-  margin-right: 2%;
+  // display: inline-block;
+  // float: left;
+  // margin-right: 2%;
   min-height: 360px;
   // border: 1px solid #ccc;
-  margin-bottom: 2%;
+  // margin-bottom: 2%;
   padding: 0 12px 18px;
-  
-  &:nth-child(5n) {
-    margin-right: 0;
-  }
-
-  &:nth-child(6n) {
-    clear: both;
-  }
 
   > a {
     display: block;
@@ -847,9 +887,9 @@ body {
     white-space: normal;
     vertical-align: top;
     margin-bottom: 0;
+    margin-right: 30px !important;
     
-    &:nth-child(4n),
-    &:last-of-type {
+    @media only screen and (min-width:536px) {
       margin-right: 24px !important;
     }
   }
