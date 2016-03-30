@@ -19,7 +19,7 @@
 
 $(document).ready(function() {
 
-  jQuery(".image-row-text figcaption").fitText(0.4);
+  jQuery(".image-row-text figcaption").fitText(0.4, { minFontSize: '14px', maxFontSize: '42px' });
 
   // Move tapped menu item to the left
   // var nav = $('.main-nav');
