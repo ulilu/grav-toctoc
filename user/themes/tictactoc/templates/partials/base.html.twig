@@ -5,14 +5,10 @@
         <meta charset="utf-8" />
         <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
         {% include 'partials/metadata.html.twig' %}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
         <link rel="icon" type="image/png" href="{{ theme_url }}/img/favicon.ico" />
 
          {% block stylesheets %}
-            {# 
-            {% do assets.addCss('theme://css/bootstrap.css') %} 
-            {% do assets.addCss('theme://css/style.css') %}
-            #}
             {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
             {% do assets.addCss('theme://css-compiled/style.css') %}
             {# 
@@ -45,9 +41,9 @@
                 {% do assets.addJs('theme://js/jquery.mobile.customized.min.js') %}
             {% endif %} #}
 
-            {% if browser.getBrowser == 'msie' %}
-                {% do assets.addJs('theme://assets/assets/js/msie.js') %}
-            {% endif %}
+            {# {% if browser.getBrowser == 'msie' %} #}
+                {% do assets.addJs('theme://js/msie.js') %}
+            {# {% endif %} #}
 
             {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
                 {% do assets.addJs('theme://assets/assets/js/html5shiv.js') %}
