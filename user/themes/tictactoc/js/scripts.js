@@ -19,16 +19,8 @@
 
 $(document).ready(function() {
 
-  jQuery(".image-row-text figcaption").fitText(0.5, { minFontSize: '18px', maxFontSize: '48px' });
+  jQuery(".image-row-text figcaption").fitText(0.4, { minFontSize: '24px', maxFontSize: '42px' });
 
-  // Move tapped menu item to the left
-  // var nav = $('.main-nav');
-  // var scrollleft = nav.scrollLeft();
-  // var offset = $(this).offset();
-  // var offsetleft = offset.left;
-  // var elementwidth = $(this).width();
-  // var screenwidth = $(window).width();
-  // nav.animate({scrollLeft:  (offsetleft + scrollleft) + (elementwidth /2) - (screenwidth / 2)}, 200);
 
     /*
      * Button scroll to top
