@@ -41,9 +41,9 @@
             {% do assets.addJs('theme://js/camera.js') %} 
             #}
 
-            {% if browser.getBrowser == 'msie' and browser.getVersion > 9 or browser.getBrowser != 'msie' %}
+  {#           {% if browser.getBrowser == 'msie' and browser.getVersion > 9 or browser.getBrowser != 'msie' %}
                 {% do assets.addJs('theme://js/jquery.mobile.customized.min.js') %}
-            {% endif %}
+            {% endif %} #}
 
             {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
                 {% do assets.addJs('theme://assets/assets/js/html5shiv.js') %}
