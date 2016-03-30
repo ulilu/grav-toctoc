@@ -101,17 +101,17 @@
 
   
 
-.image-row {
+// .image-row {
 
-  a.compat-object-fit {
-    background-size: cover;
-    background-position: center center;
+//   a.compat-object-fit {
+//     background-size: cover;
+//     background-position: center center;
 
-    img { // hide image if object fit is not supported - opacity to 0 for the link area
-      opacity: 0;
-    }
-  }
-}
+//     img { // hide image if object fit is not supported - opacity to 0 for the link area
+//       opacity: 0;
+//     }
+//   }
+// }
 
 
 
