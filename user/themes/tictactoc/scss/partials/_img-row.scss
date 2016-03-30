@@ -53,7 +53,8 @@
 
   a {
     display: table-cell;
-    width: 1%;
+    width: 100%;
+    height: 100%;
     
     // padding-right: 6px;
   }
@@ -97,6 +98,29 @@
   //     border-bottom-right-radius: 0;
   //   }
   // }
+
+  
+
+// .image-row {
+//   &__image-container {
+//     width: 120px; // the same width and height as for the <img>
+//     height: 120px;
+  
+//     &.compat-object-fit {
+//    background-size: cover;
+//    background-position: center center;
+//    .post__featured-image { // hide image if object fit is not supported - opacity to 0 for the link area
+//     opacity: 0;
+//    }
+//   }
+//  }
+//  &__featured-image {
+//   width: 120px;
+//   height: 120px;
+//   object-fit: cover;
+//  }
+// }
+
 
   figcaption {
     // font-size: 14px;
