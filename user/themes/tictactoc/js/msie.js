@@ -1,19 +1,32 @@
 // if ( ! Modernizr.objectfit ) {
 
 
-// if('objectFit' in document.documentElement.style === false) {
-
-//   console.log("this be IE");
-
-//   $('.image-row').each(function () {
-//     console.log("found image-row");
-//     var $container = $(this),
-//         imgUrl = $container.find('img').prop('src');
-//     if (imgUrl) {
-//       console.log("found img src");
-//       $container.find('a')
-//         .css('backgroundImage', 'url(' + imgUrl + ')')
-//         .addClass('compat-object-fit');
-//     }  
-//   });
-// }
+// Detect objectFit support
+if('objectFit' in document.documentElement.style === false) {
+  
+  // assign HTMLCollection with parents of images with objectFit to variable
+  var container = document.getElementsByClassName('image-row').childNodes;
+  
+  // Loop through HTMLCollection
+  for(var i = 0; i < container.length; i++) {
+    
+    // Asign image source to variable
+    var imageSource = container[i].querySelector('img').src;
+    
+    // Hide image
+    container[i].querySelector('img').style.opacity = '0';
+    
+    // Add background-size: cover
+    container[i].style.backgroundSize = 'cover';
+    
+    // Add background-image: and put image source here
+    container[i].style.backgroundImage = 'url(' + imageSource + ')';
+    
+    // Add background-position: center center
+    container[i].style.backgroundPosition = 'center center';
+  }
+}
+else {
+  // You don't have to worry
+  console.log('No worries, your browser supports objectFit')
+}
