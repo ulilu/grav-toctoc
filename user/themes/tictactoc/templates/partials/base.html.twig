@@ -45,10 +45,14 @@
                 {% do assets.addJs('theme://js/jquery.mobile.customized.min.js') %}
             {% endif %} #}
 
-            {% if browser.getBrowser == 'msie' %}
+            <!--[if IE]>
+                <script src="/grav-toctoc/user/themes/tictactoc/js/msie.js" type="text/javascript"></script>
+            <![endif]-->
+
+{#             {% if browser.getBrowser == 'msie' %}
                 {% do assets.addJs('theme://assets/assets/js/msie.js') %}
-            {% endif %}
-            
+            {% endif %} #}
+
             {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
                 {% do assets.addJs('theme://assets/assets/js/html5shiv.js') %}
                 {% do assets.addJs('theme://assets/assets/js/respond.min.js') %}
