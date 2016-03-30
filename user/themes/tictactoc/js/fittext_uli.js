@@ -35,7 +35,7 @@
         // Check window width has actually changed and it's not just iOS triggering a resize event on scroll
         // Always run on initial call and orientationchange event
         if ($(window).width() != windowWidth | ok == true ) {
-            console.log("firstrun =" + ok);
+            // console.log("firstrun =" + ok);
             
             // Update the window width for next time
             windowWidth = $(window).width();
