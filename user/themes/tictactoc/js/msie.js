@@ -1,5 +1,14 @@
 // if ( ! Modernizr.objectfit ) {
 
+
+/*
+ *  Polyfill to add leverage background-position to imitate object-fit
+ *  https://pawelgrzybek.com/image-tag-vs-background-property/
+ *  http://codepen.io/pawelgrzybek/pen/Rrybqg
+ *
+ *  Alternative script: https://github.com/bfred-it/object-fit-images
+ *  Didn't seem to work upon testing in Windows Phone w/ Browserstack
+ */
 document.addEventListener("DOMContentLoaded", function(event) { 
 
   // Detect objectFit support
@@ -26,6 +35,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // Add background-position: center center
       container[i].style.backgroundPosition = 'center center';
     }
+
+
+    // assign HTMLCollection with parents of images with objectFit to variable
+    var stage = document.querySelector('.stage__img');
+      
+    // Asign image source to variable
+    var imageSource = stage.querySelector('img').src;
+
+    // Asign image source to variable
+    var imageAlign = stage.querySelector('img').class;
+    
+    // Hide image
+    stage.querySelector('img').style.opacity = '0';
+    
+    // Add background-size: cover
+    stage.style.backgroundSize = 'cover';
+    
+    // Add background-image: and put image source here
+    stage.style.backgroundImage = 'url(' + imageSource + ')';
+    
+    // Add background-position: center center
+    stage.style.backgroundPosition = 'center '+ imageAlign +')';
+
   }
   else {
     // You don't have to worry
