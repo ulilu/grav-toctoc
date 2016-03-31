@@ -1090,9 +1090,10 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
   .card.width-25:nth-of-type(4n+5) { clear: both; } }
 .card[class*='width-']:last-of-type { margin-right: 0 !important; }
 
-.card__img { border-top-left-radius: 5px; border-top-right-radius: 5px; overflow: hidden; /* this fixes the overflow:hidden in Chrome */ -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); }
+.card__img { border-top-left-radius: 5px; border-top-right-radius: 5px; overflow: hidden; /* this fixes the overflow:hidden in Chrome */ -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); transition: all 0.5s; background-size: 100%; }
 .card__img img { position: relative; display: inline-block; width: 100%; height: 240px; object-fit: cover; margin: 0 0 12px; transition-duration: 0.5s; transform: scale(1); transform-origin: 50% 100%; }
 .card:hover .card__img img { transform: scale(1.1); transform-origin: 50% 100%; /* pan towards bottom of image */ }
+.card:hover .card__img { background-size: 110% !important; }
 
 .card__info { padding: 0 18px 0px; }
 .card__info h3 { font-size: 24px; line-height: 30px; }
