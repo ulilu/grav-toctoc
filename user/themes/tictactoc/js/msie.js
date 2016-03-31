@@ -45,6 +45,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // Asign image source to variable
     var imageAlign = stage.querySelector('img').className;
+
+    if( !imageAlign ){
+      imageAlign = 'center';
+    }
     
     // Hide image
     stage.querySelector('img').style.opacity = '0';
