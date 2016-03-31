@@ -381,7 +381,7 @@ body {
   margin: -24px 0 0;
   
   & > .wrapper {
-    height: 0;
+    // height: 0;
     // padding-bottom: 37.79%; // original ratio of pano-hero1.jpg
     height: 70vH;
     max-height: 300px;
@@ -431,8 +431,14 @@ body {
 \*------------------------------------*/
 
 .hero-bg  {
-  border: 3px solid #f3c;
-  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70vH;
+  max-height: 300px;
+  @media only screen and (min-width: 600px) { max-height: 400px; }
+  @media only screen and (min-width: 900px) { max-height: 500px; }
+  transition: all 0.3s ease-in-out;
 
   video, img {
     position: absolute;

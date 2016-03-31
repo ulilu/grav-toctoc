@@ -1101,7 +1101,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 /*------------------------------------*\ Hero element (similar to .stage)
 \*------------------------------------*/
 .hero { z-index: 1; position: relative; margin: -24px 0 0; }
-.hero > .wrapper { height: 0; height: 70vH; max-height: 300px; transition: all 0.3s ease-in-out; }
+.hero > .wrapper { height: 70vH; max-height: 300px; transition: all 0.3s ease-in-out; }
 @media only screen and (min-width: 600px) { .hero > .wrapper { max-height: 400px; } }
 @media only screen and (min-width: 900px) { .hero > .wrapper { max-height: 500px; } }
 .hero h1, .hero h2 { position: absolute; bottom: 9vw; left: 30px; z-index: 10; font-size: 6.5vw; line-height: 130%; padding-right: 30px; text-shadow: 1px 0 6px #000; }
@@ -1111,7 +1111,9 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*------------------------------------*\ Hero Image & Fade
 \*------------------------------------*/
-.hero-bg { border: 3px solid #f3c; position: relative; }
+.hero-bg { position: absolute; top: 0; width: 100%; height: 70vH; max-height: 300px; transition: all 0.3s ease-in-out; }
+@media only screen and (min-width: 600px) { .hero-bg { max-height: 400px; } }
+@media only screen and (min-width: 900px) { .hero-bg { max-height: 500px; } }
 .hero-bg video, .hero-bg img { position: absolute; display: inline-block; top: 0; left: 0; width: 100%; height: 70vH; object-fit: cover; max-height: 300px; transition: all 0.3s ease-in-out; }
 @media only screen and (min-width: 600px) { .hero-bg video, .hero-bg img { max-height: 400px; } }
 @media only screen and (min-width: 900px) { .hero-bg video, .hero-bg img { max-height: 500px; } }
