@@ -14,35 +14,41 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Detect objectFit support
   if('objectFit' in document.documentElement.style === false) {
 
-    // assign HTMLCollection with parents of images with objectFit to variable
-    var stage = document.querySelector('.stage__img');
 
-    console.log("stage__img = " + document.querySelector('.stage__img'));
+    /*
+     *  Stage image on example page
+     */
+    if( document.querySelector('.stage__img') ) {
+
+      // assign HTMLCollection with parents of images with objectFit to variable
+      var stage = document.querySelector('.stage__img');
+
+      console.log("stage__img = " + document.querySelector('.stage__img'));
+        
+      // Asign image source to variable
+      var imageSource = stage.querySelector('img').src;
+
+      // Asign image source to variable
+      var imageAlign = stage.querySelector('img').className;
+      if( !imageAlign ){ imageAlign = 'center';}
       
-    // Asign image source to variable
-    var imageSource = stage.querySelector('img').src;
-
-    // Asign image source to variable
-    var imageAlign = stage.querySelector('img').className;
-
-    if( !imageAlign ){
-      imageAlign = 'center';
+      // Hide image
+      stage.querySelector('img').style.opacity = '0';
+      
+      // Add background-size: cover
+      stage.style.backgroundSize = 'cover';
+      
+      // Add background-image: and put image source here
+      stage.style.backgroundImage = 'url(' + imageSource + ')';
+      
+      // Add background-position: center center
+      stage.style.backgroundPosition = 'center '+ imageAlign;
     }
-    
-    // Hide image
-    stage.querySelector('img').style.opacity = '0';
-    
-    // Add background-size: cover
-    stage.style.backgroundSize = 'cover';
-    
-    // Add background-image: and put image source here
-    stage.style.backgroundImage = 'url(' + imageSource + ')';
-    
-    // Add background-position: center center
-    stage.style.backgroundPosition = 'center '+ imageAlign;
 
 
-
+    /*
+     *  Card image on example list page / homepage / service page
+     */
     // assign HTMLCollection with parents of images with objectFit to variable
     var cardImg = document.querySelectorAll('.card__img');
     
@@ -54,10 +60,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       // Asign image source to variable
       var imageAlign = cardImg.querySelector('img').className;
-
-      if( !imageAlign ){
-        imageAlign = 'center';
-      }
+      if( !imageAlign ){imageAlign = 'center';}
       
       // Hide image
       cardImg.querySelector('img').style.opacity = '0';
@@ -73,7 +76,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
-    
+    /*
+     *  Image row images on example page
+     */
     // assign HTMLCollection with parents of images with objectFit to variable
     var container = document.querySelectorAll('figure a');
     
