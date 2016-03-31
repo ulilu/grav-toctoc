@@ -96,7 +96,7 @@
 
   &:after {
     content: "►";
-    display: block;
+    display: inline-block;
     position: absolute;
     left: 0;
     top: 0;
@@ -104,10 +104,10 @@
     width: 42px;
     color: #fff;
     font-size: 36px;
-    line-height: 50px;
+    line-height: 36px;
+    padding: 7px 0 8px;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid #f3c;
     // transition: all 0.35s;
     // -moz-transform-origin: center center;
     // -webkit-transform-origin: center center;
@@ -117,18 +117,18 @@
   }
   &.active:after {
     content: "◄";
-    display: block;
+    display: inline-block;
     position: absolute;
-    left: 0;
+    left: -2px;
     top: 0;
     height: 51px;
     width: 42px;
+    padding: 7px 0 8px;
     // -moz-transform: rotateY(180deg);
     // -webkit-transform: rotateY(180deg);
     // -o-transform: rotateY(180deg);
     // -ms-transform: rotateY(180deg);
     // transform: rotateY(180deg);
-    left: -2px;
   }
 }
 

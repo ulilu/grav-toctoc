@@ -799,8 +799,8 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 /* scroll-button on right side of main-nav, only on mobile */
 .scrollmenu { display: none; position: absolute; z-index: 3; bottom: 0; right: 0; width: 42px; height: 51px; cursor: pointer; background-color: rgba(0, 0, 0, 0.75); background-color: #9B2E36; border-left: 2px solid #fff; }
 @media only screen and (max-width: 700px) { .scrollmenu { display: block; } }
-.scrollmenu:after { content: "►"; display: block; position: absolute; left: 0; top: 0; height: 51px; width: 42px; color: #fff; font-size: 36px; line-height: 50px; text-align: center; vertical-align: middle; border: 1px solid #f3c; }
-.scrollmenu.active:after { content: "◄"; display: block; position: absolute; left: 0; top: 0; height: 51px; width: 42px; left: -2px; }
+.scrollmenu:after { content: "►"; display: inline-block; position: absolute; left: 0; top: 0; height: 51px; width: 42px; color: #fff; font-size: 36px; line-height: 36px; padding: 7px 0 8px; text-align: center; vertical-align: middle; }
+.scrollmenu.active:after { content: "◄"; display: inline-block; position: absolute; left: -2px; top: 0; height: 51px; width: 42px; padding: 7px 0 8px; }
 
 .main-nav { position: relative; z-index: 2; display: block; width: 100%; padding: 6px 6px 15px; margin: 0 0 -9px 0; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; list-style: none; transition: all 0.2s ease-in-out; white-space: nowrap; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
 @media only screen and (min-width: 700px) { .main-nav { margin: 0 0 -24px; display: table; overflow: auto; padding: 6px; margin: 0; } }
