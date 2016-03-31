@@ -56,23 +56,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
     for(var i = 0; i < cardImg.length; i++) {
       
       // Asign image source to variable
-      var imageSource = cardImg.querySelector('img').src;
+      var imageSource = cardImg[i].querySelector('img').src;
 
       // Asign image source to variable
-      var imageAlign = cardImg.querySelector('img').className;
+      var imageAlign = cardImg[i].querySelector('img').className;
       if( !imageAlign ){imageAlign = 'center';}
       
       // Hide image
-      cardImg.querySelector('img').style.opacity = '0';
+      cardImg[i].querySelector('img').style.opacity = '0';
       
       // Add background-size: cover
-      cardImg.style.backgroundSize = 'cover';
+      cardImg[i].style.backgroundSize = 'cover';
       
       // Add background-image: and put image source here
-      cardImg.style.backgroundImage = 'url(' + imageSource + ')';
+      cardImg[i].style.backgroundImage = 'url(' + imageSource + ')';
       
       // Add background-position: center center
-      cardImg.style.backgroundPosition = 'center '+ imageAlign;
+      cardImg[i].style.backgroundPosition = 'center '+ imageAlign;
     }
 
 
