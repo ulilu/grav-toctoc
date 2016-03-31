@@ -48,39 +48,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     /*
      *  Card image on example list page / homepage / service page
-     */
-    // assign HTMLCollection with parents of images with objectFit to variable
-    var cardImg = document.querySelectorAll('.card__img');
-    
-    // Loop through HTMLCollection
-    for(var i = 0; i < cardImg.length; i++) {
-      
-      // Asign image source to variable
-      var imageSource = cardImg[i].querySelector('img').src;
-
-      // Asign image source to variable
-      var imageAlign = cardImg[i].querySelector('img').className;
-      if( !imageAlign ){imageAlign = 'center';}
-      
-      // Hide image
-      cardImg[i].querySelector('img').style.opacity = '0';
-      
-      // Add background-size: cover
-      cardImg[i].style.backgroundSize = 'cover';
-      
-      // Add background-image: and put image source here
-      cardImg[i].style.backgroundImage = 'url(' + imageSource + ')';
-      
-      // Add background-position: center center
-      cardImg[i].style.backgroundPosition = 'center '+ imageAlign;
-    }
-
-
-    /*
      *  Image row images on example page
      */
     // assign HTMLCollection with parents of images with objectFit to variable
-    var container = document.querySelectorAll('figure a');
+    var container = document.querySelectorAll('figure a, .card__img');
     
     // Loop through HTMLCollection
     for(var i = 0; i < container.length; i++) {
