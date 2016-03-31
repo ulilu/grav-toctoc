@@ -794,6 +794,7 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 @media only screen and (max-width: 700px) { .main-nav__wrapper:before, .main-nav__wrapper:after { content: ""; display: block; position: absolute; top: 0; height: 51px; width: 100px; pointer-events: none; }
   .main-nav__wrapper:before { left: 0; width: 50px; background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.33)); z-index: 1; }
   .main-nav__wrapper:after { right: 0; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.6)); } }
+@media only screen and (min-width: 1200px) { .main-nav__wrapper { border-radius: 9px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24); } }
 
 /* scroll-button on right side of main-nav, only on mobile */
 .scrollmenu { display: none; position: absolute; z-index: 3; bottom: 0; right: 0; width: 42px; height: 51px; cursor: pointer; background-color: rgba(0, 0, 0, 0.75); background-color: #9B2E36; border-left: 2px solid #fff; }
@@ -803,7 +804,6 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 .main-nav { position: relative; z-index: 2; display: block; width: 100%; padding: 6px 6px 15px; margin: 0 0 -9px 0; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; list-style: none; transition: all 0.2s ease-in-out; white-space: nowrap; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
 @media only screen and (min-width: 700px) { .main-nav { margin: 0 0 -24px; display: table; overflow: auto; padding: 6px; margin: 0; } }
-@media only screen and (min-width: 1200px) { .main-nav { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24); border-radius: 9px; } }
 
 .main-nav__item { position: relative; display: table-cell; vertical-align: middle; width: 1%; text-align: center; margin: 0; padding: 0 3px; }
 .main-nav__item:first-of-type { width: 0.5%; padding-left: 0; }
@@ -1131,7 +1131,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 @media only screen and (min-width: 900px) { .stage { max-height: 500px; } }
 @media only screen and (min-width: 1200px) { .stage { max-height: 600px; } }
 .stage h1 { position: absolute; z-index: 2; left: -webkit-calc(50%); left: calc(50%); bottom: 30px; width: -webkit-calc(100% - 60px); width: calc(100% - 60px); max-width: 1200px; color: #fff; margin: 0 auto; text-shadow: 1px 0 6px #000; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
-.stage:after {content: "";display: block;width: 100%;position: absolute;left: 0;top: 0;right: 0;bottom: 0;background: linear-gradient(190deg, rgba(56, 34, 34, 0) 0%, rgba(56, 34, 34, 0) 50%, rgba(56, 34, 34, 0.75) 90%);}
+.stage:after { content: ""; display: block; width: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: linear-gradient(190deg, rgba(56, 34, 34, 0) 0%, rgba(56, 34, 34, 0) 50%, rgba(56, 34, 34, 0.75) 90%); }
 .stage img { width: 100%; height: 70vH; max-height: 300px; object-fit: cover; object-position: center; transition: all 0.3s ease-in-out; }
 @media only screen and (min-width: 600px) { .stage img { max-height: 400px; } }
 @media only screen and (min-width: 900px) { .stage img { max-height: 500px; } }
