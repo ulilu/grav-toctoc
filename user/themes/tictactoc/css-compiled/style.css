@@ -858,6 +858,7 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 @media only screen and (min-width: 750px) { .image-row a { border-radius: 4px; } }
 .image-row img { width: 100%; height: 100%; object-fit: cover; max-height: 50vmin; }
 @media only screen and (min-width: 750px) { .image-row img { border-radius: 4px; max-height: 40vmin; } }
+@media only screen and (min-width: 1200px) { .image-row img { max-height: 320px; } }
 .image-row figcaption { color: #888; background: #EEE; border-radius: 0; padding: 6px 18px 6px 36px; margin: 0; }
 @media only screen and (min-width: 750px) { .image-row figcaption { border-radius: 4px; padding: 6px 6px 6px 12px; margin: 6px 5px 0; } }
 
