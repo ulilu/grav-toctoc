@@ -5,7 +5,7 @@
 if('objectFit' in document.documentElement.style === false) {
   
   // assign HTMLCollection with parents of images with objectFit to variable
-  var container = document.querySelector('.image-row a');
+  var container = document.querySelector('figure a');
 
   alert(container);
   
