@@ -330,9 +330,12 @@ body {
   overflow: hidden;
   /* this fixes the overflow:hidden in Chrome */
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
-  transition: all 0.5s;
-  background-size: 100%;
-
+  background-size: 100%; // only for IE
+  -webkit-transition:background-position .5s ease-in;  
+  -moz-transition:background-position .5s ease-in;  
+  -ms-transition:background-position .5s ease-in;  
+  transition:background-position .5s ease-in; 
+  
   img {
     position: relative;
     display: inline-block;
@@ -340,8 +343,7 @@ body {
     height: 240px;
     // min-height: 200px;
     object-fit: cover;
-    margin: 0 0 12px;
-    transition-duration: 0.5s;
+    transition: all .5s ease-in-out;
     transform: scale(1.0);
     transform-origin: 50% 100%;
   }
@@ -352,7 +354,7 @@ body {
   }
 
   .card:hover & {
-    background-size: 110% !important;
+    background-size: 110% !important; // only for IE
   }
 }
 
