@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     // assign HTMLCollection with parents of images with objectFit to variable
     var container = document.querySelectorAll('figure a');
-
-    alert(container);
     
     // Loop through HTMLCollection
     for(var i = 0; i < container.length; i++) {
