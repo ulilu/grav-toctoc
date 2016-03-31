@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Detect objectFit support
   if('objectFit' in document.documentElement.style === false) {
 
-
-
     // assign HTMLCollection with parents of images with objectFit to variable
     var stage = document.querySelector('.stage__img');
+
+    console.log("stage__img = " + document.querySelector('.stage__img'));
       
     // Asign image source to variable
     var imageSource = stage.querySelector('img').src;
