@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var imageSource = stage.querySelector('img').src;
 
     // Asign image source to variable
-    var imageAlign = stage.querySelector('img').class;
+    var imageAlign = stage.querySelector('img').className;
     
     // Hide image
     stage.querySelector('img').style.opacity = '0';
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     stage.style.backgroundImage = 'url(' + imageSource + ')';
     
     // Add background-position: center center
-    stage.style.backgroundPosition = 'center '+ imageAlign +')';
+    stage.style.backgroundPosition = 'center '+ imageAlign;
 
   }
   else {
