@@ -867,7 +867,7 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 /*---------------------------------------------------------------------------*\ Text / Headline styles (used on page-example)
 \*---------------------------------------------------------------------------*/
-.bullet { display: block !important; position: relative; z-index: 1; top: 0px; left: 60px; width: calc(100% - 60px); height: 0; padding: 0 0 6px; margin: 12px 0 24px; box-sizing: content-box; color: #00aabd; background: none; border-bottom: 2px solid currentColor; }
+.bullet { display: block !important; position: relative; z-index: 1; top: 0px; left: 60px; width: calc(100% - 60px); height: 0; padding: 0 0 6px; margin: 12px 0 24px; overflow: visible; box-sizing: content-box; color: #00aabd; background: none; border-bottom: 2px solid currentColor; }
 
 .bullet-headline { border: 0; height: 30px; line-height: 24px !important; margin-bottom: 6px; }
 

@@ -136,6 +136,7 @@
   height: 0;
   padding: 0 0 6px;
   margin: 12px 0 24px;
+  overflow: visible; // necessary for IE 10+
   
   box-sizing: content-box;
   color: $color-logo0;
