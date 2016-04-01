@@ -13,6 +13,7 @@
 	{% if page.content %}
 		<div class="block">
 			{{ page.content }}
+			{% if overflow %}<a href="" class="js-scrollblock scrollblock" onClick="return false"></a>{% endif %}
 		</div>
 	{% endif %}
 

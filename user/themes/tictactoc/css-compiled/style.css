@@ -846,42 +846,48 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 /*---------------------------------------------------------------------------*\ Image row with table-cell-spacing: Each image gets an equal width
 \*---------------------------------------------------------------------------*/
-.image-row { padding: 0; margin: 0 -30px 30px; overflow: hidden; border-spacing: 0; /* Workaround for IE who doesnt (yet) understand object-fit; */ }
-@media only screen and (min-width: 750px) { .image-row { margin: 6px -6px 30px; border-spacing: 6px 0; } }
-.image-row + .image-row { margin-top: -30px; }
-@media only screen and (min-width: 750px) { .image-row + .image-row { margin-top: -24px; } }
-@media only screen and (min-width: 1050px) { .image-row + .image-row { margin-top: -33px; } }
+.image-row { display: inline-block; overflow: hidden; border-spacing: 0; padding: 0; margin: 0 -24px 12px; /* Setting the style of second .image-row, directly following the first */ }
+@media only screen and (min-width: 480px) { .image-row { margin: 0 -30px 12px; } }
+@media only screen and (min-width: 750px) { .image-row { border-spacing: 6px 0; margin: 0 -6px 12px; } }
+@media only screen and (min-width: 1050px) { .image-row { width: 70%; } }
+.image-row + .image-row { margin-top: -21px; }
+@media only screen and (min-width: 750px) { .image-row + .image-row { margin-top: -15px; } }
 .image-row + .image-row.width-100 { width: auto !important; }
 @media only screen and (min-width: 750px) { .image-row + .image-row.width-100 { width: calc(100% + 12px) !important; } }
-.image-row .image-row > * { overflow: hidden; }
 .image-row a { display: table-cell; width: 100%; height: 100%; }
 @media only screen and (min-width: 750px) { .image-row a { border-radius: 4px; } }
-.image-row img { width: 100%; height: 100%; object-fit: cover; max-height: 50vmin; }
+.image-row img { object-fit: cover; width: 100%; height: 100%; max-height: 50vmin; }
 @media only screen and (min-width: 750px) { .image-row img { border-radius: 4px; max-height: 40vmin; } }
 @media only screen and (min-width: 1200px) { .image-row img { max-height: 320px; } }
-.image-row figcaption { color: #888; background: #EEE; border-radius: 0; padding: 6px 18px 6px 36px; margin: 0; }
+.image-row figcaption { background: #e8e8e8; border-radius: 0; padding: 6px 18px 6px 36px; margin: 0; }
 @media only screen and (min-width: 750px) { .image-row figcaption { border-radius: 4px; padding: 6px 6px 6px 12px; margin: 6px 5px 0; } }
 
-@media only screen and (min-width: 1050px) { .image-row { display: inline-block; width: 70%; } }
-
-.image-row-text figcaption { display: table-cell; color: #fff; line-height: 115%; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: 1px; vertical-align: middle; padding: 12px 15px; margin: 0; }
+.image-row-text figcaption { display: table-cell; color: #fff; background: #00aabd; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: 1px; line-height: 115%; vertical-align: middle; padding: 12px 15px; margin: 0; }
 @media only screen and (min-width: 750px) { .image-row-text figcaption { padding: 12px 18px; line-height: 105%; } }
 
 /*---------------------------------------------------------------------------*\ Text / Headline styles (used on page-example)
 \*---------------------------------------------------------------------------*/
-hr.has-bullet { background-color: #ccc; margin: 45px 0 18px 60px; border-radius: 1px; }
-@media only screen and (min-width: 1050px) { hr.has-bullet { margin: 0 0 18px 60px; } }
+.bullet { display: block !important; position: relative; z-index: 1; top: 0px; left: 60px; width: calc(100% - 60px); height: 0; padding: 0 0 6px; margin: 12px 0 24px; box-sizing: content-box; color: #00aabd; background: none; border-bottom: 2px solid currentColor; }
 
-.bullet { display: inline-block; position: absolute; z-index: 1; left: 24px; width: 54px; height: 54px; line-height: 63px; margin: 0 18px 12px 0; color: #00aabd; text-align: center; background: none; font-size: 0; /*------------------------------------*\ 1. Increment the section counter 2. Display the counter 
-\*------------------------------------*/ }
-.bullet:before { counter-increment: step; content: counter(step); display: block; left: 0; top: 0; width: 100%; height: 100%; color: #fff; font-size: 36px; }
-.bullet:after { content: ''; position: absolute; z-index: -1; display: block; left: 0; top: 0; width: 100%; height: 100%; border: 3px solid #fff; border-radius: 50% 50% 0 50%; -webkit-transform: rotate(45deg); transform: rotate(45deg); background: currentColor; }
-.has-bullet + .bullet { margin-top: -45px; margin-right: 9px; }
-.bullet + p { text-indent: 48px; }
-@media only screen and (min-width: 1050px) { .bullet + p { display: inline-block; vertical-align: top; width: calc(30% + 6px); padding-right: 30px; } }
-@media only screen and (min-width: 1050px) { .bullet.bullet-text-right + p { float: right; padding-right: 0; padding-left: 18px; margin-bottom: 48px; text-indent: 0; } }
+.bullet-headline { border: 0; height: 30px; line-height: 24px !important; margin-bottom: 6px; }
 
-ul p { margin-bottom: 0; }
+/*------------------------------------*\ General bullet element  Use with .fa-(symbol) or .bullet-number  to set :before-content
+\*------------------------------------*/
+.bullet { /* Coloured placemarker background */ }
+.bullet:before { display: block; position: absolute; left: -69px; top: -15px; width: 54px; height: 54px; color: #fff; text-align: center; font-size: 36px; line-height: 60px !important; }
+.bullet:after { content: ''; display: block; position: absolute; z-index: -1; left: -72px; top: -18px; width: 54px; height: 54px; border: 3px solid #fff; border-radius: 50% 50% 0 50%; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); background: currentColor; }
+
+/*------------------------------------*\ Bullet with number 1. Increment the section counter 2. Display the counter 
+\*------------------------------------*/
+.bullet-number:before { counter-increment: step; /* 1. */ content: counter(step); /* 2. */ display: block; position: absolute; z-index: 3; left: -69px; top: -15px; width: 54px; height: 54px; color: #fff; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; font-size: 36px; line-height: 60px !important; }
+
+.bullet.fa:before { margin-top: -3px; font-size: 27px !important; }
+
+/*------------------------------------*\ Setting text left / right below bullet
+\*------------------------------------*/
+.bullet + p { margin: 0 0 24px; text-indent: 60px; }
+@media only screen and (min-width: 1050px) { .bullet + p { display: inline-block; width: calc(30% + 6px); vertical-align: top; padding: 0 30px 0 0; } }
+@media only screen and (min-width: 1050px) { .bullet.bullet-text-right + p { float: right; text-indent: 0; padding: 0 0 0 18px; } }
 
 /*---------------------------------------------------------------------------*\ Manual image-widths: Based on additional class on .image-row
 \*---------------------------------------------------------------------------*/
@@ -903,6 +909,12 @@ ul p { margin-bottom: 0; }
 
 .row-67-33 > *:nth-child(1) { width: 67% !important; }
 .row-67-33 > *:nth-child(2) { width: 33% !important; }
+
+.row-30-70 > *:nth-child(1) { width: 30% !important; }
+.row-30-70 > *:nth-child(2) { width: 70% !important; }
+
+.row-70-30 > *:nth-child(1) { width: 70% !important; }
+.row-70-30 > *:nth-child(2) { width: 30% !important; }
 
 .row-25-75 > *:nth-child(1) { width: 25% !important; }
 .row-25-75 > *:nth-child(2) { width: 75% !important; }
@@ -1039,9 +1051,10 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*---------------------------------------------------------------------------*\ General block element to set unified position, padding & margin across all pages
 \*---------------------------------------------------------------------------*/
-.block { position: relative; margin: 0 auto; max-width: 1200px; padding: 30px; /* Collapse bottom-margin on every direct :last-child */ }
+.block { position: relative; margin: 0 auto; max-width: 1200px; padding: 24px; /* Collapse bottom-margin on every direct :last-child */ }
 .block:before, .block:after { content: " "; display: table; }
 .block:after { clear: both; }
+@media only screen and (min-width: 480px) { .block { padding: 24px 30px; } }
 .block > *:last-child { margin-bottom: 0; }
 .footer .block { padding: 18px 24px 16px; }
 
@@ -1054,8 +1067,18 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 .block--scroll { width: 100%; margin: 0 0 -24px !important; /* to hide otherwise visible scrollbar */ max-width: 100% !important; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
 
-.block__scroll-wrapper { white-space: nowrap; position: relative; vertical-align: top; margin-bottom: 48px; /* to make room for hidden scrollbar, see above */ padding: 0 30px; }
+/* 1. Necessary for JS to enable scrolling 2. to make room for hidden scrollbar, see above */
+.block__scroll-wrapper { overflow: auto; /* 1 */ white-space: nowrap; position: relative; vertical-align: top; margin-bottom: -12px; /* 2 */ padding: 0 30px 36px; }
 @media only screen and (min-width: 1200px) { .block__scroll-wrapper { padding-left: calc((100vw - 1146px) / 2); padding-right: calc((100vw - 1146px) / 2); } }
+
+/*------------------------------------*\ Scrollbut, used with block--scroll
+\*------------------------------------*/
+.scrollblock { display: inline-block; position: relative; z-index: 2; float: right; width: 60px; height: 60px; border: 2px solid #fff; border-radius: 4px; }
+.scrollblock.reverse { background: none; }
+.scrollblock:after { content: "►"; position: relative; display: inline-block; left: 0; top: -2px; width: 60px; height: 60px; line-height: 56px; font-size: 54px; vertical-align: middle; text-align: center; color: #fff; }
+.scrollblock.reverse:after { content: "◄"; color: #fff; left: -2px; }
+.scrollblock:hover { background: #fff; }
+.scrollblock:hover:after { color: #858AA5; position: relative; display: inline-block; }
 
 /*---------------------------------------------------------------------------*\ .cell This is a wrapper element, to appear within .block. Creates elements of equal height.
  Use in conjunction with the single properties classes like "width-50" ==> Not really necessary i think - table-cells will automatically share the available width, no?
@@ -1130,11 +1153,12 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*---------------------------------------------------------------------------*\ Stage - used on example.twig.html
 \*---------------------------------------------------------------------------*/
-.stage { position: relative; height: 70vH; max-height: 300px; margin: -24px auto 0; transition: all 0.3s ease-in-out; }
+.stage { position: relative; height: 70vH; max-height: 300px; margin: -24px auto 0; transition: all 0.3s ease-in-out; /* Headline inside stage 1. Limiting its width to the block content width below */ }
 @media only screen and (min-width: 600px) { .stage { max-height: 400px; } }
 @media only screen and (min-width: 900px) { .stage { max-height: 500px; } }
 @media only screen and (min-width: 1200px) { .stage { max-height: 600px; } }
-.stage h1 { position: absolute; z-index: 2; left: -webkit-calc(50%); left: calc(50%); bottom: 30px; width: -webkit-calc(100% - 60px); width: calc(100% - 60px); max-width: 1200px; color: #fff; margin: 0 auto; text-shadow: 1px 0 6px #000; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.stage h1 { position: absolute; z-index: 2; left: 50%; bottom: 30px; width: -webkit-calc(100% - 60px); width: calc(100% - 60px); max-width: 1200px; color: #fff; margin: 0 auto; text-shadow: 1px 0 6px #000; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+@media only screen and (min-width: 1200px) { .stage h1 { width: 1140px; /* 1. */ } }
 .stage:after { content: ""; display: block; width: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: linear-gradient(190deg, rgba(56, 34, 34, 0) 0%, rgba(56, 34, 34, 0) 50%, rgba(56, 34, 34, 0.75) 90%); }
 .stage img { width: 100%; height: 70vH; max-height: 300px; object-fit: cover; object-position: center; transition: all 0.3s ease-in-out; }
 @media only screen and (min-width: 600px) { .stage img { max-height: 400px; } }
@@ -1184,8 +1208,8 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*------------------------------------*\ Scroll to top button
 \*------------------------------------*/
-.scrolltop { display: none; z-index: 999; position: fixed; bottom: 12px; right: 12px; width: 66px; height: 66px; border-radius: 50%; cursor: pointer; text-indent: -9999em; background-color: #000; opacity: 0.4; border: 3px solid #fff; }
-.scrolltop:after { content: ""; display: block; position: absolute; top: 14px; right: 14px; height: 0; width: 0; border-left: 16px solid transparent; border-bottom: 25px solid #dbdad7; border-right: 16px solid transparent; }
+.scrolltop { display: none; z-index: 999; position: fixed; bottom: 12px; right: 12px; width: 66px; height: 66px; border-radius: 50%; cursor: pointer; background-color: #000; opacity: 0.5; border: 3px solid #fff; }
+.scrolltop:after { content: "▲"; display: block; position: absolute; left: -3px; top: -3px; width: 66px; height: 66px; line-height: 60px; font-size: 60px; vertical-align: middle; text-align: center; color: #fff; }
 
 /*---------------------------------------------------------------------------*\ Page adaptations
 \*---------------------------------------------------------------------------*/
@@ -1195,13 +1219,15 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .page-welcome .block--service .service-link:first-of-type { padding-bottom: 24px; border-bottom: 2px solid #FCF6E7; margin-bottom: 30px; }
 @media only screen and (min-width: 1100px) { .page-welcome .block--service .service-link:first-of-type { padding: 0 30px 0 0; border-bottom: none; border-right: 2px solid #FCF6E7; margin: 0; }
   .page-welcome .block--service .service-link:last-of-type { padding: 0 0 0 30px; } }
-.page-welcome .block--example { position: relative; overflow: hidden; padding: 0; background-color: #858AA5; }
+.page-welcome .block--example { position: relative; padding: 0; background-color: #858AA5; }
 .page-welcome .block--example:after { content: ""; display: block; position: absolute; z-index: 1; right: 0; top: 0; width: 25vw; height: 100%; pointer-events: none; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25)); }
 .page-welcome .block--example .block { padding: 30px; }
 @media only screen and (min-width: 1200px) { .page-welcome .block--example .block { padding-left: 0; } }
-.page-welcome .block--example h1 { color: #fff; }
-.page-welcome .card.width-33 { z-index: 2; display: inline-block; float: none; white-space: normal; vertical-align: top; margin-bottom: 0; margin-right: 30px !important; }
+.page-welcome .block--example h1 { color: #fff; display: inline-block; margin-bottom: 0; }
+.page-welcome .card.width-33 { z-index: 2; display: inline-block; float: none; white-space: normal; vertical-align: top; margin-bottom: 30px; margin-right: 30px !important; }
 @media only screen and (min-width: 536px) { .page-welcome .card.width-33 { margin-right: 24px !important; } }
+.page-welcome .card.width-33:last-of-type { margin-right: 0 !important; }
+@media only screen and (min-width: 1200px) { .page-welcome .card.width-33:last-of-type { margin-right: 30px !important; } }
 
 /*------------------------------------*\ Services page
 \*------------------------------------*/

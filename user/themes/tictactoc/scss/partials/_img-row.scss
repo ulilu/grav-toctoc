@@ -2,8 +2,9 @@
   1. necessary to get automatic numbering of headlines, see:
   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
 \*------------------------------------*/
+
 .page-example {
-  counter-reset: step  /* 1.  */ 
+  counter-reset: step  /* 1. */ 
 }
 
 /*---------------------------------------------------------------------------*\
@@ -11,28 +12,34 @@
 \*---------------------------------------------------------------------------*/
 
 .image-row {
-  padding: 0;
-  margin: 0 -30px 30px;
+  display: inline-block;
   overflow: hidden;
   border-spacing: 0;
+  padding: 0;
+  margin: 0 -24px 12px;
 
-  @media only screen and (min-width:750px) {
-    margin: 6px -6px 30px;
-    border-spacing: 6px 0;
+  @media only screen and (min-width:480px) {
+    margin: 0 -30px 12px;
   }
 
-  // @media only screen and (min-width:1050px) {
-  //   margin: 0 0 30px;
-  // }
+  @media only screen and (min-width:750px) {
+    border-spacing: 6px 0;
+    margin: 0 -6px 12px;
+  }
 
+  @media only screen and (min-width:1050px) {
+    width: 70%;
+  }
+
+
+  /*
+   *  Setting the style of second .image-row, directly following the first
+   */
   & + & {
-    margin-top: -30px;
+    margin-top: -21px;
+    
     @media only screen and (min-width:750px) {
-      margin-top: -24px;
-    }
-
-    @media only screen and (min-width:1050px) {
-      margin-top: -33px;
+      margin-top: -15px;
     }
   }
 
@@ -44,12 +51,6 @@
     }
   }
 
-  /*
-   *  Workaround for IE who doesnt (yet) understand object-fit;
-   */
-  .image-row > * {
-    overflow: hidden;
-  }
 
   a {
     display: table-cell;
@@ -61,14 +62,10 @@
     }
   }
 
-  // a:last-of-type {
-  //   padding: 0;
-  // }
-
   img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     max-height: 50vmin;
     
     @media only screen and (min-width: 750px) {
@@ -79,58 +76,18 @@
     @media only screen and (min-width: 1200px) {
       max-height: 320px;
     }
-    
-    // @media only screen and (min-width: 700px) {
-    //   max-height: 50vmin;
-    // }
-    // @media only screen and (min-width: 1000px) {
-    //   max-height: 55vmin;
-    // }
-    // @media only screen and (min-width: 1200px) {
-    //   max-height: 60vmin;
-    // }
   }
-
-  // a:first-of-type img {
-  //   @media only screen and (max-width: 650px) {
-  //     border-top-left-radius: 0;
-  //     border-bottom-left-radius: 0;
-  //   }
-  // }
-
-  // a:last-of-type img {
-  //   @media only screen and (max-width: 650px) {
-  //     border-top-right-radius: 0;
-  //     border-bottom-right-radius: 0;
-  //   }
-  // }
-
-  
-
-// .image-row {
-
-//   a.compat-object-fit {
-//     background-size: cover;
-//     background-position: center center;
-
-//     img { // hide image if object fit is not supported - opacity to 0 for the link area
-//       opacity: 0;
-//     }
-//   }
-// }
-
 
 
   figcaption {
-    // font-size: 14px;
-    color: #888;
-    background: #EEE;
+    background: #e8e8e8;
     border-radius: 0; 
     padding: 6px 18px 6px 36px;
     margin: 0;
     // word-break: break-word;
     // -webkit-hyphens: auto;
     // hyphens: auto;
+    
     @media only screen and (min-width: 750px) {
       border-radius: 4px;
       padding: 6px 6px 6px 12px;
@@ -139,33 +96,24 @@
   }
 }
 
-.image-row {
-  
-  @media only screen and (min-width:1050px) {
-    display: inline-block;
-    // vertical-align: middle;
-    width: 70%;
-    // margin-bottom: 0;
-  }
-}
-
 
 .image-row-text figcaption {
   display: table-cell;
   color: #fff;
+  background: $color-logo0;
+  font-family: $font-regular;
+  letter-spacing: 1px;
   line-height: 115%;
+  vertical-align: middle;
+  padding: 12px 15px;
+  margin: 0;
   // font-size: calc(1.5vw + 1.5vh + 3vmin);
   // line-height: calc(2vw + 2vh + 3vmin);
   // word-break: break-all;
   // text-transform: lowercase;
   // text-align: justify;
   // font-size: 48px;
-  font-family: $font-regular;
-  letter-spacing: 1px;
   // text-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  vertical-align: middle;
-  padding: 12px 15px;
-  margin: 0;
   
   @media only screen and (min-width:750px) {
     padding: 12px 18px;
@@ -178,95 +126,131 @@
     Text / Headline styles (used on page-example)
 \*---------------------------------------------------------------------------*/
 
-hr.has-bullet {
-  background-color: #ccc;
-  margin: 45px 0 18px 60px;
-  border-radius: 1px;
+.bullet {
+  display: block !important;
+  position: relative;
+  z-index: 1;
+  top: 0px;
+  left: 60px;
+  width: calc(100% - 60px);
+  height: 0;
+  padding: 0 0 6px;
+  margin: 12px 0 24px;
   
-  @media only screen and (min-width:1050px) {
-    margin: 0 0 18px 60px;
-  }
+  box-sizing: content-box;
+  color: $color-logo0;
+  background: none;
+  border-bottom: 2px solid currentColor;
 }
 
-.bullet {
-  display: inline-block;
-  position: absolute;
-  z-index: 1;
-  left: 24px;
-  width: 54px;
-  height: 54px;
-  line-height: 63px;
-  margin: 0 18px 12px 0;
-  color: $color-logo0;
-  text-align: center;
-  background: none;
-  font-size: 0;
-  // text-indent: -10px;
+.bullet-headline {
+  border: 0;
+  height: 30px;
+  line-height: 24px !important;
+  margin-bottom: 6px;
+}
 
 
 /*------------------------------------*\
+  General bullet element 
+  Use with .fa-(symbol) or .bullet-number 
+  to set :before-content
+\*------------------------------------*/
+
+.bullet {
+
+  &:before {
+    display: block;
+    position: absolute;
+    left: -69px;
+    top: -15px;
+    width: 54px;
+    height: 54px;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    line-height: 60px !important;
+  }
+
+  /*
+   *  Coloured placemarker background
+   */
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -72px;
+    top: -18px;
+    width: 54px;
+    height: 54px;
+    border: 3px solid #fff;
+    border-radius: 50% 50% 0 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: currentColor;
+  }
+}
+
+
+/*------------------------------------*\
+  Bullet with number
   1. Increment the section counter
   2. Display the counter 
 \*------------------------------------*/
 
+.bullet-number {
+
   &:before {
-    counter-increment: step;                
-    content: counter(step); 
+    counter-increment: step;  /* 1. */
+    content: counter(step);   /* 2. */
     display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    font-size: 36px;
-  }
-
-  &:after {
-    content:'';
     position: absolute;
-    z-index: -1;
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: 3px solid #fff;
-    border-radius: 50% 50% 0 50%;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background: currentColor;
+    z-index: 3;
+    left: -69px;
+    top: -15px;
+    width: 54px;
+    height: 54px;
+    color: #fff;
+    font-family: $font-regular;
+    text-align: center;
+    font-size: 36px;
+    line-height: 60px !important;
   }
+}
 
-  .has-bullet + & {
-    margin-top: -45px;
-    margin-right: 9px;
-  }
+.bullet.fa:before {
+  margin-top: -3px;
+  font-size: 27px !important;
+}
+
+
+/*------------------------------------*\
+  Setting text left / right below bullet
+\*------------------------------------*/
+
+.bullet {
 
   & + p {
-    text-indent: 48px;
+    margin: 0 0 24px;
+    text-indent: 60px;
   
     @media only screen and (min-width:1050px) {
       display: inline-block;
-      vertical-align: top;
       width: calc(30% + 6px);
-      padding-right: 30px; 
+      vertical-align: top;
+      padding: 0 30px 0 0;
     }
   }
 
   &.bullet-text-right + p {
     @media only screen and (min-width:1050px) {
       float: right;
-      padding-right: 0;
-      padding-left: 18px;
-      margin-bottom: 48px;
       text-indent: 0;
+      padding: 0 0 0 18px;
     }
   }
-}
-
-
-ul p {
-  margin-bottom: 0;
 }
 
 
@@ -303,6 +287,15 @@ ul p {
 .row-67-33 {
   > *:nth-child(1) {width: 67% !important;}
   > *:nth-child(2) {width: 33% !important;}
+}
+
+.row-30-70 {
+  > *:nth-child(1) {width: 30% !important;}
+  > *:nth-child(2) {width: 70% !important;}
+}
+.row-70-30 {
+  > *:nth-child(1) {width: 70% !important;}
+  > *:nth-child(2) {width: 30% !important;}
 }
 
 .row-25-75 {

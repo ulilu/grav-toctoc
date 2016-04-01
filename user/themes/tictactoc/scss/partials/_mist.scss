@@ -106,8 +106,12 @@ body {
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 30px; 
+  padding: 24px; 
   @include clearfix-html5bp();
+  
+  @media only screen and (min-width:480px) {
+    padding: 24px 30px;
+  }
   
   /*
    *  Collapse bottom-margin on every direct :last-child
@@ -156,18 +160,75 @@ body {
   -webkit-transform: translate3d(0,0,0);
 }
 
+
+/*
+ * 1. Necessary for JS to enable scrolling
+ * 2. to make room for hidden scrollbar, see above
+ */
 .block__scroll-wrapper {
+  overflow: auto;       /* 1 */
   white-space: nowrap;
   position: relative;
   vertical-align: top;
-  margin-bottom: 48px; /* to make room for hidden scrollbar, see above */
-  padding: 0 30px;
+  margin-bottom: -12px; /* 2 */
+  padding: 0 30px 36px;
   
   @media only screen and (min-width:1200px) {
     padding-left: calc((100vw - 1146px) / 2);
     padding-right: calc((100vw - 1146px) / 2);
   }
 }
+
+/*------------------------------------*\
+  Scrollbut, used with block--scroll
+\*------------------------------------*/
+
+.scrollblock {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  float: right;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+
+  &.reverse {
+    background: none;
+  }
+
+  &:after {
+    content: "►";
+    position: relative;
+    display: inline-block;
+    left: 0;
+    top: -2px;
+    width: 60px;
+    height: 60px;
+    line-height: 56px;
+    font-size: 54px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+  }
+
+  &.reverse:after {
+    content: "◄";
+    color: #fff;
+    left: -2px;
+  }
+  
+  &:hover {
+    background: #fff;
+  }
+
+  &:hover:after {
+    color: #858AA5;
+    position: relative;
+    display: inline-block;
+  }
+}
+
 
 /*---------------------------------------------------------------------------*\
     .cell
@@ -555,11 +616,15 @@ body {
   @media only screen and (min-width: 900px) { max-height: 500px; }
   @media only screen and (min-width: 1200px) { max-height: 600px; }
   
+
+  /*
+   *  Headline inside stage
+   *  1. Limiting its width to the block content width below
+   */
   h1 {
     position: absolute;
     z-index: 2;
-    left: -webkit-calc(50%);
-    left: calc(50%);
+    left: 50%;
     bottom: 30px;
     width: -webkit-calc(100% - 60px);
     width: calc(100% - 60px);
@@ -570,6 +635,10 @@ body {
 
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    
+    @media only screen and (min-width: 1200px) { 
+      width: 1140px;  /* 1. */
+    }
   }
   
   &:after {
@@ -782,22 +851,32 @@ body {
   height: 66px;
   border-radius: 50%;
   cursor: pointer;
-  text-indent: -9999em;
+  // text-indent: -9999em;
   background-color: #000;
-  opacity: 0.4;
+  opacity: 0.5;
   border: 3px solid #fff;
 
   &:after {
-    content: "";
+    content: "▲";
     display: block;
     position: absolute;
-    top: 14px;
-    right: 14px;
-    height: 0;
-    width: 0;
-    border-left: 16px solid rgba(0, 0, 0, 0);
-    border-bottom: 25px solid #dbdad7;
-    border-right: 16px solid rgba(0, 0, 0, 0);
+    left: -3px;
+    top: -3px;
+    width: 66px;
+    height: 66px;
+    line-height: 60px;
+    font-size: 60px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    
+    // top: 14px;
+    // right: 14px;
+    // height: 0;
+    // width: 0;
+    // border-left: 16px solid rgba(0, 0, 0, 0);
+    // border-bottom: 25px solid #dbdad7;
+    // border-right: 16px solid rgba(0, 0, 0, 0);
   }
 }
 
@@ -852,7 +931,7 @@ body {
 
   .block--example {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     padding: 0;
     background-color: #858AA5; // lavender
     // background: #526165;
@@ -888,6 +967,8 @@ body {
 
     h1 {
       color: #fff;
+      display: inline-block;
+      margin-bottom: 0;
     }
   }
 
@@ -897,11 +978,19 @@ body {
     float: none;
     white-space: normal;
     vertical-align: top;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     margin-right: 30px !important;
     
     @media only screen and (min-width:536px) {
       margin-right: 24px !important;
+    }
+
+    &:last-of-type {
+      margin-right: 0 !important;
+      
+      @media only screen and (min-width:1200px) {
+        margin-right: 30px !important;
+      }
     }
   }
 }
