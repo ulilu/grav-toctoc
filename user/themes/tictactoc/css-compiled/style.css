@@ -867,25 +867,27 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 /*---------------------------------------------------------------------------*\ Text / Headline styles (used on page-example)
 \*---------------------------------------------------------------------------*/
-.bullet { display: block !important; position: relative; z-index: 1; top: 0px; left: 60px; width: calc(100% - 60px); height: 0; padding: 0 0 6px; margin: 12px 0 24px; overflow: visible; box-sizing: content-box; color: #00aabd; background: none; border-bottom: 2px solid currentColor; }
+.bullet { display: block !important; position: relative; z-index: 1; top: 0px; left: 66px; width: calc(100% - 66px); height: 0; padding: 0 0 6px; margin: 12px 0 24px; overflow: visible; box-sizing: border-box; color: #00aabd; background: none; border-bottom: 2px solid currentColor; }
 
 .bullet-headline { border: 0; height: 30px; line-height: 24px !important; margin-bottom: 6px; }
 
-/*------------------------------------*\ General bullet element  Use with .fa-(symbol) or .bullet-number  to set :before-content
+/*------------------------------------*\ General bullet element  Use with .fa-(symbol) or .bullet-number,  to set the content for the ":before"-element 
 \*------------------------------------*/
 .bullet { /* Coloured placemarker background */ }
-.bullet:before { display: block; position: absolute; left: -69px; top: -15px; width: 54px; height: 54px; color: #fff; text-align: center; font-size: 36px; line-height: 60px !important; }
-.bullet:after { content: ''; display: block; position: absolute; z-index: -1; left: -72px; top: -18px; width: 54px; height: 54px; border: 3px solid #fff; border-radius: 50% 50% 0 50%; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); background: currentColor; }
+.bullet:before { display: block; position: absolute; left: -72px; top: -14px; width: 54px; height: 54px; color: #fff; text-align: center; font-size: 36px; line-height: 52px !important; }
+.bullet:after { content: ''; display: block; position: absolute; z-index: -1; left: -75px; top: -18px; width: 60px; height: 60px; border: 3px solid #fff; border-radius: 50% 50% 0 50%; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); background: currentColor; }
 
-/*------------------------------------*\ Bullet with number 1. Increment the section counter 2. Display the counter 
+/*------------------------------------*\ Bullet carrying number 1. Increment the section counter 2. Display the counter 
 \*------------------------------------*/
-.bullet-number:before { counter-increment: step; /* 1. */ content: counter(step); /* 2. */ display: block; position: absolute; z-index: 3; left: -69px; top: -15px; width: 54px; height: 54px; color: #fff; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; font-size: 36px; line-height: 60px !important; }
+.bullet-number:before { counter-increment: step; /* 1. */ content: counter(step); /* 2. */ display: block; position: absolute; z-index: 3; top: -10px; color: #fff; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.bullet.fa:before { margin-top: -3px; font-size: 27px !important; }
+/*------------------------------------*\ Bullet carrying Font Awesome symbol
+\*------------------------------------*/
+.bullet.fa:before { left: -71px; font-size: 27px !important; padding: 0; }
 
 /*------------------------------------*\ Setting text left / right below bullet
 \*------------------------------------*/
-.bullet + p { margin: 0 0 24px; text-indent: 60px; }
+.bullet + p { margin: 0 0 24px; text-indent: 54px; }
 @media only screen and (min-width: 1050px) { .bullet + p { display: inline-block; width: calc(30% + 6px); vertical-align: top; padding: 0 30px 0 0; } }
 @media only screen and (min-width: 1050px) { .bullet.bullet-text-right + p { float: right; text-indent: 0; padding: 0 0 0 18px; } }
 

@@ -131,14 +131,14 @@
   position: relative;
   z-index: 1;
   top: 0px;
-  left: 60px;
-  width: calc(100% - 60px);
+  left: 66px;
+  width: calc(100% - 66px);
   height: 0;
   padding: 0 0 6px;
   margin: 12px 0 24px;
   overflow: visible; // necessary for IE 10+
   
-  box-sizing: content-box;
+  box-sizing: border-box;
   color: $color-logo0;
   background: none;
   border-bottom: 2px solid currentColor;
@@ -154,8 +154,8 @@
 
 /*------------------------------------*\
   General bullet element 
-  Use with .fa-(symbol) or .bullet-number 
-  to set :before-content
+  Use with .fa-(symbol) or .bullet-number, 
+  to set the content for the ":before"-element 
 \*------------------------------------*/
 
 .bullet {
@@ -163,14 +163,15 @@
   &:before {
     display: block;
     position: absolute;
-    left: -69px;
-    top: -15px;
+    left: -72px;
+    top: -14px;
     width: 54px;
     height: 54px;
     color: #fff;
     text-align: center;
     font-size: 36px;
-    line-height: 60px !important;
+    line-height: 52px !important;
+    // border: 1px solid #f3c;
   }
 
   /*
@@ -181,10 +182,10 @@
     display: block;
     position: absolute;
     z-index: -1;
-    left: -72px;
+    left: -75px;
     top: -18px;
-    width: 54px;
-    height: 54px;
+    width: 60px;
+    height: 60px;
     border: 3px solid #fff;
     border-radius: 50% 50% 0 50%;
     -webkit-transform: rotate(45deg);
@@ -196,7 +197,7 @@
 
 
 /*------------------------------------*\
-  Bullet with number
+  Bullet carrying number
   1. Increment the section counter
   2. Display the counter 
 \*------------------------------------*/
@@ -209,21 +210,27 @@
     display: block;
     position: absolute;
     z-index: 3;
-    left: -69px;
-    top: -15px;
-    width: 54px;
-    height: 54px;
+    // left: -69px;
+    top: -10px;
+    // width: 54px;
+    // height: 54px;
     color: #fff;
     font-family: $font-regular;
-    text-align: center;
-    font-size: 36px;
-    line-height: 60px !important;
+    // text-align: center;
+    // font-size: 36px;
+    // line-height: 60px !important;
   }
 }
 
+
+/*------------------------------------*\
+  Bullet carrying Font Awesome symbol
+\*------------------------------------*/
+
 .bullet.fa:before {
-  margin-top: -3px;
+  left: -71px;
   font-size: 27px !important;
+  padding: 0;
 }
 
 
@@ -235,7 +242,7 @@
 
   & + p {
     margin: 0 0 24px;
-    text-indent: 60px;
+    text-indent: 54px;
   
     @media only screen and (min-width:1050px) {
       display: inline-block;
