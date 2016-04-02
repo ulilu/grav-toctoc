@@ -1103,7 +1103,8 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 /*---------------------------------------------------------------------------*\ .cell This is a wrapper element, to appear within .block. Creates elements of equal height.
  Use in conjunction with the single properties classes like "width-50" ==> Not really necessary i think - table-cells will automatically share the available width, no?
 \*---------------------------------------------------------------------------*/
-.cell { display: block; margin: 0 -30px; }
+.cell { display: block; margin: 0 -24px; }
+@media only screen and (min-width: 480px) { .cell { margin: 0 -30px; } }
 @media only screen and (min-width: 650px) { .cell { margin: 0; } }
 @media only screen and (min-width: 800px) { .cell { display: table-cell !important; width: 50%; padding-right: 24px; margin-bottom: 36px; } }
 .cell > *:last-child { margin-bottom: 0; padding-bottom: 0; }
