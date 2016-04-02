@@ -903,7 +903,6 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
 \*------------------------------------*/
 .bullet + p { float: left; vertical-align: top; text-indent: 54px; margin: 0 0 24px; }
 @media only screen and (min-width: 1050px) { .bullet + p { display: inline-block; width: calc(30% + 6px); padding: 0 30px 0 0; } }
-.bullet + p::first-line { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media only screen and (min-width: 1050px) { .bullet.bullet-text-right + p { float: right; text-indent: 0; padding: 0 0 0 18px; } }
 
 /*---------------------------------------------------------------------------*\ Manual image-widths: Based on additional class on .image-row
