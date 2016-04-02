@@ -842,7 +842,7 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 /*------------------------------------*\ 1. necessary to get automatic numbering of headlines, see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
 \*------------------------------------*/
-.page-example { counter-reset: step; }
+.main { counter-reset: step; }
 
 /*---------------------------------------------------------------------------*\ Image row with table-cell-spacing: Each image gets an equal width
 \*---------------------------------------------------------------------------*/
@@ -1060,7 +1060,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .main { position: relative; padding-top: 24px; padding-bottom: 60px; }
 
 /* [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt */
-.footer { position: absolute; /* [1] */ right: 0; bottom: 0; left: 0; width: 100%; height: 60px; background: #444; color: #888; background: #363531; color: #827B6A; }
+.footer { position: absolute; /* [1] */ right: 0; bottom: 0; left: 0; width: 100%; height: 60px; background: #444; color: #888; background: #363531; color: #827B6A; font-size: 14px; }
 
 /*---------------------------------------------------------------------------*\ Wrapper on .page-welcome (similar to .stage on other pages)
 \*---------------------------------------------------------------------------*/
@@ -1068,11 +1068,11 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*---------------------------------------------------------------------------*\ General block element to set unified position, padding & margin across all pages
 \*---------------------------------------------------------------------------*/
-.block { position: relative; margin: 0 auto; max-width: 1200px; padding: 24px; /* Collapse bottom-margin on every direct :last-child */ }
+.block { position: relative; margin: 0 auto; max-width: 1200px; padding: 24px; /* Collapse bottom-margin on every direct :last-child, unless it's a .card */ }
 .block:before, .block:after { content: " "; display: table; }
 .block:after { clear: both; }
 @media only screen and (min-width: 480px) { .block { padding: 24px 30px; } }
-.block > *:last-child { margin-bottom: 0; }
+.block > *:last-child:not(.card) { margin-bottom: 0; }
 .main > .block:last-of-type { padding-bottom: 0; }
 @media only screen and (min-width: 650px) { .main > .block:last-of-type { padding-bottom: 30px; } }
 .footer .block { padding: 18px 24px 16px; }
@@ -1087,7 +1087,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .block--scroll { width: 100%; margin: 0 0 -24px !important; /* to hide otherwise visible scrollbar */ max-width: 100% !important; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
 
 /* 1. Necessary for JS to enable scrolling 2. to make room for hidden scrollbar, see above */
-.block__scroll-wrapper { overflow: auto; /* 1 */ white-space: nowrap; position: relative; vertical-align: top; margin-bottom: -12px; /* 2 */ padding: 0 30px 36px; }
+.block__scroll-wrapper { position: relative; overflow: auto; /* 1 */ white-space: nowrap; vertical-align: top; margin-bottom: -12px; /* 2 */ padding: 0 30px 36px; }
 @media only screen and (min-width: 1200px) { .block__scroll-wrapper { padding-left: calc((100vw - 1146px) / 2); padding-right: calc((100vw - 1146px) / 2); } }
 
 /*------------------------------------*\ Scrollbut, used with block--scroll
@@ -1117,10 +1117,8 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*---------------------------------------------------------------------------*\ Card - used on example.twig.html
 \*---------------------------------------------------------------------------*/
-.card { display: block; position: relative; float: left; border-radius: 6px; min-width: 224px; /* one card visible on iphone3 with 320px screenwidth*/ margin-bottom: 24px; width: 100% !important; background-image: linear-gradient(to bottom, #FFF, #F1E4C6); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); transition: all 0.2s ease-in-out; }
+.card { display: block; position: relative; float: left; border-radius: 6px; min-width: 224px; /* one card visible on iphone3 with 320px screenwidth*/ margin-bottom: 24px; width: 100% !important; background: #EFE8D8; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); transition: all 0.2s ease-in-out; }
 .card:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-.card:before { content: ""; display: block; position: absolute; z-index: -1; width: 100%; height: 100%; opacity: 0; border-radius: 6px; background: #fff; transition: opacity .4s ease-out; }
-.card:hover:before { opacity: 1; }
 @media only screen and (min-width: 536px) { .card.width-33, .card.width-25 { width: 48%; width: -webkit-calc(50% - 9px) !important; width: calc(50% - 9px) !important; margin-right: 18px; } }
 @media only screen and (min-width: 900px) { .card.width-33, .card.width-25 { width: 30%; width: -webkit-calc(33.33% - 16px) !important; width: calc(33.33% - 16px) !important; margin-right: 24px; } }
 @media only screen and (min-width: 536px) { .card.width-33:nth-of-type(2n), .card.width-25:nth-of-type(2n) { margin-right: 0; }
@@ -1137,19 +1135,42 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
   .card.width-25:nth-of-type(4n+5) { clear: both; } }
 .card[class*='width-']:last-of-type { margin-right: 0 !important; }
 
-.card__img { margin-bottom: 12px; border-top-left-radius: 5px; border-top-right-radius: 5px; overflow: hidden; /* this mask fixes the overflow:hidden in Chrome */ -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); background-size: 100%; -webkit-transition: background-position .4s ease-out; -moz-transition: background-position .4s ease-out; -ms-transition: background-position .4s ease-out; transition: background-position .4s ease-out; }
+/* Card image wrapper */
+.card__img { position: relative; z-index: 2; margin-bottom: 12px; border-top-left-radius: 5px; border-top-right-radius: 5px; overflow: hidden; /* this mask fixes the overflow:hidden in Chrome */ -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); background-size: 100%; -webkit-transition: background-position .4s ease-out; -moz-transition: background-position .4s ease-out; -ms-transition: background-position .4s ease-out; transition: background-position .4s ease-out; }
 .card__img img { position: relative; display: inline-block; width: 100%; height: 240px; object-fit: cover; transition: all .4s ease-out; transform: scale(1); transform-origin: 50% 100%; }
-.card:hover .card__img img { transform: scale(1.1); transform-origin: 50% 100%; /* pan towards bottom of image */ }
-.card:hover .card__img { background-size: 110% !important; }
 
-.card__info { padding: 0 18px 0px; }
+/* Card info wrapper */
+.card__info { position: relative; z-index: 2; padding: 0 18px 0px; }
 .card__info h3 { font-size: 21px; line-height: 27px; margin-bottom: 9px; }
 .card__info p { font-size: 15px; line-height: 23px; }
+.card__info p, .card__info p strong { font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; }
 .card__info *:last-child { margin-bottom: 15px; }
 @media only screen and (min-width: 400px) { .card__info h3 { font-size: 24px; line-height: 30px; }
   .card__info p { font-size: 16px; line-height: 24px; }
   .card__info *:last-child { margin-bottom: 18px; } }
-@media only screen and (min-width: 536px) { .card__info { min-height: 90px; } }
+@media only screen and (min-width: 536px) { .card__info { min-height: 90px; }
+  .card__info h3 { font-size: 21px; line-height: 27px; }
+  .card__info p { font-size: 15px; line-height: 23px; } }
+@media only screen and (min-width: 750px) { .card__info h3 { font-size: 24px; line-height: 30px; }
+  .card__info p { font-size: 16px; line-height: 24px; } }
+@media only screen and (min-width: 900px) { .card__info h3 { font-size: 21px; line-height: 27px; }
+  .card__info p { font-size: 15px; line-height: 23px; } }
+@media only screen and (min-width: 1000px) { .card__info h3 { font-size: 24px; line-height: 30px; }
+  .card__info p { font-size: 16px; line-height: 24px; } }
+@media only screen and (min-width: 1050px) { .card.width-25 .card__info h3 { font-size: 21px; line-height: 27px; }
+  .card.width-25 .card__info p { font-size: 15px; line-height: 23px; } }
+
+/* Card hover effect */
+.card:before { content: ""; display: block; position: absolute; z-index: 1; width: 100%; height: 100%; opacity: 0; border-radius: 6px; background: #fff; transition: opacity .4s ease-out; }
+.card:hover:before { opacity: 1; }
+.card:hover .card__img { background-size: 110% !important; }
+.card:hover .card__img img { transform: scale(1.1); transform-origin: 50% 100%; /* pan towards bottom of image */ }
+
+/*------------------------------------*\ Partner cards (on About page)
+\*------------------------------------*/
+@media only screen and (min-width: 536px) { .card--partner { min-height: 360px; } }
+@media only screen and (min-width: 536px) { .card--partner { min-height: 340px; } }
+.card--partner img { height: 200px; min-height: 200px; }
 
 /*------------------------------------*\ Hero element (similar to .stage)
 \*------------------------------------*/
@@ -1226,14 +1247,6 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .service-link p { margin: 0; }
 
 .page-header { padding: 24px; margin: 0 0 30px; }
-
-/*------------------------------------*\ Partner cards (on About page)
-\*------------------------------------*/
-.partner { overflow: hidden; min-height: 360px; padding: 0 0 18px; }
-.partner > a { display: block; min-height: 200px; }
-.partner img { height: 200px; }
-.partner h3 { font-size: 21px; line-height: 28px; margin-bottom: 18px; }
-.partner p { min-height: 54px; font-size: 16px; line-height: 24px; margin-bottom: 0; }
 
 /*------------------------------------*\ Scroll to top button
 \*------------------------------------*/
