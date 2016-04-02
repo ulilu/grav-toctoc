@@ -157,7 +157,7 @@ body {
  *  When using .block-stretch, you can have a second .block inside it, to
  *  keep the centered positioning of the content block.
  */
-.block:not(.block--lightslider) > .block {
+.block > .block {
   padding: 0;
   
   @media only screen and (min-width:1200px) {
@@ -918,19 +918,12 @@ body {
     Welcome page: Slider / Carousel Testimonials
 \*---------------------------------------------------------------------------*/
 
-.block--lightslider {
-  background: #E9967A;  // found by chance, official html color designation: darksalmon
-  color: #fff;
-  padding-left: 0;
-  padding-right: 0;
-  
-  .block {
-    padding-top: 0; 
-  }
-}
-
 .grav-lightslider {
 
+  h1, h2, h3, h4, h5 {
+    font-family: $font-light;
+    color: #444 !important;
+  }
 
   ul { 
     padding: 0; 
@@ -940,96 +933,22 @@ body {
   }
 
   li img {
-    display: block;
-    width: 90px;
-    height: 90px;
-    border: 3px solid #fff;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    text-align: center;
-  }
-
-  h1, h2, h3, h4, h5 {
-    font-family: $font-light;
-    color: #444 !important;
-  }
-
-  h3 {
-    position: relative;
-    max-width: 1140px;
-    font-size: 18px;
-    line-height: 27px;
-    background: #fff;
-    border-radius: 24px;
-    padding: 24px;
-    margin: 0 auto;
-    
-    @media only screen and (min-width: 600px) {
-      display: inline-block;
-      vertical-align: top;
-      font-size: 21px;
-      line-height: 30px;
-      
-      width: calc(100% - 155px);
-    }
-
-    @media only screen and (min-width: 900px) {
-      font-size: 24px;
-      line-height: 36px;
-    }
-    
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 30px;
-      left: -15px;
-      border-width: 15px 15px 15px 0;
-      border-style: solid;
-      border-color: rgba(0, 0, 0, 0) #fff;
-      width: 0;
-    }
-  }
-
-  p {
-    margin: 0 auto 30px;
-    // text-indent: 24px;
-    display: inline-block;
-    width: 150px;
-    text-align: center;
-    // border: 1px solid #fff;
-    padding: 0 30px 12px 0;
-    
-    strong {
-      display: block;
-      font-size: 24px;
-      margin-bottom: 3px;
-    }
-  }
-
-  .lslide {
-    margin: 0;
-    height: 100%;
+    display: block; 
+    width: 100%;
   }
 
   .panel-bg {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .panel-padding {
-    display: block;
-    vertical-align: middle;
-    // width: calc(100% - 120px);
-    padding: 0 30px 0 !important;
-    margin: 0 auto;
-    max-width: 1200px;
-
-    // @media only screen and (min-width: 550px) {
-    //   padding: 0 45px 0 !important;
-    // }
+    background-size: cover; 
+    background-position: center;
   }
 }
+
+.lSSlideOuter .lSPager.lSpg > li a { 
+  height: 12px !important; 
+  width: 12px !important; 
+  border-radius: 100% !important;
+}
+
 
 
 /*------------------------------------*\
