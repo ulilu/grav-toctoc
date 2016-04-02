@@ -51,9 +51,8 @@ $(document).ready(function() {
       navi.scrollLeft( -t );
 
     }
-
+    
   };
-
 
   activeMenu();
 
