@@ -910,6 +910,9 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
 \*------------------------------------*/
 .row-100 { width: 100% !important; }
 
+.image-row.width-100 { width: auto !important; }
+@media only screen and (min-width: 750px) { .image-row.width-100 { width: -webkit-calc(100% +12px) !important; width: calc(100% +12px) !important; } }
+
 .row-50-50 > *:nth-child(1) { width: 50% !important; }
 .row-50-50 > *:nth-child(2) { width: 50% !important; }
 
