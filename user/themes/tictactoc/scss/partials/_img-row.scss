@@ -157,9 +157,9 @@
     &:first-of-type {
       text-indent: 54px;
       
-      &::first-line {
-        font-family: $font-semibold;
-      }
+      // &::first-line {
+      //   font-family: $font-semibold;
+      // }
     }
 
     &:last-of-type {

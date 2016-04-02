@@ -872,7 +872,6 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 @media only screen and (min-width: 900px) { .text-row p, .bullet-only-text + blockquote p { display: table-cell; padding-right: 30px; min-width: 270px; /* 2. */ } }
 @media only screen and (min-width: 990px) { .text-row p, .bullet-only-text + blockquote p { min-width: 300px; /* 2. */ } }
 .text-row p:first-of-type, .bullet-only-text + blockquote p:first-of-type { text-indent: 54px; }
-.text-row p:first-of-type::first-line, .bullet-only-text + blockquote p:first-of-type::first-line { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .text-row p:last-of-type, .bullet-only-text + blockquote p:last-of-type { margin-bottom: 0; }
 
 /*---------------------------------------------------------------------------*\ Text / Headline styles (used on page-example)
