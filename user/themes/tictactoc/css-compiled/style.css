@@ -849,7 +849,7 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .image-row { display: inline-block; overflow: hidden; border-spacing: 0; padding: 0; margin: 0 -24px 12px; /* Setting the style of second .image-row, directly following the first */ }
 @media only screen and (min-width: 480px) { .image-row { margin: 0 -30px 12px; } }
 @media only screen and (min-width: 750px) { .image-row { border-spacing: 6px 0; margin: 0 -6px 12px; } }
-@media only screen and (min-width: 1050px) { .image-row { width: 70%; } }
+@media only screen and (min-width: 1050px) { .image-row { width: -webkit-calc(70% + 6px); width: calc(70% + 6px); } }
 .image-row + .image-row { margin-top: -21px; }
 @media only screen and (min-width: 750px) { .image-row + .image-row { margin-top: -15px; } }
 .image-row + .image-row.width-100 { width: auto !important; }
