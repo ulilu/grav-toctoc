@@ -9,7 +9,7 @@
 		{% if uri.path() == '/' %}
 			<p>{{ page.header.blurb }}</p>
 		{% else %}	
-			{{ page.summary|safe_truncate_html(110) }}
+			<p>{{ page.header.blurb|safe_truncate_html(110) }}</p>
   	{% endif %}
 
   </div>

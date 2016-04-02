@@ -17,7 +17,7 @@
   width: 100%;
   overflow: hidden;
   background: #9B2E36;  // wine red
-  border-bottom: 3px solid rgba(0,0,0,0.15);
+  border-bottom: 3px solid rgba(0,0,0,0.33);
   // background: #695D8E;
   // background: #81493D;
   // background: #C26236;
@@ -283,12 +283,13 @@
   // background: currentColor;
   // background: #C16844; // roof tiles of marseille
   // background: #A96F58; // Bronze
+  // background: #83272D; // darker wine red
   background: #9B2E36; // wine red
-  background: #83272D; // darker wine red
   
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24)
+  // box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
+  border-bottom: 3px solid rgba(0,0,0,0.33);
 }
 
 .sub-nav__item {
