@@ -1082,8 +1082,8 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .block--stretch { margin: 0; max-width: 100%; overflow: hidden; /* for intended use of cropped icons in background */ }
 
 /* When using .block-stretch, you can have a second .block inside it, to keep the centered positioning of the content block. */
-.block > .block { padding: 0; }
-@media only screen and (min-width: 1200px) { .block > .block { max-width: 1140px; } }
+.block:not(.block--lightslider) > .block { padding: 0; }
+@media only screen and (min-width: 1200px) { .block:not(.block--lightslider) > .block { max-width: 1140px; } }
 
 .block--scroll { width: 100%; margin: 0 0 -24px !important; /* to hide otherwise visible scrollbar */ max-width: 100% !important; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch; /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */ -webkit-transform: translate3d(0, 0, 0); }
 
@@ -1227,12 +1227,21 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*---------------------------------------------------------------------------*\ Welcome page: Slider / Carousel Testimonials
 \*---------------------------------------------------------------------------*/
-.grav-lightslider h1, .grav-lightslider h2, .grav-lightslider h3, .grav-lightslider h4, .grav-lightslider h5 { font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; color: #444 !important; }
-.grav-lightslider ul { padding: 0; list-style: none; overflow: hidden; margin: 0; }
-.grav-lightslider li img { display: block; width: 100%; }
-.grav-lightslider .panel-bg { background-size: cover; background-position: center; }
+.block--lightslider { background: #E9967A; color: #fff; padding-left: 0; padding-right: 0; }
+.block--lightslider .block { padding-top: 0; }
 
-.lSSlideOuter .lSPager.lSpg > li a { height: 12px !important; width: 12px !important; border-radius: 100% !important; }
+.grav-lightslider ul { padding: 0; list-style: none; overflow: hidden; margin: 0; }
+.grav-lightslider li img { display: block; width: 90px; height: 90px; border: 3px solid #fff; margin: 0 auto 18px; border-radius: 50%; text-align: center; }
+.grav-lightslider h1, .grav-lightslider h2, .grav-lightslider h3, .grav-lightslider h4, .grav-lightslider h5 { font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; color: #444 !important; }
+.grav-lightslider h3 { position: relative; max-width: 1140px; font-size: 18px; line-height: 27px; background: #fff; border-radius: 24px; padding: 24px; margin: 0 auto; }
+@media only screen and (min-width: 600px) { .grav-lightslider h3 { display: inline-block; vertical-align: top; font-size: 21px; line-height: 30px; width: calc(100% - 155px); } }
+@media only screen and (min-width: 900px) { .grav-lightslider h3 { font-size: 24px; line-height: 36px; } }
+.grav-lightslider h3:after { content: ""; display: block; position: absolute; top: 30px; left: -15px; border-width: 15px 15px 15px 0; border-style: solid; border-color: transparent #fff; width: 0; }
+.grav-lightslider p { margin: 0 auto 30px; display: inline-block; width: 150px; text-align: center; padding: 0 30px 12px 0; }
+.grav-lightslider p strong { display: block; font-size: 24px; margin-bottom: 3px; }
+.grav-lightslider .lslide { margin: 0; height: 100%; }
+.grav-lightslider .panel-bg { display: block; margin: 0 auto; }
+.grav-lightslider .panel-padding { display: block; vertical-align: middle; padding: 0 30px 0 !important; margin: 0 auto; max-width: 1200px; }
 
 /*------------------------------------*\ Services link
 \*------------------------------------*/
