@@ -17,11 +17,12 @@
   width: 100%;
   overflow: hidden;
   background: #9B2E36;  // wine red
+  border-bottom: 3px solid rgba(0,0,0,0.15);
   // background: #695D8E;
   // background: #81493D;
   // background: #C26236;
   // background-image: linear-gradient(to top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.15) 40%);
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 59%, rgba(0,0,0,0.15) 60%);
+  // background-image: linear-gradient(to bottom, rgba(0,0,0,0) 59%, rgba(0,0,0,0.15) 60%);
 
   @media only screen and (min-width: 700px) {
     overflow: visible;
