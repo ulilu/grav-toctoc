@@ -81,6 +81,7 @@
 
   figcaption {
     background: #e8e8e8;
+    background: #D7CAAD; // lightbeige
     border-radius: 0; 
     padding: 6px 18px 6px 36px;
     margin: 0;
@@ -97,7 +98,7 @@
 }
 
 
-.image-row-text figcaption {
+.row-with-title figcaption {
   display: table-cell;
   color: #fff;
   background: $color-logo0;
@@ -118,6 +119,52 @@
   @media only screen and (min-width:750px) {
     padding: 12px 18px;
     line-height: 105%;
+  }
+}
+
+
+
+/*---------------------------------------------------------------------------*\
+    Corresponding Text row with table-cell-spacing: 
+    Each image gets an equal width
+\*---------------------------------------------------------------------------*/
+
+// 1. Unfortunately, due to markdown-restrictions, blockquotes cannot have
+// their own classnames. Hence, what should be called ".text-row" 
+// can only be addressed via it's parent selector ".bullet-only-text"
+
+// 2. Setting min-width for each p of 300px (assuming 3 paragraphs).
+// Thus preventing a column with very little text becoming too narrow.
+
+.text-row,  /* 1. */
+.bullet-only-text + blockquote {  
+  display: table;
+  padding: 0 0 36px;
+  margin: 0;
+
+  p {
+    display: block;
+    
+    @media only screen and (min-width: 900px) {
+      display: table-cell;
+      padding-right: 30px;
+      min-width: 270px; /* 2. */
+    }
+    @media only screen and (min-width: 990px) {
+      min-width: 300px; /* 2. */
+    }
+
+    &:first-of-type {
+      text-indent: 54px;
+      
+      &::first-line {
+        font-family: $font-semibold;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -146,10 +193,23 @@
 
 .bullet-headline {
   border: 0;
-  height: 30px;
-  line-height: 24px !important;
-  margin-bottom: 6px;
+  font-family: $font-semibold !important;
+  // background: #fff;
 }
+
+h2.bullet-headline{
+  height: 48px;
+  line-height: 30px !important;
+  margin-bottom: 0px;
+}
+
+h3.bullet-headline {
+  height: 30px;
+  line-height: 30px !important;
+  margin-bottom: 12px;
+}
+
+
 
 
 /*------------------------------------*\
@@ -241,15 +301,20 @@
 .bullet {
 
   & + p {
-    margin: 0 0 24px;
+    float: left;
+    vertical-align: top;
     text-indent: 54px;
+    margin: 0 0 24px;
   
     @media only screen and (min-width:1050px) {
       display: inline-block;
       width: calc(30% + 6px);
-      vertical-align: top;
       padding: 0 30px 0 0;
     }
+  }
+
+  & + p::first-line {
+    font-family: $font-semibold;
   }
 
   &.bullet-text-right + p {
@@ -257,6 +322,14 @@
       float: right;
       text-indent: 0;
       padding: 0 0 0 18px;
+    }
+  }
+
+  &.bullet-only-text + blockquote p {
+    @media only screen and (min-width:1050px) {
+      // width: 100%;
+      // vertical-align: top;
+      // padding: 0 30px 0 0;
     }
   }
 }
@@ -330,9 +403,9 @@
 \*------------------------------------*/
 
 .row-33-33-33 {
-  > *:nth-child(1) {width: 33.3333% !important;}
-  > *:nth-child(2) {width: 33.3333% !important;}
-  > *:nth-child(3) {width: 33.3333% !important;}
+  > *:nth-child(1) {width: 33% !important;}
+  > *:nth-child(2) {width: 33% !important;}
+  > *:nth-child(3) {width: 33% !important;}
 }
 
 

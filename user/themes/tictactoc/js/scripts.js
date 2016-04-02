@@ -19,7 +19,7 @@
 
 $(document).ready(function() {
 
-  jQuery(".image-row-text figcaption").fitText(0.4, { minFontSize: '24px', maxFontSize: '42px' });
+  jQuery(".row-with-title figcaption").fitText(0.4, { minFontSize: '24px', maxFontSize: '42px' });
 
 
     /*

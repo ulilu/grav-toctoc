@@ -16,7 +16,12 @@
   z-index: 2;
   width: 100%;
   overflow: hidden;
-  background: #9B2E36;
+  background: #9B2E36;  // wine red
+  // background: #695D8E;
+  // background: #81493D;
+  // background: #C26236;
+  // background-image: linear-gradient(to top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.15) 40%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 59%, rgba(0,0,0,0.15) 60%);
 
   @media only screen and (min-width: 700px) {
     overflow: visible;
@@ -48,7 +53,7 @@
 
   @media only screen and (min-width: 1200px) {
     border-radius: 9px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
+    // box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
     // @include material-card1();
   }
 }
@@ -277,7 +282,9 @@
   // background: currentColor;
   // background: #C16844; // roof tiles of marseille
   // background: #A96F58; // Bronze
-  background: #9B2E36;
+  background: #9B2E36; // wine red
+  background: #83272D; // darker wine red
+  
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24)

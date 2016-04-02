@@ -270,7 +270,7 @@ h6, h6.fa { font-size: 18px; line-height: 27px; }
 
 .delta { font-size: 48px !important; line-height: 54px; }
 
-hr { clear: both; height: 2px; background-color: currentColor; background-color: #ccc; padding: 0; border: 0; margin: 0 0 30px; }
+hr { clear: both; height: 2px; background-color: currentColor; background-color: #ccc; background-color: #B2A892; padding: 0; border: 0; margin: 0 0 30px; }
 
 /*
 
@@ -789,12 +789,12 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .nav-bar { position: relative; height: 51px; }
 @media only screen and (min-width: 1200px) { .nav-bar { overflow: visible; } }
 
-.main-nav__wrapper { position: relative; z-index: 2; width: 100%; overflow: hidden; background: #9B2E36; /* fade-out element on right side of main-nav, only on mobile */ }
+.main-nav__wrapper { position: relative; z-index: 2; width: 100%; overflow: hidden; background: #9B2E36; background-image: linear-gradient(to bottom, transparent 59%, rgba(0, 0, 0, 0.15) 60%); /* fade-out element on right side of main-nav, only on mobile */ }
 @media only screen and (min-width: 700px) { .main-nav__wrapper { overflow: visible; } }
 @media only screen and (max-width: 700px) { .main-nav__wrapper:before, .main-nav__wrapper:after { content: ""; display: block; position: absolute; top: 0; height: 51px; width: 100px; pointer-events: none; }
   .main-nav__wrapper:before { left: 0; width: 50px; background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.33)); z-index: 1; }
   .main-nav__wrapper:after { right: 0; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.6)); } }
-@media only screen and (min-width: 1200px) { .main-nav__wrapper { border-radius: 9px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24); } }
+@media only screen and (min-width: 1200px) { .main-nav__wrapper { border-radius: 9px; } }
 
 /* scroll-button on right side of main-nav, only on mobile */
 .scrollmenu { display: none; position: absolute; z-index: 3; bottom: 0; right: 0; width: 42px; height: 51px; cursor: pointer; background-color: rgba(0, 0, 0, 0.75); background-color: #9B2E36; border-left: 2px solid #fff; }
@@ -830,7 +830,7 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 */
 /*------------------------------------*\ Sub nav
 \*------------------------------------*/
-.sub-nav { display: none; position: absolute; left: -3px; padding: 6px 6px 0; width: 200px; overflow: hidden; background: #9B2E36; border-bottom-left-radius: 9px; border-bottom-right-radius: 9px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24); }
+.sub-nav { display: none; position: absolute; left: -3px; padding: 6px 6px 0; width: 200px; overflow: hidden; background: #9B2E36; background: #83272D; border-bottom-left-radius: 9px; border-bottom-right-radius: 9px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24); }
 
 .sub-nav__item { display: block; position: relative; }
 
@@ -859,17 +859,31 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .image-row img { object-fit: cover; width: 100%; height: 100%; max-height: 50vmin; }
 @media only screen and (min-width: 750px) { .image-row img { border-radius: 4px; max-height: 40vmin; } }
 @media only screen and (min-width: 1200px) { .image-row img { max-height: 320px; } }
-.image-row figcaption { background: #e8e8e8; border-radius: 0; padding: 6px 18px 6px 36px; margin: 0; }
+.image-row figcaption { background: #e8e8e8; background: #D7CAAD; border-radius: 0; padding: 6px 18px 6px 36px; margin: 0; }
 @media only screen and (min-width: 750px) { .image-row figcaption { border-radius: 4px; padding: 6px 6px 6px 12px; margin: 6px 5px 0; } }
 
-.image-row-text figcaption { display: table-cell; color: #fff; background: #00aabd; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: 1px; line-height: 115%; vertical-align: middle; padding: 12px 15px; margin: 0; }
-@media only screen and (min-width: 750px) { .image-row-text figcaption { padding: 12px 18px; line-height: 105%; } }
+.row-with-title figcaption { display: table-cell; color: #fff; background: #00aabd; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: 1px; line-height: 115%; vertical-align: middle; padding: 12px 15px; margin: 0; }
+@media only screen and (min-width: 750px) { .row-with-title figcaption { padding: 12px 18px; line-height: 105%; } }
+
+/*---------------------------------------------------------------------------*\ Corresponding Text row with table-cell-spacing:  Each image gets an equal width
+\*---------------------------------------------------------------------------*/
+.text-row, .bullet-only-text + blockquote { display: table; padding: 0 0 36px; margin: 0; }
+.text-row p, .bullet-only-text + blockquote p { display: block; }
+@media only screen and (min-width: 900px) { .text-row p, .bullet-only-text + blockquote p { display: table-cell; padding-right: 30px; min-width: 270px; /* 2. */ } }
+@media only screen and (min-width: 990px) { .text-row p, .bullet-only-text + blockquote p { min-width: 300px; /* 2. */ } }
+.text-row p:first-of-type, .bullet-only-text + blockquote p:first-of-type { text-indent: 54px; }
+.text-row p:first-of-type::first-line, .bullet-only-text + blockquote p:first-of-type::first-line { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.text-row p:last-of-type, .bullet-only-text + blockquote p:last-of-type { margin-bottom: 0; }
 
 /*---------------------------------------------------------------------------*\ Text / Headline styles (used on page-example)
 \*---------------------------------------------------------------------------*/
 .bullet { display: block !important; position: relative; z-index: 1; top: 0px; left: 66px; width: calc(100% - 66px); height: 0; padding: 0 0 6px; margin: 12px 0 24px; overflow: visible; box-sizing: border-box; color: #00aabd; background: none; border-bottom: 2px solid currentColor; }
 
-.bullet-headline { border: 0; height: 30px; line-height: 24px !important; margin-bottom: 6px; }
+.bullet-headline { border: 0; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+h2.bullet-headline { height: 48px; line-height: 30px !important; margin-bottom: 0px; }
+
+h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 12px; }
 
 /*------------------------------------*\ General bullet element  Use with .fa-(symbol) or .bullet-number,  to set the content for the ":before"-element 
 \*------------------------------------*/
@@ -887,8 +901,9 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 /*------------------------------------*\ Setting text left / right below bullet
 \*------------------------------------*/
-.bullet + p { margin: 0 0 24px; text-indent: 54px; }
-@media only screen and (min-width: 1050px) { .bullet + p { display: inline-block; width: calc(30% + 6px); vertical-align: top; padding: 0 30px 0 0; } }
+.bullet + p { float: left; vertical-align: top; text-indent: 54px; margin: 0 0 24px; }
+@media only screen and (min-width: 1050px) { .bullet + p { display: inline-block; width: calc(30% + 6px); padding: 0 30px 0 0; } }
+.bullet + p::first-line { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media only screen and (min-width: 1050px) { .bullet.bullet-text-right + p { float: right; text-indent: 0; padding: 0 0 0 18px; } }
 
 /*---------------------------------------------------------------------------*\ Manual image-widths: Based on additional class on .image-row
@@ -932,9 +947,9 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 /*------------------------------------*\ 3 Images per row
 \*------------------------------------*/
-.row-33-33-33 > *:nth-child(1) { width: 33.3333% !important; }
-.row-33-33-33 > *:nth-child(2) { width: 33.3333% !important; }
-.row-33-33-33 > *:nth-child(3) { width: 33.3333% !important; }
+.row-33-33-33 > *:nth-child(1) { width: 33% !important; }
+.row-33-33-33 > *:nth-child(2) { width: 33% !important; }
+.row-33-33-33 > *:nth-child(3) { width: 33% !important; }
 
 .row-20-40-40 > *:nth-child(1) { width: 20% !important; }
 .row-20-40-40 > *:nth-child(2) { width: 40% !important; }
@@ -1040,12 +1055,12 @@ html { font-family: Linotte-Regular; height: 100%; }
 
 body { position: relative; min-height: 100%; background: #fff; padding-bottom: 60px; }
 
-.header { position: relative; width: 100%; }
+.header { position: relative; width: 100%; max-height: 120px; background: #fff; }
 
-.main { position: relative; padding-bottom: 60px; }
+.main { position: relative; padding-top: 24px; padding-bottom: 60px; }
 
 /* [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt */
-.footer { position: absolute; /* [1] */ right: 0; bottom: 0; left: 0; width: 100%; height: 60px; background: #eeeeee; }
+.footer { position: absolute; /* [1] */ right: 0; bottom: 0; left: 0; width: 100%; height: 60px; background: #444; color: #888; background: #363531; color: #827B6A; }
 
 /*---------------------------------------------------------------------------*\ Wrapper on .page-welcome (similar to .stage on other pages)
 \*---------------------------------------------------------------------------*/
@@ -1058,6 +1073,8 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .block:after { clear: both; }
 @media only screen and (min-width: 480px) { .block { padding: 24px 30px; } }
 .block > *:last-child { margin-bottom: 0; }
+.main > .block:last-of-type { padding-bottom: 0; }
+@media only screen and (min-width: 650px) { .main > .block:last-of-type { padding-bottom: 30px; } }
 .footer .block { padding: 18px 24px 16px; }
 
 /* While a regular block is limited to 1200px width, .block--strech fills the entire width of the browser-window. It should be used to set different background (colors, images) to different sections within a page. */
@@ -1090,16 +1107,20 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 @media only screen and (min-width: 800px) { .cell { display: table-cell !important; width: 50%; padding-right: 24px; margin-bottom: 36px; } }
 .cell > *:last-child { margin-bottom: 0; padding-bottom: 0; }
 
-.cell--padded { padding: 24px; }
+.cell-padded { padding: 24px; }
 
-.cell--feature { padding: 24px; background: #18b8a0; color: #fff; }
+.cell-feature { padding: 24px; background: #18b8a0; color: #fff; background: #B2A892; }
+.cell-feature h1, .cell-feature h2, .cell-feature h3, .cell-feature h4, .cell-feature h5, .cell-feature h6 { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.cell-feature ul { font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.cell--info { padding: 24px; background: #EEEEEE; }
+.cell-info { padding: 24px; background: #EEEEEE; background: #D7CAAD; }
 
 /*---------------------------------------------------------------------------*\ Card - used on example.twig.html
 \*---------------------------------------------------------------------------*/
-.card { display: block; position: relative; float: left; background: #fff; border-radius: 6px; min-width: 224px; /* one card visible on iphone3 with 320px screenwidth*/ margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); transition: all 0.2s ease-in-out; width: 100% !important; }
+.card { display: block; position: relative; float: left; border-radius: 6px; min-width: 224px; /* one card visible on iphone3 with 320px screenwidth*/ margin-bottom: 24px; width: 100% !important; background-image: linear-gradient(to bottom, #FFF, #F1E4C6); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); transition: all 0.2s ease-in-out; }
 .card:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+.card:before { content: ""; display: block; position: absolute; z-index: -1; width: 100%; height: 100%; opacity: 0; border-radius: 6px; background: #fff; transition: opacity .4s ease-out; }
+.card:hover:before { opacity: 1; }
 @media only screen and (min-width: 536px) { .card.width-33, .card.width-25 { width: 48%; width: -webkit-calc(50% - 9px) !important; width: calc(50% - 9px) !important; margin-right: 18px; } }
 @media only screen and (min-width: 900px) { .card.width-33, .card.width-25 { width: 30%; width: -webkit-calc(33.33% - 16px) !important; width: calc(33.33% - 16px) !important; margin-right: 24px; } }
 @media only screen and (min-width: 536px) { .card.width-33:nth-of-type(2n), .card.width-25:nth-of-type(2n) { margin-right: 0; }
@@ -1116,13 +1137,19 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
   .card.width-25:nth-of-type(4n+5) { clear: both; } }
 .card[class*='width-']:last-of-type { margin-right: 0 !important; }
 
-.card__img { margin-bottom: 18px; border-top-left-radius: 5px; border-top-right-radius: 5px; overflow: hidden; /* this fixes the overflow:hidden in Chrome */ -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); background-size: 100%; -webkit-transition: background-position .5s ease-in; -moz-transition: background-position .5s ease-in; -ms-transition: background-position .5s ease-in; transition: background-position .5s ease-in; }
-.card__img img { position: relative; display: inline-block; width: 100%; height: 240px; object-fit: cover; transition: all .5s ease-in-out; transform: scale(1); transform-origin: 50% 100%; }
+.card__img { margin-bottom: 12px; border-top-left-radius: 5px; border-top-right-radius: 5px; overflow: hidden; /* this mask fixes the overflow:hidden in Chrome */ -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); background-size: 100%; -webkit-transition: background-position .4s ease-out; -moz-transition: background-position .4s ease-out; -ms-transition: background-position .4s ease-out; transition: background-position .4s ease-out; }
+.card__img img { position: relative; display: inline-block; width: 100%; height: 240px; object-fit: cover; transition: all .4s ease-out; transform: scale(1); transform-origin: 50% 100%; }
 .card:hover .card__img img { transform: scale(1.1); transform-origin: 50% 100%; /* pan towards bottom of image */ }
 .card:hover .card__img { background-size: 110% !important; }
 
 .card__info { padding: 0 18px 0px; }
-.card__info h3 { font-size: 24px; line-height: 30px; }
+.card__info h3 { font-size: 21px; line-height: 27px; margin-bottom: 9px; }
+.card__info p { font-size: 15px; line-height: 23px; }
+.card__info *:last-child { margin-bottom: 15px; }
+@media only screen and (min-width: 400px) { .card__info h3 { font-size: 24px; line-height: 30px; }
+  .card__info p { font-size: 16px; line-height: 24px; }
+  .card__info *:last-child { margin-bottom: 18px; } }
+@media only screen and (min-width: 536px) { .card__info { min-height: 90px; } }
 
 /*------------------------------------*\ Hero element (similar to .stage)
 \*------------------------------------*/
@@ -1221,15 +1248,24 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .page-welcome .block--service .service-link:first-of-type { padding-bottom: 24px; border-bottom: 2px solid #FCF6E7; margin-bottom: 30px; }
 @media only screen and (min-width: 1100px) { .page-welcome .block--service .service-link:first-of-type { padding: 0 30px 0 0; border-bottom: none; border-right: 2px solid #FCF6E7; margin: 0; }
   .page-welcome .block--service .service-link:last-of-type { padding: 0 0 0 30px; } }
-.page-welcome .block--example { position: relative; padding: 0; background-color: #858AA5; }
+.page-welcome .block--example { position: relative; padding: 0; background-color: #858AA5; background-color: #AED1DF; background-color: #9392B6; background-color: #8988A6; }
 .page-welcome .block--example:after { content: ""; display: block; position: absolute; z-index: 1; right: 0; top: 0; width: 25vw; height: 100%; pointer-events: none; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25)); }
 .page-welcome .block--example .block { padding: 30px; }
 @media only screen and (min-width: 1200px) { .page-welcome .block--example .block { padding-left: 0; } }
 .page-welcome .block--example h1 { color: #fff; display: inline-block; margin-bottom: 0; }
-.page-welcome .card.width-33 { z-index: 2; display: inline-block; float: none; white-space: normal; vertical-align: top; margin-bottom: 30px; margin-right: 30px !important; }
-@media only screen and (min-width: 536px) { .page-welcome .card.width-33 { margin-right: 24px !important; } }
-.page-welcome .card.width-33:last-of-type { margin-right: 0 !important; }
-@media only screen and (min-width: 1200px) { .page-welcome .card.width-33:last-of-type { margin-right: 30px !important; } }
+.page-welcome .block--example .card { z-index: 2; display: inline-block; float: none; white-space: normal; vertical-align: top; margin-bottom: 30px; margin-right: 30px !important; }
+@media only screen and (min-width: 536px) { .page-welcome .block--example .card { margin-right: 24px !important; } }
+.page-welcome .block--example .card:last-of-type { margin-right: 0 !important; }
+@media only screen and (min-width: 1200px) { .page-welcome .block--example .card:last-of-type { margin-right: 30px !important; } }
+.page-welcome .block--example .card h3 { color: #860714; }
+
+/*------------------------------------*\ Examples list page
+\*------------------------------------*/
+.page-examples { background-color: #858AA5; background-color: #CFC7B5; background-color: #9EDEE5; background-color: #AED1DF; background-color: #9392B6; background-color: #8988A6; }
+.page-examples h1 { color: #fff; }
+.page-examples h3 { color: #860714; }
+
+.page-example { background: #EFE8D8; }
 
 /*------------------------------------*\ Services page
 \*------------------------------------*/
