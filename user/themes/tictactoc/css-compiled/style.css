@@ -244,7 +244,9 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; padding: 0; margin: 0; margin: 0 0
 h1.fa, h2.fa, h3.fa, h4.fa, h5.fa, h6.fa { display: block; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: inherit; }
 h1[class*="fa-"]:before, h2[class*="fa-"]:before, h3[class*="fa-"]:before, h4[class*="fa-"]:before, h5[class*="fa-"]:before, h6[class*="fa-"]:before { display: inline-block; padding-right: 0.5em; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-h1, h1.fa { font-size: 48px; line-height: 54px; }
+h1, h1.fa { font-size: 36px; line-height: 42px; }
+@media only screen and (min-width: 480px) { h1, h1.fa { font-size: 42px; line-height: 48px; } }
+@media only screen and (min-width: 640px) { h1, h1.fa { font-size: 48px; line-height: 54px; } }
 
 h2, h2.fa { font-size: 36px; line-height: 42px; }
 
@@ -1232,14 +1234,19 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .block--lightslider .block { padding-top: 0; }
 
 .grav-lightslider ul { padding: 0; list-style: none; overflow: hidden; margin: 0; }
-.grav-lightslider li img { display: block; width: 90px; height: 90px; border: 3px solid #fff; margin: 0 auto 18px; border-radius: 50%; text-align: center; }
+.grav-lightslider li img { display: inline-block; width: 60px; height: 60px; border: 3px solid #fff; border-radius: 50%; margin: 0 18px 0 0; }
+@media only screen and (min-width: 520px) { .grav-lightslider li img { display: block; width: 90px; height: 90px; text-align: center; margin: 0 auto 18px; } }
 .grav-lightslider h1, .grav-lightslider h2, .grav-lightslider h3, .grav-lightslider h4, .grav-lightslider h5 { font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; color: #444 !important; }
 .grav-lightslider h3 { position: relative; max-width: 1140px; font-size: 18px; line-height: 27px; background: #fff; border-radius: 24px; padding: 24px; margin: 0 auto; }
-@media only screen and (min-width: 600px) { .grav-lightslider h3 { display: inline-block; vertical-align: top; font-size: 21px; line-height: 30px; width: calc(100% - 155px); } }
+@media only screen and (min-width: 520px) { .grav-lightslider h3 { display: inline-block; vertical-align: top; width: calc(100% - 155px); } }
+@media only screen and (min-width: 600px) { .grav-lightslider h3 { font-size: 21px; line-height: 30px; } }
 @media only screen and (min-width: 900px) { .grav-lightslider h3 { font-size: 24px; line-height: 36px; } }
-.grav-lightslider h3:after { content: ""; display: block; position: absolute; top: 30px; left: -15px; border-width: 15px 15px 15px 0; border-style: solid; border-color: transparent #fff; width: 0; }
-.grav-lightslider p { margin: 0 auto 30px; display: inline-block; width: 150px; text-align: center; padding: 0 30px 12px 0; }
-.grav-lightslider p strong { display: block; font-size: 24px; margin-bottom: 3px; }
+.grav-lightslider h3:after { content: ""; display: block; position: absolute; top: -15px; left: 84px; border-width: 0 15px 15px 15px; border-style: solid; border-color: #fff transparent; width: 0; }
+@media only screen and (min-width: 520px) { .grav-lightslider h3:after { top: 30px; left: -15px; border-width: 15px 15px 15px 0; border-color: transparent #fff; } }
+.grav-lightslider p { float: left; position: relative; z-index: 1; width: 100%; padding: 18px 30px 12px 18px; margin: 0; color: #444; }
+@media only screen and (min-width: 520px) { .grav-lightslider p { float: none; display: inline-block; text-align: center; color: #fff; width: 150px; padding: 0 30px 0 0; margin: 0 auto 30px; } }
+.grav-lightslider p strong { font-size: 21px; }
+@media only screen and (min-width: 520px) { .grav-lightslider p strong { display: block; font-size: 24px; margin-bottom: 3px; } }
 .grav-lightslider .lslide { margin: 0; height: 100%; }
 .grav-lightslider .panel-bg { display: block; margin: 0 auto; }
 .grav-lightslider .panel-padding { display: block; vertical-align: middle; padding: 0 30px 0 !important; margin: 0 auto; max-width: 1200px; }
