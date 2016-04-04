@@ -1063,7 +1063,8 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .main { position: relative; padding-top: 24px; padding-bottom: 60px; }
 
 /* [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt */
-.footer { position: absolute; /* [1] */ right: 0; bottom: 0; left: 0; width: 100%; height: 60px; background: #444; color: #888; background: #363531; color: #827B6A; font-size: 14px; }
+.footer { position: absolute; /* [1] */ right: 0; bottom: 0; left: 0; width: 100%; background: #444; color: #888; background: #363531; color: #827B6A; font-size: 14px; }
+@media only screen and (min-width: 480px) { .footer { font-size: 16px; } }
 
 /*---------------------------------------------------------------------------*\ Wrapper on .page-welcome (similar to .stage on other pages)
 \*---------------------------------------------------------------------------*/
@@ -1425,6 +1426,11 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 */
 /*---------------------------------------------------------------------------*\ Different page colors
 \*---------------------------------------------------------------------------*/
+.page-services { background: #F1E4C6; }
+.page-services .card:hover:before { display: none; }
+
+.page-service { background: #F1E4C6; }
+
 /*
 @import "partials/images";
 // @import "partials/videos";
