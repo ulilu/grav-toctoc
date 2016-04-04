@@ -8,7 +8,7 @@
 
 {% set childtemplate = 'partials/listitem-' ~ childtype ~ '.html.twig' %}
 
-<div class="block  block--stretch  block--{{ childtype }}">
+<section class="block  block--stretch  block--{{ childtype }}">
 
 	{% if page.content %}
 		<div class="block">
@@ -26,5 +26,5 @@
   	{% if overflow %}</div>{% endif %}
 	</div>
 
-</div>
+</section>
 
