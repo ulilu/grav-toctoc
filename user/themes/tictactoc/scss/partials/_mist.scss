@@ -1494,7 +1494,7 @@ body {
 .timeline-row__info {
   position: relative;
   background: #fff;
-  padding: 24px;
+  padding: 18px;
   border-radius: 6px;
   margin-left: 75px;
   // box-shadow: 0 3px 0 #8EBDD4;
@@ -1563,6 +1563,7 @@ body {
 
   @media only screen and (min-width: 700px) {
     margin-left: 150px;
+    padding: 24px;
     
     &:after {
       top: 45px;
@@ -1571,6 +1572,11 @@ body {
     // .timeline-row:first-of-type &:after {
     //   top: 30px;
     // }
+    
+    p {
+      font-size: 18px;
+      line-height: 27px;
+    }
 
     h2 {
       font-size: 36px;
