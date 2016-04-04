@@ -207,7 +207,7 @@ body {
   float: right;
   width: 60px;
   height: 60px;
-  border: 2px solid #fff;
+  border: 2px solid #F1E4C6; // sand;
   border-radius: 4px;
 
   &.reverse {
@@ -226,23 +226,27 @@ body {
     font-size: 54px;
     vertical-align: middle;
     text-align: center;
-    color: #fff;
+    color: #F1E4C6; // sand;
   }
 
   &.reverse:after {
     content: "◄";
-    color: #fff;
+    color: #F1E4C6; // sand;
     left: -2px;
   }
   
   &:hover {
-    background: #fff;
+    background: #F1E4C6; // sand;
   }
 
   &:hover:after {
-    color: #858AA5;
+    color: #6E6D85;
     position: relative;
     display: inline-block;
+  }
+
+  &:active {
+    background: #fff;
   }
 }
 

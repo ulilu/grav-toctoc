@@ -1095,12 +1095,13 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*------------------------------------*\ Scrollbut, used with block--scroll
 \*------------------------------------*/
-.scrollblock { display: inline-block; position: relative; z-index: 2; float: right; width: 60px; height: 60px; border: 2px solid #fff; border-radius: 4px; }
+.scrollblock { display: inline-block; position: relative; z-index: 2; float: right; width: 60px; height: 60px; border: 2px solid #F1E4C6; border-radius: 4px; }
 .scrollblock.reverse { background: none; }
-.scrollblock:after { content: "►"; position: relative; display: inline-block; left: 0; top: -2px; width: 60px; height: 60px; line-height: 56px; font-size: 54px; vertical-align: middle; text-align: center; color: #fff; }
-.scrollblock.reverse:after { content: "◄"; color: #fff; left: -2px; }
-.scrollblock:hover { background: #fff; }
-.scrollblock:hover:after { color: #858AA5; position: relative; display: inline-block; }
+.scrollblock:after { content: "►"; position: relative; display: inline-block; left: 0; top: -2px; width: 60px; height: 60px; line-height: 56px; font-size: 54px; vertical-align: middle; text-align: center; color: #F1E4C6; }
+.scrollblock.reverse:after { content: "◄"; color: #F1E4C6; left: -2px; }
+.scrollblock:hover { background: #F1E4C6; }
+.scrollblock:hover:after { color: #6E6D85; position: relative; display: inline-block; }
+.scrollblock:active { background: #fff; }
 
 /*---------------------------------------------------------------------------*\ .cell This is a wrapper element, to appear within .block. Creates elements of equal height.
  Use in conjunction with the single properties classes like "width-50" ==> Not really necessary i think - table-cells will automatically share the available width, no?
