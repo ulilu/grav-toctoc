@@ -1,4 +1,4 @@
-{% set collection = page.collection() %}
+{# {% set collection = page.collection() %} #}
 {# {% set base_url = page.url %}
 {% set feed_url = base_url %}
 
@@ -18,16 +18,18 @@
     <h1>{{ page.title }}</h1>
 </div> #}
 
-{% for p in page.find('/how-it-works').children %}
-  
-		<section class="block  block--stretch  block--howto">
-			<div class="block">
-		    {{ page.content }}
-		    jij
-		  </div>
-		</section>
-  {% endfor %}
+<section class="block  block--stretch  block--howto">
+	<div class="block">
 
+	{% for p in page.find('/how-it-works').children %}
+		{% if p.isFirst %}
+
+			{{ p.content }}
+
+		{% endif %}
+	{% endfor %}
+	</div>
+</section>
 
 {# <div id="content">
     <div class="row_5">
