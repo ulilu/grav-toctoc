@@ -954,7 +954,6 @@ body {
     border: 3px solid #fff;
     border-radius: 50%;
     margin:0 18px 0 0;
-    box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 4px rgba(0, 0, 0, 0.05);
     
     @media only screen and (min-width: 520px) {
       display: block;
@@ -963,6 +962,7 @@ body {
       text-align: center;
       margin: 0 auto 18px;
       border-width: 4px;
+      box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 4px rgba(0, 0, 0, 0.05);
     }
   }
 
