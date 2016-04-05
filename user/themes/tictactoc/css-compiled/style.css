@@ -1107,9 +1107,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 /*---------------------------------------------------------------------------*\ .cell This is a wrapper element, to appear within .block. Creates elements of equal height.
  Use in conjunction with the single properties classes like "width-50" ==> Not really necessary i think - table-cells will automatically share the available width, no?
 \*---------------------------------------------------------------------------*/
-.cell { display: block; margin: 0 -24px; }
-@media only screen and (min-width: 480px) { .cell { margin: 0 -30px; } }
-@media only screen and (min-width: 650px) { .cell { margin: 0; } }
+.cell { display: block; vertical-align: top; }
 @media only screen and (min-width: 800px) { .cell { display: table-cell !important; width: 50%; padding-right: 24px; margin-bottom: 36px; } }
 .cell > *:last-child { margin-bottom: 0; padding-bottom: 0; }
 
@@ -1126,6 +1124,13 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 .cell-info { padding: 24px; background: #D7CAAD; }
 .cell-info h3.fa:before { background: #EFE8D8; }
+
+.cell-image { margin: 0 !important; }
+.cell-image img { width: 100%; max-height: 40vh; object-fit: cover; margin-bottom: 24px; }
+
+.cell-feature, .cell-info { margin: 0 -24px; }
+@media only screen and (min-width: 480px) { .cell-feature, .cell-info { margin: 0 -30px; } }
+@media only screen and (min-width: 650px) { .cell-feature, .cell-info { margin: 0; } }
 
 /*---------------------------------------------------------------------------*\ Card - used on example.twig.html
 \*---------------------------------------------------------------------------*/
@@ -1232,9 +1237,9 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*---------------------------------------------------------------------------*\ Welcome page: Slider / Carousel Testimonials
 \*---------------------------------------------------------------------------*/
-.block--lightslider { background: #E9967A; color: #fff; padding-left: 0; padding-right: 0; }
+.block--lightslider { background: #E9967A; background: #FD9F7F; color: #fff; padding-left: 0; padding-right: 0; }
 .block--lightslider .block { padding-top: 0; }
-.block--lightslider h1 { color: #CDE5F1; }
+.block--lightslider h1 { color: #CDE5F1; color: #fff; }
 
 .grav-lightslider { overflow: visible; }
 .grav-lightslider ul { padding: 0; list-style: none; overflow: visible; margin: 0; }
@@ -1289,7 +1294,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .page-welcome .block--service .service-link:first-of-type { padding-bottom: 24px; border-bottom: 2px solid #FCF6E7; margin-bottom: 30px; }
 @media only screen and (min-width: 1100px) { .page-welcome .block--service .service-link:first-of-type { padding: 0 30px 0 0; border-bottom: none; border-right: 2px solid #FCF6E7; margin: 0; }
   .page-welcome .block--service .service-link:last-of-type { padding: 0 0 0 30px; } }
-.page-welcome .block--example { position: relative; padding: 0; background-color: #858AA5; background-color: #AED1DF; background-color: #9392B6; background-color: #8988A6; }
+.page-welcome .block--example { position: relative; padding: 0; background-color: #858AA5; background-color: #AED1DF; background-color: #9392B6; background-color: #8988A6; background-color: #504A6D; }
 .page-welcome .block--example:after { content: ""; display: block; position: absolute; z-index: 1; right: 0; top: 0; width: 25vw; height: 100%; pointer-events: none; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25)); }
 .page-welcome .block--example .block { padding: 30px; }
 @media only screen and (min-width: 1200px) { .page-welcome .block--example .block { padding-left: 0; } }
@@ -1299,6 +1304,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .page-welcome .block--example .card:last-of-type { margin-right: 0 !important; }
 @media only screen and (min-width: 1200px) { .page-welcome .block--example .card:last-of-type { margin-right: 30px !important; } }
 .page-welcome .block--example .card h3 { color: #860714; }
+.page-welcome .block--about { background: #6FB3C7; color: #fff; }
 
 /*------------------------------------*\ How it works page
 \*------------------------------------*/
@@ -1306,7 +1312,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 .block--howto { overflow: visible; }
 .block--howto .block { overflow: visible; }
-.block--howto h1 { color: #8988A6; margin: 6px 0 36px; }
+.block--howto h1 { color: #8988A6; color: #504A6D; margin: 6px 0 36px; }
 
 /* Timeline row */
 .timeline-row { position: relative; float: left; width: 100%; padding: 0 0 24px 0; margin: 0; transition: all 0.3s ease; }
@@ -1383,8 +1389,8 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
   100% { transform: translateX(0); } }
 /*------------------------------------*\ Examples list page
 \*------------------------------------*/
-.page-examples { background-color: #858AA5; background-color: #CFC7B5; background-color: #9EDEE5; background-color: #AED1DF; background-color: #9392B6; background-color: #8988A6; }
-.page-examples h1 { color: #fff; }
+.page-examples { background-color: #858AA5; background-color: #CFC7B5; background-color: #9EDEE5; background-color: #AED1DF; background-color: #9392B6; background-color: #8988A6; background-color: #504A6D; }
+.page-examples h1 { color: #fff; color: #F1E4C6; }
 .page-examples h3 { color: #860714; }
 
 .page-example { background: #EFE8D8; }
@@ -1426,10 +1432,16 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 */
 /*---------------------------------------------------------------------------*\ Different page colors
 \*---------------------------------------------------------------------------*/
-.page-services { background: #F1E4C6; }
+.page-services { background: #F1E4C6; background: #EFE8D8; }
 .page-services .card:hover:before { display: none; }
 
-.page-service { background: #F1E4C6; }
+.page-service { background: #F1E4C6; background: #EFE8D8; }
+
+.page-pricing { background: #F1E4C6; background: #EFE8D8; }
+
+.page-about { background: #F1E4C6; background: #EFE8D8; }
+
+.page-contact { background: #F1E4C6; background: #EFE8D8; }
 
 /*
 @import "partials/images";
