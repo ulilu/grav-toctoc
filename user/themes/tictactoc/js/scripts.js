@@ -70,7 +70,7 @@ $(document).ready(function() {
   $(function(){
     $(".js-show-info").click(function(e) {
         $(this).closest(".text-item").nextAll(".text-row:first").toggle(300);
-        $(this).sibling(".js-hide-info").css('display','inline-block');
+        $(this).next(".js-hide-info").css('display','inline-block');
         $(this).css('display','none');
         e.preventDefault();
     });

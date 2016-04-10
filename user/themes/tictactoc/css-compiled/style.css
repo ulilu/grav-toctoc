@@ -1046,7 +1046,7 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 /*---------------------------------------------------------------------------*\ General button element Can be applied to <a>, <input> and <button> elements Needs respective styles for each tag
 \*---------------------------------------------------------------------------*/
-.btn { position: relative; display: inline-block; transition: background ease-in 0.1s; }
+.btn { position: relative; display: inline-block; transition: background ease-in 0.1s; cursor: pointer; }
 .btn * { display: inline-block; vertical-align: middle; }
 .btn .fa { margin-right: 9px; font-size: inherit; font-style: normal !important; }
 
