@@ -68,15 +68,17 @@ $(document).ready(function() {
    * Trigger "Mehr Info / Weniger Info" in .category-content on list pages
    */
   $(function(){
-    $(".js-show-info").click(function() {
+    $(".js-show-info").click(function(e) {
         $(this).parent(".text-item").next(".text-row").toggle(300);
         $(".js-hide-info").css('display','inline-block');
         $(this).css('display','none');
+        e.preventDefault();
     });
-    $(".js-hide-info").click(function() {
+    $(".js-hide-info").click(function(e) {
         $(this).parent(".text-item").next(".text-row").hide(300);
         $(".js-show-info").css('display','inline-block');
         $(".js-hide-info").css('display','none');
+        e.preventDefault();
     });
 });
 
