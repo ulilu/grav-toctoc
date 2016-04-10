@@ -16,15 +16,15 @@
   overflow: hidden;
   border-spacing: 0;
   padding: 0;
-  margin: 0 -24px 12px;
+  margin: 0 -24px 24px;
 
   @media only screen and (min-width:480px) {
-    margin: 0 -30px 12px;
+    margin: 0 -30px 24px;
   }
 
   @media only screen and (min-width:750px) {
     border-spacing: 6px 0;
-    margin: 0 -6px 12px;
+    margin: 0 -6px 24px;
   }
 
   @media only screen and (min-width:1050px) {
@@ -53,10 +53,8 @@
   }
 
   .text-row + & {
-    margin-bottom: -12px !important;
-
-    @media only screen and (min-width:750px) {
-      margin-bottom: 24px !important;
+    @media only screen and (max-width:750px) {
+      margin-bottom: -12px !important;
     }
   }
 
