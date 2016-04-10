@@ -1050,6 +1050,8 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .btn * { display: inline-block; vertical-align: middle; }
 .btn .fa { margin-right: 9px; font-size: inherit; font-style: normal !important; }
 
+.js-hide-info { display: none; }
+
 /*------------------------------------*\ Button sizes
 \*------------------------------------*/
 .btn-s { font-size: 18px; padding: 9px 18px; border-radius: 4px; }
