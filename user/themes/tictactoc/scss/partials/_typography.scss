@@ -82,20 +82,32 @@ li  {
 }
 
 
-.checklist li {
+.checklist {
+
+  li {
   line-height: 27px;
   padding: 6px 0;
   border-bottom: 2px solid #CBC1A9;
   border-bottom: 2px solid #EFE8D8;
+  color: initial;
   
-  &.list-total {
-    border-bottom-color: #D7CAAD;
-    border-bottom-style: double;
-    border-bottom-width: 6px;
-    list-style-type: none;
-    font-family: $font-semibold;
-    // text-align: right;
-    font-size: 18px;
+    &.list-total {
+      border-bottom-color: #D7CAAD;
+      border-bottom-style: double;
+      border-bottom-width: 6px;
+      list-style-type: none;
+      font-family: $font-semibold;
+      // text-align: right;
+      font-size: 18px;
+    }
+  }
+
+  &.color-red3 .fa:before {
+    color: $color-red3;
+  }
+
+  &.color-red3 .fa:before {
+    color: $color-orange1;
   }
 
 

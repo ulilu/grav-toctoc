@@ -245,8 +245,10 @@ li { margin: 0 0 9px; }
 @media only screen and (min-width: 800px) { .cell-pricing { padding: 24px 30px; border-bottom: 0; border-right: 12px solid #EFE8D8; }
   .cell-pricing:last-of-type { border-right: 0; border-left: 12px solid #EFE8D8; } }
 
-.checklist li { line-height: 27px; padding: 6px 0; border-bottom: 2px solid #CBC1A9; border-bottom: 2px solid #EFE8D8; }
+.checklist li { line-height: 27px; padding: 6px 0; border-bottom: 2px solid #CBC1A9; border-bottom: 2px solid #EFE8D8; color: initial; }
 .checklist li.list-total { border-bottom-color: #D7CAAD; border-bottom-style: double; border-bottom-width: 6px; list-style-type: none; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; }
+.checklist.color-red3 .fa:before { color: #c14e46; }
+.checklist.color-red3 .fa:before { color: #f58b4a; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; padding: 0; margin: 0; margin: 0 0 24px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
