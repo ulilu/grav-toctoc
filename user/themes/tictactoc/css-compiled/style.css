@@ -1147,6 +1147,11 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
 @media only screen and (min-width: 1050px) { .bullet + p { display: inline-block; width: calc(30% + 6px); padding: 0 30px 0 0; } }
 @media only screen and (min-width: 1050px) { .bullet.bullet-text-right + p { float: right; text-indent: 0; padding: 0 0 0 30px; } }
 
+.text-item, .text-item-right { vertical-align: top; margin: 0 0 24px; }
+@media only screen and (min-width: 1050px) { .text-item, .text-item-right { float: left; display: inline-block; width: calc(30% + 6px); padding: 0 30px 0 0; } }
+
+@media only screen and (min-width: 1050px) { .text-item-right { float: right; text-indent: 0; padding: 0 0 0 30px; } }
+
 /*---------------------------------------------------------------------------*\ Manual image-widths: Based on additional class on .image-row
 \*---------------------------------------------------------------------------*/
 /*------------------------------------*\ 2 images per row
