@@ -64,6 +64,22 @@ $(document).ready(function() {
   });
 
 
+  /*
+   * Trigger "Mehr Info / Weniger Info" in .category-content on list pages
+   */
+  $(function(){
+    $(".js-show-info").click(function() {
+        $(this.parent(".text-item").next()).toggle(300);
+        $(".js-hide-info").css('display','inline-block');
+        $(this).css('display','none');
+    });
+    $(".js-hide-info").click(function() {
+        $(this.parent(".text-item").next()).hide(300);
+        $(".js-show-info").css('display','inline-block');
+        $(".js-hide-info").css('display','none');
+    });
+});
+
 
   jQuery(".row-with-title figcaption").fitText(0.4, { minFontSize: '24px', maxFontSize: '42px' });
 

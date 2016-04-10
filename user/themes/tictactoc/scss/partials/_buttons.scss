@@ -60,17 +60,26 @@
 .btn-green {
   color: #fff;
   font-family: $font-semibold;
-  // margin-top: 18px;
+  
+  &:hover {
+    color: #fff;
+  }
+
+  &:active {
+    color: #fff;
+  }
 }
 
 .btn-orange {
   background: $color-orange1;
   border-bottom: 3px solid $color-orange0;
   
+  &:hover,
   a:hover & {
     background: #E47836;
   }
 
+  &:active,
   a:active:hover & {
     border-top: 3px solid #F1E4C6; // sand;
     border-bottom: 0;
@@ -84,10 +93,12 @@
   background: $color-red3;
   border-bottom: 3px solid $color-red1;
   
+  &:hover,
   a:hover & {
     background: $color-red2;
   }
 
+  &:active,
   a:active:hover & {
     border-top: 3px solid #F1E4C6; // sand;
     border-bottom: 0;
