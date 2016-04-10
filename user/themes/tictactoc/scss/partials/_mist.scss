@@ -750,7 +750,6 @@ body {
       // background: #2E2222;
       background-image: linear-gradient(to right, rgba(46,34,34,.9) 50%, rgba(45,33,33,0));
       mix-blend-mode: hard-light;
-      opacity: .75;
       transition: all 0.2s ease-in-out;
       
       // @media only screen and (min-width:600px) {
@@ -781,6 +780,10 @@ body {
 
     @media only screen and (min-width:1100px) {
       padding: 0 0 18px;
+      
+      .imgfade:after {
+        opacity: .75;
+      }
       
       &:hover > .imgfade:after {
         opacity: 1;
