@@ -1122,7 +1122,8 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .text-row { display: none; }
 .text-row p:nth-of-type(1n+2) { border-top: 2px solid #fff; padding-top: 24px; }
 @media only screen and (min-width: 900px) { .text-row p:nth-of-type(1n+2) { border-top: 0; padding-top: 0; border-left: 2px solid #fff; padding-left: 24px; } }
-@media only screen and (min-width: 1050px) { .text-row.is-shown + .image-row { width: 100% !important; } }
+@media only screen and (min-width: 1050px) { .text-row.is-shown + .image-row { width: 100% !important; }
+  .text-row p { padding-left: 24px; } }
 
 .bullet-only-text + blockquote p:first-of-type { text-indent: 54px; }
 
@@ -1156,10 +1157,10 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
 @media only screen and (min-width: 1050px) { .bullet + p { display: inline-block; width: calc(30% + 6px); padding: 0 30px 0 0; } }
 @media only screen and (min-width: 1050px) { .bullet.bullet-text-right + p { float: right; text-indent: 0; padding: 0 0 0 30px; } }
 
-.text-item, .text-item-right { vertical-align: top; margin: 0; padding: 18px 18px 0 18px; background: linear-gradient(to bottom, #fff, #F1E5CA); }
-@media only screen and (min-width: 1050px) { .text-item, .text-item-right { float: left; display: inline-block; width: 30%; padding: 18px 30px 0 18px; border-radius: 6px; } }
+.text-item, .text-item-right { vertical-align: top; margin: 0; padding: 18px 18px 0 18px; background: linear-gradient(to bottom, #fff, #F1E5CA); border-radius: 6px; }
+@media only screen and (min-width: 1050px) { .text-item, .text-item-right { float: left; display: inline-block; width: 30%; padding: 18px 30px 0 18px; margin-right: 6px; } }
 
-@media only screen and (min-width: 1050px) { .text-item-right { float: right; text-indent: 0; padding: 18px 18px 0 30px; margin-right: auto; } }
+@media only screen and (min-width: 1050px) { .text-item-right { float: right; text-indent: 0; padding: 18px 18px 0 30px; margin-left: 6px; margin-right: auto; } }
 
 /*---------------------------------------------------------------------------*\ Manual image-widths: Based on additional class on .image-row
 \*---------------------------------------------------------------------------*/
