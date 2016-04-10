@@ -779,18 +779,18 @@ body {
 
   .cell--service {
 
-    &:first-of-type .imgfade:after {
-      background-image: linear-gradient(to left, rgba(46,34,34,.9) 50%, rgba(45,33,33,0));
-    }
-
     @media only screen and (min-width:1100px) {
       padding: 0 0 18px;
+      
+      &:hover > .imgfade:after {
+        opacity: 1;
+        // background: linear-gradient(180deg, rgba(46, 34, 34, 0) 70%, #2E2222) !important;
+      } 
+      
+      &:first-of-type .imgfade:after {
+        background-image: linear-gradient(to left, rgba(46,34,34,.9) 50%, rgba(45,33,33,0));
+      }
     }
-
-    &:hover > .imgfade:after {
-      opacity: 1;
-      // background: linear-gradient(180deg, rgba(46, 34, 34, 0) 70%, #2E2222) !important;
-    } 
   }
 
   h2 {
