@@ -389,7 +389,8 @@ h3.bullet-headline {
   vertical-align: top;
   margin: 0;
   padding: 18px 18px 0 18px;
-  background: linear-gradient(to bottom, #fff, #F1E5CA);
+  // background: linear-gradient(to bottom, #fff, #F1E5CA);
+  border: 2px solid #fff;
   border-radius: 6px;
 
   @media only screen and (min-width:1050px) {
@@ -398,6 +399,7 @@ h3.bullet-headline {
     width: 30%;
     padding: 18px 30px 0 18px;
     margin-right: 6px;
+    margin-bottom: 6px;
   }
 }
 
