@@ -747,7 +747,7 @@ body {
       // background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%);
       background: linear-gradient(180deg, rgba(46, 34, 34, 0) 40%, #2E2222 80%);
       mix-blend-mode: hard-light;
-      transition: all 0.3s;
+      transition: all 0.3s linear;
       
       @media only screen and (min-width:600px) {
         // border-bottom-left-radius: 6px;
@@ -755,11 +755,6 @@ body {
         background: linear-gradient(180deg, rgba(46, 34, 34, 0) 55%, #2E2222 90%);
       }
     }
-
-    a:hover &:after {
-      height: 75%;
-      background: linear-gradient(180deg, rgba(46, 34, 34, 0) 70%, #2E2222);
-    } 
     
     img {
       position: relative;
@@ -774,6 +769,11 @@ body {
       }
     }
   }
+
+  a:hover .imagefade:after {
+    height: 75%;
+    background: linear-gradient(180deg, rgba(46, 34, 34, 0) 70%, #2E2222) !important;
+  } 
 
   .cell--service {
 
