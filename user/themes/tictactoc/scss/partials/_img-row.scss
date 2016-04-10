@@ -163,6 +163,7 @@
     
     @media only screen and (min-width: 900px) {
       display: table-cell;
+      width: 1%;
       padding-right: 30px;
       min-width: 270px; /* 2. */
     }
@@ -170,17 +171,15 @@
       min-width: 300px; /* 2. */
     }
 
-    &:first-of-type {
-      text-indent: 54px;
-      
-      // &::first-line {
-      //   font-family: $font-semibold;
-      // }
-    }
-
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+}
+
+.bullet-only-text + blockquote {}
+  p:first-of-type{
+    text-indent: 54px;
   }
 }
 
