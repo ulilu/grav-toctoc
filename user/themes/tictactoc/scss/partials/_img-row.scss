@@ -207,7 +207,7 @@
     }
 
     p {
-      // border-left: 2px solid #fff;
+      border-left: 2px solid #fff;
       padding-left: 24px;
     }
   }
@@ -396,8 +396,8 @@ h3.bullet-headline {
   @media only screen and (min-width:1050px) {
     float: left;
     display: inline-block;
-    width: 30%;
-    padding: 0 30px 0 0;
+    width: calc(30% + 24px);
+    padding: 0 18px 0 0;
     // padding: 18px 30px 0 18px;
     margin-right: 6px;
     // margin-bottom: 6px;
@@ -413,7 +413,7 @@ h3.bullet-headline {
   @media only screen and (min-width:1050px) {
     float: right;
     text-indent: 0;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 18px;
     // padding: 18px 18px 0 30px;
     margin-left: 6px;
     margin-right: auto;
