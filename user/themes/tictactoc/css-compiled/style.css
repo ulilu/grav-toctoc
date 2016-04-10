@@ -1309,6 +1309,15 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 .page-header { padding: 24px; margin: 0 0 30px; }
 
+/*---------------------------------------------------------------------------*\ Call to action block
+\*---------------------------------------------------------------------------*/
+.block--cta { border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5'/%3E\a     %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E\a     %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E\a     %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E\a     %3C/g%3E%3C/svg%3E") 33% round; border-width: 12px; border-right: 0; border-left: 0; margin-top: -3px !important; overflow: hidden; }
+
+.cta-headline { position: relative; line-height: 48px; padding: 12px 0 12px; color: #504A6D; }
+.cta-headline:before { content: "☞"; display: inline-block; position: relative; width: 40px; height: 40px; margin-right: 18px; font-size: 36px; line-height: 40px; left: 0; top: 0; color: #504A6D; }
+.cta-headline a { color: #c14e46; border-bottom: 2px solid #CDE5F1; white-space: nowrap; }
+.cta-headline a:hover { color: #3e0000; border-bottom: 2px solid #3e0000; }
+
 /*---------------------------------------------------------------------------*\ Page adaptations
 \*---------------------------------------------------------------------------*/
 /*------------------------------------*\ Welcome page
@@ -1338,18 +1347,12 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .page-welcome .block--howto h1 { position: relative; }
 @media only screen and (min-width: 1000px) { .page-welcome .block--howto h1 { width: 50%; padding-bottom: 24px; border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Edots%3C/title%3E%3Cg fill='%238EBDD4' fill-rule='evenodd'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(0 10)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20 10)'/%3E%3C/g%3E%3C/svg%3E") 33% round; border-width: 9px; border-radius: 100%; border-top: 0; border-right: 0; border-left: 0; }
   .page-welcome .block--howto h1:after { content: ""; display: block; position: absolute; right: -1px; bottom: -46px; width: 9px; height: 36px; border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Edots%3C/title%3E%3Cg fill='%238EBDD4' fill-rule='evenodd'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(0 10)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20 10)'/%3E%3C/g%3E%3C/svg%3E") 33% round; border-width: 9px; border-top: 0; border-bottom: 0; border-left: 0; } }
+.page-welcome .block--cta { border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5'/%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E\a     %3C/g%3E%3C/svg%3E") 33% round; }
 .page-welcome .block--lightslider { z-index: 3; margin-top: -3px; }
 .page-welcome .block--about { background: #8EBDD4; color: #fff; z-index: 1; }
 .page-welcome .block--about .block--headline { padding-top: 0; }
 @media only screen and (min-width: 1200px) { .page-welcome .block--about:before { opacity: .4; background-size: 210px; background-position: left 3vw bottom -60px; pointer-events: none; }
   .page-welcome .block--about:after { opacity: .4; background-size: 320px; background-position: right 10vw bottom 40px; pointer-events: none; } }
-
-.block--cta { border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5'/%3E\a     %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E\a     %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E\a     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E\a     %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E\a     %3C/g%3E%3C/svg%3E") 33% round; border-width: 12px; border-right: 0; border-left: 0; margin-top: -3px; overflow: hidden; }
-
-.cta-headline { position: relative; line-height: 48px; padding: 12px 0 12px; color: #504A6D; }
-.cta-headline:before { content: "☞"; display: inline-block; position: relative; width: 40px; height: 40px; margin-right: 18px; font-size: 36px; line-height: 40px; left: 0; top: 0; color: #504A6D; }
-.cta-headline a { color: #c14e46; border-bottom: 2px solid #CDE5F1; white-space: nowrap; }
-.cta-headline a:hover { color: #3e0000; border-bottom: 2px solid #3e0000; }
 
 /*------------------------------------*\ Examples: Listing page
 \*------------------------------------*/

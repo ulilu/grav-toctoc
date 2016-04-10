@@ -379,6 +379,67 @@ body {
 
 
 
+/*---------------------------------------------------------------------------*\
+    Call to action block
+\*---------------------------------------------------------------------------*/
+
+
+.block--cta  {
+  border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5'/%3E
+    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E
+    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E
+    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E
+    %3C/g%3E%3C/svg%3E") 33% round;
+  border-width: 12px;
+  border-right: 0;
+  border-left: 0;
+  margin-top: -3px !important;
+  overflow: hidden;
+}
+
+.cta-headline {
+  position: relative;
+  line-height: 48px;
+  padding: 12px 0 12px;
+  color: #504A6D; // lavender tint
+  
+  &:before {
+    content: "☞";
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 18px;
+    font-size: 36px;
+    line-height: 40px;
+    left: 0;
+    top: 0;
+    // color: #FD9F7F;
+    // color: #8EBDD4;
+    // color: $color-logo0;
+    // color: #9B2E36;
+    color: #504A6D; // lavender tint
+  }
+  
+  a {
+    // color: $color-logo0;
+    color: $color-red3;
+    // font-family: $font-semibold;
+    // border-bottom: 2px solid #CDE5F1; // #FD9F7F; //   used to be $color-red4
+    border-bottom: 2px solid #CDE5F1;
+    white-space: nowrap;
+    
+    &:hover {
+      color: $color-logo1;
+      border-bottom: 2px solid $color-logo1;
+    }
+  }
+}
+
+
 
 
 /*---------------------------------------------------------------------------*\
@@ -578,6 +639,17 @@ body {
     }
   }
 
+  .block--cta {
+    border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E
+    %3C/g%3E%3C/svg%3E") 33% round;
+  }
+
   .block--lightslider {
     z-index: 3;
     margin-top: -3px;
@@ -615,60 +687,13 @@ body {
   }
 }
 
-.block--cta  {
-  border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E
-    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5'/%3E
-    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E
-    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E
-    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E
-    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E
-    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E
-    %3C/g%3E%3C/svg%3E") 33% round;
-  border-width: 12px;
-  border-right: 0;
-  border-left: 0;
-  margin-top: -3px;
-  overflow: hidden;
-}
 
-.cta-headline {
-  position: relative;
-  line-height: 48px;
-  padding: 12px 0 12px;
-  color: #504A6D; // lavender tint
-  
-  &:before {
-    content: "☞";
-    display: inline-block;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    margin-right: 18px;
-    font-size: 36px;
-    line-height: 40px;
-    left: 0;
-    top: 0;
-    // color: #FD9F7F;
-    // color: #8EBDD4;
-    // color: $color-logo0;
-    // color: #9B2E36;
-    color: #504A6D; // lavender tint
-  }
-  
-  a {
-    // color: $color-logo0;
-    color: $color-red3;
-    // font-family: $font-semibold;
-    // border-bottom: 2px solid #CDE5F1; // #FD9F7F; //   used to be $color-red4
-    border-bottom: 2px solid #CDE5F1;
-    white-space: nowrap;
-    
-    &:hover {
-      color: $color-logo1;
-      border-bottom: 2px solid $color-logo1;
-    }
-  }
-}
+
+
+
+
+
+
 
 /*------------------------------------*\
   Examples: Listing page
