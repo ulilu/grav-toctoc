@@ -69,13 +69,13 @@ $(document).ready(function() {
    */
   $(function(){
     $(".js-show-info").click(function(e) {
-        $(this).closest(".text-item").nextAll(".text-row:first").toggle(300).addClass('is-shown');
+        $(this).closest(".text-item").nextAll(".text-row:first").toggle().addClass('is-shown');
         $(this).next(".js-hide-info").css('display','inline-block');
         $(this).css('display','none');
         e.preventDefault();
     });
     $(".js-hide-info").click(function(e) {
-        $(this).closest(".text-item").nextAll(".text-row:first").hide(300).toggleClass('is-shown');
+        $(this).closest(".text-item").nextAll(".text-row:first").hide().toggleClass('is-shown');
         $(".js-show-info").css('display','inline-block');
         $(".js-hide-info").css('display','none');
         e.preventDefault();
