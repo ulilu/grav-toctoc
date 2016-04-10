@@ -1121,7 +1121,8 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 
 .text-row { display: none; }
 .image-row + .text-row { margin-top: 12px; }
-@media only screen and (min-width: 1000px) { .text-row p:nth-of-type(1n+2) { border-left: 2px solid #fff; padding-left: 24px; } }
+@media only screen and (min-width: 1050px) { .text-row.is-shown + .image-row { width: 100% !important; }
+  .text-row p { border-left: 2px solid #fff; padding-left: 24px; } }
 
 .bullet-only-text + blockquote p:first-of-type { text-indent: 54px; }
 

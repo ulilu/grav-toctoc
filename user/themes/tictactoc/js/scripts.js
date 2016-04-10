@@ -70,12 +70,14 @@ $(document).ready(function() {
   $(function(){
     $(".js-show-info").click(function(e) {
         $(this).closest(".text-item").nextAll(".text-row:first").toggle(300);
+        $(this).closest(".text-item").nextAll(".text-row:first").addClass('is-shown');
         $(this).next(".js-hide-info").css('display','inline-block');
         $(this).css('display','none');
         e.preventDefault();
     });
     $(".js-hide-info").click(function(e) {
         $(this).closest(".text-item").nextAll(".text-row:first").hide(300);
+        $(this).closest(".text-item").nextAll(".text-row:first").toggleClass('is-shown');
         $(".js-show-info").css('display','inline-block');
         $(".js-hide-info").css('display','none');
         e.preventDefault();
