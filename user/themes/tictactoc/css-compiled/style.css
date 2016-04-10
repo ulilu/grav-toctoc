@@ -1481,11 +1481,11 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 .page-services .block--service { padding: 0 0 12px !important; margin: 0 auto; width: 100%; max-width: 100%; }
 @media only screen and (min-width: 1100px) { .page-services .block--service { display: table; } }
 .page-services .imgfade { position: relative; bottom: 0; }
-.page-services .imgfade:after { content: ""; position: absolute; z-index: 0; bottom: -102px; left: 0; height: 100%; width: 100%; background: linear-gradient(180deg, rgba(46, 34, 34, 0) 40%, #2E2222 80%); mix-blend-mode: hard-light; transition: all 0.3s linear; }
+.page-services .imgfade:after { content: ""; position: absolute; z-index: 0; bottom: -102px; left: 0; height: 100%; width: 100%; background: linear-gradient(180deg, rgba(46, 34, 34, 0) 40%, #2E2222 80%); mix-blend-mode: hard-light; transition: all 0.3s ease-in; }
 @media only screen and (min-width: 600px) { .page-services .imgfade:after { background: linear-gradient(180deg, rgba(46, 34, 34, 0) 55%, #2E2222 90%); } }
 .page-services .imgfade img { position: relative; display: inline-block; width: 100%; max-height: 540px; object-fit: cover; margin: 0 0 -102px; }
 @media only screen and (min-width: 1100px) { .page-services .cell--service { padding: 0 0 18px; } }
-.page-services .cell--service:hover > .imgfade:after { height: 75%; background: linear-gradient(180deg, rgba(46, 34, 34, 0) 70%, #2E2222) !important; }
+.page-services .cell--service:hover > .imgfade:after { background: linear-gradient(180deg, rgba(46, 34, 34, 0) 70%, #2E2222) !important; }
 .page-services h2 { position: relative; z-index: 2; color: #fff; margin: -60px 0 0 24px; text-shadow: 0 4px 12px black; padding: 18px 0; }
 .page-services h2 * { display: inline-block !important; vertical-align: middle; }
 .page-services .icon--service { margin: 0 6px 0 -3px; }
