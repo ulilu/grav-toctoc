@@ -765,6 +765,7 @@ body {
       position: relative;
       display: inline-block;
       width: 100%;
+      min-height: 320px;
       max-height: 540px;
       object-fit: cover;
       margin: 0 0 -102px;
