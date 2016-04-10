@@ -69,12 +69,12 @@ $(document).ready(function() {
    */
   $(function(){
     $(".js-show-info").click(function() {
-        $(this).parent(".text-item").next().toggle(300);
+        $(this).parent(".text-item").next(".text-row").toggle(300);
         $(".js-hide-info").css('display','inline-block');
         $(this).css('display','none');
     });
     $(".js-hide-info").click(function() {
-        $(this).parent(".text-item").next().hide(300);
+        $(this).parent(".text-item").next(".text-row").hide(300);
         $(".js-show-info").css('display','inline-block');
         $(".js-hide-info").css('display','none');
     });
