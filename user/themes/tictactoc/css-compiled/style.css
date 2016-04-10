@@ -1355,8 +1355,8 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 .cta-headline { position: relative; line-height: 48px; padding: 12px 0 12px; color: #504A6D; }
 .cta-headline:before { content: "☞"; display: inline-block; position: relative; width: 40px; height: 40px; margin-right: 18px; font-size: 36px; line-height: 40px; left: 0; top: 0; color: #504A6D; }
-.cta-headline a { color: #c14e46; border-bottom: 2px solid #CDE5F1; white-space: nowrap; }
-.cta-headline a:hover { color: #3e0000; border-bottom: 2px solid #3e0000; }
+.cta-headline a { color: #c14e46; border-bottom: 2px solid #CDE5F1; white-space: nowrap; padding: 6px 8px 2px; }
+.cta-headline a:hover { color: #3e0000; background: #CDE5F1; border-bottom: 2px solid #CDE5F1; }
 
 /*---------------------------------------------------------------------------*\ Page adaptations
 \*---------------------------------------------------------------------------*/
@@ -1425,7 +1425,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 
 /*  First <p> in timeline-row (and contents) Needed for targetting the image due to markdown structure */
 .timeline-row > p { position: relative; z-index: 3; height: 0; margin: 0; }
-.timeline-row > p img { position: relative; z-index: 3; top: -9px; left: -9px; width: 60px; height: 60px; padding: 0; z-index: 2; border-radius: 50%; border: 3px solid #fff; box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 4px rgba(0, 0, 0, 0.05); -ms-transform-origin: 50% 50%; /* IE 9 */ -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */ transform-origin: 50% 50%; }
+.timeline-row > p img { position: relative; z-index: 3; top: -9px; left: -9px; width: 60px; height: 60px; padding: 0; z-index: 2; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); -ms-transform-origin: 50% 50%; /* IE 9 */ -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */ transform-origin: 50% 50%; }
 @media only screen and (min-width: 420px) { .timeline-row > p img { top: 0; left: 0; } }
 @media only screen and (min-width: 480px) { .timeline-row > p img { width: 90px; height: 90px; border: 4px solid #fff; } }
 @media only screen and (min-width: 700px) { .timeline-row > p img { width: 120px; height: 120px; border: 6px solid #fff; } }
@@ -1650,7 +1650,7 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 .grav-lightslider { overflow: visible; }
 .grav-lightslider ul { padding: 0; list-style: none; overflow: visible; margin: 0; }
 .grav-lightslider li img { display: inline-block; width: 60px; height: 60px; border: 3px solid #fff; border-radius: 50%; margin: 0 18px 0 0; }
-@media only screen and (min-width: 520px) { .grav-lightslider li img { display: block; width: 90px; height: 90px; text-align: center; margin: 0 auto 18px; border-width: 4px; box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 4px rgba(0, 0, 0, 0.05); } }
+@media only screen and (min-width: 520px) { .grav-lightslider li img { display: block; width: 90px; height: 90px; text-align: center; margin: 0 auto 18px; border-width: 4px; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); } }
 .grav-lightslider h1, .grav-lightslider h2, .grav-lightslider h3, .grav-lightslider h4, .grav-lightslider h5 { font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; }
 .grav-lightslider h3 { position: relative; max-width: 1140px; font-size: 18px; line-height: 27px; background: #fff; color: #895848; border-radius: 24px; padding: 24px; margin: 0 auto; }
 @media only screen and (min-width: 520px) { .grav-lightslider h3 { display: inline-block; vertical-align: top; width: calc(100% - 155px); } }
