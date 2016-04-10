@@ -1301,6 +1301,8 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
   .timeline-row > p.bounce-in { visibility: visible; animation: cd-bounce-1 .6s; }
   .timeline-row > p img { position: absolute; z-index: 3; left: 50%; margin: 0 0 0 -60px; } }
 
+@media only screen and (min-width: 1000px) { .timeline-row:hover > p img { animation: cd-bounce-1 .6s; } }
+
 /*  Textblock in .timeline-row containing headline, description & link */
 .timeline-row__info { position: relative; z-index: 1; background: #fff; padding: 18px 18px 18px 42px; border-radius: 9px; }
 .timeline-row__info h2 { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; line-height: 30px; margin-bottom: 12px; text-indent: 18px; }

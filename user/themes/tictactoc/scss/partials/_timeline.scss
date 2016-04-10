@@ -169,6 +169,13 @@
   }
 }
 
+.timeline-row:hover > p img {
+  @media only screen and (min-width: 1000px) {
+    animation: cd-bounce-1 .6s;
+  }
+}
+
+
 /* 
  * Textblock in .timeline-row
  * containing headline, description & link
