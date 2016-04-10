@@ -185,6 +185,17 @@
 // to be shown via user click on "more details" button
 .text-row {
   display: none;
+  
+  .image-row + & {
+    margin-top: 12px;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    &:nth-child(1n+2) {
+      border-left: 2px solid #fff;
+      padding-left: 24px;
+    }
+  }
 }
 
 .bullet-only-text + blockquote {

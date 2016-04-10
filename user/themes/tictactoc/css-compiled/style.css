@@ -1120,6 +1120,8 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .text-row p:last-of-type, .bullet-only-text + blockquote p:last-of-type { margin-bottom: 0; }
 
 .text-row { display: none; }
+.image-row + .text-row { margin-top: 12px; }
+@media only screen and (min-width: 1000px) { .text-row:nth-child(1n+2) { border-left: 2px solid #fff; padding-left: 24px; } }
 
 .bullet-only-text + blockquote p:first-of-type { text-indent: 54px; }
 
