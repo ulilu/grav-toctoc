@@ -18,7 +18,7 @@
     <h1>{{ page.title }}</h1>
 </div> #}
 
-<div class="block  block--service">
+<div class="block  block--service  block--stretch">
 
     {% for child in collection %}
         {% include 'partials/listitem-service.html.twig' with {'page':child, 'truncate':true} %}

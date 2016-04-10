@@ -21,11 +21,19 @@
 // @import "partials/forms";
 
 @import "modules/generic";
-
-@import "partials/main-nav";
-@import "partials/img-row";
+@import "partials/icons-global";
 
 @import "partials/header";
+@import "partials/main-nav";
+
+
+@import "partials/block";
+@import "partials/cell";
+@import "partials/card";
+@import "partials/buttons";
+
+@import "partials/img-row";
+
 
 @import "partials/mist";
 
@@ -34,11 +42,13 @@
 // @import "partials/videos";
 @import "partials/icons";
 @import "partials/buttons";
-
+*/
 
 //	=========================================================================
 //	Elements
 //	=========================================================================
+
+/*
 @import "partials/header";
 @import "partials/navi";
 @import "partials/stage";
@@ -52,8 +62,11 @@
 @import "partials/footer";
 
 @import "partials/page-specific";
+*/
 
+@import "partials/page-welcome";
 
+/*
 //	=========================================================================
 //	Plugins
 //	=========================================================================

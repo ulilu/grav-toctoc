@@ -1,0 +1,101 @@
+/*---------------------------------------------------------------------------*\
+    General block element
+    to set unified position, padding & margin across all pages
+\*---------------------------------------------------------------------------*/
+
+
+.block {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 24px; 
+  @include clearfix-html5bp();
+  
+  @media only screen and (min-width:480px) {
+    padding: 30px;
+  }
+
+  @media only screen and (min-width:1200px) {
+    padding: 36px 30px;
+  }
+  
+  /*
+   *  Collapse bottom-margin on every direct :last-child, unless it's a .card
+   */
+  > *:last-child:not(.card) {
+    margin-bottom: 0;
+  }
+
+  .main > &:last-of-type {
+    padding-bottom: 0;
+
+    @media only screen and (min-width:650px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  .footer & {
+    padding: 18px 24px 16px; 
+  }
+}
+
+/*
+ *  While a regular block is limited to 1200px width, .block--strech fills
+ *  the entire width of the browser-window. It should be used to set different
+ *  background (colors, images) to different sections within a page.
+ */
+.block--stretch {
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden; /* for intended use of cropped icons in background */
+}
+
+
+
+/*
+ *  When using .block-stretch, you can have a second .block inside it, to
+ *  keep the centered positioning of the content block.
+ */
+.block > .block:not(.block--headline) {
+  padding: 0;
+  
+  @media only screen and (min-width:1200px) {
+    max-width: 1140px;
+  }
+}
+
+
+.block  .block--headline {
+  padding-bottom: 30px;
+}
+
+
+.block--scroll {
+  width: 100%;
+  margin: 0 0 -24px !important;  /* to hide otherwise visible scrollbar */
+  max-width: 100% !important;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;  /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */
+  -webkit-transform: translate3d(0,0,0);
+}
+
+
+/*
+ * 1. Necessary for JS to enable scrolling
+ * 2. to make room for hidden scrollbar, see above
+ */
+.block__scroll-wrapper {
+  position: relative;
+  overflow: auto;       /* 1 */
+  white-space: nowrap;
+  vertical-align: top;
+  margin-bottom: -12px; /* 2 */
+  padding: 0 30px 36px;
+  
+  @media only screen and (min-width:1200px) {
+    padding-left: calc((100vw - 1146px) / 2);
+    padding-right: calc((100vw - 1146px) / 2);
+  }
+}
+

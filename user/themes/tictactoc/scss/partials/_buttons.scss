@@ -1,48 +1,164 @@
-//	#########################################################################
-//	BUTTONS
-//	#########################################################################
+/*---------------------------------------------------------------------------*\
+    General button element
+    Can be applied to <a>, <input> and <button> elements
+    Needs respective styles for each tag
+\*---------------------------------------------------------------------------*/
 
-.but {
-	@include but-regular();
-}
 
-.butinset {
-	@include but-inset();
-}
-
-.but30	{
-	@include but-size('30');
-}
-
-.but36	{
-	@include but-size('36');
-}
-
-// there's a slight problem when trying to apply the same hover-effect on buttons instead of <a>. either the button shortens vertically from the top, or all elements on the line offset from the top, in sync with the text on the button. hmmm
-
-[type=submit].but30	{
-  height: 30px;
-  line-height: 28px;
+.btn {
+  position: relative;
+  display: inline-block;
+  transition: background ease-in 0.1s;
+  
+  * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .fa {
+    margin-right: 9px;
+    font-size: inherit;
+    font-style: normal !important; // using a deprecated <i>-element to contain text within button. this should enable us to have a more consistent look with possible icon buttons.
+  }
 }
 
 
-.butgold {
-   @include btn-theme($color-gold, $color-lightgold, $color-midgold);
+
+/*------------------------------------*\
+  Button sizes
+\*------------------------------------*/
+
+.btn-s {
+  font-size: 18px;
+  padding: 9px 18px;
+  border-radius: 4px;
 }
-.butorange {
-   @include btn-theme($color-orange, $color-lightorange, $color-midorange);
+
+
+.btn-m {
+  font-size: 21px;
+  padding: 12px 30px;
+  border-radius: 6px;
 }
-.butred {
-   @include btn-theme($color-red, $color-lightred, $color-midred);
+
+.btn-l {
+  font-size: 24px;
+  padding: 18px 36px;
+  border-radius: 6px;
 }
-.butblue {
-   @include btn-theme($color-blue, $color-lightblue, $color-midblue);
+
+
+
+/*------------------------------------*\
+  Colored buttons, used in 
+  .cell--service
+\*------------------------------------*/
+
+.btn-orange,
+.btn-red,
+.btn-blue,
+.btn-green {
+  color: #fff;
+  font-family: $font-semibold;
+  // margin-top: 18px;
 }
-.butgreen {
-   @include btn-theme($color-green, $color-lightgreen, $color-midgreen);
+
+.btn-orange {
+  background: $color-orange1;
+  border-bottom: 3px solid $color-orange0;
+  
+  a:hover & {
+    background: #E47836;
+  }
+
+  a:active:hover & {
+    border-top: 3px solid #F1E4C6; // sand;
+    border-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 }
-.butsilver	{
-	color:#666;
-	border: 1px solid #aaa;
-	@include btn-silver();
+
+
+.btn-red {
+  background: $color-red3;
+  border-bottom: 3px solid $color-red1;
+  
+  a:hover & {
+    background: $color-red2;
+  }
+
+  a:active:hover & {
+    border-top: 3px solid #F1E4C6; // sand;
+    border-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+
+
+
+/*------------------------------------*\
+  Horizontal scroll button, used with block--scroll in 
+  .page-welcome .block--examples
+\*------------------------------------*/
+
+.btn--scroll {
+  float: right;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  // border: 2px solid #F1E4C6; // sand;
+  border-bottom: 3px solid #2D274A;
+  border-radius: 6px;
+  background: #736E8A;
+  // background-image: linear-gradient(to bottom, #736E8A, #504A6D);
+  transition: background ease-in 0.1s;
+
+  &.reverse {
+    // background: none;
+    background: #736E8A;
+  }
+
+  &:after {
+    content: "►";
+    position: relative;
+    display: inline-block;
+    left: 0;
+    top: -2px;
+    width: 60px;
+    height: 60px;
+    line-height: 56px;
+    font-size: 54px;
+    vertical-align: middle;
+    text-align: center;
+    // color: #F1E4C6; // sand;
+    color: #EFE8D8;
+  }
+
+  &.reverse:after {
+    content: "◄";
+    color: #F1E4C6; // sand;
+    left: -2px;
+  }
+  
+  &:hover {
+    background: #F1E4C6; // sand;
+  }
+
+  &:hover:after {
+    // color: #6E6D85;
+    color: #504A6D;
+    position: relative;
+    display: inline-block;
+  }
+
+  &:active {
+    background: #fff;
+    border-bottom: none;
+    border-top: 3px solid #504A6D;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 }

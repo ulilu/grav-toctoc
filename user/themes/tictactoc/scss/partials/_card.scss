@@ -1,0 +1,311 @@
+/*---------------------------------------------------------------------------*\
+    Card - used on example.twig.html
+\*---------------------------------------------------------------------------*/
+
+.card {
+  display: block;
+  position: relative;
+  float: left;
+  border-radius: 6px;
+  min-width: 224px;  /* one card visible on iphone3 with 320px screenwidth*/
+  margin-bottom: 24px;
+  width: 100% !important;
+  // background-image: linear-gradient(to bottom, #FFF, #F1E4C6); // sand
+  background: #EFE8D8; // lightbeige, same as example page bg
+
+  @include material-card1();
+  
+
+  &.width-33,
+  &.width-25 {
+
+    @media only screen and (min-width: 536px) {
+      width: 48%;
+      width: -webkit-calc(50% - 9px) !important;
+      width: calc(50% - 9px) !important;
+      margin-right: 18px;
+    }
+
+    @media only screen and (min-width:900px) {
+      width: 30%;
+      width: -webkit-calc(33.33% - 16px) !important;
+      width: calc(33.33% - 16px) !important;
+      margin-right: 24px;
+    }
+  }
+
+  &.width-33,
+  &.width-25 {
+
+    @media only screen and (min-width: 536px) {
+    
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(2n+3) {
+        clear: both;
+      }
+    }
+
+    @media only screen and (min-width:900px) {
+
+      &:nth-of-type(2n) {
+        margin-right: 24px;
+      }
+
+      &:nth-of-type(2n+3) {
+        clear: none;
+      }
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(4n) {
+        margin-right: 24px;
+      }
+
+      &:nth-of-type(3n+4) {
+        clear: both;
+      }
+    }
+  }
+
+
+  &.width-25 {
+
+    @media only screen and (min-width:1050px) {
+      width: 22%;
+      width: -webkit-calc(25% - 18px) !important;
+      width: calc(25% - 18px) !important;
+      margin-right: 24px;
+      
+      &:nth-of-type(3n) {
+        margin-right: 24px;
+      }
+      
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(3n+4) {
+        clear: none;
+      }
+
+      &:nth-of-type(4n+5) {
+        clear: both;
+      }
+    }
+  }
+
+  
+  &[class*='width-']:last-of-type {
+    margin-right: 0 !important;
+  }
+}
+
+
+
+/*
+ *  Card image wrapper
+ */
+.card__img {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 12px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+  overflow: hidden;
+  /* this mask fixes the overflow:hidden in Chrome */
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  
+  background-size: 100%; // only for IE
+  -webkit-transition:background-position .4s ease-out;  
+  -moz-transition:background-position .4s ease-out;  
+  -ms-transition:background-position .4s ease-out;  
+  transition:background-position .4s ease-out; 
+  
+  img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: all .4s ease-out;
+    transform: scale(1.0);
+    transform-origin: 50% 100%;
+  }
+}
+
+
+/*
+ *  Card info wrapper
+ */
+.card__info {
+  position: relative;
+  z-index: 2;
+  padding: 0 18px 0px;
+  
+  h3 {
+    font-size: 21px;
+    line-height: 27px;
+    margin-bottom: 9px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  p,
+  p strong {
+    font-family: $font-light;
+  }
+
+  *:last-child {
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (min-width: 400px) { 
+
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    p { 
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    *:last-child {
+      margin-bottom: 18px;
+    }
+  }
+
+  @media only screen and (min-width: 536px) {
+    min-height: 90px;
+    
+    h3 {
+      font-size: 21px;
+      line-height: 27px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+
+  @media only screen and (min-width: 750px) {
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    h3 {
+      font-size: 21px;
+      line-height: 27px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+
+  .card.width-25 & {
+
+    @media only screen and (min-width: 1050px) {
+      h3 {
+        font-size: 21px;
+        line-height: 27px;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+
+/*
+ *  Card hover effect
+ */
+
+.card {
+
+  &:before {
+    content:"";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 6px;
+    background: #fff;
+    transition: opacity .4s ease-out;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
+  &:hover {
+
+    .card__img {
+      background-size: 110% !important; // only for IE
+    }
+    .card__img img {
+      transform: scale(1.1);
+      transform-origin: 50% 100%;  /* pan towards bottom of image */
+    }
+  }
+}
+
+
+/*------------------------------------*\
+  Partner cards (on About page)
+\*------------------------------------*/
+
+
+.card--partner {
+
+  @media only screen and (min-width: 536px) {
+    min-height: 360px;
+  }
+
+  @media only screen and (min-width: 536px) {
+    min-height: 340px;
+  }
+
+  img {
+    height: 200px;
+    min-height: 200px;
+  }
+}
