@@ -177,8 +177,8 @@
   }
 }
 
-.bullet-only-text + blockquote {}
-  p:first-of-type{
+.bullet-only-text + blockquote {
+  p:first-of-type {
     text-indent: 54px;
   }
 }
