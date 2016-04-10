@@ -59,6 +59,44 @@ li  {
 }
 
 
+
+
+.cell-pricing {
+
+  border-bottom: 12px solid #EFE8D8;
+  
+  &:last-of-type {
+    border-bottom: 0;    
+  }
+
+  @media only screen and (min-width: 1100px) {
+    border-bottom: 0;
+    border-right: 12px solid #EFE8D8;
+
+    &:last-of-type {
+      border-right: 0;
+      border-left: 12px solid #EFE8D8;
+    }
+  }
+}
+
+
+.checklist li {
+  line-height: 27px;
+  padding: 6px 0;
+  border-bottom: 2px solid #CBC1A9;
+  
+  &.list-total {
+    border-bottom-style: double;
+    border-bottom-width: 6px;
+    list-style-type: none;
+  }
+
+  
+}
+
+
+
 //	=========================================================================
 //	Headlines
 //	=========================================================================
