@@ -1,0 +1,475 @@
+/*---------------------------------------------------------------------------*\
+    Timeline element
+    on "How it works"-modular & -page 
+\*---------------------------------------------------------------------------*/
+
+/*
+ *  Timeline row
+ */
+.timeline-row {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 0 0 24px 0;
+  margin: 0;
+  transition: all 0.3s ease;
+
+  // The horizontally centered dotted line
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 19px;
+    height: 100%;
+    left: 18px;
+    top: 0;
+    border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Edots%3C/title%3E%3Cg fill='%238EBDD4' fill-rule='evenodd'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(0 10)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20 10)'/%3E%3C/g%3E%3C/svg%3E") 33% round;
+    border-width: 9px;
+    border-radius: 100%;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  // Final Arrow
+  &:last-of-type:after {
+    content: '▼';
+    display: block;
+    position: absolute;
+    left: -6px;
+    bottom: -33px;
+    width: 53px;
+    height: 48px;
+    line-height: 54px;
+    font-size: 54px;
+    vertical-align: middle;
+    text-align: center;
+    // color: #9B2E36;
+    color: #8EBDD4;
+  }
+
+  @media only screen and (min-width: 420px) {
+    
+    &:before {
+      left: 29px;
+    }
+    &:last-of-type:after {
+      left: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    
+    &:before {
+      left: 44px;
+    }
+    &:last-of-type:after {
+      left: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    padding: 0 0 30px 0;
+    
+    &:before {
+      left: 59px;
+    }
+    &:last-of-type:after {
+      left: 35px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+
+    &:before {
+      z-index: 1;
+      left: calc(50% - 5px);
+    }
+    &:last-of-type:after {
+      left: calc(50% - 29px);
+    }
+  }
+}
+
+
+/* 
+ * First <p> in timeline-row (and contents)
+ * Needed for targetting the image due to markdown structure
+ */
+.timeline-row > p {
+  position: relative;
+  z-index: 3;
+  height: 0;
+  margin: 0;
+
+  img {
+    position: relative;
+    z-index: 3;
+    top: -9px;
+    left: -9px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    z-index: 2;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    // box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08), 
+    //   0 3px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1);
+      
+    -ms-transform-origin: 50% 50%; /* IE 9 */
+    -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+    transform-origin: 50% 50%;
+  }
+
+  @media only screen and (min-width: 420px) {
+    img {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    img {
+      width: 90px;
+      height: 90px;
+      border: 4px solid #fff;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    img {
+      width: 120px;
+      height: 120px;
+      border: 6px solid #fff;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+
+    &.is-hidden {
+      visibility: hidden;
+    }
+
+    &.bounce-in {
+      visibility: visible;
+      animation: cd-bounce-1 .6s;
+    }
+
+    img {
+      position: absolute;
+      z-index: 3;
+      left: 50%;
+      margin: 0 0 0 -60px;
+    }
+  }
+}
+
+/* 
+ * Textblock in .timeline-row
+ * containing headline, description & link
+ */
+.timeline-row__info {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 18px 18px 18px 42px;
+  border-radius: 9px;
+  // margin-left: 6px;
+  // box-shadow: 0 3px 0 #8EBDD4;
+
+  h2 {
+    font-family: $font-semibold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    text-indent: 18px;
+    
+    &:before {
+      display: none!important;
+    }
+  }
+
+  p {
+    color: #666;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  // Email-Link & pseudo-element arrow
+  a {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 0;
+    vertical-align: middle;
+    font-size: 18px;
+    z-index: 10;
+    margin: 12px 0 6px;
+    border-bottom: 1px solid #8EBDD4;
+    color: inherit;
+    
+    &:hover {
+      color: $color-logo1;
+      border-bottom: 2px solid currentColor;
+      background: #fff;
+    }
+  }
+
+  @media only screen and (min-width: 420px) {
+    margin-left: 75px;
+    padding: 18px;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      right: 100%;
+      top: 15px;
+      width: 0;
+      height: 0;
+      border-width: 15px 15px 15px 0;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0) #fff;
+    }
+    
+    h2 {
+      text-indent: 0;
+      
+      &:before {
+        display: inline-block !important;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    margin-left: 120px;
+    
+    &:after {
+      top: 30px;
+    }
+    
+    h2 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    a {
+      font-size: 21px;
+      border-bottom: 2px solid #8EBDD4;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    margin-left: 150px;
+    padding: 24px;
+    
+    &:after {
+      top: 45px;
+    }
+
+    // .timeline-row:first-of-type &:after {
+    //   top: 30px;
+    // }
+    
+    p {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    a {
+      left: 24px;
+      font-size: 30px;
+      padding: 6px;
+      margin: 18px 0 12px;
+      
+      &:before {
+        content: "→";
+        display: inline-block;
+        border: 0;
+        position: relative;
+        left: -30px;
+        margin-right: -21px;
+        color: #8EBDD4;
+      }
+    }
+  }
+
+
+  @media only screen and (min-width: 1000px) {
+    width: calc(50% - 80px);
+    margin-left: 0;
+    margin-top: -30px;
+    border-radius: 12px;
+    z-index: 3;
+  
+    .timeline-row:first-of-type & {
+      margin-top: 0;
+    }
+
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+        
+    &.is-hidden {
+        visibility: hidden;
+      }
+
+    &.bounce-in {
+      visibility: visible;
+      animation: cd-bounce-2 .6s;
+    }
+
+    &:after {
+      right: auto;
+      left: 100%;
+      top: 75px;
+      border-width: 15px 0 15px 15px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0) #fff;
+    }
+
+    .timeline-row:first-of-type &:after {
+      top: 45px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 30px;
+    }
+
+    a {
+      position: absolute;
+      display: table-cell;
+      top: 42px;
+      left: calc(100% + 192px);
+      right: auto;
+      z-index: 2;
+      width: auto;
+      margin: 0 0 -60px;
+      border-bottom: 2px solid #8EBDD4;
+      
+      &:before {
+        display: inline;
+      }
+    }
+  }
+}
+
+
+.timeline-row:nth-child(odd) {
+  
+  .timeline-row__info {
+
+    @media only screen and (min-width: 420px) {
+      &:after {
+        content: '';
+        position: absolute;
+        left: auto;
+        right: 100%;
+        // top: 75px;
+        width: 0;
+        height: 0;
+        border-width: 15px 15px 15px 0;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0) #fff;
+      }
+    }
+
+    @media only screen and (min-width: 1000px) {
+      float: right;
+      
+      &.bounce-in {
+        animation: cd-bounce-2-inverse .6s;
+      }
+    }
+  }
+}
+
+
+.timeline-row:nth-child(even) {
+
+  @media only screen and (min-width: 1000px) {
+    
+    &.bounce-in {
+      animation: cd-bounce-2-inverse .6s;
+    }
+  }
+}
+
+
+.timeline-row:last-of-type {
+  padding-bottom: 18px;
+  margin-bottom: 18px !important;
+  
+  @media only screen and (min-width: 1000px) {
+    padding-bottom: 0;
+    margin-bottom: 30px !important;
+  }
+}
+
+
+
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    transform: scale(.5);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
