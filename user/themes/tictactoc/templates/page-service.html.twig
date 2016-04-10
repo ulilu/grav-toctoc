@@ -16,7 +16,7 @@
     <div class="stage__img">{{ page.media[page.header.image].html(page.title, page.title ,page.header.imagealign) }}</div>
 </div>
 
-<div class="block  block--stretch  block--service">
+<section class="block  block--stretch  block--service">
 
 	<div class="block block--subtitle bgcolor-{{ page.header.page_color }}">
 		<h2 class="stage__subtitle">{{ page.header.subtitle }}</h2>
@@ -25,16 +25,18 @@
 	<div class="block">
   	{{ page.content }}
   </div>
-</div>
+</section>
 
-<div class="block  block--example block--stretch">
+{{ pages.find('/welcome/_call-to-action').content }}
+
+<section class="block  block--example block--stretch">
 	<div class="block">
 		<h2 class="gamma">{{ page.find('/examples').title }}</h2>
 		{% for child in collection %}
 	    {% include childtemplate with {'page':child, 'truncate':true} %}
 	  {% endfor %}
   </div>
-</div>
+</section>
 
 {% endblock %}
 

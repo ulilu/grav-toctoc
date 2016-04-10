@@ -1510,6 +1510,7 @@ body { position: relative; min-height: 100%; background: #fff; padding-bottom: 6
 @media only screen and (min-width: 550px) { .page-service .stage__subtitle { font-size: 24px; line-height: 36px; } }
 @media only screen and (min-width: 750px) { .page-service .stage__subtitle { font-size: 30px; line-height: 42px; } }
 @media only screen and (min-width: 1100px) { .page-service .stage__subtitle { width: 100%; font-size: 24px; line-height: 36px; max-width: 540px; margin: 0; } }
+.page-service .block--cta { border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E\a     %3Ccircle fill='%23D7CAAD' cx='2.5' cy='2.5' r='2.5'/%3E\a     %3Ccircle fill='%23504A6D' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E\a     %3Ccircle fill='%23D7CAAD' cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E\a     %3Ccircle fill='%23504A6D' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E\a     %3Ccircle fill='%23D7CAAD' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E\a     %3Ccircle fill='%23504A6D' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E\a     %3C/g%3E%3C/svg%3E") 33% round; border-image-outset: 3px; }
 .page-service .block--example { z-index: 2; }
 .page-service .block--example h2 { color: #F1E4C6; }
 @media only screen and (min-width: 1200px) { .page-service .block--example:after { opacity: .2; left: auto; right: 0; background-size: 380px; background-position: right 0 bottom 66px; pointer-events: none; } }
