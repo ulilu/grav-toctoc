@@ -47,6 +47,7 @@
 *   Prefixed with l-, usually only containing one single style
 ******************************************************************************/
 
+
 /************************
 *   Floats (for image / text combinations in backend)
 ************************/
@@ -71,6 +72,15 @@
   }
 }
 
+/************************
+*   Micro-Clearfix
+*
+*   http://nicolasgallagher.com/micro-clearfix-hack/
+*   http://css-tricks.com/snippets/css/clear-fix/
+************************/
+.clear {
+  @include clearfix-html5bp();
+}
 
 /************************
 *   Alignment

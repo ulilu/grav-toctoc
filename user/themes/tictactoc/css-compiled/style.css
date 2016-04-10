@@ -383,6 +383,15 @@ li	{ //font-size: $base-font-size; // = 15px //line-height: $base-line-height; /
 .float-right + .float-right { margin-left: 0 !important; margin-right: -30px !important; }
 
 /************************
+*   Micro-Clearfix
+*
+*   http://nicolasgallagher.com/micro-clearfix-hack/
+*   http://css-tricks.com/snippets/css/clear-fix/
+************************/
+.clear:before, .clear:after { content: " "; display: table; }
+.clear:after { clear: both; }
+
+/************************
 *   Alignment
 ************************/
 .l-left { float: left !important; }

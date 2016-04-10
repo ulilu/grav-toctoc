@@ -165,13 +165,15 @@ $(window).load(function() {
 
 {% block content %}
 
-<div class="block  block--example">
-    
-    <h1>{{ page.title }}</h1>
+<div class="block block--example  block--stretch">
 
-    {% for child in collection %}
-        {% include 'partials/listitem-example.html.twig' with {'page':child, 'truncate':true} %}
-    {% endfor %}
+    <div class="block">    
+        <h1>{{ page.title }}</h1>
+
+        {% for child in collection %}
+            {% include 'partials/listitem-example.html.twig' with {'page':child, 'truncate':true} %}
+        {% endfor %}
+    </div>
 
 </div>
 
