@@ -747,7 +747,8 @@ body {
       width: 100%;
       // background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%);
       // background: linear-gradient(180deg, rgba(46, 34, 34, 0) 40%, #2E2222 80%);
-      background: #2E2222;
+      // background: #2E2222;
+      background-image: linear-gradient(to right, rgba(46,34,34,.9) 50%, rgba(45,33,33,0));
       mix-blend-mode: hard-light;
       opacity: .75;
       transition: all 0.2s ease-in-out;
@@ -777,6 +778,10 @@ body {
   }
 
   .cell--service {
+
+    &:first-of-type .imgfade:after {
+      background-image: linear-gradient(to left, rgba(46,34,34,.9) 50%, rgba(45,33,33,0));
+    }
 
     @media only screen and (min-width:1100px) {
       padding: 0 0 18px;
