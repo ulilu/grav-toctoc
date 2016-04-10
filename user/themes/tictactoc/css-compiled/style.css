@@ -241,8 +241,10 @@ ul, ol { margin: 0 0 30px; padding: 0; list-style-position: inside; }
 li { margin: 0 0 9px; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; padding: 0; margin: 0; margin: 0 0 24px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-h1.fa, h2.fa, h3.fa, h4.fa, h5.fa, h6.fa { display: block; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: inherit; }
-h1[class*="fa-"]:before, h2[class*="fa-"]:before, h3[class*="fa-"]:before, h4[class*="fa-"]:before, h5[class*="fa-"]:before, h6[class*="fa-"]:before { display: inline-block; padding-right: 0.5em; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+*.fa { display: block; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: inherit; }
+
+[class*="fa-"]:before { display: inline-block; padding-right: 0.5em; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 h1, h1.fa { font-size: 36px; line-height: 42px; }
 @media only screen and (min-width: 480px) { h1, h1.fa { font-size: 42px; line-height: 48px; } }

@@ -69,24 +69,24 @@ h1, h2, h3, h4, h5, h6	{
   margin:0;
   margin:0 0 24px;
   font-family: $font-regular;
-  
-  &.fa {
-    display: block;
-    font-family: $font-regular;
-    font-size: inherit;
-  }
+}
 
-  &[class*="fa-"]:before {
-    display: inline-block;
-    padding-right: 0.5em; 
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+*.fa {
+  display: block;
+  font-family: $font-regular;
+  font-size: inherit;
+}
+
+[class*="fa-"]:before {
+  display: inline-block;
+  padding-right: 0.5em; 
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
