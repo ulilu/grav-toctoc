@@ -1299,9 +1299,9 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
 @media only screen and (min-width: 1000px) { .timeline-row > p { /* Force Hardware Acceleration in WebKit */ -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden; }
   .timeline-row > p.is-hidden { visibility: hidden; }
   .timeline-row > p.bounce-in { visibility: visible; animation: cd-bounce-1 .6s; }
-  .timeline-row > p img { position: absolute; z-index: 3; left: 50%; margin: 0 0 0 -60px; } }
+  .timeline-row > p img { position: absolute; z-index: 3; left: 50%; margin: 0 0 0 -60px; -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); -webkit-backface-visibility: hidden; backface-visibility: hidden; -moz-osx-font-smoothing: grayscale; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; } }
 
-@media only screen and (min-width: 1000px) { .timeline-row:hover > p img { animation: cd-bounce-3 .4s infinite; } }
+@media only screen and (min-width: 1000px) { .timeline-row:hover > p img { transform: translateZ(0); -webkit-transform: scale(1.2); transform: scale(1.2); } }
 
 /*  Textblock in .timeline-row containing headline, description & link */
 .timeline-row__info { position: relative; z-index: 1; background: #fff; padding: 18px 18px 18px 42px; border-radius: 9px; }
@@ -1353,10 +1353,9 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
 @keyframes cd-bounce-2-inverse { 0% { opacity: 0; transform: translateX(100px); }
   60% { opacity: 1; transform: translateX(-20px); }
   100% { transform: translateX(0); } }
-@keyframes cd-bounce-3 { 0% { transform: scale(0.9); }
-  15% { transform: scale(1.3); }
-  45% { transform: scale(1); }
-  65% { transform: scale(1.2); }
+@keyframes cd-bounce-3 { 0% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  75% { transform: scale(0.91); }
   100% { transform: scale(1); } }
 /*---------------------------------------------------------------------------*\ Font declarations
 \*---------------------------------------------------------------------------*/
