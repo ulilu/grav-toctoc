@@ -712,6 +712,21 @@ body {
   //     pointer-events: none;
   //   }
   // }
+  
+  .block--example {
+
+    @media only screen and (min-width:1200px) {
+      &:after {
+        opacity: .2;
+        left: auto;
+        right: 0;
+        background-size: 380px; // yeah!
+        background-position: right 0 bottom 66px;
+        pointer-events: none;
+      }
+    }
+    
+  }
 }
 
 
@@ -1507,9 +1522,21 @@ body {
   }
 
   .block--example {
+    z-index: 2;
+    
     h2 {
       color: #F1E4C6;  // sand;
       // color: #EFE8D8;  //  sandbeige
+    }
+    @media only screen and (min-width:1200px) {
+      &:after {
+        opacity: .2;
+        left: auto;
+        right: 0;
+        background-size: 380px; // yeah!
+        background-position: right 0 bottom 66px;
+        pointer-events: none;
+      }
     }
   }
 }
