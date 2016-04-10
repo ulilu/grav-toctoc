@@ -387,19 +387,20 @@ h3.bullet-headline {
 .text-item,
 .text-item-right {
   vertical-align: top;
-  margin: 0;
-  padding: 18px 18px 0 18px;
+  // padding: 18px;
+  // padding: 18px 18px 0 18px;
   // background: linear-gradient(to bottom, #fff, #F1E5CA);
-  border: 2px solid #fff;
-  border-radius: 6px;
+  // border: 2px solid #fff;
+  // border-radius: 6px;
 
   @media only screen and (min-width:1050px) {
     float: left;
     display: inline-block;
     width: 30%;
-    padding: 18px 30px 0 18px;
+    padding: 0 30px 0 0;
+    // padding: 18px 30px 0 18px;
     margin-right: 6px;
-    margin-bottom: 6px;
+    // margin-bottom: 6px;
   }
 }
 
@@ -412,7 +413,8 @@ h3.bullet-headline {
   @media only screen and (min-width:1050px) {
     float: right;
     text-indent: 0;
-    padding: 18px 18px 0 30px;
+    padding: 0 0 0 30px;
+    // padding: 18px 18px 0 30px;
     margin-left: 6px;
     margin-right: auto;
   }
