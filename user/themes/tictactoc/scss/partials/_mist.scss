@@ -387,11 +387,11 @@ body {
 .block--cta  {
   border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E
     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5'/%3E
-    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E
     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E
-    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E
     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E
-    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E
+    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E
     %3C/g%3E%3C/svg%3E") 33% round;
   border-width: 12px;
   border-right: 0;
@@ -642,12 +642,14 @@ body {
   .block--cta {
     border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E
     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5'/%3E
-    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E
+    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(0 20)'/%3E
     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10)'/%3E
-    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E
+    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E
     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E
-    %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E
+    %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E
     %3C/g%3E%3C/svg%3E") 33% round;
+    background: #fff;
+    border-image-outset: 3px;
   }
 
   .block--lightslider {
