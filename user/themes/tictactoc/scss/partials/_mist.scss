@@ -396,8 +396,10 @@ body {
   border-width: 12px;
   border-right: 0;
   border-left: 0;
-  margin-top: -3px !important;
-  overflow: hidden;
+  // margin-top: -3px !important;
+  // overflow: hidden;
+  background: #fff;
+  border-image-outset: 3px;
 }
 
 .cta-headline {
@@ -648,8 +650,6 @@ body {
     %3Ccircle fill='%23CDE5F1' cx='2.5' cy='2.5' r='2.5' transform='translate(20)'/%3E
     %3Ccircle fill='%23FD9F7F' cx='2.5' cy='2.5' r='2.5' transform='translate(20 20)'/%3E
     %3C/g%3E%3C/svg%3E") 33% round;
-    background: #fff;
-    border-image-outset: 3px;
   }
 
   .block--lightslider {
