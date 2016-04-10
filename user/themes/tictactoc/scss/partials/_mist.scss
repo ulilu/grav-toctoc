@@ -659,6 +659,8 @@ body {
     z-index: 1;
     
     .block--headline {
+      padding-top: 0;
+      
       @media only screen and (max-width:1200px) {
         padding: 0 0 30px;
       }
