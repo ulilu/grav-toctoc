@@ -241,6 +241,14 @@
   @include disable-link();
 }
 
+.font-xxs { font-size: $font-xxs !important;}  
+.font-xs  { font-size: $font-xs !important;}  
+.font-s   { font-size: $font-s !important;}  
+.font-m   { font-size: $font-m !important;}  
+.font-l   { font-size: $font-l !important;}  
+.font-xl  { font-size: $font-xl !important;}  
+.font-xxl { font-size: $font-xxl !important;}  
+
 /************************
 *   Color classes
 ************************/

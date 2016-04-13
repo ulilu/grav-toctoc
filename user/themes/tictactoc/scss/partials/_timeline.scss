@@ -116,7 +116,6 @@
     // box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08), 
     //   0 3px 4px rgba(0, 0, 0, 0.05);
     box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1);
-      
     -ms-transform-origin: 50% 50%; /* IE 9 */
     -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
     transform-origin: 50% 50%;
@@ -145,7 +144,18 @@
     }
   }
 
+
+/*
+ * 1. Necessary for the animation on scroll to deisplay correctly. 
+ * Since the img-content of the p is absolutely positioned, p would have no
+ * automatic height, thus making an animation from the middle out impossible.
+ * By setting a height (corresponding to image height), the scaling starts 
+ * from the correct center point.
+ */
   @media only screen and (min-width: 1000px) {
+    position: absolute;  /* 1 */
+    left: 50%;           /* 1 */
+    height: 120px;       /* 1 */
 
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
@@ -165,13 +175,16 @@
       z-index: 3;
       left: 50%;
       margin: 0 0 0 -60px;
-      -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+      // bounce out animation:
+      //-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+      //transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+      -webkit-transition-timing-function: cubic-bezier(0.15, 1.54, 0.84, 1);
+      transition-timing-function: cubic-bezier(0.15, 1.54, 0.84, 1);
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       -moz-osx-font-smoothing: grayscale;
-      -webkit-transition-duration: 0.5s;
-      transition-duration: 0.5s;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
     }
   }
 }
@@ -197,7 +210,7 @@
   padding: 18px 18px 18px 42px;
   border-radius: 9px;
   // margin-left: 6px;
-  // box-shadow: 0 3px 0 #8EBDD4;
+  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1);
 
   h2 {
     font-family: $font-semibold;
@@ -438,6 +451,25 @@
   }
 }
 
+
+
+@media only screen and (min-width: 1000px) {
+
+  .cta-headline {
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+
+    &.is-hidden {
+      visibility: hidden;
+    }
+
+    &.bounce-in {
+      visibility: visible;
+      animation: cd-bounce-1 .6s;
+    }
+  }
+}
 
 
 @keyframes cd-bounce-1 {
