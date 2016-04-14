@@ -40,10 +40,8 @@
 
 
 [class*="logo-part"] {
-  font-size: 30px;
   width: 100px;
   display: inline-block;
-  vertical-align: middle;
   font-size: 30px;
   
   @media only screen and (min-width: 500px) {
@@ -58,6 +56,7 @@
 
 .logo-part1 {
   color: $color-logo1;
+  vertical-align: middle;
 }
 
 .logo-part2 {

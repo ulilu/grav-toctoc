@@ -20,6 +20,60 @@
   	}
 } 
 
+
+@mixin dotted-border($side: 'bottom', $width: 9, $color: 'FFFFFF', $outset: 3) {
+	$widthpx : #{$width}px;
+	$outsetpx : #{$outset}px;
+	
+	border-#{$side}: #{floor($width * 0.67)}px dotted #{'#' + $color};
+	@if $side == 'top' {
+    border-image: url("data:image/svg+xml;charset=utf8,
+  		%3Csvg xmlns='http://www.w3.org/2000/svg' 
+  		width='30' height='30' viewBox='0 0 30 30'
+  		fill='%23#{$color}'%3E
+  		%3Ccircle cx='3' cy='3'  r='3'/%3E 
+  		%3Ccircle cx='15' cy='3'  r='3'/%3E 
+  		%3Ccircle cx='27' cy='3'  r='3'/%3E 
+  		%3C/svg%3E") 33% / $widthpx 0 0 0 / $outsetpx round;
+  	
+  } @else if $side == 'left' { 
+    border-image: url("data:image/svg+xml;charset=utf8,
+  		%3Csvg xmlns='http://www.w3.org/2000/svg' 
+  		width='30' height='30' viewBox='0 0 30 30'
+  		fill='%23#{$color}'%3E
+  		%3Ccircle cx='3'  cy='3'  r='3'/%3E 
+    	%3Ccircle cx='3'  cy='15' r='3'/%3E 
+    	%3Ccircle cx='3'  cy='27' r='3'/%3E 
+    	%3C/svg%3E") 33% / 0 0 0 $widthpx / $outsetpx round;
+    	
+  } @else if $side == 'right' { 
+  	border-image: url("data:image/svg+xml;charset=utf8,
+  		%3Csvg xmlns='http://www.w3.org/2000/svg' 
+  		width='30' height='30' viewBox='0 0 30 30'
+  		fill='%23#{$color}'%3E
+  		%3Ccircle cx='27' cy='3'  r='3'/%3E 
+  		%3Ccircle cx='27' cy='15' r='3'/%3E 
+    	%3Ccircle cx='27' cy='27' r='3'/%3E
+    	%3C/svg%3E") 33% / 0 $widthpx 0 0 / $outsetpx round; 
+    	
+  } @else if $side == 'bottom' { 
+  	border-image: url("data:image/svg+xml;charset=utf8,
+  		%3Csvg xmlns='http://www.w3.org/2000/svg' 
+  		width='30' height='30' viewBox='0 0 30 30'
+  		fill='%23#{$color}'%3E
+  		%3Ccircle cx='3'  cy='27' r='3'/%3E 
+  		%3Ccircle cx='15' cy='27' r='3'/%3E 
+    	%3Ccircle cx='27' cy='27' r='3'/%3E 
+    	%3C/svg%3E") 33% / 0 0 $widthpx 0 / $outsetpx round;
+	}
+}
+
+// Old border-image code
+/* border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D7CAAD' fill-rule='evenodd'%3E 
+      // %3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(10 20)'/%3E
+      // %3C/g%3E%3C/svg%3E") 33% / 0 0 9px 0 / 3px round;
+*/
+
 //	=========================================================================
 //	Contentblock (Part, Panel, Pane)
 //	=========================================================================

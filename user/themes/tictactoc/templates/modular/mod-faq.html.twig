@@ -1,13 +1,16 @@
-<div class="block">
+<section class="block block--stretch block--faq">
+  <div class="block">
+
   
-	{{ page.content }}
+	  {{ page.content }}
 	
-  <ul class="list--faq">
+  {#   <ul class="list--faq">
   	{% if page.header.faq_items %}
       {% for item in page.header.faq_items %}
         <li><a href="#">{{ item.question }}</a>
         	<div class="faq-item__answer">{{ item.answer }}</div>
       {% endfor %}
     {% endif %}
-  </ul> 
-</div>
+  </ul>  #}
+  </div>
+</section>
