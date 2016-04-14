@@ -1696,7 +1696,7 @@ bienvenue < temoignages     #FFFB9F   (pastis)
 @media only screen and (min-width: 420px) { .hero h1 { bottom: 14vw; } }
 @media only screen and (min-width: 600px) { .hero h1 { bottom: 14vw; } }
 @media only screen and (min-width: 900px) { .hero h1 { bottom: 124px; } }
-.hero h2 { bottom: 0; left: 0; line-height: 130%; padding: 12px 24px 18px; margin-bottom: 0; background: rgba(61, 49, 50, 0.85); color: #CDE5F1; }
+.hero h2 { bottom: 0; left: 0; line-height: 130%; padding: 12px 24px 18px; margin-bottom: 0; background: rgba(61, 49, 50, 0.85); color: #CDE5F1; mix-blend-mode: hard-light; }
 @media only screen and (min-width: 420px) { .hero h2 { font-size: 4.3vw; } }
 @media only screen and (min-width: 800px) { .hero h2 { font-size: 36px; max-width: calc(((100vw - 100%) / 2) + 800px); border-top-right-radius: 30px; } }
 @media only screen and (min-width: 1200px) { .hero h2 { left: calc((((100vw - 100%) / 2)) * -1); padding-left: calc(((100vw - 100%) / 2) + 24px); } }
