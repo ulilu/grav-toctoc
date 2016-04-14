@@ -356,6 +356,10 @@ body {
   }
 }
 
+.page-welcome .headline--service {
+  text-shadow: 0 2px 0 #fff;
+}
+
 .page-pricing .headline--service {
   padding: 0 0 12px;
   z-index: 2;
@@ -424,6 +428,17 @@ body {
  * Headlines on pages with 50%-wide cells (additional breakpoints)
  */
 
+.page-welcome .icon--service {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 #fff;
+  transition: all .3s;
+}
+
+.page-welcome a:hover .icon--service {
+  box-shadow: 0 0 0 6px #fff;
+}
+
 .page-welcome .icon--service,
 .page-services .icon--service,
 .page-pricing .icon--service {
@@ -477,19 +492,23 @@ body {
 
 
 .block--cta  {
-  @include dotted-border('top', 12, 'CDE5F1');
-  border-top: 6px solid rgba(205,229,241,.5);
+  // @include dotted-border('top', 12, 'CDE5F1');
+  // border-top: 12px solid rgba(205,229,241,.33);
+  border-top: 6px solid #fff;
+  box-shadow: 0 -12px 0 rgba(255,255,255,.5),
+              0 4px 0 rgba(0,0,0,.1);
   background: #fff;
   padding-bottom: 45px; // compensate for removed border-bottom
-  @include boxshadow01(0.1);
+  // @include boxshadow01(0.1);
   // box-shadow: 0 4px 0 1px rgba(0,0,0,0.1);
   z-index: 10;
+  overflow: visible;
   
   .page-pricing &,
   .page-service & {
-    @include dotted-border('top', 12, 'EFE8D8');
-    border-top: 6px solid rgba(239,232,216,.5);  
-    @include boxshadow01(0.2);
+    // @include dotted-border('top', 12, 'EFE8D8');
+    // border-top: 12px solid rgba(239,232,216,.5);  
+    // @include boxshadow01(0.2);
   }
 }
 
@@ -848,17 +867,17 @@ body {
     @media only screen and (min-width:1000px) {
       width: 50%;
       padding-bottom: 24px;
-      @include dotted-border('bottom', 10, '8EBDD4');
+      @include dotted-border('bottom', 10, '8EBDD4', 0);
 
       
       &:after {
         content: "";
         display: block;
         position: absolute;
-        right: -1px;
-        bottom: -63px;
+        right: -3px;
+        bottom: -73px;
         height: 61px;
-        @include dotted-border('right', 10, '8EBDD4');
+        @include dotted-border('right', 10, '8EBDD4', 0);
         // border-right: 4px solid #8EBDD4;
         // border-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%238EBDD4' fill-rule='evenodd'%3E 
         // %3Ccircle cx='2.5' cy='2.5' r='2.5' transform='translate(20 10)'/%3E

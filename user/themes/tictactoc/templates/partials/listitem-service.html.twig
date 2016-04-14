@@ -6,7 +6,7 @@
 		{{ page.media[page.header.image].cropResize(800).html() }}
 	</div>
 
-  <h2 class="headline--service beta"><svg class="icon--service" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="{{ page.find('/images').media['icons-global_rdcd.svg'].url() }}#{{ page.header.icon }}" /></svg><span class="font-light">toctoc</span><span>{{ page.title|slice(6) }}</span></h2>
+  <h2 class="headline--service beta"><img class="icon--service" src="{{ page.find('/images').url() }}/{{page.header.icon}}.svg" /><span class="font-light">toctoc</span><span>{{ page.title|slice(6) }}</span></h2>
 
 	<div class="card  item__summary">
 		<h3 class="bgcolor-{{ page.header.page_color }}">{{ page.header.subtitle }}</h3>
@@ -17,7 +17,7 @@
 
 {% elseif uri.path() == '/' %}
 
-	<h2 class="headline--service beta color-{{ page.header.page_color }}"><svg class="icon--service" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="{{ page.find('/images').media['icons-global_rdcd.svg'].url() }}#{{ page.header.icon }}" /></svg><span class="font-light">toctoc</span><span>{{ page.title|replace({"toctoc": ""}) }}</span></h2>
+	<h2 class="headline--service beta color-{{ page.header.page_color }}"><img class="icon--service" src="{{ page.find('/images').url() }}/{{page.header.icon}}.svg" /><span class="font-light">toctoc</span><span>{{ page.title|replace({"toctoc": ""}) }}</span></h2>
 
 	<h4 class="byline--service">{{ page.header.preview_welcome1 }}</h4>
 	<p>{{ page.header.preview_welcome2 }}</p>
