@@ -178,7 +178,9 @@ body {
     background: linear-gradient(190deg, rgba(33, 92, 158, 0.54), rgba(46, 34, 34, 0) 30%, rgba(46, 34, 34, 0) 67%, rgba(46, 34, 34, 0.9) 90%);
     mix-blend-mode: hard-light;
   }
+}
 
+.stage__img {
   img {
     width: 100%;
     height: 70vH;
@@ -207,7 +209,6 @@ body {
     // -webkit-filter: blur(5px);
   }
 }
-
 
 /*------------------------------------*\
   Scroll to top button
