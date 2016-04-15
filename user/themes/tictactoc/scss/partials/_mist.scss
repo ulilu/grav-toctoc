@@ -281,7 +281,9 @@ body {
       left: 0;
       z-index: 4;
       width: 100%;
-      @include dotted-border('bottom', 10, 'D7CAAD');
+      // @include dotted-border('bottom', 10, 'D7CAAD');
+      // @include dotted-border('bottom', 10, 'DFCA85');
+      @include dotted-border('bottom', 10, 'D1BD8B');
     }
   }
 
@@ -300,7 +302,9 @@ body {
         width: 1px;
         height: 100%;
         border: none;
-        @include dotted-border('right', 10, 'D7CAAD');
+        // @include dotted-border('right', 10, 'D7CAAD');
+        // @include dotted-border('right', 10, 'DFCA85');
+        @include dotted-border('right', 10, 'D1BD8B');
       }
 
       .page-welcome &:after {
@@ -554,7 +558,7 @@ body {
     border-bottom: 2px solid #CDE5F1;
     white-space: nowrap;
     padding: 6px 0 2px;
-    vertical-align: middle;
+    vertical-align: baseline;
     
     &:hover {
       // color: $color-logo1;
@@ -660,7 +664,9 @@ body {
     border-bottom: 12px solid #fff;
     // z-index: -1; 
     
-    background-image: linear-gradient(to top, #F4F8FA, #CDE5F1);
+    // background-image: linear-gradient(to top, #F4F8FA, #CDE5F1);
+    // background: linear-gradient(to bottom, #caeef2, #fff);
+    background: linear-gradient(to bottom, #caeef2, #F8FEFF);
     z-index: 1;
     padding-bottom: 36px;
     
@@ -676,7 +682,11 @@ body {
     color: #fff;
     background: #F1E4C6; // sand
     background: linear-gradient(to bottom, #F1E4C6, #EFE8D8);
+    background: #FDEBAF;
+    background: #FCE8B7; // warm sand
     border-bottom: 12px solid #D7CAAD;
+    border-bottom: 12px solid #DFCA85;
+    border-bottom: 12px solid #D1BD8B;
     z-index: 1;
 
     &:after {
