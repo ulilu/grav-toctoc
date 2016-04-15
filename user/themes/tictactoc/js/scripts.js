@@ -64,6 +64,45 @@ $(document).ready(function() {
   });
 
 
+  // the animation slide-duration corresponds with values in the css 
+  // that set the fading bg-color
+  var accordionSlide = function() {
+
+    // hide all answers, except the first one
+    $('.faq-answer').not(':eq(0)').hide();
+
+
+    $('.faq-question').click(function(){
+
+      var currentQ = $(this);
+      var currentA = $(this).next('.faq-answer');
+      var lastQ    = $('.faq-question.is-open');
+      var lastA    = lastQ.next('.faq-answer');
+
+      // only slide if the click is on a different question than last time
+      if ( this !== lastQ.get(0) ) {
+        lastQ.addClass('is-closing').removeClass('is-open');
+        currentQ.addClass('is-open');
+
+        lastA.removeClass('is-visible').addClass('is-closing').slideUp({
+            duration: 400,
+            queue: false,
+            complete: function () {
+              // change class when slide finishes
+              // remove classes, used for css-keyframe-animations
+              $(this).removeClass('is-closing');
+              lastQ.removeClass('is-closing');
+            }
+          });
+        currentA.addClass('is-visible').slideDown(400);
+      }
+    });
+
+  }
+
+  accordionSlide();
+
+
   /*
    * Trigger "Mehr Info / Weniger Info" in .category-content on list pages
    */
