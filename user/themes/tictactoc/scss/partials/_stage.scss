@@ -1,98 +1,77 @@
-//	#########################################################################
-// STAGE
-// #########################################################################
-//  Lastest Changes 151019
+/*---------------------------------------------------------------------------*\
+    Stage : on page-service, page-example
+\*---------------------------------------------------------------------------*/
 
 
-.stage	{
-  position:relative;
-  top:0;
-  width:100%;
-  max-height:280px;
-  text-align: center;
-  background: #000;
-  @include background(linear-gradient(black, #222 78.8%, #111 78.9%, black));
+.stage {
+  position: relative;
+  height: 70vH;
+  max-height: 300px;
+  margin: -24px auto 0;
+  transition: all 0.3s ease-in-out;
+  
+  @media only screen and (min-width: 600px) { max-height: 400px; }
+  @media only screen and (min-width: 900px) { max-height: 500px; }
+  @media only screen and (min-width: 1200px) { max-height: 600px; }
+  
 
-  @media only screen and (min-width: $break-tablet-mini) {
-    max-height: 360px;
-  }
-
-  @media only screen and (min-width: $break-tablet-small) {
-    max-height: 480px;
-  }
-
-  @media only screen and (min-width: $break-tablet-large) {
-    max-height: 480px;
+  /*
+   *  Headline inside stage
+   *  1. Limiting its width to the block content width below
+   */
+  h1 {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 30px;
+    width: -webkit-calc(100% - 60px);
+    width: calc(100% - 60px);
+    max-width: 1200px;
+    color: #fff;
+    margin: 0 auto;
+    text-shadow: 1px 0 6px #000;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     
-    .stagefade {
-      position: absolute;
-      z-index:20;
-      width: 100%;
-      height: 16%;  // hmm, strange, when set to 15%, it produces a visible top-border on the ipad
-      bottom: 0;
-      left: 0;
-      background: none;
-      @include background(linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, .3)));
-      zoom: 1;  // necessary to give element "hasLayout" in IE
+    @media only screen and (min-width: 1200px) { 
+      width: 1140px;  /* 1. */
     }
   }
-}
-
-.productpage .stage	{
-  display:none;
-  @media only screen and (min-width: $break-phone-landscape) {
-    display: block;
-  }
-  @media only screen and (min-width: $break-tablet-small) {
-    max-height: 540px;
-  }
-}
-
-
-.stage-wrapper,
-.moodpic-wrapper {
-  position:relative;
-  width:100%;
-  max-width:1280px;
-  text-align: center;
-  z-index:10;
-  margin:0 auto;
-  height:0;
-
-  img	{
-    max-width:100%;
-    margin:0 auto;
-    //  NEW 151019, see below for explanation
-    // box-shadow: 0 3px 8px rgba(0, 0, 0, 1);
-  }
-
-  @media only screen and (min-width: $break-tablet-small) {
-    font-size: 0;
-  }
-}
-
-
-.stage-wrapper  {
-  padding-bottom:40%;   // to preserve the intrinsic proportions-ratio of 100:40% (width:height) or 1200 * 480 px of newspics
-}
-.moodpic-wrapper {
-  padding-bottom:47%;   // to preserve the intrinsic proportions-ratio of 100:47% (width:height) or 1200 * 564 px of moodpics
-  
-//  NEW 151019
-// In order to make the appearance of the productmood even more dramatic, we create an additional pseudo-element behind it - but only as high as the moodpic without it's bottom reflection. this after-element gets placed behind the moodpic and casts it's - wider - shadow on the underlying background.
 
   &:after {
     content: "";
-    display: table;
-    position: absolute;
-    z-index: -1;
+    display: block;
     width: 100%;
-    max-width: 1200px;
-    height: 424px;
+    position: absolute;
+    left: 0;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: transparent;
-    box-shadow: 0 12px 120px rgba(0, 0, 0, 1);
+    right: 0;
+    bottom: 0;
+    // background: linear-gradient(190deg, rgba(0, 0, 47, 0.6), rgba(54, 36, 36, 0) 30%, rgba(54, 36, 36, 0) 50%, #362424 94%);
+    // background: linear-gradient(190deg, rgba(56,34,34,0) 0%,rgba(56,34,34,0) 50%,rgba(56,34,34,0.75) 90%);
+    
+    background: linear-gradient(190deg, rgba(33, 92, 158, 0.54), rgba(46, 34, 34, 0) 30%, rgba(46, 34, 34, 0) 67%, rgba(46, 34, 34, 0.9) 90%);
+    mix-blend-mode: hard-light;
+  }
+}
+
+.stage__img {
+  img {
+    width: 100%;
+    height: 70vH;
+    max-height: 300px;
+    object-fit: cover;       
+    object-position: center; 
+    transition: all 0.3s ease-in-out;
+    @media only screen and (min-width: 600px) { max-height: 400px; }
+    @media only screen and (min-width: 900px) { max-height: 500px; }
+    @media only screen and (min-width: 1200px) { max-height: 600px; }
+  }
+
+  img.top {
+    object-position: top;   // ATTENTION: this isn't supported in IE nor Sefari
+  }
+  img.bottom {
+    object-position: bottom;  // SAME PROBLEM
   }
 }

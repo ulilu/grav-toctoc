@@ -1,0 +1,134 @@
+/*---------------------------------------------------------------------------*\
+    PAGE: Service
+\*---------------------------------------------------------------------------*/
+
+
+.page-service {
+  // background: $color-greywalls1;  // sand;
+  // background: #EFE8D8;  //  sandbeige
+  
+  .block--service {
+    overflow: visible;
+    // background: linear-gradient(to bottom, $color-greywalls1, #EFE8D8);
+    background: linear-gradient(to top, $color-warmsand3, $color-warmsand2);
+    // border-bottom: 12px solid #D7CAAD;
+    padding-top: 0;
+    
+    @media only screen and (min-width: 1100px) {
+      padding-top: 30px;
+    }
+  }
+
+  .icon--service {
+    margin: 0 18px;
+    
+    @media only screen and (min-width: 600px) {
+      margin: 0 24px;
+    }
+    
+    @media only screen and (min-width: 1200px) {
+      margin: 0 30px 0 0;
+    }
+  }
+ 
+  .stage__title {
+    left: auto;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 40%, rgba(0,0,0,0) );
+    background: rgba(61, 49, 50, 0.85);
+    padding: 12px 0;
+    transform: none;
+    // mix-blend-mode: hard-light;
+    
+    @media only screen and (min-width: 750px) {
+      padding: 18px 0;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      text-indent: calc((100% - 1140px) / 2);
+      max-width: calc(((100vw - 1140px) / 2) + 500px);
+      border-top-right-radius: 30px;
+      // background: #564646;
+    }
+
+    * {
+      vertical-align: middle;
+    }
+  }
+
+  .block--subtitle {
+    padding-top: 12px;
+    padding-bottom: 18px;
+    width: calc(100% + 48px);
+    padding: 12px 24px 18px !important;
+    margin-bottom: 24px;
+    margin-left: -24px;
+    
+    @media only screen and (min-width: 480px) { 
+      width: calc(100% + 60px);
+      margin-left: -30px;
+      margin-bottom: 30px;
+      padding: 12px 30px 18px !important;
+    }
+    
+    @media only screen and (min-width: 550px) { 
+      padding: 18px 30px 18px !important;
+    }
+
+    @media only screen and (min-width: 1100px) { 
+      position: relative;
+      margin: -30px -30px 24px;
+      padding: 18px 30px !important;
+    }
+    @media only screen and (min-width: 1200px) {
+      max-width: initial !important;
+    }
+  }
+
+  .stage__subtitle {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    margin: 0 auto;
+    font-family: $font-light;
+    font-size: 21px;
+    line-height: 30px;
+    
+    @media only screen and (min-width: 550px) { 
+      font-size: 24px;
+      line-height: 36px;
+    }
+    
+    @media only screen and (min-width: 750px) { 
+      font-size: 30px;
+      line-height: 42px;
+      // width: 100%;
+    }
+    
+    @media only screen and (min-width: 1200px) { 
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+  }
+
+  .block--examples {
+    z-index: 2;
+    
+    h2 {
+      color: $color-greywalls1;  // sand;
+    }
+    
+    @media only screen and (min-width:1200px) {
+      &:after {
+        opacity: .2;
+        left: auto;
+        right: 0;
+        background-size: 380px; // yeah!
+        background-position: right 0 bottom 66px;
+        pointer-events: none;
+      }
+    }
+  }
+}

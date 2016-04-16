@@ -8,7 +8,7 @@
 
 {% set childtemplate = 'partials/listitem-' ~ childtype ~ '.html.twig' %}
 
-<section class="block  block--stretch  block--{{ childtype }}">
+<section class="block  block--stretch  block--{{ childtype|pluralize }}">
 
 	{% if page.content %}
 		<div class="block">
