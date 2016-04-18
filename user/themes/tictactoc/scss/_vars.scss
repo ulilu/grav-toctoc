@@ -57,7 +57,7 @@ $font-xxl:  31px;
 $regular: 400;
 $bold: 700;
 
-// Base Font - used to be "ReykjavikOne OT", unfortunately not available as webfont.
+// Base Font
 $base-font-family:  Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-weight:  $regular;
 $base-font-size:    16px; //0.9375em;		// 15px
@@ -122,10 +122,10 @@ $color-white:   		#ffffff;
 $color-redwine: 		#9B2E36;  // menu bgcolor
 
 $color-turq1:  			$color-logo0;
-$color-turq2:				#6BBEC7;
+$color-turq2:				#45bac4;
 $color-turq3:  			#79D4DF;
 $color-turq4:  			#caeef2;
-$color-turq5:  			#eefdff; // #F8FEFF;
+$color-turq5:  			#e8f8fa; // #F8FEFF;
 
 
 $color-charcoal: 		#363531;
@@ -137,7 +137,8 @@ $color-greywalls1: 	#F1E4C6;
 $color-greywalls2: 	#EFE8D8;
 $color-greywalls3:  #FDFAF8;
 
-$color-warmsand1: 	#D1BD8B;
+$color-warmsand0:   #c8b173;
+$color-warmsand1: 	#dec586; //#ebcb7b;  // #D1BD8B;
 $color-warmsand2: 	#FCE8B7;
 $color-warmsand3: 	#FFF3D3;
 
@@ -160,6 +161,48 @@ $color-brown: 			#815D51;
 
 
 
+/*--------------------------------------------*\
+    New Palette 160416
+\*--------------------------------------------*/
+
+$color-lavender1: 	#312c4a;
+$color-lavender2:   #504A6D;
+$color-lavender3: 	#8078a3;
+$color-lavender4: 	#b0a9cc;
+$color-lavender5:   #dddae8;
+$color-lavender6: 	#edebf5;
+
+$color-skyblue1:    #00517a;
+$color-skyblue2:    #0476ae;
+$color-skyblue3:    #4697bf;
+$color-skyblue4:    #8EBDD4;
+$color-skyblue5:    #CDE5F1;
+$color-skyblue6:    #e6f2f8;
+
+$color-rouille1:    #b05031;
+$color-rouille2:    #e85827;
+$color-rouille3:    #f77d53;
+$color-rouille4:    #fd9f7f;
+$color-rouille5:    #ffded2;
+$color-rouille6:    #fdf0eb;
+
+
+
+/*--------------------------------------------*\
+    Social Media Colors (160417)
+\*--------------------------------------------*/
+
+$color-facebook: 	#3b5998;
+$color-twitter:   #55acee;
+$color-instagram: 	#3f729b;
+$color-pinterest:   #cb2027;
+$color-googleplus: 	#dd4b39;
+$color-youtube:   #cd201f;
+
+
+
+
+
 /*---------------------------------------------------------------------------*\
     New additional colors, chosen with loulou (mostly pastels)
 \*---------------------------------------------------------------------------*/
@@ -178,3 +221,14 @@ bienvenue < comment     #B5BF52   (olives)
 
 bienvenue < temoignages     #FFFB9F   (pastis)
 */
+
+
+// Different shades of lavender, once used on block--examples:
+// background: #858AA5; // lavender
+// background: #AED1DF; // lightbluegrey
+// background: #9392B6; // new lavender
+// background: #8988A6; // pale lavender
+
+// background: #CFC7B5; // marseille beige
+// background: #9EDEE5; // menthe
+// background: #AED1DF; // lightbluegrey

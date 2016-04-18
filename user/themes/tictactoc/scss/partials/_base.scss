@@ -13,6 +13,7 @@
 //     http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 //
 html	{
+  height: 100%;
   font-family: $base-font-family;
   font-weight: $base-font-weight; 
   -webkit-text-size-adjust: 100%;	// 1
@@ -29,7 +30,9 @@ html	{
 // http://css-tricks.com/forums/discussion/18225/checkbox-hack-on-mobile-webkit/p1
 
 body	{
-  background-color: #000;
+  position: relative;
+  min-height: 100%;
+  background: #fff;
   font-size: $base-font-size;
   line-height: $base-line-height;
   -webkit-animation: bugfix infinite 1s;  //  1
@@ -39,3 +42,72 @@ body	{
   from { padding: 0; } 
   to { padding: 0; } 
 }
+
+
+
+/*---------------------------------------------------------------------------*\
+    Top level elements
+\*---------------------------------------------------------------------------*/
+
+
+.header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-height: 120px;
+  background: #fff;
+}
+
+.main {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 60px;
+}
+
+/*
+ *  [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt
+ */
+.footer {
+  position: absolute;  /* [1] */
+  z-index: 100;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #444;
+  color: #888;
+  background: $color-warmsand1;
+  color: $color-clay;
+  background: $color-lavender-dark;
+  color: $color-lavender-light;
+  font-size: 14px;
+  
+  @media only screen and (min-width:480px) {
+    font-size: 16px;
+  }
+  
+  a {
+    display: inline-block;
+    color: $color-lavender-light;
+    padding: 0 4px;
+    border-radius: 2px;
+    margin-left: 4px;
+    
+    &:hover {
+      background: #fff;
+      color: $color-lavender-dark;
+    }
+  }
+}
+
+
+/*---------------------------------------------------------------------------*\
+    Wrapper on .page-welcome (similar to .stage on other pages)
+\*---------------------------------------------------------------------------*/
+
+// .wrapper {
+//   position: relative;
+//   display: block;
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }

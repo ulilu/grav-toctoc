@@ -2,21 +2,21 @@
 
 {% block content %}
 
-<div class="block  block--contact">
-    {# <div class="map">
-        {{ page.header.map }}
-    </div> #}
+<div class="block  block--stretch block--contactinfo">
 
-    <div class="address">
+    <div class="block">
         {{ page.content }}
     </div>
 
-    <div class="address">
-        <h2>{{ page.header.title2 }}</h2>
-        {% if config.plugins.simple_form.enabled %}
-            {% set simple_form_config = page.header.simple_form ?: config.themes.tictactoc.simple_form %}
-            {{ simple_form(simple_form_config) }}
-        {% endif %}
-    </div>
 </div>
+
+{% if config.plugins.simple_form.enabled %}
+    {% set simple_form_config = page.header.simple_form ?: config.themes.tictactoc.simple_form %}
+    <div class="block  block--stretch  block--contactform">
+        <div class="block">
+            <h2>{{ page.header.simple_form.headline }}</h2>
+            {{ simple_form(simple_form_config) }}
+        </div>
+    </div>
+{% endif %}
 {% endblock %}
