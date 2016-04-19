@@ -1805,13 +1805,13 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
 
 /*---------------------------------------------------------------------------*\ PAGE: Contact
 \*---------------------------------------------------------------------------*/
-.page-contact { background: #b05031; }
+.page-contact { background: #ffded2; }
 
 .block--contactinfo h1 { color: #e85827; }
 
 /*------------------------------------*\ Instagram
 \*------------------------------------*/
-.block--instagram { background: #fff; background: #ffded2; padding-bottom: 24px; }
+.block--instagram { background: #fff; background: #b05031; padding-bottom: 24px; }
 
 .instagram-photos { list-style-type: none; margin-bottom: 0; }
 .instagram-photos li { display: inline-block; width: calc((100% - 36px) / 8); overflow: hidden; margin: 0; }
