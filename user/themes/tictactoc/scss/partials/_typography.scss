@@ -2,48 +2,18 @@
 //	TYPOGRAPHY
 //	#########################################################################
 
-/*---------------------------------------------------------------------------*\
-    Font declarations
-\*---------------------------------------------------------------------------*/
+/*
 
-.Linotte-Light,
-.font-light { 
-  font-family: Linotte-Light;
-  font-weight: normal;
-  font-style: normal;
-}
+  @media only screen and (min-width: $break-phone-landscape) {
+  }
 
-.Linotte-Regular,
-.font-regular { 
-  font-family: Linotte-Regular;
-  font-weight: normal;
-  font-style: normal;
-}
+  @media only screen and (min-width: $break-tablet-regular) {
+  }
 
-.Linotte-SemiBold,
-.font-semibold { 
-  font-family: Linotte-SemiBold;
-  font-weight: normal;
-  font-style: normal;
-}
+  @media only screen and (min-width: $break-tablet-large) {
+  }
 
-.Linotte-Bold,
-.font-bold { 
-  font-family: Linotte-Bold;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.Linotte-Heavy,
-.font-heavy { 
-  font-family: Linotte-Heavy;
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-
+*/
 
 body {
   font-size: 18px;
@@ -237,4 +207,237 @@ hr  {
   border:0;
   margin: 0 0 30px;
 }
+
+
+
+/*
+
+//	H1 on productpage -------------------------------------------------------
+
+.blurb-title {
+  display: table-row;
+  width: 100%;
+
+  &:before	{
+    content: '';
+    display: table-cell;
+    vertical-align: middle;
+    width: 72px;
+    height: 48px;
+    // @include background-2x($sprite-bullet, png, 80px, 1375px); 
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .plustish &:before	{background-position: 0 -120px;}
+  .decktish &:before	{background-position: 0 -240px;}
+  .shwingsitz &:before {background-position: 0 -360px;}
+  .klubstool &:before	{background-position: 0 -480px;}
+  .kneestool &:before	{background-position: 0 -600px;}
+  .steckbord &:before	{background-position: 0 -720px;}
+  .phonodeck &:before	{background-position: 0 -840px;}
+  .doubledeck &:before	{background-position: 0 -960px;}
+  .goldshine &:before	{background-position: 0 -1080px;}
+  .deckshine &:before	{background-position: 0 -1200px;}
+  .kippshine &:before	{background-position: 0 -1320px;}
+  .singledeck &:before	{background-position: 0 -1320px;}
+
+  .startpage &:before {
+    width: 108px;
+    height: 72px;
+  }
+
+  & span	{
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 90%;
+  }
+}
+
+
+//	H1 -----------------------------------------------------------
+.heading-title	{
+  margin: 0 0 24px;
+
+  @media only screen and (min-width: $break-tablet-small) {
+    //margin: 12px 0 18px;
+  }
+}
+
+
+//	H2 -----------------------------------------------------------
+.blurb-subtitle	{
+  margin: 18px 0 24px;
+
+  @media only screen and (min-width: $break-tablet-small) {
+    //width: 63%;
+  }
+}
+
+
+//	H3 -----------------------------------------------------------
+.part-title	{
+  margin: 0 0 18px;
+
+  @media only screen and (min-width: $break-phone-landscape) {
+    margin-bottom: 24px;
+  }
+  & + p {
+    margin-top: -6px;
+  }
+}
+
+//	H3 - extends .part-title -----------------------------------------------------------
+.anchor-title	{
+  padding-top: 24px;
+  border-top: 2px solid #ddd;
+
+  @media only screen and (min-width: $break-phone-landscape)	{
+    margin-top: 0;
+  }
+
+  a	{
+    &, &:link, &:visited	{
+      display: inline-block;
+      width: 100%;
+      //@include box-sizing(border-box);
+      padding-left: 36px;
+    }
+
+    &:before	{
+      content:"";
+      display: inline-block;
+      margin-left: -36px;
+      width: 36px;
+      height: 30px;
+      background-image: inline-image('ui/icn-up.png');
+      background-size: 25px 25px;
+      background-position: 0 11px;
+	   background-repeat: no-repeat;
+      //@include background-2x($sprite-navi, png, 50px, 500px);
+      //background-position: left -190px;
+    }
+    &:hover:before,
+    &:active:before {
+      background-image: inline-image('ui/icn-up-active.png');
+      background-size: 25px 25px;
+      background-position: 0 10px;
+      background-repeat: no-repeat;
+      //background-position: left -241px;
+    }
+    &:active:before	{
+      background-position: 0 9px;
+      //background-position: left -242px;
+    }
+  }
+}
+
+
+//	H3 -----------------------------------------------------------
+.contact-title	{
+  margin: 0 0 18px;
+}
+
+//	H3 -----------------------------------------------------------
+.model-title	{
+  color:$color-orange;
+  margin:0;
+  padding: 18px 0;
+  border-bottom: 1px solid #ddd;
+  @include text-shadow_w12(1);
+}
+
+//	H3 -----------------------------------------------------------
+.news-title	{
+  float:left;
+  color:$color-blue;
+  font-size: 21px;
+  line-height: 28px;
+  margin: 15px 0 12px 65px;
+  min-height: 48px;
+  @include text-shadow_w12(1);
+}
+
+//	H4 -----------------------------------------------------------
+.pane-title	{
+  margin: 0 0 18px;
+  padding-top: 18px;
+  @include text-shadow_w12(1);
+}
+
+*/
+
+//	=========================================================================
+//	Paragraphs
+//	=========================================================================
+
+
+
+  // @media only screen and (min-width: $break-phone-landscape) {
+  //   line-height: 25px;
+  // }
+  // @media only screen and (min-width: $break-tablet-mini) {
+  //   line-height: 25px;
+  // }
+  // @media only screen and (min-width: $break-tablet-small) {
+  //   line-height: 24px;
+  // }
+  // @media only screen and (min-width: $break-tablet-regular) {
+  //   line-height: 25px;
+  // }
+  // @media only screen and (min-width: $break-tablet-large) {
+  //   line-height: 26px;
+  // }
+  // @media only screen and (min-width: $break-desktop) {
+  //   line-height: 27px;
+  // }
+
+
+/*
+  .pane &,
+  .panel &	{
+    font-size: 14px;
+    line-height: 22px;
+
+    //	@media only screen and (min-width: $break-tablet-small) {
+    // 	  font-size: 13px;
+    //   }
+  }
+
+  .pane &	{
+    color:#999;
+  }
+
+  .pane & + p,
+  .part & + p,
+  .pane ul + &	{
+    margin-top:-6px;	// to reduce distance within blocks of text in .page-sidebar
+  }
+*/
+
+
+//	=========================================================================
+//	Lists
+//	=========================================================================
+
+
+
+/* 
+li	{
+  //font-size: $base-font-size; // = 15px
+  //line-height: $base-line-height; // = 22px
+
+  .pane &,
+  .panel &	{
+    font-size: 14px;
+    line-height: 24px;
+
+    //	@media only screen and (min-width: $break-tablet-small) {
+    //	  font-size: 13px;
+    //	  line-height: 21px;
+    //	}
+  }
+}
+
+*/
 

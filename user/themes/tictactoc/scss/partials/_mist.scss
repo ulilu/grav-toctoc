@@ -4,44 +4,154 @@
 //
 //  Need to be cleaned & redistributes
 
+/*---------------------------------------------------------------------------*\
+    Font declarations
+\*---------------------------------------------------------------------------*/
+
+.Linotte-Light,
+.font-light { 
+  font-family: Linotte-Light;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Linotte-Regular,
+.font-regular { 
+  font-family: Linotte-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Linotte-SemiBold,
+.font-semibold { 
+  font-family: Linotte-SemiBold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Linotte-Bold,
+.font-bold { 
+  font-family: Linotte-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Linotte-Heavy,
+.font-heavy { 
+  font-family: Linotte-Heavy;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/*---------------------------------------------------------------------------*\
+    Top level elements
+\*---------------------------------------------------------------------------*/
+
+html {
+  font-family: Linotte-Regular; 
+   height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  background: #fff; 
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-height: 120px;
+  background: #fff;
+}
+
+.main {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 60px;
+}
+
+/*
+ *  [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt
+ */
+.footer {
+  position: absolute;  /* [1] */
+  z-index: 100;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #444;
+  color: #888;
+  background: $color-charcoal;
+  color: $color-clay;
+  font-size: 14px;
+  
+  @media only screen and (min-width:480px) {
+    font-size: 16px;
+  }
+  
+}
+
+
+/*---------------------------------------------------------------------------*\
+    Wrapper on .page-welcome (similar to .stage on other pages)
+\*---------------------------------------------------------------------------*/
+
+.wrapper {
+  position: relative;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 /*------------------------------------*\
-  Hero Image & Fade
+  Scroll to top button
 \*------------------------------------*/
 
-// .hero-bg  {
+.scrolltop {
+  display: none;
+  z-index: 999;
+  position: fixed;
+  bottom: 15px;
+  right: 12px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #666;
+  opacity: 0.5;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 0 #000;
+  overflow: hidden;
+  
+  &:active {
+    bottom: 12px;
+    box-shadow: none;
+  }
 
-//   img + img {
-    // -webkit-mask: -webkit-radial-gradient( center, closest-side, transparent 30%, black 80%);
-    // -webkit-mask: radial-gradient( closest-side at center, transparent 50%, black 110%);
-    // -webkit-filter: blur(5px);
-    // mask: url('#mask-linear');
-    // filter: url('#filtre2');
-    
-    // -webkit-mask: -webkit-linear-gradient(transparent 40%, black 70%);
-    // -webkit-mask: linear-gradient(transparent 40%, black 70%);
-    // -webkit-filter: blur(6px);
-    // mask: url('#mask-linear');
-    // filter: url('#filtre2');
-  // }
-// .filtre--l{
-//   -webkit-mask: -webkit-linear-gradient(black, transparent 30%, black);
-//   -webkit-mask: linear-gradient(black, transparent 30%, black);
-//   -webkit-filter: blur(3px);
-//   mask: url('#mask-linear');
-//   filter: url('#filtre2');
-// }
-// .filtre:hover{
-//    -webkit-mask: none;
-//    -webkit-filter: none;
-//    mask: none;
-//    filter: none;
-// }
-  // }
+  &:after {
+    content: "▲";
+    display: block;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    width: 66px;
+    height: 66px;
+    line-height: 60px;
+    font-size: 60px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+  }
+}
 
-  // .page-welcome & video,
-  // .page-welcome & img {
-  //   max-height: 450px;
-  //   @media only screen and (min-width: 600px) { max-height: 550px; }
-  //   @media only screen and (min-width: 900px) { max-height: 650px; } 
-  // }
+
+.page-header {
+  padding: 24px;
+  margin: 0 0 30px;
+}

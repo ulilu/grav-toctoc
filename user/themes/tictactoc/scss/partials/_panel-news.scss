@@ -1,0 +1,118 @@
+//	#########################################################################
+//	Panel.NEWS in .startpage
+//	#########################################################################
+
+.news {
+    position:relative;
+    width:100%;
+    z-index:1000;
+    
+	@media only screen and (min-width: $break-tablet-small) {
+		float: right;
+	    width: 35%;
+	    margin-top: -48px;
+	    margin-bottom: -6px;
+        
+	}
+}
+
+.news-panel	{
+	border-top:0;
+	@media only screen and (min-width: $break-tablet-small) {
+		border-left: 2px solid #fff;
+		border-right: none;
+		padding: 0 24px 0 24px;
+		@include border-bottom-left-radius(9px);
+	}
+	
+	@media only screen and (min-width: $break-tablet-large) {
+    	border: 2px solid #fff;
+    	border-top:0;
+        @include border-top-right-radius(9px);
+        @include border-bottom-right-radius(9px);
+     // @include border-radius(6px);
+	}
+}
+
+.news-item	{
+	position: relative;
+	overflow:hidden;
+	height:0;
+	p	{
+		float:left;
+	}
+}
+
+#sb01:checked ~ .wrapper .news01,	// DOENST WORK in IE 6-8
+#sb02:checked ~ .wrapper .news02,
+#sb03:checked ~ .wrapper .news03,
+#sb04:checked ~ .wrapper .news04	{
+	height:auto;
+}
+
+
+.datebox	{
+	position: absolute;
+    left:0;
+	top:-3px;
+	width:48px;
+	height:62px;
+	//overflow:hidden;	
+	// border-image: url("/assets/img/ui/datebox-border.png") 0 0 3 0 repeat repeat;
+	// needs to be fixed for Firefox 16+ / IE10
+
+	&:after {
+		overflow:hidden;
+		content: " ";
+	    display:block;
+	    position: relative;
+	    width:100%;
+	    top:-3px;
+	    height:9px;
+	    background: inline-image("../img/ui/triangle-border.svg");
+	    background-size: 100% 100%;
+	    background-repeat: repeat-x;
+	    
+	    // Triangle-Border: unfortunately this doesn't work correctly in ie below 11
+	    /*
+	    background: linear-gradient($color-blue 0%, transparent 0%), linear-gradient(135deg, $color-snowwhite 33.33%, transparent 33.33%) 0 0%, $color-snowwhite linear-gradient(45deg, $color-snowwhite 33.33%, $color-blue 33.33%) 0 0%;
+		background: -webkit-linear-gradient($color-blue 0%, transparent 0%), -webkit-linear-gradient(135deg, $color-snowwhite 33.33%, transparent 33.33%) 0 0%, $color-snowwhite -webkit-linear-gradient(45deg, $color-snowwhite 33.33%, $color-blue 33.33%) 0 0%;
+		background: -o-linear-gradient($color-blue 0%, transparent 0%), -o-linear-gradient(135deg, $color-snowwhite 33.33%, transparent 33.33%) 0 0%, $color-snowwhite -o-linear-gradient(45deg, $color-snowwhite 33.33%, $color-blue 33.33%) 0 0%;
+		background: -moz-linear-gradient($color-blue 0%, transparent 0%), -moz-linear-gradient(135deg, #f8f8f8 33.33%, transparent 33.33%) 0 0%, #f8f8f8 -moz-linear-gradient(45deg, #f8f8f8 33.33%, $color-blue 33.33%) 0 0%;
+		background-repeat: repeat-x;
+		background-size: 0px 100%, 4px 4px, 4px 4px;
+		*/
+	}
+
+	.date	{
+		display: block;
+		text-align: center;
+		color: $color-blue;
+		background-color: #fff;
+		border-left:1px solid $color-blue;
+		border-right:1px solid $color-blue;
+	}
+	
+	.day	{
+		font-size:22px;
+		padding:6px 0 0;
+	}
+	
+	.month	{
+		font-size:11px;
+		line-height:15px;
+		padding-bottom:3px;
+		font-weight:bold;
+		text-transform: uppercase;
+	}
+	
+	.year	{
+		color:#fff;
+		padding-top:1px;
+		font-size:12px;
+		line-height:20px;
+		font-weight:bold;
+		background-color: $color-blue;
+		@include text-shadow_b-11(.1);
+	}
+}

@@ -1,0 +1,171 @@
+//	#########################################################################
+// CONTAINER
+// #########################################################################
+
+.wrapper	{
+  position: relative;
+  z-index: 90;
+
+  @media only screen and (min-width: $break-tablet-large) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .startpage & {
+    top:-72px;
+
+    @media only screen and (min-width: $break-tablet-small) {
+      margin-top: 36px;
+    }
+
+  }
+
+  .infopage &	{
+    @media only screen and (min-width: $break-tablet-small) {
+      margin-top: 49px;
+    }
+    @media only screen and (min-width: $break-tablet-large) {
+      top: 30px;
+    }
+  }
+}
+
+.page	{
+  position: relative;
+  z-index:100;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0,0,0,.3);
+  @include clearfix-html5bp;
+
+  @media only screen and (min-width: $break-tablet-large) {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+//	=========================================================================
+// Page-Header
+// =========================================================================
+
+.page-header	{
+  position: relative;
+  margin-top: 36px;
+  @include clearfix-html5bp;
+
+  @media only screen and (min-width: $break-tablet-small)	{
+    //@include box-sizing(border-box);
+    width: 64.9%;	// to compensate for rounding-errors
+    float: left;
+    border-bottom: 0;
+    padding-bottom: 0;
+    background: none;
+  }
+}
+
+.page-header--full  {
+  
+  @media only screen and (min-width: $break-tablet-small)	{
+    width:100%; 
+  }
+}
+
+.blurb	{
+  //padding-top: 12px;
+
+  @media only screen and (min-width: $break-tablet-small)	{
+    //padding-top: 24px;
+  }
+}
+
+.heading	{
+  padding: 0 20px;
+  //margin-bottom:18px;
+
+  .infopage &	{
+    //padding-top: 12px;
+  }
+
+  @media only screen and (min-width: $break-phone-landscape) {
+    padding: 0 30px 0 24px;
+  }
+  @media only screen and (min-width: $break-tablet-small)	{
+    padding: 0 36px 0 30px;
+  }
+  @media only screen and (min-width: $break-tablet-regular) {
+    padding: 0 48px 0 42px;
+  }
+  @media only screen and (min-width: $break-tablet-large) {
+    padding: 0 60px 0 48px;
+  }
+}
+
+
+
+//	=========================================================================
+// Page-Body
+// =========================================================================
+
+.page-body	{
+  position: relative;
+  border-bottom: 2px solid #ddd;
+  background: none;	
+
+  .productpage &	{
+    //padding-bottom: 12px;
+    border-bottom: 0;
+  }
+
+  @media only screen and (min-width: $break-tablet-small) {
+    border-bottom: none;
+    //@include box-sizing(border-box);
+    width: 64.9%;	// to compensate for rounding-errors
+    float: left;
+    padding-bottom: 0;
+    background: none;
+  }
+
+  hr	{
+    margin: 30px 0 0;
+    clear:both;	// Tadaaa - now the last image of a product doesn't overlap the model-panel anymore ...
+  }
+
+  .details	{
+    padding-top: 0;
+  }
+
+  .glossary	{
+    padding-top: 0;
+  }
+}
+
+// AGB-Page
+.page-body--full  {
+  
+  @media only screen and (min-width: $break-tablet-small)	{
+    width:100%; 
+  }
+}
+
+//	=========================================================================
+// Page-Sidebar
+// =========================================================================
+
+.page-sidebar	{
+  background:$color-snowwhite;
+  @include clearfix-html5bp;
+
+  @media only screen and (min-width: $break-tablet-small)	{
+    display: inline-block;
+    width: 35%;
+    // use background-fade only when aside appears as right column
+    // @include background(linear-gradient(left, #f2f2f2, #fafafa 20%)); 
+
+    .productpage & {
+      float: right;
+      // margin-top: 12px;
+    }
+  }
+}

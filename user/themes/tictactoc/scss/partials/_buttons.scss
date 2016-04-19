@@ -10,10 +10,6 @@
   display: inline-block;
   transition: background ease-in 0.1s;
   cursor: pointer;
-  border: none;
-  
-  &:focus {
-  }
   
   * {
     display: inline-block;
@@ -51,7 +47,7 @@
 
 .btn-m {
   font-size: 21px;
-  padding: 12px 24px 9px;
+  padding: 12px 24px;
   border-radius: 6px;
   
   &:active {
@@ -81,7 +77,6 @@
 
 .btn-orange,
 .btn-red,
-.btn-rouille,
 .btn-blue,
 .btn-green {
   color: #fff;
@@ -107,27 +102,8 @@
 
   &:active,
   a:active:hover & {
-    border-top: 3px solid $color-greywalls1;
+    border-top: 3px solid $color-greywalls1; // sand;
     border-bottom: 0;
-  }
-}
-
-
-.btn-rouille {
-  color: $color-rouille6;
-  background: $color-rouille2;
-  // border: 3px solid #fff;
-  
-  &:hover,
-  a:hover & {
-    color: #fff;
-    background: $color-rouille1;
-  }
-
-  &:active,
-  a:active:hover & {
-    // border-top: 3px solid $color-rouille3;
-    border: 0;
   }
 }
 
@@ -143,7 +119,7 @@
 
   &:active,
   a:active:hover & {
-    border-top: 3px solid $color-greywalls1;
+    border-top: 3px solid $color-greywalls1; // sand;
     border-bottom: 0;
   }
 }
@@ -156,44 +132,6 @@
   a:active:hover & {
     border-top: 3px solid #FFF;
   }
-}
-
-.btn--social {
-  color: #fff !important;
-  // border-bottom: 3px solid rgba(0,0,0,.25);
-  margin: 0 6px 12px 0;
-  
-  &:last-of-type {
-    margin: 0;
-  }
-
-  .fa {
-    font-size: 24px;
-  }
-}
-
-.btn-facebook {
-  background: $color-facebook;
-}
-
-.btn-twitter {
-  background: $color-twitter;
-}
-
-.btn-instagram {
-  background: $color-instagram;
-}
-
-.btn-googleplus {
-  background: $color-googleplus;
-}
-
-.btn-pinterest {
-  background: $color-pinterest;
-}
-
-.btn-youtube {
-  background: $color-youtube;
 }
 
 
@@ -253,48 +191,5 @@
     border-top: 3px solid $color-lavender;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-  }
-}
-
-
-
-/*------------------------------------*\
-  Scroll to top button
-\*------------------------------------*/
-
-.scrolltop {
-  display: none;
-  z-index: 999;
-  position: fixed;
-  bottom: 15px;
-  right: 12px;
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #666;
-  opacity: 0.5;
-  border: 3px solid #fff;
-  box-shadow: 0 3px 0 #000;
-  overflow: hidden;
-  
-  &:active {
-    bottom: 12px;
-    box-shadow: none;
-  }
-
-  &:after {
-    content: "▲";
-    display: block;
-    position: absolute;
-    left: -3px;
-    top: -3px;
-    width: 66px;
-    height: 66px;
-    line-height: 60px;
-    font-size: 60px;
-    vertical-align: middle;
-    text-align: center;
-    color: #fff;
   }
 }

@@ -4,13 +4,20 @@
 
 
 .page-examples {
-  background: $color-lavender;
+  background: #858AA5; // lavender
+  background: #CFC7B5; // marseille beige
+  background: #9EDEE5; // menthe
+  background: #AED1DF; // lightbluegrey
+  background: #9392B6; // new lavender
+  background: #8988A6; // pale lavender
+  background: $color-lavender;  // lavender tint
   
   .block--examples:after {
     opacity: .2;
     left: auto;
     right: 0;
-    background-size: 380px;
+    background-size: 380px; // yeah!
     background-position: right 0 bottom 66px;
+    pointer-events: none;
   }
 }

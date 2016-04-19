@@ -1,22 +1,29 @@
-<form name="simple_form" id="simple_form" action="https://getsimpleform.com/messages?form_api_token={{ token | e('html_attr') }}" enctype="multipart/form-data" method="post" class="form--contact">
+<form name="simple_form" id="simple_form" action="https://getsimpleform.com/messages?form_api_token={{ token | e('html_attr') }}" enctype="multipart/form-data" method="post" class="contact-form">
     <fieldset>
-        <div class="cell cell-in-row cell-67">
-            <label class="form__field" for="simple_form-field-message">
-                <textarea id="simple_form-field-message" name="message" class="ipt ipt--field" placeholder="{{ label.message }}" required="required"></textarea>
+        <div class="coll-1">
+            <label for="simple_form-field-name">
+                <input type="text" id="simple_form-field-name" name="name" class="" placeholder="Name" value="" required="required" />
             </label>
         </div>
-
-        <div class="cell cell-in-row cell-33">
-            <label class="form__line  hidden" for="simple_form-field-name">
-                <input type="text" id="simple_form-field-name" name="name" class="ipt ipt--line" placeholder="{{ label.name }}" value="" required="required" />
+        <div class="coll-2">
+            <label for="simple_form-field-email">
+                <input type="email" id="simple_form-field-email" name="email" class="" placeholder="E-mail" value="" required="required" />
             </label>
-            
-            <label class="form__line" for="simple_form-field-email">
-                <input type="email" id="simple_form-field-email" name="email" class="ipt ipt--line" placeholder="{{ label.email }}" value="" required="required" />
+        </div>
+        <div class="coll-3">
+            <label for="simple_form-field-phone">
+                <input type="text" id="simple_form-field-phone" name="phone" class="" placeholder="Phone" value=""  />
             </label>
-        
-            <div class="form__line">
-                <button id="simple_form-field-submit" name="submit" class="btn btn-l btn-rouille"><i class="fa fa-paper-plane"></i>{{ label.submit }}</button>
+        </div>
+        <div class="coll-4">
+            <label for="simple_form-field-message">
+                <textarea id="simple_form-field-message" name="message" class="" placeholder="Message" required="required"></textarea>
+            </label>
+        </div>
+        <div class="coll-5">
+            <div class="buttons-wrapper clearfix">
+                <br />
+                <button id="simple_form-field-submit" name="submit" class="btn-link btn-link2">submit <span></span></button>
             </div>
         </div>
     </fieldset>
