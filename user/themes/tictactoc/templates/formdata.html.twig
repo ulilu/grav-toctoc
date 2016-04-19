@@ -1,0 +1,19 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="block  block--stretch block--contactinfo">
+
+    <div class="block">
+        {{ page.content }}
+    </div>
+
+</div>
+
+<div class="block  block--stretch  block--contactform">
+    <div class="block">
+        <h2>{{ page.header.formtitle }}</h2>
+        {% include "forms/form.html.twig" %}
+    </div>
+</div>
+
+{% endblock %}

@@ -48,16 +48,36 @@
       border-left: 18px solid $color-greywalls2;
     }
   }
+
+  .headline--service {
+    padding: 0 0 12px;
+  }
+
+  .byline--service {
+    position: relative;
+    left: -24px;
+    top: -12px;
+    width: calc(100% + 48px);
+    height: 100%;
+    color: #fff !important;
+    padding: 24px;
+    margin: 0;
+    
+    @media only screen and (min-width: 800px) {
+      left: -30px;
+      width: calc(100% + 60px);
+    }
+  }
 }
 
 
 .checklist {
 
   li {
-  color: #444;
-  line-height: 27px;
-  padding: 6px 0;
-  border-bottom: 2px solid $color-greywalls2;
+    color: #444;
+    line-height: 27px;
+    padding: 6px 0;
+    border-bottom: 2px solid $color-greywalls2;
   
     &.list-total {
       margin-top: -11px;
@@ -82,6 +102,4 @@
   &.color-orange1 .fa:before {
     color: $color-orange1;
   }
-
-
 }

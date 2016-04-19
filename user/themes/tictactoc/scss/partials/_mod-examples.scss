@@ -7,26 +7,25 @@
   position: relative;
   z-index: 1; // necessary for containing icon to appear
   padding: 0;
-  // background: #858AA5; // lavender
-  // background: #AED1DF; // lightbluegrey
-  // background: #9392B6; // new lavender
-  // background: #8988A6; // pale lavender
   background: $color-lavender;
   
   .block {
-    padding: 36px 30px !important;
+    padding: 30px !important;
     
     @media only screen and (min-width:1200px) {
       padding: 36px 30px 36px 0 !important;
     }
   }
   
+  /*
+   * Setting bgimg "Vieux Port"
+   */ 
   @media only screen and (min-width:1200px) {
     &:after {
       opacity: .2;
       left: auto;
       right: 0;
-      background-size: 380px; // yeah!
+      background-size: 380px;
       background-position: right 0 bottom 66px;
       pointer-events: none;
     }
@@ -37,6 +36,6 @@
   }
 
   h3 {
-    color: $color-red1;
+    color: $color-red2;
   }
 }
