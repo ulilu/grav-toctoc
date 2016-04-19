@@ -15,12 +15,7 @@
   </div>
   
   <div class="cell cell-in-row cell-33">
-    {% for field in form.fields if (field.type) != 'textarea' %}
-      {% set value = form.value(field.name) %}
-      <div class="formline--text">
-          {% include "forms/fields/#{field.type}/#{field.type}.html.twig" %}
-      </div>
-    {% endfor %}
+
 
 	  {% for button in form.buttons %}
 	    <button class="btn btn-l btn-rouille" type="{{ button.type|default('submit') }}">{% if (button.type) == 'submit' %}<i class="fa fa-paper-plane"></i>{% endif %}{{ button.value|default('Submit') }}</button>
