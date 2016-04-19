@@ -1,7 +1,7 @@
 <div class="alert">{{ form.message }}</div>
 
 <form name="{{ form.name }}" class="contact-form"
-      action="{{ uri.rootUrl ~ (form.action|default(page.route)) }}"
+      action="{{ form.action ? base_url ~ form.action : page.url }}"
       method="{{ form.method|upper|default('POST') }}">
   
   
@@ -27,4 +27,5 @@
 	  {% endfor %}
   </div>
 
+  {{ nonce_field('form', 'form-nonce') }}
 </form>
