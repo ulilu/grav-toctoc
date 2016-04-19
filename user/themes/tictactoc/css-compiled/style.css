@@ -1805,12 +1805,12 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
 
 /*---------------------------------------------------------------------------*\ PAGE: Contact
 \*---------------------------------------------------------------------------*/
+.page-contact { background: #ffded2; }
+
 .block--contactinfo h1 { color: #e85827; }
 
-.block--contactform { background: #fd9f7f; border-top: 12px solid #fff; border-bottom: 12px solid #f77d53; }
+.block--contactform { background: #fd9f7f; border-bottom: 12px solid #f77d53; }
 .block--contactform h2 { color: #fff; color: #b05031; }
-
-.block--instagram { background: #fff; }
 
 /*------------------------------------*\ Map integration
 \*------------------------------------*/

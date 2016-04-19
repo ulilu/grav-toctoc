@@ -4,7 +4,7 @@
 
 
 .page-contact {
-  // background: $color-rouille5;
+  background: $color-rouille5;
 }
 
 .block--contactinfo {
@@ -27,17 +27,13 @@
 
 .block--contactform {
   background: $color-rouille4;
-  border-top: 12px solid #fff;
+  // border-top: 12px solid #fff;
   border-bottom: 12px solid $color-rouille3;
   
   h2 {
     color: #fff;
     color: $color-rouille1;
   }
-}
-
-.block--instagram {
-  background: #fff;
 }
 
 /*------------------------------------*\
