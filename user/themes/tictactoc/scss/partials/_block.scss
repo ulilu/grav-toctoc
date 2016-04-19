@@ -22,7 +22,7 @@
   /*
    *  Collapse bottom-margin on every direct :last-child, unless it's a .card
    */
-  > *:last-child:not(.card, h1) {
+  > *:last-child:not(.card) {
     margin-bottom: 0;
   }
 
@@ -67,10 +67,6 @@
 
 .block  .block--headline {
   padding-bottom: 30px;
-  
-  h1 {
-    margin-bottom: 0;
-  }
 }
 
 

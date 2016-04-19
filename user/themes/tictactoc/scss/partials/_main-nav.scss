@@ -16,13 +16,13 @@
   z-index: 2;
   width: 100%;
   overflow: hidden;
+  background: #9B2E36;  // wine red
+  border-bottom: 3px solid rgba(0,0,0,0.33);
   // background: #695D8E;
   // background: #81493D;
   // background: #C26236;
-  // background: linear-gradient(to top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.15) 40%);
-  // background: linear-gradient(to bottom, rgba(0,0,0,0) 59%, rgba(0,0,0,0.15) 60%);
-  background: $color-redwine;
-  border-bottom: 3px solid rgba(0,0,0,0.33);
+  // background-image: linear-gradient(to top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.15) 40%);
+  // background-image: linear-gradient(to bottom, rgba(0,0,0,0) 59%, rgba(0,0,0,0.15) 60%);
 
   @media only screen and (min-width: 700px) {
     overflow: visible;
@@ -54,6 +54,8 @@
 
   @media only screen and (min-width: 1200px) {
     border-radius: 9px;
+    // box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
+    // @include material-card1();
   }
 }
 
@@ -67,13 +69,36 @@
   width: 42px;
   height: 51px;
   cursor: pointer;
-  background: rgba(0,0,0,0.75);
-  background: $color-redwine;
+  background-color: rgba(0,0,0,0.75);
+  background-color: #9B2E36;
   border-left: 2px solid #fff;
+  // border-bottom-left-radius: 3px;
+  // border-top-left-radius: 3px;
   
   @media only screen and (max-width: 700px) {
     display: block;
   }
+
+  // &:after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   right: 12px;
+  //   top: 16px;
+  //   height: 0;
+  //   width: 0;
+  //   border-top: 9px solid rgba(0, 0, 0, 0);
+  //   border-left: 15px solid #fff;
+  //   border-bottom: 9px solid rgba(0, 0, 0, 0);
+  //   transition: all 0.35s;
+  // }
+
+  // &.active:after {
+  //   -ms-transform: rotate(180deg);
+  //   -webkit-transform: rotate(180deg);
+  //   transform: rotate(180deg);
+  //   right: 15px;
+  // }
 
   &:after {
     content: "►";
@@ -89,8 +114,13 @@
     padding: 0;
     text-align: center;
     vertical-align: middle;
+    // transition: all 0.35s;
+    // -moz-transform-origin: center center;
+    // -webkit-transform-origin: center center;
+    // -o-transform-origin: center center;
+    // -ms-transform-origin: center center;
+    // transform-origin: center center;
   }
-
   &.active:after {
     content: "◄";
     display: inline-block;
@@ -99,6 +129,11 @@
     top: 0;
     height: 51px;
     width: 42px;
+    // -moz-transform: rotateY(180deg);
+    // -webkit-transform: rotateY(180deg);
+    // -o-transform: rotateY(180deg);
+    // -ms-transform: rotateY(180deg);
+    // transform: rotateY(180deg);
   }
 }
 
@@ -129,8 +164,13 @@
     padding: 6px;
     margin: 0;
   }
-}
 
+  // @media only screen and (min-width: 1200px) {
+  //   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
+    // @include material-card1();
+    // border-radius: 9px;
+  // }
+}
 
 .main-nav__item {
   position: relative;
@@ -154,7 +194,6 @@
     }
   }
 }
-
 
 .main-nav__item--home a {
   display: block;
@@ -245,7 +284,7 @@
   // background: #C16844; // roof tiles of marseille
   // background: #A96F58; // Bronze
   // background: #83272D; // darker wine red
-  background: $color-redwine;
+  background: #9B2E36; // wine red
   
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -267,6 +306,7 @@
   
   &:hover {
     background: $color-white;
+    // color: currentColor;
     color: $color-logo1;
   }
 }
@@ -277,6 +317,7 @@
   > a {
     background: white;
     border-radius: 6px;
+    // color: currentColor;
     color: $color-logo1;
   }
 

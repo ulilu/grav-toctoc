@@ -23,31 +23,20 @@
 @import "modules/generic";
 @import "partials/icons-global";
 
+@import "partials/header";
+@import "partials/main-nav";
+
+
 @import "partials/block";
 @import "partials/cell";
 @import "partials/card";
 @import "partials/buttons";
-
-@import "partials/header";
-@import "partials/main-nav";
-@import "partials/stage";
-
-
-
 
 @import "partials/img-row";
 @import "partials/timeline";
 
 
 @import "partials/mist";
-
-
-@import "partials/mod-cta";
-@import "partials/mod-examples";
-@import "partials/mod-faq";
-@import "partials/mod-howto";
-@import "partials/mod-services";
-
 
 /*
 @import "partials/images";
@@ -77,14 +66,6 @@
 */
 
 @import "partials/page-welcome";
-@import "partials/page-services";
-@import "partials/page-service";
-@import "partials/page-examples";
-@import "partials/page-example";
-@import "partials/page-pricing";
-@import "partials/page-how-it-works";
-@import "partials/page-about";
-@import "partials/page-contact";
 
 /*
 //	=========================================================================

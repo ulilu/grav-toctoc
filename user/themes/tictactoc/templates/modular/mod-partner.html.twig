@@ -1,24 +1,19 @@
-<section class="block block--stretch  block--partner">
+<section class="block">
 	
-	<div class="block">
 	{{ page.content }}
 
+	{% for partner in page.header.partners %}
+		<a class="card  card--partner  width-25" href="{{ partner.link }}" target="_new">
 
-		{% for partner in page.header.partners %}
-			<a class="card  card--partner  width-25" href="{{ partner.link }}" target="_new">
+			<div class="card__img" href="{{ partner.link }}" target="_new">
+				{{ page.media[partner.image].cropResize(300, 300).html() }}
+			</div>
 
-				<div class="card__img" href="{{ partner.link }}" target="_new">
-					{{ page.media[partner.image].cropResize(300, 300).html() }}
-				</div>
+			<div class="card__info">
+				<h3>{{ partner.name }}</h3>
+				<p>{{ partner.text }}</p>
+			</div>
 
-				<div class="card__info">
-					<h3>{{ partner.name }}</h3>
-					<p>{{ partner.text }}</p>
-				</div>
-
-			</a>
-		{% endfor %}
-
-	</div>
-
+		</a>
+	{% endfor %}
 </section>
