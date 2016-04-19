@@ -1805,6 +1805,8 @@ h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 
 
 /*---------------------------------------------------------------------------*\ PAGE: Contact
 \*---------------------------------------------------------------------------*/
+.page-contact { background: #ffded2; }
+
 .block--contactinfo h1 { color: #e85827; }
 
 /*------------------------------------*\ Instagram
