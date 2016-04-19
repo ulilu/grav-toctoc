@@ -1,21 +1,81 @@
 ---
 title: Contact
-simple_form:
-    token: token-by-simpleform
-    redirect_to: /thank-you-for-contact
-    template_file: contact
 body_classes: page-contact
-map: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.9171694084603!2d5.371856451578596!3d43.295056279032806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0b8b4bd8237%3A0xb50b6465b5ae7a68!2sVieux+Port!5e0!3m2!1sen!2sus!4v1449976633079" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>'
+formtitle: 'Parlez-moi de vous…'
+form:
+    name: contact-form
+    fields:
+        -
+            name: message
+            label: Message
+            classes: 'ipt ipt--field'
+            placeholder: 'Votre message'
+            autofocus: 'on'
+            type: textarea
+            validate:
+                required: true
+        -
+            name: name
+            label: Name
+            classes: 'ipt ipt--line'
+            placeholder: 'Votre nom'
+            type: text
+            validate:
+                required: true
+        -
+            name: email
+            label: 'E-mail address'
+            classes: 'ipt ipt--line'
+            placeholder: 'Votre adresse e-mail'
+            type: email
+            validate:
+                required: true
+    buttons:
+        -
+            type: submit
+            value: Envoyer
+    process:
+        -
+            email:
+                from: '{{ config.plugins.email.from }}'
+                from_name: '{{ config.plugins.email.from_name }}'
+                to: ['{{ config.plugins.email.from }}', '{{ form.value.email }}']
+                to_name: '{{ config.plugins.email.to_name }}'
+                subject: '[Loulouuuu, c´est moi, Derrick - il y a un nouveau message pour toi...] {{ form.value.name|e }}'
+                body: '{% include ''forms/data.html.twig'' %}'
+                content_type: text/html
+        -
+            save:
+                fileprefix: message-
+                dateformat: Ymd-His-u
+                extension: txt
+                body: '{% include ''forms/data.txt.twig'' %}'
+        -
+            message: 'Merci pour votre message!'
+        -
+            display: /thank-you-for-contact
 ---
 
 # Contact
-## Postal Address
-<address markdown="1">
-**Boulevard Longchamp 28, 13001 Marseille, France**
 
-Telephone: +33 62 68 92 47 8
+<div class="cell cell-in-row cell-67 cell--contactinfo" markdown="1">
+##### Pour toute question, n'hésitez pas à me contacter
 
-E-mail: toctocmarseille@gmail.com
-</address>
+Par télephone au **+33 6 26 89 24 78**  
+  
+par E-mail : **[toctocmarseille@gmail.com](mailto:toctocmarseille@gmail.com)**   
+  
+ou par Skype : **<a href="skype:toctocmarseille?chat">toctocmarseille</a>**
 
+---
+###### Pour suivre les actus de toctocMarseille, retrouvez-moi sur…
 
+<a href="https://www.facebook.com/toctocMarseille/?ref=ts&fref=ts" target="_new" class="btn btn-m btn--social btn-facebook"><i class="fa fa-facebook"></i>Facebook</a>
+<a href="https://www.instagram.com/toctocmarseille/" target="_new" class="btn btn-m btn--social btn-instagram"><i class="fa fa-instagram"></i>Instagram</a>
+<a href="https://twitter.com/toctocmarseille" target="_new" class="btn btn-m  btn--social btn-twitter"><i class="fa fa-twitter"></i>Twitter</a>
+</div>
+
+<div class="cell cell-in-row cell-33 cell--contactinfo">
+<a class="twitter-timeline" href="https://twitter.com/toctocmarseille" data-chrome="nofooter noborders" data-tweet-limit="1" data-widget-id="722218414232727556">Latest Tweet by @toctocmarseille</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>

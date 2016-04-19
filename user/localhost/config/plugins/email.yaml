@@ -1,14 +1,16 @@
 enabled: true
-from: contact@toctocMarseille.com
+from: toctocmarseille@gmail.com
 from_name: 'Website Contactform'
 to: toctocmarseille@gmail.com
-to_name: 'Loulou Collange'
+to_name: Laurianne Collange
 mailer:
   engine: mail
   smtp:
     server: localhost
     port: 25
     encryption: none
+    user:
+    password:
   sendmail:
     bin: /usr/sbin/sendmail
   default: none

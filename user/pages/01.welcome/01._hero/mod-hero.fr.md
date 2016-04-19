@@ -7,4 +7,4 @@ pano1: pano-hero2.jpg
 
 # Séjours sur mesure {.beta .color-white}
 
-## Profitez de mes conseils et bons plans pour une escale idéale au bord de la Méditerranée. {.color-blue3}
+## Profitez de mes conseils et bons plans pour une escale idéale au bord de la Méditerranée. {.color-white .bgcolor-logo0}

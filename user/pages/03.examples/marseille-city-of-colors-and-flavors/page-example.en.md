@@ -1,51 +1,43 @@
 ---
-title: 'Marseille - City of colors and flavors'
+title: 'Marseille - Must sees'
 body_classes: page-example
 taxonomy:
     tag:
         - tour
-blurb: 'Marseille, the city of colors and flavors.'
-image: IMG_5027.JPG
+blurb: 'Marseille, the must sees.'
+image: IMG_6519.JPG
 ---
 
-Marseille is a cosmopolit city and each neighborhoods has a specificity. I like to go from one to the other and enjoy this experience like a travel.
+You have few hours to spent in Marseille? Let me be your private guide for a visit of the must-see treasures.
 
 ===
 
-**Here is an example of a tour to discover three emblamatic and colorfull neighborhoods in Marseille.**
+**This is my favorite tour to discover Marseille’s must-sees by foot.**
 
 <hr class="has-bullet">
-
 ### 1 {.bullet}
-
-The visit begin in the arty neighnorhood of **Cours Julien**. It offers many alleys, where art galleries, young designers, and street artists have taken place.
-
+The visit begins in **the Old Port**, under the new architectural art work, **the ”Ombrière”**. Here takes place the daily fish market.  
 
 <figure class="image-row row-30-30-40">
-
-{{ page.media['IMG_2939.JPG'].lightbox(1000).cropResize(600).html() }}
-
-{{ page.media['IMG_6484.JPG'].lightbox(1000).cropResize(600).html() }}
-
-{{ page.media['IMG_2984.JPG'].lightbox(1000).cropResize(600).html() }}
-
-<figcaption>Cours Jus: street art & marché bio</figcaption>
-
+{{ page.media['IMG_6493.JPG'].lightbox(1000).cropResize(600).html() }}
+{{ page.media['IMG_6986.JPG'].lightbox(1000).cropResize(600).html() }}
+{{ page.media['IMG_6989.JPG'].lightbox(1000).cropResize(600).html() }}
+<figcaption>Le Vieux Port</figcaption>
 </figure>
 
-<hr class="has-bullet">
 
+<hr class="has-bullet">
 ### 2 {.bullet}
 
-We continue our way in the neighborhood of **Noailles**, the immigration meeting point, one can find communities from Africa and elsewhere reunited. It is here that we can see the mixity of the city, and enjoy the gastronomy from everywhere in the world. 
+A few steps away is Marseille’s **oldest neighborhood**, where the Greeks began the foundation of the city, **Le Panier**. I go there to walk in the small alleys, and especially to eat the famous navettes, and the best ice-cream in town.	
 
 <figure class="image-row row-33-67">
 
-{{ page.media['IMG_5010.JPG'].lightbox(1000).cropResize(600).html() }}
+{{ page.media['IMG_9837.JPG'].lightbox(1000).cropResize(600).html() }}
 
-{{ page.media['IMG_7008.JPG'].lightbox(1000).cropResize(600).html() }}
+{{ page.media['IMG_4580.JPG'].lightbox(1000).cropResize(600).html() }}
 
-<figcaption>Les délices de Noailles</figcaption>
+<figcaption>Le Panier</figcaption>
 
 </figure>
 
@@ -53,42 +45,36 @@ We continue our way in the neighborhood of **Noailles**, the immigration meeting
 
 ### 3 {.bullet}
 
-We finish the tour with a walk on the famous **Canebière** which drive us to **Le Vieux Port**. A great occasion to enjoy the development of he architecture of the city.  
+I often continue the tour to the docks, to see the beautiful **Notre Dame de la Major **and go to **the new MuCEM museum**, where there is one of my favorite views of the city and the sea.
 
-<figure class="image-row row-25-50-25">
+<figure class="image-row row-25-50">
 
-{{ page.media['IMG_4058.JPG'].lightbox(1000).cropResize(600).html() }}
+{{ page.media['P1050864.JPG'].lightbox(1000).cropResize(600).html() }}
 
-{{ page.media['IMG_3786.JPG'].lightbox(1000).cropResize(600).html() }}
+{{ page.media['SG102397.JPG'].lightbox(1000).cropResize(600).html() }}
 
-{{ page.media['IMG_6989.JPG'].lightbox(1000).cropResize(600).html() }}
-
-<figcaption>Au Vieux Port, le marché au poisson</figcaption>
+<figcaption>Le quartier de la Joliette</figcaption>
 
 </figure>
 
-This tour is rich in flavors and colors.
+After this tour, you can easily go to visit the Mucem, do a funny trip with [MassiliaCar](http://massiliacar.fr) or do shopping in the new gallery Les Docks.
 
 <div class="cell cell--feature width-50" markdown="1">
 
 
-### Possible stops:   {.fa .fa-map-signs}
+### Escales possibles:   {.fa .fa-map-signs}
 
-* Oriental pastry tasting
-  
-* Soap shop visit
-  
-* Local market
-  
-*  Shopping in designer boutiques...
+* a coffee break in a typical Old Port bistro
+* discovering the pétanque musem
+* visit in La Vieille Charité
+* shopping in local boutiques
 
 </div>
 
 <div class="cell cell--info width-50" markdown="1">
 
-If you want to book this tour or ask for a customized tour, please contact me.
-###### This 3 hours private tour costs 150€, for 5 people maximum (25€/extra people).The price does not include transport fees (bus : 1,50€/pers.), activities (Pétanque game : 10€/pers.), food, or drink. {.fa .fa-info-circle}
+###### This 3 hours private tour costs 150€, for 5 people maximum (25€/extra people). The price does not include transport fees (metro, bus, or taxi), activities, food, or drink.    {.fa .fa-info-circle}
 
-If you want to book this tour or ask for a customized tour, please, [contactez-moi!](http://toctoc.peacock.uberspace.de/fr/contact)
+If you want to book this tour or ask for a customized tour, [contact me!](http://toctoc.peacock.uberspace.de/fr/contact)
 
 </div>

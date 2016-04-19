@@ -1,19 +1,37 @@
 ---
-title: Partner
-headline: Partner
+title: Partenaires
+headline: Partenaires
 partners:
     -
         name: 'Tuk-Tuk Marseille Provence'
         category: Transportation
-        text: 'The best of Marseille, Martigues, the «Côte Bleue» and the Provençal hinterland… Sightseeing tours. Combine a sea stroll with a tuk-tuk tour to totally enjoyed all the landscapes !'
-        image: tuk-tuk-marseille.jpg
-        link: 'http://www.tuktukmarseilleprovence.com/index.php?language=en#pages/en/presentation.php'
+        text: 'Transferts et visites guidées en tuktuk'
+        image: tuktuk.jpg
+        link: 'http://www.tuktukmarseille-circuits-touristiques.fr/'
     -
         name: MassiliaCar
         category: Transportation
-        text: 'Group visits with imposed routes and schedules dont suit you ? MassiliaCar is exactly what you need !! Our team provides you with vehicles which use an interactive system enabling you to discover the citys emblematic sights and places.'
-        image: le-concept.jpg
+        text: 'Véhicules insolites avec itinéraires touristiques intégrés'
+        image: massiliacar.jpg
         link: 'http://massiliacar.fr/en/'
+    -
+        name: 'My Sail'
+        category: Transportation
+        text: 'Location de voilier et excursions en mer'
+        image: mysail.jpg
+        link: 'http://www.my-sail.net/'
+    -
+        name: 'E bike'
+        category: Transportation
+        text: 'Circuits guidés en vélo éléctrique'
+        image: ebike.png
+        link: 'http://www.ebiketours.fr/'
+    -
+        name: 'Provence Gourmet'
+        category: Activity
+        text: 'Cours de cuisine provençale'
+        image: provencegourmet.jpg
+        link: 'http://www.provence-gourmet.fr/fr/'
 ---
 
 # Partners

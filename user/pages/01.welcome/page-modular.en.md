@@ -1,6 +1,7 @@
 ---
 title: Welcome
 body_classes: page-welcome
+visible: false
 content:
     order:
         dir: asc

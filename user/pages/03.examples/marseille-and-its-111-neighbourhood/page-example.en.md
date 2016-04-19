@@ -1,11 +1,11 @@
 ---
-title: 'Marseille and its 111 neighbourhood'
+title: 'Marseille and its 111 neighbourhoods'
 body_classes: page-example
 taxonomy:
     tag:
         - tour
 blurb: 'Marseille is made of 111 neighborhoods, each one different from the last.'
-image: IMG_6601.JPG
+image: IMG_2796.JPG
 ---
 
 **Let me be your private guide for an authentic experience of the city, a visit of its must-see treasures as well as its untold scenes and secrets.**

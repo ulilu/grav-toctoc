@@ -2,6 +2,7 @@
 title: Bienvenue
 body_classes: page-welcome
 slug: bienvenue
+visible: false
 content:
     order:
         dir: asc

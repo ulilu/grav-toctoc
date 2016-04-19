@@ -1,0 +1,14 @@
+enabled: true
+from: toctocmarseille@gmail.com
+from_name: 'Laurianne Collange'
+to: uli.straub@kontinui.de
+to_name: uli
+mailer:
+  engine: smtp
+  smtp:
+    server: localhost
+    port: 587
+    encryption: starttls
+    user: toctoc-uli@peacock.uberspace.de
+    password: 
+content_type: text/html
