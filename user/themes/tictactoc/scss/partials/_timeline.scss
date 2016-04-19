@@ -46,7 +46,7 @@
     vertical-align: middle;
     text-align: center;
     // color: #9B2E36;
-    color: #8EBDD4;
+    color: $color-midblue;
   }
 
   @media only screen and (min-width: 420px) {
@@ -242,7 +242,7 @@
     font-size: 18px;
     z-index: 10;
     margin: 12px 0 6px;
-    border-bottom: 1px solid #8EBDD4;
+    border-bottom: 1px solid $color-midblue;
     color: inherit;
     
     &:hover {
@@ -291,7 +291,7 @@
 
     a {
       font-size: 21px;
-      border-bottom: 2px solid #8EBDD4;
+      border-bottom: 2px solid $color-midblue;
     }
   }
 
@@ -330,7 +330,7 @@
         position: relative;
         left: -30px;
         margin-right: -21px;
-        color: #8EBDD4;
+        color: $color-midblue;
       }
     }
   }
@@ -391,7 +391,7 @@
       z-index: 2;
       width: auto;
       margin: 0 0 -60px;
-      border-bottom: 2px solid #8EBDD4;
+      border-bottom: 2px solid $color-midblue;
       
       &:before {
         display: inline;

@@ -97,12 +97,12 @@
   
   &:hover,
   a:hover & {
-    background: #E47836;
+    background: $color-orange0-5;
   }
 
   &:active,
   a:active:hover & {
-    border-top: 3px solid #F1E4C6; // sand;
+    border-top: 3px solid $color-greywalls1; // sand;
     border-bottom: 0;
   }
 }
@@ -119,7 +119,7 @@
 
   &:active,
   a:active:hover & {
-    border-top: 3px solid #F1E4C6; // sand;
+    border-top: 3px solid $color-greywalls1; // sand;
     border-bottom: 0;
   }
 }
@@ -130,7 +130,7 @@
 
   &:active,
   a:active:hover & {
-    border-top: 3px solid #FFF; // sand;
+    border-top: 3px solid #FFF;
   }
 }
 
@@ -145,16 +145,13 @@
   z-index: 2;
   width: 60px;
   height: 60px;
-  // border: 2px solid #F1E4C6; // sand;
-  border-bottom: 3px solid #2D274A;
+  background: $color-lavender-light;
+  border-bottom: 3px solid $color-lavender-dark;
   border-radius: 6px;
-  background: #736E8A;
-  // background-image: linear-gradient(to bottom, #736E8A, #504A6D);
   transition: background ease-in 0.1s;
 
   &.reverse {
-    // background: none;
-    background: #736E8A;
+    background: $color-lavender-light;
   }
 
   &:after {
@@ -169,23 +166,21 @@
     font-size: 54px;
     vertical-align: middle;
     text-align: center;
-    // color: #F1E4C6; // sand;
-    color: #EFE8D8;
+    color: $color-greywalls2;
   }
 
   &.reverse:after {
     content: "◄";
-    color: #F1E4C6; // sand;
+    color: $color-greywalls2;
     left: -2px;
   }
   
   &:hover {
-    background: #F1E4C6; // sand;
+    background: $color-greywalls2;
   }
 
   &:hover:after {
-    // color: #6E6D85;
-    color: #504A6D;
+    color: $color-lavender;
     position: relative;
     display: inline-block;
   }
@@ -193,7 +188,7 @@
   &:active {
     background: #fff;
     border-bottom: none;
-    border-top: 3px solid #504A6D;
+    border-top: 3px solid $color-lavender;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }

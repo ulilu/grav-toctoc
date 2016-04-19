@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------------------*\
+    PAGE: About
+\*---------------------------------------------------------------------------*/
+
+
+.page-about {
+  background: #87A6B0; // bluegrey
+  background: $color-greywalls1;  // sand;
+  background: $color-greywalls2;  //  sandbeige
+  background: $color-turq4;
+  
+  h1 {
+    color: $color-logo0;
+  }
+}
+
+
+/*------------------------------------*\
+  Partner cards (on About page)
+\*------------------------------------*/
+
+.block--partner {
+  background: $color-turq2;
+  
+  h1 {
+    color: $color-white;
+  }
+}
+
+.card--partner {
+  background: $color-turq4;
+
+  @media only screen and (min-width: 536px) {
+    min-height: 360px;
+  }
+
+  @media only screen and (min-width: 536px) {
+    min-height: 340px;
+  }
+
+  img {
+    height: 200px;
+    min-height: 200px;
+  }
+}

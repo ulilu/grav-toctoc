@@ -1,0 +1,87 @@
+/*---------------------------------------------------------------------------*\
+    PAGE: Pricing
+\*---------------------------------------------------------------------------*/
+
+
+.page-pricing {
+  background: $color-greywalls1;  // sand;
+  background: $color-greywalls2;  //  sandbeige
+}
+
+
+.block--pricing {
+  margin-bottom: 0;
+
+  @media only screen and (min-width: 800px) {
+    padding-bottom: 42px;
+  }
+}
+
+.cell-pricing {
+  background: #fff;
+  border-bottom: 12px solid $color-greywalls2;
+  margin: 0 -24px 18px;
+  
+  &:last-of-type {
+    border-bottom: 0;    
+  }
+
+  @media only screen and (min-width: 480px) {
+    margin: 0 0 18px;
+  }
+
+  @media only screen and (min-width: 800px) {
+    padding: 24px 30px;
+    border-bottom: 0;
+    border-right: 12px solid $color-greywalls2;
+
+    &:last-of-type {
+      border-right: 0;
+      border-left: 12px solid $color-greywalls2;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    border-right: 18px solid $color-greywalls2;
+
+    &:last-of-type {
+      border-left: 18px solid $color-greywalls2;
+    }
+  }
+}
+
+
+.checklist {
+
+  li {
+  color: #444;
+  line-height: 27px;
+  padding: 6px 0;
+  border-bottom: 2px solid $color-greywalls2;
+  
+    &.list-total {
+      margin-top: -11px;
+      font-family: $font-semibold;
+      font-size: 24px;
+      list-style-type: none;
+      padding: 15px 0 9px 27px;
+      border-top-color: $color-greywalls0;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-bottom-color: $color-greywalls0;
+      border-bottom-style: double;
+      border-bottom-width: 6px;
+      background: $color-greywalls3;
+    }
+  }
+
+  &.color-red3 .fa:before {
+    color: $color-red3;
+  }
+
+  &.color-orange1 .fa:before {
+    color: $color-orange1;
+  }
+
+
+}

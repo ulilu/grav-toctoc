@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
      *  Image row images on example page
      */
     // assign HTMLCollection with parents of images with objectFit to variable
-    var container = document.querySelectorAll('figure a, .hero-bg, .card__img');
+    var container = document.querySelectorAll('figure a, .hero-bg, .card__img, .cell__img');
     
     // Loop through HTMLCollection
     for(var i = 0; i < container.length; i++) {

@@ -14,8 +14,7 @@
   vertical-align: top;
   
   > *:last-child {
-    margin-bottom: 0;
-    // padding-bottom: 0;  // difficult: might also be applied to a <a>-button-element
+    margin-bottom: 0 !important;
   }
 
   p {
@@ -26,6 +25,9 @@
     margin-bottom: 18px;
   }
 
+  /*
+   *  Integration of Font Awesome icons
+   */
   h3.fa:before {
     position: relative;
     top: 0;
@@ -37,23 +39,24 @@
     padding: 0;
     margin: -6px 6px 0 0;
     border-radius: 50%;
-    // background: #EFE8D8;
-    // color: #B2A892;
-    // color: #444;
   }
 }
 
 
-.cell-padded {
+/*------------------------------------*\
+  on PAGES: Example, Service, About, Contact
+\*------------------------------------*/
+
+.cell-padded,
+.cell-feature,
+.cell-info {
   padding: 24px;
 }
 
 
 .cell-feature {
-  padding: 24px;
   color: #fff;
-  // background: #18b8a0;
-  background: #B2A892; // darkbeige
+  background: $color-darkbeige;
   
   h1, h2, h3, h4, h5, h6 {
     font-family: $font-semibold;
@@ -70,17 +73,15 @@
 
 
 .cell-info {
-  padding: 24px;
-  background: #D7CAAD; // midbeige
+  background: $color-greywalls0;
   
   h3.fa:before {
-    background: #EFE8D8;
+    background: $color-greywalls2;
   }
 }
 
 
 .cell-image {
-  // margin: 0 !important;
   
   img {
     width: 100%;
@@ -93,13 +94,11 @@
 
 .cell-feature,
 .cell-info {
-
   margin: 0 -24px;
   
   @media only screen and (min-width:480px) {
     margin: 0 -30px;
   }
-
   @media only screen and (min-width:650px) {
     margin: 0;
   }
