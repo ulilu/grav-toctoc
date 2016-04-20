@@ -1,8 +1,8 @@
 <a class="card  width-33" href="{{ page.url }}">
 
 	<div class="card__img">
-		<small class="card__badge">{% for type in page.taxonomy.example_type %}{{ type }}{% endfor %}</small>
 		{{ page.media[page.header.image].cropResize(800).html(page.title, page.title ,page.header.imagealign) }}
+		<small class="card__badge">{% for type in page.taxonomy.example_type %}{{ type }}{% endfor %}</small>
 	</div>
 	<div class="card__info">
 		<h3>{{ page.title }}</h3>
