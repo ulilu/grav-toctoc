@@ -292,7 +292,7 @@
       line-height: 36px;
     }
 
-    a {
+    .link--mailto {
       font-size: 21px;
       border-bottom: 2px solid $color-midblue;
     }
@@ -320,7 +320,7 @@
       line-height: 42px;
     }
 
-    a {
+    .link--mailto {
       left: 24px;
       font-size: 30px;
       padding: 6px;
@@ -385,7 +385,7 @@
       line-height: 30px;
     }
 
-    a {
+    .link--mailto {
       position: absolute;
       display: table-cell;
       top: 42px;
