@@ -1820,10 +1820,10 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*------------------------------------*\ Instagram
 \*------------------------------------*/
-.block--instagram { background: #fff; background: #b05031; background: #00aabd; padding-bottom: 24px; }
+.block--instagram { background: #fff; background: #b05031; background: #00aabd; padding: 0; }
 
 .instagram-photos { list-style-type: none; margin-bottom: 0; }
-.instagram-photos li { display: inline-block; width: calc((100% - 36px) / 8); overflow: hidden; margin: 0; }
+.instagram-photos li { display: inline-block; width: calc(100% / 8); overflow: hidden; margin: 0; }
 .instagram-photos li a { display: block; }
 .instagram-photos li img { width: 100%; max-height: 120px; object-fit: cover; }
 

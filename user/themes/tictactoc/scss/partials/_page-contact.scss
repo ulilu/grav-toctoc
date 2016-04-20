@@ -36,7 +36,7 @@
   background: #fff;
   background: $color-rouille1;
   background: $color-turq1;
-  padding-bottom: 24px;
+  padding: 0;
 }
 
 .instagram-photos {
@@ -45,7 +45,7 @@
   
   li {
     display: inline-block;
-    width: calc((100% - 36px) / 8);
+    width: calc(100% / 8);
     overflow: hidden;
     margin: 0;
     
