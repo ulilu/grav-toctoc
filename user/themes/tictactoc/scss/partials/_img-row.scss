@@ -269,6 +269,25 @@ h3.bullet-headline {
 }
 
 
+h2.bullet-headline {
+  height: auto;
+  min-height: 48px;
+  margin-bottom: 6px;
+  margin-top: 0;
+  
+  &:before {
+    top: -8px;
+  }
+
+  &:after {
+    top: -12px;
+  }
+
+  & + p {
+    text-indent: 0;
+  }
+}
+
 /*------------------------------------*\
   General bullet element 
   Use with .fa-(symbol) or .bullet-number, 

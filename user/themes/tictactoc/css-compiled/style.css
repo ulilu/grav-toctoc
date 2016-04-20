@@ -1245,6 +1245,11 @@ h2.bullet-headline { height: 48px; line-height: 30px !important; margin-bottom: 
 
 h3.bullet-headline { height: 30px; line-height: 30px !important; margin-bottom: 12px; }
 
+h2.bullet-headline { height: auto; min-height: 48px; margin-bottom: 6px; margin-top: 0; }
+h2.bullet-headline:before { top: -8px; }
+h2.bullet-headline:after { top: -12px; }
+h2.bullet-headline + p { text-indent: 0; }
+
 /*------------------------------------*\ General bullet element  Use with .fa-(symbol) or .bullet-number,  to set the content for the ":before"-element 
 \*------------------------------------*/
 .bullet { /* Coloured placemarker background */ }
