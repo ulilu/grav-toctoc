@@ -280,6 +280,7 @@
   }
 
   &:hover {
+    text-decoration: none;
 
     .card__img {
       background-size: 110% !important; // only for IE

@@ -12,7 +12,8 @@
   cursor: pointer;
   border: none;
   
-  &:focus {
+  &:hover {
+    text-decoration: none;
   }
   
   * {

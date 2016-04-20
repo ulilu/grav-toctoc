@@ -280,7 +280,7 @@ a { color: #3e0000; text-decoration: none; }
 a:hover { color: #3e0000; text-decoration: underline; }
 a:active { color: #3e0000; }
 
-h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, .header a:hover, .header a:active, .card a:hover, .card a:active { text-decoration: none; }
+h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, .header a:hover, .header a:active { text-decoration: none; }
 
 b, strong { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; }
 
@@ -974,12 +974,14 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .card .card__img img { transition: all .4s ease-out; transform: scale(1); transform-origin: 50% 100%; }
 .card:before { content: ""; display: block; position: absolute; z-index: 1; width: 100%; height: 100%; opacity: 0; border-radius: 6px; background: #fff; transition: opacity .4s ease-out; }
 .card:hover:before { opacity: 1; }
+.card:hover { text-decoration: none; }
 .card:hover .card__img { background-size: 110% !important; }
 .card:hover .card__img img { transform: scale(1.1); transform-origin: 50% 100%; /* pan towards bottom of image */ }
 
 /*---------------------------------------------------------------------------*\ General button element Can be applied to <a>, <input> and <button> elements Needs respective styles for each tag
 \*---------------------------------------------------------------------------*/
 .btn { position: relative; display: inline-block; transition: background ease-in 0.1s; cursor: pointer; border: none; }
+.btn:hover { text-decoration: none; }
 .btn * { display: inline-block; vertical-align: middle; }
 .btn .fa { margin-right: 9px; font-size: inherit; font-style: normal !important; }
 
@@ -1409,8 +1411,8 @@ h2.bullet-headline + p { text-indent: 0; }
 .timeline-row__info h2 { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; line-height: 30px; margin-bottom: 12px; text-indent: 18px; }
 .timeline-row__info h2:before { display: none !important; }
 .timeline-row__info p { color: #666; margin: 0; font-size: 16px; line-height: 24px; }
-.timeline-row__info a { display: inline-block; position: relative; top: 3px; left: 0; vertical-align: middle; font-size: 18px; z-index: 10; margin: 12px 0 6px; border-bottom: 1px solid #8EBDD4; color: inherit; }
-.timeline-row__info a:hover { color: #3e0000; border-bottom: 2px solid currentColor; background: #fff; }
+.timeline-row__info .link--mailto { display: inline-block; position: relative; top: 3px; left: 0; vertical-align: middle; font-size: 18px; z-index: 10; margin: 12px 0 6px; border-bottom: 1px solid #8EBDD4; color: #504A6D; }
+.timeline-row__info .link--mailto:hover { color: #312c4a; text-decoration: none; border-bottom: 2px solid currentColor; background: #fff; background: #CDE5F1; }
 @media only screen and (min-width: 420px) { .timeline-row__info { margin-left: 75px; padding: 18px; }
   .timeline-row__info:after { content: ''; position: absolute; right: 100%; top: 15px; width: 0; height: 0; border-width: 15px 15px 15px 0; border-style: solid; border-color: transparent #fff; }
   .timeline-row__info h2 { text-indent: 0; }

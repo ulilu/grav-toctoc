@@ -233,7 +233,7 @@
   }
 
   // Email-Link & pseudo-element arrow
-  a {
+  .link--mailto {
     display: inline-block;
     position: relative;
     top: 3px;
@@ -243,12 +243,15 @@
     z-index: 10;
     margin: 12px 0 6px;
     border-bottom: 1px solid $color-midblue;
-    color: inherit;
+    color: $color-lavender2;
     
     &:hover {
-      color: $color-logo1;
+      // color: $color-logo1;
+      color: $color-lavender1;
+      text-decoration: none;
       border-bottom: 2px solid currentColor;
       background: #fff;
+      background: $color-skyblue5;
     }
   }
 
