@@ -1800,7 +1800,7 @@ h2.bullet-headline + p { text-indent: 0; }
 /*---------------------------------------------------------------------------*\ PAGE: About
 \*---------------------------------------------------------------------------*/
 .page-about { background: #87A6B0; background: #F1E4C6; background: #EFE8D8; background: #caeef2; }
-.page-about h1 { color: #00aabd; }
+.page-about h1 { color: #00aabd; color: #007987; }
 
 /*------------------------------------*\ Partner cards (on About page)
 \*------------------------------------*/
@@ -1830,7 +1830,7 @@ h2.bullet-headline + p { text-indent: 0; }
 /*------------------------------------*\ Contactform
 \*------------------------------------*/
 .block--contactform { background: #fd9f7f; background: #79D4DF; border-top: 12px solid #fff; border-bottom: 12px solid #f77d53; border-bottom: 12px solid #45bac4; }
-.block--contactform h2 { color: #fff; }
+.block--contactform h2 { color: #fff; color: #007987; }
 
 /*
 //	=========================================================================
