@@ -280,7 +280,7 @@ a { color: #3e0000; text-decoration: none; }
 a:hover { color: #3e0000; text-decoration: underline; }
 a:active { color: #3e0000; }
 
-h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, .card a:hover, .card a:active { text-decoration: none; }
+h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, .header a:hover, .header a:active, .card a:hover, .card a:active { text-decoration: none; }
 
 b, strong { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; }
 
