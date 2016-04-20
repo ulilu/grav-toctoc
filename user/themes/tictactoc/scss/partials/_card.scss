@@ -302,7 +302,6 @@
   font-size: 18px;
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
   transform: rotate(45deg);
   padding: 4px 0 3px;
   background: $color-logo0;
@@ -318,11 +317,11 @@
   
   &[data-exampletype="Endroit"],
   &[data-exampletype="Locality"] {
-    background: $color-blue0;
+    background: linear-gradient(to right, $color-blue1, $color-blue0);
   }
 
   &[data-exampletype="Circuit"],
   &[data-exampletype="Tour"] {
-    background: $color-green0;
+    background: linear-gradient(to right, $color-green1, $color-green0);
   }
 }
