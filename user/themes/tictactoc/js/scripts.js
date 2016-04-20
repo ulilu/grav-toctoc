@@ -138,7 +138,7 @@ $(document).ready(function() {
   //on scolling, show/animate timeline blocks when enter the viewport
   $(window).on('scroll', function(){
     $timeline_block.each(function(){
-      if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.90 && $(this).find('> p, .cta-headline').hasClass('is-hidden') ) {
+      if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.90 && $(this).find('> p, .headline--cta').hasClass('is-hidden') ) {
         $(this).find('> p, .timeline-row__info, .timeline-row__info, .headline--cta').removeClass('is-hidden').addClass('bounce-in');
       }
     });
