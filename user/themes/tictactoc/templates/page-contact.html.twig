@@ -10,20 +10,19 @@
 
 </div>
 
+<div class="block  block--stretch  block--contactform">
+    <div class="block">
+        <h2>{{ page.header.formtitle }}</h2>
+        {% include "forms/form.html.twig" %}
+    </div>
+</div>
+
 <div class="block  block--stretch block--instagram">
 
     <div class="block">
         {{ instagram_feed() }}
     </div>
 
-</div>
-
-
-<div class="block  block--stretch  block--contactform">
-    <div class="block">
-        <h2>{{ page.header.formtitle }}</h2>
-        {% include "forms/form.html.twig" %}
-    </div>
 </div>
 
 {% endblock %}
