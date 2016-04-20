@@ -12,6 +12,7 @@
     // background: linear-gradient(to bottom, $color-greywalls1, #EFE8D8);
     background: linear-gradient(to top, $color-warmsand3, $color-warmsand2);
     background: linear-gradient(to top, $color-warmsand2, #FFE6A8);
+    background: $color-greywalls2;
     // border-bottom: 12px solid #D7CAAD;
     padding-top: 0;
     
@@ -41,7 +42,7 @@
     background: rgba(61, 49, 50, 0.85);
     padding: 12px 0;
     transform: none;
-    // mix-blend-mode: hard-light;
+    mix-blend-mode: hard-light;
     
     @media only screen and (min-width: 750px) {
       padding: 18px 0;

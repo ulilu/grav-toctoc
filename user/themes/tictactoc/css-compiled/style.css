@@ -1739,12 +1739,12 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ PAGE: Service
 \*---------------------------------------------------------------------------*/
-.page-service .block--service { overflow: visible; background: linear-gradient(to top, #FFF3D3, #FCE8B7); background: linear-gradient(to top, #FCE8B7, #FFE6A8); padding-top: 0; }
+.page-service .block--service { overflow: visible; background: linear-gradient(to top, #FFF3D3, #FCE8B7); background: linear-gradient(to top, #FCE8B7, #FFE6A8); background: #EFE8D8; padding-top: 0; }
 @media only screen and (min-width: 1100px) { .page-service .block--service { padding-top: 30px; } }
 .page-service .icon--service { margin: 0 18px; }
 @media only screen and (min-width: 600px) { .page-service .icon--service { margin: 0 24px; } }
 @media only screen and (min-width: 1200px) { .page-service .icon--service { margin: 0 30px 0 0; } }
-.page-service .stage__title { left: auto; bottom: 0; width: 100%; max-width: 100%; background: rgba(61, 49, 50, 0.85); padding: 12px 0; transform: none; }
+.page-service .stage__title { left: auto; bottom: 0; width: 100%; max-width: 100%; background: rgba(61, 49, 50, 0.85); padding: 12px 0; transform: none; mix-blend-mode: hard-light; }
 @media only screen and (min-width: 750px) { .page-service .stage__title { padding: 18px 0; } }
 @media only screen and (min-width: 1200px) { .page-service .stage__title { text-indent: calc((100% - 1140px) / 2); max-width: calc(((100vw - 1140px) / 2) + 500px); border-top-right-radius: 30px; } }
 .page-service .stage__title * { vertical-align: middle; }
