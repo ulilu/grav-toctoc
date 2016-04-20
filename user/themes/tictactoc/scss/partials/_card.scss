@@ -326,25 +326,3 @@
     background: $color-green0;
   }
 }
-
-
-  position: absolute;
-  z-index: 1;
-  width: 150px;
-  right: -43px;
-  top: 19px;
-  font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  transform: rotate(45deg);
-  padding: 4px 0 3px;
-  background: #00aabd;
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* text-transform: uppercase; */
-  
-}
