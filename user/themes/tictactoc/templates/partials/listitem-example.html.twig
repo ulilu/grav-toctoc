@@ -2,7 +2,7 @@
 
 	<div class="card__img">
 		{{ page.media[page.header.image].cropResize(800).html(page.title, page.title ,page.header.imagealign) }}
-		<small class="card__badge">{{ page.taxonomy.example_type }}</small>
+		<small class="card__badge">{{ page.taxonomy.example_type|first }}</small>
 	</div>
 	<div class="card__info">
 		<h3>{{ page.title }}</h3>
