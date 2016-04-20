@@ -1453,9 +1453,9 @@ h2.bullet-headline + p { text-indent: 0; }
 .timeline-row:last-of-type { padding-bottom: 18px; margin-bottom: 18px !important; }
 @media only screen and (min-width: 1000px) { .timeline-row:last-of-type { padding-bottom: 0; margin-bottom: 30px !important; } }
 
-@media only screen and (min-width: 1000px) { .cta-headline { /* Force Hardware Acceleration in WebKit */ -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden; }
-  .cta-headline.is-hidden { visibility: hidden; }
-  .cta-headline.bounce-in { visibility: visible; animation: cd-bounce-1 .6s; } }
+@media only screen and (min-width: 1000px) { .headline--cta { /* Force Hardware Acceleration in WebKit */ -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden; }
+  .headline--cta.is-hidden { visibility: hidden; }
+  .headline--cta.bounce-in { visibility: visible; animation: cd-bounce-1 .6s; } }
 @keyframes cd-bounce-1 { 0% { opacity: 0; transform: scale(0.5); }
   60% { opacity: 1; transform: scale(1.2); }
   100% { transform: scale(1); } }
