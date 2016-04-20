@@ -257,9 +257,9 @@
 }
 
 h2.bullet-headline{
-  height: 48px;
-  line-height: 30px !important;
-  margin-bottom: 0px;
+  // height: 48px;
+  // line-height: 30px !important;
+  // margin-bottom: 0px;
 }
 
 h3.bullet-headline {
@@ -276,11 +276,11 @@ h2.bullet-headline {
   margin-top: 0;
   
   &:before {
-    top: -8px;
+    top: -11px;
   }
 
   &:after {
-    top: -12px;
+    top: -15px;
   }
 
   & + p {
