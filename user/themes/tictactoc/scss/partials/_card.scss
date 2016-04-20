@@ -291,3 +291,21 @@
     }
   }
 }
+
+.card__badge {
+  position: absolute;
+  z-index: 1;
+  width: 150px;
+  background: $color-logo0;
+  right: -40px;
+  top: 15px;
+  text-align: center;
+  transform: rotate(45deg);
+  font-family: Linotte-Bold;
+  color: #fff;
+  padding: 3px 0;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+}
