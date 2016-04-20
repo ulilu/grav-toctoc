@@ -910,6 +910,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 @media only screen and (min-width: 650px) { .cell-feature, .cell-info { margin: 0; } }
 
 @media only screen and (min-width: 800px) { .cell-feature, .cell-info, .cell-image, .cell-in-row { display: table-cell !important; width: 50%; padding-right: 24px; margin-bottom: 36px; }
+  .cell-feature:last-of-type:not(.cell-padded), .cell-info:last-of-type:not(.cell-padded), .cell-image:last-of-type:not(.cell-padded), .cell-in-row:last-of-type:not(.cell-padded) { padding-right: 0; }
   .cell-feature.cell-100, .cell-info.cell-100, .cell-image.cell-100, .cell-in-row.cell-100 { width: 100%; }
   .cell-feature.cell-80, .cell-info.cell-80, .cell-image.cell-80, .cell-in-row.cell-80 { width: 80%; }
   .cell-feature.cell-75, .cell-info.cell-75, .cell-image.cell-75, .cell-in-row.cell-75 { width: 75%; }

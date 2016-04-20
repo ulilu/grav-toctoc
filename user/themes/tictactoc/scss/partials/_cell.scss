@@ -117,8 +117,8 @@
     padding-right: 24px;
     margin-bottom: 36px;
     
-    &:last-of-type {
-      // padding-right: 0;  needed for what?
+    &:last-of-type:not(.cell-padded) {
+      padding-right: 0;
     }
 
     &.cell-100 { width: 100%;}
