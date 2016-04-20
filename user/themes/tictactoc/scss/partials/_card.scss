@@ -310,4 +310,18 @@
     backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  &:before {
+    content: attr(data-exampletype);
+  }
+  
+  [data-exampletype="Endroit"],
+  [data-exampletype="Locality"] {
+    background: $color-blue1;
+  }
+
+  [data-exampletype="Circuit"],
+  [data-exampletype="Tour"] {
+    background: $color-green1;
+  }
 }
