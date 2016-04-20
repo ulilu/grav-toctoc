@@ -5,11 +5,13 @@
 
 .page-contact {
   background: $color-rouille5;
+  background: $color-turq4;
 }
 
 .block--contactinfo {
   h1 {
     color: $color-rouille2;
+    color: $color-turq1;
   }
   
 }
@@ -33,6 +35,7 @@
 .block--instagram {
   background: #fff;
   background: $color-rouille1;
+  background: $color-turq1;
   padding-bottom: 24px;
 }
 
@@ -66,12 +69,15 @@
 
 .block--contactform {
   background: $color-rouille4;
+  background: $color-turq3;
   border-top: 12px solid #fff;
   border-bottom: 12px solid $color-rouille3;
+  border-bottom: 12px solid $color-turq2;
   
   h2 {
     color: #fff;
     color: $color-rouille1;
+    color: $color-turq1;
   }
 }
 
