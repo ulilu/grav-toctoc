@@ -126,11 +126,10 @@
       // background: linear-gradient(180deg, rgba(46, 34, 34, 0) 40%, #2E2222 80%);
       // background: #2E2222;
       // background: linear-gradient(to right, rgba(46,34,34,.9) 50%, rgba(45,33,33,0));
-      background: rgba(61, 49, 50, 0.85);
-      // background: rgba(0, 0, 0, 0.7);
+      // background: rgba(61, 49, 50, 0.85);
+      background: rgba(0, 0, 0, 0.7);
       transition: opacity 0.2s ease-in-out;
       opacity: 1;
-      mix-blend-mode: hard-light;
     }
 
     @media only screen and (min-width:800px) {
