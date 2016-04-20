@@ -1830,7 +1830,7 @@ h2.bullet-headline + p { text-indent: 0; }
 /*------------------------------------*\ Contactform
 \*------------------------------------*/
 .block--contactform { background: #fd9f7f; background: #79D4DF; border-top: 12px solid #fff; border-bottom: 12px solid #f77d53; border-bottom: 12px solid #45bac4; }
-.block--contactform h2 { color: #fff; color: #b05031; color: #00aabd; }
+.block--contactform h2 { color: #fff; }
 
 /*
 //	=========================================================================
