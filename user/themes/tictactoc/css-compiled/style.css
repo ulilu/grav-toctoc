@@ -1816,7 +1816,7 @@ h2.bullet-headline + p { text-indent: 0; }
 \*---------------------------------------------------------------------------*/
 .page-contact { background: #ffded2; background: #caeef2; }
 
-.block--contactinfo h1 { color: #e85827; color: #00aabd; }
+.block--contactinfo h1 { color: #e85827; color: #007987; }
 
 /*------------------------------------*\ Instagram
 \*------------------------------------*/
