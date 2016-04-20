@@ -24,8 +24,9 @@
 
         {% block javascripts %}
             {% do assets.add('jquery',101) %}
-            {% do assets.addJs('theme://js/fittext_uli.js') %} 
-            {% do assets.addJs('theme://js/scripts.js') %} 
+            {% do assets.addJs('theme://js/fittext_uli.js'), {group: 'bottom'} %} 
+            {% do assets.addJs('theme://js/scripts.js'), {group: 'bottom'} %} 
+            
             {#
             {% do assets.addJs('theme://js/jquery-migrate-1.2.1.js') %}
             {% do assets.addJs('theme://js/superfish.js') %}
@@ -90,4 +91,8 @@
         <div class="scrolltop  js-scrolltop"></div>
         
     </body>
+
+    {% block bottom %}
+        {{ assets.js('bottom') }}
+    {% endblock %}
 </html>
