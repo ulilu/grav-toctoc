@@ -978,7 +978,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .card:hover .card__img { background-size: 110% !important; }
 .card:hover .card__img img { transform: scale(1.1); transform-origin: 50% 100%; /* pan towards bottom of image */ }
 
-.card__badge { position: absolute; z-index: 1; width: 150px; right: -40px; top: 15px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; color: #fff; text-align: center; transform: rotate(45deg); padding: 3px 0; background: #00aabd; box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3); -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */ backface-visibility: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.card__badge { position: absolute; z-index: 1; width: 150px; right: -40px; top: 15px; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; color: #fff; text-align: center; transform: rotate(45deg); padding: 3px 0; background: #00aabd; box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3); -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */ backface-visibility: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 /*---------------------------------------------------------------------------*\ General button element Can be applied to <a>, <input> and <button> elements Needs respective styles for each tag
 \*---------------------------------------------------------------------------*/
