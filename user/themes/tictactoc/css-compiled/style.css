@@ -1777,13 +1777,13 @@ h2.bullet-headline + p { text-indent: 0; }
 .block--pricing { margin-bottom: 0; }
 @media only screen and (min-width: 800px) { .block--pricing { padding-bottom: 42px; } }
 
-.cell-pricing { background: #fff; border-bottom: 12px solid #EFE8D8; margin: 0 -24px 18px; }
+.cell-pricing { background: #fff; border-bottom: 12px solid #CDE5F1; margin: 0 -24px 18px; }
 .cell-pricing:last-of-type { border-bottom: 0; }
 @media only screen and (min-width: 480px) { .cell-pricing { margin: 0 0 18px; } }
-@media only screen and (min-width: 800px) { .cell-pricing { padding: 24px 30px; border-bottom: 0; border-right: 12px solid #EFE8D8; }
-  .cell-pricing:last-of-type { border-right: 0; border-left: 12px solid #EFE8D8; } }
-@media only screen and (min-width: 1000px) { .cell-pricing { border-right: 18px solid #EFE8D8; }
-  .cell-pricing:last-of-type { border-left: 18px solid #EFE8D8; } }
+@media only screen and (min-width: 800px) { .cell-pricing { padding: 24px 30px; border-bottom: 0; border-right: 12px solid #CDE5F1; }
+  .cell-pricing:last-of-type { border-right: 0; border-left: 12px solid #CDE5F1; } }
+@media only screen and (min-width: 1000px) { .cell-pricing { border-right: 18px solid #CDE5F1; }
+  .cell-pricing:last-of-type { border-left: 18px solid #CDE5F1; } }
 .cell-pricing .headline--service { padding: 0 0 12px; }
 .cell-pricing .byline--service { position: relative; left: -24px; top: -12px; width: calc(100% + 48px); height: 100%; color: #fff !important; padding: 24px; margin: 0; }
 @media only screen and (min-width: 800px) { .cell-pricing .byline--service { left: -30px; width: calc(100% + 60px); } }
