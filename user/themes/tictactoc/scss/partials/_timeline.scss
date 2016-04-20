@@ -242,16 +242,16 @@
     font-size: 18px;
     z-index: 10;
     margin: 12px 0 6px;
-    border-bottom: 1px solid $color-midblue;
+    border-bottom: 1px solid $color-skyblue4;
     color: $color-lavender2;
     
     &:hover {
       // color: $color-logo1;
       color: $color-lavender1;
       text-decoration: none;
-      border-bottom: 2px solid currentColor;
+      border-bottom: 2px solid $color-skyblue3;
       background: #fff;
-      background: $color-skyblue5;
+      background: $color-skyblue6;
     }
   }
 
