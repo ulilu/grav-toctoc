@@ -277,7 +277,7 @@ body { font-size: 18px; line-height: 27px; color: #444; font-family: Linotte-Lig
 p { margin: 0 0 30px; }
 
 a { color: #3e0000; text-decoration: none; }
-a:hover { color: #3e0000; }
+a:hover { color: #3e0000; text-decoration: underline; }
 a:active { color: #3e0000; }
 
 b, strong { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; }

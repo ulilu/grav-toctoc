@@ -67,6 +67,7 @@ a {
   &:hover {
     // @include text-shadow_w11(.75);
     color: $color-logo1;
+    text-decoration: underline;
   }
   &:active {
     color: $color-logo1;
