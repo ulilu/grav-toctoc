@@ -24,8 +24,8 @@
 
         {% block javascripts %}
             {% do assets.add('jquery',101) %}
-            {% do assets.addJs('theme://js/fittext_uli.js'), {group: 'bottom'}) %} 
-            {% do assets.addJs('theme://js/scripts.js'), {group: 'bottom'}) %} 
+            {% do assets.addJs('theme://js/fittext_uli.js', {group: 'bottom'}) %} 
+            {% do assets.addJs('theme://js/scripts.js', {group: 'bottom'}) %} 
 
             {#
             {% do assets.addJs('theme://js/jquery-migrate-1.2.1.js') %}
