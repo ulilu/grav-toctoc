@@ -1473,7 +1473,7 @@ h2.bullet-headline + p { text-indent: 0; }
 \*------------------------------------*/
 /*---------------------------------------------------------------------------*\ Modular Block: Call to action
 \*---------------------------------------------------------------------------*/
-.block--cta { border-top: 6px solid #fff; box-shadow: 0 -12px 0 rgba(255, 255, 255, 0.5), 0 4px 0 rgba(0, 0, 0, 0.1); background: #fff; z-index: 10; overflow: visible; }
+.block--cta { border-top: 6px solid #fff; box-shadow: 0 -12px 0 rgba(255, 255, 255, 0.5), 0 4px 0 rgba(0, 0, 0, 0.1); background: #fff; z-index: 10; }
 
 .headline--cta { position: relative; line-height: 48px; color: #504A6D; font-size: 28px; text-indent: 62px; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; margin-bottom: 12px; }
 .headline--cta:before { content: ""; display: inline-block; position: absolute; left: -10px; top: -15px; width: 90px; height: 100px; margin-right: 18px; vertical-align: middle; background: url(../img/logo_icon.svg) no-repeat; background-size: 70%; }
