@@ -924,6 +924,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
   .cell-feature.cell-25, .cell-info.cell-25, .cell-image.cell-25, .cell-in-row.cell-25 { width: 25%; }
   .cell-feature.cell-20, .cell-info.cell-20, .cell-image.cell-20, .cell-in-row.cell-20 { width: 20%; } }
 
+@media only screen and (min-width: 800px) { .cell-in-row:last-of-type:not(.cell-padded) { padding-right: 0; } }
 /*---------------------------------------------------------------------------*\ Card - used on example.twig.html
 \*---------------------------------------------------------------------------*/
 .card { display: block; position: relative; float: left; border-radius: 6px; min-width: 224px; /* one card visible on iphone3 with 320px screenwidth*/ margin-bottom: 24px; width: 100% !important; background: #EFE8D8; box-shadow: 0 4px 0px 1px rgba(0, 0, 0, 0.1); transition: all 0.2s ease-in-out; }
