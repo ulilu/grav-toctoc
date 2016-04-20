@@ -1537,7 +1537,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ Modular Block: Services
 \*---------------------------------------------------------------------------*/
-.block--services { z-index: 1; background: linear-gradient(to top, #FFF3D3, #FCE8B7); }
+.block--services { z-index: 1; background: #FCE8B7; }
 
 /*------------------------------------*\ Services link
 \*------------------------------------*/
