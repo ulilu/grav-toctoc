@@ -1814,7 +1814,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ PAGE: Contact
 \*---------------------------------------------------------------------------*/
-.page-contact { background: #ffded2; background: #caeef2; }
+.page-contact { background: #ffded2; background: #caeef2; background: #EFE8D8; }
 
 .block--contactinfo h1 { color: #e85827; color: #007987; }
 
