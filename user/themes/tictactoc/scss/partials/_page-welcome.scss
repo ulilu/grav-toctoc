@@ -168,8 +168,18 @@
     background-position: left 3vw bottom -40px;
   }
 
+  p {
+  	font-size: 24px;
+		line-height: 160%;
+		color: #444;
+  }
+
   p:last-of-type {
   	margin-bottom: 0;
+  }
+
+  h2 {
+  	margin-top: 6px;
   }
 }
 
@@ -188,6 +198,7 @@
     width: calc(50% - 36px);
     margin: 72px 0 36px 36px;
     margin: 54px 18px 48px 72px;
+    margin: 42px 18px 36px 72px;
 
     &:before {
       content: "";
