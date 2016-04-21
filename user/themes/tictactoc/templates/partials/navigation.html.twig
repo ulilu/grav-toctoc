@@ -44,7 +44,7 @@
                             {% endfor %}
                         </ul>
 
-                        {% elseif page.children and page.menu == 'Examples' or 'Exemples' %}
+                        {% else if page.children and page.menu == 'Exemples' %}
 
                         <ul class="sub-nav">
                             {% for childpage in page.children %}
