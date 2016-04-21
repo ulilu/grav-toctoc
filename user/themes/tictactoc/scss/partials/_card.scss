@@ -317,11 +317,11 @@
   
   &[data-exampletype="Endroit"],
   &[data-exampletype="Locality"] {
-    background: linear-gradient(to right, $color-blue1, $color-blue0);
+    background: $color-blue1;
   }
 
   &[data-exampletype="Circuit"],
   &[data-exampletype="Tour"] {
-    background: linear-gradient(to right, $color-green1, $color-green0);
+    background: $color-green1;
   }
 }

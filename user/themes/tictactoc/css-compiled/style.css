@@ -980,8 +980,8 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 
 .card__badge { position: absolute; z-index: 1; width: 150px; right: -45px; top: 15px; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; color: #fff; text-align: center; transform: rotate(45deg); padding: 4px 0 3px; background: #00aabd; box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3); -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */ backface-visibility: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .card__badge:before { content: attr(data-exampletype); }
-.card__badge[data-exampletype="Endroit"], .card__badge[data-exampletype="Locality"] { background: linear-gradient(to right, #0b90ab, #097287); }
-.card__badge[data-exampletype="Circuit"], .card__badge[data-exampletype="Tour"] { background: linear-gradient(to right, #009c90, #06756d); }
+.card__badge[data-exampletype="Endroit"], .card__badge[data-exampletype="Locality"] { background: #0b90ab; }
+.card__badge[data-exampletype="Circuit"], .card__badge[data-exampletype="Tour"] { background: #009c90; }
 
 /*---------------------------------------------------------------------------*\ General button element Can be applied to <a>, <input> and <button> elements Needs respective styles for each tag
 \*---------------------------------------------------------------------------*/
