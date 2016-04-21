@@ -1709,7 +1709,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .page-welcome .block--about .block--headline { padding-top: 0; }
 @media only screen and (max-width: 1200px) { .page-welcome .block--about .block--headline { padding: 0 0 30px; } }
 .page-welcome .block--about .cell-image img { border: 12px solid; }
-.page-welcome .block--about p { line-height: 30px; margin-bottom: 30px; }
+.page-welcome .block--about p { line-height: 36px; margin-bottom: 18px; font-size: 21px; }
 @media only screen and (min-width: 1200px) { .page-welcome .block--about { /* Sardine icon */ }
   .page-welcome .block--about:after { opacity: .4; background-size: 320px; background-position: right 10vw bottom 40px; } }
 
