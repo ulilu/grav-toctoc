@@ -369,6 +369,15 @@
         padding: 0 0 30px;
       }
     }
+
+    .cell-image img {
+    	border: 12px solid;
+    }
+
+    p	{
+    	line-height: 30px;
+			margin-bottom: 30px;
+		}
     
     @media only screen and (min-width:1200px) {
 			/*
