@@ -168,9 +168,7 @@ $(window).load(function() {
 <div class="block block--examples  block--stretch">
 
     <div class="block">    
-        <h1>{{ page.title }}
-            {# {% if  %} #}
-        </h1>
+        <h1>{{ page.title }}</h1>
 
         {% for child in collection %}
             {% include 'partials/listitem-example.html.twig' with {'page':child, 'truncate':true} %}

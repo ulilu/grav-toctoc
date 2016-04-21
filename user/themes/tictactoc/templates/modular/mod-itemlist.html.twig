@@ -20,7 +20,7 @@
 	<div class="block{% if overflow %}--scroll{% endif %}">
 
 		{% if overflow %}<div class="block__scroll-wrapper">{% endif %}
-	  	{% for child in collection if not child.visible %}
+	  	{% for child in collection %}
 	    	{% include childtemplate with {'page':child, 'truncate':true } %}
 	  	{% endfor %}
   	{% if overflow %}</div>{% endif %}
