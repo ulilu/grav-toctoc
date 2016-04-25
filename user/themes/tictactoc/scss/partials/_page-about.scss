@@ -66,8 +66,11 @@
 
 .press-article {
   border-bottom: 2px solid $color-rouille4;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
   
   a {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
