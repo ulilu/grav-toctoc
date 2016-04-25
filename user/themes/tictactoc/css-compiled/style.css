@@ -1853,7 +1853,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .block--partner { border-top: 12px solid #fff; background: #45bac4; background: #c63641; }
 .block--partner h1 { color: #ffffff; }
 
-.card--partner { background: #caeef2; }
+.card--partner { background: #f8969e; }
 @media only screen and (min-width: 536px) { .card--partner { min-height: 360px; } }
 @media only screen and (min-width: 536px) { .card--partner { min-height: 340px; } }
 .card--partner img { height: 200px; min-height: 200px; }
