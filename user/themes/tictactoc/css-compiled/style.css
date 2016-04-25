@@ -1897,6 +1897,7 @@ h2.bullet-headline + p { text-indent: 0; }
 \*------------------------------------*/
 .block--contactform { background: #fd9f7f; background: #79D4DF; background: #79d4df; border-top: 12px solid #fff; border-bottom: 12px solid #f77d53; border-bottom: 12px solid #45bac4; border-bottom: 12px solid #45bac4; }
 .block--contactform h2 { color: #fff; color: #b05031; color: #00aabd; color: #007987; color: #007987; }
+.block--contactform .formline--textarea { margin-bottom: 0; }
 
 /*
 //	=========================================================================
