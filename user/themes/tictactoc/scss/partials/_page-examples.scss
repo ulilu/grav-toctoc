@@ -15,14 +15,16 @@
   }
 
   h1 {
-    color: $color-lavender5;
+    color: $color-lavender6;
   }
 
   .cell--intro {
     position: relative;
-    color: $color-lavender4;
-    background: $color-lavender1;
     z-index: 1;
+    color: $color-lavender5;
+    padding: 18px 24px;
+    margin-bottom: 36px;
+    background: $color-lavender3;
     
     &.tt-olivier:after {
       display: none;
