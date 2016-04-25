@@ -1845,12 +1845,12 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ PAGE: About
 \*---------------------------------------------------------------------------*/
-.page-about { background: #87A6B0; background: #F1E4C6; background: #EFE8D8; background: #ffded2; }
-.page-about h1 { color: #00aabd; color: #007987; color: #9B2E36; color: #b05031; }
+.page-about { background: #87A6B0; background: #F1E4C6; background: #EFE8D8; background: #ffded2; background: #fff; }
+.page-about h1 { color: #00aabd; color: #007987; color: #9B2E36; color: #e15f33; }
 
 /*------------------------------------*\ Partner cards (on About page)
 \*------------------------------------*/
-.block--partner { border-top: 12px solid #fff; background: #45bac4; background: #c63641; background: #e15f33; }
+.block--partner { border-top: 12px solid #fff; background: #45bac4; background: #c63641; background: #f77d53; }
 .block--partner h1 { color: #ffffff; }
 
 .card--partner { background: #ffdee0; background: #fdf0eb; }
