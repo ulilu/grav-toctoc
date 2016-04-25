@@ -923,7 +923,6 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
  Use in conjunction with the single properties classes like "width-50" ==> Not really necessary i think - table-cells will automatically share the available width, no?
 \*---------------------------------------------------------------------------*/
 .cell { display: block; vertical-align: top; /* Integration of Font Awesome icons */ }
-.cell > *:last-child { margin-bottom: 0 !important; }
 .cell img { max-width: 100%; }
 .cell p { margin-bottom: 18px; }
 .cell h3 { margin-bottom: 18px; }
@@ -932,6 +931,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 /*------------------------------------*\ on PAGES: Example, Service, About, Contact
 \*------------------------------------*/
 .cell-padded, .cell-feature, .cell-info { padding: 24px; }
+.cell-padded > *:last-child, .cell-feature > *:last-child, .cell-info > *:last-child { margin-bottom: 0 !important; }
 
 .cell-feature { color: #fff; background: #B2A892; }
 .cell-feature h1, .cell-feature h2, .cell-feature h3, .cell-feature h4, .cell-feature h5, .cell-feature h6 { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
