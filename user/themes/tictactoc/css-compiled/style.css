@@ -1850,7 +1850,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*------------------------------------*\ Partner cards (on About page)
 \*------------------------------------*/
-.block--partner { border-top: 12px solid #fff; background: #45bac4; background: #c63641; background: #f77d53; }
+.block--partner { padding-bottom: 12px; border-top: 12px solid #fff; border-bottom: 12px solid #e15f33; background: #45bac4; background: #c63641; background: #f77d53; }
 .block--partner h1 { color: #ffffff; }
 
 .card--partner { background: #ffdee0; background: #fdf0eb; }
