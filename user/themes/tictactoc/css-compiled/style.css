@@ -1256,7 +1256,7 @@ textarea:focus::-webkit-input-placeholder, input[type=text]:focus::-webkit-input
 
 .row-with-title figcaption { position: relative; overflow: hidden; display: table-cell; color: #fff; background: #00aabd; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: 1px; line-height: 115%; vertical-align: top; padding: 12px 15px; margin: 0; z-index: 1; }
 @media only screen and (min-width: 750px) { .row-with-title figcaption { padding: 24px 18px 12px; line-height: 105%; } }
-.row-with-title figcaption.tt:after { background-size: 80% !important; background-position: center bottom 12px !important; opacity: .3; left: 0; top: 0; z-index: -1; -webkit-filter: invert(100%); filter: invert(100%); }
+.row-with-title figcaption.tt:after { background-size: 80% !important; background-position: center bottom 12px !important; opacity: .4; left: 0; top: 0; z-index: -1; -webkit-filter: invert(100%); filter: invert(100%); }
 .row-with-title figcaption.tt-inverted:after { -webkit-filter: invert(0); filter: invert(0); }
 
 /*---------------------------------------------------------------------------*\ Corresponding Text row with table-cell-spacing:  Each image gets an equal width
