@@ -53,28 +53,23 @@
 }
 
 .press-article {
-  border-top: 2px solid $color-grey1;
+  border-top: 2px solid $color-grey3;
   padding-top: 36px;
-  margin-bottom: 24px;
-  
-  .cell a {
-    display: inline-block;
-    text-align: center;
-  }
+  margin-bottom: 30px;
 
   h3 a {
     padding-right: 24px;
   }
+}
 
-  .js-hide-info,
-  .js-info-to-toggle {
-    display: none;
-  }
+.press-article__img {
+  display: inline-block;
+  text-align: center;
 }
 
 .press-article__date {
   display: inline-block;
   white-space: nowrap;
   font-size: 18px;
-  color: $color-grey0;
+  color: $color-grey1;
 }

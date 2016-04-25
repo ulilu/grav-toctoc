@@ -389,3 +389,17 @@
 .color-rouge4     { color: $color-rouge4; }
 .color-rouge5     { color: $color-rouge5; }
 .color-rouge6     { color: $color-rouge6; }
+
+
+
+/******************************************************************************
+*   Javascript classes
+*   Important: only for setting initial display-values
+*   No layout styles here!
+******************************************************************************/
+
+
+.js-hide-info,
+.js-info-to-toggle {
+  display: none;
+}
