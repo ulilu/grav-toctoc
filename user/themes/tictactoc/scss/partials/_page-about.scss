@@ -4,18 +4,9 @@
 
 
 .page-about {
-  background: #87A6B0; // bluegrey
-  background: $color-greywalls1;  // sand;
-  background: $color-greywalls2;  //  sandbeige
-  // background: $color-turq4;
-  // background: $color-rouge5;
   background: $color-rouille5;
-  // background: #fff;
   
   h1 {
-    color: $color-logo0;
-    color: $color-turq0;
-    color: $color-rouge1;
     color: $color-rouille2;
   }
 }
@@ -27,10 +18,8 @@
 
 .block--partner {
   padding-bottom: 12px;
-  border-top: 12px solid #fff;
+  border-top: 12px solid $color-white;
   border-bottom: 12px solid $color-rouille2;
-  background: $color-turq2;
-  background: $color-rouge2;
   background: $color-rouille3;
   
   h1 {
@@ -39,7 +28,6 @@
 }
 
 .card--partner {
-  background: $color-rouge5;
   background: $color-rouille6;
 
   @media only screen and (min-width: 536px) {
@@ -61,16 +49,27 @@
 \*------------------------------------*/
 
 .block--articles {
-  background: #fff;
+  background: $color-white;
 }
 
 .press-article {
-  border-top: 2px solid $color-rouille4;
+  border-top: 2px solid $color-grey1;
   padding-top: 24px;
   margin-bottom: 24px;
   
-  a {
+  .cell a {
     display: inline-block;
     text-align: center;
   }
+
+  h3 a {
+    padding-right: 24px;
+  }
+}
+
+.press-article__date {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 18px;
+  color: $color-grey0;
 }
