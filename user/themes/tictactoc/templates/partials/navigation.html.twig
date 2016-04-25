@@ -32,29 +32,17 @@
                             {{ page.menu }}
                         </a>
 
-                        {% if page.children.visible %}
+                        {% if page.children.visible.count > 0 %}
 
-                        <ul class="sub-nav">
-                            {% for childpage in page.children.visible %}
-                            <li class="sub-nav__item">
-                                <a class="sub-nav__link" href="{{ childpage.link }}">
-                                    {{ childpage.menu }}
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-
-                        {% elseif (page.children and page.menu == 'Examples') or (page.children and page.menu == 'Exemples') %}
-
-                        <ul class="sub-nav">
-                            {% for childpage in page.children if childpage.visible %}
-                            <li class="sub-nav__item">
-                                <a class="sub-nav__link" href="{{ childpage.link }}">
-                                    {{ childpage.menu }}
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
+                            <ul class="sub-nav">
+                                {% for childpage in page.children.visible %}
+                                <li class="sub-nav__item">
+                                    <a class="sub-nav__link" href="{{ childpage.link }}">
+                                        {{ childpage.menu }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
 
                         {% endif %}
                     </li>
