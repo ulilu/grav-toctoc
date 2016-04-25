@@ -4,7 +4,7 @@
 
 
 .page-examples {
-  background: $color-lavender;
+  background: $color-lavender2;
 
   .block--examples:after {
     opacity: .2;
@@ -15,13 +15,13 @@
   }
 
   h1 {
-    color: $color-lavender6;
+    color: $color-lavender5;
   }
 
   .cell--intro {
     position: relative;
-    color: $color-lavender5;
-    overflow: hidden;
+    color: $color-lavender4;
+    background: $color-lavender1;
     z-index: 1;
     
     &.tt-olivier:after {
@@ -34,14 +34,14 @@
       right: 0;
       top: 0;
       opacity: .2;
-      background-size: 120px;
-      background-position: right 0 top 66px;
+      background-size: 240px;
+      background-position: right 0 top -56px;
       background-repeat: no-repeat;
       pointer-events: none;
     }
     
     @media only screen and (min-width: 800px) {
-      padding-right: 33%;
+      padding-right: 25%;
 
       &.tt-olivier:after {
         display: block;
