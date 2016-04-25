@@ -1845,7 +1845,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ PAGE: About
 \*---------------------------------------------------------------------------*/
-.page-about { background: #87A6B0; background: #F1E4C6; background: #EFE8D8; background: #ffded2; background: #fff; }
+.page-about { background: #87A6B0; background: #F1E4C6; background: #EFE8D8; background: #ffded2; }
 .page-about h1 { color: #00aabd; color: #007987; color: #9B2E36; color: #e15f33; }
 
 /*------------------------------------*\ Partner cards (on About page)
