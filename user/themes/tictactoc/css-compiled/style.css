@@ -1846,11 +1846,11 @@ h2.bullet-headline + p { text-indent: 0; }
 /*---------------------------------------------------------------------------*\ PAGE: About
 \*---------------------------------------------------------------------------*/
 .page-about { background: #87A6B0; background: #F1E4C6; background: #EFE8D8; background: #ffded2; }
-.page-about h1 { color: #00aabd; color: #007987; color: #9B2E36; }
+.page-about h1 { color: #00aabd; color: #007987; color: #9B2E36; color: #b05031; }
 
 /*------------------------------------*\ Partner cards (on About page)
 \*------------------------------------*/
-.block--partner { border-top: 12px solid #fff; background: #45bac4; background: #c63641; }
+.block--partner { border-top: 12px solid #fff; background: #45bac4; background: #c63641; color: #e15f33; }
 .block--partner h1 { color: #ffffff; }
 
 .card--partner { background: #ffdee0; }
@@ -1860,13 +1860,13 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ PAGE: Contact
 \*---------------------------------------------------------------------------*/
-.page-contact { background: #ffded2; background: #caeef2; background: #EFE8D8; }
+.page-contact { background: #ffded2; background: #caeef2; background: #EFE8D8; background: #caeef2; }
 
-.block--contactinfo h1 { color: #e15f33; color: #007987; }
+.block--contactinfo h1 { color: #e15f33; color: #007987; color: #007987; }
 
 /*------------------------------------*\ Instagram
 \*------------------------------------*/
-.block--instagram { background: #fff; background: #b05031; background: #00aabd; padding: 0 !important; }
+.block--instagram { background: #fff; background: #b05031; background: #00aabd; background: #007987; padding: 0 !important; }
 
 .instagram-photos { list-style-type: none; margin-bottom: 0; }
 .instagram-photos li { display: block; float: left; width: calc(100% / 8); overflow: hidden; margin: 0; }
@@ -1875,8 +1875,8 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*------------------------------------*\ Contactform
 \*------------------------------------*/
-.block--contactform { background: #fd9f7f; background: #79D4DF; border-top: 12px solid #fff; border-bottom: 12px solid #f77d53; border-bottom: 12px solid #45bac4; }
-.block--contactform h2 { color: #fff; color: #007987; }
+.block--contactform { background: #fd9f7f; background: #79D4DF; background: #79d4df; border-top: 12px solid #fff; border-bottom: 12px solid #f77d53; border-bottom: 12px solid #45bac4; border-bottom: 12px solid #45bac4; }
+.block--contactform h2 { color: #fff; color: #b05031; color: #00aabd; color: #007987; color: #007987; }
 
 /*
 //	=========================================================================

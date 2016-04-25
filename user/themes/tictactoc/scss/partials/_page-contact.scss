@@ -7,12 +7,14 @@
   background: $color-rouille5;
   background: $color-turq4;
   background: $color-greywalls2;  //  sandbeige
+  background: $color-seagreen5;
 }
 
 .block--contactinfo {
   h1 {
     color: $color-rouille2;
     color: $color-turq0;
+    color: $color-seagreen1;
   }
   
 }
@@ -37,6 +39,7 @@
   background: #fff;
   background: $color-rouille1;
   background: $color-turq1;
+  background: $color-seagreen1;
   padding: 0 !important;
 }
 
@@ -72,15 +75,18 @@
 .block--contactform {
   background: $color-rouille4;
   background: $color-turq3;
+  background: $color-seagreen4;
   border-top: 12px solid #fff;
   border-bottom: 12px solid $color-rouille3;
   border-bottom: 12px solid $color-turq2;
+  border-bottom: 12px solid $color-seagreen3;
   
   h2 {
     color: #fff;
-    // color: $color-rouille1;
-    // color: $color-turq1;
+    color: $color-rouille1;
+    color: $color-turq1;
     color: $color-turq0;
+    color: $color-seagreen1;
   }
 }
 
