@@ -54,7 +54,7 @@
 
 .press-article {
   border-top: 2px solid $color-grey1;
-  padding-top: 24px;
+  padding-top: 36px;
   margin-bottom: 24px;
   
   .cell a {
@@ -64,6 +64,11 @@
 
   h3 a {
     padding-right: 24px;
+  }
+
+  .js-hide-info,
+  .js-info-to-toggle {
+    display: none;
   }
 }
 
