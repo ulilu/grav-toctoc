@@ -5,7 +5,7 @@
 
 .page-examples {
   background: $color-lavender;
-  
+
   .block--examples:after {
     opacity: .2;
     left: auto;
@@ -18,8 +18,35 @@
     color: $color-lavender6;
   }
 
-  .cell p {
+  .cell--intro {
+    position: relative;
     color: $color-lavender5;
+    overflow: hidden;
+    z-index: 1;
+    
+    &.tt-olivier:after {
+      display: none;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      opacity: .2;
+      background-size: 120px;
+      background-position: right 0 top 66px;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+    
+    @media only screen and (min-width: 800px) {
+      padding-right: 33%;
+
+      &.tt-olivier:after {
+        display: block;
+      }
+    }
   }
 
   .card p {
