@@ -1806,8 +1806,8 @@ h2.bullet-headline + p { text-indent: 0; }
 .page-examples { background: #504A6D; }
 .page-examples .block--examples:after { opacity: .2; left: auto; right: 0; background-size: 380px; background-position: right 0 bottom 66px; }
 .page-examples h1 { color: #dddae8; }
-.page-examples .cell--intro { position: relative; z-index: 1; color: #312c4a; padding: 18px 24px; margin-bottom: 30px; background: #8078a3; }
-.page-examples .cell--intro.tt-olivier:after { display: none; content: ""; position: absolute; z-index: -1; width: 25%; height: 100%; right: 0; top: 0; opacity: .5; background-size: 100%; background-position: right 0 top 50%; background-repeat: no-repeat; pointer-events: none; mix-blend-mode: overlay; }
+.page-examples .cell--intro { position: relative; z-index: 1; color: #dddae8; padding: 18px 24px; margin-bottom: 30px; background: #8078a3; }
+.page-examples .cell--intro.tt-olivier:after { display: none; content: ""; position: absolute; z-index: -1; width: 25%; height: 100%; right: 0; top: 0; opacity: .25; background-size: 100%; background-position: right 0 top 50%; background-repeat: no-repeat; pointer-events: none; mix-blend-mode: overlay; }
 @media only screen and (min-width: 800px) { .page-examples .cell--intro { padding-right: 25%; }
   .page-examples .cell--intro.tt-olivier:after { display: block; } }
 .page-examples .card p { color: #504A6D; }

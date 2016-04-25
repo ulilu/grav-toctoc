@@ -21,7 +21,7 @@
   .cell--intro {
     position: relative;
     z-index: 1;
-    color: $color-lavender1;
+    color: $color-lavender5;
     padding: 18px 24px;
     margin-bottom: 30px;
     background: $color-lavender3;
@@ -35,14 +35,12 @@
       height: 100%;
       right: 0;
       top: 0;
-      opacity: .5;
+      opacity: .25;
       background-size: 100%;
         background-position: right 0 top 50%;
       background-repeat: no-repeat;
       pointer-events: none;
-        mix-blend-mode: overlay;
-      // -webkit-filter: invert(.3) sepia() saturate(116%) hue-rotate(208deg);
-      // filter: invert(.3) sepia() saturate(116%) hue-rotate(208deg);
+      mix-blend-mode: overlay;
     }
     
     @media only screen and (min-width: 800px) {
