@@ -32,7 +32,7 @@
                             {{ page.menu }}
                         </a>
 
-                        {% if page.children and page.menu == 'Services' %}
+                        {% if page.children and page.children.visible %}
 
                         <ul class="sub-nav">
                             {% for childpage in page.children %}
