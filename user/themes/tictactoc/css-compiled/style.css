@@ -1051,9 +1051,9 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn-orange:hover, a:hover .btn-orange { background: #E47836; }
 .btn-orange:active, a:active:hover .btn-orange { border-top: 3px solid #F1E4C6; border-bottom: 0; }
 
-.btn-rouille { color: #fdf0eb; background: #e15f33; }
-.btn-rouille:hover, a:hover .btn-rouille { color: #fff; background: #b05031; }
-.btn-rouille:active, a:active:hover .btn-rouille { border: 0; }
+.btn-rouille { color: #fdf0eb; background: #f77d53; border-bottom: 3px solid #b05031; }
+.btn-rouille:hover, a:hover .btn-rouille { color: #fff; background: #e15f33; }
+.btn-rouille:active, a:active:hover .btn-rouille { border: 0; border-top: 3px solid #F1E4C6; }
 
 .btn-red { background: #c14e46; border-bottom: 3px solid #860714; }
 .btn-red:hover, a:hover .btn-red { background: #a62826; }

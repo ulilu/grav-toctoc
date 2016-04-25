@@ -116,19 +116,19 @@
 
 .btn-rouille {
   color: $color-rouille6;
-  background: $color-rouille2;
-  // border: 3px solid #fff;
+  background: $color-rouille3;
+  border-bottom: 3px solid $color-rouille1;
   
   &:hover,
   a:hover & {
     color: #fff;
-    background: $color-rouille1;
+    background: $color-rouille2;
   }
 
   &:active,
   a:active:hover & {
-    // border-top: 3px solid $color-rouille3;
     border: 0;
+    border-top: 3px solid $color-greywalls1;
   }
 }
 
