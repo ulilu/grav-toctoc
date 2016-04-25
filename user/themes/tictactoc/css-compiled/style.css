@@ -1862,6 +1862,9 @@ h2.bullet-headline + p { text-indent: 0; }
 \*------------------------------------*/
 .block--articles { background: #fff; }
 
+.press-article { border-bottom: 2px solid #fd9f7f; }
+.press-article a { display: block; }
+
 /*---------------------------------------------------------------------------*\ PAGE: Contact
 \*---------------------------------------------------------------------------*/
 .page-contact { background: #ffded2; background: #caeef2; background: #EFE8D8; background: #caeef2; }

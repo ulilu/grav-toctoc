@@ -63,3 +63,11 @@
 .block--articles {
   background: #fff;
 }
+
+.press-article {
+  border-bottom: 2px solid $color-rouille4;
+  
+  a {
+    display: block;
+  }
+}
