@@ -1858,6 +1858,10 @@ h2.bullet-headline + p { text-indent: 0; }
 @media only screen and (min-width: 536px) { .card--partner { min-height: 340px; } }
 .card--partner img { height: 200px; min-height: 200px; }
 
+/*------------------------------------*\ Press archives
+\*------------------------------------*/
+.block--articles { background: #fff; }
+
 /*---------------------------------------------------------------------------*\ PAGE: Contact
 \*---------------------------------------------------------------------------*/
 .page-contact { background: #ffded2; background: #caeef2; background: #EFE8D8; background: #caeef2; }
