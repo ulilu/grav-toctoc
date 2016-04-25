@@ -5,7 +5,7 @@
       method="{{ form.method|upper|default('POST') }}">
   
   
-  <div class="cell cell-in-row cell-67">
+  <div class="cell cell-in-row cell-60">
     {% for field in form.fields if (field.type) == 'textarea' %}
     {% set value = form.value(field.name) %}
       <div class="formline--textarea">
@@ -14,7 +14,7 @@
     {% endfor %}
   </div>
   
-  <div class="cell cell-in-row cell-33">
+  <div class="cell cell-in-row cell-40">
     {% for field in form.fields if (field.type) != 'textarea' %}
       {% set value = form.value(field.name) %}
       <div class="formline--text">
