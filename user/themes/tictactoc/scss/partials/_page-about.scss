@@ -65,12 +65,12 @@
 }
 
 .press-article {
-  border-bottom: 2px solid $color-rouille4;
-  padding-bottom: 24px;
+  border-top: 2px solid $color-rouille4;
+  padding-top: 24px;
   margin-bottom: 24px;
   
   a {
     display: inline-block;
-    vertical-align: middle;
+    text-align: center;
   }
 }

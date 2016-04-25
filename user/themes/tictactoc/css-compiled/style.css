@@ -1862,8 +1862,8 @@ h2.bullet-headline + p { text-indent: 0; }
 \*------------------------------------*/
 .block--articles { background: #fff; }
 
-.press-article { border-bottom: 2px solid #fd9f7f; padding-bottom: 24px; margin-bottom: 24px; }
-.press-article a { display: inline-block; vertical-align: middle; }
+.press-article { border-top: 2px solid #fd9f7f; padding-top: 24px; margin-bottom: 24px; }
+.press-article a { display: inline-block; text-align: center; }
 
 /*---------------------------------------------------------------------------*\ PAGE: Contact
 \*---------------------------------------------------------------------------*/
