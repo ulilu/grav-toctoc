@@ -927,6 +927,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .cell p { margin-bottom: 18px; }
 .cell h3 { margin-bottom: 18px; }
 .cell h3.fa:before { position: relative; top: 0; left: -6px; width: 48px; height: 48px; line-height: 48px; text-align: center; padding: 0; margin: -6px 6px 0 0; border-radius: 50%; }
+.cell > *:last-child { margin-bottom: 30px !important; }
 
 /*------------------------------------*\ on PAGES: Example, Service, About, Contact
 \*------------------------------------*/
