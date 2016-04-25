@@ -118,6 +118,7 @@ $color-white:   		#ffffff;
 
 
 // New color harvest from stylesheets
+// All contained in "New Palette 160416 below"
 
 $color-redwine: 		#9B2E36;  // menu bgcolor
 
@@ -130,15 +131,6 @@ $color-turq4:  			#caeef2;
 $color-turq5:  			#e8f8fa; // #F8FEFF;
 
 
-$color-charcoal: 		#363531;
-$color-clay: 				#827B6A;
-$color-darkbeige: 	#B2A892;
-
-$color-greywalls0: 	#D7CAAD;  // midbeige
-$color-greywalls1: 	#F1E4C6;
-$color-greywalls2: 	#EFE8D8;
-$color-greywalls3:  #FDFAF8;
-
 $color-warmsand0:   #c8b173;
 $color-warmsand1: 	#dec586; //#ebcb7b;  // #D1BD8B;
 $color-warmsand2: 	#FCE8B7;
@@ -150,7 +142,6 @@ $color-lavender:   			#504A6D;  // lavender tint
 $color-lavender-light: 	#8078a3;  // old #736E8A;
 
 
-
 $color-lightblue: 	#CDE5F1;  // lightblue
 $color-midblue:			#8EBDD4; // mid blue, slightly dull
 
@@ -159,7 +150,20 @@ $color-salmon1: 		#FD9F7F;
 $color-salmon4: 		#ffddd2;
 $color-salmon5: 	  #fdefea;
 
+
+
+// Colors not yet contained in new palette
+
 $color-brown: 			#815D51;
+
+$color-charcoal: 		#363531;
+$color-clay: 				#827B6A;
+$color-darkbeige: 	#B2A892;
+$color-greywalls0: 	#D7CAAD;  // midbeige
+$color-greywalls1: 	#F1E4C6;
+$color-greywalls2: 	#EFE8D8;
+$color-greywalls3:  #FDFAF8;
+
 
 
 
@@ -167,63 +171,48 @@ $color-brown: 			#815D51;
     New Palette 160416
 \*--------------------------------------------*/
 
-$color-lavender1: 	#312c4a;
-$color-lavender2:   #504A6D;
-$color-lavender3: 	#8078a3;
+$color-lavender1: 	#312c4a; // = $color-lavender-dark
+$color-lavender2:   #504A6D; // = $color-lavender
+$color-lavender3: 	#8078a3; // = $color-lavender-light
 $color-lavender4: 	#b0a9cc;
 $color-lavender5:   #dddae8;
 $color-lavender6: 	#edebf5;
 
 $color-skyblue1:    #00517a;
-$color-skyblue2:    #0476ae;
+$color-skyblue2:    #1677a7;
 $color-skyblue3:    #4697bf;
-$color-skyblue4:    #8EBDD4;
-$color-skyblue5:    #CDE5F1;
+$color-skyblue4:    #8EBDD4; // = $color-midblue
+$color-skyblue5:    #CDE5F1; // = $color-lightblue
 $color-skyblue6:    #e6f2f8;
 
+$color-seagreen1:  	#007987; // = $color-turq0
+$color-seagreen2:  	#00aabd; // = $color-logo0
+$color-seagreen3:  	#45bac4; // = $color-turq2
+$color-seagreen4:  	#79d4df; // = $color-turq3
+$color-seagreen5:  	#caeef2; // = $color-turq4
+$color-seagreen6:  	#e8f8fa; // = $color-turq5
+
+$color-sable1:    	#a07f2f;
+$color-sable2:    	#edb52c;
+$color-sable3:    	#c2ac6e;
+$color-sable4:    	#dec586; // $color-warmsand1
+$color-sable5:    	#fce8b7; // $color-warmsand2
+$color-sable6:    	#fff3d3; // $color-warmsand3
+
 $color-rouille1:    #b05031;
-$color-rouille2:    #e85827;
+$color-rouille2:    #e15f33;
 $color-rouille3:    #f77d53;
-$color-rouille4:    #fd9f7f;
-$color-rouille5:    #ffded2;
-$color-rouille6:    #fdf0eb;
+$color-rouille4:    #fd9f7f; // = $color-salmon1
+$color-rouille5:    #ffded2; // = $color-salmon4
+$color-rouille6:    #fdf0eb; // = $color-salmon5
 
-$color-rouge1:    #9B2E36;
-$color-rouge2:    #cc2936;
-$color-rouge3:    #ec5f6b;
-$color-rouge4:    #f8969e;
-$color-rouge5:    #ffdee0;
-$color-rouge6:    #fcefef;
+$color-rouge1:    	#9B2E36; // = $color-redwine
+$color-rouge2:    	#c63641;
+$color-rouge3:    	#ec5f6b;
+$color-rouge4:    	#f8969e;
+$color-rouge5:    	#ffdee0;
+$color-rouge6:    	#fcefef;
 
-
-
-.color-lavender1  { color: $color-lavender1; }
-.color-lavender2  { color: $color-lavender2; }
-.color-lavender3  { color: $color-lavender3; }
-.color-lavender4  { color: $color-lavender4; }
-.color-lavender5  { color: $color-lavender5; }
-.color-lavender6  { color: $color-lavender6; }
-
-.color-skyblue1  { color: $color-skyblue1; }
-.color-skyblue2  { color: $color-skyblue2; }
-.color-skyblue3  { color: $color-skyblue3; }
-.color-skyblue4  { color: $color-skyblue4; }
-.color-skyblue5  { color: $color-skyblue5; }
-.color-skyblue6  { color: $color-skyblue6; }
-
-.color-rouille1  { color: $color-rouille1; }
-.color-rouille2  { color: $color-rouille2; }
-.color-rouille3  { color: $color-rouille3; }
-.color-rouille4  { color: $color-rouille4; }
-.color-rouille5  { color: $color-rouille5; }
-.color-rouille6  { color: $color-rouille6; }
-
-.color-rouge1  { color: $color-rouge1; }
-.color-rouge2  { color: $color-rouge2; }
-.color-rouge3  { color: $color-rouge3; }
-.color-rouge4  { color: $color-rouge4; }
-.color-rouge5  { color: $color-rouge5; }
-.color-rouge6  { color: $color-rouge6; }
 
 
 /*--------------------------------------------*\

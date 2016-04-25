@@ -101,10 +101,11 @@
   margin: 0;
   
   a {
-    color: $color-logo0;
+    color: #999;
     border-bottom: 1px solid #ccc;
     
     &:hover {
+      color: $color-logo0;
       border-bottom: 1px solid $color-logo0;
     }
   }
@@ -130,7 +131,7 @@
 }
 
 .langswitcher .active {
-  color: #333;
+  color: $color-logo0;
   border: none;
   text-decoration: none;
   cursor: default;

@@ -208,54 +208,6 @@ textarea { resize: vertical; }
 ******************************************************************************/
 /*--------------------------------------------*\ New Palette 160416
 \*--------------------------------------------*/
-.color-lavender1 { color: #312c4a; }
-
-.color-lavender2 { color: #504A6D; }
-
-.color-lavender3 { color: #8078a3; }
-
-.color-lavender4 { color: #b0a9cc; }
-
-.color-lavender5 { color: #dddae8; }
-
-.color-lavender6 { color: #edebf5; }
-
-.color-skyblue1 { color: #00517a; }
-
-.color-skyblue2 { color: #0476ae; }
-
-.color-skyblue3 { color: #4697bf; }
-
-.color-skyblue4 { color: #8EBDD4; }
-
-.color-skyblue5 { color: #CDE5F1; }
-
-.color-skyblue6 { color: #e6f2f8; }
-
-.color-rouille1 { color: #b05031; }
-
-.color-rouille2 { color: #e85827; }
-
-.color-rouille3 { color: #f77d53; }
-
-.color-rouille4 { color: #fd9f7f; }
-
-.color-rouille5 { color: #ffded2; }
-
-.color-rouille6 { color: #fdf0eb; }
-
-.color-rouge1 { color: #9B2E36; }
-
-.color-rouge2 { color: #cc2936; }
-
-.color-rouge3 { color: #ec5f6b; }
-
-.color-rouge4 { color: #f8969e; }
-
-.color-rouge5 { color: #ffdee0; }
-
-.color-rouge6 { color: #fcefef; }
-
 /*--------------------------------------------*\ Social Media Colors (160417)
 \*--------------------------------------------*/
 /*---------------------------------------------------------------------------*\ New additional colors, chosen with loulou (mostly pastels)
@@ -788,57 +740,87 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 /************************
 *   Additional color classes
 ************************/
-.color-red { color: #e01e25 !important; }
-
-.color-yellow { color: #fec73a !important; }
-
-.color-green { color: #7bb729 !important; }
-
-.color-blue { color: #1f79bf !important; }
-
-.color-pink { color: #eb48dd !important; }
-
-.color-beige { color: #f3e5c0 !important; }
-
-.color-orange { color: #f98231 !important; }
-
-.color-brown { color: #7c4b33 !important; }
-
-.color-purple { color: #782cfb !important; }
-
-.color-turquoise { color: #00c5e9 !important; }
-
 .color-black { color: #000 !important; }
-
-.color-grey { color: #808080 !important; }
 
 .color-white { color: #fff !important; }
 
-.bgolor-red { background-color: #e01e25 !important; }
-
-.bgolor-yellow { background-color: #fec73a !important; }
-
-.bgolor-green { background-color: #7bb729 !important; }
-
-.bgolor-blue { background-color: #1f79bf !important; }
-
-.bgolor-pink { background-color: #eb48dd !important; }
-
-.bgolor-beige { background-color: #f3e5c0 !important; }
-
-.bgolor-orange { background-color: #f98231 !important; }
-
-.bgolor-brown { background-color: #7c4b33 !important; }
-
-.bgolor-purple { background-color: #782cfb !important; }
-
-.bgolor-turquoise { background-color: #00c5e9 !important; }
-
 .bgolor-black { background-color: #000 !important; }
 
-.bgolor-grey { background-color: #808080 !important; }
-
 .bgolor-white { background-color: #fff !important; }
+
+/*--------------------------------------------*\ New Palette 160416
+\*--------------------------------------------*/
+.color-lavender1 { color: #312c4a; }
+
+.color-lavender2 { color: #504A6D; }
+
+.color-lavender3 { color: #8078a3; }
+
+.color-lavender4 { color: #b0a9cc; }
+
+.color-lavender5 { color: #dddae8; }
+
+.color-lavender6 { color: #edebf5; }
+
+.color-skyblue1 { color: #00517a; }
+
+.color-skyblue2 { color: #1677a7; }
+
+.color-skyblue3 { color: #4697bf; }
+
+.color-skyblue4 { color: #8EBDD4; }
+
+.color-skyblue5 { color: #CDE5F1; }
+
+.color-skyblue6 { color: #e6f2f8; }
+
+.color-seagreen1 { color: #007987; }
+
+.color-seagreen2 { color: #00aabd; }
+
+.color-seagreen3 { color: #45bac4; }
+
+.color-seagreen4 { color: #79d4df; }
+
+.color-seagreen5 { color: #caeef2; }
+
+.color-seagreen6 { color: #e8f8fa; }
+
+.color-sable1 { color: #a07f2f; }
+
+.color-sable2 { color: #edb52c; }
+
+.color-sable3 { color: #c2ac6e; }
+
+.color-sable4 { color: #dec586; }
+
+.color-sable5 { color: #fce8b7; }
+
+.color-sable6 { color: #fff3d3; }
+
+.color-rouille1 { color: #b05031; }
+
+.color-rouille2 { color: #e15f33; }
+
+.color-rouille3 { color: #f77d53; }
+
+.color-rouille4 { color: #fd9f7f; }
+
+.color-rouille5 { color: #ffded2; }
+
+.color-rouille6 { color: #fdf0eb; }
+
+.color-rouge1 { color: #9B2E36; }
+
+.color-rouge2 { color: #c63641; }
+
+.color-rouge3 { color: #ec5f6b; }
+
+.color-rouge4 { color: #f8969e; }
+
+.color-rouge5 { color: #ffdee0; }
+
+.color-rouge6 { color: #fcefef; }
 
 /*---------------------------------------------------------------------------*\ Toctoc icons
 \*---------------------------------------------------------------------------*/
@@ -1062,7 +1044,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn-orange:hover, a:hover .btn-orange { background: #E47836; }
 .btn-orange:active, a:active:hover .btn-orange { border-top: 3px solid #F1E4C6; border-bottom: 0; }
 
-.btn-rouille { color: #fdf0eb; background: #e85827; }
+.btn-rouille { color: #fdf0eb; background: #e15f33; }
 .btn-rouille:hover, a:hover .btn-rouille { color: #fff; background: #b05031; }
 .btn-rouille:active, a:active:hover .btn-rouille { border: 0; }
 
@@ -1164,8 +1146,8 @@ textarea:focus::-webkit-input-placeholder, input[type=text]:focus::-webkit-input
 .langswitcher { display: table; position: absolute; top: 0; right: 30px; height: 90px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; list-style: none; margin: 0 !important; transform: none; -webkit-transform: none; }
 
 .langswitcher li { display: table-cell; position: relative; line-height: 24px; vertical-align: middle; padding: 0 0 0 24px; margin: 0; }
-.langswitcher li a { color: #00aabd; border-bottom: 1px solid #ccc; }
-.langswitcher li a:hover { border-bottom: 1px solid #00aabd; }
+.langswitcher li a { color: #999; border-bottom: 1px solid #ccc; }
+.langswitcher li a:hover { color: #00aabd; border-bottom: 1px solid #00aabd; }
 
 .full-lang { display: none; }
 
@@ -1173,7 +1155,7 @@ textarea:focus::-webkit-input-placeholder, input[type=text]:focus::-webkit-input
 
 @media only screen and (min-width: 700px) { .full-lang { display: inline-block; }
   .short-lang { display: none; } }
-.langswitcher .active { color: #333; border: none; text-decoration: none; cursor: default; font-family: Linotte-Semibold; border-bottom: 1px solid #fff !important; }
+.langswitcher .active { color: #00aabd; border: none; text-decoration: none; cursor: default; font-family: Linotte-Semibold; border-bottom: 1px solid #fff !important; }
 
 /*------------------------------------*\ Main nav w/ priority+ menu
 \*------------------------------------*/
@@ -1862,7 +1844,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*------------------------------------*\ Partner cards (on About page)
 \*------------------------------------*/
-.block--partner { border-top: 12px solid #fff; background: #45bac4; background: #cc2936; }
+.block--partner { border-top: 12px solid #fff; background: #45bac4; background: #c63641; }
 .block--partner h1 { color: #ffffff; }
 
 .card--partner { background: #caeef2; }
@@ -1874,7 +1856,7 @@ h2.bullet-headline + p { text-indent: 0; }
 \*---------------------------------------------------------------------------*/
 .page-contact { background: #ffded2; background: #caeef2; background: #EFE8D8; }
 
-.block--contactinfo h1 { color: #e85827; color: #007987; }
+.block--contactinfo h1 { color: #e15f33; color: #007987; }
 
 /*------------------------------------*\ Instagram
 \*------------------------------------*/

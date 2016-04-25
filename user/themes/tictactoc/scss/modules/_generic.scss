@@ -336,30 +336,56 @@
 *   Additional color classes
 ************************/
 
-.color-red       { color: #e01e25 !important;}
-.color-yellow    { color: #fec73a !important;}
-.color-green     { color: #7bb729 !important;}
-.color-blue      { color: #1f79bf !important;}
-.color-pink      { color: #eb48dd !important;}
-.color-beige     { color: #f3e5c0 !important;}
-.color-orange    { color: #f98231 !important;}
-.color-brown     { color: #7c4b33 !important;}
-.color-purple    { color: #782cfb !important;}
-.color-turquoise { color: #00c5e9 !important;}
 .color-black     { color: #000 !important;}
-.color-grey      { color: #808080 !important;}
 .color-white     { color: #fff !important; }
 
-.bgolor-red       { background-color: #e01e25 !important;}
-.bgolor-yellow    { background-color: #fec73a !important;}
-.bgolor-green     { background-color: #7bb729 !important;}
-.bgolor-blue      { background-color: #1f79bf !important;}
-.bgolor-pink      { background-color: #eb48dd !important;}
-.bgolor-beige     { background-color: #f3e5c0 !important;}
-.bgolor-orange    { background-color: #f98231 !important;}
-.bgolor-brown     { background-color: #7c4b33 !important;}
-.bgolor-purple    { background-color: #782cfb !important;}
-.bgolor-turquoise { background-color: #00c5e9 !important;}
-.bgolor-black     { background-color: #000 !important;}
-.bgolor-grey      { background-color: #808080 !important;}
+.bgolor-black     { background-color: #000 !important; }
 .bgolor-white     { background-color: #fff !important; }
+
+
+
+/*--------------------------------------------*\
+    New Palette 160416
+\*--------------------------------------------*/
+
+.color-lavender1  { color: $color-lavender1; }
+.color-lavender2  { color: $color-lavender2; }
+.color-lavender3  { color: $color-lavender3; }
+.color-lavender4  { color: $color-lavender4; }
+.color-lavender5  { color: $color-lavender5; }
+.color-lavender6  { color: $color-lavender6; }
+
+.color-skyblue1   { color: $color-skyblue1; }
+.color-skyblue2   { color: $color-skyblue2; }
+.color-skyblue3   { color: $color-skyblue3; }
+.color-skyblue4   { color: $color-skyblue4; }
+.color-skyblue5   { color: $color-skyblue5; }
+.color-skyblue6   { color: $color-skyblue6; }
+
+.color-seagreen1  { color: $color-seagreen1; }
+.color-seagreen2  { color: $color-seagreen2; }
+.color-seagreen3  { color: $color-seagreen3; }
+.color-seagreen4  { color: $color-seagreen4; }
+.color-seagreen5  { color: $color-seagreen5; }
+.color-seagreen6  { color: $color-seagreen6; }
+
+.color-sable1     { color: $color-sable1; }
+.color-sable2     { color: $color-sable2; }
+.color-sable3     { color: $color-sable3; }
+.color-sable4     { color: $color-sable4; }
+.color-sable5     { color: $color-sable5; }
+.color-sable6     { color: $color-sable6; }
+
+.color-rouille1   { color: $color-rouille1; }
+.color-rouille2   { color: $color-rouille2; }
+.color-rouille3   { color: $color-rouille3; }
+.color-rouille4   { color: $color-rouille4; }
+.color-rouille5   { color: $color-rouille5; }
+.color-rouille6   { color: $color-rouille6; }
+
+.color-rouge1     { color: $color-rouge1; }
+.color-rouge2     { color: $color-rouge2; }
+.color-rouge3     { color: $color-rouge3; }
+.color-rouge4     { color: $color-rouge4; }
+.color-rouge5     { color: $color-rouge5; }
+.color-rouge6     { color: $color-rouge6; }
