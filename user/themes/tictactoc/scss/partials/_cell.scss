@@ -12,6 +12,10 @@
 .cell {
   display: block;
   vertical-align: top;
+  
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
 
   img {
     max-width: 100%;
@@ -40,12 +44,6 @@
     margin: -6px 6px 0 0;
     border-radius: 50%;
   }
-
-  @media only screen and (min-width:800px) {
-    > *:last-child {
-      margin-bottom: 30px !important;
-    }
-  }
 }
 
 
@@ -58,10 +56,6 @@
 .cell-feature,
 .cell-info {
   padding: 24px;
-  
-  > *:last-child {
-    margin-bottom: 0 !important;
-  }
 }
 
 
