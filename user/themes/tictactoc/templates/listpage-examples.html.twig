@@ -170,6 +170,8 @@ $(window).load(function() {
     <div class="block">    
         <h1>{{ page.title }}</h1>
 
+        {{ page.content }}
+
         {% for child in collection %}
             {% include 'partials/listitem-example.html.twig' with {'page':child, 'truncate':true} %}
         {% endfor %}

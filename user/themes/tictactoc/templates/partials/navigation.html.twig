@@ -33,7 +33,6 @@
                         </a>
 
                         {% if page.children.visible.count > 0 %}
-
                             <ul class="sub-nav">
                                 {% for childpage in page.children.visible %}
                                 <li class="sub-nav__item">
@@ -43,8 +42,8 @@
                                 </li>
                                 {% endfor %}
                             </ul>
-
                         {% endif %}
+                        
                     </li>
 
                 {% endif %}
