@@ -1871,12 +1871,13 @@ h2.bullet-headline + p { text-indent: 0; }
 \*------------------------------------*/
 .block--articles { background: #ffffff; }
 
-.press-article { border-top: 2px solid #e7e7e7; padding: 30px 0 12px; }
+.press-article { clear: both; border-top: 2px solid #e7e7e7; padding: 30px 0; }
 .press-article h3 a { padding-right: 24px; }
-.press-article .btn { margin-bottom: 24px; }
+.press-article .js-hide-info { margin-bottom: 24px; }
+.press-article .cell img { max-height: 150px; }
 
-.press-article__img { float: right; text-align: center; padding: 0 0 24px 18px; width: 40%; }
-@media only screen and (min-width: 800px) { .press-article__img { width: inherit; padding: 0 24px 24px; } }
+.press-article__img { float: right; text-align: center; padding: 0 0 0 18px; width: 40%; }
+@media only screen and (min-width: 800px) { .press-article__img { width: inherit; padding: 0 24px; } }
 
 .press-article__date { display: inline-block; white-space: nowrap; font-size: 18px; color: #cccccc; }
 
