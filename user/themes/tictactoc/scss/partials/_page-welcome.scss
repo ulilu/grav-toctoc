@@ -169,9 +169,13 @@
   }
 
   p {
-  	font-size: 24px;
+  	font-size: 18px;
 		line-height: 160%;
 		color: #444;
+    
+    @media only screen and (min-width: 650px) { 
+      font-size: 21px;
+    }
   }
 
   p:last-of-type {
@@ -375,9 +379,14 @@
     }
 
     p	{
-    	line-height: 36px;
+      font-size: 18px;
+    	line-height: 30px;
 			margin-bottom: 18px;
-			font-size: 21px;
+      
+      @media only screen and (min-width: 650px) { 
+        font-size: 21px;
+        line-height: 36px;
+      }
 		}
     
     @media only screen and (min-width:1200px) {
