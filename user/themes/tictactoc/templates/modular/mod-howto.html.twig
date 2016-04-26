@@ -1,1 +1,5 @@
-{{ page.find('/comment-ca-marche/_step-by-step').content }}
+{% if grav.language.getActive == 'fr' %}
+    {{ page.find('/comment-ca-marche/_step-by-step').content }}
+{% else %}
+    {{ page.find('/how-it-works/_step-by-step').content }}
+{% endif %}
