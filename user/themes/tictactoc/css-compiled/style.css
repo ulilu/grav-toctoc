@@ -1869,9 +1869,9 @@ h2.bullet-headline + p { text-indent: 0; }
 \*------------------------------------*/
 .block--articles { background: #ffffff; }
 
-.press-article { border-top: 2px solid #e7e7e7; padding: 24px 0 12px; }
+.press-article { border-top: 2px solid #e7e7e7; padding: 30px 0 12px; }
 .press-article h3 a { padding-right: 24px; }
-.press-article .btn { margin-bottom: 30px; }
+.press-article .btn { margin-bottom: 24px; }
 
 .press-article__img { display: inline-block; text-align: center; padding: 0 24px; }
 
