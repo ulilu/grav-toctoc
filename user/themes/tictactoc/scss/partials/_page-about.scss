@@ -64,10 +64,15 @@
     margin-bottom: 24px;
   }
 
-  
+  .cell-in-row:last-of-type() {
+    @media only screen and (min-width: 800px) {
+      
+    }
+  }
 }
 
 .press-article__img {
+  float: right;
   display: inline-block;
   text-align: center;
   padding: 0 24px;
