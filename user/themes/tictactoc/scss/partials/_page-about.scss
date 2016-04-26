@@ -82,6 +82,10 @@
   }
 }
 
+.press-article__content p:last-child {
+  margin-bottom: 0;
+}
+
 .press-article__date {
   display: inline-block;
   white-space: nowrap;
