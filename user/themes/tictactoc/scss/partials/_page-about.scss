@@ -64,9 +64,9 @@
     margin-bottom: 24px;
   }
 
-  .cell-in-row:last-of-type {
-    @media only screen and (min-width: 800px) {
-      
+  .cell-25 {
+    @media only screen and max-width: 800px) {
+      width: 40%;
     }
   }
 }
@@ -75,7 +75,11 @@
   float: right;
   display: inline-block;
   text-align: center;
-  padding: 0 24px;
+  padding: 0 0 24px 18px;
+  
+  @media only screen and (min-width: 800px) {
+    padding: 0 24px 24px;
+  }
 }
 
 .press-article__date {
