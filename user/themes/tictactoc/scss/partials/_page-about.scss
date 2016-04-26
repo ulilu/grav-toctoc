@@ -63,21 +63,16 @@
   .btn { // button
     margin-bottom: 24px;
   }
-
-  .cell-25 {
-    @media only screen and (max-width: 800px) {
-      width: 40%;
-    }
-  }
 }
 
 .press-article__img {
   float: right;
-  display: inline-block;
   text-align: center;
   padding: 0 0 24px 18px;
+  width: 40%;
   
   @media only screen and (min-width: 800px) {
+    width: inherit;
     padding: 0 24px 24px;
   }
 }
