@@ -1876,7 +1876,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .press-article .js-hide-info { margin-bottom: 24px; }
 .press-article .cell img { max-height: 150px; }
 
-.press-article__img { float: right; text-align: center; padding: 0 0 0 18px; width: 40%; }
+.press-article__img { float: right; text-align: center; padding: 0 0 24px 18px; width: 40%; }
 @media only screen and (min-width: 800px) { .press-article__img { width: inherit; padding: 0 24px; } }
 
 .press-article__content p:last-child { margin-bottom: 0; }
