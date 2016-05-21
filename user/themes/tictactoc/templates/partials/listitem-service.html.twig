@@ -10,7 +10,7 @@
 
 	<div class="card  item__summary">
 		<h3 class="bgcolor-{{ page.header.page_color }}">{{ page.header.subtitle }}</h3>
-		<p>{{ page.summary|striptags() }}</p>
+		<p>{{ page.header.blurb }}</p>
 
 		<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>En savoir +</strong></span>
 	</div>
@@ -19,8 +19,8 @@
 
 	<h2 class="headline--service beta color-{{ page.header.page_color }}"><img class="icon--service" src="{{ page.find('/images').url() }}/{{page.header.icon}}.svg" /><span class="font-light">toctoc</span><span>{{ page.title|replace({"toctoc": ""}) }}</span></h2>
 
-	<h4 class="byline--service">{{ page.header.preview_welcome1 }}</h4>
-	<p>{{ page.header.preview_welcome2 }}</p>
+	<h4 class="byline--service">{{ page.header.subtitle_short }}</h4>
+	<p>{{ page.header.blurb_short }}</p>
 
 	<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>En savoir +</strong></span>
 
