@@ -1,8 +1,7 @@
 <div class="press-article">
 	<h3><a href="{{ page.header.link }}" target="_new">{{ page.header.headline }}</a><span class="press-article__date">{{ page.header.date }}</span></h3>
-	
 
-	<a class="press-article__img cell cell-in-row cell-25" href="{{ page.header.imagelink.url }}" rel="lightbox" data-width="700">{{ page.media[page.header.image].cropResize(300, 300).html() }}</a>
+	<a class="press-article__img cell cell-in-row cell-25" href="{{ page.media[page.header.imagelink].url }}" rel="lightbox" data-width="700">{{ page.media[page.header.image].cropResize(300, 300).html() }}</a>
 
 	<div class="press-article__content cell cell-in-row cell-75">
 		{{ page.content}}
