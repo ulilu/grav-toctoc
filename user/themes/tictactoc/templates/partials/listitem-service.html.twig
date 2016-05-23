@@ -15,7 +15,7 @@
 		<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>En savoir +</strong></span>
 	</div>
 
-{% elseif page.home %}
+{% elseif uri.path() == '/' %}
 
 	<h2 class="headline--service beta color-{{ page.header.page_color }}"><img class="icon--service" src="{{ page.find('/images').url() }}/{{page.header.icon}}.svg" /><span class="font-light">toctoc</span><span>{{ page.title|replace({"toctoc": ""}) }}</span></h2>
 
