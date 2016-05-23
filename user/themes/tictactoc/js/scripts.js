@@ -110,13 +110,13 @@ $(document).ready(function() {
     $(".js-show-info").click(function(e) {
         $(this).closest(".js-info-toggler").nextAll(".js-info-to-toggle:first").toggle().addClass('is-shown');
         $(this).siblings(".js-hide-info").css('display','inline-block');
-        $(this).css('display','none !important');
+        $(this).css('display','none');
         e.preventDefault();
     });
     $(".js-hide-info").click(function(e) {
         $(this).closest(".js-info-toggler").nextAll(".js-info-to-toggle:first").hide().toggleClass('is-shown');
         $(this).siblings(".js-show-info").css('display','inline-block');
-        $(this).css('display','none !important');
+        $(this).css('display','none');
         e.preventDefault();
     });
 });
