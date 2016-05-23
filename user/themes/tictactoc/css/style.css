@@ -1028,7 +1028,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn * { display: inline-block; vertical-align: middle; }
 .btn .fa { margin-right: 9px; font-size: inherit; font-style: normal !important; }
 
-.js-hide-info { display: none; }
+.js-info-toggler .js-hide-info { display: none; }
 
 /*------------------------------------*\ Button sizes
 \*------------------------------------*/
