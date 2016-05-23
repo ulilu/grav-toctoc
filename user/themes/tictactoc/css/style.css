@@ -1509,7 +1509,7 @@ h2.bullet-headline + p { text-indent: 0; }
   100% { transform: scale(1); } }
 /*------------------------------------*\ Hero Image & Fade
 \*------------------------------------*/
-.link-toggle { display: block; margin-top: 6px; }
+.link-toggle, .link-external { display: block; padding: 6px 0; }
 
 /*---------------------------------------------------------------------------*\ Modular Block: Call to action
 \*---------------------------------------------------------------------------*/

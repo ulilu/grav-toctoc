@@ -46,7 +46,8 @@
   //   @media only screen and (min-width: 900px) { max-height: 650px; } 
   // }
   
-  .link-toggle {
+  .link-toggle,
+  .link-external {
     display: block;
-    margin-top: 6px;
+    padding: 6px 0;
   }
