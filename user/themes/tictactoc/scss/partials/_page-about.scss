@@ -11,11 +11,12 @@
   }
 
   .block--partner:after {
+    z-index: 0;
     opacity: .2;
     left: auto;
     right: 0;
-    background-size: 380px;
-    background-position: right 0 bottom 30px;
+    background-size: 400px;
+    background-position: right 0 bottom 0;
   }
 }
 
