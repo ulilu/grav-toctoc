@@ -1892,7 +1892,6 @@ h2.bullet-headline + p { text-indent: 0; }
 .block--contactinfo h1 { color: #e15f33; color: #007987; color: #007987; }
 
 .cell--contactinfo { padding-bottom: 24px; }
-.cell--contactinfo strong { padding: 3px 6px; background: #fff; display: inline-block; position: relative; margin-left: 12px; }
 
 /*------------------------------------*\ Instagram
 \*------------------------------------*/
