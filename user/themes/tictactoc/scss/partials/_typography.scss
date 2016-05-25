@@ -46,9 +46,8 @@
 body {
   font-size: 18px;
   line-height: 27px;
-  // color:#444;
-  color: $color-logo1;
   font-family: $font-light;
+  color: $color-logo1;
 }
 
 ::-moz-selection { background: $color-logo0; color: #fff; }
@@ -60,16 +59,11 @@ p {
 
 a {
   // @include text-shadow_w11(.5);
-  // color: $color-logo1;
   text-decoration: none;
 
   &:hover {
     // @include text-shadow_w11(.75);
-    // color: $color-logo1;
     text-decoration: underline;
-  }
-  &:active {
-    // color: $color-logo1;
   }
 }
 
