@@ -1452,7 +1452,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .timeline-row__info { position: relative; z-index: 1; background: #fff; padding: 18px 18px 18px 42px; border-radius: 9px; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); }
 .timeline-row__info h2 { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; line-height: 30px; margin-bottom: 12px; text-indent: 18px; }
 .timeline-row__info h2:before { display: none !important; }
-.timeline-row__info p { color: #666; margin: 0; font-size: 16px; line-height: 24px; }
+.timeline-row__info p { margin: 0; font-size: 16px; line-height: 24px; }
 .timeline-row__info .link--mailto { display: inline-block; position: relative; top: 3px; left: 0; vertical-align: middle; font-size: 18px; z-index: 10; margin: 12px 0 6px; border-bottom: 1px solid #8EBDD4; color: #504A6D; transition: all 0.3s ease; }
 .timeline-row__info .link--mailto:hover { color: #312c4a; text-decoration: none; border-bottom: 2px solid #4697bf; background: #e6f2f8; }
 .timeline-row__info .link--mailto:active { background: #fff; }
@@ -1625,7 +1625,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .grav-lightslider li img { display: inline-block; width: 60px; height: 60px; border: 3px solid #fff; border-radius: 50%; margin: 0 18px 0 0; }
 @media only screen and (min-width: 520px) { .grav-lightslider li img { display: block; width: 90px; height: 90px; text-align: center; margin: 0 auto 18px; border-width: 4px; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); } }
 .grav-lightslider h1, .grav-lightslider h2, .grav-lightslider h3, .grav-lightslider h4, .grav-lightslider h5 { font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; }
-.grav-lightslider h3 { position: relative; max-width: 1140px; font-size: 18px; line-height: 27px; background: #fff; color: #815D51; border-radius: 24px; padding: 24px; margin: 0 auto; box-shadow: 0 4px 0px 1px rgba(0, 0, 0, 0.1); /* Left pointing triangle */ }
+.grav-lightslider h3 { position: relative; max-width: 1140px; font-size: 18px; line-height: 27px; background: #fff; color: #3e0000; border-radius: 24px; padding: 24px; margin: 0 auto; box-shadow: 0 4px 0px 1px rgba(0, 0, 0, 0.1); /* Left pointing triangle */ }
 @media only screen and (min-width: 520px) { .grav-lightslider h3 { display: inline-block; vertical-align: top; width: calc(100% - 155px); } }
 @media only screen and (min-width: 600px) { .grav-lightslider h3 { font-size: 21px; line-height: 30px; } }
 @media only screen and (min-width: 900px) { .grav-lightslider h3 { font-size: 24px; line-height: 36px; } }
@@ -1821,7 +1821,6 @@ h2.bullet-headline + p { text-indent: 0; }
 .page-examples .cell--intro.tt-olivier:after { display: none; content: ""; position: absolute; z-index: -1; width: 25%; height: 100%; right: 0; top: 0; opacity: .25; background-size: 100%; background-position: right 0 top 50%; background-repeat: no-repeat; pointer-events: none; mix-blend-mode: overlay; }
 @media only screen and (min-width: 800px) { .page-examples .cell--intro { padding-right: 25%; }
   .page-examples .cell--intro.tt-olivier:after { display: block; } }
-.page-examples .card p { color: #504A6D; }
 
 /*---------------------------------------------------------------------------*\ PAGE: Example
 \*---------------------------------------------------------------------------*/
@@ -1845,7 +1844,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .cell-pricing .byline--service { position: relative; left: -24px; top: -12px; width: calc(100% + 48px); height: 100%; color: #fff !important; padding: 24px; margin: 0; }
 @media only screen and (min-width: 800px) { .cell-pricing .byline--service { left: -30px; width: calc(100% + 60px); } }
 
-.checklist li { color: #444; line-height: 27px; padding: 6px 0; border-bottom: 2px solid #EFE8D8; }
+.checklist li { line-height: 27px; padding: 6px 0; border-bottom: 2px solid #EFE8D8; }
 .checklist li.list-total { margin-top: -11px; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; list-style-type: none; padding: 15px 0 9px 27px; border-top-color: #D7CAAD; border-top-style: solid; border-top-width: 2px; border-bottom-color: #D7CAAD; border-bottom-style: double; border-bottom-width: 6px; background: #FDFAF8; }
 .checklist.color-red3 .fa:before { color: #c14e46; }
 .checklist.color-orange1 .fa:before { color: #f58b4a; }
