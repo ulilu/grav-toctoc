@@ -163,9 +163,11 @@
   }
 
   p {
+
   	font-size: 18px;
 		line-height: 160%;
 		color: #444;
+    color-logo1;
     
     @media only screen and (min-width: 650px) { 
       font-size: 21px;
@@ -319,9 +321,14 @@
       }
     }
 
+    /*
+     *  1. To make space for the .btn--scroll
+     */
     h1 {
 	    display: inline-block;
 	    margin-bottom: 0;
+      width: calc(100% - 66px); // 1.
+      vertical-align: middle;
 	  }
 
 	  .card {
