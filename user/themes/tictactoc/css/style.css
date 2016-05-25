@@ -1833,7 +1833,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .block--pricing { margin-bottom: 0; }
 @media only screen and (min-width: 800px) { .block--pricing { padding-bottom: 42px; } }
 
-.cell-pricing { background: #fff; border-bottom: 12px solid #CDE5F1; margin: 0 0 18px; }
+.cell-pricing { background: #fff; border-bottom: 12px solid #CDE5F1; margin: 0 0 18px; border-radius: 6px; }
 .cell-pricing:last-of-type { border-bottom: 0; }
 @media only screen and (min-width: 480px) { .cell-pricing { margin: 0 0 24px; } }
 @media only screen and (min-width: 800px) { .cell-pricing { padding: 24px 30px; border-bottom: 0; border-right: 12px solid #CDE5F1; }
