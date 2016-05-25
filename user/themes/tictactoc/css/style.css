@@ -1833,9 +1833,9 @@ h2.bullet-headline + p { text-indent: 0; }
 .block--pricing { margin-bottom: 0; }
 @media only screen and (min-width: 800px) { .block--pricing { padding-bottom: 42px; } }
 
-.cell-pricing { background: #fff; border-bottom: 12px solid #CDE5F1; margin: 0 -24px 18px; }
+.cell-pricing { background: #fff; border-bottom: 12px solid #CDE5F1; margin: 0 0 18px; }
 .cell-pricing:last-of-type { border-bottom: 0; }
-@media only screen and (min-width: 480px) { .cell-pricing { margin: 0 0 18px; } }
+@media only screen and (min-width: 480px) { .cell-pricing { margin: 0 0 24px; } }
 @media only screen and (min-width: 800px) { .cell-pricing { padding: 24px 30px; border-bottom: 0; border-right: 12px solid #CDE5F1; }
   .cell-pricing:last-of-type { border-right: 0; border-left: 12px solid #CDE5F1; } }
 @media only screen and (min-width: 1000px) { .cell-pricing { border-right: 18px solid #CDE5F1; }
@@ -1844,7 +1844,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .cell-pricing .byline--service { position: relative; left: -24px; top: -12px; width: calc(100% + 48px); height: 100%; color: #fff !important; padding: 24px; margin: 0; }
 @media only screen and (min-width: 800px) { .cell-pricing .byline--service { left: -30px; width: calc(100% + 60px); } }
 
-.checklist li { line-height: 27px; padding: 6px 0; border-bottom: 2px solid #EFE8D8; }
+.checklist li { color: #3e0000; line-height: 27px; padding: 6px 0; }
 .checklist li.list-total { margin-top: -11px; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; list-style-type: none; padding: 15px 0 9px 27px; border-top-color: #D7CAAD; border-top-style: solid; border-top-width: 2px; border-bottom-color: #D7CAAD; border-bottom-style: double; border-bottom-width: 6px; background: #FDFAF8; }
 .checklist.color-red3 .fa:before { color: #c14e46; }
 .checklist.color-orange1 .fa:before { color: #f58b4a; }

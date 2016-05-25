@@ -21,14 +21,14 @@
 .cell-pricing {
   background: #fff;
   border-bottom: 12px solid $color-skyblue5;
-  margin: 0 -24px 18px;
+  margin: 0 0 18px;
   
   &:last-of-type {
     border-bottom: 0;    
   }
 
   @media only screen and (min-width: 480px) {
-    margin: 0 0 18px;
+    margin: 0 0 24px;
   }
 
   @media only screen and (min-width: 800px) {
@@ -76,9 +76,10 @@
 
   li {
     // color: #444;
+    color: $color-logo1;
     line-height: 27px;
     padding: 6px 0;
-    border-bottom: 2px solid $color-greywalls2;
+    // border-bottom: 2px solid $color-greywalls2;
   
     &.list-total {
       margin-top: -11px;
