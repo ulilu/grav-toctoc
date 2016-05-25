@@ -1675,12 +1675,12 @@ h2.bullet-headline + p { text-indent: 0; }
 
 .hero__text { position: absolute; bottom: 0; display: table-cell; vertical-align: bottom; max-width: 1200px; padding: 0 !important; margin: 0 auto; transition: all 0.3s ease-out; }
 
-.hero__title, .hero__subtitle { position: relative; z-index: 10; font-size: 18px; }
+.hero__title, .hero__subtitle { position: relative; z-index: 10; left: 0; font-size: 18px; }
 
-.hero__title { left: 0; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 120%; text-shadow: 1px 0 6px #000; padding: 0 24px; }
+.hero__title { font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 120%; text-shadow: 1px 0 6px #000; padding: 0 24px; }
 @media only screen and (min-width: 1200px) { .hero__title { padding-left: calc(((100vw - 100%) / 2) + 30px); } }
 
-.hero__subtitle { left: 0; line-height: 130%; padding: 12px 24px 12px; margin-bottom: 0; background: rgba(61, 49, 50, 0.85); color: #CDE5F1; }
+.hero__subtitle { line-height: 130%; padding: 12px 24px 12px; margin-bottom: 0; background: rgba(61, 49, 50, 0.85); color: #CDE5F1; }
 @media only screen and (min-width: 420px) { .hero__subtitle { font-size: 4.3vw; } }
 @media only screen and (min-width: 480px) { .hero__subtitle { padding-left: 30px; } }
 @media only screen and (min-width: 700px) { .hero__subtitle { font-size: 30px; } }
