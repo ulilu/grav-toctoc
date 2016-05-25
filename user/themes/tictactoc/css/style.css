@@ -1673,7 +1673,8 @@ h2.bullet-headline + p { text-indent: 0; }
 \*------------------------------------*/
 .hero { position: relative; z-index: 1; margin: -24px 0 0; }
 
-.hero__text { position: relative; display: table-cell; vertical-align: bottom; max-width: 1200px; height: 70vh; padding: 0 !important; margin: 0 auto; transition: all 0.3s ease-in-out; }
+.hero__text { position: relative; display: table-cell; vertical-align: bottom; max-width: 1200px; height: 70vh; padding: 0 !important; margin: 0 auto; transition: all 0.3s ease-out; max-height: 320px; }
+@media only screen and (min-width: 400px) { .hero__text { max-height: 360px; } }
 
 .hero__title, .hero__subtitle { position: relative; z-index: 10; font-size: 18px; }
 
@@ -1689,8 +1690,10 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*------------------------------------*\ Hero Image & Fade
 \*------------------------------------*/
-.hero__bg { position: absolute; top: 0; width: 100%; height: 70vh; transition: all 0.3s ease-in-out; /* 	1. For this to work in IE, we need to set the img as bgimg with msie.js */ }
-.hero__bg video, .hero__bg img { position: absolute; display: inline-block; top: 0; left: 0; width: 100%; height: 70vh; object-fit: cover; transition: all 0.3s ease-in-out; }
+.hero__bg { position: absolute; top: 0; width: 100%; height: 70vh; max-height: 320px; transition: all 0.3s ease-out; /* 	1. For this to work in IE, we need to set the img as bgimg with msie.js */ }
+@media only screen and (min-width: 400px) { .hero__bg { max-height: 360px; } }
+.hero__bg video, .hero__bg img { position: absolute; display: inline-block; top: 0; left: 0; width: 100%; height: 70vh; max-height: 320px; object-fit: cover; transition: all 0.3s ease-out; }
+@media only screen and (min-width: 400px) { .hero__bg video, .hero__bg img { max-height: 360px; } }
 .hero__bg:before { content: ""; display: block; width: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; z-index: 1; background: linear-gradient(190deg, rgba(0, 0, 47, 0.6), rgba(54, 36, 36, 0) 30%, rgba(54, 36, 36, 0) 50%, #362424 94%); background: linear-gradient(190deg, rgba(54, 36, 36, 0) 15%, rgba(54, 36, 36, 0.33) 40%, #362424 100%); background: linear-gradient(190deg, rgba(19, 41, 121, 0.7), rgba(54, 36, 36, 0) 28%, rgba(54, 36, 36, 0) 50%, rgba(54, 36, 36, 0.33) 70%, #362424 100%); background: linear-gradient(190deg, rgba(18, 41, 121, 0.7), rgba(54, 36, 36, 0) 28%, rgba(54, 36, 36, 0) 50%, rgba(54, 36, 36, 0.33) 60%, rgba(54, 36, 36, 0.9) 85%); background: linear-gradient(190deg, rgba(18, 41, 121, 0.7), rgba(54, 36, 36, 0) 28%, rgba(54, 36, 36, 0) 45%, rgba(54, 36, 36, 0.33) 59%, rgba(54, 36, 36, 0.8) 69%, #362424); }
 
 /*------------------------------------*\ BLOCK: Welcome
