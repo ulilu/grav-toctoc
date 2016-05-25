@@ -46,7 +46,8 @@
 body {
   font-size: 18px;
   line-height: 27px;
-  color:#444;
+  // color:#444;
+  color: $color-logo1;
   font-family: $font-light;
 }
 
@@ -59,16 +60,16 @@ p {
 
 a {
   // @include text-shadow_w11(.5);
-  color: $color-logo1;
+  // color: $color-logo1;
   text-decoration: none;
 
   &:hover {
     // @include text-shadow_w11(.75);
-    color: $color-logo1;
+    // color: $color-logo1;
     text-decoration: underline;
   }
   &:active {
-    color: $color-logo1;
+    // color: $color-logo1;
   }
 }
 

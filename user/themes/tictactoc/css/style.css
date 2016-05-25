@@ -268,7 +268,7 @@ body { position: relative; min-height: 100%; background: #fff; font-size: 16px; 
 
 .Linotte-Heavy, .font-heavy { font-family: Linotte-Heavy; font-weight: normal; font-style: normal; }
 
-body { font-size: 18px; line-height: 27px; color: #444; font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; }
+body { font-size: 18px; line-height: 27px; color: #3e0000; font-family: Linotte-Light, "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial, sans-serif; }
 
 ::-moz-selection { background: #00aabd; color: #fff; }
 
@@ -276,9 +276,8 @@ body { font-size: 18px; line-height: 27px; color: #444; font-family: Linotte-Lig
 
 p { margin: 0 0 30px; }
 
-a { color: #3e0000; text-decoration: none; }
-a:hover { color: #3e0000; text-decoration: underline; }
-a:active { color: #3e0000; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, .header a:hover, .header a:active { text-decoration: none; }
 
@@ -1706,7 +1705,7 @@ h2.bullet-headline + p { text-indent: 0; }
 	 *  Bonne Mère icon 
 	 */ }
 .block--welcome:after { background-size: 460px; background-position: left 3vw bottom -40px; }
-.block--welcome p { font-size: 18px; line-height: 160%; color: #444; color: #3e0000; }
+.block--welcome p { font-size: 18px; line-height: 160%; }
 @media only screen and (min-width: 650px) { .block--welcome p { font-size: 21px; } }
 .block--welcome p:last-of-type { margin-bottom: 0; }
 .block--welcome h2 { margin-top: 6px; }
