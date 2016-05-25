@@ -1677,7 +1677,8 @@ h2.bullet-headline + p { text-indent: 0; }
 
 .hero__title, .hero__subtitle { position: relative; z-index: 10; left: 0; font-size: 18px; }
 
-.hero__title { font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 120%; text-shadow: 1px 0 6px #000; padding: 0 24px; }
+.hero__title { font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 120%; text-shadow: 1px 0 6px #000; padding-left: 24px; }
+@media only screen and (min-width: 480px) { .hero__title { padding-left: 30px; } }
 @media only screen and (min-width: 1200px) { .hero__title { padding-left: calc(((100vw - 100%) / 2) + 30px); } }
 
 .hero__subtitle { line-height: 130%; padding: 12px 24px 12px; margin-bottom: 0; background: rgba(61, 49, 50, 0.85); color: #CDE5F1; }

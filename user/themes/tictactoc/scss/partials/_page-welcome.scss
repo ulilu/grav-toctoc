@@ -39,7 +39,11 @@
 	font-family: $font-regular;
 	line-height: 120%;
 	text-shadow: 1px 0 6px #000;
-  padding: 0 24px;
+  padding-left: 24px;
+  
+  @media only screen and (min-width: 480px) {
+    padding-left: 30px;
+  }
 
   @media only screen and (min-width: 1200px) {
     padding-left: calc(((100vw - 100%) / 2) + 30px);
