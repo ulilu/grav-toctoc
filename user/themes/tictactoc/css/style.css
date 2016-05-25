@@ -276,7 +276,7 @@ body { font-size: 18px; line-height: 27px; font-family: Linotte-Light, "Helvetic
 
 p { margin: 0 0 30px; }
 
-a { text-decoration: none; }
+a { color: #3e0000; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, .header a:hover, .header a:active { text-decoration: none; }
