@@ -358,6 +358,14 @@
 .page-welcome {
 
   .block--howto {
+
+    @media only screen and (min-width:1200px) {
+      &:before {
+        opacity: .2;
+        background-size: 420px; // yeah!
+        background-position: left -40px bottom 60px;
+      }
+    }
   }
 
   .timeline-row {
