@@ -131,7 +131,7 @@ $(document).ready(function() {
       $optionSet.find('.js-selected').removeClass('js-selected');
       $this.addClass('js-selected');
 
-      $categorySet.append(detached);
+      // $categorySet.append(detached);
       $notCurrentCategory.detach();
 
       return false;
