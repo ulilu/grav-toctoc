@@ -106,7 +106,7 @@ $(document).ready(function() {
   $(function(){
     var $optionSets = $('.filter');
     var $optionLinks = $optionSets.find('a');
-    var notCurrentCategory;
+    var $notCurrentCategory;
 
     $optionLinks.click(function(){
 
@@ -116,8 +116,8 @@ $(document).ready(function() {
         return false;
       }
 
-      if ( notCurrentCategory ) {
-        notCurrentCategory.appendTo( $( '.cards' ) );
+      if ( $notCurrentCategory ) {
+        $notCurrentCategory.appendTo( $( '.cards' ) );
       }
  
       var $currentCategory = $this.attr('data-option-value');
