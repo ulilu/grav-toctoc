@@ -376,6 +376,7 @@
 
   .timeline-row__info {
     margin-bottom: 30px;
+    padding: 0;
     
     &:after {
       top: calc(50% - 15px);
@@ -383,10 +384,17 @@
     
     h2 {
       margin-bottom: 0;
+      padding: 24px;
     }
 
     p {
       display: none;
+    }
+
+    @media only screen and (min-width: 700px) {
+      h2 {
+        padding: 34px;
+      }
     }
 
     @media only screen and (min-width: 1000px) {
