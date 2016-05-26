@@ -115,17 +115,22 @@ $(document).ready(function() {
         return false;
       }
  
-      var $thisCategory = $this.attr('data-option-value');
+      var $currentCategory = $this.attr('data-option-value');
       var $categorySet = $this.parents('.filter').siblings('.cards');
+      var $notCurrentCategory = $categorySet.find('.card:not([data-partner-category*=' + $currentCategory + '])');
 
-      $categorySet.removeClass (function (index, css) {
-        return (css.match (/(^|\s)js-category-\S+/g) || []).join(' ');
-      });
-      $categorySet.addClass('js-category-' + $thisCategory);
+      // $categorySet.removeClass (function (index, css) {
+      //   return (css.match (/(^|\s)js-category-\S+/g) || []).join(' ');
+      // });
+      // $categorySet.addClass('js-category-' + $thisCategory);
+
 
       var $optionSet = $this.parents('.filter');
       $optionSet.find('.js-selected').removeClass('js-selected');
       $this.addClass('js-selected');
+
+      $categorySet.append(detached);
+      $notCurrentCategory.detach();
 
       return false;
     });       
