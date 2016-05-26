@@ -1872,10 +1872,10 @@ h2.bullet-headline + p { text-indent: 0; }
 
 .filter { position: relative; display: block; vertical-align: middle; margin-bottom: 18px; }
 @media only screen and (min-width: 1000px) { .filter { float: right; display: inline-block; margin: 0; } }
-.filter li { display: inline-block; margin: 0 12px 18px 0; }
-.filter li:last-of-type { margin-right: 0; }
+.filter li { float: left; display: inline-block; margin: 0 0 18px 0; }
 
-.filter a { border: 2px solid #ffded2; display: inline-block; padding: 6px 15px 4px; border-radius: 21px; color: #fff; font-weight: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.filter a { border-left: 2px solid #ffded2; display: inline-block; padding: 6px 15px 4px; color: #fff; font-weight: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+@media only screen and (min-width: 1000px) { .filter a { border-left: 0; border-right: 2px solid #ffded2; } }
 .filter a:hover { color: #f77d53; border: 2px solid #ffded2; background: #ffded2; text-decoration: none; }
 .filter a:active, .filter a.js-selected { color: #e15f33; border: 2px solid #fff; background: #fff; }
 
