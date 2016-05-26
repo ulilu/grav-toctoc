@@ -1755,7 +1755,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .page-welcome .timeline-row__info h2 a { padding: 24px; display: block; }
 .page-welcome .timeline-row__info h2 a:hover { text-decoration: underline; }
 .page-welcome .timeline-row__info p { display: none; }
-@media only screen and (min-width: 700px) { .page-welcome .timeline-row__info h2 a { padding: 36px; } }
+@media only screen and (min-width: 700px) { .page-welcome .timeline-row__info h2 a { line-height: 48px; padding: 32px; } }
 @media only screen and (min-width: 1000px) { .page-welcome .timeline-row__info { margin-top: 0; min-height: 120px; }
   .page-welcome .timeline-row__info h2 { font-size: 42px; line-height: 48px; } }
 
