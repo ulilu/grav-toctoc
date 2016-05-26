@@ -58,6 +58,18 @@
   }
 }
 
+.cards:not(.js-category-all) {
+  .card {
+    display: none;
+  }
+}
+
+.cards.js-category-activity {
+  [data-partner-category*=activity] {
+    display: block;
+  }
+}
+
 
 
 /*------------------------------------*\
