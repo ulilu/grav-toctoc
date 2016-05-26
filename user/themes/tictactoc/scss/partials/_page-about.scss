@@ -73,11 +73,15 @@
 
 
 .filter {
-  float: right;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: 0;
+  
+  
+  @media only screen and (min-width: 1100px) {
+    float: right;
+    margin: 0;
+  }
   
   li {
     display: inline-block;

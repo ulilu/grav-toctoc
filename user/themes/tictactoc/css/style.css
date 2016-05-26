@@ -1870,7 +1870,8 @@ h2.bullet-headline + p { text-indent: 0; }
 @media only screen and (min-width: 536px) { .card--partner { min-height: 340px; } }
 .card--partner img { height: 200px; min-height: 200px; }
 
-.filter { float: right; position: relative; display: inline-block; vertical-align: middle; margin: 0; }
+.filter { position: relative; display: inline-block; vertical-align: middle; }
+@media only screen and (min-width: 1100px) { .filter { float: right; margin: 0; } }
 .filter li { display: inline-block; margin: 0 12px 0 0; }
 .filter li:last-of-type { margin-right: 0; }
 
