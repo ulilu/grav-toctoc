@@ -358,11 +358,7 @@
 .page-welcome {
 
   .block--howto {
-    z-index: -1;
-    
-    .block {
-      z-index: 1; 
-    }
+    z-index: 1;
 
     @media only screen and (min-width:1200px) {
       &:after {
