@@ -116,7 +116,7 @@ $(document).ready(function() {
       }
  
       var $thisCategory = $this.attr('data-option-value');
-      var $categorySet = $this.parents('.filter').siblings('.card-list');
+      var $categorySet = $this.parents('.filter').siblings('.cards');
 
       $categorySet.removeClass (function (index, css) {
         return (css.match (/(^|\s)js-category-\S+/g) || []).join(' ');
