@@ -120,7 +120,7 @@ $(document).ready(function() {
       var $categorySet = $this.parents('.filter').siblings('.cards');
       // var $notCurrentCategory = $categorySet.find('.card:not([data-partner-category*=' + $currentCategory + '])');
 
-      if ( $NotCurrentCategory) {
+      if ( $notCurrentCategory) {
           $notCurrentCategory.appendTo( $( '.cards' ) );
       }
       
