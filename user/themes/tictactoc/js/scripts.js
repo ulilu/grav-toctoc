@@ -104,8 +104,8 @@ $(document).ready(function() {
 
 
   $(function(){
-    var $optionSets = $('.filter'),
-    $optionLinks = $optionSets.find('a');
+    var $optionSets = $('.filter');
+    var $optionLinks = $optionSets.find('a');
 
     $optionLinks.click(function(){
 

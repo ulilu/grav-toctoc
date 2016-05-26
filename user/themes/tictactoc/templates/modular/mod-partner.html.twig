@@ -7,7 +7,7 @@
 	<ul id="filters" class="filter" data-option-key="filter">
     <li><a href="#filter" data-option-value="*" class="selected">Show all</a></li>
     {% for item in page.header.categories %}
-        <li><a href="#filter" data-option-value=".{{ item.name }}">{{ item.name }}</a></li>
+        <li><a href="#filter" data-option-value=".{{ item.name }}">{{ item.name|capitalize }}</a></li>
     {% endfor %}
 	</ul>
 
