@@ -388,6 +388,10 @@
       a {
         padding: 24px;
         display: block;
+        
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
