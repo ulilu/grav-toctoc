@@ -120,7 +120,10 @@ $(document).ready(function() {
       var $categorySet = $this.parents('.filter').siblings('.cards');
       // var $notCurrentCategory = $categorySet.find('.card:not([data-partner-category*=' + $currentCategory + '])');
 
-      $notCurrentCategory.appendTo( $( '.cards' ) );
+      if ( $NotCurrentCategory) {
+          $notCurrentCategory.appendTo( $( '.cards' ) );
+      }
+      
       $notCurrentCategory = $('.card:not([data-partner-category="'+ $currentCategory + '"])');
 
       // $categorySet.removeClass (function (index, css) {
