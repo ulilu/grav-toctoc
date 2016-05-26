@@ -106,6 +106,7 @@ $(document).ready(function() {
   $(function(){
     var $optionSets = $('.filter');
     var $optionLinks = $optionSets.find('a');
+    var notCurrentCategory;
 
     $optionLinks.click(function(){
 
@@ -113,6 +114,10 @@ $(document).ready(function() {
       // don't proceed if already selected
       if ( $this.hasClass('js-selected') ) {
         return false;
+      }
+
+      if ( notCurrentCategory ) {
+        notCurrentCategory.appendTo('.categorySet');
       }
  
       var $currentCategory = $this.attr('data-option-value');
