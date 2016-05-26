@@ -359,13 +359,17 @@
 
   .block--howto {
     z-index: -1;
+    
+    .block {
+      z-index: 1; 
+    }
 
     @media only screen and (min-width:1200px) {
       &:before {
         z-index: -1;
         opacity: .5;
         background-size: 560px; // yeah!
-        background-position: left -17px bottom -182px;
+        background-position: left 1vw bottom -121px;
       }
     }
   }
