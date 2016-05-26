@@ -1876,7 +1876,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 .filter a { border-left: 2px solid #ffded2; display: inline-block; padding: 6px 15px 4px; color: #fff; font-weight: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 @media only screen and (min-width: 1000px) { .filter a { border-left: 0; border-right: 2px solid #ffded2; } }
-.filter a:hover { color: #f77d53; border-color: #ffded2; background: #ffded2; text-decoration: none; }
+.filter a:hover { color: #e15f33; border-color: #ffded2; background: #ffded2; text-decoration: none; }
 .filter a:active, .filter a.js-selected { color: #e15f33; border-color: #fff; background: #fff; }
 
 /*------------------------------------*\ Press archives

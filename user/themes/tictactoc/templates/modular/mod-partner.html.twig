@@ -5,7 +5,7 @@
 
 
 		<ul class="filter">
-	    <li><a href="#" data-category-name="js-category-all" class="js-selected">Show all</a></li>
+	    <li><a href="#" data-category-name="js-category-all" class="js-selected">{% if grav.language.getActive == 'fr' %}Voir tous???{% elseif grav.language.getActive == 'en' %}Show all{% endif %}</a></li>
 	    {% for item in page.header.categories %}
 	        <li><a href="#" data-category-name="js-category-{{ item.name }}">{{ item.name|capitalize }}</a></li>
 	    {% endfor %}
