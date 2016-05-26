@@ -111,21 +111,21 @@ $(document).ready(function() {
 
       var $this = $(this);
       // don't proceed if already selected
-      if ( $this.hasClass('selected') ) {
+      if ( $this.hasClass('js-selected') ) {
         return false;
       }
  
-      var $optionSet = $this.parents('.filter');
-      $optionSet.find('.selected').removeClass('selected');
-      $this.addClass('selected');
+      var $thisCategory = $this.attr('data-option-value');
+      var $categorySet = $this.parents('.filter').siblings('.card-list');
 
-      // make option object dynamically, i.e. { filter: '.my-filter-class' }
-      var options = {},
-      key = $optionSet.attr('data-option-key'),
-      value = $this.attr('data-option-value');
-      // parse 'false' as false boolean
-      value = value === 'false' ? false : value;
-      options[ key ] = value;
+      $categorySet.removeClass (function (index, css) {
+        return (css.match (/(^|\s)js-category-\S+/g) || []).join(' ');
+      });
+      $categorySet.addClass('js-category-' + thisCategory);
+
+      var $optionSet = $this.parents('.filter');
+      $optionSet.find('.js-selected').removeClass('js-selected');
+      $this.addClass('js-selected');
 
       return false;
     });       

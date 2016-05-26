@@ -1,19 +1,21 @@
 <section class="block block--stretch  block--partner">
 	
 	<div class="block">
-	{{ page.content }}
+		{{ page.content }}
 
 
-	<ul id="filters" class="filter" data-option-key="filter">
-    <li><a href="#filter" data-option-value="*" class="selected">Show all</a></li>
-    {% for item in page.header.categories %}
-        <li><a href="#filter" data-option-value=".{{ item.name }}">{{ item.name|capitalize }}</a></li>
-    {% endfor %}
-	</ul>
+		<ul id="filters" class="filter" data-option-key="filter">
+	    <li><a href="#filter" data-option-value="all" class="js-selected">Show all</a></li>
+	    {% for item in page.header.categories %}
+	        <li><a href="#filter" data-option-value="{{ item.name }}">{{ item.name|capitalize }}</a></li>
+	    {% endfor %}
+		</ul>
 
 
+		<ul class="card-list js-category-all">
 		{% for partner in page.header.partners %}
-			<a class="card  card--partner  width-25" href="{{ partner.link }}" target="_new">
+			<li>
+			<a class="card  card--partner  width-25" href="{{ partner.link }}" data-partner-category="{{ partner.category }}" target="_new">
 
 				<div class="card__img" href="{{ partner.link }}" target="_new">
 					{{ page.media[partner.image].cropResize(300, 300).html() }}
@@ -25,6 +27,7 @@
 				</div>
 
 			</a>
+		</li>
 		{% endfor %}
 
 	</div>
