@@ -357,6 +357,15 @@
 
 .page-welcome {
 
+  @media only screen and (min-width:1200px) {
+    .block--howto:after {
+      z-index: -1;
+      opacity: 1;
+      background-size: 480px; // yeah!
+      background-position: left 1vw bottom -140px;
+    }
+  }
+
   .timeline-row {
     padding-bottom: 0;
   }
