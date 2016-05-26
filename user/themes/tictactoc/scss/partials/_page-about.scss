@@ -107,7 +107,7 @@
 
   &:hover {
     color: $color-rouille3;
-    border: 2px solid $color-rouille5;
+    border-color: $color-rouille5;
     background: $color-rouille5;
     text-decoration: none;
   }
@@ -115,7 +115,7 @@
   &:active,
   &.js-selected {
     color: $color-rouille2;
-    border: 2px solid #fff;
+    border-color: #fff;
     background: #fff;
   }
 }
