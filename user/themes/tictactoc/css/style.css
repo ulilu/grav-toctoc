@@ -1736,7 +1736,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*------------------------------------*\ ADAPTATION: .block--examples
 \*------------------------------------*/
-.page-welcome .block--examples { border-bottom: 12px solid #fff; /* 1. To make space for the .btn--scroll */ }
+.page-welcome .block--examples { /* 1. To make space for the .btn--scroll */ }
 @media only screen and (min-width: 1200px) { .page-welcome .block--examples:before { opacity: .2; background-size: 420px; background-position: left -40px bottom 60px; } }
 .page-welcome .block--examples h1 { display: inline-block; margin-bottom: 0; width: calc(100% - 66px); vertical-align: middle; }
 .page-welcome .block--examples .card { z-index: 2; display: inline-block; float: none; white-space: normal; vertical-align: top; margin-right: 30px !important; }
