@@ -117,7 +117,7 @@ $(document).ready(function() {
       }
 
       if ( notCurrentCategory ) {
-        notCurrentCategory.appendTo('.categorySet');
+        notCurrentCategory.appendTo( $( '.cards' ) );
       }
  
       var $currentCategory = $this.attr('data-option-value');
