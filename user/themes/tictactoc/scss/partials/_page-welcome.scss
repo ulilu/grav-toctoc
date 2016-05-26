@@ -358,9 +358,11 @@
 .page-welcome {
 
   .block--howto {
+    z-index: -1;
 
     @media only screen and (min-width:1200px) {
       &:before {
+        z-index: -1;
         opacity: .2;
         background-size: 420px; // yeah!
         background-position: left -40px bottom 60px;
