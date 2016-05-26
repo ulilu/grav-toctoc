@@ -103,17 +103,21 @@ $(document).ready(function() {
   accordionSlide();
 
 
+  /*
+   *  Providing filter functionality to .cards collections.
+   *  
+   */
   $(function(){
     var $optionSets = $('.filter');
     var $optionLinks = $optionSets.find('a');
     var $notCurrentCategory;
 
-    $optionLinks.click(function(){
+    $optionLinks.click(function(e){
 
       var $this = $(this);
       // don't proceed if already selected
       if ( $this.hasClass('js-selected') ) {
-        return false;
+        e.preventDefault();
       }
 
       var $optionSet = $this.parents('.filter');
@@ -121,7 +125,7 @@ $(document).ready(function() {
       $this.addClass('js-selected');
 
 
-      var $currentCategory = $this.attr('data-option-value');
+      var $currentCategory = $this.attr('data-category-name');
       var $categorySet = $this.parents('.filter').siblings('.cards');
 
       if ( $notCurrentCategory ) {
@@ -135,7 +139,7 @@ $(document).ready(function() {
         $notCurrentCategory.detach();
       }
 
-      return false;
+      e.preventDefault();
     });       
   });
 

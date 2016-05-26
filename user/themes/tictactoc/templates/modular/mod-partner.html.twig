@@ -4,10 +4,10 @@
 		{{ page.content }}
 
 
-		<ul id="filters" class="filter" data-option-key="filter">
-	    <li><a href="#filter" data-option-value="js-category-all" class="js-selected">Show all</a></li>
+		<ul class="filter">
+	    <li><a href="#" data-category-name="js-category-all" class="js-selected">Show all</a></li>
 	    {% for item in page.header.categories %}
-	        <li><a href="#filter" data-option-value="js-category-{{ item.name }}">{{ item.name|capitalize }}</a></li>
+	        <li><a href="#" data-category-name="js-category-{{ item.name }}">{{ item.name|capitalize }}</a></li>
 	    {% endfor %}
 		</ul>
 
