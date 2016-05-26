@@ -71,6 +71,7 @@
 //   }
 // }
 
+
 .filter {
   float: right;
   position: relative;
@@ -80,25 +81,31 @@
   
   li {
     display: inline-block;
+    margin: 0 12px 0 0;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }
 
 .filter a {
-  border: 2px solid #fff;
+  border: 2px solid $color-rouille5;
   display: inline-block;
   padding: 6px 15px 4px;
   border-radius: 21px;
-  margin: 0 12px 0 0;
   color: #fff;
+  font-weight: $font-semibold;
   
-  &:hover,
-  &.js-selected {
+  &:hover {
     color: $color-rouille3;
     border: 2px solid $color-rouille5;
     background: $color-rouille5;
+    text-decoration: none;
   }
 
-  &:active {
+  &:active,
+  &.js-selected {
     color: $color-rouille2;
     border: 2px solid #fff;
     background: #fff;

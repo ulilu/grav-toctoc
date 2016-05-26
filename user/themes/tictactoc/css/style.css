@@ -1871,11 +1871,12 @@ h2.bullet-headline + p { text-indent: 0; }
 .card--partner img { height: 200px; min-height: 200px; }
 
 .filter { float: right; position: relative; display: inline-block; vertical-align: middle; margin: 0; }
-.filter li { display: inline-block; }
+.filter li { display: inline-block; margin: 0 12px 0 0; }
+.filter li:last-of-type { margin-right: 0; }
 
-.filter a { border: 2px solid #fff; display: inline-block; padding: 6px 15px 4px; border-radius: 21px; margin: 0 12px 0 0; color: #fff; }
-.filter a:hover, .filter a.js-selected { color: #f77d53; border: 2px solid #ffded2; background: #ffded2; }
-.filter a:active { color: #e15f33; border: 2px solid #fff; background: #fff; }
+.filter a { border: 2px solid #ffded2; display: inline-block; padding: 6px 15px 4px; border-radius: 21px; color: #fff; font-weight: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.filter a:hover { color: #f77d53; border: 2px solid #ffded2; background: #ffded2; text-decoration: none; }
+.filter a:active, .filter a.js-selected { color: #e15f33; border: 2px solid #fff; background: #fff; }
 
 /*------------------------------------*\ Press archives
 \*------------------------------------*/
