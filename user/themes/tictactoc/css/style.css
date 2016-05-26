@@ -1747,7 +1747,7 @@ h2.bullet-headline + p { text-indent: 0; }
 /*------------------------------------*\ ADAPTATION: .block--about
 \*------------------------------------*/
 .page-welcome .block--howto { z-index: 1; }
-@media only screen and (min-width: 1200px) { .page-welcome .block--howto:after { z-index: -1; opacity: .5; background-size: 480px; background-position: left 1vw bottom -121px; } }
+@media only screen and (min-width: 1200px) { .page-welcome .block--howto:after { z-index: -1; opacity: 1; background-size: 480px; background-position: left 1vw bottom -121px; } }
 .page-welcome .timeline-row { padding-bottom: 0; }
 .page-welcome .timeline-row__info { margin-bottom: 30px; }
 .page-welcome .timeline-row__info:after { top: calc(50% - 15px); }
