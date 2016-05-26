@@ -1450,7 +1450,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*  Textblock in .timeline-row containing headline, description & link */
 .timeline-row__info { position: relative; z-index: 1; background: #fff; padding: 18px 18px 18px 42px; border-radius: 9px; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); }
-.timeline-row__info h2 { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; line-height: 30px; margin-bottom: 12px; text-indent: 18px; }
+.timeline-row__info h2 { font-size: 24px; line-height: 30px; margin-bottom: 12px; text-indent: 18px; }
 .timeline-row__info h2:before { display: none !important; }
 .timeline-row__info p { margin: 0; font-size: 16px; line-height: 24px; }
 .timeline-row__info .link--mailto { display: inline-block; position: relative; top: 3px; left: 0; vertical-align: middle; font-size: 18px; z-index: 10; margin: 12px 0 6px; border-bottom: 1px solid #8EBDD4; color: #504A6D; transition: all 0.3s ease; }
