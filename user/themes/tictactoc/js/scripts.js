@@ -115,16 +115,13 @@ $(document).ready(function() {
       if ( $this.hasClass('js-selected') ) {
         return false;
       }
-
-      if ( $notCurrentCategory ) {
-        $notCurrentCategory.appendTo( $( '.cards' ) );
-      }
  
       var $currentCategory = $this.attr('data-option-value');
       var $categorySet = $this.parents('.filter').siblings('.cards');
       // var $notCurrentCategory = $categorySet.find('.card:not([data-partner-category*=' + $currentCategory + '])');
 
-      var $notCurrentCategory = $('.card:not([data-partner-category="'+ $currentCategory + '"])');
+      $notCurrentCategory.appendTo( $( '.cards' ) );
+      $notCurrentCategory = $('.card:not([data-partner-category="'+ $currentCategory + '"])');
 
       // $categorySet.removeClass (function (index, css) {
       //   return (css.match (/(^|\s)js-category-\S+/g) || []).join(' ');
