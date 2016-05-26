@@ -117,7 +117,9 @@ $(document).ready(function() {
  
       var $currentCategory = $this.attr('data-option-value');
       var $categorySet = $this.parents('.filter').siblings('.cards');
-      var $notCurrentCategory = $categorySet.find('.card:not([data-partner-category*=' + $currentCategory + '])');
+      // var $notCurrentCategory = $categorySet.find('.card:not([data-partner-category*=' + $currentCategory + '])');
+
+      var $notCurrentCategory = $('.card:not([data-partner-category="'+ $currentCategory + '"])');
 
       // $categorySet.removeClass (function (index, css) {
       //   return (css.match (/(^|\s)js-category-\S+/g) || []).join(' ');
