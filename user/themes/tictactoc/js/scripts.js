@@ -121,7 +121,7 @@ $(document).ready(function() {
       $categorySet.removeClass (function (index, css) {
         return (css.match (/(^|\s)js-category-\S+/g) || []).join(' ');
       });
-      $categorySet.addClass('js-category-' + thisCategory);
+      $categorySet.addClass('js-category-' + $thisCategory);
 
       var $optionSet = $this.parents('.filter');
       $optionSet.find('.js-selected').removeClass('js-selected');
