@@ -1870,9 +1870,9 @@ h2.bullet-headline + p { text-indent: 0; }
 @media only screen and (min-width: 536px) { .card--partner { min-height: 340px; } }
 .card--partner img { height: 200px; min-height: 200px; }
 
-.filter { position: relative; display: inline-block; vertical-align: middle; }
+.filter { position: relative; display: inline-block; vertical-align: middle; margin-bottom: 18px; }
 @media only screen and (min-width: 1100px) { .filter { float: right; margin: 0; } }
-.filter li { display: inline-block; margin: 0 12px 0 0; }
+.filter li { display: inline-block; margin: 0 12px 18px 0; }
 .filter li:last-of-type { margin-right: 0; }
 
 .filter a { border: 2px solid #ffded2; display: inline-block; padding: 6px 15px 4px; border-radius: 21px; color: #fff; font-weight: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
