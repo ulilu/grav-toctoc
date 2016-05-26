@@ -390,7 +390,7 @@
         display: block;
         
         &:hover {
-          color: $color-logo1;
+          color: $color-logo1 !important;
         }
       }
     }
