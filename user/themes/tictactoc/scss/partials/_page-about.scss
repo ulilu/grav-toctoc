@@ -33,6 +33,7 @@
   background: $color-rouille3;
   
   h1 {
+    display: inline-block;
     color: $color-white;
   }
 
@@ -69,6 +70,40 @@
 //     display: block;
 //   }
 // }
+
+.filter {
+  float: right;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  
+  li {
+    display: inline-block;
+  }
+}
+
+.filter a {
+  border: 2px solid #fff;
+  display: inline-block;
+  padding: 6px 15px 4px;
+  border-radius: 21px;
+  margin: 0 12px 0 0;
+  color: #fff;
+  
+  &:hover,
+  &.js-selected {
+    color: $color-rouille3;
+    border: 2px solid $color-rouille5;
+    background: $color-rouille5;
+  }
+
+  &:active {
+    color: $color-rouille2;
+    border: 2px solid #fff;
+    background: #fff;
+  }
+}
 
 
 
