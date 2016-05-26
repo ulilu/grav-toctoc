@@ -1861,8 +1861,9 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*------------------------------------*\ Partner cards (on About page)
 \*------------------------------------*/
-.block--partner { z-index: -1; padding-bottom: 12px; border-top: 12px solid #ffffff; border-bottom: 12px solid #e15f33; background: #f77d53; }
+.block--partner { z-index: 1; padding-bottom: 12px; border-top: 12px solid #ffffff; border-bottom: 12px solid #e15f33; background: #f77d53; }
 .block--partner h1 { color: #ffffff; }
+.block--partner > .block { z-index: 1; }
 
 .card--partner { background: #fdf0eb; }
 @media only screen and (min-width: 536px) { .card--partner { min-height: 360px; } }
