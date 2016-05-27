@@ -86,6 +86,7 @@
     color: #fff;
     transform: translateY(3px);
     border: 0;
+    margin-bottom: 3px;
   }
 }
 
@@ -171,16 +172,6 @@
   }
 }
 
-
-
-.page-services .btn,
-.page-pricing .btn {
-
-  &:active,
-  a:active:hover & {
-    margin-bottom: 3px;
-  }
-}
 
 .btn--social {
   color: #fff !important;

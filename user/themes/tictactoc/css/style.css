@@ -1113,7 +1113,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 \*------------------------------------*/
 .btn-orange, .btn-red, .btn-blue, .btn-green, .btn-rouge, .btn-rouille, .btn-sable, .btn-skyblue, .btn-seagreen, .btn-lavender { color: #fff; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .btn-orange:hover, .btn-red:hover, .btn-blue:hover, .btn-green:hover, .btn-rouge:hover, .btn-rouille:hover, .btn-sable:hover, .btn-skyblue:hover, .btn-seagreen:hover, .btn-lavender:hover { color: #fff; }
-.btn-orange:active, .btn-red:active, .btn-blue:active, .btn-green:active, .btn-rouge:active, .btn-rouille:active, .btn-sable:active, .btn-skyblue:active, .btn-seagreen:active, .btn-lavender:active { color: #fff; transform: translateY(3px); border: 0; }
+.btn-orange:active, .btn-red:active, .btn-blue:active, .btn-green:active, .btn-rouge:active, .btn-rouille:active, .btn-sable:active, .btn-skyblue:active, .btn-seagreen:active, .btn-lavender:active { color: #fff; transform: translateY(3px); border: 0; margin-bottom: 3px; }
 
 .btn-orange { background: #f58b4a; border-bottom: 3px solid #cc6221; }
 .btn-orange:hover, a:hover .btn-orange { background: #E47836; }
@@ -1129,8 +1129,6 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 
 .btn-lavender { color: #fff; background: #8078a3; border-bottom: 3px solid #312c4a; }
 .btn-lavender:hover, a:hover .btn-lavender { color: #fff; background: #504A6D; }
-
-.page-services .btn:active, a:active:hover .page-services .btn, .page-pricing .btn:active, a:active:hover .page-pricing .btn { margin-bottom: 3px; }
 
 .btn--social { color: #fff !important; margin: 0 6px 12px 0; }
 .btn--social:last-of-type { margin: 0; }
