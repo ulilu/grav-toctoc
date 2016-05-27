@@ -16,7 +16,7 @@
 								{{ page.find('/how-it-works').url() }}
 							{% elseif grav.language.getActive == 'fr' %} 
 								{{ page.find('/comment-ca-marche').url() }}
-							{% endif %}#step{{ loop.index }}">{{ loop.index }}. {{ step.title }}</a></h2>
+							{% endif %}#step{{ loop.index }}">{{ loop.index0 }}. {{ step.title }}</a></h2>
 
 					{% elseif uri.path() != '/' %}
 
