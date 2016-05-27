@@ -1773,9 +1773,9 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ LIST PAGE: Services
 \*---------------------------------------------------------------------------*/
-.page-services { background: #FCE8B7; }
+.page-services { background: #FCE8B7; background: #EFE8D8; }
 .page-services .main { padding-top: 0; }
-.page-services .footer { border-top: 12px solid #dec586; }
+.page-services .footer { border-top: 12px solid #dec586; border-top: 12px solid #D7CAAD; }
 .page-services .block--services { z-index: 1; padding: 0 !important; margin: 0 auto; width: 100%; max-width: 100%; height: 100%; }
 @media only screen and (min-width: 800px) { .page-services .block--services { display: table; height: calc(100vh - 188px); } }
 @media only screen and (min-width: 1200px) { .page-services .block--services:after { opacity: 1; left: auto; right: 0; background-size: 420px; background-position: right -28px bottom -42px; } }
