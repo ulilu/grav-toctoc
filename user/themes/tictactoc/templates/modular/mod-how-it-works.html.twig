@@ -3,18 +3,36 @@
 	  {{ page.content }}
 
 		{% for step in page.header.steps %}
+
 			<figure class="timeline-row">
 				<div class="timeline-row__img">{{ page.media[step.image].cropResize(240, 240).html() }}</div>
+
 				<figcaption class="timeline-row__info">
-					<h2><a class="color-{{ step.color }}" href="#">{{ loop.index }}. {{ step.title }}</a></h2>
-					<p>{{ step.text }}
-						{% if step.link %}
-							<br>
-							<a href="{{ step.link }}" class="{{ step.linkclass }}" title="{{ step.linktitle }}">{{ step.linktext }}</a>
-						{% endif %}
-					</p>
+
+					{% if uri.path() == '/' %}
+					
+						<h2><a class="color-{{ step.color }}" href="{% if grav.language.getActive == 'en' %}
+								{{ page.find('/en/how-it-works').url() }}
+							{% elseif grav.language.getActive == 'fr' %} 
+								{{ page.find('/fr/comment-ca-marche').url() }}
+							{% endif %}#step{{ loop.index }}">{{ loop.index }}. {{ step.title }}</a></h2>
+
+					{% elseif uri.path() not '/' %}
+
+						<h2><a class="color-{{ step.color }}" name="step{{ loop.index }}">{{ loop.index }}. {{ step.title }}</a></h2>
+
+						<p>{{ step.text }}
+							{% if step.link %}
+								<br>
+								<a href="{{ step.link }}" class="{{ step.linkclass }}" title="{{ step.linktitle }}">{{ step.linktext }}</a>
+							{% endif %}
+						</p>
+
+					{% endif %}
+
 				</figcaption>
 			</figure>
+
 		{% endfor %}
 
 	</div>
