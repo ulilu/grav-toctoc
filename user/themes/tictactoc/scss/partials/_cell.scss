@@ -13,7 +13,7 @@
   display: block;
   vertical-align: top;
   
-  > *:last-child {
+  > *:last-child:not(.btn) {
     margin-bottom: 0 !important;
   }
 
