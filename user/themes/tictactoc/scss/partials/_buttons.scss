@@ -251,7 +251,7 @@
   background: $color-lavender3;
   border-bottom: 3px solid $color-lavender1;
   border-radius: 6px;
-  transition: background ease-in 0.1s;
+  transition: all ease-in 0.1s;
 
   &.reverse {
     background: $color-lavender3;
@@ -289,11 +289,9 @@
   }
 
   &:active {
-    border-bottom: none;
+    transform: translateY(3px);
+    border: none;
     background: $color-lavender3;
-    border-top: 3px solid $color-lavender2;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
   }
 }
 
