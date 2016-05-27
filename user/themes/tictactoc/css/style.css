@@ -1122,7 +1122,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn-orange:hover, a:hover .btn-orange { background: #E47836; }
 .btn-orange:active, a:active:hover .btn-orange { border-top: 3px solid #F1E4C6; border-bottom: 0; }
 
-.btn-rouille { color: #fdf0eb; color: #fff; background: #f77d53; border-bottom: 3px solid #b05031; }
+.btn-rouille { color: #fff; background: #f77d53; border-bottom: 3px solid #b05031; }
 .btn-rouille:hover, a:hover .btn-rouille { color: #fff; background: #e15f33; }
 .btn-rouille:active, a:active:hover .btn-rouille { border: 0; border-top: 3px solid #F1E4C6; }
 
@@ -1130,7 +1130,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn-red:hover, a:hover .btn-red { background: #a62826; }
 .btn-red:active, a:active:hover .btn-red { border-top: 3px solid #F1E4C6; border-bottom: 0; }
 
-.btn-rouge { color: #fcefef; color: #fff; background: #ec5f6b; border-bottom: 3px solid #9B2E36; }
+.btn-rouge { color: #fff; background: #ec5f6b; border-bottom: 3px solid #9B2E36; }
 .btn-rouge:hover, a:hover .btn-rouge { color: #fff; background: #c63641; }
 .btn-rouge:active, a:active:hover .btn-rouge { border: 0; border-top: 3px solid #F1E4C6; }
 
