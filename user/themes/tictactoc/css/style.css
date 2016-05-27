@@ -1114,9 +1114,9 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 
 /*------------------------------------*\ Colored buttons, used in  .cell--service
 \*------------------------------------*/
-.btn-orange, .btn-red, .btn-rouille, .btn-blue, .btn-green { color: #fff; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-.btn-orange:hover, .btn-red:hover, .btn-rouille:hover, .btn-blue:hover, .btn-green:hover { color: #fff; }
-.btn-orange:active, .btn-red:active, .btn-rouille:active, .btn-blue:active, .btn-green:active { color: #fff; }
+.btn-orange, .btn-red, .btn-blue, .btn-green, .btn-rouge, .btn-rouille, .btn-sable, .btn-skyblue, .btn-seagreen, .btn-lavender { color: #fff; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.btn-orange:hover, .btn-red:hover, .btn-blue:hover, .btn-green:hover, .btn-rouge:hover, .btn-rouille:hover, .btn-sable:hover, .btn-skyblue:hover, .btn-seagreen:hover, .btn-lavender:hover { color: #fff; }
+.btn-orange:active, .btn-red:active, .btn-blue:active, .btn-green:active, .btn-rouge:active, .btn-rouille:active, .btn-sable:active, .btn-skyblue:active, .btn-seagreen:active, .btn-lavender:active { color: #fff; }
 
 .btn-orange { background: #f58b4a; border-bottom: 3px solid #cc6221; }
 .btn-orange:hover, a:hover .btn-orange { background: #E47836; }
@@ -1129,6 +1129,10 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn-red { background: #c14e46; border-bottom: 3px solid #860714; }
 .btn-red:hover, a:hover .btn-red { background: #a62826; }
 .btn-red:active, a:active:hover .btn-red { border-top: 3px solid #F1E4C6; border-bottom: 0; }
+
+.btn-rouge { color: #fcefef; background: #ec5f6b; border-bottom: 3px solid #9B2E36; }
+.btn-rouge:hover, a:hover .btn-rouge { color: #fff; background: #c63641; }
+.btn-rouge:active, a:active:hover .btn-rouge { border: 0; border-top: 3px solid #F1E4C6; }
 
 .page-services .btn:active, a:active:hover .page-services .btn, .page-pricing .btn:active, a:active:hover .page-pricing .btn { border-top: 3px solid #FFF; }
 

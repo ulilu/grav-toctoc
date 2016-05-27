@@ -82,9 +82,14 @@
 
 .btn-orange,
 .btn-red,
-.btn-rouille,
 .btn-blue,
-.btn-green {
+.btn-green,
+.btn-rouge,
+.btn-rouille,
+.btn-sable,
+.btn-skyblue,
+.btn-seagreen,
+.btn-lavender, {
   color: #fff;
   font-family: $font-semibold;
   
@@ -149,6 +154,24 @@
   }
 }
 
+
+.btn-rouge {
+  color: $color-rouge6;
+  background: $color-rouge3;
+  border-bottom: 3px solid $color-rouge1;
+  
+  &:hover,
+  a:hover & {
+    color: #fff;
+    background: $color-rouge2;
+  }
+
+  &:active,
+  a:active:hover & {
+    border: 0;
+    border-top: 3px solid $color-greywalls1;
+  }
+}
 
 .page-services .btn,
 .page-pricing .btn {
