@@ -172,6 +172,24 @@
   }
 }
 
+.btn-lavender {
+  color: #fff;
+  background: $color-lavender3;
+  border-bottom: 3px solid $color-lavender1;
+  
+  &:hover,
+  a:hover & {
+    color: #fff;
+    background: $color-lavender2;
+  }
+
+  &:active,
+  a:active:hover & {
+    border: 0;
+    border-top: 3px solid $color-greywalls1;
+  }
+}
+
 .page-services .btn,
 .page-pricing .btn {
 
@@ -230,13 +248,13 @@
   z-index: 2;
   width: 60px;
   height: 60px;
-  background: $color-lavender-light;
-  border-bottom: 3px solid $color-lavender-dark;
+  background: $color-lavender3;
+  border-bottom: 3px $color-lavender1;
   border-radius: 6px;
   transition: background ease-in 0.1s;
 
   &.reverse {
-    background: $color-lavender-light;
+    background: $color-lavender3;
   }
 
   &:after {
@@ -251,29 +269,28 @@
     font-size: 54px;
     vertical-align: middle;
     text-align: center;
-    color: $color-greywalls2;
+    color: $color-lavender5;
   }
 
   &.reverse:after {
     content: "◄";
-    color: $color-greywalls2;
+    color: $color-lavender5;
     left: -2px;
   }
   
   &:hover {
-    background: $color-greywalls2;
+    background: $color-lavender4;
   }
 
   &:hover:after {
-    color: $color-lavender;
+    color: #fff;
     position: relative;
     display: inline-block;
   }
 
   &:active {
-    background: #fff;
     border-bottom: none;
-    border-top: 3px solid $color-lavender;
+    border-top: 3px solid $color-lavender2;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }

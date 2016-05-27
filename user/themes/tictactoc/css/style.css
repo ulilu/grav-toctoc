@@ -1134,6 +1134,10 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn-rouge:hover, a:hover .btn-rouge { color: #fff; background: #c63641; }
 .btn-rouge:active, a:active:hover .btn-rouge { border: 0; border-top: 3px solid #F1E4C6; }
 
+.btn-lavender { color: #fff; background: #8078a3; border-bottom: 3px solid #312c4a; }
+.btn-lavender:hover, a:hover .btn-lavender { color: #fff; background: #504A6D; }
+.btn-lavender:active, a:active:hover .btn-lavender { border: 0; border-top: 3px solid #F1E4C6; }
+
 .page-services .btn:active, a:active:hover .page-services .btn, .page-pricing .btn:active, a:active:hover .page-pricing .btn { border-top: 3px solid #FFF; }
 
 .btn--social { color: #fff !important; margin: 0 6px 12px 0; }
@@ -1154,13 +1158,13 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 
 /*------------------------------------*\ Horizontal scroll button, used with block--scroll in  .page-welcome .block--examples
 \*------------------------------------*/
-.btn--scroll { z-index: 2; width: 60px; height: 60px; background: #8078a3; border-bottom: 3px solid #312c4a; border-radius: 6px; transition: background ease-in 0.1s; }
+.btn--scroll { z-index: 2; width: 60px; height: 60px; background: #8078a3; border-bottom: 3px #312c4a; border-radius: 6px; transition: background ease-in 0.1s; }
 .btn--scroll.reverse { background: #8078a3; }
-.btn--scroll:after { content: "►"; position: relative; display: inline-block; left: 0; top: -2px; width: 60px; height: 60px; line-height: 56px; font-size: 54px; vertical-align: middle; text-align: center; color: #EFE8D8; }
-.btn--scroll.reverse:after { content: "◄"; color: #EFE8D8; left: -2px; }
-.btn--scroll:hover { background: #EFE8D8; }
-.btn--scroll:hover:after { color: #504A6D; position: relative; display: inline-block; }
-.btn--scroll:active { background: #fff; border-bottom: none; border-top: 3px solid #504A6D; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+.btn--scroll:after { content: "►"; position: relative; display: inline-block; left: 0; top: -2px; width: 60px; height: 60px; line-height: 56px; font-size: 54px; vertical-align: middle; text-align: center; color: #dddae8; }
+.btn--scroll.reverse:after { content: "◄"; color: #dddae8; left: -2px; }
+.btn--scroll:hover { background: #b0a9cc; }
+.btn--scroll:hover:after { color: #fff; position: relative; display: inline-block; }
+.btn--scroll:active { border-bottom: none; border-top: 3px solid #504A6D; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
 /*------------------------------------*\ Scroll to top button
 \*------------------------------------*/
