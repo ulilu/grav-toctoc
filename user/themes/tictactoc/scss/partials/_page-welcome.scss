@@ -395,6 +395,12 @@
       display: none;
     }
 
+    @media only screen and (min-width: 420px) {
+      h2 a {
+        padding: 24px;
+      }
+    }
+
     @media only screen and (min-width: 700px) {
       h2 a {
         line-height: 48px;
