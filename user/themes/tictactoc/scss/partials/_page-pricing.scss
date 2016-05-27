@@ -83,6 +83,7 @@
 
 
 .checklist {
+  margin-bottom: 18px;
 
   li {
     // color: #444;
@@ -129,5 +130,9 @@
 
   &.color-rouille3 .fa:before {
     color: $color-rouille3;
+  }
+
+  small {
+    line-height: 21px;
   }
 }
