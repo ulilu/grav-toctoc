@@ -1872,7 +1872,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ PAGE: About
 \*---------------------------------------------------------------------------*/
-.page-about { background: #fdf0eb; }
+.page-about { background: #fdf0eb; background: #ffdee0; }
 .page-about h1 { color: #e15f33; }
 .page-about .block--partner:after { z-index: 0; opacity: .2; left: auto; right: 0; background-size: 400px; background-position: right 0 bottom 0; }
 
@@ -1917,7 +1917,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ PAGE: Contact
 \*---------------------------------------------------------------------------*/
-.page-contact { background: #ffded2; background: #caeef2; background: #EFE8D8; background: #e8f8fa; background: #fff3d3; }
+.page-contact { background: #ffded2; background: #caeef2; background: #EFE8D8; background: #e8f8fa; }
 
 .block--contactinfo h1 { color: #e15f33; color: #007987; color: #007987; }
 
