@@ -72,8 +72,9 @@
       display: none;
     }
 
-    @media only screen and (max-width:950px) {    
+    @media only screen and (min-width:950px) {    
       &:first-of-type:after {
+        display: block;
         border: none;
         width: 6px;
         right: -3px;
