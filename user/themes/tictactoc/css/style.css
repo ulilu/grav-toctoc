@@ -1796,7 +1796,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .page-services .headline--service:after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; height: 160px; width: 100%; background: rgba(0, 0, 0, 0.7); transition: opacity 0.2s ease-in-out; opacity: 1; }
 @media only screen and (min-width: 800px) { .page-services .headline--service { margin-top: -160px; } }
 @media only screen and (min-width: 1150px) { .page-services .headline--service { max-width: 500px; left: calc((100% - 600px) + 30px ); }
-  .page-services .headline--service:after { width: 50vw; left: calc(((50vw - 600px) + 30px) * -1); } }
+  .page-services .headline--service:after { width: 50vw; width: calc(100% + 70px); left: calc(((50vw - 600px) + 30px) * -1); } }
 .page-services .cell--service:hover .headline--service:after { opacity: .75; }
 .page-services .card.item__summary { float: none; z-index: 3; background-color: #fff; padding: 18px; margin: 0 24px 18px; width: auto !important; }
 .page-services .card:hover:before { display: none; }
