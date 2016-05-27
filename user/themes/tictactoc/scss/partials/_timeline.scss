@@ -99,7 +99,7 @@
  * First <p> in timeline-row (and contents)
  * Needed for targetting the image due to markdown structure
  */
-.timeline-row > p {
+.timeline-row__img {
   position: relative;
   z-index: 3;
   height: 0;
@@ -190,7 +190,7 @@
   }
 }
 
-.timeline-row:hover > p img {
+.timeline-row:hover > .timeline-row__img img {
   @media only screen and (min-width: 1000px) {
     // animation: cd-bounce-3 4s linear infinite;
     transform: translateZ(0);

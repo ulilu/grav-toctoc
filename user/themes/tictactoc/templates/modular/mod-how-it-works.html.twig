@@ -4,14 +4,13 @@
 
 		{% for step in page.header.steps %}
 			<figure class="timeline-row">
-				{{ page.media[step.image].cropResize(240, 240).html() }}
-
+				<div class="timeline-row__img">{{ page.media[step.image].cropResize(240, 240).html() }}</div>
 				<figcaption class="timeline-row__info">
 					<h2><a class="color-{{ step.color }}" href="#">{{ loop.index }}. {{ step.title }}</a></h2>
 					<p>{{ step.text }}
 						{% if step.link %}
 							<br>
-							<a href="{{ step.link }}" class="{{ step.linkclass }}" title="{{ step.linkttitle }}">{{ step.linktext }}</a>
+							<a href="{{ step.link }}" class="{{ step.linkclass }}" title="{{ step.linktitle }}">{{ step.linktext }}</a>
 						{% endif %}
 					</p>
 				</figcaption>

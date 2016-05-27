@@ -1436,17 +1436,17 @@ h2.bullet-headline + p { text-indent: 0; }
   .timeline-row:last-of-type:after { left: calc(50% - 29px); } }
 
 /*  First <p> in timeline-row (and contents) Needed for targetting the image due to markdown structure */
-.timeline-row > p { position: relative; z-index: 3; height: 0; margin: 0; /* 1. Necessary for the animation on scroll to display correctly.  Since the img-content of the p is absolutely positioned, p would have no automatic height, thus making an animation from the middle out impossible. By setting a height (corresponding to image height), the scaling starts  from the correct center point. */ }
-.timeline-row > p img { position: relative; z-index: 3; top: -9px; left: -9px; width: 60px; height: 60px; padding: 0; z-index: 2; border-radius: 50%; border: 3px solid #fff; -ms-transform-origin: 50% 50%; /* IE 9 */ -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */ transform-origin: 50% 50%; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); }
-@media only screen and (min-width: 420px) { .timeline-row > p img { top: 0; left: 0; } }
-@media only screen and (min-width: 480px) { .timeline-row > p img { width: 90px; height: 90px; border: 4px solid #fff; } }
-@media only screen and (min-width: 700px) { .timeline-row > p img { width: 120px; height: 120px; border: 6px solid #fff; } }
-@media only screen and (min-width: 1000px) { .timeline-row > p { position: absolute; /* 1 */ left: 50%; /* 1 */ height: 120px; /* 1 */ /* Force Hardware Acceleration in WebKit */ -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden; }
-  .timeline-row > p.is-hidden { visibility: hidden; }
-  .timeline-row > p.bounce-in { visibility: visible; animation: cd-bounce-1 .6s; }
-  .timeline-row > p img { position: absolute; z-index: 3; left: 50%; margin: 0 0 0 -60px; -webkit-transition-timing-function: cubic-bezier(0.15, 1.54, 0.84, 1); transition-timing-function: cubic-bezier(0.15, 1.54, 0.84, 1); -webkit-backface-visibility: hidden; backface-visibility: hidden; -moz-osx-font-smoothing: grayscale; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; } }
+.timeline-row__img { position: relative; z-index: 3; height: 0; margin: 0; /* 1. Necessary for the animation on scroll to display correctly.  Since the img-content of the p is absolutely positioned, p would have no automatic height, thus making an animation from the middle out impossible. By setting a height (corresponding to image height), the scaling starts  from the correct center point. */ }
+.timeline-row__img img { position: relative; z-index: 3; top: -9px; left: -9px; width: 60px; height: 60px; padding: 0; z-index: 2; border-radius: 50%; border: 3px solid #fff; -ms-transform-origin: 50% 50%; /* IE 9 */ -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */ transform-origin: 50% 50%; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); }
+@media only screen and (min-width: 420px) { .timeline-row__img img { top: 0; left: 0; } }
+@media only screen and (min-width: 480px) { .timeline-row__img img { width: 90px; height: 90px; border: 4px solid #fff; } }
+@media only screen and (min-width: 700px) { .timeline-row__img img { width: 120px; height: 120px; border: 6px solid #fff; } }
+@media only screen and (min-width: 1000px) { .timeline-row__img { position: absolute; /* 1 */ left: 50%; /* 1 */ height: 120px; /* 1 */ /* Force Hardware Acceleration in WebKit */ -webkit-transform: translateZ(0); -webkit-backface-visibility: hidden; }
+  .timeline-row__img.is-hidden { visibility: hidden; }
+  .timeline-row__img.bounce-in { visibility: visible; animation: cd-bounce-1 .6s; }
+  .timeline-row__img img { position: absolute; z-index: 3; left: 50%; margin: 0 0 0 -60px; -webkit-transition-timing-function: cubic-bezier(0.15, 1.54, 0.84, 1); transition-timing-function: cubic-bezier(0.15, 1.54, 0.84, 1); -webkit-backface-visibility: hidden; backface-visibility: hidden; -moz-osx-font-smoothing: grayscale; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; } }
 
-@media only screen and (min-width: 1000px) { .timeline-row:hover > p img { transform: translateZ(0); -webkit-transform: scale(1.2); transform: scale(1.2); } }
+@media only screen and (min-width: 1000px) { .timeline-row:hover > .timeline-row__img img { transform: translateZ(0); -webkit-transform: scale(1.2); transform: scale(1.2); } }
 
 /*  Textblock in .timeline-row containing headline, description & link */
 .timeline-row__info { position: relative; z-index: 1; background: #fff; padding: 18px 18px 18px 42px; border-radius: 9px; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); }
