@@ -94,7 +94,8 @@
   
     &.list-total {
       margin-top: -11px;
-      font-family: $font-semibold;
+      font-family: $font-regular;
+      font-weight: normal;
       font-size: 48px;
       list-style-type: none;
       padding: 12px 0 12px 27px;
@@ -107,14 +108,19 @@
       background: $color-greywalls3;
       margin-top: 12px;
       line-height: 48px;
+      
+      .btn {
+        vertical-align: middle;
+        float: right;
+      }
     }
   }
 
-  &.color-red3 .fa:before {
-    color: $color-red3;
+  &.color-rouge3 .fa:before {
+    color: $color-rouge3;
   }
 
-  &.color-orange1 .fa:before {
-    color: $color-orange1;
+  &.color-rouille3 .fa:before {
+    color: $color-rouille3;
   }
 }

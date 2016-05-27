@@ -1934,9 +1934,10 @@ h2.bullet-headline + p { text-indent: 0; }
 @media only screen and (min-width: 800px) { .cell-pricing .byline--service { left: -30px; width: calc(100% + 60px); } }
 
 .checklist li { color: #3e0000; line-height: 27px; padding: 6px 0; margin: 0; }
-.checklist li.list-total { margin-top: -11px; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 48px; list-style-type: none; padding: 12px 0 12px 27px; border-top-color: #D7CAAD; border-top-style: solid; border-top-width: 2px; border-bottom-color: #D7CAAD; border-bottom-style: double; border-bottom-width: 6px; background: #FDFAF8; margin-top: 12px; line-height: 48px; }
-.checklist.color-red3 .fa:before { color: #c14e46; }
-.checklist.color-orange1 .fa:before { color: #f58b4a; }
+.checklist li.list-total { margin-top: -11px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 48px; list-style-type: none; padding: 12px 0 12px 27px; border-top-color: #D7CAAD; border-top-style: solid; border-top-width: 2px; border-bottom-color: #D7CAAD; border-bottom-style: double; border-bottom-width: 6px; background: #FDFAF8; margin-top: 12px; line-height: 48px; }
+.checklist li.list-total .btn { vertical-align: middle; float: right; }
+.checklist.color-rouge3 .fa:before { color: #ec5f6b; }
+.checklist.color-rouille3 .fa:before { color: #f77d53; }
 
 /*---------------------------------------------------------------------------*\ PAGE: How it works
 \*---------------------------------------------------------------------------*/
