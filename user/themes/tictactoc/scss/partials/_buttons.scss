@@ -173,6 +173,15 @@
 
 
 
+.page-services .btn,
+.page-pricing .btn {
+
+  &:active,
+  a:active:hover & {
+    margin-bottom: 3px;
+  }
+}
+
 .btn--social {
   color: #fff !important;
   // border-bottom: 3px solid rgba(0,0,0,.25);
