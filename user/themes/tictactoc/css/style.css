@@ -749,149 +749,149 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 
 /*--------------------------------------------*\ New Palette 160416
 \*--------------------------------------------*/
-.color-lavender1 { color: #312c4a; }
+.color-lavender1 { color: #312c4a !important; }
 
-.color-lavender2 { color: #504A6D; }
+.color-lavender2 { color: #504A6D !important; }
 
-.color-lavender3 { color: #8078a3; }
+.color-lavender3 { color: #8078a3 !important; }
 
-.color-lavender4 { color: #b0a9cc; }
+.color-lavender4 { color: #b0a9cc !important; }
 
-.color-lavender5 { color: #dddae8; }
+.color-lavender5 { color: #dddae8 !important; }
 
-.color-lavender6 { color: #edebf5; }
+.color-lavender6 { color: #edebf5 !important; }
 
-.color-skyblue1 { color: #00517a; }
+.color-skyblue1 { color: #00517a !important; }
 
-.color-skyblue2 { color: #1677a7; }
+.color-skyblue2 { color: #1677a7 !important; }
 
-.color-skyblue3 { color: #4697bf; }
+.color-skyblue3 { color: #4697bf !important; }
 
-.color-skyblue4 { color: #8EBDD4; }
+.color-skyblue4 { color: #8EBDD4 !important; }
 
-.color-skyblue5 { color: #CDE5F1; }
+.color-skyblue5 { color: #CDE5F1 !important; }
 
-.color-skyblue6 { color: #e6f2f8; }
+.color-skyblue6 { color: #e6f2f8 !important; }
 
-.color-seagreen1 { color: #007987; }
+.color-seagreen1 { color: #007987 !important; }
 
-.color-seagreen2 { color: #00aabd; }
+.color-seagreen2 { color: #00aabd !important; }
 
-.color-seagreen3 { color: #45bac4; }
+.color-seagreen3 { color: #45bac4 !important; }
 
-.color-seagreen4 { color: #79d4df; }
+.color-seagreen4 { color: #79d4df !important; }
 
-.color-seagreen5 { color: #caeef2; }
+.color-seagreen5 { color: #caeef2 !important; }
 
-.color-seagreen6 { color: #e8f8fa; }
+.color-seagreen6 { color: #e8f8fa !important; }
 
-.color-sable1 { color: #a07f2f; }
+.color-sable1 { color: #a07f2f !important; }
 
-.color-sable2 { color: #edb52c; }
+.color-sable2 { color: #edb52c !important; }
 
-.color-sable3 { color: #c2ac6e; }
+.color-sable3 { color: #c2ac6e !important; }
 
-.color-sable4 { color: #dec586; }
+.color-sable4 { color: #dec586 !important; }
 
-.color-sable5 { color: #fce8b7; }
+.color-sable5 { color: #fce8b7 !important; }
 
-.color-sable6 { color: #fff3d3; }
+.color-sable6 { color: #fff3d3 !important; }
 
-.color-rouille1 { color: #b05031; }
+.color-rouille1 { color: #b05031 !important; }
 
-.color-rouille2 { color: #e15f33; }
+.color-rouille2 { color: #e15f33 !important; }
 
-.color-rouille3 { color: #f77d53; }
+.color-rouille3 { color: #f77d53 !important; }
 
-.color-rouille4 { color: #fd9f7f; }
+.color-rouille4 { color: #fd9f7f !important; }
 
-.color-rouille5 { color: #ffded2; }
+.color-rouille5 { color: #ffded2 !important; }
 
-.color-rouille6 { color: #fdf0eb; }
+.color-rouille6 { color: #fdf0eb !important; }
 
-.color-rouge1 { color: #9B2E36; }
+.color-rouge1 { color: #9B2E36 !important; }
 
-.color-rouge2 { color: #c63641; }
+.color-rouge2 { color: #c63641 !important; }
 
-.color-rouge3 { color: #ec5f6b; }
+.color-rouge3 { color: #ec5f6b !important; }
 
-.color-rouge4 { color: #f8969e; }
+.color-rouge4 { color: #f8969e !important; }
 
-.color-rouge5 { color: #ffdee0; }
+.color-rouge5 { color: #ffdee0 !important; }
 
-.color-rouge6 { color: #fcefef; }
+.color-rouge6 { color: #fcefef !important; }
 
-.bgcolor-lavender1 { background: #312c4a; }
+.bgcolor-lavender1 { background: #312c4a !important; }
 
-.bgcolor-lavender2 { background: #504A6D; }
+.bgcolor-lavender2 { background: #504A6D !important; }
 
-.bgcolor-lavender3 { background: #8078a3; }
+.bgcolor-lavender3 { background: #8078a3 !important; }
 
-.bgcolor-lavender4 { background: #b0a9cc; }
+.bgcolor-lavender4 { background: #b0a9cc !important; }
 
-.bgcolor-lavender5 { background: #dddae8; }
+.bgcolor-lavender5 { background: #dddae8 !important; }
 
-.bgcolor-lavender6 { background: #edebf5; }
+.bgcolor-lavender6 { background: #edebf5 !important; }
 
-.bgcolor-skyblue1 { background: #00517a; }
+.bgcolor-skyblue1 { background: #00517a !important; }
 
-.bgcolor-skyblue2 { background: #1677a7; }
+.bgcolor-skyblue2 { background: #1677a7 !important; }
 
-.bgcolor-skyblue3 { background: #4697bf; }
+.bgcolor-skyblue3 { background: #4697bf !important; }
 
-.bgcolor-skyblue4 { background: #8EBDD4; }
+.bgcolor-skyblue4 { background: #8EBDD4 !important; }
 
-.bgcolor-skyblue5 { background: #CDE5F1; }
+.bgcolor-skyblue5 { background: #CDE5F1 !important; }
 
-.bgcolor-skyblue6 { background: #e6f2f8; }
+.bgcolor-skyblue6 { background: #e6f2f8 !important; }
 
-.bgcolor-seagreen1 { background: #007987; }
+.bgcolor-seagreen1 { background: #007987 !important; }
 
-.bgcolor-seagreen2 { background: #00aabd; }
+.bgcolor-seagreen2 { background: #00aabd !important; }
 
-.bgcolor-seagreen3 { background: #45bac4; }
+.bgcolor-seagreen3 { background: #45bac4 !important; }
 
-.bgcolor-seagreen4 { background: #79d4df; }
+.bgcolor-seagreen4 { background: #79d4df !important; }
 
-.bgcolor-seagreen5 { background: #caeef2; }
+.bgcolor-seagreen5 { background: #caeef2 !important; }
 
-.bgcolor-seagreen6 { background: #e8f8fa; }
+.bgcolor-seagreen6 { background: #e8f8fa !important; }
 
-.bgcolor-sable1 { background: #a07f2f; }
+.bgcolor-sable1 { background: #a07f2f !important; }
 
-.bgcolor-sable2 { background: #edb52c; }
+.bgcolor-sable2 { background: #edb52c !important; }
 
-.bgcolor-sable3 { background: #c2ac6e; }
+.bgcolor-sable3 { background: #c2ac6e !important; }
 
-.bgcolor-sable4 { background: #dec586; }
+.bgcolor-sable4 { background: #dec586 !important; }
 
-.bgcolor-sable5 { background: #fce8b7; }
+.bgcolor-sable5 { background: #fce8b7 !important; }
 
-.bgcolor-sable6 { background: #fff3d3; }
+.bgcolor-sable6 { background: #fff3d3 !important; }
 
-.bgcolor-rouille1 { background: #b05031; }
+.bgcolor-rouille1 { background: #b05031 !important; }
 
-.bgcolor-rouille2 { background: #e15f33; }
+.bgcolor-rouille2 { background: #e15f33 !important; }
 
-.bgcolor-rouille3 { background: #f77d53; }
+.bgcolor-rouille3 { background: #f77d53 !important; }
 
-.bgcolor-rouille4 { background: #fd9f7f; }
+.bgcolor-rouille4 { background: #fd9f7f !important; }
 
-.bgcolor-rouille5 { background: #ffded2; }
+.bgcolor-rouille5 { background: #ffded2 !important; }
 
-.bgcolor-rouille6 { background: #fdf0eb; }
+.bgcolor-rouille6 { background: #fdf0eb !important; }
 
-.bgcolor-rouge1 { background: #9B2E36; }
+.bgcolor-rouge1 { background: #9B2E36 !important; }
 
-.bgcolor-rouge2 { background: #c63641; }
+.bgcolor-rouge2 { background: #c63641 !important; }
 
-.bgcolor-rouge3 { background: #ec5f6b; }
+.bgcolor-rouge3 { background: #ec5f6b !important; }
 
-.bgcolor-rouge4 { background: #f8969e; }
+.bgcolor-rouge4 { background: #f8969e !important; }
 
-.bgcolor-rouge5 { background: #ffdee0; }
+.bgcolor-rouge5 { background: #ffdee0 !important; }
 
-.bgcolor-rouge6 { background: #fcefef; }
+.bgcolor-rouge6 { background: #fcefef !important; }
 
 /******************************************************************************
 *   Javascript classes
