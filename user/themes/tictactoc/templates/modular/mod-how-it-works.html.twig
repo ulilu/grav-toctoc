@@ -1,5 +1,24 @@
 <section class="block  block--stretch  block--howto">
 	<div class="block">
-	   {{ page.content }}
+	  {{ page.content }}
+
+		<div class="timeline">
+		{% for step in page.header.steps %}
+			<figure class="timeline-row">
+				{{ page.media[step.image].cropResize(240, 240).html() }}
+
+				<figcaption class="timeline-row__info">
+					<h2><a class="color-{{ step.color }}" href="#">{{ loop.index }}. {{ step.title }}</a></h2>
+					<p>{{ step.text }}
+						{% if step.link %}
+							<br>
+							<a href="{{ step.link }}" class="{{ step.linkclass }}" title="{{ step.linkttitle }}">{{ step.linktext }}</a>
+						{% endif %}
+					</p>
+				</figcaption>
+			</figure>
+		{% endfor %}
+		</div>
+
 	</div>
 </section>
