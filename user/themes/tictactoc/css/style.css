@@ -1584,10 +1584,10 @@ h2.bullet-headline + p { text-indent: 0; }
 .cell--service { display: block; position: relative; width: 100%; padding-bottom: 24px; margin-bottom: 18px; }
 .cell--service:hover { text-decoration: none; }
 .cell--service:first-of-type { margin-bottom: 0; }
-.cell--service:first-of-type:after { content: ""; display: block; position: absolute; bottom: 0; left: 0; z-index: 4; width: 100%; border-bottom: 10px dotted #EFE8D8; border-image: url("data:image/svg+xml;charset=utf8,\a   		%3Csvg xmlns='http://www.w3.org/2000/svg' \a   		width='30' height='30' viewBox='0 0 30 30'\a   		fill='%23EFE8D8'%3E\a   		%3Ccircle cx='3'  cy='27' r='3'/%3E \a   		%3Ccircle cx='15' cy='27' r='3'/%3E \a     	%3Ccircle cx='27' cy='27' r='3'/%3E \a     	%3C/svg%3E") 33%/0 0 10px 0/3px round; }
+.cell--service:first-of-type:after { content: ""; display: block; position: absolute; bottom: 0; left: 0; z-index: 4; width: 100%; border-bottom: 10px dotted #dec586; border-image: url("data:image/svg+xml;charset=utf8,\a   		%3Csvg xmlns='http://www.w3.org/2000/svg' \a   		width='30' height='30' viewBox='0 0 30 30'\a   		fill='%23dec586'%3E\a   		%3Ccircle cx='3'  cy='27' r='3'/%3E \a   		%3Ccircle cx='15' cy='27' r='3'/%3E \a     	%3Ccircle cx='27' cy='27' r='3'/%3E \a     	%3C/svg%3E") 33%/0 0 10px 0/3px round; }
 @media only screen and (min-width: 800px) { .cell--service { display: table-cell; width: 50%; padding-bottom: 0; }
   .cell--service:first-of-type { padding-right: 30px; }
-  .cell--service:first-of-type:after { top: 0; right: 0; bottom: auto; left: auto; width: 1px; height: 100%; border: none; border-right: 10px dotted #EFE8D8; border-image: url("data:image/svg+xml;charset=utf8,\a   		%3Csvg xmlns='http://www.w3.org/2000/svg' \a   		width='30' height='30' viewBox='0 0 30 30'\a   		fill='%23EFE8D8'%3E\a   		%3Ccircle cx='27' cy='3'  r='3'/%3E \a   		%3Ccircle cx='27' cy='15' r='3'/%3E \a     	%3Ccircle cx='27' cy='27' r='3'/%3E\a     	%3C/svg%3E") 33%/0 10px 0 0/3px round; }
+  .cell--service:first-of-type:after { top: 0; right: 0; bottom: auto; left: auto; width: 1px; height: 100%; border: none; border-right: 10px dotted #dec586; border-image: url("data:image/svg+xml;charset=utf8,\a   		%3Csvg xmlns='http://www.w3.org/2000/svg' \a   		width='30' height='30' viewBox='0 0 30 30'\a   		fill='%23dec586'%3E\a   		%3Ccircle cx='27' cy='3'  r='3'/%3E \a   		%3Ccircle cx='27' cy='15' r='3'/%3E \a     	%3Ccircle cx='27' cy='27' r='3'/%3E\a     	%3C/svg%3E") 33%/0 10px 0 0/3px round; }
   .page-welcome .cell--service:first-of-type:after { right: 6px; }
   .cell--service:last-of-type { padding-left: 30px; } }
 
@@ -1872,7 +1872,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ PAGE: About
 \*---------------------------------------------------------------------------*/
-.page-about { background: #fdf0eb; background: #ffdee0; }
+.page-about { background: #fdf0eb; background: #fcefef; }
 .page-about h1 { color: #e15f33; color: #c63641; }
 .page-about .block--partner:after { z-index: 0; opacity: .2; left: auto; right: 0; background-size: 400px; background-position: right 0 bottom 0; }
 
