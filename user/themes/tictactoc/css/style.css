@@ -1872,7 +1872,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*---------------------------------------------------------------------------*\ PAGE: About
 \*---------------------------------------------------------------------------*/
-.page-about { background: #ffded2; }
+.page-about { background: #fdf0eb; }
 .page-about h1 { color: #e15f33; }
 .page-about .block--partner:after { z-index: 0; opacity: .2; left: auto; right: 0; background-size: 400px; background-position: right 0 bottom 0; }
 
