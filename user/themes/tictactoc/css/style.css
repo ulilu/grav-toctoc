@@ -821,6 +821,78 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 
 .color-rouge6 { color: #fcefef; }
 
+.bgcolor-lavender1 { background: #312c4a; }
+
+.bgcolor-lavender2 { background: #504A6D; }
+
+.bgcolor-lavender3 { background: #8078a3; }
+
+.bgcolor-lavender4 { background: #b0a9cc; }
+
+.bgcolor-lavender5 { background: #dddae8; }
+
+.bgcolor-lavender6 { background: #edebf5; }
+
+.bgcolor-skyblue1 { background: #00517a; }
+
+.bgcolor-skyblue2 { background: #1677a7; }
+
+.bgcolor-skyblue3 { background: #4697bf; }
+
+.bgcolor-skyblue4 { background: #8EBDD4; }
+
+.bgcolor-skyblue5 { background: #CDE5F1; }
+
+.bgcolor-skyblue6 { background: #e6f2f8; }
+
+.bgcolor-seagreen1 { background: #007987; }
+
+.bgcolor-seagreen2 { background: #00aabd; }
+
+.bgcolor-seagreen3 { background: #45bac4; }
+
+.bgcolor-seagreen4 { background: #79d4df; }
+
+.bgcolor-seagreen5 { background: #caeef2; }
+
+.bgcolor-seagreen6 { background: #e8f8fa; }
+
+.bgcolor-sable1 { background: #a07f2f; }
+
+.bgcolor-sable2 { background: #edb52c; }
+
+.bgcolor-sable3 { background: #c2ac6e; }
+
+.bgcolor-sable4 { background: #dec586; }
+
+.bgcolor-sable5 { background: #fce8b7; }
+
+.bgcolor-sable6 { background: #fff3d3; }
+
+.bgcolor-rouille1 { background: #b05031; }
+
+.bgcolor-rouille2 { background: #e15f33; }
+
+.bgcolor-rouille3 { background: #f77d53; }
+
+.bgcolor-rouille4 { background: #fd9f7f; }
+
+.bgcolor-rouille5 { background: #ffded2; }
+
+.bgcolor-rouille6 { background: #fdf0eb; }
+
+.bgcolor-rouge1 { background: #9B2E36; }
+
+.bgcolor-rouge2 { background: #c63641; }
+
+.bgcolor-rouge3 { background: #ec5f6b; }
+
+.bgcolor-rouge4 { background: #f8969e; }
+
+.bgcolor-rouge5 { background: #ffdee0; }
+
+.bgcolor-rouge6 { background: #fcefef; }
+
 /******************************************************************************
 *   Javascript classes
 *   Important: only for setting initial display-values
