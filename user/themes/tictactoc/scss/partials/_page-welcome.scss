@@ -359,6 +359,15 @@
 
   .timeline-row {
     padding-bottom: 0;
+    
+    &:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 18px !important;
+  
+      @media only screen and (min-width: 1000px) {
+        margin-bottom: 0 !important;
+      }
+    }
   }
 
   .timeline-row__info {
