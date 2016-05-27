@@ -72,22 +72,22 @@
       display: none;
     }
 
-    @media only screen and (min-width:950px) {    
-      &:first-of-type:after {
-        display: block;
-        border: none;
-        width: 6px;
-        right: -3px;
-        background: $color-greywalls2;
-      }
-    }
+    // @media only screen and (min-width:950px) {    
+    //   &:first-of-type:after {
+    //     display: block;
+    //     border: none;
+    //     width: 6px;
+    //     right: -3px;
+    //     background: $color-greywalls2;
+    //   }
+    // }
 
-    @media only screen and (min-width:1150px) {    
-      &:first-of-type:after {
-        width: 36px;
-        right: -18px;
-      }
-    }
+    // @media only screen and (min-width:1150px) {    
+    //   &:first-of-type:after {
+    //     width: 36px;
+    //     right: -18px;
+    //   }
+    // }
 
     @media only screen and (min-width:800px) {
       padding: 0 0 48px;
