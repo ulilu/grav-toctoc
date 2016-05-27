@@ -68,12 +68,23 @@
     padding: 0 0 36px;
     
     &:first-of-type:after {
-      @include dotted-border('right', 10, 'D7CAAD');
+      // @include dotted-border('right', 10, 'D7CAAD');
+      border: none;
+      width: 12px;
+      right: -6px;
+      background: $color-greywalls2;
     }
 
     @media only screen and (max-width:800px) {    
       &:first-of-type:after {
         display: none;
+      }
+    }
+
+    @media only screen and (min-width:1150px) {    
+      &:first-of-type:after {
+        width: 24px;
+        right: -12px;
       }
     }
 
@@ -118,7 +129,7 @@
   .headline--service {
     text-shadow: 0 4px 12px rgba(0,0,0,1);
     margin: -60px 0 0 0;
-    padding: 18px 0 18px 24px;
+    padding: 18px 0 18px 30px;
     
     &:after {
       content: "";
