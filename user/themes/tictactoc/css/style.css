@@ -1873,12 +1873,12 @@ h2.bullet-headline + p { text-indent: 0; }
 /*---------------------------------------------------------------------------*\ PAGE: About
 \*---------------------------------------------------------------------------*/
 .page-about { background: #fdf0eb; background: #ffdee0; }
-.page-about h1 { color: #e15f33; }
+.page-about h1 { color: #e15f33; background: #c63641; }
 .page-about .block--partner:after { z-index: 0; opacity: .2; left: auto; right: 0; background-size: 400px; background-position: right 0 bottom 0; }
 
 /*------------------------------------*\ Partner cards (on About page)
 \*------------------------------------*/
-.block--partner { z-index: 1; padding-bottom: 12px; border-top: 12px solid #ffffff; border-bottom: 12px solid #e15f33; background: #f77d53; }
+.block--partner { z-index: 1; padding-bottom: 12px; border-top: 12px solid #ffffff; border-bottom: 12px solid #e15f33; border-bottom: 12px solid #c63641; background: #f77d53; background: #ec5f6b; }
 .block--partner h1 { display: inline-block; color: #ffffff; }
 @media only screen and (min-width: 1000px) { .block--partner h1 { margin: 0 36px 36px 0; } }
 .block--partner > .block { z-index: 1; }
