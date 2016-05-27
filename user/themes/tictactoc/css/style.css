@@ -1785,6 +1785,7 @@ h2.bullet-headline + p { text-indent: 0; }
 @media only screen and (min-width: 900px) { .page-services .cell__img img { max-height: 500px; } }
 @media only screen and (min-width: 1200px) { .page-services .cell__img img { max-height: 600px; } }
 .page-services .cell--service { padding: 0 0 36px; }
+.page-services .cell--service:first-of-type:after { border-right: 10px dotted #D7CAAD; border-image: url("data:image/svg+xml;charset=utf8,\a   		%3Csvg xmlns='http://www.w3.org/2000/svg' \a   		width='30' height='30' viewBox='0 0 30 30'\a   		fill='%23D7CAAD'%3E\a   		%3Ccircle cx='27' cy='3'  r='3'/%3E \a   		%3Ccircle cx='27' cy='15' r='3'/%3E \a     	%3Ccircle cx='27' cy='27' r='3'/%3E\a     	%3C/svg%3E") 33%/0 10px 0 0/3px round; }
 @media only screen and (max-width: 800px) { .page-services .cell--service:first-of-type:after { display: none; } }
 @media only screen and (min-width: 800px) { .page-services .cell--service { padding: 0 0 48px; /* hover effect for cell--service image */ }
   .page-services .cell--service .cell__img { overflow: hidden; /* this mask fixes the overflow:hidden in Chrome */ -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); background-size: 100%; -webkit-transition: background-position .4s ease-out; -moz-transition: background-position .4s ease-out; -ms-transition: background-position .4s ease-out; transition: background-position .4s ease-out; }

@@ -66,6 +66,10 @@
 
   .cell--service {
     padding: 0 0 36px;
+    
+    &:first-of-type:after {
+      @include dotted-border('right', 10, 'D7CAAD');
+    }
 
     @media only screen and (max-width:800px) {    
       &:first-of-type:after {
