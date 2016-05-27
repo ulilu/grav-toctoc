@@ -1900,6 +1900,7 @@ h2.bullet-headline + p { text-indent: 0; }
 \*------------------------------------*/
 .block--articles { background: #ffffff; }
 
+/* 1. Necessary in order to have correct margins when extra content is visible. */
 .press-article { clear: both; border-top: 2px solid #e7e7e7; padding: 30px 0; }
 .press-article .js-hide-info { margin-bottom: 24px; }
 

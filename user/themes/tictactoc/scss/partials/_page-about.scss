@@ -127,12 +127,15 @@
   background: $color-white;
 }
 
+/*
+ *  1. Necessary in order to have correct margins when extra content is visible.
+ */
 .press-article {
   clear: both;
   border-top: 2px solid $color-grey3;
   padding: 30px 0;
 
-  .js-hide-info { // button
+  .js-hide-info { // 1.
     margin-bottom: 24px;
   }
 }
