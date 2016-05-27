@@ -69,15 +69,15 @@
     
     &:first-of-type:after {
       // @include dotted-border('right', 10, 'D7CAAD');
-      border: none;
-      width: 12px;
-      right: -6px;
-      background: $color-greywalls2;
+      display: none;
     }
 
     @media only screen and (max-width:950px) {    
       &:first-of-type:after {
-        display: none;
+        border: none;
+        width: 6px;
+        right: -3px;
+        background: $color-greywalls2;
       }
     }
 
