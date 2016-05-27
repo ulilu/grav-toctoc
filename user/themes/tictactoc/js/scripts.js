@@ -173,15 +173,15 @@ $(document).ready(function() {
   //hide timeline blocks which are outside the viewport
   $timeline_block.each(function(){
     if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.90) {
-      $(this).find('> p, .timeline-row__info, .headline--cta').addClass('is-hidden');
+      $(this).find('.timeline-row__img, .timeline-row__info, .headline--cta').addClass('is-hidden');
     }
   });
 
   //on scolling, show/animate timeline blocks when enter the viewport
   $(window).on('scroll', function(){
     $timeline_block.each(function(){
-      if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.90 && $(this).find('> p, .headline--cta').hasClass('is-hidden') ) {
-        $(this).find('> p, .timeline-row__info, .timeline-row__info, .headline--cta').removeClass('is-hidden').addClass('bounce-in');
+      if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.90 && $(this).find('.timeline-row__img, .headline--cta').hasClass('is-hidden') ) {
+        $(this).find('.timeline-row__img, .timeline-row__info, .timeline-row__info, .headline--cta').removeClass('is-hidden').addClass('bounce-in');
       }
     });
   });
