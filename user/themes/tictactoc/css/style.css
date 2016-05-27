@@ -1164,7 +1164,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn--scroll.reverse:after { content: "◄"; color: #dddae8; left: -2px; }
 .btn--scroll:hover { background: #b0a9cc; }
 .btn--scroll:hover:after { color: #fff; position: relative; display: inline-block; }
-.btn--scroll:active { border-bottom: none; border-top: 3px solid #504A6D; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+.btn--scroll:active { border-bottom: none; background: #8078a3; border-top: 3px solid #504A6D; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
 /*------------------------------------*\ Scroll to top button
 \*------------------------------------*/
@@ -1926,6 +1926,7 @@ h2.bullet-headline + p { text-indent: 0; }
 /*---------------------------------------------------------------------------*\ PAGE: Pricing
 \*---------------------------------------------------------------------------*/
 .page-pricing { background: #F1E4C6; background: #EFE8D8; }
+.page-pricing h1 { color: #504A6D; }
 
 .block--pricing { margin-bottom: 0; }
 @media only screen and (min-width: 800px) { .block--pricing { padding-bottom: 42px; } }
