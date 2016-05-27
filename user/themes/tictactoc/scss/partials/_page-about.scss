@@ -132,17 +132,21 @@
   border-top: 2px solid $color-grey3;
   padding: 30px 0;
 
-  h3 a {
-    padding-right: 24px;
-  }
-
   .js-hide-info { // button
     margin-bottom: 24px;
   }
+}
 
-  .cell img {
-    max-height: 150px;
-  }
+.press-article__headline {
+  display: inline-block;
+  padding-right: 24px;
+}
+
+.press-article__date {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 18px;
+  color: $color-grey1;
 }
 
 .press-article__img {
@@ -150,6 +154,16 @@
   text-align: center;
   padding: 0 0 24px 18px;
   width: 40%;
+  
+  img {
+    max-height: 150px;
+  }
+  
+  &:hover img {
+    transition: all ease-out 0.3s;
+    transform: scale(1.2);
+    transform-origin: 50%;
+  }
   
   @media only screen and (min-width: 800px) {
     width: inherit;
@@ -159,11 +173,4 @@
 
 .press-article__content p:last-child {
   margin-bottom: 0;
-}
-
-.press-article__date {
-  display: inline-block;
-  white-space: nowrap;
-  font-size: 18px;
-  color: $color-grey1;
 }
