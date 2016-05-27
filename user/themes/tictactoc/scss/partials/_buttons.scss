@@ -273,9 +273,8 @@
 
   &:active {
     transform: translateY(3px);
-    border: none;
+    border: 0;
     background: $color-lavender3;
-    border-bottom: 3px solid $color-lavender2;
   }
 }
 
