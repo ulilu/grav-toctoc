@@ -2,7 +2,6 @@
 	<div class="block">
 	  {{ page.content }}
 
-		<div class="timeline">
 		{% for step in page.header.steps %}
 			<figure class="timeline-row">
 				{{ page.media[step.image].cropResize(240, 240).html() }}
@@ -18,7 +17,6 @@
 				</figcaption>
 			</figure>
 		{% endfor %}
-		</div>
 
 	</div>
 </section>
