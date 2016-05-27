@@ -92,6 +92,7 @@
 .btn-lavender, {
   color: #fff;
   font-family: $font-semibold;
+  transition: transform ease-out 0.05s;
   
   &:hover {
     color: #fff;
@@ -99,6 +100,8 @@
 
   &:active {
     color: #fff;
+    transform: translateY(3px);
+    border: 0;
   }
 }
 
@@ -113,8 +116,7 @@
 
   &:active,
   a:active:hover & {
-    border-top: 3px solid $color-greywalls1;
-    border-bottom: 0;
+    border: 0;
   }
 }
 
@@ -133,7 +135,6 @@
   &:active,
   a:active:hover & {
     border: 0;
-    border-top: 3px solid $color-greywalls1;
   }
 }
 
@@ -148,8 +149,7 @@
 
   &:active,
   a:active:hover & {
-    border-top: 3px solid $color-greywalls1;
-    border-bottom: 0;
+    border: 0;
   }
 }
 
@@ -168,7 +168,6 @@
   &:active,
   a:active:hover & {
     border: 0;
-    border-top: 3px solid $color-greywalls1;
   }
 }
 
