@@ -1570,7 +1570,7 @@ h2.bullet-headline + p { text-indent: 0; }
 \*---------------------------------------------------------------------------*/
 .block--howto { overflow: visible; background: #CDE5F1; border-bottom: 12px solid #e6f2f8; z-index: 1; }
 @media only screen and (min-width: 1200px) { .block--howto:after { z-index: -1; opacity: 1; background-size: 480px; background-position: left 1vw bottom -140px; } }
-.block--howto .block { overflow: visible; }
+.block--howto .block { overflow: visible; z-index: 1; }
 .block--howto h1 { position: relative; color: #504A6D; margin: -3px 0 36px; }
 @media only screen and (min-width: 1000px) { .block--howto h1 { width: 50%; padding-bottom: 24px; border-bottom: 10px dotted #8EBDD4; border-image: url("data:image/svg+xml;charset=utf8,\a   		%3Csvg xmlns='http://www.w3.org/2000/svg' \a   		width='30' height='30' viewBox='0 0 30 30'\a   		fill='%238EBDD4'%3E\a   		%3Ccircle cx='3'  cy='27' r='3'/%3E \a   		%3Ccircle cx='15' cy='27' r='3'/%3E \a     	%3Ccircle cx='27' cy='27' r='3'/%3E \a     	%3C/svg%3E") 33%/0 0 10px 0/0px round; }
   .block--howto h1:after { content: ""; display: block; position: absolute; right: -3px; bottom: -73px; height: 61px; border-right: 10px dotted #8EBDD4; border-image: url("data:image/svg+xml;charset=utf8,\a   		%3Csvg xmlns='http://www.w3.org/2000/svg' \a   		width='30' height='30' viewBox='0 0 30 30'\a   		fill='%238EBDD4'%3E\a   		%3Ccircle cx='27' cy='3'  r='3'/%3E \a   		%3Ccircle cx='27' cy='15' r='3'/%3E \a     	%3Ccircle cx='27' cy='27' r='3'/%3E\a     	%3C/svg%3E") 33%/0 10px 0 0/0px round; } }
