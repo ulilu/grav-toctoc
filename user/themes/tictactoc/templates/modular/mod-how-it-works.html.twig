@@ -11,10 +11,11 @@
 
 					{% if uri.path() == '/' %}
 					
-						<h2><a class="color-{{ step.color }}" href="{% if grav.language.getActive == 'en' %}
-								{{ page.find('/en/how-it-works').url() }}
+						<h2><a class="color-{{ step.color }}" href="
+							{% if grav.language.getActive == 'en' %}
+								{{ page.find('/how-it-works').url() }}
 							{% elseif grav.language.getActive == 'fr' %} 
-								{{ page.find('/fr/comment-ca-marche').url() }}
+								{{ page.find('/comment-ca-marche').url() }}
 							{% endif %}#step{{ loop.index }}">{{ loop.index }}. {{ step.title }}</a></h2>
 
 					{% elseif uri.path() != '/' %}
