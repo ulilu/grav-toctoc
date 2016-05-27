@@ -6,7 +6,7 @@
 .page-pricing {
   background: $color-greywalls1;  // sand;
   background: $color-greywalls2;  //  sandbeige
-  background: $color-skyblue5;
+  // background: $color-skyblue5;
 }
 
 
@@ -21,6 +21,7 @@
 .cell-pricing {
   background: #fff;
   border-bottom: 12px solid $color-skyblue5;
+  border-bottom: 12px solid $color-greywalls2;
   margin: 0 0 18px;
   border-radius: 6px;
   
@@ -36,18 +37,22 @@
     padding: 24px 30px;
     border-bottom: 0;
     border-right: 12px solid $color-skyblue5;
+    border-right: 12px solid $color-greywalls2;
 
     &:last-of-type {
       border-right: 0;
       border-left: 12px solid $color-skyblue5;
+      border-left: 12px solid $color-greywalls2;
     }
   }
 
   @media only screen and (min-width: 1000px) {
     border-right: 18px solid $color-skyblue5;
+    border-right: 18px solid $color-greywalls2;
 
     &:last-of-type {
       border-left: 18px solid $color-skyblue5;
+      border-left: 12px solid $color-greywalls2;
     }
   }
 
