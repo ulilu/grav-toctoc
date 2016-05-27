@@ -119,6 +119,7 @@
     -ms-transform-origin: 50% 50%; /* IE 9 */
     -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
     transform-origin: 50% 50%;
+    background: $color-skyblue6;
     @include boxshadow01(0.1);
   }
 

@@ -1437,7 +1437,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*  First <p> in timeline-row (and contents) Needed for targetting the image due to markdown structure */
 .timeline-row__img { position: relative; z-index: 3; height: 0; margin: 0; /* 1. Necessary for the animation on scroll to display correctly.  Since the img-content of the p is absolutely positioned, p would have no automatic height, thus making an animation from the middle out impossible. By setting a height (corresponding to image height), the scaling starts  from the correct center point. */ }
-.timeline-row__img img { position: relative; z-index: 3; top: -9px; left: -9px; width: 60px; height: 60px; padding: 0; z-index: 2; border-radius: 50%; border: 3px solid #fff; -ms-transform-origin: 50% 50%; /* IE 9 */ -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */ transform-origin: 50% 50%; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); }
+.timeline-row__img img { position: relative; z-index: 3; top: -9px; left: -9px; width: 60px; height: 60px; padding: 0; z-index: 2; border-radius: 50%; border: 3px solid #fff; -ms-transform-origin: 50% 50%; /* IE 9 */ -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */ transform-origin: 50% 50%; background: #e6f2f8; box-shadow: 0 4px 0px rgba(0, 0, 0, 0.1); }
 @media only screen and (min-width: 420px) { .timeline-row__img img { top: 0; left: 0; } }
 @media only screen and (min-width: 480px) { .timeline-row__img img { width: 90px; height: 90px; border: 4px solid #fff; } }
 @media only screen and (min-width: 700px) { .timeline-row__img img { width: 120px; height: 120px; border: 6px solid #fff; } }
