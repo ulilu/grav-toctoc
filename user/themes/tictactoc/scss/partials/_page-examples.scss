@@ -5,6 +5,10 @@
 
 .page-examples {
   background: $color-lavender2;
+  
+  .block--example {
+    min-height: 100vh;
+  }
 
   .block--examples:after {
     opacity: .2;
