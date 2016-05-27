@@ -1831,7 +1831,7 @@ h2.bullet-headline + p { text-indent: 0; }
 /*---------------------------------------------------------------------------*\ LIST PAGE: Examples
 \*---------------------------------------------------------------------------*/
 .page-examples { background: #504A6D; }
-.page-examples .block--example { min-height: 100vh; }
+.page-examples .block--examples { min-height: 100vh; }
 .page-examples .block--examples:after { opacity: .2; left: auto; right: 0; background-size: 380px; background-position: right 0 bottom 66px; }
 .page-examples h1 { color: #dddae8; }
 .page-examples .cell--intro { position: relative; z-index: 1; color: #dddae8; padding: 18px 24px; margin-bottom: 30px; background: #8078a3; }
