@@ -160,11 +160,11 @@
   
   img {
     max-height: 150px;
-    transition: all ease-out 0.1s;
+    transition: all ease-out 0.15s;
   }
   
   &:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transform-origin: 50%;
   }
   
