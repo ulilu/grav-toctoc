@@ -1158,7 +1158,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 
 /*------------------------------------*\ Horizontal scroll button, used with block--scroll in  .page-welcome .block--examples
 \*------------------------------------*/
-.btn--scroll { z-index: 2; width: 60px; height: 60px; background: #8078a3; border-bottom: 3px #312c4a; border-radius: 6px; transition: background ease-in 0.1s; }
+.btn--scroll { z-index: 2; width: 60px; height: 60px; background: #8078a3; border-bottom: 3px solid #312c4a; border-radius: 6px; transition: background ease-in 0.1s; }
 .btn--scroll.reverse { background: #8078a3; }
 .btn--scroll:after { content: "►"; position: relative; display: inline-block; left: 0; top: -2px; width: 60px; height: 60px; line-height: 56px; font-size: 54px; vertical-align: middle; text-align: center; color: #dddae8; }
 .btn--scroll.reverse:after { content: "◄"; color: #dddae8; left: -2px; }
