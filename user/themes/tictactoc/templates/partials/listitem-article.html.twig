@@ -4,15 +4,15 @@
 	
 	{% if page.header.link %}
 
-		<a class="press-article__img cell cell-in-row cell-25" href="{{ page.header.link }}" target="_new">{{ page.media[page.header.image].cropResize(300, 300).html() }}</a>
+		<a class="press-article__img cell cell-in-row cell-25" href="{{ page.header.link }}" target="_new">{{ page.media[page.header.image].cropResize(400, 400).html() }}</a>
 
 	{% elseif page.header.imagelink %}
 
-		<a class="press-article__img cell cell-in-row cell-25" href="{{ page.media[page.header.imagelink].url }}" rel="lightbox" data-width="700">{{ page.media[page.header.image].cropResize(300, 300).html() }}</a>
+		<a class="press-article__img cell cell-in-row cell-25" href="{{ page.media[page.header.imagelink].url }}" rel="lightbox" data-width="700">{{ page.media[page.header.image].cropResize(400, 400).html() }}</a>
 
 	{% else %}
 
-		<span class="press-article__img cell cell-in-row cell-25">{{ page.media[page.header.image].cropResize(300, 300).html() }}</span>
+		<span class="press-article__img cell cell-in-row cell-25">{{ page.media[page.header.image].cropResize(400, 400).html() }}</span>
 
 	{% endif %}
 
