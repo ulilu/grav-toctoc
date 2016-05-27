@@ -17,7 +17,7 @@
 								{{ page.find('/fr/comment-ca-marche').url() }}
 							{% endif %}#step{{ loop.index }}">{{ loop.index }}. {{ step.title }}</a></h2>
 
-					{% elseif uri.path() not '/' %}
+					{% elseif uri.path() != '/' %}
 
 						<h2><a class="color-{{ step.color }}" name="step{{ loop.index }}">{{ loop.index }}. {{ step.title }}</a></h2>
 
