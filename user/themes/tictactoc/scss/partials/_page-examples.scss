@@ -7,7 +7,7 @@
   background: $color-lavender2;
   
   .block--examples {
-    min-height: 100vh;
+    min-height: calc(100vh - 140px);
   }
 
   .block--examples:after {
