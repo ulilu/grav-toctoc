@@ -1908,8 +1908,8 @@ h2.bullet-headline + p { text-indent: 0; }
 .press-article__date { display: inline-block; white-space: nowrap; font-size: 18px; color: #cccccc; }
 
 .press-article__img { float: right; text-align: center; padding: 0 0 24px 18px; width: 40%; }
-.press-article__img img { max-height: 150px; }
-.press-article__img:hover img { transition: all ease-out 0.3s; transform: scale(1.2); transform-origin: 50%; }
+.press-article__img img { max-height: 150px; transition: all ease-out 0.1s; }
+.press-article__img:hover img { transform: scale(1.05); transform-origin: 50%; }
 @media only screen and (min-width: 800px) { .press-article__img { width: inherit; padding: 0 24px; } }
 
 .press-article__content p:last-child { margin-bottom: 0; }

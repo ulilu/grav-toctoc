@@ -157,11 +157,11 @@
   
   img {
     max-height: 150px;
+    transition: all ease-out 0.1s;
   }
   
   &:hover img {
-    transition: all ease-out 0.3s;
-    transform: scale(1.2);
+    transform: scale(1.05);
     transform-origin: 50%;
   }
   
