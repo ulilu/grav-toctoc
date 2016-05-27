@@ -1786,7 +1786,7 @@ h2.bullet-headline + p { text-indent: 0; }
 @media only screen and (min-width: 1200px) { .page-services .cell__img img { max-height: 450px; } }
 .page-services .cell--service { padding: 0 0 36px; }
 .page-services .cell--service:first-of-type:after { border: none; width: 12px; right: -6px; background: #EFE8D8; }
-@media only screen and (max-width: 800px) { .page-services .cell--service:first-of-type:after { display: none; } }
+@media only screen and (max-width: 950px) { .page-services .cell--service:first-of-type:after { display: none; } }
 @media only screen and (min-width: 1150px) { .page-services .cell--service:first-of-type:after { width: 36px; right: -18px; } }
 @media only screen and (min-width: 800px) { .page-services .cell--service { padding: 0 0 48px; /* hover effect for cell--service image */ }
   .page-services .cell--service .cell__img { overflow: hidden; /* this mask fixes the overflow:hidden in Chrome */ -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); background-size: 100%; -webkit-transition: background-position .4s ease-out; -moz-transition: background-position .4s ease-out; -ms-transition: background-position .4s ease-out; transition: background-position .4s ease-out; }
