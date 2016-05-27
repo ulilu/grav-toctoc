@@ -79,6 +79,10 @@
       width: calc(100% + 60px);
     }
   }
+
+  small {
+    line-height: 21px;
+  }
 }
 
 
@@ -130,9 +134,5 @@
 
   &.color-rouille3 .fa:before {
     color: $color-rouille3;
-  }
-
-  small {
-    line-height: 21px;
   }
 }

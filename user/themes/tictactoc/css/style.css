@@ -1932,6 +1932,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .cell-pricing .headline--service { padding: 0 0 12px; }
 .cell-pricing .byline--service { position: relative; left: -24px; top: -12px; width: calc(100% + 48px); height: 100%; color: #fff !important; padding: 24px; margin: 0; }
 @media only screen and (min-width: 800px) { .cell-pricing .byline--service { left: -30px; width: calc(100% + 60px); } }
+.cell-pricing small { line-height: 21px; }
 
 .checklist { margin-bottom: 18px; }
 .checklist li { color: #3e0000; line-height: 27px; padding: 6px 0; margin: 0; }
@@ -1940,7 +1941,6 @@ h2.bullet-headline + p { text-indent: 0; }
 .checklist li.list-total .btn { vertical-align: middle; float: right; line-height: 28px; }
 .checklist.color-rouge3 .fa:before { color: #ec5f6b; }
 .checklist.color-rouille3 .fa:before { color: #f77d53; }
-.checklist small { line-height: 21px; }
 
 /*---------------------------------------------------------------------------*\ PAGE: How it works
 \*---------------------------------------------------------------------------*/
