@@ -58,9 +58,9 @@
       object-fit: cover;
       margin: 0 0 -102px;
       
-      @media only screen and (min-width: 600px) { max-height: 400px; }
-      @media only screen and (min-width: 900px) { max-height: 450px; }
-      @media only screen and (min-width: 1200px) { max-height: 500px; }
+      @media only screen and (min-width: 600px) { max-height: 360px; }
+      @media only screen and (min-width: 900px) { max-height: 400px; }
+      @media only screen and (min-width: 1200px) { max-height: 450px; }
     }
   }
 
