@@ -1156,7 +1156,7 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn--scroll.reverse:after { content: "◄"; color: #dddae8; left: -2px; }
 .btn--scroll:hover { background: #b0a9cc; }
 .btn--scroll:hover:after { color: #fff; position: relative; display: inline-block; }
-.btn--scroll:active { transform: translateY(3px); border: 0; background: #8078a3; }
+.btn--scroll:active { transform: translateY(3px); border: none; background: #8078a3; border-bottom: 3px solid #504A6D; }
 
 /*------------------------------------*\ Scroll to top button
 \*------------------------------------*/
