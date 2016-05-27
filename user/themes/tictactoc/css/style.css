@@ -1782,8 +1782,8 @@ h2.bullet-headline + p { text-indent: 0; }
 .page-services .cell__img { position: relative; bottom: 0; }
 .page-services .cell__img img { position: relative; display: inline-block; width: 100%; height: 70vh; max-height: 320px; object-fit: cover; margin: 0 0 -102px; }
 @media only screen and (min-width: 600px) { .page-services .cell__img img { max-height: 400px; } }
-@media only screen and (min-width: 900px) { .page-services .cell__img img { max-height: 500px; } }
-@media only screen and (min-width: 1200px) { .page-services .cell__img img { max-height: 600px; } }
+@media only screen and (min-width: 900px) { .page-services .cell__img img { max-height: 450px; } }
+@media only screen and (min-width: 1200px) { .page-services .cell__img img { max-height: 500px; } }
 .page-services .cell--service { padding: 0 0 36px; }
 .page-services .cell--service:first-of-type:after { border-right: 10px dotted #D7CAAD; border-image: url("data:image/svg+xml;charset=utf8,\a   		%3Csvg xmlns='http://www.w3.org/2000/svg' \a   		width='30' height='30' viewBox='0 0 30 30'\a   		fill='%23D7CAAD'%3E\a   		%3Ccircle cx='27' cy='3'  r='3'/%3E \a   		%3Ccircle cx='27' cy='15' r='3'/%3E \a     	%3Ccircle cx='27' cy='27' r='3'/%3E\a     	%3C/svg%3E") 33%/0 10px 0 0/3px round; }
 @media only screen and (max-width: 800px) { .page-services .cell--service:first-of-type:after { display: none; } }
