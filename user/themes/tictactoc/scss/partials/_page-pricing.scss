@@ -98,7 +98,7 @@
       font-weight: normal;
       font-size: 48px;
       list-style-type: none;
-      padding: 12px 0 12px 27px;
+      padding: 12px 18px 12px 27px;
       border-top-color: $color-greywalls0;
       border-top-style: solid;
       border-top-width: 2px;
@@ -109,6 +109,11 @@
       line-height: 62px;
       height: 86px;
       margin: 12px -24px 0;
+      
+      @media only screen and (min-width: 800px) {
+        padding: 12px 18px 12px 18px;
+        margin: 12px -30px 0;
+      }
       
       .btn {
         vertical-align: middle;
