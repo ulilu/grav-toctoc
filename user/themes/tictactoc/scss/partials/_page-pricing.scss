@@ -107,11 +107,13 @@
       border-bottom-width: 6px;
       background: $color-greywalls3;
       margin-top: 12px;
-      line-height: 48px;
+      line-height: 68px;
+      height: 92px;
       
       .btn {
         vertical-align: middle;
         float: right;
+        line-height: 28px;
       }
     }
   }
