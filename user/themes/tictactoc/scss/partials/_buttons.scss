@@ -251,7 +251,7 @@
   background: $color-lavender3;
   border-bottom: 3px solid $color-lavender1;
   border-radius: 6px;
-  transition: all ease-in 0.1s;
+  transition: transform ease-out 0.05s;
 
   &.reverse {
     background: $color-lavender3;
