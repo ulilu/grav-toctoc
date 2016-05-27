@@ -20,9 +20,11 @@
 
 <div class="block  block--services  block--stretch">
 
+    <div class="block">
     {% for child in collection %}
         {% include 'partials/listitem-service.html.twig' with {'page':child, 'truncate':true} %}
     {% endfor %}
+    </div>
 
 </div>
 
