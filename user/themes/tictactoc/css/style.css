@@ -1130,8 +1130,6 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn-lavender { color: #fff; background: #8078a3; border-bottom: 3px solid #312c4a; }
 .btn-lavender:hover, a:hover .btn-lavender { color: #fff; background: #504A6D; }
 
-.page-services .btn:active, a:active:hover .page-services .btn, .page-pricing .btn:active, a:active:hover .page-pricing .btn { border-top: 3px solid #FFF; }
-
 .btn--social { color: #fff !important; margin: 0 6px 12px 0; }
 .btn--social:last-of-type { margin: 0; }
 .btn--social .fa { font-size: 24px; }
