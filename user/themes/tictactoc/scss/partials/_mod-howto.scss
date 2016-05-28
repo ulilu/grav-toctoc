@@ -20,6 +20,8 @@
     // }
     
     @media only screen and (min-width:1000px) {
+      border-bottom: 30px solid $color-skyblue6;
+      
       &:after {
         content: "";
         display: block;
