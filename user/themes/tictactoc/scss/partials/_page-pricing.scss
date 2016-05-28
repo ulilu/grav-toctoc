@@ -23,25 +23,7 @@
 }
 
 .cell-pricing {
-
-  .cell-inner {
-    background: #fff;
-    border-radius: 6px;
-    overflow: hidden;
-    @include material-card1();
-    
-    @media only screen and (min-width: 800px) {
-      padding: 24px 30px 0;
-    }
-  }
-
-  // border-bottom: 12px solid $color-skyblue5;
-  // border-bottom: 12px solid $color-greywalls2;
   margin: 0 0 18px;
-  
-  // &:last-of-type {
-  //   border-bottom: 0;    
-  // }
 
   @media only screen and (min-width: 480px) {
     margin: 0 0 24px;
@@ -66,6 +48,17 @@
     &:last-of-type {
       border-left: 18px solid $color-skyblue5;
       // border-left: 12px solid $color-greywalls2;
+    }
+  }
+
+  .cell-inner {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    @include material-card1();
+    
+    @media only screen and (min-width: 800px) {
+      padding: 24px 30px;
     }
   }
 
@@ -114,7 +107,7 @@
       font-weight: normal;
       font-size: 48px;
       list-style-type: none;
-      padding: 12px 18px 12px 27px;
+      padding: 18px 0 12px 0;
       border-top: 2px solid $color-greywalls0;
       // border-top-color: $color-greywalls0;
       // border-top-style: solid;
