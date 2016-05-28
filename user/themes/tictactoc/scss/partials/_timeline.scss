@@ -3,6 +3,14 @@
     on "How it works"-modular & -page 
 \*---------------------------------------------------------------------------*/
 
+.timeline-button {
+  position: relative;
+  z-index: 10;
+  display: block;
+  clear: both;
+  text-align: center;
+}
+
 /*
  *  Timeline row
  */

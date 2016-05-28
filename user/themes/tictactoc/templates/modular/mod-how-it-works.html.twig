@@ -37,7 +37,7 @@
 		{% endfor %}
 
 		{% if uri.path() == '/' and page.header.buttontext %}
-			<div class="timeline-row l-center l-clear">
+			<div class="timeline-button">
 				<a href="{{ page.header.buttonlink }}" class="btn btn-l btn-{{ page.header.buttoncolor }}">{{ page.header.buttontext }}</a>
 			</div>
 		{% endif %}
