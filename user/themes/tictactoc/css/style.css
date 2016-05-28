@@ -1928,6 +1928,8 @@ h2.bullet-headline + p { text-indent: 0; }
   .cell-pricing:last-of-type { border-right: 0; border-left: 6px solid #CDE5F1; } }
 @media only screen and (min-width: 1000px) { .cell-pricing { border-right: 12px solid #CDE5F1; }
   .cell-pricing:last-of-type { border-left: 12px solid #CDE5F1; } }
+@media only screen and (min-width: 1280px) { .cell-pricing { border-right: 18px solid #CDE5F1; }
+  .cell-pricing:last-of-type { border-left: 18px solid #CDE5F1; } }
 .cell-pricing .cell-inner { background: #fff; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 0px 1px rgba(0, 0, 0, 0.1); transition: all 0.2s ease-in-out; }
 .cell-pricing .cell-inner:hover { box-shadow: 0 4px 0px 1px rgba(0, 0, 0, 0.2); }
 @media only screen and (min-width: 800px) { .cell-pricing .cell-inner { padding: 24px 30px 0; } }

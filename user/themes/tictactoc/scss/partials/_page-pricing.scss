@@ -48,6 +48,14 @@
     }
   }
 
+  @media only screen and (min-width: 1280px) {
+    border-right: 18px solid $color-skyblue5;
+
+    &:last-of-type {
+      border-left: 18px solid $color-skyblue5;
+    }
+  }
+
   .cell-inner {
     background: #fff;
     border-radius: 6px;
