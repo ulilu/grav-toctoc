@@ -56,7 +56,7 @@
 	margin-bottom: 0;
 	// background: linear-gradient(to bottom, #2DBDCA, $color-logo0);
 	background: rgba(61, 49, 50, 0.85);
-	color: $color-lightblue;
+	color: $color-skyblue5;
 	// mix-blend-mode: hard-light;
   
   @media only screen and (min-width: 420px) {
@@ -143,15 +143,7 @@
 .block--welcome {
   z-index: 1; // necessary for containing icon to appear
   padding-bottom: 36px;
-  background: linear-gradient(to bottom, #CDE5F1 40%, $color-midblue 60%);
-  background: linear-gradient(to bottom, #fff, #CDE5F1 50%, $color-midblue 70%);
-  background: linear-gradient(to bottom, #CDE5F1 50%, #66C1D3 53%, #44538D);
-  background: linear-gradient(to bottom, #CDE5F1, $color-midblue);
-  background: linear-gradient(to bottom, #ffffff, #CDE5F1);
-  background: linear-gradient(to bottom, #CDE5F1, #fff);
-  background: linear-gradient(to bottom, #CDE5F1, #F4F8FA);
-  background: linear-gradient(to bottom, #caeef2, #fff);
-  background: linear-gradient(to bottom, $color-turq4, $color-turq5);
+  background: linear-gradient(to bottom, $color-seagreen5, $color-seagreen6);
   border-bottom: 12px solid #fff;
   
   /*
@@ -193,9 +185,7 @@
     float:right;
     width: -webkit-calc(50% - 36px);
     width: calc(50% - 36px);
-    margin: 72px 0 36px 36px;
-    margin: 54px 18px 48px 72px;
-    margin: 42px 18px 36px 72px;
+    margin: 18px 18px 36px 72px;
 
     &:before {
       content: "";
@@ -209,8 +199,7 @@
       border-radius: 6px;
       box-shadow: 1px 0 12px rgba(0,0,0,0.33);
       // @include boxshadow02(0.1);
-      background: $color-warmsand2;
-      background: $color-turq3;
+      background: $color-seagreen4;
     }
 
     &:after {
@@ -225,7 +214,7 @@
       border: 12px solid #FEFEFE;
       border-radius: 6px;
       transform: rotate(-3deg);
-      background: $color-turq2;
+      background: $color-seagreen3;
       z-index: -1;
       box-shadow: 1px 0 12px rgba(0,0,0,0.33);
       // @include boxshadow02(0.1);
@@ -255,7 +244,7 @@
 .page-welcome {
 
   .block--services {
-    border-bottom: 12px solid $color-warmsand1;
+    border-bottom: 12px solid $color-sable4;
 
     &:after {
       background-size: 370px;
@@ -430,8 +419,7 @@
   .block--about {
     z-index: 1; // necessary for containing icon to appear
     color: #fff;
-    background: $color-midblue;  // greyblue
-    background: $color-turq2;
+    background: $color-seagreen3;
 
     .block--headline {
       padding-top: 0;

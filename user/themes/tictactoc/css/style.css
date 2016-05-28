@@ -1791,7 +1791,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*------------------------------------*\ BLOCK: Welcome
 \*------------------------------------*/
-.block--welcome { z-index: 1; padding-bottom: 36px; background: linear-gradient(to bottom, #CDE5F1 40%, #8EBDD4 60%); background: linear-gradient(to bottom, #fff, #CDE5F1 50%, #8EBDD4 70%); background: linear-gradient(to bottom, #CDE5F1 50%, #66C1D3 53%, #44538D); background: linear-gradient(to bottom, #CDE5F1, #8EBDD4); background: linear-gradient(to bottom, #ffffff, #CDE5F1); background: linear-gradient(to bottom, #CDE5F1, #fff); background: linear-gradient(to bottom, #CDE5F1, #F4F8FA); background: linear-gradient(to bottom, #caeef2, #fff); background: linear-gradient(to bottom, #caeef2, #e8f8fa); border-bottom: 12px solid #fff;   /*
+.block--welcome { z-index: 1; padding-bottom: 36px; background: linear-gradient(to bottom, #caeef2, #e8f8fa); border-bottom: 12px solid #fff;   /*
 	 *  Bonne Mère icon 
 	 */ }
 .block--welcome:after { background-size: 460px; background-position: left 3vw bottom -40px; }
@@ -1803,8 +1803,8 @@ h2.bullet-headline + p { text-indent: 0; }
 /*------------------------------------*\ Youtube Video in block--welcome
 \*------------------------------------*/
 .video-container { position: relative; width: 100%; margin: 0 0 30px; }
-@media only screen and (min-width: 720px) { .video-container { float: right; width: -webkit-calc(50% - 36px); width: calc(50% - 36px); margin: 72px 0 36px 36px; margin: 54px 18px 48px 72px; margin: 42px 18px 36px 72px; }
-  .video-container:before { content: ""; display: block; position: absolute; left: -12px; top: -12px; right: -12px; bottom: -12px; border: 12px solid #FFF; border-radius: 6px; box-shadow: 1px 0 12px rgba(0, 0, 0, 0.33); background: #FCE8B7; background: #79D4DF; }
+@media only screen and (min-width: 720px) { .video-container { float: right; width: -webkit-calc(50% - 36px); width: calc(50% - 36px); margin: 18px 18px 36px 72px; }
+  .video-container:before { content: ""; display: block; position: absolute; left: -12px; top: -12px; right: -12px; bottom: -12px; border: 12px solid #FFF; border-radius: 6px; box-shadow: 1px 0 12px rgba(0, 0, 0, 0.33); background: #79d4df; }
   .video-container:after { content: ""; display: block; width: 110%; position: absolute; left: -5%; top: -5%; right: -5%; bottom: -5%; border: 12px solid #FEFEFE; border-radius: 6px; transform: rotate(-3deg); background: #45bac4; z-index: -1; box-shadow: 1px 0 12px rgba(0, 0, 0, 0.33); } }
 
 .video-wrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; }
@@ -1852,7 +1852,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 /*------------------------------------*\ ADAPTATION: .block--about
 \*------------------------------------*/
-.page-welcome .block--about { z-index: 1; color: #fff; background: #8EBDD4; background: #45bac4; }
+.page-welcome .block--about { z-index: 1; color: #fff; background: #45bac4; }
 .page-welcome .block--about .block--headline { padding-top: 0; }
 @media only screen and (max-width: 1200px) { .page-welcome .block--about .block--headline { padding: 0 0 30px; } }
 .page-welcome .block--about .cell-image img { border: 12px solid; }
