@@ -29,9 +29,10 @@
   line-height: 48px;
   // color: $color-lavender;
   color: $color-skyblue1;
+  color: $color-logo1;
   font-size: 28px;
   text-indent: 62px;
-  font-family: $font-semibold;
+  font-family: $font-regular;
   margin-bottom: 12px;
   
   &:before {
@@ -54,6 +55,7 @@
     white-space: nowrap;
     padding: 6px 0 2px;
     vertical-align: baseline;
+    font-family: $font-semibold;
     
     &:hover {
       color: $color-red3;

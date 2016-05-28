@@ -1603,9 +1603,9 @@ h2.bullet-headline + p { text-indent: 0; }
 \*---------------------------------------------------------------------------*/
 .block--cta { border-top: 6px solid #fff; background: #fff; z-index: 10; }
 
-.headline--cta { position: relative; line-height: 48px; color: #00517a; font-size: 28px; text-indent: 62px; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; margin-bottom: 12px; }
+.headline--cta { position: relative; line-height: 48px; color: #00517a; color: #3e0000; font-size: 28px; text-indent: 62px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; margin-bottom: 12px; }
 .headline--cta:before { content: ""; display: inline-block; position: absolute; left: -10px; top: -15px; width: 90px; height: 100px; margin-right: 18px; vertical-align: middle; background: url(../img/logo_icon.svg) no-repeat; background-size: 70%; }
-.headline--cta a { color: #00aabd; border-bottom: 2px solid #CDE5F1; white-space: nowrap; padding: 6px 0 2px; vertical-align: baseline; }
+.headline--cta a { color: #00aabd; border-bottom: 2px solid #CDE5F1; white-space: nowrap; padding: 6px 0 2px; vertical-align: baseline; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .headline--cta a:hover { color: #c14e46; border-bottom: 2px solid #ffc4bf; }
 @media only screen and (min-width: 420px) { .headline--cta { font-size: 30px; line-height: 51px; text-indent: 0; padding-left: 75px; }
   .headline--cta:before { left: -3px; top: -6px; background-size: 80%; } }
