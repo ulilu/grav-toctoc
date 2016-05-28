@@ -22,7 +22,7 @@
   // background: linear-gradient(to top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.15) 40%);
   // background: linear-gradient(to bottom, rgba(0,0,0,0) 59%, rgba(0,0,0,0.15) 60%);
   background: $color-redwine;
-  border-bottom: 3px solid rgba(0,0,0,0.33);
+  // border-bottom: 3px solid rgba(0,0,0,0.33);
 
   @media only screen and (min-width: 700px) {
     overflow: visible;
@@ -250,7 +250,7 @@
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   // box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
-  border-bottom: 3px solid rgba(0,0,0,0.33);
+  // border-bottom: 3px solid rgba(0,0,0,0.33);
 }
 
 .sub-nav__item {

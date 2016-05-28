@@ -1241,7 +1241,7 @@ textarea:focus::-webkit-input-placeholder, input[type=text]:focus::-webkit-input
 .nav-bar { position: relative; height: 51px; }
 @media only screen and (min-width: 1200px) { .nav-bar { overflow: visible; } }
 
-.main-nav__wrapper { position: relative; z-index: 2; width: 100%; overflow: hidden; background: #9B2E36; border-bottom: 3px solid rgba(0, 0, 0, 0.33); /* fade-out element on right side of main-nav, only on mobile */ }
+.main-nav__wrapper { position: relative; z-index: 2; width: 100%; overflow: hidden; background: #9B2E36; /* fade-out element on right side of main-nav, only on mobile */ }
 @media only screen and (min-width: 700px) { .main-nav__wrapper { overflow: visible; } }
 @media only screen and (max-width: 700px) { .main-nav__wrapper:before, .main-nav__wrapper:after { content: ""; display: block; position: absolute; top: 0; height: 51px; width: 100px; pointer-events: none; }
   .main-nav__wrapper:before { left: 0; width: 50px; background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.33)); z-index: 1; }
@@ -1282,7 +1282,7 @@ textarea:focus::-webkit-input-placeholder, input[type=text]:focus::-webkit-input
 */
 /*------------------------------------*\ Sub nav
 \*------------------------------------*/
-.sub-nav { display: none; position: absolute; left: -3px; padding: 6px 6px 0; width: 200px; overflow: hidden; background: #9B2E36; border-bottom-left-radius: 9px; border-bottom-right-radius: 9px; border-bottom: 3px solid rgba(0, 0, 0, 0.33); }
+.sub-nav { display: none; position: absolute; left: -3px; padding: 6px 6px 0; width: 200px; overflow: hidden; background: #9B2E36; border-bottom-left-radius: 9px; border-bottom-right-radius: 9px; }
 
 .sub-nav__item { display: block; position: relative; }
 
