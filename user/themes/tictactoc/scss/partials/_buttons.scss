@@ -179,12 +179,13 @@
   
   &:hover,
   a:hover & {
-    color: #fff;
-    background: $color-seagreen2;
+    color: $color-seagreen1;
+    background: $color-seagreen4;
   }
 
   &:active,
   a:active:hover & {
+    background: $color-seagreen5;
   }
 }
 
