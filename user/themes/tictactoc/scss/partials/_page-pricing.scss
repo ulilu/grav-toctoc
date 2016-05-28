@@ -32,23 +32,19 @@
 
   @media only screen and (min-width: 800px) {
     border-bottom: 0;
-    border-right: 12px solid $color-skyblue5;
-    // border-right: 12px solid $color-greywalls2;
+    border-right: 6px solid $color-skyblue5;
 
     &:last-of-type {
       border-right: 0;
-      border-left: 12px solid $color-skyblue5;
-      // border-left: 12px solid $color-greywalls2;
+      border-left: 6px solid $color-skyblue5;
     }
   }
 
   @media only screen and (min-width: 1000px) {
-    border-right: 18px solid $color-skyblue5;
-    // border-right: 18px solid $color-greywalls2;
+    border-right: 12px solid $color-skyblue5;
 
     &:last-of-type {
-      border-left: 18px solid $color-skyblue5;
-      // border-left: 12px solid $color-greywalls2;
+      border-left: 12px solid $color-skyblue5;
     }
   }
 
