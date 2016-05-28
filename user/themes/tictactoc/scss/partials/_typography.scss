@@ -245,6 +245,22 @@ h6, h6.fa  {
 }
 
 
+.epsilon {
+  font-size: 24px !important;
+  line-height: 30px;
+  
+  @media only screen and (min-width: 450px) {
+    font-size: 30px !important;
+    line-height: 36px;
+  }
+  
+  @media only screen and (min-width: 550px) {
+    font-size: 42px !important;
+    line-height: 48px; 
+  }
+}
+
+
 
 hr  {
   clear: both;
