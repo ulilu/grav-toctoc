@@ -1130,6 +1130,9 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn-lavender { color: #fff; background: #8078a3; border-bottom: 3px solid #312c4a; }
 .btn-lavender:hover, a:hover .btn-lavender { color: #fff; background: #504A6D; }
 
+.btn-seagreen { color: #fff; background: #45bac4; border-bottom: 3px solid #007987; }
+.btn-seagreen:hover, a:hover .btn-seagreen { color: #fff; background: #00aabd; }
+
 .btn--social { color: #fff !important; margin: 0 6px 12px 0; }
 .btn--social:last-of-type { margin: 0; }
 .btn--social .fa { font-size: 24px; }

@@ -23,7 +23,7 @@
     {% endfor %}
 
 	  {% for button in form.buttons %}
-	    <button class="btn btn-l btn-rouille" type="{{ button.type|default('submit') }}">{% if (button.type) == 'submit' %}<i class="fa fa-paper-plane"></i>{% endif %}{{ button.value|default('Submit') }}</button>
+	    <button class="btn btn-l btn-seagreen" type="{{ button.type|default('submit') }}">{% if (button.type) == 'submit' %}<i class="fa fa-paper-plane"></i>{% endif %}{{ button.value|default('Submit') }}</button>
 	  {% endfor %}
   </div>
 

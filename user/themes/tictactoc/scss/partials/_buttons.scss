@@ -172,6 +172,22 @@
   }
 }
 
+.btn-seagreen {
+  color: #fff;
+  background: $color-seagreen3;
+  border-bottom: 3px solid $color-seagreen1;
+  
+  &:hover,
+  a:hover & {
+    color: #fff;
+    background: $color-seagreen2;
+  }
+
+  &:active,
+  a:active:hover & {
+  }
+}
+
 
 .btn--social {
   color: #fff !important;
