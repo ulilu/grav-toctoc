@@ -91,7 +91,7 @@
   small {
     display: inline-block;
     line-height: 21px;
-    padding: 18px 24px 0;
+    padding: 0 24px 0 0;
   }
 }
 
@@ -114,21 +114,22 @@
       font-size: 48px;
       list-style-type: none;
       padding: 12px 18px 12px 27px;
-      border-top-color: $color-greywalls0;
-      border-top-style: solid;
-      border-top-width: 2px;
-      border-bottom-color: $color-greywalls0;
-      border-bottom-style: double;
-      border-bottom-width: 6px;
-      background: $color-greywalls3;
+      border-top: 2px solid $color-greywalls0;
+      // border-top-color: $color-greywalls0;
+      // border-top-style: solid;
+      // border-top-width: 2px;
+      // border-bottom-color: $color-greywalls0;
+      // border-bottom-style: double;
+      // border-bottom-width: 6px;
+      // background: $color-greywalls3;
       line-height: 62px;
       height: 86px;
-      margin: 12px -24px 0;
+      margin: 12px 0 0;
       
-      @media only screen and (min-width: 800px) {
-        padding: 12px 18px 12px 27px;
-        margin: 12px -30px 0;
-      }
+      // @media only screen and (min-width: 800px) {
+      //   padding: 12px 18px 12px 27px;
+      //   margin: 12px -30px 0;
+      // }
       
       .btn {
         vertical-align: middle;
