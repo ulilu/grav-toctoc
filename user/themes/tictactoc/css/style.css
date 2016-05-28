@@ -1520,7 +1520,7 @@ h2.bullet-headline + p { text-indent: 0; }
   .timeline-row:last-of-type:after { left: 19px; } }
 @media only screen and (min-width: 700px) { .timeline-row { padding: 0 0 30px 0; }
   .timeline-row:before { left: 52px; }
-  .timeline-row:last-of-type:after { left: 33px; } }
+  .timeline-row:last-of-type:after { left: 35px; } }
 @media only screen and (min-width: 1000px) { .timeline-row:before { z-index: 1; left: calc(50% - 12px); width: 12px; }
   .timeline-row:last-of-type:after { bottom: -33px; left: calc(50% - 29px); } }
 
@@ -1603,7 +1603,7 @@ h2.bullet-headline + p { text-indent: 0; }
 \*---------------------------------------------------------------------------*/
 .block--cta { border-top: 6px solid #fff; background: #fff; z-index: 10; }
 
-.headline--cta { position: relative; line-height: 48px; color: #504A6D; font-size: 28px; text-indent: 62px; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; margin-bottom: 12px; }
+.headline--cta { position: relative; line-height: 48px; color: #1677a7; font-size: 28px; text-indent: 62px; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; margin-bottom: 12px; }
 .headline--cta:before { content: ""; display: inline-block; position: absolute; left: -10px; top: -15px; width: 90px; height: 100px; margin-right: 18px; vertical-align: middle; background: url(../img/logo_icon.svg) no-repeat; background-size: 70%; }
 .headline--cta a { color: #00aabd; border-bottom: 2px solid #CDE5F1; white-space: nowrap; padding: 6px 0 2px; vertical-align: baseline; }
 .headline--cta a:hover { color: #c14e46; border-bottom: 2px solid #ffc4bf; }
