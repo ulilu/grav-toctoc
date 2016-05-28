@@ -166,7 +166,7 @@
   	font-size: 18px;
 		line-height: 160%;
     
-    @media only screen and (min-width: 650px) { 
+    @media only screen and (min-width: 900px) { 
       font-size: 21px;
     }
   }
@@ -189,7 +189,7 @@
   width: 100%;
   margin: 0 0 30px;
   
-  @media only screen and (min-width: 650px) { 
+  @media only screen and (min-width: 720px) { 
     float:right;
     width: -webkit-calc(50% - 36px);
     width: calc(50% - 36px);

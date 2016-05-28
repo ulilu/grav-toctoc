@@ -1796,14 +1796,14 @@ h2.bullet-headline + p { text-indent: 0; }
 	 */ }
 .block--welcome:after { background-size: 460px; background-position: left 3vw bottom -40px; }
 .block--welcome p { font-size: 18px; line-height: 160%; }
-@media only screen and (min-width: 650px) { .block--welcome p { font-size: 21px; } }
+@media only screen and (min-width: 900px) { .block--welcome p { font-size: 21px; } }
 .block--welcome p:last-of-type { margin-bottom: 0; }
 .block--welcome h2 { margin-top: 6px; }
 
 /*------------------------------------*\ Youtube Video in block--welcome
 \*------------------------------------*/
 .video-container { position: relative; width: 100%; margin: 0 0 30px; }
-@media only screen and (min-width: 650px) { .video-container { float: right; width: -webkit-calc(50% - 36px); width: calc(50% - 36px); margin: 72px 0 36px 36px; margin: 54px 18px 48px 72px; margin: 42px 18px 36px 72px; }
+@media only screen and (min-width: 720px) { .video-container { float: right; width: -webkit-calc(50% - 36px); width: calc(50% - 36px); margin: 72px 0 36px 36px; margin: 54px 18px 48px 72px; margin: 42px 18px 36px 72px; }
   .video-container:before { content: ""; display: block; position: absolute; left: -12px; top: -12px; right: -12px; bottom: -12px; border: 12px solid #FFF; border-radius: 6px; box-shadow: 1px 0 12px rgba(0, 0, 0, 0.33); background: #FCE8B7; background: #79D4DF; }
   .video-container:after { content: ""; display: block; width: 110%; position: absolute; left: -5%; top: -5%; right: -5%; bottom: -5%; border: 12px solid #FEFEFE; border-radius: 6px; transform: rotate(-3deg); background: #45bac4; z-index: -1; box-shadow: 1px 0 12px rgba(0, 0, 0, 0.33); } }
 
