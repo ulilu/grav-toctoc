@@ -7,7 +7,7 @@
   position: relative;
   z-index: 1; // necessary for containing icon to appear
   padding: 0;
-  background: $color-lavender;
+  background: $color-lavender2;
   
   .block {
     padding: 30px !important;
@@ -32,7 +32,8 @@
   }
   
   h1 {
-    color: $color-warmsand2;
+    // color: $color-warmsand2;
+    color: $color-lavender5;
   }
 
   h3 {
