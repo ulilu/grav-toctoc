@@ -9,13 +9,23 @@
   border-bottom: 12px solid $color-skyblue6;
   z-index: 1;
 
+    // @media only screen and (min-width:1200px) {
+    //   &:after {
+    //     display: block;
+    //     z-index: -1;
+    //     opacity: 1;
+    //     background-size: 480px; // yeah!
+    //     background-position: left 1vw bottom -140px;
+    //   }
+    // }
+    
     @media only screen and (min-width:1200px) {
       &:after {
         display: block;
         z-index: -1;
         opacity: 1;
-        background-size: 480px; // yeah!
-        background-position: left 1vw bottom -140px;
+        background-size: cover; // yeah!
+        // background-position: left 1vw bottom -140px;
       }
     }
   
