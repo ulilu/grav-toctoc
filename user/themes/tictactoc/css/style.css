@@ -1922,7 +1922,7 @@ h2.bullet-headline + p { text-indent: 0; }
 .block--pricing { margin-bottom: 0; }
 @media only screen and (min-width: 800px) { .block--pricing { padding-bottom: 42px; } }
 
-.cell-pricing { margin: 0 0 18px; padding-bottom: 0 !important; }
+.cell-pricing { margin: 0 0 18px; padding: 0 !important; }
 @media only screen and (min-width: 480px) { .cell-pricing { margin: 0 0 24px; } }
 @media only screen and (min-width: 800px) { .cell-pricing { border-bottom: 0; border-right: 6px solid #CDE5F1; }
   .cell-pricing:last-of-type { border-right: 0; border-left: 6px solid #CDE5F1; } }
