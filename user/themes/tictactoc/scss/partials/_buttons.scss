@@ -173,14 +173,13 @@
 }
 
 .btn-seagreen {
-  color: #fff;
-  background: $color-seagreen2;
+  color: $color-seagreen1;
+  background: $color-seagreen4;
   border-bottom: 3px solid $color-seagreen1;
   
   &:hover,
   a:hover & {
-    color: $color-seagreen1;
-    background: $color-seagreen4;
+    background: $color-seagreen5;
   }
 
   &:active,
