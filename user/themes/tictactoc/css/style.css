@@ -1924,7 +1924,7 @@ h2.bullet-headline + p { text-indent: 0; }
 
 .cell-pricing { margin: 0 0 18px; }
 .cell-pricing .cell-inner { background: #fff; border-radius: 6px; overflow: hidden; }
-@media only screen and (min-width: 800px) { .cell-pricing .cell-inner { padding: 24px 30px; } }
+@media only screen and (min-width: 800px) { .cell-pricing .cell-inner { padding: 24px 30px 0; } }
 @media only screen and (min-width: 480px) { .cell-pricing { margin: 0 0 24px; } }
 @media only screen and (min-width: 800px) { .cell-pricing { border-bottom: 0; border-right: 12px solid #CDE5F1; }
   .cell-pricing:last-of-type { border-right: 0; border-left: 12px solid #CDE5F1; } }
