@@ -188,6 +188,22 @@
   }
 }
 
+.btn-skyblue {
+  color: #fff;
+  background: $color-skyblue2;
+  border-bottom: 3px solid $color-skyblue1;
+  
+  &:hover,
+  a:hover & {
+    color: #fff;
+    background: $color-skyblue1;
+  }
+
+  &:active,
+  a:active:hover & {
+  }
+}
+
 
 .btn--social {
   color: #fff !important;

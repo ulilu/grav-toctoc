@@ -1137,6 +1137,9 @@ hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0;
 .btn-seagreen { color: #fff; background: #00aabd; border-bottom: 3px solid #007987; }
 .btn-seagreen:hover, a:hover .btn-seagreen { color: #fff; background: #007987; }
 
+.btn-skyblue { color: #fff; background: #1677a7; border-bottom: 3px solid #00517a; }
+.btn-skyblue:hover, a:hover .btn-skyblue { color: #fff; background: #00517a; }
+
 .btn--social { color: #fff !important; margin: 0 6px 12px 0; }
 .btn--social:last-of-type { margin: 0; }
 .btn--social .fa { font-size: 24px; }
