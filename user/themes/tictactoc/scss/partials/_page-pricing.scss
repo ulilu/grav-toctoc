@@ -10,12 +10,14 @@
   
   h1 {
     color: $color-lavender2;
+    color: $color-logo1;
   }
 }
 
 
 .block--pricing {
   margin-bottom: 0;
+  border-bottom: 12px solid $color-skyblue6;
 
   @media only screen and (min-width: 800px) {
     padding-bottom: 42px;

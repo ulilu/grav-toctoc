@@ -1917,9 +1917,9 @@ h2.bullet-headline + p { text-indent: 0; }
 /*---------------------------------------------------------------------------*\ PAGE: Pricing
 \*---------------------------------------------------------------------------*/
 .page-pricing { background: #F1E4C6; background: #EFE8D8; background: #CDE5F1; }
-.page-pricing h1 { color: #504A6D; }
+.page-pricing h1 { color: #504A6D; color: #3e0000; }
 
-.block--pricing { margin-bottom: 0; }
+.block--pricing { margin-bottom: 0; border-bottom: 12px solid #e6f2f8; }
 @media only screen and (min-width: 800px) { .block--pricing { padding-bottom: 42px; } }
 
 .cell-pricing { margin: 0 0 18px; padding: 0 !important; }
