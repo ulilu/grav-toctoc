@@ -326,8 +326,8 @@ h6, h6.fa { font-size: 18px; line-height: 27px; }
 @media only screen and (min-width: 550px) { .delta { font-size: 48px !important; line-height: 54px; } }
 
 .epsilon { font-size: 24px !important; line-height: 30px; }
-@media only screen and (min-width: 450px) { .epsilon { font-size: 30px !important; line-height: 36px; } }
-@media only screen and (min-width: 550px) { .epsilon { font-size: 42px !important; line-height: 48px; } }
+@media only screen and (min-width: 700px) { .epsilon { font-size: 30px !important; line-height: 36px; } }
+@media only screen and (min-width: 1000px) { .epsilon { font-size: 42px !important; line-height: 48px; } }
 
 hr { clear: both; height: 2px; background-color: #B2A892; padding: 0; border: 0; margin: 0 0 30px; }
 
@@ -1605,8 +1605,8 @@ h2.bullet-headline + p { text-indent: 0; }
 
 .headline--cta { position: relative; line-height: 48px; color: #00517a; color: #3e0000; font-size: 28px; text-indent: 62px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; margin-bottom: 12px; }
 .headline--cta:before { content: ""; display: inline-block; position: absolute; left: -10px; top: -15px; width: 90px; height: 100px; margin-right: 18px; vertical-align: middle; background: url(../img/logo_icon.svg) no-repeat; background-size: 70%; }
-.headline--cta a { color: #00aabd; border-bottom: 2px solid #CDE5F1; white-space: nowrap; padding: 6px 0 2px; vertical-align: baseline; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-.headline--cta a:hover { color: #c14e46; border-bottom: 2px solid #ffc4bf; }
+.headline--cta a { color: #00aabd; white-space: nowrap; padding: 6px 0 2px; vertical-align: baseline; font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.headline--cta a:hover { color: #c14e46; }
 @media only screen and (min-width: 420px) { .headline--cta { font-size: 30px; line-height: 51px; text-indent: 0; padding-left: 75px; }
   .headline--cta:before { left: -3px; top: -6px; background-size: 80%; } }
 @media only screen and (min-width: 480px) { .headline--cta { font-size: 33px; line-height: 54px; padding-left: 120px; }

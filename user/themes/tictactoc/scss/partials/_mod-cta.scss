@@ -51,7 +51,7 @@
   
   a {
     color: $color-logo0;
-    border-bottom: 2px solid $color-lightblue;
+    // border-bottom: 2px solid $color-lightblue;
     white-space: nowrap;
     padding: 6px 0 2px;
     vertical-align: baseline;
@@ -59,7 +59,7 @@
     
     &:hover {
       color: $color-red3;
-      border-bottom: 2px solid $color-red4;
+      // border-bottom: 2px solid $color-red4;
     }
   }
   
