@@ -1916,7 +1916,7 @@ h2.bullet-headline + p { text-indent: 0; }
 @media only screen and (min-width: 750px) { .page-service .stage__subtitle { font-size: 30px; line-height: 130%; } }
 @media only screen and (min-width: 1200px) { .page-service .stage__subtitle { max-width: 1140px; margin: 0 auto; } }
 .page-service .block--examples { z-index: 2; }
-.page-service .block--examples h2 { color: #F1E4C6; }
+.page-service .block--examples h2 { color: #dddae8; }
 @media only screen and (min-width: 1200px) { .page-service .block--examples:after { opacity: .2; left: auto; right: 0; background-size: 380px; background-position: right 0 bottom 66px; pointer-events: none; } }
 
 /*---------------------------------------------------------------------------*\ LIST PAGE: Examples
