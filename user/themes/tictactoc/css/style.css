@@ -1933,11 +1933,11 @@ h2.bullet-headline + p { text-indent: 0; }
 .cell-pricing .headline--service { padding: 0 0 12px; }
 .cell-pricing .byline--service { position: relative; left: -24px; top: -12px; width: calc(100% + 48px); height: 100%; color: #fff !important; padding: 24px; margin: 0; }
 @media only screen and (min-width: 800px) { .cell-pricing .byline--service { left: -30px; width: calc(100% + 60px); } }
-.cell-pricing small { display: inline-block; line-height: 21px; }
+.cell-pricing small { display: inline-block; line-height: 21px; padding: 18px 24px 0; }
 
-.checklist { margin-bottom: 18px; }
+.checklist { margin-bottom: 0; }
 .checklist li { color: #3e0000; line-height: 27px; padding: 6px 0; margin: 0; }
-.checklist li.list-total { margin-top: -11px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 48px; list-style-type: none; padding: 12px 18px 12px 27px; border-top-color: #D7CAAD; border-top-style: solid; border-top-width: 2px; border-bottom-color: #D7CAAD; border-bottom-style: double; border-bottom-width: 6px; background: #EFE8D8; line-height: 62px; height: 86px; margin: 12px -24px 0; }
+.checklist li.list-total { margin-top: -11px; font-family: Linotte-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 48px; list-style-type: none; padding: 12px 18px 12px 27px; border-top-color: #D7CAAD; border-top-style: solid; border-top-width: 2px; border-bottom-color: #D7CAAD; border-bottom-style: double; border-bottom-width: 6px; background: #FDFAF8; line-height: 62px; height: 86px; margin: 12px -24px 0; }
 @media only screen and (min-width: 800px) { .checklist li.list-total { padding: 12px 18px 12px 27px; margin: 12px -30px 0; } }
 .checklist li.list-total .btn { vertical-align: middle; float: right; line-height: 28px; }
 .checklist.color-rouge3 .fa:before { color: #ec5f6b; }

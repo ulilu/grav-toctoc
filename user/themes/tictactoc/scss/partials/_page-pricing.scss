@@ -91,12 +91,13 @@
   small {
     display: inline-block;
     line-height: 21px;
+    padding: 18px 24px 0;
   }
 }
 
 
 .checklist {
-  margin-bottom: 18px;
+  margin-bottom: 0;
 
   li {
     // color: #444;
@@ -119,7 +120,7 @@
       border-bottom-color: $color-greywalls0;
       border-bottom-style: double;
       border-bottom-width: 6px;
-      background: $color-greywalls2;
+      background: $color-greywalls3;
       line-height: 62px;
       height: 86px;
       margin: 12px -24px 0;
