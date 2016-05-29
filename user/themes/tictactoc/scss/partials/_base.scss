@@ -58,45 +58,16 @@ body	{
   background: #fff;
 }
 
+/* 
+ *  1. To make space for the footer below 
+ */
 .main {
   position: relative;
   padding-top: 24px;
-  padding-bottom: 60px;
-}
-
-/*
- *  [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt
- */
-.footer {
-  position: absolute;  /* [1] */
-  z-index: 100;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #444;
-  color: #888;
-  background: $color-warmsand1;
-  color: $color-clay;
-  background: $color-lavender-dark;
-  color: $color-lavender-light;
-  font-size: 14px;
+  padding-bottom: 120px;  // 1. 
   
-  @media only screen and (min-width:480px) {
-    font-size: 16px;
-  }
-  
-  a {
-    display: inline-block;
-    color: $color-lavender-light;
-    padding: 0 4px;
-    border-radius: 2px;
-    margin-left: 4px;
-    
-    &:hover {
-      background: #fff;
-      color: $color-lavender-dark;
-    }
+  @media only screen and (min-width:600px) {
+    padding-bottom: 90px;  // 1. 
   }
 }
 
