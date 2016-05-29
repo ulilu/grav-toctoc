@@ -27,9 +27,8 @@
   a {
     display: inline-block;
     color: $color-lavender-light;
-    padding: 0 4px;
+    padding: 0 6px;
     border-radius: 2px;
-    margin-left: 4px;
     
     &:hover {
       background: #fff;
@@ -38,8 +37,10 @@
   }
 
   strong {
+    font-family: $font-semibold;
+    font-style: normal;
     display: inline-block;
-    padding: 0 4px;  
+    padding: 0 6px;  
   }
   
   p {

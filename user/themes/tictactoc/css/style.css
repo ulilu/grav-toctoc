@@ -1319,9 +1319,9 @@ textarea:focus::-webkit-input-placeholder, input[type=text]:focus::-webkit-input
 /* [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt */
 .footer { position: absolute; /* [1] */ z-index: 100; right: 0; bottom: 0; left: 0; width: 100%; background: #444; color: #888; background: #dec586; color: #827B6A; background: #312c4a; color: #8078a3; font-size: 14px; }
 @media only screen and (min-width: 480px) { .footer { font-size: 16px; } }
-.footer a { display: inline-block; color: #8078a3; padding: 0 4px; border-radius: 2px; margin-left: 4px; }
+.footer a { display: inline-block; color: #8078a3; padding: 0 6px; border-radius: 2px; }
 .footer a:hover { background: #fff; color: #312c4a; }
-.footer strong { display: inline-block; padding: 0 4px; }
+.footer strong { font-family: Linotte-SemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif; font-style: normal; display: inline-block; padding: 0 6px; }
 .footer p { margin: 0; }
 
 /*------------------------------------*\ 1. necessary to get automatic numbering of headlines, see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
