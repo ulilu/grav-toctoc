@@ -1320,6 +1320,8 @@ textarea:focus::-webkit-input-placeholder, input[type=text]:focus::-webkit-input
 .stage__img img.top { object-position: top; }
 .stage__img img.bottom { object-position: bottom; }
 
+.footer p { margin: 0; }
+
 /*------------------------------------*\ 1. necessary to get automatic numbering of headlines, see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
 \*------------------------------------*/
 .main { counter-reset: step; }
