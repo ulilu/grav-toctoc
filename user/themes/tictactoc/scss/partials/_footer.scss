@@ -36,6 +36,11 @@
       color: $color-lavender-dark;
     }
   }
+
+  strong {
+    display: inline-block;
+    padding: 0 4px;  
+  }
   
   p {
     margin: 0;

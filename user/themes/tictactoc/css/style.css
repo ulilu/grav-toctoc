@@ -1321,6 +1321,7 @@ textarea:focus::-webkit-input-placeholder, input[type=text]:focus::-webkit-input
 @media only screen and (min-width: 480px) { .footer { font-size: 16px; } }
 .footer a { display: inline-block; color: #8078a3; padding: 0 4px; border-radius: 2px; margin-left: 4px; }
 .footer a:hover { background: #fff; color: #312c4a; }
+.footer strong { display: inline-block; padding: 0 4px; }
 .footer p { margin: 0; }
 
 /*------------------------------------*\ 1. necessary to get automatic numbering of headlines, see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
