@@ -1,7 +1,7 @@
 <ul class="langswitcher">
 {% set langobj = grav['language'] %}
 
-{% for key, language in langswitcher.languages %}
+{% for key in langswitcher.languages %}
 
     {% if key == langswitcher.current %}
         {% set lang_url = page.url %}
@@ -11,7 +11,7 @@
         {% set active_class = '' %}
     {% endif %}
 
-    <li><a href="{{ lang_url }}" class="full-lang {{ active_class }}">{{  language.nativeName|capitalize }}</a><a href="{{ lang_url }}" class="short-lang {{ active_class }}">{{  language.nativeName|upper|slice(0,2) }}</a></li>
+    <li><a href="{{ lang_url ~ uri.params }}" class="full-lang {{ active_class }}">{{ native_name(key)|capitalize }}</a><a href="{{ lang_url ~ uri.params }}" class="short-lang {{ active_class }}">{{ native_name(key)|upper|slice(0,2) }}</a></li>
 
 {% endfor %}
 </ul>
