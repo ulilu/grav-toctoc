@@ -247,8 +247,8 @@ body { position: relative; min-height: 100%; background: #fff; font-size: 16px; 
 .header { position: relative; z-index: 10; width: 100%; max-height: 120px; background: #fff; }
 
 /*  1. To make space for the footer below  */
-.main { position: relative; padding-top: 24px; padding-bottom: 120px; }
-@media only screen and (min-width: 600px) { .main { padding-bottom: 90px; } }
+.main { position: relative; padding-top: 24px; padding-bottom: 126px; }
+@media only screen and (min-width: 720px) { .main { padding-bottom: 84px; } }
 
 /*---------------------------------------------------------------------------*\ Wrapper on .page-welcome (similar to .stage on other pages)
 \*---------------------------------------------------------------------------*/
