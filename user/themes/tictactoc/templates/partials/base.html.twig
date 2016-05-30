@@ -9,11 +9,8 @@
         <link rel="icon" type="image/png" href="{{ theme_url }}/img/favicon.ico" />
 
          {% block stylesheets %}
-            {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
-            {% do assets.addCss('theme://css/style.css') %}
-            {# 
-            {% do assets.addCss('theme://css/camera.css') %} 
-            #}
+            {% do assets.addCss('theme://css/font-awesome.min.css', 100) %}
+            {% do assets.addCss('theme://css/style.css', 110) %}
 
             {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
                 {% do assets.addCss('theme://assets/tm/css/tm_docs.css') %}
