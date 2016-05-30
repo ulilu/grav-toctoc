@@ -1,7 +1,7 @@
 <a class="card  width-33" href="{{ page.url }}">
 
 	<div class="card__img">
-		{{ page.media[page.header.image].quality(80).derivatives(300, 600, 150).sizes('100vw').html(page.title, page.title, page.header.imagealign) }}
+		{{ page.media[page.header.image].cropResize(500).html(page.title, page.title, page.header.imagealign) }}
 			<small class="card__badge" data-exampletype="{{ page.taxonomy.example_type|first }}"></small>
 	</div>
 	<div class="card__info">
