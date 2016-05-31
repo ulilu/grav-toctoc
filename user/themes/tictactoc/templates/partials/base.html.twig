@@ -19,38 +19,6 @@
         {% endblock %}
         {{ assets.css() }}
 
-        {% block javascripts %}
-            {% do assets.add('jquery',101) %}
-            {% do assets.addJs('theme://js/fittext_uli.js', {group: 'bottom'}) %} 
-            {% do assets.addJs('theme://js/scripts.js', {group: 'bottom'}) %} 
-
-            {#
-            {% do assets.addJs('theme://js/jquery-migrate-1.2.1.js') %}
-            {% do assets.addJs('theme://js/superfish.js') %}
-            {% do assets.addJs('theme://js/jquery.easing.1.3.js') %}
-            {% do assets.addJs('theme://js/jquery.mobilemenu.js') %}
-            {% do assets.addJs('theme://js/jquery.ui.totop.js') %}
-            {% do assets.addJs('theme://js/jquery.touchSwipe.min.js') %}
-            {% do assets.addJs('theme://js/jquery.equalheights.js') %}
-            {% do assets.addJs('theme://js/camera.js') %} 
-            #}
-
-  {#           {% if browser.getBrowser == 'msie' and browser.getVersion > 9 or browser.getBrowser != 'msie' %}
-                {% do assets.addJs('theme://js/jquery.mobile.customized.min.js') %}
-            {% endif %} #}
-
-            {# {% if browser.getBrowser == 'msie' %} #}
-                {% do assets.addJs('theme://js/msie.js') %}
-            {# {% endif %} #}
-
-            {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
-                {% do assets.addJs('theme://assets/assets/js/html5shiv.js') %}
-                {% do assets.addJs('theme://assets/assets/js/respond.min.js') %}
-            {% endif %}
-            
-        {% endblock %}
-        {{ assets.js() }}
-
         {# 
         <script>    
         $(window).load( function(){ 
@@ -84,7 +52,24 @@
         <div class="scrolltop  js-scrolltop"></div>
         
     </body>
+    {% block javascripts %}
+        {% do assets.add('jquery',101) %}
+        {% do assets.addJs('theme://js/fittext_uli.js', {group: 'bottom'}) %} 
+        {% do assets.addJs('theme://js/scripts.js', {group: 'bottom'}) %} 
 
+
+        {% if browser.getBrowser == 'msie' %}
+            {% do assets.addJs('theme://js/msie.js') %}
+        {% endif %}
+
+        {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
+            {% do assets.addJs('theme://assets/assets/js/html5shiv.js') %}
+            {% do assets.addJs('theme://assets/assets/js/respond.min.js') %}
+        {% endif %}
+        
+    {% endblock %}
+    {{ assets.js() }}
+    
     {% block bottom %}
         {{ assets.js('bottom') }}
     {% endblock %}

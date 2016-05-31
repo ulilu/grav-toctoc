@@ -12,7 +12,8 @@
 {% set unique_id = 'ls-' ~ random_string(10) %}
 
 <script type="text/javascript">
-  $(document).ready(function() {
+  // $(document).ready(function() {
+  $(window).bind("load", function() {
     $("#{{ unique_id }}").lightSlider({
         item: {{ settings.item|default(1) }},
         slideMove: {{ settings.slideMove|default(3) }},
