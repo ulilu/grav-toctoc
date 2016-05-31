@@ -62,10 +62,6 @@
 .cell-feature {
   color: #fff;
   background: $color-darkbeige;
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: $font-semibold;
-  }
 
   h3.fa:before {
     border: 2px solid #fff;
@@ -99,6 +95,7 @@
 
 .cell-feature,
 .cell-info {
+
   margin: 0 -24px;
   
   @media only screen and (min-width:480px) {
@@ -133,6 +130,10 @@
     &.cell-30 { width: 30%; }
     &.cell-25 { width: 25%; }
     &.cell-20 { width: 20%; }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-semibold;
   }
 }
 
