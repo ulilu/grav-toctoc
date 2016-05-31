@@ -31,7 +31,7 @@
             <div style='text-align:center'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>
          {% endif %}
 
-        {% endblock head%}
+    {% endblock head%}
     </head>
     <body class="{{ page.header.body_classes }}">
         {% block header %}
@@ -51,26 +51,28 @@
 
         <div class="scrolltop  js-scrolltop"></div>
         
+        {% block javascripts %}
+            {% do assets.add('jquery',101) %}
+            {% do assets.addJs('theme://js/fittext_uli.js', {group: 'bottom'}) %} 
+            {% do assets.addJs('theme://js/scripts.js', {group: 'bottom'}) %} 
+
+
+            {% if browser.getBrowser == 'msie' %}
+                {% do assets.addJs('theme://js/msie.js') %}
+            {% endif %}
+
+            {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
+                {% do assets.addJs('theme://assets/assets/js/html5shiv.js') %}
+                {% do assets.addJs('theme://assets/assets/js/respond.min.js') %}
+            {% endif %}
+            
+        {% endblock %}
+        {{ assets.js() }}
+
+        {% block bottom %}
+            {{ assets.js('bottom') }}
+        {% endblock %}
+
+        {% block bottomjs %}{% endblock %}
     </body>
-    {% block javascripts %}
-        {% do assets.add('jquery',101) %}
-        {% do assets.addJs('theme://js/fittext_uli.js', {group: 'bottom'}) %} 
-        {% do assets.addJs('theme://js/scripts.js', {group: 'bottom'}) %} 
-
-
-        {% if browser.getBrowser == 'msie' %}
-            {% do assets.addJs('theme://js/msie.js') %}
-        {% endif %}
-
-        {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
-            {% do assets.addJs('theme://assets/assets/js/html5shiv.js') %}
-            {% do assets.addJs('theme://assets/assets/js/respond.min.js') %}
-        {% endif %}
-        
-    {% endblock %}
-    {{ assets.js() }}
-    
-    {% block bottom %}
-        {{ assets.js('bottom') }}
-    {% endblock %}
 </html>
