@@ -20,9 +20,10 @@
         {{ assets.css() }}
 
         {% block javascripts %}
-            {% do assets.add('jquery', 1, {group: 'bottom'}) %}
-            {% do assets.addJs('theme://js/scripts.js', 2, {group: 'bottom'}) %} 
-            {% do assets.addJs('theme://js/fittext_uli.js', 3, {group: 'bottom'}) %} 
+            {% do assets.add('jquery', 1) %}
+            {% do assets.addJs('theme://js/fittext_uli.js', {group: 'bottom'}) %} 
+            {% do assets.addJs('theme://js/scripts.js', {group: 'bottom'}) %} 
+
 
   {#           {% if browser.getBrowser == 'msie' and browser.getVersion > 9 or browser.getBrowser != 'msie' %}
                 {% do assets.addJs('theme://js/jquery.mobile.customized.min.js') %}
@@ -64,7 +65,6 @@
                 {% block content %}{% endblock %}
             </div>
         {% endblock %}
-
 
         {% block footer %}
              {% include 'partials/footer.html.twig' %}
