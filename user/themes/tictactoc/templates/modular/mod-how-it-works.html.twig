@@ -5,7 +5,7 @@
 		{% for step in page.header.steps %}
 
 			<figure class="timeline-row">
-				<div class="timeline-row__img">{{ page.media[step.image].quality(80).derivatives(150, 300).sizes('100vw').html() }}</div>
+				<div class="timeline-row__img">{{ page.media[step.image].quality(80).cropResize(150).sizes('100vw').html() }}</div>
 
 				<figcaption class="timeline-row__info">
 
