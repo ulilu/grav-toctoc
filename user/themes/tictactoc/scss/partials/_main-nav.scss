@@ -169,13 +169,13 @@
   display: block;
   padding: 6px;
   white-space: nowrap;
-  color: white;
+  color: #fff;
   font-size: 18px;
 
   .active &,
   .focus &,
   &:hover {
-    background: white;
+    background: #fff;
     border-radius: 6px;
   }
 
