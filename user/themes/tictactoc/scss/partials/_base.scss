@@ -64,7 +64,11 @@ body	{
 .main {
   position: relative;
   padding-top: 24px;
-  padding-bottom: 140px;  // 1. 
+  padding-bottom: 180px;  // 1. 
+  
+  @media only screen and (min-width: 450px) {
+    padding-bottom: 140px
+  }
   
   @media only screen and (min-width: 720px) {
     padding-bottom: 105px;  // 1. 
