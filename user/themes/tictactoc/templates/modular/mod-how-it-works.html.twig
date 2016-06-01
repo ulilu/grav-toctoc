@@ -3,7 +3,7 @@
 	  {{ page.content }}
 {{ dump (page.url) }}
 {{ dump (base_url) }}
-{{ dump (language.current) }}
+{{ dump (uri.path) }}
 {{ dump (page.active) }}
 		{% for step in page.header.steps %}
 
@@ -12,7 +12,7 @@
 
 				<figcaption class="timeline-row__info">
 
-					{% if page.active == base_url  %}
+					{% if uri.path == base_url  %}
 					
 						<h2><a class="color-{{ step.color }}" href="
 							{% if grav.language.getActive == 'en' %}
