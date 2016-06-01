@@ -12,7 +12,7 @@
 
 				<figcaption class="timeline-row__info">
 
-					{% if uri.url == base_url  %}
+					{% if uri.path == '/'  %}
 					
 						<h2><a class="color-{{ step.color }}" href="
 							{% if grav.language.getActive == 'en' %}
@@ -39,7 +39,7 @@
 
 		{% endfor %}
 
-		{% if base_url == '/' ~ grav.language.getActive and page.header.buttontext %}
+		{% if uri.path == '/' and page.header.buttontext %}
 			<div class="timeline-button">
 				<a href="{{ page.find(page.header.buttonlink).url() }}" class="btn btn-l epsilon btn-{{ page.header.buttoncolor }}">{{ page.header.buttontext }}</a>
 			</div>
