@@ -11,8 +11,7 @@
 {% set settings = config.get('plugins.lightslider')|merge(settings) %}
 {% set unique_id = 'ls-' ~ random_string(10) %}
 
-<script type="text/example"> // as seen in: https://stackoverflow.com/questions/20180556/defer-inline-javascript-execution
-
+<script type="text/javascript">
   $(document).ready(function() {
     $("#{{ unique_id }}").lightSlider({
         item: {{ settings.item|default(1) }},

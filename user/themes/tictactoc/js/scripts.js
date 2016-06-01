@@ -24,6 +24,7 @@ $(document).ready(function() {
   /*
    *  Enabling all inline JS-blocks (= Lightslider), by cloning / appending 
    *  them to the body and setting the correct type "text/javascript".
+   *  as seen in: https://stackoverflow.com/questions/20180556/defer-inline-javascript-execution
    */
   $(function() {
     $("script[type='text/example']").each(function() {
