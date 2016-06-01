@@ -1,7 +1,9 @@
 <section class="block  block--stretch  block--howto">
 	<div class="block">
 	  {{ page.content }}
-
+{{ dump (page.url) }}
+{{ dump (base_url) }}
+{{ dump (page.root) }}
 		{% for step in page.header.steps %}
 
 			<figure class="timeline-row">
@@ -9,7 +11,7 @@
 
 				<figcaption class="timeline-row__info">
 
-					{% if uri.path() == '/' %}
+					{% if page.root() == '/' %}
 					
 						<h2><a class="color-{{ step.color }}" href="
 							{% if grav.language.getActive == 'en' %}
@@ -36,7 +38,7 @@
 
 		{% endfor %}
 
-		{% if uri.path() == '/' and page.header.buttontext %}
+		{% if page.root() == '/' and page.header.buttontext %}
 			<div class="timeline-button">
 				<a href="{{ page.find(page.header.buttonlink).url() }}" class="btn btn-l epsilon btn-{{ page.header.buttoncolor }}">{{ page.header.buttontext }}</a>
 			</div>
