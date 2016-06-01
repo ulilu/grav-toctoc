@@ -420,6 +420,7 @@
     z-index: 1; // necessary for containing icon to appear
     color: #fff;
     background: $color-seagreen3;
+    
 
     .block--headline {
       padding-top: 0;
@@ -429,8 +430,15 @@
       }
     }
 
-    .cell-image img {
-    	border: 12px solid;
+    .cell-image {
+      
+      @media only screen and (min-width: 1000px) {
+        padding-right: 48px;
+      } 
+
+      img {
+    	 border: 12px solid;
+      }
     }
 
     p	{
@@ -444,7 +452,12 @@
       }
 		}
     
+    @media only screen and (min-width: 800px) {
+      padding-bottom: 60px;
+    }
+
     @media only screen and (min-width:1200px) {
+      padding-bottom: 90px;
 			/*
 			 *  Sardine icon
 			 */
