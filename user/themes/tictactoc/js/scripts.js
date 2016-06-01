@@ -21,7 +21,15 @@
 
 $(document).ready(function() {
 
-  iSayGo();
+  /*
+   *  Enabling all inline JS-blocks (= Lightslider), by cloning / appending 
+   *  them to the body and setting the correct type "text/javascript".
+   */
+  $(function() {
+    $("script[type='text/example']").each(function() {
+        $(this).clone().attr("type","text/javascript").appendTo("body"); 
+    });
+  });
 
   /*
    * Center active menu item
