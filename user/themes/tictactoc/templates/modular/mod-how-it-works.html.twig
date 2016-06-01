@@ -9,7 +9,7 @@
 
 				<figcaption class="timeline-row__info">
 
-					{% if base_url == '/' ~ grav.language.getActive %}
+					{% if page.url == base_url %}
 					
 						<h2><a class="color-{{ step.color }}" href="
 							{% if grav.language.getActive == 'en' %}
