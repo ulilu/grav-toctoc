@@ -28,7 +28,10 @@
 						<p>{{ step.text }}
 							{% if step.link %}
 								<br>
-								<a href="{{ step.link }}" class="{{ step.linkclass }}" title="{{ step.linktitle }}">{{ step.linktext }}</a>
+								{% if step.linkclass == "link--mailto" %}
+									<a href="mailto:{{ step.link|safe_email }}" class="{{ step.linkclass }}" title="{{ step.linktitle|safe_email }}">{{ step.linktext|safe_email }}</a>
+								{% else %}
+									<a href="{{ step.link }}" class="{{ step.linkclass }}" title="{{ step.linktitle }}">{{ step.linktext }}</a>
 							{% endif %}
 						</p>
 
