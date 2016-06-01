@@ -431,6 +431,7 @@
     }
 
     .cell-image {
+      padding-bottom: 24px;
       
       @media only screen and (min-width: 1000px) {
         padding-right: 48px;
@@ -438,6 +439,10 @@
 
       img {
     	 border: 12px solid;
+       
+        @media only screen and (min-width: 800px) {
+          max-height: 60vh;
+        } 
       }
     }
 
