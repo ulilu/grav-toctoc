@@ -21,6 +21,7 @@
 
 $(document).ready(function() {
 
+  iSayGo();
 
   /*
    * Center active menu item
