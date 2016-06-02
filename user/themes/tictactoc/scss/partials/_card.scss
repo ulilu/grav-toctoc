@@ -110,6 +110,7 @@
  */
 .card__img {
   position: relative;
+  display: block;
   z-index: 2;
   margin-bottom: 12px;
   border-top-left-radius: 5px;
@@ -130,6 +131,7 @@
  */
 .card__info {
   position: relative;
+  display: block;
   z-index: 2;
   padding: 0 18px 0px;
   

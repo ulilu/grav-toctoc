@@ -18,7 +18,6 @@
 @import "partials/base";
 
 @import "partials/typography";
-// @import "partials/forms";
 
 @import "modules/generic";
 @import "partials/icons-global";
@@ -49,32 +48,12 @@
 @import "partials/mod-services";
 @import "partials/mod-testimonials";
 
-/*
-@import "partials/images";
-// @import "partials/videos";
-@import "partials/icons";
-@import "partials/buttons";
-*/
+
 
 //	=========================================================================
 //	Elements
 //	=========================================================================
 
-/*
-@import "partials/header";
-@import "partials/navi";
-@import "partials/stage";
-@import "partials/slideshow";
-@import "partials/container";
-@import "partials/blocks";
-@import "partials/panel-news";
-@import "partials/panel-contact";
-@import "partials/panel-model";
-@import "partials/panel-toc";
-@import "partials/footer";
-
-@import "partials/page-specific";
-*/
 
 @import "partials/page-welcome";
 @import "partials/page-services";
@@ -86,17 +65,14 @@
 @import "partials/page-about";
 @import "partials/page-contact";
 
-/*
+
 //	=========================================================================
 //	Plugins
 //	=========================================================================
-@import "vendor/mfp-main";        // Magnific Popup
 
-@import "partials/overrides"; // Set "loading-svg" as preloader-graphic
+// @import "partials/overrides"; // Set "loading-svg" as preloader-graphic
 
 //	=========================================================================
 //	Dev-Helpers
 //	=========================================================================
 // @import "helper/outlines";
-
-*/
