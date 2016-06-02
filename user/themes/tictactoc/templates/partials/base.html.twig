@@ -9,13 +9,13 @@
         <link rel="icon" type="image/png" href="{{ theme_url }}/img/favicon.ico" />
 
          {% block stylesheets %}
-            {% do assets.addCss('theme://css/critical.css', 1) %}
+            {# {% do assets.addCss('theme://css/critical.css', 1) %} #}
 
             {% do assets.addCss('theme://css/font-awesome.min.css', {'priority': 101, 'group':'bottomcss'}) %}
- {#            {% do assets.addCss('theme://css/style.css', {'priority': 1, 'group':'bottomcss'}) %}
- #}
+            {% do assets.addCss('theme://css/style.css', {'priority': 1, 'group':'bottomcss'}) %}
+
             {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
-                {% do assets.addCss('theme://assets/tm/css/tm_docs.css') %}
+                {% do assets.addCss('theme://assets/tm/css/tm_docs.css', {'group':'bottomcss'}) %}
             {% endif %}
 
         {% endblock %}
