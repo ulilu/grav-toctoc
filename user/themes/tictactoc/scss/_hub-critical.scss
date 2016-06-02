@@ -427,6 +427,57 @@ h1, h2, h3, h4, h5, h6	{
 
 
 
+/*------------------------------------*\
+  Sub nav
+\*------------------------------------*/
+
+.sub-nav {
+  display: none;
+  position: absolute;
+  left: -3px;
+  padding: 6px 6px 0;
+  width: 200px;
+  overflow: hidden;
+  background: $color-redwine;
+  
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.sub-nav__item {
+  display: block;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.sub-nav__link {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  border-radius: 3px;
+  color: $color-white;
+  
+  &:hover {
+    background: $color-white;
+    color: $color-logo1;
+  }
+}
+
+
+.main-nav__item:hover {
+
+  > a {
+    background: white;
+    border-radius: 3px;
+    color: $color-logo1;
+  }
+
+  .sub-nav {
+    display: block;
+  }
+}
+
+
 /*---------------------------------------------------------------------------*\
     Page welcome
 \*---------------------------------------------------------------------------*/
