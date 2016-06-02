@@ -11,7 +11,7 @@
 
     {# {{ page.content }} #}
 
-    {% for row in page.content|split('<figure>') %}
+    {% for row in page.content|split('<hr') %}
     	{{ row }}figre
     {% endfor %}
 
