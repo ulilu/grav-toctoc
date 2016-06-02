@@ -5,13 +5,7 @@
 <div class="block  block--stretch block--contactinfo">
 
     <div class="block">
-        
-      {% set twig_content_variable = page.content %}
-			{% set replace_value_var = '<img src' %}
-			{% set replace_with_value_var = '<img class="lazyload" data-src' %} 
-
-			{{ twig_content_variable|replace({ (replace_value_var): replace_with_value_var }) }}
-
+        {{ page.content }}
     </div>
 
 </div>
