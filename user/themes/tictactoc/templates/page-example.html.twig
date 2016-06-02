@@ -11,7 +11,8 @@
 
     {# {{ page.content }} #}
 
-    {% for lightboximg in page.content|split('<a rel="lightbox"') %}
+    {% for row in page.content|split('<hr>') %}
+    	{% for lightboximg in row|split('<a rel="lightbox"') %}
 
     		{% set twig_content_variable = '<a rel="lightbox"' ~ lightboximg %}
 				{% set replace_value_var = '<img src' %}
@@ -19,6 +20,7 @@
 
 				{{ twig_content_variable|replace({ (replace_value_var): replace_with_value_var }) }}
 
+    	{% endfor %}
     {% endfor %}
 
 </div>
