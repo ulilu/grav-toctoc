@@ -14,16 +14,21 @@
 
 		<div class="cards">
 		{% for partner in page.header.partners %}
+
+			{% set image = page.media[partner.image] %}
+			{% set thumb = image.display('thumbnail').quality(80).cropResize(400, 300) %}
+
 			<a class="card  card--partner  width-25" href="{{ partner.link }}" data-partner-category="js-category-{{ partner.category }}" target="_new">
 
-				<div class="card__img" href="{{ partner.link }}" target="_new">
-					{{ page.media[partner.image].cropResize(300, 300).html() }}
-				</div>
+				<span class="card__img" href="{{ partner.link }}" target="_new">
+						<img class="lazyload" data-srcset="{{ thumb.sizes('100vw').srcset()}}" data-src="{{ thumb.url }}" data-sizes="{{ thumb.sizes }}" >
+					{# {{ page.media[partner.image].cropResize(300, 300).html() }} #}
+				</span>
 
-				<div class="card__info">
+				<span class="card__info">
 					<h3>{{ partner.name }}</h3>
 					<p>{{ partner.text }}</p>
-				</div>
+				</span>
 
 			</a>
 		{% endfor %}
