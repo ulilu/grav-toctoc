@@ -19,6 +19,7 @@
             {% endif %}
 
         {% endblock %}
+        {{ assets.css() }}
 
         {% block javascripts %}
             {% do assets.add('jquery',101) %}
@@ -72,7 +73,6 @@
         <div class="scrolltop  js-scrolltop"></div>
 
         {% block bottomassets %}
-            {{ assets.css() }}
             {{ assets.css('bottomcss') }}
             {{ assets.js('bottomjs') }}
         {% endblock %}
