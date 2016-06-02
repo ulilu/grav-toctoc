@@ -1,0 +1,620 @@
+//	=========================================================================
+//	Google Webfont Declaration
+//	=========================================================================
+//  @import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic&subset=latin,latin-ext);
+
+
+//	=========================================================================
+//	Modules
+//	=========================================================================
+@import "modules/cssfx";
+@import "modules/mixins";
+
+//	=========================================================================
+//	Widgets
+//	=========================================================================
+@import "partials/base";
+// @import "partials/typography";
+// @import "modules/generic";
+
+// @import "partials/block";
+// @import "partials/cell";
+
+// @import "partials/header";
+
+// @import "partials/main-nav";
+
+// @import "partials/stage";
+
+// @import "partials/page-welcome";
+
+
+//	#########################################################################
+//	TYPOGRAPHY
+//	#########################################################################
+
+body {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: $font-light;
+  color: $color-logo1;
+}
+
+p {
+  margin: 0 0 30px; 
+}
+
+a {
+  color: $color-logo1;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+b,
+strong {
+  font-family: $font-semibold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul,
+ol {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style-position: inside;
+}
+
+li  {
+  margin: 0 0 9px;
+}
+
+
+//	=========================================================================
+//	Headlines
+//	=========================================================================
+
+h1, h2, h3, h4, h5, h6	{
+  font-weight: normal;
+  padding: 0;
+  margin:0;
+  margin:0 0 24px;
+  font-family: $font-regular;
+}
+
+
+/*---------------------------------------------------------------------------*\
+    Generic Styles
+\*---------------------------------------------------------------------------*/
+
+.full {
+  max-width: 100% !important; 
+  max-height: 50vmin;
+}
+
+.width-100 { width: 100% !important;}
+
+.four-fifths,
+.width-80 { width: 80% !important; }
+
+.three-quarters,
+.width-75 { width: 75% !important; }
+
+.width-70 { width: 70% !important; }
+
+.two-thirds,
+.width-67 { width: 67% !important; }
+
+.three-fifths,
+.width-60 { width: 60% !important; }
+
+.one-half,
+.width-50 { width: 50% !important; }
+
+.two-fifths,
+.width-40 { width: 40% !important; }
+
+.one-third,
+.width-33 { width: 33% !important; }
+
+.width-30 { width: 30% !important; }
+
+.one-quarter,
+.width-25 { width: 25% !important; }
+
+.one-fifth,
+.width-20 { width: 20% !important; }
+
+
+/*---------------------------------------------------------------------------*\
+    General block element
+    to set unified position, padding & margin across all pages
+\*---------------------------------------------------------------------------*/
+
+
+.block {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 24px; 
+  @include clearfix-html5bp();
+  
+  @media only screen and (min-width:480px) {
+    padding: 30px;
+  }
+
+  @media only screen and (min-width:1200px) {
+    padding: 36px 30px;
+  }
+}
+
+/*
+ *  While a regular block is limited to 1200px width, .block--strech fills
+ *  the entire width of the browser-window. It should be used to set different
+ *  background (colors, images) to different sections within a page.
+ */
+.block--stretch {
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden; /* for intended use of cropped icons in background */
+}
+
+
+
+
+//	#########################################################################
+//	HEADER
+//	#########################################################################
+
+.header {
+  
+  .block {
+    padding: 0;
+  }
+}
+
+
+/*------------------------------------*\
+  Logo
+\*------------------------------------*/
+
+.logo-main {
+  position: relative;
+  width: 75%;
+  padding-right: 12px;
+  margin: 0;
+  
+  @media only screen and (min-width: 650px) {
+    width: 65%;
+    padding-right: 18px;
+  }
+
+  @media only screen and (min-width: 750px) {
+    width: 60%;
+    padding-right: 24px;
+  }
+  
+  img,
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 6px 15px 12px;
+
+    @media only screen and (min-width: 750px) {
+      margin-left: 1.8%;
+    }
+  }
+  
+  a {
+    display: block;
+    color: currentColor;
+  }
+}
+
+
+[class*="logo-part"] {
+  width: 100px;
+  display: inline-block;
+  font-size: 30px;
+  
+  @media only screen and (min-width: 500px) {
+    width: auto;
+    font-size: 36px;
+  }
+
+  @media only screen and (min-width: 700px) {
+    font-size: 42px;
+  }
+}
+
+.logo-part1 {
+  color: $color-logo1;
+  vertical-align: middle;
+}
+
+.logo-part2 {
+  color: $color-logo0;
+  font-family: $font-regular;
+}
+
+
+/*------------------------------------*\
+  Langswitcher plugin styles - modified
+\*------------------------------------*/
+
+/* LANGSWITCHER PLUGIN-STYLES MODIFIED */
+
+.langswitcher {
+  display: table;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  height: 90px;
+  font-family: $font-regular;
+  list-style: none;
+  margin: 0 !important;
+  transform: none;
+  -webkit-transform: none;
+}
+
+.langswitcher li {
+  display: table-cell;
+  position: relative;
+  line-height: 24px;
+  vertical-align: middle;
+  padding: 0 0 0 24px;
+  margin: 0;
+  
+  a {
+    color: #999;
+    border-bottom: 1px solid #ccc;
+    
+    &:hover {
+      color: $color-logo0;
+      border-bottom: 1px solid $color-logo0;
+    }
+  }
+}
+
+
+.full-lang {
+  display: none;
+}
+
+.short-lang {
+  display: inline-block;
+}
+
+
+@media only screen and (min-width: 700px) {
+  .full-lang {
+    display: inline-block;
+  }
+  .short-lang {
+    display: none
+  }
+}
+
+.langswitcher .active {
+  color: $color-logo0;
+  border: none;
+  text-decoration: none;
+  cursor: default;
+  font-family: Linotte-Semibold; 
+  border-bottom: 1px solid #fff !important;
+}
+
+
+
+
+/*------------------------------------*\
+  Main nav w/ priority+ menu
+\*------------------------------------*/
+
+.nav-bar {
+  position: relative;
+  height: 51px;
+
+  @media only screen and (min-width: 1200px) {
+    overflow: visible;
+  }
+}
+
+.main-nav__wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  background: $color-redwine;
+
+  @media only screen and (min-width: 800px) {
+    overflow: visible;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    border-radius: 9px;
+  }
+}
+
+
+
+.main-nav {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  padding: 6px 6px 15px;
+  margin: 0 0 -9px 0;
+
+  font-family: $font-regular;
+  text-align: center;
+  list-style: none;
+  
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0,0,0);
+  
+  @media only screen and (min-width: 800px) {
+    margin: 0 0 -24px;
+    display: table;
+    overflow: auto;
+    padding: 6px;
+    margin: 0;
+  }
+}
+
+
+.main-nav__item {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  text-align: center;
+  margin: 0;
+  padding: 0 3px;
+
+  &:first-of-type{
+    width: 0.5%;
+    padding-left: 0;
+  }
+
+  &:last-of-type{
+    padding-right: 48px;
+    
+    @media only screen and (min-width: 800px) {
+      padding-right: 0;
+    }
+  }
+}
+
+
+.main-nav__item--home a {
+  display: block;
+  line-height: 36px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 0 12px;
+  
+  &.fa:before {
+    padding-right: 0;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 6px;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 18px;
+
+  .active &,
+  .focus &,
+  &:hover {
+    background: #fff;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    color: currentColor;
+  }
+
+  .active &,
+  .focus &,
+  .active &:hover {
+    color: $color-logo1 !important;
+  }
+}
+
+
+
+/*---------------------------------------------------------------------------*\
+    Page welcome
+\*---------------------------------------------------------------------------*/
+
+.hero {
+	position: relative;
+  z-index: 1;
+  margin: -24px 0 0;
+}
+  
+  
+.hero__text {
+  position: absolute;
+  bottom: 0;
+  display: table-cell;
+  vertical-align: bottom;
+  max-width: 1200px;
+  padding: 0 !important;
+  margin: 0 auto;
+  transition: all 0.3s ease-out;
+}
+
+.hero__title, 
+.hero__subtitle {
+  position: relative;
+  z-index: 10;
+  left: 0;
+  font-size: 18px;
+}
+
+.hero__title {
+	font-family: $font-regular;
+	line-height: 120%;
+	text-shadow: 1px 0 6px #000;
+  padding-left: 24px;
+  
+  @media only screen and (min-width: 480px) {
+    padding-left: 30px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding-left: calc(((100vw - 100%) / 2) + 30px);
+  }
+}
+
+.hero__subtitle {
+  line-height: 130%;
+	padding: 12px 24px 12px;
+	margin-bottom: 0;
+	background: rgba(61, 49, 50, 0.85);
+	color: $color-skyblue5;
+  
+  @media only screen and (min-width: 420px) {
+    font-size: 4.3vw;
+  }
+
+  @media only screen and (min-width: 480px) {
+  	padding-left: 30px;
+  }
+  
+  @media only screen and (min-width: 700px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (min-width: 720px) {
+  	max-width: calc(((100vw - 100%) / 2) + 720px);
+  	border-top-right-radius: 30px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+  	padding-left: calc(((100vw - 100%) / 2) + 30px);
+  }
+}
+
+
+/*------------------------------------*\
+  Hero Image & Fade
+\*------------------------------------*/
+
+.hero__bg  {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 70vh;
+  transition: all 0.3s ease-out;
+  max-height: 300px;
+  
+  @media only screen and (min-width: 600px) { max-height: 400px; }
+  @media only screen and (min-width: 900px) { max-height: 500px; }
+  @media only screen and (min-width: 1200px) { max-height: 600px; }
+
+	/*
+	 *	1. For this to work in IE, we need to set the img as bgimg with msie.js
+	 */
+  video, img {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;  // 1.
+    transition: all 0.3s ease-out;
+    max-height: 300px;
+    
+    @media only screen and (min-width: 600px) { max-height: 400px; }
+    @media only screen and (min-width: 900px) { max-height: 500px; }
+    @media only screen and (min-width: 1200px) { max-height: 600px; }
+  }
+
+}
+
+
+/*------------------------------------*\
+  BLOCK: Welcome
+\*------------------------------------*/
+
+.block--welcome {
+  z-index: 1; // necessary for containing icon to appear
+  padding-bottom: 36px;
+  background: linear-gradient(to bottom, $color-seagreen5, $color-seagreen6);
+  border-bottom: 12px solid #fff;
+
+  p {
+  	font-size: 18px;
+		line-height: 160%;
+    
+    @media only screen and (min-width: 900px) { 
+      font-size: 21px;
+    }
+  }
+
+  p:last-of-type {
+  	margin-bottom: 0;
+  }
+
+  h2 {
+  	margin-top: 6px;
+  }
+}
+
+/*------------------------------------*\
+  Youtube Video in block--welcome
+\*------------------------------------*/
+
+.video-container {
+  position: relative;
+  width: 100%;
+  margin: 0 0 30px;
+  
+  @media only screen and (min-width: 720px) { 
+    float:right;
+    width: -webkit-calc(50% - 36px);
+    width: calc(50% - 36px);
+    margin: 18px 18px 36px 72px;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -12px;
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      border: 12px solid #FFF;
+      border-radius: 6px;
+      box-shadow: 1px 0 12px rgba(0,0,0,0.33);
+      background: $color-seagreen4;
+    }
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
