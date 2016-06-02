@@ -12,8 +12,8 @@
             {% do assets.addCss('theme://css/critical.css', 1) %}
 
             {% do assets.addCss('theme://css/font-awesome.min.css', {'priority': 101, 'group':'bottomcss'}) %}
-            {% do assets.addCss('theme://css/style.css', {'priority': 1, 'group':'bottomcss'}) %}
-
+ {#            {% do assets.addCss('theme://css/style.css', {'priority': 1, 'group':'bottomcss'}) %}
+ #}
             {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
                 {% do assets.addCss('theme://assets/tm/css/tm_docs.css') %}
             {% endif %}
@@ -23,9 +23,9 @@
 
         {% block javascripts %}
             {% do assets.add('jquery',101) %}
-            {% do assets.addJs('theme://js/lazysizes.min.js', {'loading':'async', 'group':'bottom'}) %} 
-            {% do assets.addJs('theme://js/fittext_uli.js', {'loading':'async', 'group':'bottom'}) %} 
-            {% do assets.addJs('theme://js/scripts.js', {'loading':'async', 'group':'bottom'}) %} 
+            {% do assets.addJs('theme://js/lazysizes.min.js', {'loading':'async', 'group':'bottomjs'}) %} 
+            {% do assets.addJs('theme://js/fittext_uli.js', {'loading':'async', 'group':'bottomjs'}) %} 
+            {% do assets.addJs('theme://js/scripts.js', {'loading':'async', 'group':'bottomjs'}) %} 
 
 
             {% if browser.getBrowser == 'msie' %}
@@ -74,7 +74,7 @@
 
         {% block bottomassets %}
             {{ assets.css('bottomcss') }}
-            {{ assets.js('bottom') }}
+            {{ assets.js('bottomjs') }}
         {% endblock %}
 
     </body>
