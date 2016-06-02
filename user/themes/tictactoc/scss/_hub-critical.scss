@@ -236,6 +236,26 @@ h3	{
 }
 
 
+/*
+ *  When using .block-stretch, you can have a second .block inside it, to
+ *  keep the centered positioning of the content block.
+ */
+.block > .block:not(.block--headline) {
+  padding: 0;
+  
+  @media only screen and (min-width:1200px) {
+    max-width: 1140px;
+  }
+}
+
+
+.block  .block--headline {
+  padding-bottom: 30px;
+  
+  h1 {
+    margin-bottom: 0;
+  }
+}
 
 
 //	#########################################################################
