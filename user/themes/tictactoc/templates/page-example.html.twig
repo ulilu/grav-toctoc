@@ -11,8 +11,10 @@
 
     {# {{ page.content }} #}
 
-    {% for row in page.content|split('<hr') %}
-    	{{ row }}figre
+    {% for row in page.content|split('@@') %}
+    	{% for lightboximg in row|split('@@image') %}
+    		{{ lightboximg }}
+    	{% endfor %}
     {% endfor %}
 
 </div>
