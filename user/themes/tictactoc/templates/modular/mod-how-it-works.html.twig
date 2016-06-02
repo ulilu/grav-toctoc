@@ -7,11 +7,12 @@
 {{ dump (uri.url) }}
 		{% for step in page.header.steps %}
 
-			{% set image = page.media[step.image].quality(80).cropResize(150) %}
+			{% set image = page.media[page.header.image] %}
+			{% set thumb = image.display('thumbnail').quality(80).cropResize(150) %}
 
 			<figure class="timeline-row">
 				<div class="timeline-row__img">
-					<img class="lazyload" data-srcset="{{ image.sizes('100vw').srcset() }}" data-src="{{ image.url }}" data-sizes="{{ image.sizes }}" >
+						<img class="lazyload" data-srcset="{{ thumb.sizes('100vw').srcset()}}" data-src="{{ thumb.url }}" data-sizes="{{ thumb.sizes }}" >
 			{# 		{{ page.media[step.image].quality(80).cropResize(150).sizes('100vw').html() }} #}
 				</div>
 
