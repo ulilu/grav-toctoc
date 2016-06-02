@@ -22,7 +22,7 @@
 	<h4 class="byline--service">{{ page.header.subtitle_short }}</h4>
 	<p>{{ page.header.blurb_short }}</p>
 
-	<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>{% if langswitcher.current == 'fr' %}En savoir +{% elseif grav.langswitcher.current == 'en' %}Tell me more{% endif %}</strong></span>
+	<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>{% if langswitcher.current == 'fr' %}En savoir +{% elseif langswitcher.current == 'en' %}Tell me more{% endif %}</strong></span>
 
 {% endif %}
 

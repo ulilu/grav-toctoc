@@ -8,7 +8,13 @@
 </div>
 
 <div class="block  block--example">
-    {{ page.content }}
+
+    {# {{ page.content }} #}
+
+    {% for row in page.content|split('<hr />') %}
+    	{{ row }}
+    {% endfor %}
+
 </div>
 
 {% endblock %}
