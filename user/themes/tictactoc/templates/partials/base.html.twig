@@ -21,9 +21,9 @@
 
         {% block javascripts %}
             {% do assets.add('jquery',101) %}
-            {% do assets.addJs('theme://js/lazysizes.min.js', {'pipeline':false, 'loading':'async', 'group':'bottom'}) %} 
-            {% do assets.addJs('theme://js/fittext_uli.js', {'pipeline':false, 'loading':'async', 'group':'bottom'}) %} 
-            {% do assets.addJs('theme://js/scripts.js', {'pipeline':false, 'loading':'async', 'group':'bottom'}) %} 
+            {% do assets.addJs('theme://js/lazysizes.min.js', {'loading':'async', 'group':'bottom'}) %} 
+            {% do assets.addJs('theme://js/fittext_uli.js', {'loading':'async', 'group':'bottom'}) %} 
+            {% do assets.addJs('theme://js/scripts.js', {'loading':'async', 'group':'bottom'}) %} 
 
 
             {% if browser.getBrowser == 'msie' %}
