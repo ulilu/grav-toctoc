@@ -319,13 +319,15 @@
     content: attr(data-exampletype);
   }
   
-  &[data-exampletype="Endroit"],
+  &[data-exampletype="Lieu"],
   &[data-exampletype="Locality"] {
     background: $color-blue1;
+    // background: $color-skyblue2
   }
 
   &[data-exampletype="Circuit"],
   &[data-exampletype="Tour"] {
     background: $color-green1;
+    // background: $color-seagreen2;
   }
 }

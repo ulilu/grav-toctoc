@@ -1,6 +1,6 @@
 <a class="cell cell--service" data-bp="1100" href="{{ page.url }}">
 
-{% if uri.path() == '/services' %}	
+{% if uri.path() ends with 'services' %}	
 
 	<span class="cell__img">
 		{{ page.media[page.header.image].cropResize(800).html() }}
@@ -12,7 +12,7 @@
 		<h3 class="bgcolor-{{ page.header.page_color }}">{{ page.header.subtitle }}</h3>
 		<p>{{ page.header.blurb }}</p>
 
-		<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>{% if grav.language.getActive == 'fr' %}En savoir +{% elseif grav.language.getActive == 'en' %}Tell me more{% endif %}</strong></span>
+		<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>{% if langswitcher.current == 'fr' %}En savoir +{% elseif langswitcher.current == 'en' %}Tell me more{% endif %}</strong></span>
 	</span>
 
 {% elseif uri.path() == '/' %}
@@ -22,7 +22,7 @@
 	<h4 class="byline--service">{{ page.header.subtitle_short }}</h4>
 	<p>{{ page.header.blurb_short }}</p>
 
-	<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>{% if grav.language.getActive == 'fr' %}En savoir +{% elseif grav.language.getActive == 'en' %}Tell me more{% endif %}</strong></span>
+	<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>{% if langswitcher.current == 'fr' %}En savoir +{% elseif grav.langswitcher.current == 'en' %}Tell me more{% endif %}</strong></span>
 
 {% endif %}
 
