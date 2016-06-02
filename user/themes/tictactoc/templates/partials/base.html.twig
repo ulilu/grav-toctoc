@@ -21,7 +21,7 @@
 
         {% block javascripts %}
             {% do assets.add('jquery',101) %}
-            {% do assets.addJs('theme://js/lazysizes.min.js', {'loading':'async'}) %} 
+            {% do assets.addJs('theme://js/lazysizes.min.js', {'loading':'async', 'group':'bottom'}) %} 
             {% do assets.addJs('theme://js/fittext_uli.js', {'group':'bottom'}) %} 
             {% do assets.addJs('theme://js/scripts.js', {'group':'bottom'}) %} 
 
