@@ -301,9 +301,21 @@
     
     @media only screen and (min-width:1200px) {
       &:before {
-        opacity: .2;
+        opacity: 0;
         background-size: 420px; // yeah!
         background-position: left -40px bottom 60px;
+      }
+      &:after {
+        opacity: 0;
+      }
+    }
+
+    @media only screen and (min-width:1700px) {
+      &:before {
+        opacity: .2;
+      }
+      &:after {
+        opacity: .2;
       }
     }
 
