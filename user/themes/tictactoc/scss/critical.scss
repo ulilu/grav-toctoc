@@ -3,7 +3,7 @@
 ******************************************************************************/
 
 // Necessary for reasonable base styles:
-@import "vendor/normalize";
+// @import "vendor/normalize";
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
@@ -43,7 +43,7 @@ summary {
 }
 
 // Necessary for browser-fixes and helper classes like .clearfix, .ir, etc..
-// @import "vendor/html5bp";
+@import "vendor/html5bp";
 
 @import "vars";
 
