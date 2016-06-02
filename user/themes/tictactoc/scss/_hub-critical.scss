@@ -567,7 +567,14 @@ h3	{
   z-index: 1;
   margin: -24px 0 0;
 }
-  
+
+.color-white {
+	color: #fff;
+}
+
+.bgcolor-logo0 {
+	color: $color-logo0;
+}
   
 .hero__text {
   position: absolute;
