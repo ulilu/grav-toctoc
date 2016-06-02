@@ -176,7 +176,7 @@
   .focus &,
   &:hover {
     background: #fff;
-    border-radius: 6px;
+    border-radius: 3px;
   }
 
   &:hover {
@@ -258,7 +258,7 @@
   display: block;
   width: 100%;
   padding: 6px;
-  border-radius: 6px;
+  border-radius: 3px;
   color: $color-white;
   
   &:hover {
@@ -272,7 +272,7 @@
 
   > a {
     background: white;
-    border-radius: 6px;
+    border-radius: 3px;
     color: $color-logo1;
   }
 
