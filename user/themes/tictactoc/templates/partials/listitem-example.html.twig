@@ -4,7 +4,7 @@
  
 
 	<span class="card__img">
-		<img class="lazyload" data-srcset="{{ image.display('thumbnail').quality(80).cropResize(400, 300).derivatives(200, 400).sizes('400px').srcset()}}" data-src="{{ image.url }}" data-sizes="{{ image.sizes }}" >
+		<img class="lazyload" data-srcset="{{ image.quality(80).cropResize(400, 300).sizes('400px').srcset()}}" data-src="{{ image.url }}" data-sizes="{{ image.sizes }}" >
 
 {# 		{{ page.media[page.header.image].quality(80).cropResize(400).sizes('100vw').html(page.title, page.title, page.header.imagealign) }} #}
 			
