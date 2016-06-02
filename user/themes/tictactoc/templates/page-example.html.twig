@@ -12,7 +12,7 @@
     {# {{ page.content }} #}
 
     {% for row in page.content|split('@@') %}
-    	{% for lightboximg in row|split('@@image') %}
+    	{% for lightboximg in row|split('§§') %}
     		{{ lightboximg }}
     	{% endfor %}
     {% endfor %}
