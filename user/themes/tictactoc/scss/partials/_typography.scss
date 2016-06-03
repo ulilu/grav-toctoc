@@ -188,6 +188,10 @@ h1, h2, h3, h4, h5, h6	{
   //   font-size: 72px !important;
   //   line-height: 78px; 
   // }
+  
+  @media only screen and (min-width: 800px) {
+    font-size: 72px !important;
+  }
 
   @media only screen and (min-width: 1000px) {
     font-size: 90px !important;
