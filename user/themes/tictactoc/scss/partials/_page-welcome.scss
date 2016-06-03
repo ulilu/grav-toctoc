@@ -32,12 +32,12 @@
   position: relative;
   z-index: 10;
   left: 0;
-  font-size: 18px;
+  // font-size: 18px;
 }
 
 .hero__title {
-	font-family: $font-regular;
-	line-height: 120%;
+	// font-family: $font-regular;
+	// line-height: 120%;
 	text-shadow: 1px 0 16px #000;
   padding-left: 24px;
   
@@ -51,7 +51,7 @@
 }
 
 .hero__subtitle {
-  line-height: 130%;
+  // line-height: 130%;
 	padding: 12px 24px 12px;
 	margin-bottom: 0;
 	// background: linear-gradient(to bottom, #2DBDCA, $color-logo0);
@@ -60,7 +60,7 @@
 	// mix-blend-mode: hard-light;
   
   @media only screen and (min-width: 420px) {
-    font-size: 4.3vw;
+    // font-size: 4.3vw;
   }
 
   @media only screen and (min-width: 480px) {
@@ -68,7 +68,7 @@
   }
   
   @media only screen and (min-width: 700px) {
-    font-size: 30px;
+    // font-size: 30px;
   }
 
   @media only screen and (min-width: 720px) {
