@@ -176,7 +176,8 @@ h1, h2, h3, h4, h5, h6	{
 
 
 .fontsize-alpha {
-  font-size: 9vw !important;
+  // font-size: 9vw !important;
+  font-size: calc(4vw - ( ( 1vw * 1vw ) / 10));
   line-height: 120%;
   
   // @media only screen and (min-width: 450px) {
@@ -189,13 +190,13 @@ h1, h2, h3, h4, h5, h6	{
   //   line-height: 78px; 
   // }
   
-  @media only screen and (min-width: 800px) {
-    font-size: 72px !important;
-  }
+  // @media only screen and (min-width: 800px) {
+  //   font-size: 72px !important;
+  // }
 
-  @media only screen and (min-width: 1000px) {
-    font-size: 90px !important;
-  }
+  // @media only screen and (min-width: 1200px) {
+  //   font-size: 81px !important;
+  // }
 }
 
 .fontsize-beta {
