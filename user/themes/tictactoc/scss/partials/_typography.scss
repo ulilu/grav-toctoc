@@ -175,22 +175,26 @@ h1, h2, h3, h4, h5, h6	{
 
 
 
-.alpha {
-  font-size: 48px !important;
-  line-height: 54px;
+.fontsize-alpha {
+  font-size: 9vw !important;
+  line-height: 120%;
   
-  @media only screen and (min-width: 450px) {
-    font-size: 54px !important;
-    line-height: 60px;
-  }
+  // @media only screen and (min-width: 450px) {
+  //   font-size: 54px !important;
+  //   line-height: 60px;
+  // }
   
-  @media only screen and (min-width: 550px) {
-    font-size: 72px !important;
-    line-height: 78px; 
+  // @media only screen and (min-width: 550px) {
+  //   font-size: 72px !important;
+  //   line-height: 78px; 
+  // }
+
+  @media only screen and (min-width: 1000px) {
+    font-size: 90px !important;
   }
 }
 
-.beta {
+.fontsize-beta {
     font-size: 33px !important;
     line-height: 37px;
 
@@ -215,7 +219,7 @@ h1, h2, h3, h4, h5, h6	{
   }
 }
 
-.gamma {
+.fontsize-gamma {
   font-size: 36px !important;
   line-height: 42px;
   
@@ -230,7 +234,7 @@ h1, h2, h3, h4, h5, h6	{
   }
 }
 
-.delta {
+.fontsize-delta {
   font-size: 30px !important;
   line-height: 36px;
   
@@ -246,7 +250,7 @@ h1, h2, h3, h4, h5, h6	{
 }
 
 
-.epsilon {
+.fontsize-epsilon {
   font-size: 24px !important;
   line-height: 30px;
   
