@@ -177,7 +177,8 @@ h1, h2, h3, h4, h5, h6	{
 
 .fontsize-alpha {
   // font-size: 9vw !important;
-  font-size: calc(4vw - ( ( 1vw * 1vw ) / 10));
+  // font-size: calc(4vw - ( ( 1vw * 1vw ) / 10));  // unfortunately this doesnt work
+  font-size: 9vw;
   line-height: 120%;
   
   // @media only screen and (min-width: 450px) {

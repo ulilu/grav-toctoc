@@ -26,7 +26,7 @@
         {% block javascripts %}
             {% do assets.add('jquery', {'priority': 101, 'group':'topjs'}) %}
 
-            {% do assets.addJs('theme://js/lazysizes.min.js') %} 
+            {% do assets.addJs('theme://bower_components/lazysizes/lazysizes.min.js') %} 
             {% do assets.addJs('theme://js/fittext_uli.js') %} 
             {% do assets.addJs('theme://js/scripts.js') %} 
 
@@ -34,9 +34,8 @@
                 {% do assets.addJs('theme://js/msie.js') %}
             {% endif %}
 
-            {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
-                {% do assets.addJs('theme://assets/assets/js/html5shiv.js') %}
-                {% do assets.addJs('theme://assets/assets/js/respond.min.js') %}
+            {% if browser.getBrowser == 'msie' and browser.getVersion < 10 %}
+                {% do assets.addJs('theme://bower_components/html5shiv/dist/html5shiv.min.js') %}
             {% endif %}
             
         {% endblock %}

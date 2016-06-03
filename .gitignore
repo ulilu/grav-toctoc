@@ -14,3 +14,5 @@ Icon?
 Thumbs.db
 *.swp
 toctoc.sublime-project
+
+user/themes/tictactoc/bower_components/*

@@ -1,0 +1,24 @@
+{
+  "name": "tictactoc",
+  "homepage": "https://github.com/ulilu/grav-toctoc",
+  "authors": [
+    "Uli Straub <uli.straub@kontinui.de>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "html5shiv": "^3.7.3"
+  },
+  "dependencies": {
+    "lazysizes": "^2.0.0"
+  }
+}
