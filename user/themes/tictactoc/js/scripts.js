@@ -40,6 +40,9 @@ $(document).ready(function() {
   var semibold = new FontFaceObserver('Linotte-Semibold', {
       weight: 400
   });
+  var fontawesome = new FontFaceObserver('FontAwesome', {
+      weight: 400
+  });
 
 
   Promise.race([
@@ -49,11 +52,21 @@ $(document).ready(function() {
     semibold.load()
   ]).then(function () {
     console.log('Linotte light, regular & semibold have loaded');
-    html.classList.remove('fonts-loading');
-    html.classList.add('fonts-loaded');
-    // sessionStorage.fontsLoaded = true;
+
+    }).then(function () {
+      fontawesome.load()
+      html.classList.remove('fonts-loading');
+      html.classList.add('fonts-loaded');
+      // sessionStorage.fontsLoaded = true;
+    }).catch(function () {
+      console.log('Fontawesome loading failed, using fallback font');
+      html.classList.remove('fonts-loading');
+      html.classList.add('fonts-failed');
+      // sessionStorage.fontsLoaded = false;
+    });
+
   }).catch(function () {
-    console.log('Linotte loading failed, using fallback font');
+    console.log('Linotte & Fontawesome loading failed, using fallback font');
     html.classList.remove('fonts-loading');
     html.classList.add('fonts-failed');
     // sessionStorage.fontsLoaded = false;

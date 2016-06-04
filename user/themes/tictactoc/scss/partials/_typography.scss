@@ -130,13 +130,19 @@ h1, h2, h3, h4, h5, h6	{
 [class*="fa-"]:before {
   display: inline-block;
   padding-right: 0.5em; 
-  font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Arial;
+  opacity: 0;
+  
+  .fonts-loaded & {
+    opacity: 1;
+    font-family: FontAwesome;
+  }
 }
 
 
