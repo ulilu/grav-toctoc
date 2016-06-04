@@ -70,11 +70,7 @@
 
 .logo-part2 {
   color: $color-logo0;
-  font-family: Arial, sans-serif;
-  
-  .fonts-loaded & {
-    font-family: $font-regular;
-  }
+  @include fontweight(regular);
 }
 
 

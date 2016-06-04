@@ -32,8 +32,8 @@
   color: $color-logo1;
   font-size: 28px;
   text-indent: 62px;
-  font-family: $font-regular;
   margin-bottom: 12px;
+  @include fontweight(regular);
   
   &:before {
     content: "";
@@ -55,7 +55,7 @@
     white-space: nowrap;
     padding: 6px 0 2px;
     vertical-align: baseline;
-    font-family: $font-semibold;
+    @include fontweight(semibold);
     
     &:hover {
       color: $color-red3;

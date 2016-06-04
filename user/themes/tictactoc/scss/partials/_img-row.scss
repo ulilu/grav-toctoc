@@ -252,7 +252,8 @@
 
 .bullet-headline {
   border: 0;
-  font-family: $font-semibold !important;
+  @include fontweight(semibold);
+  // font-family: $font-semibold !important;
   // background: #fff;
 }
 
@@ -352,7 +353,7 @@ h2.bullet-headline {
     // width: 54px;
     // height: 54px;
     color: #fff;
-    font-family: $font-regular;
+    @include fontweight(regular);
     // text-align: center;
     // font-size: 36px;
     // line-height: 60px !important;
@@ -389,10 +390,6 @@ h2.bullet-headline {
       padding: 0 30px 0 0;
     }
   }
-
-  // & + p::first-line {
-  //   font-family: $font-semibold;
-  // }
 
   &.bullet-text-right + p {
     @media only screen and (min-width:1050px) {
@@ -431,10 +428,6 @@ h2.bullet-headline {
     // margin-bottom: 6px;
   }
 }
-
-// & + p::first-line {
-//   font-family: $font-semibold;
-// }
 
 .text-item-right {
 

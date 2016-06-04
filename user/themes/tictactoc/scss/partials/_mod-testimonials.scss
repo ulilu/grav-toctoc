@@ -90,10 +90,6 @@
     }
   }
 
-  h1, h2, h3, h4, h5 {
-    font-family: $font-light;
-  }
-
   h3 {
     position: relative;
     max-width: 1140px;
@@ -106,6 +102,7 @@
     padding: 24px;
     margin: 0 auto;
     @include boxshadow02(0.1);
+    @include fontweight(light);
     
     @media only screen and (min-width: 520px) {
       display: inline-block;

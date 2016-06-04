@@ -21,15 +21,46 @@
 
 $(document).ready(function() {
 
-  var font = new FontFaceObserver('Linotte-Regular', {
-    weight: 400
-  });
+var html = document.documentElement;
+html.classList.add('fonts-loading');
 
-  font.load().then(function () {
-    console.log('Font is available');
-  }, function () {
-    console.log('Font is not available');
+var light = new FontFaceObserver('Linotte-Light', {
+    weight: 400
+});
+var regular = new FontFaceObserver('Linotte-Regular', {
+    weight: 400
+});
+var semibold = new FontFaceObserver('Linotte-Semibold', {
+    weight: 400
+});
+
+
+Promise.all([
+  light.load(),
+  regular.load()
+]).then(function () {
+  console.log('Linotte light & regular have loaded');
+  semibold.load().then(function () {
+    console.log('Linotte semibold has loaded');
+    html.classList.remove('fonts-loading');
+    html.classList.add('fonts-loaded');
+    sessionStorage.fontsLoaded = true;
+  }).catch(function () {
+    html.classList.remove('fonts-loading');
+    html.classList.add('fonts-failed');
+    sessionStorage.fontsLoaded = false;
   });
+});
+
+  // var font = new FontFaceObserver('Linotte-Regular', {
+  //   weight: 400
+  // });
+
+  // font.load().then(function () {
+  //   console.log('Font is available');
+  // }, function () {
+  //   console.log('Font is not available');
+  // });
 
   /*
    *  Enabling all inline JS-blocks (= Lightslider), by cloning / appending 
