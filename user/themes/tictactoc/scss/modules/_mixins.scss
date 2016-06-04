@@ -5,16 +5,31 @@
 
 
 // Fontface-Observer mixin
+
+/* 
+ *  Fontface-Observer mixin
+ *
+ *  1. Capitalization of weight input
+ *
+ *  2. Relevant for Firefox only (sadly) but makes for a much smoother switch 
+ *  between fallback and regular font, due to equalized line-width.
+ */
+
 @mixin fontweight($weight) {
 
+// 1.
 $fontweight : to-upper-case(str-slice($weight, 1, 1)) + str-slice($weight, 2);
 
-font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;
+	font-size-adjust: 0.513;  // 2.
   
   .fonts-loaded & {
     font-family: #{'Linotte-' + $fontweight};
+    font-size-adjust: none;
   }
 }
+
+
 
 // Retina Images for Background-Sprites
 

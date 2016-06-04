@@ -17,36 +17,35 @@
 .fonts-loaded {
   .font-light { 
     font-family: Linotte-Light;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
   }
 
   .font-regular { 
     font-family: Linotte-Regular;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
   }
 
   .font-semibold { 
     font-family: Linotte-SemiBold;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
   }
 
 
   .font-bold { 
     font-family: Linotte-Bold;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
   }
 
   .font-heavy { 
     font-family: Linotte-Heavy;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
   }
 }
-
 
 
 body {
@@ -66,11 +65,9 @@ p {
 
 a {
   color: $color-logo1;
-  // @include text-shadow_w11(.5);
   text-decoration: none;
 
   &:hover {
-    // @include text-shadow_w11(.75);
     text-decoration: underline;
   }
 }
