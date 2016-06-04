@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr, en">
+<html lang="{% if langswitcher.current == 'fr' %}fr{% elseif langswitcher.current == 'en' %}en{% endif %}">
 <head>
     {% block head %}
         <meta charset="utf-8" />
