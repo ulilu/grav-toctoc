@@ -113,14 +113,14 @@
   display: table-cell;
   color: #fff;
   background: $color-logo0;
-  font-family: $font-regular;
   letter-spacing: 1px;
   line-height: 115%;
   vertical-align: top;
   padding: 12px 15px;
   margin: 0;
   z-index: 1; // to make it sit below bullet, but above figcaption text
-  
+  @include fontweight(regular);
+
   // font-size: calc(1.5vw + 1.5vh + 3vmin);
   // line-height: calc(2vw + 2vh + 3vmin);
   // word-break: break-all;

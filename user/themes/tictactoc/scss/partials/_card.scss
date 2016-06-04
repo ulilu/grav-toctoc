@@ -148,7 +148,7 @@
 
   p,
   p strong {
-    font-family: $font-light;
+    @include fontweight(light);
   }
 
   *:last-child {
@@ -302,7 +302,6 @@
   width: 150px;
   right: -45px;
   top: 15px;
-  font-family: $font-semibold;
   font-size: 18px;
   color: #fff;
   text-align: center;
@@ -314,6 +313,7 @@
     backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include fontweight(semibold);
   
   &:before {
     content: attr(data-exampletype);

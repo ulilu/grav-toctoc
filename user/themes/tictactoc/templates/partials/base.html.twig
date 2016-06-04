@@ -25,6 +25,7 @@
 
         {% block javascripts %}
             {% do assets.add('jquery', {'priority': 101, 'group':'topjs'}) %}
+            {% do assets.addJs('theme://js/fontfaceobserver.js', {'priority': 100, 'group':'topjs'}) %}
 
             {% do assets.addJs('theme://js/lazysizes.min.js') %} 
             {% do assets.addJs('theme://js/fittext_uli.js') %} 

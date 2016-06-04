@@ -111,7 +111,6 @@
   padding: 6px 6px 15px;
   margin: 0 0 -9px 0;
 
-  font-family: $font-regular;
   text-align: center;
   list-style: none;
   
@@ -121,6 +120,8 @@
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;  /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */
   -webkit-transform: translate3d(0,0,0);
+  
+  @include fontweight(regular);
   
   @media only screen and (min-width: 800px) {
     margin: 0 0 -24px;

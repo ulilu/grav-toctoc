@@ -11,7 +11,7 @@
 
 
 <div class="stage">
-    <h1 class="beta stage__title"><img class="icon--service" src="{{ page.find('/images').url() }}/{{page.header.icon}}.svg" /><span class="font-light">toctoc</span><span class="font-regular">{{ page.title|ltrim('toctoc') }}</span></h1>
+    <h1 class="beta stage__title"><img class="icon--service" src="{{ page.find('/images').url() }}/{{page.header.icon}}.svg" /><span class="font-light">toctoc</span><span>{{ page.title|ltrim('toctoc') }}</span></h1>
 
     <div class="stage__img">{{ page.media[page.header.image].quality(80).derivatives(400, 2000, 300).sizes('100vw').html(page.title, page.title, page.header.imagealign) }}</div>
 </div>

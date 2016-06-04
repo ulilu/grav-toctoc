@@ -76,7 +76,7 @@
 .btn-seagreen,
 .btn-lavender, {
   color: #fff;
-  font-family: $font-semibold;
+  @include fontweight(semibold);
   
   &:hover {
     color: #fff;

@@ -21,6 +21,16 @@
 
 $(document).ready(function() {
 
+  var font = new FontFaceObserver('Linotte-Regular', {
+    weight: 400
+  });
+
+  font.load().then(function () {
+    console.log('Font is available');
+  }, function () {
+    console.log('Font is not available');
+  });
+
   /*
    *  Enabling all inline JS-blocks (= Lightslider), by cloning / appending 
    *  them to the body and setting the correct type "text/javascript".

@@ -3,6 +3,15 @@
 //	#########################################################################
 
 
+// Fontface-Observer mixin
+@mixin fontweight($weight) {
+font-family: Arial, sans-serif;
+  
+  .fonts-loaded & {
+    font-family: #{'$font-' + $weight};
+  }
+}
+
 // Retina Images for Background-Sprites
 
 @mixin background-2x($file, $type, $width, $height) {

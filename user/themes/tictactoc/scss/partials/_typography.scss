@@ -6,39 +6,45 @@
     Font declarations
 \*---------------------------------------------------------------------------*/
 
-.Linotte-Light,
-.font-light { 
-  font-family: Linotte-Light;
-  font-weight: normal;
-  font-style: normal;
+.font-light,
+.font-regular,
+.font-semibold,
+.font-bold,
+.font-heavy {
+  font-family: Arial, sans-serif;
 }
 
-.Linotte-Regular,
-.font-regular { 
-  font-family: Linotte-Regular;
-  font-weight: normal;
-  font-style: normal;
-}
+.fonts-loaded {
+  .font-light { 
+    font-family: Linotte-Light;
+    font-weight: normal;
+    font-style: normal;
+  }
 
-.Linotte-SemiBold,
-.font-semibold { 
-  font-family: Linotte-SemiBold;
-  font-weight: normal;
-  font-style: normal;
-}
+  .font-regular { 
+    font-family: Linotte-Regular;
+    font-weight: normal;
+    font-style: normal;
+  }
 
-.Linotte-Bold,
-.font-bold { 
-  font-family: Linotte-Bold;
-  font-weight: normal;
-  font-style: normal;
-}
+  .font-semibold { 
+    font-family: Linotte-SemiBold;
+    font-weight: normal;
+    font-style: normal;
+  }
 
-.Linotte-Heavy,
-.font-heavy { 
-  font-family: Linotte-Heavy;
-  font-weight: normal;
-  font-style: normal;
+
+  .font-bold { 
+    font-family: Linotte-Bold;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .font-heavy { 
+    font-family: Linotte-Heavy;
+    font-weight: normal;
+    font-style: normal;
+  }
 }
 
 
@@ -46,9 +52,10 @@
 body {
   font-size: 18px;
   line-height: 27px;
-  font-family: $font-light;
   color: $color-logo1;
+  @include fontweight(light);
 }
+
 
 ::-moz-selection { background: $color-logo0; color: #fff; }
 ::selection { background: $color-logo0; color: #fff; }
@@ -78,9 +85,13 @@ h1, h2, h3, h4,
 
 b,
 strong {
-  font-family: $font-semibold;
-  font-weight: normal;
-  font-style: normal;
+  @include fontweight(semibold);
+  font-weight: bold;
+  
+  .fonts-loaded & {
+    font-weight: normal;
+    font-style: normal;
+  }
 }
 
 ul,
@@ -105,13 +116,13 @@ h1, h2, h3, h4, h5, h6	{
   padding: 0;
   margin:0;
   margin:0 0 24px;
-  font-family: $font-regular;
+  @include fontweight(regular);
 }
 
 *.fa {
   display: block;
-  font-family: $font-regular;
   font-size: inherit;
+  @include fontweight(regular);
 }
 
 [class*="fa-"]:before {
