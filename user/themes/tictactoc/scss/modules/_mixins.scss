@@ -3,12 +3,16 @@
 //	#########################################################################
 
 
+
 // Fontface-Observer mixin
 @mixin fontweight($weight) {
+
+$fontweight : to-upper-case(str-slice($weight, 1, 1)) + str-slice($weight, 2);
+
 font-family: Arial, sans-serif;
   
   .fonts-loaded & {
-    font-family: #{'$font-' + $weight};
+    font-family: #{'Linotte-' + $fontweight};
   }
 }
 
