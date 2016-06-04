@@ -144,7 +144,6 @@
 
   &:first-of-type{
     width: 0.5%;
-    min-width: 48px;
     padding-left: 0;
   }
 
@@ -165,6 +164,7 @@
   color: #fff;
   text-align: center;
   padding: 0 12px;
+  min-width: 48px;
   
   &.fa:before {
     padding-right: 0;
