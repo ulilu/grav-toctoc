@@ -204,9 +204,9 @@ h1, h2, h3, h4, h5, h6	{
   //   line-height: 78px; 
   // }
   
-  // @media only screen and (min-width: 800px) {
-  //   font-size: 72px !important;
-  // }
+  @media only screen and (min-width: 800px) {
+    font-size: 72px;
+  }
 
   // @media only screen and (min-width: 1200px) {
   //   font-size: 81px !important;

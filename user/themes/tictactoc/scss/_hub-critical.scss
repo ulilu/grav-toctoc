@@ -75,71 +75,76 @@ h1, h2, h3, h4, h5, h6	{
   // font-family: $font-regular;
 }
 
-h1 {
-  // font-size: 10vW; // = 32px in 320px, 64px in 640px, 96px in 960px, 
+// h1 {
+//   // font-size: 10vW; // = 32px in 320px, 64px in 640px, 96px in 960px, 
   
-  font-size: 36px;
-  line-height: 42px;
+//   font-size: 36px;
+//   line-height: 42px;
   
-  @media only screen and (min-width:480px) {
-    font-size: 42px;
-    line-height: 48px;
+//   @media only screen and (min-width:480px) {
+//     font-size: 42px;
+//     line-height: 48px;
+//   }
+
+//   @media only screen and (min-width:640px) {
+//     font-size: 48px;
+//     line-height: 54px;
+//   }
+// }
+
+// h2  {
+//   font-size: 36px;
+//   line-height: 42px;
+// }
+
+// h3	{
+//   font-size: 30px;
+//   line-height: 36px;
+// }
+
+
+.fontsize-alpha {
+  // font-size: 9vw !important;
+  // font-size: calc(4vw - ( ( 1vw * 1vw ) / 10));  // unfortunately this doesnt work
+  font-size: 9vw;
+  line-height: 120%;
+  
+  // @media only screen and (min-width: 450px) {
+  //   font-size: 54px !important;
+  //   line-height: 60px;
+  // }
+  
+  // @media only screen and (min-width: 550px) {
+  //   font-size: 72px !important;
+  //   line-height: 78px; 
+  // }
+  
+  @media only screen and (min-width: 800px) {
+    font-size: 72px;
   }
 
-  @media only screen and (min-width:640px) {
-    font-size: 48px;
-    line-height: 54px;
-  }
+  // @media only screen and (min-width: 1200px) {
+  //   font-size: 81px !important;
+  // }
 }
 
-h2  {
-  font-size: 36px;
-  line-height: 42px;
-}
+.fontsize-beta {
+    font-size: 5.5vw !important;
+    line-height: 138%;
 
-h3	{
-  font-size: 30px;
-  line-height: 36px;
-}
-
-
-.alpha {
-  font-size: 48px !important;
-  line-height: 54px;
+  // @media only screen and (min-width: 400px) {
+  //   font-size: 36px !important;
+  //   line-height: 40px;
+  // }
   
   @media only screen and (min-width: 450px) {
-    font-size: 54px !important;
-    line-height: 60px;
+    font-size: 24px !important;
+    // line-height: 48px;
   }
-  
-  @media only screen and (min-width: 550px) {
-    font-size: 72px !important;
-    line-height: 78px; 
-  }
-}
 
-.beta {
+  @media only screen and (min-width: 720px) {
     font-size: 30px !important;
-    line-height: 36px;
-
-  @media only screen and (min-width: 400px) {
-    font-size: 36px !important;
-    line-height: 40px;
-  }
-  
-  @media only screen and (min-width: 480px) {
-    font-size: 48px !important;
-    line-height: 54px;
-  }
-
-  @media only screen and (min-width: 550px) {
-    font-size: 54px !important;
-    line-height: 60px; 
-  }
-  
-  @media only screen and (min-width: 750px) {
-    font-size: 60px !important;
-    line-height: 66px; 
+    // line-height: 48px;
   }
 }
 
@@ -542,7 +547,7 @@ h3	{
 .hero__title {
 	// font-family: $font-regular;
 	font-weight: 400;
-	line-height: 120%;
+	// line-height: 120%;
 	text-shadow: 1px 0 6px #000;
   padding-left: 24px;
   
@@ -556,13 +561,13 @@ h3	{
 }
 
 .hero__subtitle {
-  line-height: 130%;
+  // line-height: 130%;
 	padding: 12px 24px 12px;
 	margin-bottom: 0;
 	color: $color-skyblue5;
   
   @media only screen and (min-width: 420px) {
-    font-size: 4.3vw;
+    // font-size: 4.3vw;
   }
 
   @media only screen and (min-width: 480px) {
@@ -570,7 +575,7 @@ h3	{
   }
   
   @media only screen and (min-width: 700px) {
-    font-size: 30px;
+    // font-size: 30px;
   }
 
   @media only screen and (min-width: 720px) {
