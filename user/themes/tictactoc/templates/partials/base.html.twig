@@ -1,6 +1,10 @@
 <!DOCTYPE html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="{% if langswitcher.current == 'fr' %}fr{% elseif langswitcher.current == 'en' %}en{% endif %}" class="fonts-loaded">
+<!--#else -->
 <html lang="{% if langswitcher.current == 'fr' %}fr{% elseif langswitcher.current == 'en' %}en{% endif %}">
-<!--#config timefmt="%A" --> <!--#echo var="DATE_LOCAL" -->
+<!--#endif -->
+
 <head>
     {% block head %}
         <meta charset="utf-8" />
