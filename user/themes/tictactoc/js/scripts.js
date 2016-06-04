@@ -21,36 +21,43 @@
 
 $(document).ready(function() {
 
-var html = document.documentElement;
-html.classList.add('fonts-loading');
 
-var light = new FontFaceObserver('Linotte-Light', {
-    weight: 400
-});
-var regular = new FontFaceObserver('Linotte-Regular', {
-    weight: 400
-});
-var semibold = new FontFaceObserver('Linotte-Semibold', {
-    weight: 400
-});
+  function timer(time) {
+    return new Promise(function (resolve, reject) {
+      setTimeout(reject, time);
+    });
+  }
+
+  var html = document.documentElement;
+  html.classList.add('fonts-loading');
+
+  var light = new FontFaceObserver('Linotte-Light', {
+      weight: 400
+  });
+  var regular = new FontFaceObserver('Linotte-Regular', {
+      weight: 400
+  });
+  var semibold = new FontFaceObserver('Linotte-Semibold', {
+      weight: 400
+  });
 
 
-Promise.all([
-  light.load(),
-  regular.load()
-]).then(function () {
-  console.log('Linotte light & regular have loaded');
-  semibold.load().then(function () {
-    console.log('Linotte semibold has loaded');
+  Promise.race([
+    timer(10000),
+    light.load(),
+    regular.load(),
+    semibold.load()
+  ]).then(function () {
+    console.log('Linotte light, regular & semibold have loaded');
     html.classList.remove('fonts-loading');
     html.classList.add('fonts-loaded');
     sessionStorage.fontsLoaded = true;
   }).catch(function () {
+    console.log('Linotte loading failed, using fallback font');
     html.classList.remove('fonts-loading');
     html.classList.add('fonts-failed');
     sessionStorage.fontsLoaded = false;
   });
-});
 
   // var font = new FontFaceObserver('Linotte-Regular', {
   //   weight: 400
