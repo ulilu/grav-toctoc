@@ -13,7 +13,7 @@
             {% do assets.addCss('theme://css/style.css', 1) %}
 
             {% if browser.getBrowser == 'msie' %}
-                {% do assets.addCss('theme://assets/css/styles-ie.css') %}
+                {% do assets.addCss('theme://css/styles-ie.css') %}
             {% endif %}
 
         {% endblock %}
@@ -26,7 +26,7 @@
         {% block javascripts %}
             {% do assets.add('jquery', {'priority': 101, 'group':'topjs'}) %}
 
-            {% do assets.addJs('theme://bower_components/lazysizes/lazysizes.min.js') %} 
+            {% do assets.addJs('theme://js/lazysizes.min.js') %} 
             {% do assets.addJs('theme://js/fittext_uli.js') %} 
             {% do assets.addJs('theme://js/scripts.js') %} 
 
@@ -35,7 +35,7 @@
             {% endif %}
 
             {% if browser.getBrowser == 'msie' and browser.getVersion < 10 %}
-                {% do assets.addJs('theme://bower_components/html5shiv/dist/html5shiv.min.js') %}
+                {% do assets.addJs('theme://js/html5shiv.min.js') %}
             {% endif %}
             
         {% endblock %}
