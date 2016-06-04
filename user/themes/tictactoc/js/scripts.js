@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 
   Promise.race([
-    timer(15000),
+    timer(1000),
     light.load(),
     regular.load(),
     semibold.load()
