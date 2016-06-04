@@ -34,10 +34,10 @@
   svg {
     display: inline-block;
     vertical-align: middle;
-    padding: 14px 6px 14px 9px;
+    margin: 14px 6px 14px 9px;
 
     @media only screen and (min-width: 750px) {
-      padding-left: 2%;
+      margin-left: 2%;
     }
   }
   
