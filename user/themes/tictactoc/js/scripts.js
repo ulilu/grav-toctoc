@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 
   Promise.race([
-    timer(1000),
+    timer(10000),
     light.load(),
     regular.load(),
     semibold.load()
@@ -51,12 +51,12 @@ $(document).ready(function() {
     console.log('Linotte light, regular & semibold have loaded');
     html.classList.remove('fonts-loading');
     html.classList.add('fonts-loaded');
-    sessionStorage.fontsLoaded = true;
+    // sessionStorage.fontsLoaded = true;
   }).catch(function () {
     console.log('Linotte loading failed, using fallback font');
     html.classList.remove('fonts-loading');
     html.classList.add('fonts-failed');
-    sessionStorage.fontsLoaded = false;
+    // sessionStorage.fontsLoaded = false;
   });
 
   // var font = new FontFaceObserver('Linotte-Regular', {
