@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{% if langswitcher.current == 'fr' %}fr{% elseif langswitcher.current == 'en' %}en{% endif %}">
+<!--#config timefmt="%A" --> <!--#echo var="DATE_LOCAL" -->
 <head>
     {% block head %}
         <meta charset="utf-8" />
