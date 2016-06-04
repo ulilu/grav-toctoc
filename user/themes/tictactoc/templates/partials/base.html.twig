@@ -8,6 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
         <link rel="icon" type="image/png" href="{{ theme_url }}/img/favicon.ico" />
 
+        <script type="text/javascript">
+            if (sessionStorage.fontsLoaded) {
+              var html = document.documentElement;
+              html.classList.add('fonts-loaded');
+            }
+        </script>
+
          {% block stylesheets %}
             {% do assets.addCss('theme://css/font-awesome.min.css', 101) %}
             {% do assets.addCss('theme://css/style.css', 1) %}
@@ -24,8 +31,8 @@
 
 
         {% block javascripts %}
-            {% do assets.add('jquery', {'priority': 101, 'group':'topjs'}) %}
-            {% do assets.addJs('theme://js/fontfaceobserver.js', {'priority': 100, 'group':'topjs'}) %}
+            {% do assets.add('jquery', {'priority': 101, 'group':'criticaljs'}) %}
+            {% do assets.addJs('theme://js/fontfaceobserver.js', {'priority': 100, 'group':'criticaljs'}) %}
 
             {% do assets.addJs('theme://js/lazysizes.min.js') %} 
             {% do assets.addJs('theme://js/fittext_uli.js') %} 
@@ -42,7 +49,7 @@
         {% endblock %}
         
         {% block topassets %}
-            {{ assets.js('topjs') }}
+            {{ assets.js('criticaljs') }}
         {% endblock %}
 
         {# 
