@@ -8,14 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
         <link rel="icon" type="image/png" href="{{ theme_url }}/img/favicon.ico" />
 
-       
+       {# 
        <script type="text/javascript">
             if (sessionStorage.fontsLoaded) {
               var html = document.documentElement;
               html.classList.add('fonts-loaded');
             }
         </script> 
-       
+       #}
 
          {% block stylesheets %}
             {% do assets.addCss('theme://css/font-awesome.min.css', 101) %}
