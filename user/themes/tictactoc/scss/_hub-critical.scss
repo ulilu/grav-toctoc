@@ -225,10 +225,10 @@ h3	{
   svg {
     display: inline-block;
     vertical-align: middle;
-    margin: 14px 6px 14px 9px;
+    padding: 14px 6px 14px 9px;
 
     @media only screen and (min-width: 750px) {
-      margin-left: 2%;
+      padding-left: 2%;
     }
   }
   
