@@ -16,29 +16,28 @@
 
 .logo-main {
   position: relative;
-  width: 75%;
-  padding-right: 12px;
-  margin: 0;
+  width: 67%;
+  // padding-right: 12px;
+  // margin: 0;
   
-  @media only screen and (min-width: 650px) {
-    width: 65%;
-    padding-right: 18px;
-  }
+  // @media only screen and (min-width: 650px) {
+  //   // width: 65%;
+  //   padding-right: 18px;
+  // }
 
-  @media only screen and (min-width: 750px) {
-    width: 60%;
-    padding-right: 24px;
-  }
+  // @media only screen and (min-width: 750px) {
+  //   // width: 60%;
+  //   padding-right: 24px;
+  // }
   
   img,
   svg {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 6px 0 9px;
-    // padding: 12px 6px 15px 12px;
+    margin: 14px 6px 14px 9px;
 
     @media only screen and (min-width: 750px) {
-      margin-left: 2.2%;
+      margin-left: 2%;
     }
   }
   
