@@ -22,39 +22,17 @@
 $(document).ready(function() {
 
   /*! cookie function. get, set, or forget a cookie. [c]2014 @scottjehl, Filament Group, Inc. Licensed MIT */
-  (function(w){
-    var cookie = function( name, value, days ){
-      // if value is undefined, get the cookie value
-      if( value === undefined ){
-        var cookiestring = "; " + w.document.cookie;
-        var cookies = cookiestring.split( "; " + name + "=" );
-        if ( cookies.length === 2 ){
-          return cookies.pop().split( ";" ).shift();
-        }
-        return null;
-      }
-      else {
-        // if value is a false boolean, we'll treat that as a delete
-        if( value === false ){
-          days = -1;
-        }
-        var expires = "";
-        if ( days ) {
-          var date = new Date();
-          date.setTime( date.getTime() + ( days * 24 * 60 * 60 * 1000 ) );
-          expires = "; expires="+date.toGMTString();
-        }
-        w.document.cookie = name + "=" + value + expires + "; path=/";
-      }
-    };
-    // commonjs
-    if( typeof module !== "undefined" ){
-      module.exports = cookie;
+
+  function createCookie(name,value,days) {
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = "; expires="+date.toGMTString();
     }
-    else {
-      w.cookie = cookie;
-    }
-  }( typeof global !== "undefined" ? global : this ));
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+  }
+      
 
 
 
@@ -95,7 +73,7 @@ $(document).ready(function() {
       console.log('Fontawesome has loaded');
       html.classList.remove('fonts-loading');
       html.classList.add('fonts-loaded');
-      cookie('fonts-loaded', '1', 1);
+      createCookie('fonts-loaded', '1', 1);
       // sessionStorage.fontsLoaded = true;
     }).catch(function () {
       console.log('Fontawesome loading failed, using fallback font');
