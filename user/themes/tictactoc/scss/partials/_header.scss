@@ -30,8 +30,12 @@
   //   padding-right: 24px;
   // }
   
-  img,
-  svg {
+  a {
+    display: block;
+  }
+}
+
+.toctoc-logo {
     display: inline-block;
     vertical-align: middle;
     margin: 14px 6px 14px 9px;
@@ -40,12 +44,6 @@
       margin-left: 2%;
     }
   }
-  
-  a {
-    display: block;
-    color: currentColor;
-  }
-}
 
 
 [class*="logo-part"] {
