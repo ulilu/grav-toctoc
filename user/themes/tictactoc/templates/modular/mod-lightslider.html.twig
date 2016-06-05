@@ -63,7 +63,11 @@
                         <div class="panel-padding {{ settings.type_text_css_class }}" style="
                             padding: {{ settings.type_text_vertical_padding|default(0) }} {{ settings.type_text_horizontal_padding|default(0) }}
                             ">
-                            {{ panel }}
+                            {% set twig_content_variable = panel %}
+                            {% set replace_value_var = '<img src' %}
+                            {% set replace_with_value_var = '<img class="lazyload" data-src' %} 
+
+                            {{ twig_content_variable|replace({ (replace_value_var): replace_with_value_var }) }}
                         </div>
                     </div>
                 </li>
