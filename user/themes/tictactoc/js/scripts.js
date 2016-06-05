@@ -53,6 +53,7 @@ $(document).ready(function() {
   ]).then(function () {
     console.log('Linotte light, regular & semibold have loaded');
     fontawesome.load().then(function () {  
+      console.log('Fontawesome has loaded');
       html.classList.remove('fonts-loading');
       html.classList.add('fonts-loaded');
       // sessionStorage.fontsLoaded = true;
