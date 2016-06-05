@@ -4,18 +4,23 @@
 
 
 .block--faq {
+  position: relative;
   background: $color-midblue;
+  z-index: -1;
   
   h1 {
     color: #fff;
   }
 
   @media only screen and (min-width:1200px) {
-      &:after {
-        background-size: 420px; // yeah!
-        background-position: right -40px bottom -60px;
-      }
+    &:after {
+      opacity: .2;
+      left: auto;
+      right: 0;
+      background-size: 420px; // yeah!
+      background-position: right -40px bottom -60px;
     }
+  }
 }
 
 
