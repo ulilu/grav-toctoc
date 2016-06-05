@@ -15,7 +15,7 @@
         {% include 'partials/favicons.html.twig' %}
 
 
-       
+{#        
        <script type="text/javascript">
             if (sessionStorage.fontsLoaded) {
               var html = document.documentElement;
@@ -23,7 +23,7 @@
               html.classList.remove('fonts-loading');
             }
         </script> 
-      
+       #}
 
          {% block stylesheets %}
             {% do assets.addCss('theme://css/font-awesome.min.css', 101) %}
