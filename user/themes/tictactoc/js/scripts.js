@@ -37,15 +37,6 @@ $(document).ready(function() {
       
 
 
-
-/*
-  function timer(time) {
-    return new Promise(function (resolve, reject) {
-      setTimeout(reject, time);
-    });
-  };
-*/
-
   var html = document.documentElement;
   html.classList.add('fonts-loading');
 
@@ -73,7 +64,7 @@ $(document).ready(function() {
       console.log('Fontawesome has loaded');
       html.classList.remove('fonts-loading');
       html.classList.add('fonts-loaded');
-      /* createCookie('fonts-loaded', '1', 1); */
+      createCookie('fonts-loaded', '1', 1); 
       /* sessionStorage.fontsLoaded = true; */
     }).catch(function () {
       console.log('Fontawesome loading failed, using fallback font');
