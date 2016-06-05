@@ -64,12 +64,6 @@ $(document).ready(function() {
       html.classList.add('fonts-failed');
       // sessionStorage.fontsLoaded = false;
     });
-
-  }).catch(function () {
-    console.log('Linotte & Fontawesome loading failed, using fallback font');
-    html.classList.remove('fonts-loading');
-    html.classList.add('fonts-failed');
-    // sessionStorage.fontsLoaded = false;
   });
 
   // var font = new FontFaceObserver('Linotte-Regular', {
@@ -82,16 +76,18 @@ $(document).ready(function() {
   //   console.log('Font is not available');
   // });
 
+
+
   /*
    *  Enabling all inline JS-blocks (= Lightslider), by cloning / appending 
    *  them to the body and setting the correct type "text/javascript".
    *  as seen in: https://stackoverflow.com/questions/20180556/defer-inline-javascript-execution
    */
-  $(function() {
-    $("script[type='text/example']").each(function() {
-        $(this).clone().attr("type","text/javascript").appendTo("body"); 
-    });
-  });
+  // $(function() {
+  //   $("script[type='text/example']").each(function() {
+  //       $(this).clone().attr("type","text/javascript").appendTo("body"); 
+  //   });
+  // });
 
   /*
    * Center active menu item
