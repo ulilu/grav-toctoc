@@ -8,11 +8,14 @@
     <div id="content">
         {% for module in page.collection() %}
 
-    			{% set twig_content = module.content %}
-    			{% set replace_value_var = '<img src' %}
-    			{% set replace_with_value_var = '<img class="lazyload" data-src' %} 
-
-    			{{ twig_content|replace({ (replace_value_var): replace_with_value_var }) }}
+					{% if module.header.lightslider %}
+    				{% set twig_content = module.content %}
+    				{% set replace_value_var = '<img src' %}
+    				{% set replace_with_value_var = '<img class="lazyload" data-src' %}
+    				{{ twig_content|replace({ (replace_value_var): replace_with_value_var }) }}
+    			{% else %}
+    				{{ module.content }}
+					{% endif %}
 
         {% endfor %}
     </div>
