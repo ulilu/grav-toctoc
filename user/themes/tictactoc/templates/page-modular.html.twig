@@ -8,7 +8,7 @@
     <div id="content">
         {% for module in page.collection() %}
 
-					{% if module.header.lightslider %}
+					{% if module.header.lazyload_images %}
     				{% set twig_content = module.content %}
     				{% set replace_value_var = '<img src' %}
     				{% set replace_with_value_var = '<img class="lazyload" data-src' %}
