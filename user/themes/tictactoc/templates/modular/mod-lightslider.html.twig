@@ -45,16 +45,10 @@
         <h1>{{ page.title }}</h1>
     </div>
 
-    {{ dump(page.content) }}
-    {% set twig_content = page.content %}
-    {% set replace_value_var = '<img src' %}
-    {% set replace_with_value_var = '<img class="lazyload" data-src' %} 
-    {% set nucontent = twig_content|replace({ (replace_value_var): replace_with_value_var }) %}
-
     <div id="{{ unique_id }}-wrapper" class="grav-lightslider">
         {% if settings.slider_type == 'text' %}
         <ul id="{{ unique_id }}" style="{% if settings.type_text_height %}height: {{ settings.type_text_height }};{% endif %}">
-            {% for panel in nucontent|split('<hr />') %}
+            {% for panel in page.content|split('<hr />') %}
                 {% set panel_media = page.media['image-'~loop.index~'.jpg'] %}
                 {% set panel_image = panel_media.brightness(settings.type_text_brightness|default('-100')).url %}
                 {% if panel_media and settings.gallery %}
