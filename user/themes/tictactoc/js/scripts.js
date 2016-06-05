@@ -1,18 +1,20 @@
-// var  mn = $("navigation");
-//     mns = "navigation--scrolled";
-    // hdr = $('.header').height();
 
-// $(function(){
-//     $(window).scroll(function() {
-//         if ($(this).scrollTop() >= 101) {
-//             $('.nav-bar').addClass('is-sticky');
-//         }
-//         else {
-//             $('.nav-bar').removeClass('is-sticky');
-//         }
-//     });
-// });
+/*
+var  mn = $("navigation");
+    mns = "navigation--scrolled";
+    hdr = $('.header').height();
 
+$(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 101) {
+            $('.nav-bar').addClass('is-sticky');
+        }
+        else {
+            $('.nav-bar').removeClass('is-sticky');
+        }
+    });
+});
+*/
 
 
 /*
@@ -36,15 +38,13 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-  // function timer(time) {
-  //   return new Promise(function (resolve, reject) {
-  //     setTimeout(reject, time);
-  //   });
-  // };
+/*
+  function timer(time) {
+    return new Promise(function (resolve, reject) {
+      setTimeout(reject, time);
+    });
+  };
+*/
 
   var html = document.documentElement;
   html.classList.add('fonts-loading');
@@ -73,26 +73,15 @@ $(document).ready(function() {
       console.log('Fontawesome has loaded');
       html.classList.remove('fonts-loading');
       html.classList.add('fonts-loaded');
-      createCookie('fonts-loaded', '1', 1);
-      // sessionStorage.fontsLoaded = true;
+      /* createCookie('fonts-loaded', '1', 1); */
+      sessionStorage.fontsLoaded = true;
     }).catch(function () {
       console.log('Fontawesome loading failed, using fallback font');
       html.classList.remove('fonts-loading');
       html.classList.add('fonts-failed');
-      // sessionStorage.fontsLoaded = false;
+      sessionStorage.fontsLoaded = false;
     });
   });
-
-  // var font = new FontFaceObserver('Linotte-Regular', {
-  //   weight: 400
-  // });
-
-  // font.load().then(function () {
-  //   console.log('Font is available');
-  // }, function () {
-  //   console.log('Font is not available');
-  // });
-
 
 
   /*
@@ -100,11 +89,15 @@ $(document).ready(function() {
    *  them to the body and setting the correct type "text/javascript".
    *  as seen in: https://stackoverflow.com/questions/20180556/defer-inline-javascript-execution
    */
-  // $(function() {
-  //   $("script[type='text/example']").each(function() {
-  //       $(this).clone().attr("type","text/javascript").appendTo("body"); 
-  //   });
-  // });
+
+/*
+  $(function() {
+    $("script[type='text/example']").each(function() {
+        $(this).clone().attr("type","text/javascript").appendTo("body"); 
+    });
+  });
+*/
+
 
   /*
    * Center active menu item
