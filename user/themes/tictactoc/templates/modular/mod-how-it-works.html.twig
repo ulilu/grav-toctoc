@@ -1,14 +1,10 @@
 <section class="block  block--stretch  block--howto">
 	<div class="block">
-	  {{ page.content }}
-{{ dump (page.url) }}
-{{ dump (base_url) }}
-{{ dump (uri.path) }}
-{{ dump (uri.url) }}
+
 		{% for step in page.header.steps %}
 
 			{% set image = page.media[step.image] %}
-			{% set thumb = image.display('thumbnail').quality(80).cropResize(150) %}
+			{% set thumb = image.display('thumbnail').cropResize(150) %}
 
 			<figure class="timeline-row">
 				<div class="timeline-row__img">

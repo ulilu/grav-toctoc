@@ -16,7 +16,7 @@
 		{% for partner in page.header.partners %}
 
 			{% set image = page.media[partner.image] %}
-			{% set thumb = image.display('thumbnail').quality(80).cropResize(400, 300) %}
+			{% set thumb = image.display('thumbnail').cropResize(400, 300) %}
 
 			<a class="card  card--partner  width-25" href="{{ partner.link }}" data-partner-category="js-category-{{ partner.category }}" target="_new">
 
