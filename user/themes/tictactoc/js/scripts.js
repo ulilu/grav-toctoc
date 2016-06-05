@@ -26,7 +26,7 @@ $(document).ready(function() {
     return new Promise(function (resolve, reject) {
       setTimeout(reject, time);
     });
-  }
+  };
 
   var html = document.documentElement;
   html.classList.add('fonts-loading');
