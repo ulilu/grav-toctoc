@@ -9,6 +9,13 @@
   h1 {
     color: #fff;
   }
+
+  @media only screen and (min-width:1200px) {
+      &:after {
+        background-size: 420px; // yeah!
+        background-position: right -40px bottom -60px;
+      }
+    }
 }
 
 
