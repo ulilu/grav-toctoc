@@ -74,12 +74,12 @@ $(document).ready(function() {
       html.classList.remove('fonts-loading');
       html.classList.add('fonts-loaded');
       /* createCookie('fonts-loaded', '1', 1); */
-      sessionStorage.fontsLoaded = true;
+      /* sessionStorage.fontsLoaded = true; */
     }).catch(function () {
       console.log('Fontawesome loading failed, using fallback font');
       html.classList.remove('fonts-loading');
       html.classList.add('fonts-failed');
-      sessionStorage.fontsLoaded = false;
+      /* sessionStorage.fontsLoaded = false; */
     });
   });
 
