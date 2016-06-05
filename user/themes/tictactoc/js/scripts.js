@@ -21,12 +21,52 @@
 
 $(document).ready(function() {
 
+  /*! cookie function. get, set, or forget a cookie. [c]2014 @scottjehl, Filament Group, Inc. Licensed MIT */
+  (function(w){
+    var cookie = function( name, value, days ){
+      // if value is undefined, get the cookie value
+      if( value === undefined ){
+        var cookiestring = "; " + w.document.cookie;
+        var cookies = cookiestring.split( "; " + name + "=" );
+        if ( cookies.length === 2 ){
+          return cookies.pop().split( ";" ).shift();
+        }
+        return null;
+      }
+      else {
+        // if value is a false boolean, we'll treat that as a delete
+        if( value === false ){
+          days = -1;
+        }
+        var expires = "";
+        if ( days ) {
+          var date = new Date();
+          date.setTime( date.getTime() + ( days * 24 * 60 * 60 * 1000 ) );
+          expires = "; expires="+date.toGMTString();
+        }
+        w.document.cookie = name + "=" + value + expires + "; path=/";
+      }
+    };
+    // commonjs
+    if( typeof module !== "undefined" ){
+      module.exports = cookie;
+    }
+    else {
+      w.cookie = cookie;
+    }
+  }( typeof global !== "undefined" ? global : this ));
 
-  function timer(time) {
-    return new Promise(function (resolve, reject) {
-      setTimeout(reject, time);
-    });
-  };
+
+
+
+
+
+
+  // function timer(time) {
+  //   return new Promise(function (resolve, reject) {
+  //     setTimeout(reject, time);
+  //   });
+  // };
 
   var html = document.documentElement;
   html.classList.add('fonts-loading');
@@ -45,17 +85,17 @@ $(document).ready(function() {
   });
 
 
-  Promise.race([
-    timer(10000),
-    light.load(),
-    regular.load(),
-    semibold.load()
+  Promise.all([
+    light.load(null, 5000),
+    regular.load(null, 5000),
+    semibold.load(null, 5000)
   ]).then(function () {
     console.log('Linotte light, regular & semibold have loaded');
-    fontawesome.load().then(function () {  
+    fontawesome.load(null, 5000).then(function () {  
       console.log('Fontawesome has loaded');
       html.classList.remove('fonts-loading');
       html.classList.add('fonts-loaded');
+      cookie('fonts-loaded', '1', 1);
       // sessionStorage.fontsLoaded = true;
     }).catch(function () {
       console.log('Fontawesome loading failed, using fallback font');
