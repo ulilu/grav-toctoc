@@ -64,11 +64,11 @@
                             padding: {{ settings.type_text_vertical_padding|default(0) }} {{ settings.type_text_horizontal_padding|default(0) }}
                             ">
 
-                            {% set twig_content_variable = panel %}
-                            {% set replace_value_var = '<img src' %}
-                            {% set replace_with_value_var = '<img class="lazyload" data-src' %} 
+                            {% set twig_content_variable2 = panel %}
+                            {% set replace_value_var2 = '<img src' %}
+                            {% set replace_with_value_var2 = '<img class="lazyload" data-src' %} 
 
-                            {{ twig_content_variable|replace({ (replace_value_var): replace_with_value_var }) }}
+                            {{ twig_content_variable2|replace({ (replace_value_var2): replace_with_value_var2 }) }}
                         </div>
                     </div>
                 </li>
