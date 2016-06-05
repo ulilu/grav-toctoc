@@ -45,10 +45,11 @@
         <h1>{{ page.title }}</h1>
     </div>
 
+    {{ dump(page.content) }}
     {% set twig_content = page.content %}
     {% set replace_value_var = '<img src' %}
     {% set replace_with_value_var = '<img class="lazyload" data-src' %} 
-    {% set nucontent = twig_content|replace({ (replace_value_var2): replace_with_value_var }) %}
+    {% set nucontent = twig_content|replace({ (replace_value_var): replace_with_value_var }) %}
 
     <div id="{{ unique_id }}-wrapper" class="grav-lightslider">
         {% if settings.slider_type == 'text' %}
