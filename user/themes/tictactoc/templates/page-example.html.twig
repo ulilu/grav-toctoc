@@ -9,6 +9,7 @@
 
 <div class="block  block--example">
 
+  {{ dump(page.content) }}
 	{% set twig_content_variable = page.content %}
 	{% set replace_value_var = '<img src' %}
 	{% set replace_with_value_var = '<img class="lazyload" data-src' %} 
