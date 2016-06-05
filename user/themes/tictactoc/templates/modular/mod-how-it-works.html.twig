@@ -1,6 +1,8 @@
 <section class="block  block--stretch  block--howto">
 	<div class="block">
 
+		{{ page.content }}
+
 		{% for step in page.header.steps %}
 
 			{% set image = page.media[step.image] %}
