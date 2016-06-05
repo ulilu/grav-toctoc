@@ -52,9 +52,7 @@ $(document).ready(function() {
     semibold.load()
   ]).then(function () {
     console.log('Linotte light, regular & semibold have loaded');
-    fontawesome.load()
-    
-    }).then(function () {  
+    fontawesome.load().then(function () {  
       html.classList.remove('fonts-loading');
       html.classList.add('fonts-loaded');
       // sessionStorage.fontsLoaded = true;
