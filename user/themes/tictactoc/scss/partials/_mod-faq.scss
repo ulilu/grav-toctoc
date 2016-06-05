@@ -6,10 +6,14 @@
 .block--faq {
   position: relative;
   background: $color-midblue;
-  z-index: 0;
+  z-index: 1;
   
   h1 {
     color: #fff;
+  }
+
+  & > .block {
+    z-index: 1;
   }
 
   @media only screen and (min-width:1200px) {
