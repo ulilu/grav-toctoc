@@ -161,15 +161,6 @@
     background-position: left 3vw bottom -40px;
   }
 
-  // p {
-  // 	font-size: 18px;
-		// line-height: 160%;
-    
-  //   @media only screen and (min-width: 900px) { 
-  //     font-size: 21px;
-  //   }
-  // }
-
   p:last-of-type {
   	margin-bottom: 0;
   }
@@ -485,13 +476,13 @@
     }
 
     p	{
-      font-size: 18px;
-    	line-height: 30px;
+     //  font-size: 18px;
+    	// line-height: 30px;
 			margin-bottom: 18px;
       
       @media only screen and (min-width: 650px) { 
-        font-size: 21px;
-        line-height: 36px;
+        // font-size: 21px;
+        // line-height: 36px;
       }
 		}
     
