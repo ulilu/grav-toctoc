@@ -56,8 +56,8 @@ body {
 }
 
 
-::-moz-selection { background: $color-logo0; color: #fff; }
-::selection { background: $color-logo0; color: #fff; }
+::-moz-selection { background: $color-seagreen2; color: $color-white; }
+::selection { background: $color-seagreen2; color: $color-white; }
 
 p {
   margin: 0 0 30px; 

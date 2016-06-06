@@ -289,13 +289,13 @@ $fontweight : to-upper-case(str-slice($weight, 1, 1)) + str-slice($weight, 2);
 @mixin btn-theme($basecolor, $lightcolor, $midcolor) {
     
     &, &:link, &:visited, &:active	{
-    	color:#fff;
+    	color:$color-white;
     	border-color: $basecolor;
         background: $basecolor;
 		@include background(linear-gradient($lightcolor, $basecolor));
 	}
     &:hover { 
-    	color:#fff;
+    	color:$color-white;
     	border-color: $midcolor;
         background: $midcolor;
 		@include background(linear-gradient($lightcolor, $midcolor));
@@ -309,16 +309,16 @@ $fontweight : to-upper-case(str-slice($weight, 1, 1)) + str-slice($weight, 2);
 @mixin btn-silver() {
 
 	&, &:link, &:visited	{
-		background: #eee;
-		@include background(linear-gradient(white, $color-lightgrey 25%, $color-grey));
+		background: $color-grey4;
+		@include background(linear-gradient($color-white, $color-lightgrey 25%, $color-grey));
 	}
 	&:hover	{
-		background: #fff;
-		@include background(linear-gradient(white, $color-lightgrey 40%, $color-midgrey));
+		background: $color-white;
+		@include background(linear-gradient($color-white, $color-lightgrey 40%, $color-midgrey));
 	}
 	&:active	{
-		background: #eee;
-		@include background(linear-gradient(white, $color-lightgrey 13%, $color-puregrey));
+		background: $color-grey4;
+		@include background(linear-gradient($color-white, $color-lightgrey 13%, $color-puregrey));
 	}
 }
 

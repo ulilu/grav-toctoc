@@ -10,7 +10,7 @@
 
 .block--testimonials {
   background: $color-rouille4;
-  color: #fff;
+  color: $color-white;
   padding-left: 0;
   padding-right: 0;
   z-index: 1;
@@ -75,7 +75,7 @@
     display: inline-block;
     width: 60px;
     height: 60px;
-    border: 3px solid #fff;
+    border: 3px solid $color-white;
     border-radius: 50%;
     margin:0 18px 0 0;background: $color-rouille5;
     
@@ -95,9 +95,10 @@
     max-width: 1140px;
     font-size: 18px;
     line-height: 27px;
-    background: #fff;
+    background: $color-white;
     // color: $color-brown;
-    color: $color-logo1;
+    // color: $color-logo1;
+    color: $color-rouille1;
     border-radius: 24px;
     padding: 24px;
     margin: 0 auto;
@@ -131,14 +132,14 @@
       left: 84px;
       border-width: 0 15px 15px 15px;
       border-style: solid;
-      border-color: #fff rgba(0, 0, 0, 0);
+      border-color: $color-white rgba(0, 0, 0, 0);
       width: 0;
       
       @media only screen and (min-width: 520px) {
         top: 30px;
         left: -15px;
         border-width: 15px 15px 15px 0;
-        border-color: rgba(0, 0, 0, 0) #fff;
+        border-color: rgba(0, 0, 0, 0) $color-white;
       }
     }
   }
@@ -156,7 +157,7 @@
       float: none;
       display: inline-block;
       text-align: center;
-      color: #fff;
+      color: $color-white;
       width: 150px;
       padding: 0 30px 0 0;
       margin: 0 auto 30px;

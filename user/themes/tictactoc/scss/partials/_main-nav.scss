@@ -21,7 +21,7 @@
   // background: #C26236;
   // background: linear-gradient(to top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.15) 40%);
   // background: linear-gradient(to bottom, rgba(0,0,0,0) 59%, rgba(0,0,0,0.15) 60%);
-  background: $color-redwine;
+  background: $color-rouge1;
   // border-bottom: 3px solid rgba(0,0,0,0.33);
 
   @media only screen and (min-width: 800px) {
@@ -68,8 +68,8 @@
   height: 51px;
   cursor: pointer;
   background: rgba(0,0,0,0.75);
-  background: $color-redwine;
-  border-left: 2px solid #fff;
+  background: $color-rouge1;
+  border-left: 2px solid $color-white;
   
   @media only screen and (max-width: 800px) {
     display: block;
@@ -83,7 +83,7 @@
     top: 0;
     height: 51px;
     width: 42px;
-    color: #fff;
+    color: $color-white;
     font-size: 36px;
     line-height: 51px;
     padding: 0;
@@ -161,7 +161,7 @@
   display: block;
   line-height: 36px;
   font-size: 24px;
-  color: #fff;
+  color: $color-white;
   text-align: center;
   padding: 0 12px;
   min-width: 48px;
@@ -175,13 +175,13 @@
   display: block;
   padding: 6px;
   white-space: nowrap;
-  color: #fff;
+  color: $color-white;
   font-size: 18px;
 
   .active &,
   .focus &,
   &:hover {
-    background: #fff;
+    background: $color-white;
     border-radius: 3px;
   }
 
@@ -229,7 +229,7 @@
     display: inline-block;
     padding: 0;
     width: 36px;
-    background: #fff;
+    background: $color-white;
     border-radius: 50%;
   }
 }
@@ -247,7 +247,7 @@
   padding: 6px 6px 0;
   width: 200px;
   overflow: hidden;
-  background: $color-redwine;
+  background: $color-rouge1;
   
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -278,7 +278,7 @@
 .main-nav__item:hover {
 
   > a {
-    background: white;
+    background: $color-white;
     border-radius: 3px;
     color: $color-logo1;
   }

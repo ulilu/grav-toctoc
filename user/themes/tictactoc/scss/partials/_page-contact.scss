@@ -4,7 +4,7 @@
 
 
 .page-contact {
-  background: #FFF;
+  background: $color-white;
 }
 
 .block--contactinfo {
@@ -57,15 +57,19 @@
   Contactform
 \*------------------------------------*/
 
+/**
+ *  1. Additions color, only used in this element,
+ *  to mark shadow color (also used in related icon "Pastis")
+ */
 .block--contactform {
   position: relative;
   z-index: -1;
   background: $color-seagreen3;
-  border-top: 12px solid #fff;
-  border-bottom: 12px solid #37949C;
+  border-top: 12px solid $color-white;
+  border-bottom: 12px solid #37949C;  // 1.
   
   h1 {
-    color: #fff;
+    color: $color-white;
   }
 
   &:after {

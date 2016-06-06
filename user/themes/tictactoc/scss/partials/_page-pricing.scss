@@ -56,7 +56,7 @@
   }
 
   .cell-inner {
-    background: #fff;
+    background: $color-white;
     border-radius: 6px;
     overflow: hidden;
     @include material-card1();
@@ -78,7 +78,7 @@
     top: -12px;
     width: calc(100% + 48px);
     height: 100%;
-    color: #fff !important;
+    color: $color-white !important;
     padding: 24px;
     margin: 0;
     

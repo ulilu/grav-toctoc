@@ -275,7 +275,7 @@
     height: 100%;
     opacity: 0;
     border-radius: 6px;
-    background: #fff;
+    background: $color-white;
     transition: opacity .4s ease-out;
   }
 
@@ -303,11 +303,11 @@
   right: -45px;
   top: 15px;
   font-size: 18px;
-  color: #fff;
+  color: $color-white;
   text-align: center;
   transform: rotate(45deg);
   padding: 4px 0 3px;
-  background: $color-logo0;
+  background: $color-seagreen2;
   // box-shadow: 2px 2px 0 rgba(0,0,0,.3);
   -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
     backface-visibility: hidden;

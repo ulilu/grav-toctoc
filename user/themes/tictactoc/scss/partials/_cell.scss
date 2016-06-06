@@ -60,11 +60,11 @@
 
 
 .cell-feature {
-  color: #fff;
+  color: $color-white;
   background: $color-darkbeige;
 
   h3.fa:before {
-    border: 2px solid #fff;
+    border: 2px solid $color-white;
   }
 
   ul {

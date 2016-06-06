@@ -66,8 +66,7 @@
     font-size: 54px;
     vertical-align: middle;
     text-align: center;
-    // color: #9B2E36;
-    color: $color-midblue;
+    color: $color-skyblue4;
   }
 
   @media only screen and (min-width: 420px) {
@@ -137,7 +136,7 @@
     padding: 0;
     z-index: 2;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid $color-white;
     -ms-transform-origin: 50% 50%; /* IE 9 */
     -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
     transform-origin: 50% 50%;
@@ -156,7 +155,7 @@
     img {
       width: 90px;
       height: 90px;
-      border: 4px solid #fff;
+      border: 4px solid $color-white;
     }
   }
 
@@ -164,7 +163,7 @@
     img {
       width: 120px;
       height: 120px;
-      border: 6px solid #fff;
+      border: 6px solid $color-white;
     }
   }
 
@@ -230,7 +229,7 @@
 .timeline-row__info {
   position: relative;
   z-index: 1;
-  background: #fff;
+  background: $color-white;
   padding: 18px 18px 18px 42px;
   border-radius: 9px;
   // margin-left: 6px;
@@ -276,7 +275,7 @@
     }
 
     &:active {
-      background: #fff;
+      background: $color-white;
     }
   }
 
@@ -293,7 +292,7 @@
       height: 0;
       border-width: 15px 15px 15px 0;
       border-style: solid;
-      border-color: rgba(0, 0, 0, 0) #fff;
+      border-color: rgba(0, 0, 0, 0) $color-white;
     }
     
     h2 {
@@ -319,7 +318,7 @@
 
     .link--mailto {
       font-size: 21px;
-      border-bottom: 2px solid $color-midblue;
+      border-bottom: 2px solid $color-skyblue4;
     }
   }
 
@@ -358,7 +357,7 @@
         position: relative;
         left: -30px;
         margin-right: -21px;
-        color: $color-midblue;
+        color: $color-skyblue4;
       }
     }
   }
@@ -394,7 +393,7 @@
       top: 75px;
       border-width: 15px 0 15px 15px;
       border-style: solid;
-      border-color: rgba(0, 0, 0, 0) #fff;
+      border-color: rgba(0, 0, 0, 0) $color-white;
     }
 
     .timeline-row:first-of-type &:after {
@@ -419,7 +418,7 @@
       z-index: 2;
       width: auto;
       margin: 0 0 -60px;
-      border-bottom: 2px solid $color-midblue;
+      border-bottom: 2px solid $color-skyblue4;
       
       &:before {
         display: inline;
@@ -444,7 +443,7 @@
         height: 0;
         border-width: 15px 15px 15px 0;
         border-style: solid;
-        border-color: rgba(0, 0, 0, 0) #fff;
+        border-color: rgba(0, 0, 0, 0) $color-white;
       }
     }
 

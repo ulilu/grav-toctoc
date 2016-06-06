@@ -37,9 +37,6 @@
 
 .toctoc-logo {
     display: inline-block;
-    width: 62px;
-    height: 62px;
-    vertical-align: middle;
     margin: 14px 6px 14px 9px;
 
     @media only screen and (min-width: 750px) {
@@ -69,7 +66,7 @@
 }
 
 .logo-part2 {
-  color: $color-logo0;
+  color: $color-seagreen2;
   @include fontweight(regular);
 }
 
@@ -103,11 +100,11 @@
   
   a {
     color: #999;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $color-grey1;
     
     &:hover {
-      color: $color-logo0;
-      border-bottom: 1px solid $color-logo0;
+      color: $color-seagreen2;
+      border-bottom: 1px solid $color-seagreen2;
     }
   }
 }
@@ -132,10 +129,10 @@
 }
 
 .langswitcher .active {
-  color: $color-logo0;
+  color: $color-seagreen2;
   border: none;
   text-decoration: none;
   cursor: default;
-  border-bottom: 1px solid #fff !important;
+  border-bottom: 1px solid $color-white !important;
   @include fontweight(semibold);
 }

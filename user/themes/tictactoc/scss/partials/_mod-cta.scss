@@ -6,10 +6,10 @@
 .block--cta  {
   // @include dotted-border('top', 12, 'CDE5F1');
   // border-top: 12px solid rgba(205,229,241,.33);
-  border-top: 6px solid #fff;
+  border-top: 6px solid $color-white;
   // box-shadow: 0 -12px 0 rgba(255,255,255,.5),
   //             0 4px 0 rgba(0,0,0,.1);
-  background: #fff;
+  background: $color-white;
   // padding-bottom: 45px; // compensate for removed border-bottom
   // @include boxshadow01(0.1);
   // box-shadow: 0 4px 0 1px rgba(0,0,0,0.1);
@@ -50,7 +50,7 @@
   }
   
   a {
-    color: $color-logo0;
+    color: $color-seagreen2;
     // border-bottom: 2px solid $color-lightblue;
     white-space: nowrap;
     padding: 6px 0 2px;
@@ -58,7 +58,8 @@
     @include fontweight(semibold);
     
     &:hover {
-      color: $color-red3;
+      // color: $color-red3;
+      color: $color-rouge2;
       // border-bottom: 2px solid $color-red4;
     }
   }

@@ -32,7 +32,7 @@ html	{
 body	{
   position: relative;
   min-height: 100%;
-  background: #fff;
+  background: $color-white;
   font-size: $base-font-size;
   line-height: $base-line-height;
   -webkit-animation: bugfix infinite 1s;  //  1
@@ -55,7 +55,7 @@ body	{
   z-index: 10;
   width: 100%;
   max-height: 120px;
-  background: #fff;
+  background: $color-white;
 }
 
 /* 

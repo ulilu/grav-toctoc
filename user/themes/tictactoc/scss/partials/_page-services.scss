@@ -175,7 +175,7 @@
   .card.item__summary {
     float: none; 
     z-index: 3;
-    background-color: #fff;
+    background-color: $color-white;
     padding: 18px;
     margin: 0 24px 18px;
     width: auto !important;
@@ -186,7 +186,7 @@
   }
 
   h3 {
-    color: #fff;
+    color: $color-white;
     font-size: 24px;
     line-height: 30px;
     padding: 18px;
