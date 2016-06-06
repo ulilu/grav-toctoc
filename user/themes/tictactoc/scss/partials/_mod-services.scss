@@ -95,7 +95,7 @@
   color: $color-white;
   @include fluid-type(font-size, 
     320px, 720px, 30px, 60px, 
-           720px, 1150px, 36px, 60px);
+           720px, 1200px, 36px, 66px);
   
   * {
     vertical-align: middle;
@@ -139,7 +139,7 @@
   
   @include fluid-type(width height, 
     320px, 720px, 48px, 75px, 
-           720px, 1150px, 48px, 75px);
+           720px, 1200px, 48px, 75px);
   
 
   
