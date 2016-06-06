@@ -94,7 +94,7 @@
   z-index: 2;
   color: $color-white;
   @include fluid-type(font-size, 
-    320px, 720px, 36px, 66px, 
+    320px, 720px, 33px, 66px, 
            720px, 1200px, 36px, 66px);
   
   * {
@@ -138,7 +138,7 @@
   transition: box-shadow .3s;
   
   @include fluid-type(width height, 
-    320px, 720px, 48px, 75px, 
+    320px, 720px, 42px, 75px, 
            720px, 1200px, 48px, 75px);
   
 
