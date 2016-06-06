@@ -369,7 +369,7 @@
 }
 
 /*------------------------------------*\
-  ADAPTATION: .block--about
+  ADAPTATION: .block--howto
 \*------------------------------------*/
 
 .page-welcome {
@@ -476,14 +476,12 @@
     }
 
     p	{
-     //  font-size: 18px;
-    	// line-height: 30px;
-			margin-bottom: 18px;
+			margin-bottom: 24px;
       
-      @media only screen and (min-width: 650px) { 
-        // font-size: 21px;
-        // line-height: 36px;
-      }
+      // @media only screen and (min-width: 650px) { 
+      //   // font-size: 21px;
+      //   // line-height: 36px;
+      // }
 		}
     
     @media only screen and (min-width: 800px) {
