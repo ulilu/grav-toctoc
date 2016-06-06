@@ -4,13 +4,10 @@
 
 
 .page-pricing {
-  background: $color-greywalls1;  // sand;
-  background: $color-greywalls2;  //  sandbeige
   background: $color-skyblue5;
   
   h1 {
-    color: $color-lavender2;
-    color: $color-logo1;
+    color: $color-skyblue3;
   }
 }
 
@@ -27,34 +24,34 @@
 .cell-pricing {
   margin: 0 0 18px;
   padding: 0 !important;
+  border-color: $color-skyblue5;
+  border-style: solid;
 
   @media only screen and (min-width: 480px) {
     margin: 0 0 24px;
   }
 
   @media only screen and (min-width: 800px) {
-    border-bottom: 0;
-    border-right: 6px solid $color-skyblue5;
+    border-right-width: 6px;
 
     &:last-of-type {
-      border-right: 0;
-      border-left: 6px solid $color-skyblue5;
+      border-left-width: 6px;
     }
   }
 
   @media only screen and (min-width: 1000px) {
-    border-right: 12px solid $color-skyblue5;
+    border-right-width: 12px;
 
     &:last-of-type {
-      border-left: 12px solid $color-skyblue5;
+      border-left-width: 12px;
     }
   }
 
   @media only screen and (min-width: 1280px) {
-    border-right: 18px solid $color-skyblue5;
+    border-right-width: 18px;
 
     &:last-of-type {
-      border-left: 18px solid $color-skyblue5;
+      border-left-width: 18px;
     }
   }
 
@@ -95,6 +92,7 @@
     display: inline-block;
     line-height: 21px;
     padding: 18px 24px 0 24px;
+    color: $color-skyblue3;
   }
 }
 
