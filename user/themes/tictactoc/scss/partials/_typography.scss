@@ -192,6 +192,16 @@ h1, h2, h3, h4, h5, h6	{
 
 
 
+/**
+ *
+ * http://madebymike.com.au/writing/precise-control-responsive-typography/
+ * https://codepen.io/MadeByMike/pen/YPJJYv
+ */
+
+h1 {
+  @include fluid-type(font-size, 320px, 800px, 36px, 54px);
+  line-height: 120%;
+}
 
 
 .fontsize-alpha {
