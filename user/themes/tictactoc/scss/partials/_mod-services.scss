@@ -49,9 +49,14 @@
     }
   }
 
+/**
+ * 1. Unfortunately, Chrome shows the two cells stacked on top of each other.
+ * I think it might be due to rounding errors when set to 50% but who knows...
+ *
+ */
   @media only screen and (min-width: 720px) {
     display: table-cell;
-    width: 45%;
+    width: 49%;  // 1.
     padding-bottom: 0;
     
     &:first-of-type {
@@ -90,7 +95,7 @@
   color: $color-white;
   @include fluid-type(font-size, 
     320px, 720px, 30px, 60px, 
-           721px, 1150px, 36px, 60px);
+           720px, 1150px, 36px, 60px);
   
   * {
     vertical-align: middle;
@@ -117,7 +122,7 @@
   line-height: 135%;
   @include fluid-type(font-size, 
     320px, 720px, 18px, 24px, 
-           721px, 900px, 21px, 24px);
+           720px, 900px, 21px, 24px);
 }
 
 
@@ -134,7 +139,7 @@
   
   @include fluid-type(width height, 
     320px, 720px, 48px, 75px, 
-           721px, 1150px, 48px, 75px);
+           720px, 1150px, 48px, 75px);
   
 
   
