@@ -203,6 +203,11 @@ h1 {
   line-height: 120%;
 }
 
+p {
+  @include fluid-type(font-size, 320px, 900px, 16px, 21px);
+  line-height: 160%;
+}
+
 
 .fontsize-alpha {
   // font-size: 9vw !important;
