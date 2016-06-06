@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6	{
  */
 
 h1 {
-  @include fluid-type(font-size, 320px, 800px, 36px, 54px);
+  @include fluid-type(font-size, 320px, 900px, 30px, 54px);
   line-height: 120%;
 }
 
