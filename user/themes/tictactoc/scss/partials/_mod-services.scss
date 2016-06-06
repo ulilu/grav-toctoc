@@ -102,7 +102,6 @@
     display: inline-block;
   }
 
-
   // @media only screen and (min-width: 720px) { 
   //   font-size: 40px !important;
   // }
@@ -138,7 +137,7 @@
   transition: box-shadow .3s;
   
   @include fluid-type(width height, 
-    320px, 720px, 42px, 75px, 
+    320px, 720px, 48px, 75px, 
            720px, 1200px, 48px, 75px);
            
   @include fluid-type(margin-right, 
