@@ -49,7 +49,7 @@
     }
   }
 
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 720px) {
     display: table-cell;
     width: 50%;
     padding-bottom: 0;
@@ -88,23 +88,26 @@
   position: relative;
   z-index: 2;
   color: $color-white;
+  @include fluid-type(font-size, 320px, 720px, 30px, 60px);
+  @include fluid-type(font-size, 721px, 1150px, 30px, 60px);
   
   * {
     vertical-align: middle;
     display: inline-block;
   }
 
-  @media only screen and (min-width: 800px) { 
-    font-size: 40px !important;
-  }
 
-  @media only screen and (min-width: 950px) { 
-    font-size: 48px !important;
-  }
+  // @media only screen and (min-width: 720px) { 
+  //   font-size: 40px !important;
+  // }
 
-  @media only screen and (min-width: 1150px) { 
-    font-size: 60px !important;
-  }
+  // @media only screen and (min-width: 950px) { 
+  //   font-size: 48px !important;
+  // }
+
+  // @media only screen and (min-width: 1150px) { 
+  //   font-size: 60px !important;
+  // }
 }
 
 
@@ -118,25 +121,31 @@
   display: inline-block;
   width: 54px;
   height: 54px;
-  margin-right: 18px;
-  margin-left: -3px;
+  // margin-right: 18px;
+  // margin-left: -3px;
+  margin: 0 18px 0 -3px;
   border-radius: 50%;
   transition: box-shadow .3s;
   
-  @media only screen and (min-width: 450px) {
-    width: 66px;
-    height: 66px;
-    margin-right: 21px;
-    margin-left: -6px;
-  }
+  @include fluid-type(width height, 320px, 720px, 54px, 75px);
+  @include fluid-type(width height, 721px, 1150px, 60px, 90px);
   
-  @media only screen and (min-width: 550px) {
-    width: 75px;
-    height: 75px;
-    margin-right: 24px;
-  }
+
   
-  @media only screen and (min-width: 800px) {
+  // @media only screen and (min-width: 450px) {
+  //   width: 66px;
+  //   height: 66px;
+  //   margin-right: 21px;
+  //   margin-left: -6px;
+  // }
+  
+  // @media only screen and (min-width: 550px) {
+  //   width: 75px;
+  //   height: 75px;
+  //   margin-right: 24px;
+  // }
+  
+  @media only screen and (min-width: 720px) {
     a:hover & {
       box-shadow: 0 0 0 6px $color-white !important;
     }
@@ -151,37 +160,37 @@
 .page-welcome .icon--service,
 .page-services .icon--service,
 .page-pricing .icon--service {
-  margin: 0 18px 0 -3px;
+  // margin: 0 18px 0 -3px;
   
-  @media only screen and (min-width: 450px) {
-    width: 66px;
-    height: 66px;
-    margin-right: 21px;
-    margin-left: -6px;
-  }
+  // @media only screen and (min-width: 450px) {
+    // width: 66px;
+    // height: 66px;
+  //   margin-right: 21px;
+  //   margin-left: -6px;
+  // }
   
-  @media only screen and (min-width: 550px) {
-    width: 75px;
-    height: 75px;
-    margin-right: 24px;
-  }
+  // @media only screen and (min-width: 550px) {
+  //   width: 75px;
+  //   height: 75px;
+  //   margin-right: 24px;
+  // }
   
-  @media only screen and (min-width: 800px) { 
-    width: 54px;
-    height: 54px;
-    margin-right: 18px;
-  }
+  // @media only screen and (min-width: 720px) { 
+  //   width: 54px;
+  //   height: 54px;
+  //   margin-right: 18px;
+  // }
 
-  @media only screen and (min-width: 950px) { 
-    width: 66px;
-    height: 66px;
-    margin-right: 21px;
-  }
+  // @media only screen and (min-width: 950px) { 
+  //   width: 66px;
+  //   height: 66px;
+  //   margin-right: 21px;
+  // }
 
-  @media only screen and (min-width: 1150px) { 
-    width: 75px;
-    height: 75px;
-    margin-right: 24px;
-    margin-left: -6px;
-  }
+  // @media only screen and (min-width: 1150px) { 
+  //   width: 75px;
+  //   height: 75px;
+  //   margin-right: 24px;
+  //   margin-left: -6px;
+  // }
 }
