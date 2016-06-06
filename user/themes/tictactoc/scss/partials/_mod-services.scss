@@ -140,6 +140,10 @@
   @include fluid-type(width height, 
     320px, 720px, 42px, 75px, 
            720px, 1200px, 48px, 75px);
+           
+  @include fluid-type(width height, 
+    320px, 720px, 12px, 24px, 
+           720px, 1200px, 15px, 24px);
   
 
   
