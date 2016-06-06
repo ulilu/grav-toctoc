@@ -483,6 +483,11 @@
       //   // line-height: 36px;
       // }
 		}
+
+    a {
+      color: $color-seagreen1;
+      color: #004A52; // even darker
+    }
     
     @media only screen and (min-width: 800px) {
       padding-bottom: 60px;
