@@ -88,8 +88,9 @@
   position: relative;
   z-index: 2;
   color: $color-white;
-  @include fluid-type(font-size, 320px, 720px, 30px, 60px);
-  @include fluid-type(font-size, 721px, 1150px, 30px, 60px);
+  @include fluid-type(font-size, 
+    320px, 720px, 30px, 60px, 
+           721px, 1150px, 30px, 60px);
   
   * {
     vertical-align: middle;
@@ -127,8 +128,9 @@
   border-radius: 50%;
   transition: box-shadow .3s;
   
-  @include fluid-type(width height, 320px, 720px, 54px, 75px);
-  @include fluid-type(width height, 721px, 1150px, 60px, 90px);
+  @include fluid-type(width height, 
+    320px, 720px, 54px, 75px, 
+           721px, 1150px, 60px, 90px);
   
 
   

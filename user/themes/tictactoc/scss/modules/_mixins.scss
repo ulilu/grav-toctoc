@@ -39,24 +39,41 @@ h1 {
 }
 */
 
+//  160606
+//  Modified by uli to accomodate an optional second "fluid resize" stage
+//  via an @if clause
 //
 // =========================================================================
 
-@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+@mixin fluid-type($properties, $min1-vw, $max1-vw, $min1-value, $max1-value, $min2-vw: null, $max2-vw: null, $min2-value: null, $max2-value: null) {
   & {
     @each $property in $properties {
-      #{$property}: $min-value;
+      #{$property}: $min1-value;
     }
 
-    @media screen and (min-width: $min-vw) {
+    @media screen and (min-width: $min1-vw) {
       @each $property in $properties {
-        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+        #{$property}: calc(#{$min1-value} + #{strip-unit($max1-value - $min1-value)} * (100vw - #{$min1-vw}) / #{strip-unit($max1-vw - $min1-vw)});
       }
     }
 
-    @media screen and (min-width: $max-vw) {
+    @media screen and (min-width: $max1-vw) {
       @each $property in $properties {
-        #{$property}: $max-value;
+        #{$property}: $max1-value;
+      }
+    }
+  
+    @if $min2-vw and $max2-vw and $min2-value and $max2-value {
+      @media screen and (min-width: $min2-vw) {
+        @each $property in $properties {
+          #{$property}: calc(#{$min2-value} + #{strip-unit($max2-value - $min2-value)} * (100vw - #{$min2-vw}) / #{strip-unit($max2-vw - $min2-vw)});
+        }
+      }
+  
+      @media screen and (min-width: $max2-vw) {
+        @each $property in $properties {
+          #{$property}: $max2-value;
+        }
       }
     }
   }
