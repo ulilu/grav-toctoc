@@ -144,10 +144,7 @@
     @include boxshadow01(0.1);
   }
 
-  @media only screen and (min-width: 420px) {
-    // top: 50%;
-    // transform: translateY(-62%);
-  
+  @media only screen and (min-width: 420px) {  
     img {
       top: 0;
       left: 0;
@@ -184,9 +181,9 @@
     position: absolute;  /* 1 */
     left: 50%;           /* 1 */
     height: 120px;       /* 1 */
-
+    top: 50%;
+    transform: translateY(-62%) translateZ(0);
     /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
 
     &.is-hidden {
