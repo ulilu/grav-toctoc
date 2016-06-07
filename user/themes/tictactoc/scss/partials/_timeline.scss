@@ -186,8 +186,9 @@
  */
   @media only screen and (min-width: 1000px) {
     position: absolute;  /* 1 */
-    // left: 50%;           /* 1 */
-    height: 120px;       /* 1 */
+    left: 50%;           /* 1 */ 
+    height: 100%;   /* 1 */
+    padding-bottom: 24px;
 
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
