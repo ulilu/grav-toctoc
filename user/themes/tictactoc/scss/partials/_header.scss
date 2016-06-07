@@ -146,14 +146,24 @@
     transition: transform .25s ease-in-out;
     will-change: transform
 }
-.headroom--pinned {
-    position: fixed;
-    transform: translateY(0)
+
+.headroom--top {
+  position: relative;
 }
-.headroom--unpinned {
-    position: relative;
-    transform: translateY(-100%)
+
+.headroom--not-top {
+  position: fixed;
+  top: 0;
 }
+
+// .headroom--pinned {
+//     position: fixed;
+//     transform: translateY(0)
+// }
+// .headroom--unpinned {
+//     position: relative;
+//     transform: translateY(-100%)
+// }
 
 
 
