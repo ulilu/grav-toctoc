@@ -102,7 +102,7 @@
 
   @media only screen and (min-width: 1000px) {
     // right: 0;
-    padding-bottom: 0;
+    padding-bottom: 12px;
     
     &:before {
       z-index: 1;
@@ -194,7 +194,7 @@
     // position: absolute;  /* 1 */
     left: 50%;           /* 1 */ 
     // height: 100%;   /* 1 */
-    padding-bottom: 0;
+    padding-bottom: 12px;
 
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
