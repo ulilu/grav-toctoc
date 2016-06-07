@@ -271,10 +271,10 @@ $("nav").headroom({
    */
   $('.js-scrollmenu').click(function(){
       if ( $( this ).hasClass( "active" ) ) {
-      	$('.main-nav').animate({ scrollLeft: "-=400" }, 350);
+      	$('.main-nav').animate({ scrollLeft: "-=450" }, 350);
       	$( this ).toggleClass("active");
 			} else {
-      	$('.main-nav').animate({ scrollLeft: "+=400" }, 350);
+      	$('.main-nav').animate({ scrollLeft: "+=450" }, 350);
       	$( this ).toggleClass("active");
       }
   });
