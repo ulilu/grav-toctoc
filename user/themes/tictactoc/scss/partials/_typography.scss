@@ -203,9 +203,24 @@ h1 {
   line-height: 120%;
 }
 
+h2 {
+  @include fluid-type(font-size, 320px, 900px, 24px, 42px);
+  line-height: 135%;
+}
+
+h3 {
+  @include fluid-type(font-size, 320px, 900px, 18px, 30px);
+  line-height: 135%;
+}
+
 h4 {
   @include fluid-type(font-size, 320px, 900px, 18px, 24px);
   line-height: 135%;
+}
+
+h6 {
+  @include fluid-type(font-size, 320px, 900px, 16px, 21px);
+  line-height: 160%;
 }
 
 
@@ -216,10 +231,11 @@ p {
 
 
 .fontsize-alpha {
+  @include fluid-type(font-size, 320px, 900px, 30px, 72px);
   // font-size: 9vw !important;
   // font-size: calc(4vw - ( ( 1vw * 1vw ) / 10));  // unfortunately this doesnt work
-  font-size: 9vw;
-  line-height: 120%;
+  // font-size: 9vw;
+  // line-height: 120%;
   
   // @media only screen and (min-width: 450px) {
   //   font-size: 54px !important;
@@ -231,9 +247,9 @@ p {
   //   line-height: 78px; 
   // }
   
-  @media only screen and (min-width: 800px) {
-    font-size: 72px;
-  }
+  // @media only screen and (min-width: 800px) {
+  //   font-size: 72px;
+  // }
 
   // @media only screen and (min-width: 1200px) {
   //   font-size: 81px !important;
