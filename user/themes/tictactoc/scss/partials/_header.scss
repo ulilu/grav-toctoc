@@ -152,19 +152,10 @@
 }
 
 .headroom--not-top {
-  position: fixed;
+  position: fixed !important;
   top: 0;
+  margin-bottom: -51px;  // to prevent the collapse of the empty space, formerly occupied by the nav-bar with position: relative;
 }
-
-// .headroom--pinned {
-//     position: fixed;
-//     transform: translateY(0)
-// }
-// .headroom--unpinned {
-//     position: relative;
-//     transform: translateY(-100%)
-// }
-
 
 
 
