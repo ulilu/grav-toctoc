@@ -5,7 +5,6 @@
 .nav-bar {
   position: relative;
   height: 51px;
-  max-width: 1200px;
 
   // @media only screen and (min-width: 1200px) {
   //   overflow: visible;
@@ -15,7 +14,8 @@
 .main-nav__wrapper {
   position: relative;
   z-index: 2;
-  width: 100%;
+  width: 100vw;
+  max-width: 1200px;
   overflow: hidden;
   // background: #695D8E;
   // background: #81493D;
