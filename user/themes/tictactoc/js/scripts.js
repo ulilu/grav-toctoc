@@ -130,7 +130,16 @@ $(document).ready(function() {
   // Sticky header via headroom.js
   // https://github.com/WickyNilliams/headroom.js
   // http://wicky.nillia.ms/headroom.js/
-  $("header").headroom();
+$("nav").headroom({
+  "offset": 216,
+  "tolerance": 5,
+  "classes": {
+    "initial": "animated",
+    "pinned": "slideDown",
+    "unpinned": "slideUp"
+  }
+});
+
 
 
 
