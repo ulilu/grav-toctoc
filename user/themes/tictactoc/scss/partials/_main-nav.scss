@@ -328,7 +328,7 @@
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     animation-fill-mode: both;
-    will-change: transform, opacity, background
+    will-change: transform, opacity
 }
 @-webkit-keyframes slideDown {
     0% {
@@ -727,14 +727,15 @@
 
 
 
-.animated.swingInX {
-  .main-nav__wrapper {
-    background: $color-logo1;
-  }
-}
+// .animated.swingInX {
+//   .main-nav__wrapper {
+//     background: $color-logo1;
+//     transition: background-color .5 linear;
+//   }
+// }
 
-.animated.swingOutX {
-  .main-nav__wrapper {
-    background: $color-rouge1;
-  }
-}
+// .animated.swingOutX {
+//   .main-nav__wrapper {
+//     background: $color-rouge1;
+//   }
+// }
