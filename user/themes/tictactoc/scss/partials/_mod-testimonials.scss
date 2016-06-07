@@ -93,11 +93,9 @@
   h3 {
     position: relative;
     max-width: 1140px;
-    font-size: 18px;
-    line-height: 27px;
+    // font-size: 18px;
+    // line-height: 27px;
     background: $color-white;
-    // color: $color-brown;
-    // color: $color-logo1;
     color: $color-rouille1;
     border-radius: 24px;
     padding: 24px;
@@ -111,15 +109,15 @@
       width: calc(100% - 155px);
     }
 
-    @media only screen and (min-width: 600px) {
-      font-size: 21px;
-      line-height: 30px;
-    }
+    // @media only screen and (min-width: 600px) {
+    //   font-size: 21px;
+    //   line-height: 30px;
+    // }
 
-    @media only screen and (min-width: 900px) {
-      font-size: 24px;
-      line-height: 36px;
-    }
+    // @media only screen and (min-width: 900px) {
+    //   font-size: 24px;
+    //   line-height: 36px;
+    // }
     
     /*
      *  Left pointing triangle
@@ -164,11 +162,11 @@
     }
     
     strong {
-      font-size: 21px;
+      // font-size: 21px;
       
       @media only screen and (min-width: 520px) {
         display: block;
-        font-size: 24px;
+        // font-size: 24px;
         margin-bottom: 3px;
       }
     }
