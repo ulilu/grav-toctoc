@@ -270,8 +270,8 @@
   p {
     // color: #666;
     margin: 0;
-    font-size: 16px;
-    line-height: 24px;
+    // font-size: 16px;
+    // line-height: 24px;
   }
 
   // Email-Link & pseudo-element arrow
@@ -328,6 +328,7 @@
 
   @media only screen and (min-width: 480px) {
     margin-left: 108px;
+    padding: 24px;
     
     // &:after {
     //   top: 30px;
@@ -346,7 +347,7 @@
 
   @media only screen and (min-width: 700px) {
     margin-left: 144px;
-    padding: 24px;
+    padding: 30px;
     
     // &:after {
     //   top: 45px;
