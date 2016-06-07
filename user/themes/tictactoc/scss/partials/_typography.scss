@@ -257,6 +257,7 @@ p {
 }
 
 .fontsize-beta {
+  @include fluid-type(font-size, 320px, 720px, 18px, 30px);
     // font-size: 5.5vw !important;
     // line-height: 138%;
 
