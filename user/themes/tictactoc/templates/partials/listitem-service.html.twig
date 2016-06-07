@@ -6,7 +6,7 @@
 		{{ page.media[page.header.image].cropResize(800).html() }}
 	</span>
 
-  <h2 class="headline--service beta"><span class="icon--service  icon--{{page.title }}"></span><span class="font-light">toctoc</span><span>{{ page.title|slice(6) }}</span></h2>
+  <h2 class="headline--service"><span class="icon--service  icon--{{page.title }}"></span><span class="font-light">toctoc</span><span>{{ page.title|slice(6) }}</span></h2>
 
 {#   <h2 class="headline--service beta"><img class="icon--service" src="{{ theme_url }}/img/{{page.header.icon}}.svg" /><span class="font-light">toctoc</span><span>{{ page.title|slice(6) }}</span></h2> #}
 
@@ -19,11 +19,11 @@
 
 {% elseif uri.path() == '/' %}
 
-	<h2 class="headline--service beta color-{{ page.header.page_color }}"><span class="icon--service  icon--{{page.title }}"></span><span class="font-light">toctoc</span><span>{{ page.title|replace({"toctoc": ""}) }}</span></h2>
+	<h2 class="headline--service color-{{ page.header.page_color }}"><span class="icon--service  icon--{{page.title }}"></span><span class="font-light">toctoc</span><span>{{ page.title|replace({"toctoc": ""}) }}</span></h2>
 
 {# 	<h2 class="headline--service beta color-{{ page.header.page_color }}"><img class="icon--service" src="{{ theme_url }}/img/{{page.header.icon}}.svg" /><span class="font-light">toctoc</span><span>{{ page.title|replace({"toctoc": ""}) }}</span></h2> #}
 
-	<h4 class="byline--service">{{ page.header.subtitle_short }}</h4>
+	<h4 class="byline--service color-{{ page.header.page_color }}">{{ page.header.subtitle_short }}</h4>
 	<p>{{ page.header.blurb_short }}</p>
 
 	<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>{% if langswitcher.current == 'fr' %}En savoir +{% elseif langswitcher.current == 'en' %}Tell me more{% endif %}</strong></span>

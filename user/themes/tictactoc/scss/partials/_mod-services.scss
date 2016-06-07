@@ -94,8 +94,8 @@
   z-index: 2;
   color: $color-white;
   @include fluid-type(font-size, 
-    320px, 720px, 33px, 66px, 
-           720px, 1200px, 36px, 66px);
+    320px, 720px, 33px, 60px, 
+           720px, 1200px, 36px, 60px);
   
   * {
     vertical-align: middle;
