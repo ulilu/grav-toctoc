@@ -15,13 +15,14 @@
 				</div>
 
 				<figcaption class="timeline-row__info">
+				{{ dump(uri.path) }}
 
 					{% if uri.path == '/'  %}
 					
 						<h2><a class="color-{{ step.color }}" href="
-							{% if grav.language.getActive == 'en' %}
+							{% if langswitcher.current == 'en' %}
 								{{ page.find('/how-it-works').url() }}
-							{% elseif grav.language.getActive == 'fr' %} 
+							{% elseif langswitcher.current == 'fr' %} 
 								{{ page.find('/comment-ca-marche').url() }}
 							{% endif %}#step{{ loop.index0 }}">{{ loop.index }}. {{ step.title }}</a></h2>
 
