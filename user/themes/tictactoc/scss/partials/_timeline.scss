@@ -90,7 +90,7 @@
   }
 
   @media only screen and (min-width: 700px) {
-    padding: 0 0 30px 0;
+    // padding: 0 0 30px 0;
     
     &:before {
       left: 52px;
@@ -145,8 +145,12 @@
   }
 
   @media only screen and (min-width: 420px) {  
-    display: flex;
-    align-items: center;
+    
+    /**
+     *  1. Using this to vertically align in relation to .timeline-row__info
+     */
+    display: flex;  // 1.
+    align-items: center;  // 1.
   
     img {
       top: 0;
@@ -182,7 +186,7 @@
  */
   @media only screen and (min-width: 1000px) {
     position: absolute;  /* 1 */
-    left: 50%;           /* 1 */
+    // left: 50%;           /* 1 */
     height: 120px;       /* 1 */
 
     /* Force Hardware Acceleration in WebKit */
@@ -371,16 +375,18 @@
     }
   }
 
-
+  /**
+   *  1. Only needed on how it works page
+   */
   @media only screen and (min-width: 1000px) {
     width: calc(50% - 80px);
     margin-left: 0;
-    margin-top: -30px;
+    // margin-top: -30px;  // 1.
     border-radius: 12px;
     z-index: 3;
   
     .timeline-row:first-of-type & {
-      margin-top: 0;
+      // margin-top: 0;  // 1.
     }
 
     // /* Force Hardware Acceleration in WebKit */

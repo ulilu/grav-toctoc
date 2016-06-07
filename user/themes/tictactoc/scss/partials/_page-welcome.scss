@@ -375,10 +375,10 @@
 .page-welcome {
 
   .timeline-row {
-    padding-bottom: 0;
+    // padding-bottom: 0;
     
     &:last-of-type {
-      padding-bottom: 0;
+      // padding-bottom: 0;
       margin-bottom: 18px !important;
   
       @media only screen and (min-width: 1000px) {
@@ -388,8 +388,8 @@
   }
 
   .timeline-row__info {
-    margin-bottom: 30px;
-    padding: 0;
+    // margin-bottom: 30px;
+    // padding: 0;
     
     &:after {
       top: calc(50% - 15px);
@@ -420,17 +420,17 @@
 
     @media only screen and (min-width: 700px) {
       h2 a {
-        line-height: 48px;
+        // line-height: 48px;
         padding: 36px;
       }
     }
 
     @media only screen and (min-width: 1000px) {
-      margin-top: 0;
+      // margin-top: 0;
       min-height: 120px;
 
       h2 {
-        font-size: 42px;
+        // font-size: 42px;
       }
     }
   }
