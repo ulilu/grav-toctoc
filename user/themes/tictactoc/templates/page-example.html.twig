@@ -7,7 +7,7 @@
     <div class="stage__img">{{ page.media[page.header.image].quality(80).derivatives(400, 2000, 300).sizes('100vw').html(page.title, page.title, page.header.imagealign) }}</div>
 </div>
 
-<div class="block  block--example">
+<section class="block  block--example">
 
 	{% set twig_content_variable = page.content %}
 	{% set replace_value_var = '<img src' %}
@@ -15,6 +15,16 @@
 
 	{{ twig_content_variable|replace({ (replace_value_var): replace_with_value_var }) }}
 
-</div>
+</section>
+
+<section class="block  block--examples block--stretch">
+	<div class="block">
+		<h2>{{ page.find('/examples').title }}</h2>
+		{% for child in collection %}
+	    {% include childtemplate with {'page':child, 'truncate':true} %}
+			}
+	  {% endfor %}
+  </div>
+</section>
 
 {% endblock %}
