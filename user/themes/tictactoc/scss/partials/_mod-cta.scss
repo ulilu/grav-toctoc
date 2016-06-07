@@ -26,14 +26,18 @@
 
 .headline--cta {
   position: relative;
-  line-height: 48px;
+  // line-height: 48px;
   // color: $color-lavender;
-  color: $color-skyblue1;
+  // color: $color-skyblue1;
   color: $color-logo1;
-  font-size: 28px;
+  // font-size: 28px;
   text-indent: 62px;
   margin-bottom: 12px;
+  line-height: 160%;
   @include fontweight(regular);
+  @include fluid-type(font-size, 
+    320px, 900px, 24px, 36px, 
+           1100px, 1200px, 36px, 30px);
   
   &:before {
     content: "";
@@ -65,10 +69,10 @@
   }
   
   @media only screen and (min-width: 420px) {
-    font-size: 30px;
-    line-height: 51px;
+    // font-size: 30px;
+    // line-height: 51px;
     text-indent: 0;
-    padding-left: 75px;
+    padding-left: 90px;
     
     &:before {
       left: -3px;
@@ -78,9 +82,9 @@
   }
 
   @media only screen and (min-width: 480px) {
-    font-size: 33px;
-    line-height: 54px;
-    padding-left: 120px;
+    // font-size: 33px;
+    // line-height: 54px;
+    padding-left: 108px;
     
     &:before {
       left: -3px;
@@ -91,9 +95,9 @@
   }
 
   @media only screen and (min-width: 700px) {
-    font-size: 36px;
-    line-height: 60px;
-    padding-left: 150px;
+    // font-size: 36px;
+    // line-height: 60px;
+    padding-left: 144px;
     
     &:before {
       left: 12px;
@@ -125,7 +129,7 @@
 
   @media only screen and (min-width: 1180px) {
     padding-left: 96px;
-    font-size: 30px;
+    // font-size: 30px;
    
     &:before {
       top: -18px;
