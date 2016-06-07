@@ -49,13 +49,18 @@ body	{
     Top level elements
 \*---------------------------------------------------------------------------*/
 
-
+/**
+ * 
+ *  1. Necessary to prevent collapsing space of menu, 
+ *  when set to fixed via headroom.js (90px logo + 30px border = 120px header)
+ */
 .header {
   position: relative;
   z-index: 10;
   width: 100%;
   max-height: 120px;
   background: $color-white;
+  border-bottom: 30px solid #fff; // 1.
 }
 
 /* 
