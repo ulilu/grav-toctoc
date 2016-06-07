@@ -44,6 +44,8 @@
             {% do assets.add('jquery', {'priority': 101, 'group':'criticaljs'}) %}
             {% do assets.addJs('theme://js/fontfaceobserver.js', {'priority': 100, 'group':'criticaljs'}) %}
 
+            {% do assets.addJs('theme://js/headroom.min.js') %}
+            {% do assets.addJs('theme://js/jQuery.headroom.min.js') %}
             {% do assets.addJs('theme://js/lazysizes.min.js') %} 
             {% do assets.addJs('theme://js/fittext_uli.js') %} 
             {% do assets.addJs('theme://js/scripts.js') %} 

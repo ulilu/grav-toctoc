@@ -126,10 +126,14 @@ $(document).ready(function() {
   activeMenu();
 
 
-  $('.main-nav__link').click(function(){
-    $('.main-nav__item.active').removeClass("active");
-    $(this).addClass("active");
-  });
+
+  // Sticky header via headroom.js
+  // https://github.com/WickyNilliams/headroom.js
+  // http://wicky.nillia.ms/headroom.js/
+  $("header").headroom();
+
+
+
 
 
   // the animation slide-duration corresponds with values in the css 
