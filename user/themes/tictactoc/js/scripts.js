@@ -135,8 +135,8 @@ $("nav").headroom({
   "tolerance": 5,
   "classes": {
     "initial": "animated",
-    "pinned": "slideDown",
-    "unpinned": "slideUp"
+    "pinned": "swingInX",
+    "unpinned": "swingOutX"
   }
 });
 

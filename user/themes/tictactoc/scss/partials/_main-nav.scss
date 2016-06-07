@@ -30,28 +30,28 @@
   }
 
   /* fade-out element on right side of main-nav, only on mobile */
-  @media only screen and (max-width: 800px) {
-    &:before,
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      height: 51px;
-      width: 100px;
-      pointer-events: none;
-    }
-    &:before {
-      left: 0;
-      width: 50px;
-      background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.33) );
-      z-index: 1;
-    }
-    &:after {
-      right: 0;
-      background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6) );
-    }
-  }
+  // @media only screen and (max-width: 800px) {
+  //   &:before,
+  //   &:after {
+  //     content: "";
+  //     display: block;
+  //     position: absolute;
+  //     top: 0;
+  //     height: 51px;
+  //     width: 100px;
+  //     pointer-events: none;
+  //   }
+  //   &:before {
+  //     left: 0;
+  //     width: 50px;
+  //     background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.33) );
+  //     z-index: 1;
+  //   }
+  //   &:after {
+  //     right: 0;
+  //     background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6) );
+  //   }
+  // }
 
   @media only screen and (min-width: 1200px) {
     border-radius: 9px;
