@@ -119,8 +119,7 @@
     margin: 0 0 -24px;
     display: table;
     overflow: auto;
-    // padding: 6px;
-    padding: 0;
+    padding: 6px;
     margin: 0;
   }
 }
@@ -133,19 +132,11 @@
   width: 1%;
   text-align: center;
   margin: 0;
-  padding: 6px 3px;
-
-  &:not(.nav__item--sub) {
-    background: $color-rouge1;
-  }
+  padding: 0 3px;
 
   &:first-of-type:not(.nav__item--sub) {
     width: 0.5%;
     padding: 0;
-    
-    @media only screen and (min-width: 800px) {
-      border-bottom-left-radius: 9px;
-    }
   }
 
   &:last-of-type:not(.nav__item--sub) {
@@ -153,7 +144,6 @@
     
     @media only screen and (min-width: 800px) {
       padding-right: 0;
-      border-bottom-right-radius: 9px;
     }
   }
 }
@@ -202,7 +192,6 @@
 .sub-nav {
   display: none;
   position: absolute;
-  z-index: -1;
   left: -3px;
   width: 100%;
   width: calc(100% + 6px);
@@ -217,23 +206,6 @@
   border-bottom-right-radius: 9px;
   // box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
   // border-bottom: 3px solid rgba(0,0,0,0.33);
-  
-  @media only screen and (min-width: 800px) {
-    -webkit-animation-duration: .5s;
-    -moz-animation-duration: .5s;
-    -o-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    will-change: transform, opacity;
-    
-    -webkit-animation-name: slideUp;
-    -moz-animation-name: slideUp;
-    -o-animation-name: slideUp;
-    animation-name: slideUp;
-  }
 }
 
 .nav__item--sub {
@@ -257,14 +229,28 @@
   }
 
   .sub-nav {
+    // -webkit-animation-duration: .5s;
+    // -moz-animation-duration: .5s;
+    // -o-animation-duration: .5s;
+    // animation-duration: .5s;
+    // -webkit-animation-fill-mode: both;
+    // -moz-animation-fill-mode: both;
+    // -o-animation-fill-mode: both;
+    // animation-fill-mode: both;
+    // will-change: transform, opacity;
+    
+    // -webkit-animation-name: slideUp;
+    // -moz-animation-name: slideUp;
+    // -o-animation-name: slideUp;
+    // animation-name: slideUp;
+
 
     @media only screen and (min-width: 800px) {
       display: block;
-      
-      -webkit-animation-name: slideDown;
-      -moz-animation-name: slideDown;
-      -o-animation-name: slideDown;
-      animation-name: slideDown;
+      // -webkit-animation-name: slideDown;
+      // -moz-animation-name: slideDown;
+      // -o-animation-name: slideDown;
+      // animation-name: slideDown;
     }
   }
 }
