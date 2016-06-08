@@ -219,13 +219,13 @@ h4 {
 }
 
 h6 {
-  @include fluid-type(font-size, 320px, 900px, 16px, 21px);
+  @include fluid-type(font-size, 320px, 900px, 18px, 21px);
   line-height: 160%;
 }
 
 
 p {
-  @include fluid-type(font-size, 320px, 900px, 16px, 21px);
+  @include fluid-type(font-size, 320px, 900px, 18px, 21px);
   line-height: 160%;
 }
 
