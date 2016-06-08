@@ -125,7 +125,7 @@
 }
 
 
-.main-nav__item {
+.nav__item {
   position: relative;
   display: table-cell;
   vertical-align: middle;
@@ -150,46 +150,42 @@
 }
 
 
-.main-nav__item--home a {
+.nav__link {
   display: block;
-  line-height: 36px;
-  font-size: 24px;
-  color: $color-white;
-  text-align: center;
-  padding: 0 12px;
-  min-width: 48px;
-  min-height: 39px;
-  
-  &.fa:before {
-    padding-right: 0;
-  }
-}
-
-.main-nav__link {
-  display: block;
+  font-size: 18px;
+  line-height: 31px;
   padding: 6px;
   white-space: nowrap;
   color: $color-white;
-  font-size: 18px;
-  line-height: 31px;
+  border-radius: 3px;
 
   .active &,
   .focus & {
-    background: $color-white;
-    border-radius: 3px;
-  }
-
-  .active &,
-  .focus &,
-  .active &:hover {
     color: $color-logo1 !important;
+    background: $color-white;
   }
 
   @media only screen and (min-width: 800px) {
-    &:hover {
-      color: currentColor;
+    &:hover,
+    .active &:hover  {
+      color: $color-logo1 !important;
       background: $color-white;
     }
+  }
+}
+
+.nav__link--home {
+  // display: block;
+  line-height: 36px;
+  font-size: 24px;
+  // color: $color-white;
+  // text-align: center;
+  padding: 0 12px;
+  // min-width: 48px;
+  // min-height: 39px;
+  
+  &[class*="fa-"]:before {
+    padding-right: 0;
   }
 }
 
@@ -213,38 +209,36 @@
   // border-bottom: 3px solid rgba(0,0,0,0.33);
 }
 
-.sub-nav__item {
+.nav__item--sub {
   display: block;
-  position: relative;
+  // position: relative;
   margin-bottom: 6px;
 }
 
-.sub-nav__link {
+.nav__link--sub {
   display: block;
-  font-size: 18px;
-  line-height: 31px;
+  // font-size: 18px;
+  // line-height: 28px;
   width: 100%;
-  padding: 6px;
-  border-radius: 3px;
-  color: $color-white;
+  // padding: 6px;
+  // border-radius: 3px;
+  // color: $color-white;
   
-  &:hover {
-    background: $color-white;
-    color: $color-logo1;
-  }
+  // &:hover {
+  //   background: $color-white;
+  //   color: $color-logo1;
+  // }
 }
 
 
-.main-nav__item:hover {
+.nav__item:hover {
 
-  > a {
-    background: $color-white;
-    border-radius: 3px;
+  > .nav__link {
     color: $color-logo1;
+    background: $color-white;
   }
 
   .sub-nav {
-
     @media only screen and (min-width: 800px) {
       display: block;
     }
