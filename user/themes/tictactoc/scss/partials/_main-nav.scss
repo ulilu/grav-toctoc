@@ -175,9 +175,10 @@
 }
 
 .nav__link--home {
-  line-height: 36px;
+  line-height: 39px;
   font-size: 24px;
-  padding: 0 12px;
+  padding: 0;
+  width: 48px;
   
   &[class*="fa-"]:before {
     padding-right: 0;
