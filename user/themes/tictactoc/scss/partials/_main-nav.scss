@@ -195,6 +195,7 @@
   left: -3px;
   width: 100%;
   width: calc(100% + 6px);
+  min-width: 150px;
   max-width: 240px;
   overflow: hidden;
   background: $color-rouge1;
