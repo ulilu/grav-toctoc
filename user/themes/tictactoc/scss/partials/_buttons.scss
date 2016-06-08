@@ -18,11 +18,11 @@
   
   * {
     display: inline-block;
-    vertical-align: middle;
+    // vertical-align: middle;
   }
   
   .fa {
-    margin-right: 9px;
+    padding-right: 9px;
     font-size: inherit;
     font-style: normal !important; // using a deprecated <i>-element to contain text within button. this should enable us to have a more consistent look with possible icon buttons.
   }
