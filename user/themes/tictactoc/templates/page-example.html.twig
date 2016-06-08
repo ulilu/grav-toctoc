@@ -1,5 +1,12 @@
 {% extends 'partials/base.html.twig' %}
 
+{% set collection = page.collection() %}
+
+{% set childtype = 'example' %}
+{# can be "example", "service", "item" #}
+
+{% set childtemplate = 'partials/listitem-' ~ childtype ~ '.html.twig' %}
+
 {% block content %}
 
 <div class="stage">
