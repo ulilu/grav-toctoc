@@ -4,7 +4,7 @@
 
 .nav-bar {
   position: relative;
-  height: 51px;
+  height: 54px;
 }
 
 .main-nav__wrapper {
@@ -58,7 +58,7 @@
   bottom: 0;
   right: 0;
   width: 42px;
-  height: 51px;
+  height: 54px;
   cursor: pointer;
   background: $color-rouge1;
   border-left: 2px solid $color-white;
@@ -73,7 +73,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    height: 51px;
+    height: 54px;
     width: 42px;
     color: $color-white;
     font-size: 36px;
@@ -89,7 +89,7 @@
     position: absolute;
     left: -2px;
     top: 0;
-    height: 51px;
+    height: 54px;
     width: 42px;
   }
 }
@@ -153,7 +153,7 @@
 .nav__link {
   display: block;
   font-size: 18px;
-  line-height: 31px;
+  line-height: 30px;
   padding: 6px;
   white-space: nowrap;
   color: $color-white;
@@ -175,14 +175,9 @@
 }
 
 .nav__link--home {
-  // display: block;
   line-height: 36px;
   font-size: 24px;
-  // color: $color-white;
-  // text-align: center;
   padding: 0 12px;
-  // min-width: 48px;
-  // min-height: 39px;
   
   &[class*="fa-"]:before {
     padding-right: 0;
@@ -221,17 +216,7 @@
 
 .nav__link--sub {
   display: block;
-  // font-size: 18px;
-  // line-height: 28px;
   width: 100%;
-  // padding: 6px;
-  // border-radius: 3px;
-  // color: $color-white;
-  
-  // &:hover {
-  //   background: $color-white;
-  //   color: $color-logo1;
-  // }
 }
 
 
