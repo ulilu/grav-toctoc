@@ -121,12 +121,24 @@ h1, h2, h3, h4, h5, h6	{
 //  Font Awesome implementation
 //  =========================================================================
 
-*.fa {
+/**
+ *
+ *  1. If not for this declaration, FontAwesome CSS would override the
+ *  native tags typography styles with its higher specificity.
+ */
+.fa {
   display: block;
   font-size: inherit;
+  line-height: inherit;  // 1.
   @include fontweight(regular);
 }
 
+/** 
+ *
+ *  1. Because FontAwesome isn't initially loaded, hide the fallback font
+ *  that most likely does not have this specific glyph. Only show if the
+ *  font-loading is done.
+ */
 [class*="fa-"]:before {
   display: inline-block;
   padding-right: 0.5em; 
@@ -137,10 +149,10 @@ h1, h2, h3, h4, h5, h6	{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Arial;
-  opacity: 0;
+  opacity: 0;  // 1.
   
   .fonts-loaded & {
-    opacity: 1;
+    opacity: 1;  // 1.
     font-family: FontAwesome;
   }
 }
@@ -218,13 +230,10 @@ h4 {
   line-height: 135%;
 }
 
-h6 {
-  @include fluid-type(font-size, 320px, 900px, 18px, 21px);
-  line-height: 160%;
-}
-
-
-p {
+h5,
+h6,
+p, 
+li {
   @include fluid-type(font-size, 320px, 1200px, 18px, 21px);
   line-height: 160%;
 }
