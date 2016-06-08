@@ -128,8 +128,10 @@
 .nav__item {
   position: relative;
   display: table-cell;
-  vertical-align: middle;
   width: 1%;
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: middle;
   text-align: center;
   margin: 0;
   padding: 0 3px;
@@ -151,8 +153,6 @@
 
 .nav__link {
   display: block;
-  font-size: 18px;
-  line-height: 30px;
   padding: 6px;
   white-space: nowrap;
   color: $color-white;
