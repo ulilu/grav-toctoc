@@ -171,6 +171,7 @@
   white-space: nowrap;
   color: $color-white;
   font-size: 18px;
+  line-height: 31px;
 
   .active &,
   .focus & {
@@ -220,6 +221,8 @@
 
 .sub-nav__link {
   display: block;
+  font-size: 18px;
+  line-height: 31px;
   width: 100%;
   padding: 6px;
   border-radius: 3px;
