@@ -161,14 +161,14 @@
   .active &,
   .focus & {
     color: $color-logo1 !important;
-    background: $color-white;
+    background-color: $color-white;
   }
 
   @media only screen and (min-width: 800px) {
     &:hover,
     .active &:hover  {
       color: $color-logo1 !important;
-      background: $color-white;
+      background-color: $color-white;
     }
   }
 }
