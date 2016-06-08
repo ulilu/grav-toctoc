@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6	{
  */
 .fa {
   display: block;
-  font-size: inherit;
+  // font-size: inherit;
   line-height: inherit;  // 1.
   @include fontweight(regular);
 }
