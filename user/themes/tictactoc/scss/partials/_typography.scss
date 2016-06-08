@@ -225,7 +225,7 @@ h6 {
 
 
 p {
-  @include fluid-type(font-size, 320px, 900px, 18px, 21px);
+  @include fluid-type(font-size, 320px, 1200px, 18px, 21px);
   line-height: 160%;
 }
 
