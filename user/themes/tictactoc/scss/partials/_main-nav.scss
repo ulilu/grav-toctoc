@@ -134,13 +134,13 @@
   margin: 0;
   padding: 0 3px;
 
-  &:first-of-type{
+  &:first-of-type:not(.nav__item--sub) {
     width: 0.5%;
     // padding-left: 0;
     padding: 0;
   }
 
-  &:last-of-type{
+  &:last-of-type:not(.nav__item--sub) {
     padding-right: 48px;
     
     @media only screen and (min-width: 800px) {
@@ -198,10 +198,13 @@
   display: none;
   position: absolute;
   left: -3px;
-  padding: 6px 6px 0;
-  width: 200px;
+  width: 100%;
+  width: calc(100% + 6px);
+  max-width: 240px;
   overflow: hidden;
   background: $color-rouge1;
+  padding: 6px 6px 0;
+  margin: 0;
   
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -211,7 +214,8 @@
 
 .nav__item--sub {
   display: block;
-  // position: relative;
+  width: 100%;
+  padding: 0;
   margin-bottom: 6px;
 }
 
