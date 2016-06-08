@@ -209,12 +209,12 @@ h2 {
 }
 
 h3 {
-  @include fluid-type(font-size, 320px, 900px, 18px, 30px);
+  @include fluid-type(font-size, 320px, 900px, 21px, 30px);
   line-height: 135%;
 }
 
 h4 {
-  @include fluid-type(font-size, 320px, 900px, 18px, 24px);
+  @include fluid-type(font-size, 320px, 900px, 21px, 24px);
   line-height: 135%;
 }
 
