@@ -100,6 +100,7 @@
     border-radius: 24px;
     padding: 24px;
     margin: 0 auto;
+    line-height: 140%;
     @include boxshadow02(0.1);
     @include fontweight(light);
     
@@ -107,6 +108,7 @@
       display: inline-block;
       vertical-align: top;
       width: calc(100% - 109px);
+      padding: 30px;
     }
 
     // @media only screen and (min-width: 600px) {
