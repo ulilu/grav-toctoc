@@ -121,17 +121,15 @@ h1, h2, h3, h4, h5, h6	{
 //  Font Awesome implementation
 //  =========================================================================
 
-/**
- *
- *  1. If not for this declaration, FontAwesome CSS would override the
- *  native tags typography styles with its higher specificity.
- */
-.fa {
-  display: block;
-  // font-size: inherit;
-  line-height: inherit;  // 1.
-  @include fontweight(regular);
-}
+//  IMPORTANT: 
+//  Do not use ".fa" inside markdown - only ever the specific name of an icon 
+//  like ".fa-close" for example.
+//  The ".fa" is necessary when attaching icons to empty <i> elements, as
+//  officially suggested. However, since we're using markdown, theres no way of
+//  inserting a classed <i>. Hence – no ".fa".
+// 
+//  See here:
+// https://github.com/getgrav/grav-theme-antimatter/blob/develop/README.md#menu-text--icons
 
 /** 
  *
@@ -145,6 +143,7 @@ h1, h2, h3, h4, h5, h6	{
   font-weight: normal;
   font-style: normal;
   font-size: inherit;
+  line-height: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -235,7 +234,7 @@ h6,
 p, 
 li {
   @include fluid-type(font-size, 320px, 1200px, 18px, 21px);
-  line-height: 160%;
+  line-height: 150%;
 }
 
 
@@ -296,51 +295,51 @@ li {
   // }
 }
 
-.fontsize-gamma {
-  font-size: 36px !important;
-  line-height: 42px;
+// .fontsize-gamma {
+//   font-size: 36px !important;
+//   line-height: 42px;
   
-  @media only screen and (min-width: 450px) {
-    font-size: 42px !important;
-    line-height: 48px;
-  }
+//   @media only screen and (min-width: 450px) {
+//     font-size: 42px !important;
+//     line-height: 48px;
+//   }
   
-  @media only screen and (min-width: 550px) {
-    font-size: 54px !important;
-    line-height: 60px; 
-  }
-}
+//   @media only screen and (min-width: 550px) {
+//     font-size: 54px !important;
+//     line-height: 60px; 
+//   }
+// }
 
-.fontsize-delta {
-  font-size: 30px !important;
-  line-height: 36px;
+// .fontsize-delta {
+//   font-size: 30px !important;
+//   line-height: 36px;
   
-  @media only screen and (min-width: 450px) {
-    font-size: 36px !important;
-    line-height: 42px;
-  }
+//   @media only screen and (min-width: 450px) {
+//     font-size: 36px !important;
+//     line-height: 42px;
+//   }
   
-  @media only screen and (min-width: 550px) {
-    font-size: 48px !important;
-    line-height: 54px; 
-  }
-}
+//   @media only screen and (min-width: 550px) {
+//     font-size: 48px !important;
+//     line-height: 54px; 
+//   }
+// }
 
 
-.fontsize-epsilon {
-  font-size: 24px !important;
-  line-height: 30px;
+// .fontsize-epsilon {
+//   font-size: 24px !important;
+//   line-height: 30px;
   
-  @media only screen and (min-width: 700px) {
-    font-size: 30px !important;
-    line-height: 36px;
-  }
+//   @media only screen and (min-width: 700px) {
+//     font-size: 30px !important;
+//     line-height: 36px;
+//   }
   
-  @media only screen and (min-width: 1000px) {
-    font-size: 42px !important;
-    line-height: 48px; 
-  }
-}
+//   @media only screen and (min-width: 1000px) {
+//     font-size: 42px !important;
+//     line-height: 48px; 
+//   }
+// }
 
 
 
