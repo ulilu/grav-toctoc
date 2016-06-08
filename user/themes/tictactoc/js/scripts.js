@@ -78,10 +78,10 @@ $(document).ready(function() {
 
   var activeMenu = function() {
     
-    if ( $('.main-nav__item.active').length ) {
+    if ( $('.nav__item.active').length ) {
 
       var navi = $('.main-nav');
-      var target = $('.main-nav__item.active'); 
+      var target = $('.nav__item.active'); 
 
       var w = navi.width();
       // console.log("navi.width = " + w );

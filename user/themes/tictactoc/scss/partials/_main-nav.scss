@@ -196,7 +196,7 @@
   width: 100%;
   width: calc(100% + 6px);
   min-width: 150px;
-  max-width: 240px;
+  max-width: 270px;
   overflow: hidden;
   background: $color-rouge1;
   padding: 6px 6px 0;
@@ -264,7 +264,7 @@
     border-top-right-radius: 0;
   }
 
-  .main-nav__item--home a {
+  .nav__link--home {
     font-size: 0;
     // toctoc-icon-background set in icons-global.scss
   }
