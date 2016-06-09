@@ -24,17 +24,15 @@
     padding-right: 66px;
   }
   
-  @media only screen and (min-width:480px) {
-    font-size: 16px;
-  }
+  // @media only screen and (min-width:480px) {
+  //   font-size: 16px;
+  // }
 
   a {
     display: inline-block;
     color: $color-lavender3;
-    padding: 0 6px;
-    border-radius: 2px;
-    line-height: 36px;
-    white-space: normal;
+    padding: 0 9px;
+    line-height: 42px;
     
     &:hover {
       color: $color-lavender5;
@@ -49,18 +47,22 @@
 
   .copyright {
     display: inline-block;
-    padding: 0 6px;  
-    line-height: 36px;
+    padding: 0 9px;  
+    line-height: 42px;
     @include fontweight(semibold);
     font-weight: normal;
     font-style: normal;
-    white-space: nowrap;
   }
 
   .webdesign {
     position: relative;
     display: inline-block;
     padding-right: 24px;  // make place for the icon
+    font-size: 0;
+    
+    @media only screen and (min-width: 500px) {
+      font-size: inherit;
+    }
 
     &:before {
       content:"";
