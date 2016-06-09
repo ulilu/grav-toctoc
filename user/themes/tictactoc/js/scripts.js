@@ -290,6 +290,7 @@ $("nav").headroom({
   var scrollContents = function() {
 
     if ( $('.js-scrollblock').length ) {
+      // Get elements & position
       var wrapper = $('.block__scroll-wrapper');
       var firstItem = $('a.card:first-of-type');
       var fip = firstItem.position().left;
@@ -301,6 +302,7 @@ $("nav").headroom({
 
 
     $('.js-scrollblock').click(function(){
+      // Get widths & this
       var ww = wrapper[0].scrollWidth;
       console.log("wrapper scrollWidth = " + ww);
       var sw = $( window ).width();
@@ -402,7 +404,47 @@ $("nav").headroom({
           console.log("clientWidth:", cWidth); //instead of alert(cWidth);
           // fip = $('a.card:first-of-type').position().left;
 
-          scrollContents();
+          $('.js-scrollblock').click(function(){
+            // Get widths & this
+            var ww = wrapper[0].scrollWidth;
+            console.log("wrapper scrollWidth = " + ww);
+            var sw = $( window ).width();
+            console.log("window width = " + sw);
+            var $this = $(this);
+
+
+            if ( $this.hasClass( "reverse" ) ) {
+
+
+              wrapper.animate({ scrollLeft: "-=" + (sw - (fipi / 2) ) },
+                { complete: function(){
+                    var fip = firstItem.position().left;
+                    console.log("new fip after scroll left = " + ( -fip - fipi ));
+
+                    if ( ( fip - fipi ) == 0 ) {
+                      $this.toggleClass("reverse");
+                    }
+                  }
+                },
+              500);
+
+            } else {
+
+              wrapper.animate({ scrollLeft: "+=" + (sw - (fipi / 2) ) },
+                { complete: function(){
+                    var fip = firstItem.position().left;
+                    console.log("new fip after scroll right = " + ( -fip + fipi ));
+                    console.log("result = " + (( -fip + fipi) >= ( ww - sw )) );
+
+                    if ( ( -fip + fipi) == ( ww - sw )  ) {
+                      $this.toggleClass("reverse");
+                    }
+                  }
+                }, 
+              500);
+            }
+
+          });
        };
 
     }, 500);
