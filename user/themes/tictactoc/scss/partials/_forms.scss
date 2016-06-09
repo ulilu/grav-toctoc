@@ -94,6 +94,8 @@ input[type=email]:focus::-webkit-input-placeholder {
 \*------------------------------------*/
 
 .contact-form {
+	position: relative;
+	z-index: 10;
 	display: table;
 	width: 100%;
 	

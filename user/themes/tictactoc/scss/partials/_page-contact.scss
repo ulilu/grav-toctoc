@@ -63,7 +63,6 @@
  */
 .block--contactform {
   position: relative;
-  z-index: -1;
   background: $color-seagreen3;
   border-top: 12px solid $color-white;
   border-bottom: 12px solid #37949C;  // 1.
@@ -73,9 +72,9 @@
   }
 
   &:after {
-    z-index: 0;
+    z-index: 1;
     left: auto;
-    right: 0;
+    right: 1;
     background-size: 400px;
     background-position: right 0 bottom -50px;
   }
