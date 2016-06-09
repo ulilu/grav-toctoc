@@ -289,13 +289,13 @@ $("nav").headroom({
 
   var scrollContents = function() {
 
-    // if ( $('.js-scrollblock').length ) {
+    if ( $('.js-scrollblock').length ) {
       var wrapper = $('.block__scroll-wrapper');
       var firstItem = $('a.card:first-of-type');
       var fip = firstItem.position().left;
       var fipi = fip; // initial offset for first card
       console.log("first ever fipi = " + fipi);
-    // }
+    }
 
 
 
