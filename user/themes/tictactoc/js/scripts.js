@@ -392,22 +392,23 @@ $("nav").headroom({
 //   console.log("Initial newWidth:", newWidth);
 
 
-//   $(window).resize(function() {
-//     clearTimeout(window.resizedFinished);
-//     window.resizedFinished = setTimeout(function(){
+  $(window).resize(function() {
+    clearTimeout(window.resizedFinished);
+    window.resizedFinished = setTimeout(function(){
 
-//       newWidth = $( window ).width();
-//       console.log("New newWidth in window.resize:", newWidth);
-//       console.log("cWidth in window.resize:", cWidth);
-//       if(cWidth != newWidth){
-//           cWidth = newWidth;
-//           console.log("clientWidth:", cWidth); //instead of alert(cWidth);
-//           // fip = $('a.card:first-of-type').position().left;
+      newWidth = $( window ).width();
+      console.log("New newWidth in window.resize:", newWidth);
+      console.log("cWidth in window.resize:", cWidth);
+      if(cWidth != newWidth){
+          cWidth = newWidth;
+          console.log("clientWidth:", cWidth); //instead of alert(cWidth);
+          // fip = $('a.card:first-of-type').position().left;
 
-//           scrollContents();
-//        };
+          $('.js-scrollblock').off("click");
+          scrollContents();
+       };
 
-//     }, 500);
-//   });
+    }, 500);
+  });
 
 });
