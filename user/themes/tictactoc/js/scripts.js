@@ -354,7 +354,14 @@ $("nav").headroom({
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function() {
 
-      scrollContents();
+    if ( $('.js-scrollblock').length ) {
+      var firstItem = $('a.card:first-of-type');
+      var fip = firstItem.position().left;
+      var fipi = fip; // initial offset for first card
+      console.log("first ever fipi = " + fipi);
+    }
+
+    scrollContents(fipi);
               
     }, 250);
 
