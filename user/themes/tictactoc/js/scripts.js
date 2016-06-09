@@ -388,7 +388,7 @@ $("nav").headroom({
     clearTimeout(window.resizedFinished);
     window.resizedFinished = setTimeout(function(){
 
-      newWidth = $( window ).width();;
+      newWidth = $( window ).width();
       if(cWidth != newWidth){
           cWidth = newWidth;
           console.log("clientWidth:", cWidth); //instead of alert(cWidth);
