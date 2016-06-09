@@ -404,6 +404,8 @@ $("nav").headroom({
           console.log("clientWidth:", cWidth); //instead of alert(cWidth);
           // fip = $('a.card:first-of-type').position().left;
 
+          // Unbind the click event, otherwise the scroll would accumulate
+          // with every resize.
           $('.js-scrollblock').off("click");
           scrollContents();
        };
