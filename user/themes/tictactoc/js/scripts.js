@@ -287,11 +287,9 @@ $("nav").headroom({
 
   var scrollContents = function() {
 
-    if (typeof fipi === 'undefined') {
       var firstItem = $('a.card:first-of-type');
       var fip = firstItem.position().left;
       var fipi = fip; // initial offset for first card
-    }
 
     $('.js-scrollblock').click(function(){
       var wrapper = $('.block__scroll-wrapper');
