@@ -43,7 +43,7 @@
   }
 
   .copyright {
-    display: inline-block;
+    display: block;
     padding: 0 6px;  
     @include fontweight(semibold);
     font-weight: normal;
@@ -52,7 +52,7 @@
 
   .webdesign {
     position: relative;
-    padding-right: 24px;
+    padding-right: 100px;
 
     &:before {
       content:"";
