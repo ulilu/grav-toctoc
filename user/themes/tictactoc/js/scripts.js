@@ -339,7 +339,7 @@ $("nav").headroom({
     });
   }
 
-  // scrollContents();
+  scrollContents();
 
 
 /*
@@ -366,16 +366,38 @@ $("nav").headroom({
   // });
 
 
+  // $(window).resize(function() {
+  //   clearTimeout(window.resizedFinished);
+  //   window.resizedFinished = setTimeout(function(){
+  //     if ( $('.js-scrollblock').length ) {
+  //       fip = $('a.card:first-of-type').position().left;
+  //       console.log('Resized finished.');
+  //       console.log("FIP after resize = " + fip);
+  //       scrollContents(fip);
+  //     }
+  //   }, 250);
+  // });
+
+  var screen = window; //To access the dom only once
+  var cWidth = screen.clientWidth;
+  var newWidth = cWidth; //If you want a log to show at startup, change to: newWidth = 0
+  console.log("Initial newWidth:", newWidth);
+
+
   $(window).resize(function() {
     clearTimeout(window.resizedFinished);
     window.resizedFinished = setTimeout(function(){
-      if ( $('.js-scrollblock').length ) {
-        fip = $('a.card:first-of-type').position().left;
-        console.log('Resized finished.');
-        console.log("FIP after resize = " + fip);
-        scrollContents(fip);
-      }
+
+      newWidth = screen.clientWidth;
+      if(cWidth != newWidth){
+          cWidth = newWidth;
+          console.log("clientWidth:", cWidth); //instead of alert(cWidth);
+          fip = $('a.card:first-of-type').position().left;
+
+          scrollContents(fip);
+       };
+
     }, 250);
-});
+  });
 
 });
