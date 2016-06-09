@@ -402,7 +402,16 @@ $("nav").headroom({
       if(cWidth != newWidth){
           cWidth = newWidth;
           console.log("clientWidth:", cWidth); //instead of alert(cWidth);
-          // fip = $('a.card:first-of-type').position().left;
+          
+
+          if ( $('.js-scrollblock').length ) {
+            // Get elements & position
+            var wrapper = $('.block__scroll-wrapper');
+            var firstItem = $('a.card:first-of-type');
+            var fip = firstItem.position().left;
+            var fipi = fip; // initial offset for first card
+            console.log("first ever fipi = " + fipi);
+          }
 
           $('.js-scrollblock').click(function(){
             // Get widths & this
