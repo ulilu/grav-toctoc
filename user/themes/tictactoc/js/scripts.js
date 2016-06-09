@@ -378,8 +378,8 @@ $("nav").headroom({
   //   }, 250);
   // });
 
-  var screen = window; //To access the dom only once
-  var cWidth = screen.clientWidth;
+  // var screen = window; //To access the dom only once
+  var cWidth = $( window ).width();
   var newWidth = cWidth; //If you want a log to show at startup, change to: newWidth = 0
   console.log("Initial newWidth:", newWidth);
 
@@ -388,7 +388,7 @@ $("nav").headroom({
     clearTimeout(window.resizedFinished);
     window.resizedFinished = setTimeout(function(){
 
-      newWidth = screen.clientWidth;
+      newWidth = $( window ).width();;
       if(cWidth != newWidth){
           cWidth = newWidth;
           console.log("clientWidth:", cWidth); //instead of alert(cWidth);
