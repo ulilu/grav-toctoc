@@ -397,7 +397,7 @@ $("nav").headroom({
           scrollContents(fip);
        };
 
-    }, 250);
+    }, 2500);
   });
 
 });
