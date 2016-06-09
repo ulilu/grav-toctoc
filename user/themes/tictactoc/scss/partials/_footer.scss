@@ -21,7 +21,7 @@
    *  In order to not have the scrollbutton overlap the contents of the footer
    */
   .block > .block {
-    padding-right: 66px;
+    padding-right: 60px;
   }
   
   // @media only screen and (min-width:480px) {
@@ -58,7 +58,7 @@
     position: relative;
     display: inline-block;
     text-indent: -9999em;
-    width: 30px;
+    width: 24px;
     
     @media only screen and (min-width: 500px) {
       width: auto;
