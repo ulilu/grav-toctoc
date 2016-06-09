@@ -355,15 +355,13 @@ $("nav").headroom({
     resizeTimer = setTimeout(function() {
 
     if ( $('.js-scrollblock').length ) {
-      var firstItem = $('a.card:first-of-type');
-      var fip = firstItem.position().left;
-      var fipi = fip; // initial offset for first card
-      console.log("first ever fipi = " + fipi);
+      fip = $('a.card:first-of-type').position().left;
+      console.log("FIP after resize = " + fip);
     }
 
-    scrollContents(fipi);
+    scrollContents(fip);
               
-    }, 250);
+    }, 2000);
 
   });
 
