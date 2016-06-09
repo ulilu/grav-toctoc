@@ -287,12 +287,12 @@ $("nav").headroom({
 
   var scrollContents = function() {
 
-    if ( $('.js-scrollblock').length ) {
+    // if ( $('.js-scrollblock').length ) {
       var firstItem = $('a.card:first-of-type');
       var fip = firstItem.position().left;
       var fipi = fip; // initial offset for first card
       console.log("first ever fipi = " + fipi);
-    }
+    // }
 
     $('.js-scrollblock').click(function(){
       var wrapper = $('.block__scroll-wrapper');
@@ -389,12 +389,14 @@ $("nav").headroom({
     window.resizedFinished = setTimeout(function(){
 
       newWidth = $( window ).width();
+      console.log("New newWidth in window.resize:", newWidth);
+      console.log("cWidth in window.resize:", cWidth);
       if(cWidth != newWidth){
           cWidth = newWidth;
           console.log("clientWidth:", cWidth); //instead of alert(cWidth);
-          fip = $('a.card:first-of-type').position().left;
+          // fip = $('a.card:first-of-type').position().left;
 
-          scrollContents(fip);
+          scrollContents();
        };
 
     }, 2500);
