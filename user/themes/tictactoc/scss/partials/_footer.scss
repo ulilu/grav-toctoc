@@ -52,7 +52,9 @@
 
   .webdesign {
     position: relative;
-    padding-right: 100px;
+    display: inline-block;
+    padding-right: 24px;
+    margin-right: 76px;
 
     &:before {
       content:"";
