@@ -285,17 +285,22 @@ $("nav").headroom({
    * Button scroll block
    */
 
+
+
   var scrollContents = function() {
 
     // if ( $('.js-scrollblock').length ) {
+      var wrapper = $('.block__scroll-wrapper');
       var firstItem = $('a.card:first-of-type');
       var fip = firstItem.position().left;
       var fipi = fip; // initial offset for first card
       console.log("first ever fipi = " + fipi);
     // }
 
+
+
+
     $('.js-scrollblock').click(function(){
-      var wrapper = $('.block__scroll-wrapper');
       var ww = wrapper[0].scrollWidth;
       console.log("wrapper scrollWidth = " + ww);
       var sw = $( window ).width();
@@ -304,6 +309,7 @@ $("nav").headroom({
 
 
       if ( $this.hasClass( "reverse" ) ) {
+
 
         wrapper.animate({ scrollLeft: "-=" + (sw - (fipi / 2) ) },
           { complete: function(){
@@ -399,7 +405,7 @@ $("nav").headroom({
           scrollContents();
        };
 
-    }, 2500);
+    }, 500);
   });
 
 });
