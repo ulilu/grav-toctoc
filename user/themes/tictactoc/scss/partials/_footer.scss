@@ -21,7 +21,7 @@
    *  In order to not have the scrollbutton overlap the contents of the footer
    */
   .block > .block {
-    padding-right: 76px;
+    padding-right: 66px;
   }
   
   @media only screen and (min-width:480px) {
@@ -34,6 +34,7 @@
     padding: 0 6px;
     border-radius: 2px;
     line-height: 36px;
+    white-space: normal;
     
     &:hover {
       color: $color-lavender5;
@@ -53,6 +54,7 @@
     @include fontweight(semibold);
     font-weight: normal;
     font-style: normal;
+    white-space: nowrap;
   }
 
   .webdesign {
