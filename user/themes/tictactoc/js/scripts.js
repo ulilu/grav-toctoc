@@ -339,7 +339,7 @@ $("nav").headroom({
     });
   }
 
-  scrollContents();
+  // scrollContents();
 
 
 /*
