@@ -72,6 +72,8 @@ $(document).ready(function() {
 */
 
 
+
+
   /*
    * Center active menu item
    */
@@ -283,52 +285,74 @@ $("nav").headroom({
    * Button scroll block
    */
 
-  if ( $('.js-scrollblock').length ) {
-    var firstItem = $('a.card:first-of-type');
-    var fip = firstItem.position().left;
-    var fipi = fip; // initial offset for first card
-  }
+  var scrollContents = function() {
 
-  $('.js-scrollblock').click(function(){
-    var wrapper = $('.block__scroll-wrapper');
-    var ww = wrapper[0].scrollWidth;
-    var sw = $( window ).width();
-    var $this = $(this);
-
-
-    if ( $this.hasClass( "reverse" ) ) {
-
-      wrapper.animate({ scrollLeft: "-=" + (sw - (fipi / 2) ) },
-        { complete: function(){
-            var fip = firstItem.position().left;
-            // console.log("new fip = " + ( -fip - fipi ));
-
-            if ( ( fip - fipi ) == 0 ) {
-              $this.toggleClass("reverse");
-            }
-          }
-        },
-      500);
-
-    } else {
-
-      wrapper.animate({ scrollLeft: "+=" + (sw - (fipi / 2) ) },
-        { complete: function(){
-            var fip = firstItem.position().left;
-            // console.log("new fip = " + ( -fip + fipi ));
-            // console.log("result = " + (( -fip + fipi) >= ( ww - sw )) );
-
-            if ( ( -fip + fipi) == ( ww - sw )  ) {
-              $this.toggleClass("reverse");
-            }
-          }
-        }, 
-      500);
+    if ( $('.js-scrollblock').length ) {
+      var firstItem = $('a.card:first-of-type');
+      var fip = firstItem.position().left;
+      var fipi = fip; // initial offset for first card
     }
 
-    // console.log( "firstitem position - firstitem initial position = " + (fip - fipi) );
-    // console.log( "wrapperwidth - screenwidth = " + (ww - sw) );
-    // document.activeElement = null;
+    $('.js-scrollblock').click(function(){
+      var wrapper = $('.block__scroll-wrapper');
+      var ww = wrapper[0].scrollWidth;
+      var sw = $( window ).width();
+      var $this = $(this);
+
+
+      if ( $this.hasClass( "reverse" ) ) {
+
+        wrapper.animate({ scrollLeft: "-=" + (sw - (fipi / 2) ) },
+          { complete: function(){
+              var fip = firstItem.position().left;
+              // console.log("new fip = " + ( -fip - fipi ));
+
+              if ( ( fip - fipi ) == 0 ) {
+                $this.toggleClass("reverse");
+              }
+            }
+          },
+        500);
+
+      } else {
+
+        wrapper.animate({ scrollLeft: "+=" + (sw - (fipi / 2) ) },
+          { complete: function(){
+              var fip = firstItem.position().left;
+              // console.log("new fip = " + ( -fip + fipi ));
+              // console.log("result = " + (( -fip + fipi) >= ( ww - sw )) );
+
+              if ( ( -fip + fipi) == ( ww - sw )  ) {
+                $this.toggleClass("reverse");
+              }
+            }
+          }, 
+        500);
+      }
+
+      // console.log( "firstitem position - firstitem initial position = " + (fip - fipi) );
+      // console.log( "wrapperwidth - screenwidth = " + (ww - sw) );
+      // document.activeElement = null;
+    });
+  };
+
+
+/*
+ *
+ *  Resize-Listener
+ */
+
+  var resizeTimer;
+
+  $(window).on('resize', function(e) {
+
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+
+      scrollContents();
+              
+    }, 250);
+
   });
 
 });
