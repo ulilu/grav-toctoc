@@ -334,7 +334,9 @@ $("nav").headroom({
       // console.log( "wrapperwidth - screenwidth = " + (ww - sw) );
       // document.activeElement = null;
     });
-  };
+  }
+
+  scrollContents();
 
 
 /*
