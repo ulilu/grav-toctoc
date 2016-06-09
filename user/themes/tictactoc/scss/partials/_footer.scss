@@ -45,16 +45,11 @@
     }
   }
 
-/**
- *
- *  1. This is here, to force the copyright to initially occupy the second line
- *  preventing the footer of collapsing to one line.
- */
+
   .copyright {
     display: inline-block;
     padding: 0 6px;  
     line-height: 36px;
-    margin-right: 200px;  // 1.
     @include fontweight(semibold);
     font-weight: normal;
     font-style: normal;
