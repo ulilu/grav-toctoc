@@ -16,13 +16,16 @@
   color: $color-lavender3;
   font-size: 14px;
   
-  @media only screen and (min-width:480px) {
-    font-size: 16px;
+  /**
+   *
+   *  In order to not have the scrollbutton overlap the contents of the footer
+   */
+  .block > .block {
+    padding-right: 76px;
   }
   
-  p {
-    margin: 0;
-    line-height: 36px;
+  @media only screen and (min-width:480px) {
+    font-size: 16px;
   }
 
   a {
@@ -42,9 +45,16 @@
     }
   }
 
+/**
+ *
+ *  1. This is here, to force the copyright to initially occupy the second line
+ *  preventing the footer of collapsing to one line.
+ */
   .copyright {
-    display: block;
+    display: inline-block;
     padding: 0 6px;  
+    line-height: 36px;
+    margin-right: 200px;  // 1.
     @include fontweight(semibold);
     font-weight: normal;
     font-style: normal;
@@ -53,8 +63,7 @@
   .webdesign {
     position: relative;
     display: inline-block;
-    padding-right: 24px;
-    margin-right: 76px;
+    padding-right: 24px;  // make place for the icon
 
     &:before {
       content:"";
