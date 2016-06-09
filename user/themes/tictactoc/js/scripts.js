@@ -387,76 +387,27 @@ $("nav").headroom({
   // });
 
   // var screen = window; //To access the dom only once
-  var cWidth = $( window ).width();
-  var newWidth = cWidth; //If you want a log to show at startup, change to: newWidth = 0
-  console.log("Initial newWidth:", newWidth);
+//   var cWidth = $( window ).width();
+//   var newWidth = cWidth; //If you want a log to show at startup, change to: newWidth = 0
+//   console.log("Initial newWidth:", newWidth);
 
 
-  $(window).resize(function() {
-    clearTimeout(window.resizedFinished);
-    window.resizedFinished = setTimeout(function(){
+//   $(window).resize(function() {
+//     clearTimeout(window.resizedFinished);
+//     window.resizedFinished = setTimeout(function(){
 
-      newWidth = $( window ).width();
-      console.log("New newWidth in window.resize:", newWidth);
-      console.log("cWidth in window.resize:", cWidth);
-      if(cWidth != newWidth){
-          cWidth = newWidth;
-          console.log("clientWidth:", cWidth); //instead of alert(cWidth);
-          
+//       newWidth = $( window ).width();
+//       console.log("New newWidth in window.resize:", newWidth);
+//       console.log("cWidth in window.resize:", cWidth);
+//       if(cWidth != newWidth){
+//           cWidth = newWidth;
+//           console.log("clientWidth:", cWidth); //instead of alert(cWidth);
+//           // fip = $('a.card:first-of-type').position().left;
 
-          if ( $('.js-scrollblock').length ) {
-            // Get elements & position
-            var wrapper = $('.block__scroll-wrapper');
-            var firstItem = $('a.card:first-of-type');
-            var fip = firstItem.position().left;
-            var fipi = fip; // initial offset for first card
-            console.log("first ever fipi = " + fipi);
-          }
+//           scrollContents();
+//        };
 
-          $('.js-scrollblock').click(function(){
-            // Get widths & this
-            var ww = wrapper[0].scrollWidth;
-            console.log("wrapper scrollWidth = " + ww);
-            var sw = $( window ).width();
-            console.log("window width = " + sw);
-            var $this = $(this);
+//     }, 500);
+//   });
 
-
-            if ( $this.hasClass( "reverse" ) ) {
-
-
-              wrapper.animate({ scrollLeft: "-=" + (sw - (fipi / 2) ) },
-                { complete: function(){
-                    var fip = firstItem.position().left;
-                    console.log("new fip after scroll left = " + ( -fip - fipi ));
-
-                    if ( ( fip - fipi ) == 0 ) {
-                      $this.toggleClass("reverse");
-                    }
-                  }
-                },
-              500);
-
-            } else {
-
-              wrapper.animate({ scrollLeft: "+=" + (sw - (fipi / 2) ) },
-                { complete: function(){
-                    var fip = firstItem.position().left;
-                    console.log("new fip after scroll right = " + ( -fip + fipi ));
-                    console.log("result = " + (( -fip + fipi) >= ( ww - sw )) );
-
-                    if ( ( -fip + fipi) == ( ww - sw )  ) {
-                      $this.toggleClass("reverse");
-                    }
-                  }
-                }, 
-              500);
-            }
-
-          });
-       };
-
-    }, 500);
-  });
-
-});
+// });
