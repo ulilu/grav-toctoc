@@ -137,9 +137,9 @@ $("nav").headroom({
     $('.faq-answer').not(':eq(0)').hide();
 
 
-    $('.faq-question').click(function(e){
+    $('.faq-question').click(function(){
 
-      e.preventDefault();       
+      // e.preventDefault();       
 
       var currentQ = $(this);
       var currentA = $(this).next('.faq-answer');
