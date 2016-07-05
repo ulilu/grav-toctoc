@@ -149,24 +149,29 @@ $("nav").headroom({
       var currentTarget = $(this).children(":first"); 
       console.log(currentTarget); 
 
-      $('html,body').animate({ scrollTop: $(currentTarget).offset().top + 84 }, 'slow');
-
       // only slide if the click is on a different question than last time
       if ( this !== lastQ.get(0) ) {
         lastQ.addClass('is-closing').removeClass('is-open');
         currentQ.addClass('is-open');
 
         lastA.removeClass('is-visible').addClass('is-closing').slideUp({
-            duration: 400,
-            queue: false,
-            complete: function () {
-              // change class when slide finishes
-              // remove classes, used for css-keyframe-animations
-              $(this).removeClass('is-closing');
-              lastQ.removeClass('is-closing');
-            }
-          });
-        currentA.addClass('is-visible').slideDown(400);
+          duration: 400,
+          queue: false,
+          complete: function() {
+            // change class when slide finishes
+            // remove classes, used for css-keyframe-animations
+            $(this).removeClass('is-closing');
+            lastQ.removeClass('is-closing');
+          }
+        });
+
+        currentA.addClass('is-visible').slideDown({
+          duration: 400,
+          queue: false,
+          complete: function() {
+            $('html,body').animate({ scrollTop: $(currentTarget).offset().top + 84 }, 300);
+          }
+        });
       }
     });
 
