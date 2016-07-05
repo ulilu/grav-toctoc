@@ -7,6 +7,8 @@
 			{% set page = page.find('/comment-ca-marche/_step-by-step', true) %}
 		{% endif %}
 
+		{{ page.content }}
+
 		{% for step in page.header.steps %}
 
 			{% set image = page.media[step.image] %}
