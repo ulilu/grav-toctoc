@@ -2,9 +2,9 @@
 	<div class="block">
 
 		{% if grav.language.getActive == 'en' %}
-		    {{ page.find('/how-it-works/_step-by-step').content }}
+			{% page.header = page.find('/how-it-works/_step-by-step').header %}
 		{% else %}
-		    {{ page.find('/comment-ca-marche/_step-by-step').content }}
+			{% page.header = page.find('/comment-ca-marche/_step-by-step').header %}
 		{% endif %}
 
 		{% for step in page.header.steps %}
