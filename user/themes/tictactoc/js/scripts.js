@@ -149,7 +149,7 @@ $("nav").headroom({
       var currentTarget = $(this).children(":first").attr('href'); 
       console.log(currentTarget); 
 
-      $('html,body').animate({ scrollTop: $(currentTarget).offset().top }, 'slow');
+      $('html,body').animate({ scrollTop: currentTarget.offset().top }, 'slow');
 
       // only slide if the click is on a different question than last time
       if ( this !== lastQ.get(0) ) {
