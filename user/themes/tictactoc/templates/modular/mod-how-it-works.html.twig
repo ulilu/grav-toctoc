@@ -1,7 +1,11 @@
 <section class="block  block--stretch  block--howto">
 	<div class="block">
 
-		{{ page.content }}
+		{% if grav.language.getActive == 'en' %}
+		    {{ page.find('/how-it-works/_step-by-step').content }}
+		{% else %}
+		    {{ page.find('/comment-ca-marche/_step-by-step').content }}
+		{% endif %}
 
 		{% for step in page.header.steps %}
 
