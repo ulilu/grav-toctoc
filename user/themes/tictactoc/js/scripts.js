@@ -137,9 +137,9 @@ $("nav").headroom({
     $('.faq-answer').not(':eq(0)').hide();
 
 
-    $('.faq-question').click(function(){
+    $('.faq-question').click(function(e){
 
-      // e.preventDefault();       
+      e.preventDefault(e);       
 
       var currentQ = $(this);
       var currentA = $(this).next('.faq-answer');
@@ -149,7 +149,7 @@ $("nav").headroom({
       var currentTarget = $(this).children(":first"); 
       console.log(currentTarget); 
 
-      $('html,body').animate({ scrollTop: $(currentTarget).offset().top }, 'slow');
+      $('html,body').animate({ scrollTop: $(currentTarget).offset().top + 84 }, 'slow');
 
       // only slide if the click is on a different question than last time
       if ( this !== lastQ.get(0) ) {
