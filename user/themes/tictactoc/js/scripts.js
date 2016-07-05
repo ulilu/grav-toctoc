@@ -146,6 +146,7 @@ $("nav").headroom({
       var lastQ    = $('.faq-question.is-open');
       var lastA    = lastQ.next('.faq-answer');
 
+      // targetting the first child "a[name^=faq]"
       var currentTarget = $(this).children(":first"); 
       console.log(currentTarget); 
 
@@ -162,6 +163,8 @@ $("nav").headroom({
             // remove classes, used for css-keyframe-animations
             $(this).removeClass('is-closing');
             lastQ.removeClass('is-closing');
+
+            // scroll page to new position
             $('html,body').animate({ scrollTop: $(currentTarget).offset().top - 84 }, 300);
           }
         });

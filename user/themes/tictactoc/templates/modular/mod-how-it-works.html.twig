@@ -17,7 +17,7 @@
 				<figcaption class="timeline-row__info">
 				{{ dump(uri.path) }}
 
-					{% if uri.path == '/'  %}
+					{% if uri.path == '/' OR ''  %}
 					
 						<h2><a class="color-{{ step.color }}" href="
 							{% if langswitcher.current == 'en' %}
