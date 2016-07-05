@@ -146,7 +146,7 @@ $("nav").headroom({
       var lastQ    = $('.faq-question.is-open');
       var lastA    = lastQ.next('.faq-answer');
 
-      var currentTarget = currentA.attr('href'); 
+      var currentTarget = $(this).next('.faq-answer').attr('href'); 
       console.log(currentTarget); 
 
       // only slide if the click is on a different question than last time
