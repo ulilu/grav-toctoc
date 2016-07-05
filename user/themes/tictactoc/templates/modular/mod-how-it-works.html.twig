@@ -28,11 +28,9 @@
 
 		{% endfor %}
 
-		{% if page.header.buttontext %}
-			<div class="timeline-button">
-				<a href="{{ page.find(page.header.buttonlink).url() }}" class="btn btn-l epsilon btn-{{ page.header.buttoncolor }}">{{ page.header.buttontext }}</a>
-			</div>
-		{% endif %}
+		<div class="timeline-button">
+			<a href="{{ page.find(page.header.buttonlink).url() }}" class="btn btn-l epsilon btn-{{ page.header.buttoncolor }}">{{ page.header.buttontext }}</a>
+		</div>
 
 	</div>
 </section>
