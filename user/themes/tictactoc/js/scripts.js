@@ -169,7 +169,7 @@ $("nav").headroom({
           duration: 400,
           queue: false,
           complete: function() {
-            $('html,body').animate({ scrollTop: $(currentTarget).offset().top + 84 }, 300);
+            $('html,body').animate({ scrollTop: $(currentTarget).offset().top - 84 }, 300);
           }
         });
       }
