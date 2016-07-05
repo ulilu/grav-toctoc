@@ -154,7 +154,7 @@ $("nav").headroom({
         lastQ.addClass('is-closing').removeClass('is-open');
         currentQ.addClass('is-open');
 
-        $('html,body').animate({ scrollTop: $(currentTarget).offset().top }, 'slow'); });
+        $('html,body').animate({ scrollTop: $(currentTarget).offset().top }, 'slow');
 
         lastA.removeClass('is-visible').addClass('is-closing').slideUp({
             duration: 400,
