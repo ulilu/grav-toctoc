@@ -137,16 +137,12 @@ $("nav").headroom({
     $('.faq-answer').not(':eq(0)').hide();
 
 
-    $('.faq-question').click(function(){
-
-      // e.preventDefault();       
+    $('.faq-question').click(function(){   
 
       var currentQ = $(this);
       var currentA = $(this).next('.faq-answer');
       var lastQ    = $('.faq-question.is-open');
       var lastA    = lastQ.next('.faq-answer');
-
-      $('html,body').animate({ scrollTop: $(currentA.attr('href')).offset().top }, 'slow');
 
       // only slide if the click is on a different question than last time
       if ( this !== lastQ.get(0) ) {
