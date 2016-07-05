@@ -162,6 +162,7 @@ $("nav").headroom({
             // remove classes, used for css-keyframe-animations
             $(this).removeClass('is-closing');
             lastQ.removeClass('is-closing');
+            $('html,body').animate({ scrollTop: $(currentTarget).offset().top - 84 }, 300);
           }
         });
 
@@ -169,7 +170,7 @@ $("nav").headroom({
           duration: 400,
           queue: false,
           complete: function() {
-            $('html,body').animate({ scrollTop: $(currentTarget).offset().top - 84 }, 300);
+            
           }
         });
       }
