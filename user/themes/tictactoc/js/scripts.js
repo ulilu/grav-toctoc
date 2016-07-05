@@ -137,17 +137,24 @@ $("nav").headroom({
     $('.faq-answer').not(':eq(0)').hide();
 
 
-    $('.faq-question').click(function(){
+    $('.faq-question').click(function(e){
+
+      e.preventDefault();       
 
       var currentQ = $(this);
       var currentA = $(this).next('.faq-answer');
       var lastQ    = $('.faq-question.is-open');
       var lastA    = lastQ.next('.faq-answer');
 
+      var currentTarget = currentA.attr('href'); 
+      console.log(currentTarget); 
+
       // only slide if the click is on a different question than last time
       if ( this !== lastQ.get(0) ) {
         lastQ.addClass('is-closing').removeClass('is-open');
         currentQ.addClass('is-open');
+
+        $('html,body').animate({ scrollTop: $(currentTarget).offset().top }, 'slow'); });
 
         lastA.removeClass('is-visible').addClass('is-closing').slideUp({
             duration: 400,
@@ -260,7 +267,7 @@ $("nav").headroom({
       $('html, body').animate({ scrollTop: 0 }, 150);
   });
   window.onscroll = function () {
-      if(window.pageYOffset < 1000) {
+      if(window.pageYOffset < 9000) {
           $('.' + id).fadeOut(300);
       }
       else {
