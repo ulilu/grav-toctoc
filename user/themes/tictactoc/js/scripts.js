@@ -146,7 +146,7 @@ $("nav").headroom({
       var lastQ    = $('.faq-question.is-open');
       var lastA    = lastQ.next('.faq-answer');
 
-      var currentTarget = $(this).children("a"); 
+      var currentTarget = $(this).children("a[name^=faq]"); 
       console.log(currentTarget); 
 
       $('html,body').animate({ scrollTop: $( $.attr(currentTarget, 'href') ).offset().top }, 'slow');
