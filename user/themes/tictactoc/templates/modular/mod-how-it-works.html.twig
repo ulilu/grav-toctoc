@@ -1,37 +1,42 @@
+<section class="block  block--stretch  block--howto">
+	<div class="block">
 
-{% if grav.language.getActive == 'en' %}
-	{% set page = page.find('/how-it-works/_step-by-step', true) %}
-{% else %}
-	{% set page = page.find('/comment-ca-marche/_step-by-step', true) %}
-{% endif %}
+		{% if grav.language.getActive == 'en' %}
+			{% set page = page.find('/how-it-works/_step-by-step', true) %}
+		{% else %}
+			{% set page = page.find('/comment-ca-marche/_step-by-step', true) %}
+		{% endif %}
 
-{{ page.content }}
+		<h1>{{ page.title }}</h1>
 
-{% for step in page.header.steps %}
+		{% for step in page.header.steps %}
 
-	{% set image = page.media[step.image] %}
-	{% set thumb = image.display('thumbnail').cropResize(150) %}
+			{% set image = page.media[step.image] %}
+			{% set thumb = image.display('thumbnail').cropResize(150) %}
 
-	<figure class="timeline-row">
-		<div class="timeline-row__img">
-				<img class="lazyload" data-srcset="{{ thumb.sizes('100vw').srcset()}}" data-src="{{ thumb.url }}" data-sizes="{{ thumb.sizes }}" >
-	{# 		{{ page.media[step.image].quality(80).cropResize(150).sizes('100vw').html() }} #}
+			<figure class="timeline-row">
+				<div class="timeline-row__img">
+						<img class="lazyload" data-srcset="{{ thumb.sizes('100vw').srcset()}}" data-src="{{ thumb.url }}" data-sizes="{{ thumb.sizes }}" >
+			{# 		{{ page.media[step.image].quality(80).cropResize(150).sizes('100vw').html() }} #}
+				</div>
+
+				<figcaption class="timeline-row__info">
+					
+					<h2><a class="color-{{ step.color }}" href="
+						{% if langswitcher.current == 'en' %}
+							{{ page.find('/how-it-works').url() }}
+						{% elseif langswitcher.current == 'fr' %} 
+							{{ page.find('/comment-ca-marche').url() }}
+						{% endif %}#step{{ loop.index0 }}">{{ loop.index }}. {{ step.title }}</a></h2>
+
+				</figcaption>
+			</figure>
+
+		{% endfor %}
+
+		<div class="timeline-button">
+			<a href="{{ page.find(page.header.buttonlink).url() }}" class="btn btn-l epsilon btn-{{ page.header.buttoncolor }}">{{ page.header.buttontext }}</a>
 		</div>
 
-		<figcaption class="timeline-row__info">
-			
-			<h2><a class="color-{{ step.color }}" href="
-				{% if langswitcher.current == 'en' %}
-					{{ page.find('/how-it-works').url() }}
-				{% elseif langswitcher.current == 'fr' %} 
-					{{ page.find('/comment-ca-marche').url() }}
-				{% endif %}#step{{ loop.index0 }}">{{ loop.index }}. {{ step.title }}</a></h2>
-
-		</figcaption>
-	</figure>
-
-{% endfor %}
-
-<div class="timeline-button">
-	<a href="{{ page.find(page.header.buttonlink).url() }}" class="btn btn-l epsilon btn-{{ page.header.buttoncolor }}">{{ page.header.buttontext }}</a>
-</div>
+	</div>
+</section>
