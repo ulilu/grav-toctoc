@@ -80,16 +80,11 @@
   }
 
   .cell--service {
-    // padding: 0 0 36px;
-    padding: 0;
+    padding: 0 0 36px;
     
     &:first-of-type:after {
       // @include dotted-border('right', 10, 'D7CAAD');
       display: none;
-      
-      @media only screen and (min-width: 720px) {
-        display: block;
-      }
     }
 
     // @media only screen and (min-width:950px) {    
@@ -109,9 +104,16 @@
     //   }
     // }
 
+    @media only screen and (min-width: 720px) {
+      padding: 0;
+      
+      &:first-of-type:after {
+        display: block;
+      }
+    }
+
     @media only screen and (min-width:800px) {
       // padding: 0 0 48px;
-      padding: 0;
       
       /* hover effect for cell--service image */
       .cell__img {
