@@ -276,7 +276,7 @@ $("nav").headroom({
       $('html, body').animate({ scrollTop: 0 }, 150);
   });
   window.onscroll = function () {
-      if(window.pageYOffset < 9000) {
+      if(window.pageYOffset < 900) {
           $('.' + id).fadeOut(300);
       }
       else {
