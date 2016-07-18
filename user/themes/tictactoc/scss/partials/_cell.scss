@@ -57,6 +57,31 @@
   z-index: 1;
   padding: 18px 24px;
   margin-bottom: 30px;
+  
+  &.tt-olivier:after {
+    display: none;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 25%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    opacity: .25;
+    background-size: 100%;
+      background-position: right 0 top 50%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+  
+  @media only screen and (min-width: 800px) {
+    padding-right: 25%;
+
+    &.tt-olivier:after {
+      display: block;
+    }
+  }
 }
 
 

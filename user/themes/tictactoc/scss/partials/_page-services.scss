@@ -42,6 +42,14 @@
         background-position: right -28px bottom -42px;
       }
     }
+
+    > .block {
+      padding: 30px !important;
+      
+      @media only screen and (min-width:1200px) {
+        padding: 36px 30px 36px 0 !important;
+      }
+    }
   }
 
   .cell--intro {
