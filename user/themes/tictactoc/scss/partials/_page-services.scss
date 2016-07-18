@@ -80,11 +80,16 @@
   }
 
   .cell--service {
-    padding: 0 0 36px;
+    // padding: 0 0 36px;
+    padding: 0;
     
     &:first-of-type:after {
       // @include dotted-border('right', 10, 'D7CAAD');
       display: none;
+      
+      @media only screen and (min-width: 720px) {
+        display: block;
+      }
     }
 
     // @media only screen and (min-width:950px) {    
