@@ -24,6 +24,8 @@
 
 </section>
 
+{{ pages.find('/welcome/_call-to-action').content }}
+
 <section class="block  block--examples block--stretch">
 	<div class="block">
 		<h2>{{ page.find('/examples').title }}</h2>
@@ -32,7 +34,5 @@
 	  {% endfor %}
   </div>
 </section>
-
-{{ pages.find('/welcome/_call-to-action').content }}
 
 {% endblock %}
