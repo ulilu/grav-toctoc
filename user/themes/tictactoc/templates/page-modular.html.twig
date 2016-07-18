@@ -6,7 +6,6 @@
 {% block content %}
     {{ page.content }}
     <div id="content">
-        <div>huhu</div>
         {% for module in page.collection() %}
 
 					{% if module.header.lazyload_images %}
