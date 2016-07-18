@@ -35,13 +35,4 @@
 
 {{ pages.find('/welcome/_call-to-action').content }}
 
-<section class="block  block--examples block--stretch">
-	<div class="block">
-		<h2>{{ page.find('/examples').title }}</h2>
-		{% for child in collection %}
-	    {% include childtemplate with {'page':child, 'truncate':true} %}
-	  {% endfor %}
-  </div>
-</section>
-
 {% endblock %}
