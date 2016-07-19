@@ -72,27 +72,31 @@
     {% endblock head%}
     </head>
     <body class="{{ page.header.body_classes }}">
-        {% block header %}
-             {% include 'partials/header.html.twig' %}
-        {% endblock %}
+        {% spaceless %}
 
-        {% block body %}
-            <div class="main">
-                {% block content %}{% endblock %}
-            </div>
-        {% endblock %}
+            {% block header %}
+                 {% include 'partials/header.html.twig' %}
+            {% endblock %}
+
+            {% block body %}
+                <div class="main">
+                    {% block content %}{% endblock %}
+                </div>
+            {% endblock %}
 
 
-        {% block footer %}
-             {% include 'partials/footer.html.twig' %}
-        {% endblock %}
+            {% block footer %}
+                 {% include 'partials/footer.html.twig' %}
+            {% endblock %}
 
-        <div class="scrolltop  js-scrolltop"></div>
+            <div class="scrolltop  js-scrolltop"></div>
 
-        {% block bottomassets %}
-            {{ assets.css() }}
-            {{ assets.js() }}
-        {% endblock %}
+            {% block bottomassets %}
+                {{ assets.css() }}
+                {{ assets.js() }}
+            {% endblock %}
+
+        {% endspaceless %}
 
     </body>
 </html>
