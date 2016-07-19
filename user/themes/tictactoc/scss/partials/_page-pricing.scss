@@ -26,6 +26,7 @@
   padding: 0 !important;
   border-color: $color-skyblue5;
   border-style: solid;
+  border-left: 0;
 
   @media only screen and (min-width: 480px) {
     margin: 0 0 24px;
@@ -36,6 +37,7 @@
 
     &:last-of-type {
       border-left-width: 6px;
+      border-right: 0;
     }
   }
 
@@ -44,6 +46,7 @@
 
     &:last-of-type {
       border-left-width: 12px;
+      border-right: 0;
     }
   }
 
@@ -52,6 +55,7 @@
 
     &:last-of-type {
       border-left-width: 18px;
+      border-right: 0;
     }
   }
 
