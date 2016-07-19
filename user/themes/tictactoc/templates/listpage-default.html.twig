@@ -5,7 +5,7 @@
 {% set childtype = page.header.childtype %}
 {# can be "example", "service", "item" #}
 
-{% set childtemplate = 'partials/listitem-' ~ page.header.childtemplate ~ '.html.twig' %}
+{% set childtemplate = 'partials/' ~ page.header.childtemplate ~ '.html.twig' %}
 {# can be "listitem-example", "listitem-service-page", "listitem-service" #}
 
 {% block content %}
