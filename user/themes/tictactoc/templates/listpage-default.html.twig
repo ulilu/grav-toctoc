@@ -18,31 +18,8 @@
 
         {% for child in collection %}
 
-            {% if childtype == "example" %}
+            {% include childtemplate with {'page':child, 'truncate':true}
 
-                {% set twig_content = child.content %}
-                {% set replace_value_var1 = '<a' %}
-                {% set replace_with_value_var1 = '--><a' %}
-                {% set replace_value_var2 = '</a>' %}
-                {% set replace_with_value_var2 = '</a><!--' %}
-
-                {% if loop.first %}
-                    {{ twig_content|replace({ (replace_value_var2): replace_with_value_var2 }) }}
-
-                {% elseif loop.last %}
-                    {{ twig_content|replace({ (replace_value_var1): replace_with_value_var1 }) }}
-
-                {% else %}
-                    {{ twig_content|replace({ (replace_value_var1): replace_with_value_var1 }) }}
-                    {{ twig_content|replace({ (replace_value_var2): replace_with_value_var2 }) }}
-                {% endif %}
-
-                {% include childtemplate with {'page':twig_content, 'truncate':true} %}
-
-            {% else %}
-                {% include childtemplate with {'page':child, 'truncate':true} %}
-            {% endif %}
-            
         {% endfor %}
     </div>
 
