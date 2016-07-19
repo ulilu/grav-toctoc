@@ -1,0 +1,26 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+
+{% set childtype = page.header.childtype %}
+{# can be "example", "service", "item" #}
+
+{% set childtemplate = 'partials/listitem-' ~ page.header.childtemplate ~ '.html.twig' %}
+{# can be "listitem-example", "listitem-service-page", "listitem-service" #}
+
+{% block content %}
+
+<section class="block  block--stretch {% if childtype %}  block--{{ childtype|pluralize }}{% endif %}">">
+
+    <div class="block">
+
+        {{ page.content }}
+
+        {% for child in collection %}
+            {% include childtemplate with {'page':child, 'truncate':true} %}
+        {% endfor %}
+    </div>
+
+</section>
+
+{% endblock %}
