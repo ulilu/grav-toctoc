@@ -329,7 +329,7 @@ $("nav").headroom({
       if ( $this.hasClass( "reverse" ) ) {
 
 
-        wrapper.animate({ scrollLeft: "-=" + (sw - (fipi / 2) ) },
+        wrapper.animate({ scrollLeft: "-=" + (sw - fipi ) },
           { complete: function(){
               var fip = firstItem.position().left;
               console.log("new fip after scroll left = " + ( -fip - fipi ));
@@ -343,7 +343,7 @@ $("nav").headroom({
 
       } else {
 
-        wrapper.animate({ scrollLeft: "+=" + (sw - (fipi / 2) ) },
+        wrapper.animate({ scrollLeft: "+=" + (sw - fipi ) },
           { complete: function(){
               var fip = firstItem.position().left;
               console.log("new fip after scroll right = " + ( -fip + fipi ));
