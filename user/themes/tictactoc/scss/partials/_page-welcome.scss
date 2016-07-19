@@ -258,12 +258,13 @@
         
         @media only screen and (min-width:720px) {
           margin-bottom: 0;
+          padding-bottom: 0 !important;
         }
       }
 
-      @media only screen and (min-width:1100px) {
-        padding-bottom: 0 !important;
-      }
+      // @media only screen and (min-width:1100px) {
+      //   padding-bottom: 0 !important;
+      // }
     }
 
     .headline--service {
