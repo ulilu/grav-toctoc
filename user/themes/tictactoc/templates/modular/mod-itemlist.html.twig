@@ -20,12 +20,12 @@
 	<div class="block{% if overflow %}--scroll{% endif %}">
 
 		{% if overflow %}<div class="block__scroll-wrapper">{% endif %}
-			
+
 	  	{% for child in collection %}
 
 	      {% if childtype == "example" %}
 
-          {% set twig_content = child.content %}
+          {% set twig_content = child %}
           {% set replace_value_var1 = '<a' %}
           {% set replace_with_value_var1 = '--><a' %}
           {% set replace_value_var2 = '</a>' %}
