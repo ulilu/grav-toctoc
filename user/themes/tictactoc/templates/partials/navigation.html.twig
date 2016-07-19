@@ -20,27 +20,21 @@
     <ul class="main-nav">
 
         <li class="nav__item">
-            <a href="{{ base_url_absolute }}" class="nav__link nav__link--home fa-home" title="< back to Homepage">
-            </a>
+            <a href="{{ base_url_absolute }}" class="nav__link nav__link--home fa-home" title="< back to Homepage"></a>
 
         {% for page in pages.children %}
 
             {% if page.visible %}
-                
+
                 {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-                <li class="nav__item {{ current_page }}">
-                    <a class="nav__link" href="{{ page.url }}">
-                        {{ page.menu }}</a>
+                <li class="nav__item {{ current_page }}"><a class="nav__link" href="{{ page.url }}">{{ page.menu }}</a>
 
                     {% if page.children.visible.count > 0 %}
 
                         <ul class="sub-nav">
 
                             {% for childpage in page.children.visible %}
-                            <li class="nav__item  nav__item--sub">
-                                <a class="nav__link  nav__link--sub" href="{{ childpage.link }}">
-                                    {{ childpage.menu }}
-                                </a>
+                            <li class="nav__item  nav__item--sub"><a class="nav__link  nav__link--sub" href="{{ childpage.link }}">{{ childpage.menu }}</a>
 
                             {% endfor %}
 
