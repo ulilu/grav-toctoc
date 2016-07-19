@@ -291,6 +291,14 @@
   .block--examples {
     // border-bottom: 12px solid $color-white;
     
+    > .block {
+      padding: 30px !important;
+      
+      @media only screen and (min-width:1200px) {
+        padding: 36px 30px 36px 0 !important;
+      }
+    }
+    
     @media only screen and (min-width:1200px) {
       &:before {
         opacity: 0;
