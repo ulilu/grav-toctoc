@@ -255,6 +255,10 @@
       &:first-of-type {
         padding-bottom: 30px;
         margin-bottom: 24px;
+        
+        @media only screen and (min-width:720px) {
+          margin-bottom: 0;
+        }
       }
 
       @media only screen and (min-width:1100px) {

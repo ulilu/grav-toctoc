@@ -50,13 +50,11 @@
   }
 
 /**
- * 1. Unfortunately, Chrome shows the two cells stacked on top of each other.
- * I think it might be due to rounding errors when set to 50% but who knows...
- *
+ * 1. From 720px onwards, the cells get juxtaposed
  */
   @media only screen and (min-width: 720px) {
     display: inline-block;
-    width: 50%;
+    width: 50%;  // 1.
     padding-bottom: 0;
     
     &:first-of-type {
@@ -81,9 +79,13 @@
         right: 6px;
       }
     }
-
+    
+    /*
+     *  1. If you do not float right right cell, rounding errors prevent 
+     *  it from lining up with its neighbour.
+     */
     &:last-of-type {
-      float: right;
+      float: right;  // 1.
       padding-left: 30px;
     }
   }
