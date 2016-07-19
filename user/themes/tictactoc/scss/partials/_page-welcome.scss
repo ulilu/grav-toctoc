@@ -346,28 +346,6 @@
       width: calc(100% - 66px); // 1.
       vertical-align: middle;
 	  }
-
-	  .card {
-	    z-index: 2;
-	    display: inline-block;
-	    float: none;
-	    white-space: normal;
-	    vertical-align: top;
-	    margin-right: 30px !important;
-      margin-bottom: 0;
-	    
-	    // @media only screen and (min-width:536px) {
-	    //   margin-right: 27px !important;
-	    // }
-
-	    &:last-of-type {
-	      margin-right: 0 !important;
-	      
-	      @media only screen and (min-width:1200px) {
-	        margin-right: 30px !important;
-	      }
-	    }
-	  }
   }
 }
 
