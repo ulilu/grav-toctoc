@@ -1,0 +1,8 @@
+{% set blocktype = page.header.blocktype %}
+{# can be "example", "service", "item" #}
+
+<section class="block  block--stretch{% if blocktype %}  block--{{blocktype}}{% endif %}">
+	<div class="block">
+    {{ page.content }}
+  </div>
+</section>
