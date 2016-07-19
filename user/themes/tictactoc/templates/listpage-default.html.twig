@@ -18,7 +18,7 @@
 
         {% for child in collection %}
 
-            
+            {% if childtype == "example" %}
 
                 {% set twig_content = child.content %}
                 {% set replace_value_var1 = '<a' %}
@@ -39,8 +39,10 @@
 
                 {% include childtemplate with {'page':twig_content, 'truncate':true} %}
 
-        
-
+            {% else %}
+                {% include childtemplate with {'page':child, 'truncate':true} %}
+            {% endif %}
+            
         {% endfor %}
     </div>
 
