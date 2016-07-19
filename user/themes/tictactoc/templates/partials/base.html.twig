@@ -4,9 +4,10 @@
 <!--#else -->
 <html lang="{% if langswitcher.current == 'fr' %}fr{% elseif langswitcher.current == 'en' %}en{% endif %}">
 <!--#endif -->
-
 {# <html lang="{% if langswitcher.current == 'fr' %}fr{% elseif langswitcher.current == 'en' %}en{% endif %}"> #}
-<head>
+    {% spaceless %}
+
+    <head>
     {% block head %}
         <meta charset="utf-8" />
         <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
@@ -71,32 +72,33 @@
 
     {% endblock head%}
     </head>
+
     <body class="{{ page.header.body_classes }}">
-        {% spaceless %}
 
-            {% block header %}
-                 {% include 'partials/header.html.twig' %}
-            {% endblock %}
+        {% block header %}
+             {% include 'partials/header.html.twig' %}
+        {% endblock %}
 
-            {% block body %}
-                <div class="main">
-                    {% block content %}{% endblock %}
-                </div>
-            {% endblock %}
+        {% block body %}
+            <div class="main">
+                {% block content %}{% endblock %}
+            </div>
+        {% endblock %}
 
 
-            {% block footer %}
-                 {% include 'partials/footer.html.twig' %}
-            {% endblock %}
+        {% block footer %}
+             {% include 'partials/footer.html.twig' %}
+        {% endblock %}
 
-            <div class="scrolltop  js-scrolltop"></div>
+        <div class="scrolltop  js-scrolltop"></div>
 
-            {% block bottomassets %}
-                {{ assets.css() }}
-                {{ assets.js() }}
-            {% endblock %}
-
-        {% endspaceless %}
+        {% block bottomassets %}
+            {{ assets.css() }}
+            {{ assets.js() }}
+        {% endblock %}
 
     </body>
+
+    {% endspaceless %}
+
 </html>
