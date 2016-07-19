@@ -43,15 +43,21 @@
       }
     }
 
-    > .block {
-      padding: 30px !important;
+    // > .block {
+    //   padding: 30px !important;
       
-      @media only screen and (min-width:1200px) {
-        // padding: 36px 30px 36px 0 !important;
-        padding: 36px 0 36px 0!important
-      }
-    }
+    //   @media only screen and (min-width:1200px) {
+    //     // padding: 36px 30px 36px 0 !important;
+    //     padding: 36px 0 36px 0!important
+    //   }
+    // }
   }
+
+
+
+
+
+
 
   .cell--intro {
     color: $color-sable1;
