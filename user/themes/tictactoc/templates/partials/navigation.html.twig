@@ -18,67 +18,40 @@
 
 <div class="main-nav__wrapper">
     <ul class="main-nav">
-    {#     {% if config.themes.tictactoc.dropdown.enabled %}
-            {{ _self.loop(pages) }}
-        {% else %} #}
-            <li class="nav__item">
-                <a href="{{ base_url_absolute }}" class="nav__link nav__link--home fa-home" title="< back to Homepage">
-                </a>
-            {% for page in pages.children %}
-                {% if page.visible %}
-                    {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-                    <li class="nav__item {{ current_page }}">
-                        <a class="nav__link" href="{{ page.url }}">
-                            {{ page.menu }}
-                        </a>
 
-                        {% if page.children.visible.count > 0 %}
-                            <ul class="sub-nav">
-                                {% for childpage in page.children.visible %}
-                                <li class="nav__item  nav__item--sub">
-                                    <a class="nav__link  nav__link--sub" href="{{ childpage.link }}">
-                                        {{ childpage.menu }}
-                                    </a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                        
-                    </li>
+        <li class="nav__item">
+            <a href="{{ base_url_absolute }}" class="nav__link nav__link--home fa-home" title="< back to Homepage">
+            </a>
 
-                {% endif %}
-            {% endfor %}
-        {# {% endif %} #}
+        {% for page in pages.children %}
 
-        {# {% for mitem in site.menu %}
-            <li>
-                <a href="{{ mitem.link }}">
-                    {{ mitem.text }}
-                </a>
-                {% if mitem.submenu %}
-                    <ul>
-                        {% for sub1 in mitem.submenu %}
-                            <li>{% if loop.first %}<img src="{{ theme_url }}/img/arrowup.png" alt="">{% endif %}
-                                <a href="{{ sub1.link }}">
-                                    {{ sub1.text }}
+            {% if page.visible %}
+                
+                {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+                <li class="nav__item {{ current_page }}">
+                    <a class="nav__link" href="{{ page.url }}">
+                        {{ page.menu }}</a>
+
+                    {% if page.children.visible.count > 0 %}
+
+                        <ul class="sub-nav">
+
+                            {% for childpage in page.children.visible %}
+                            <li class="nav__item  nav__item--sub">
+                                <a class="nav__link  nav__link--sub" href="{{ childpage.link }}">
+                                    {{ childpage.menu }}
                                 </a>
-                                {% if sub1.submenu %}
-                                    <ul>
-                                        {% for sub2 in sub1.submenu %}
-                                            <li>
-                                                <a href="{{ sub2.link }}">
-                                                    {{ sub2.text }}
-                                                </a>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-            </li>
-        {% endfor %} #}
+
+                            {% endfor %}
+
+                        </ul>
+
+                    {% endif %}
+
+            {% endif %}
+
+        {% endfor %}
+
     </ul>
     <div class="scrollmenu  js-scrollmenu"></div>  
 </div>
