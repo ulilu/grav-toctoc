@@ -6,7 +6,6 @@
 .block--examples {
   position: relative;
   z-index: 1; // necessary for containing icon to appear
-  // padding: 0;
   background: $color-lavender2;
   
   /*
@@ -27,8 +26,7 @@
     color: $color-lavender5;
   }
 
-  h3 {
-    // color: $color-red2;
+  .card h3 {
     color: $color-rouge1;
   }
 }

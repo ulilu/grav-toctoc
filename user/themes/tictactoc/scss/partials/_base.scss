@@ -64,30 +64,9 @@ body	{
 }
 
 /* 
- *  1. To make space for the footer below 
+ *  1. To compensate for overhanging menubar.
  */
 .main {
   position: relative;
-  padding-top: 24px;
-  // padding-bottom: 175px;  // 1. 
-  
-  // @media only screen and (min-width: 425px) {
-  //   padding-bottom: 140px
-  // }
-  
-  // @media only screen and (min-width: 720px) {
-  //   padding-bottom: 120px;  // 1. 
-  // }
+  padding-top: 24px; // 1.
 }
-
-
-/*---------------------------------------------------------------------------*\
-    Wrapper on .page-welcome (similar to .stage on other pages)
-\*---------------------------------------------------------------------------*/
-
-// .wrapper {
-//   position: relative;
-//   display: block;
-//   max-width: 1200px;
-//   margin: 0 auto;
-// }

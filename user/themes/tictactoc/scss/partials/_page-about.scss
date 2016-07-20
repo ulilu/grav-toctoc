@@ -4,13 +4,10 @@
 
 
 .page-about {
-  background: $color-rouille6;
-  background: $color-rouge6;
   background: $color-white;
   
   h1 {
     color: $color-rouille2;
-    // color: $color-rouge2;
   }
 
   .block--partner:after {
@@ -33,9 +30,7 @@
   padding-bottom: 12px;
   border-top: 12px solid $color-white;
   border-bottom: 12px solid $color-rouille2;
-  // border-bottom: 12px solid $color-rouge2;
   background: $color-rouille3;
-  // background: $color-rouge3;
   
   h1 {
     display: inline-block;

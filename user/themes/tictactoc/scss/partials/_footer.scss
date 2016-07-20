@@ -5,14 +5,15 @@
 /*
  *  [1] Necessary to keep the footer fixed on the bottom of the browser, even if the page height is less than the browser window heigt
  */
+
+// position: absolute;  /* [1] */
+// z-index: 100;
+// right: 0;
+// bottom: 0;
+// left: 0;
+// min-height: 120px;
 .footer {
-  // position: absolute;  /* [1] */
-  // z-index: 100;
-  // right: 0;
-  // bottom: 0;
-  // left: 0;
   width: 100%;
-  // min-height: 120px;
   background: $color-lavender1;
   color: $color-lavender3;
   font-size: 14px;
@@ -24,10 +25,6 @@
   .block > .block {
     padding-right: 60px;
   }
-  
-  // @media only screen and (min-width:480px) {
-  //   font-size: 16px;
-  // }
 
   a {
     display: inline-block;

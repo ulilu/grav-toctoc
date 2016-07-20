@@ -4,13 +4,6 @@
 
 .block--services {
   z-index: 1;
-  // background: $color-greywalls1; // sand
-  // background: linear-gradient(to bottom, $color-greywalls1, #EFE8D8);
-  // background: #FDEBAF;
-  // background: $color-warmsand2; // warm sand
-  // background: linear-gradient(to top, #FFF3D3, $color-warmsand2); // warm sand fade
-  // background: linear-gradient(to top, $color-warmsand3, $color-warmsand2);
-  // background: linear-gradient(to top, $color-warmsand2, #FFE6A8);
   background: $color-sable5;
 }
 
@@ -21,10 +14,8 @@
 .cell--service {
   display: block;
   position: relative;
-  // width: 100%;
   padding-bottom: 24px;
   margin-bottom: 18px;
-  // @include clearfix-html5bp;
   
   &:hover {
     text-decoration: none;
@@ -105,18 +96,6 @@
     vertical-align: middle;
     display: inline-block;
   }
-
-  // @media only screen and (min-width: 720px) { 
-  //   font-size: 40px !important;
-  // }
-
-  // @media only screen and (min-width: 950px) { 
-  //   font-size: 48px !important;
-  // }
-
-  // @media only screen and (min-width: 1150px) { 
-  //   font-size: 60px !important;
-  // }
 }
 
 
@@ -134,8 +113,6 @@
   display: inline-block;
   width: 54px;
   height: 54px;
-  // margin-right: 18px;
-  // margin-left: -3px;
   margin: 0 18px 0 -3px;
   border-radius: 50%;
   transition: box-shadow .3s;
@@ -148,67 +125,9 @@
     320px, 720px, 12px, 24px, 
            720px, 1200px, 15px, 24px);
   
-
-  
-  // @media only screen and (min-width: 450px) {
-  //   width: 66px;
-  //   height: 66px;
-  //   margin-right: 21px;
-  //   margin-left: -6px;
-  // }
-  
-  // @media only screen and (min-width: 550px) {
-  //   width: 75px;
-  //   height: 75px;
-  //   margin-right: 24px;
-  // }
-  
   @media only screen and (min-width: 720px) {
     a:hover & {
       box-shadow: 0 0 0 6px $color-white !important;
     }
   }
 }
-
-
-/*
- * Headlines on pages with 50%-wide cells (additional breakpoints)
- */
-
-// .page-welcome .icon--service,
-// .page-services .icon--service,
-// .page-pricing .icon--service {
-  // margin: 0 18px 0 -3px;
-  
-  // @media only screen and (min-width: 450px) {
-    // width: 66px;
-    // height: 66px;
-  //   margin-right: 21px;
-  //   margin-left: -6px;
-  // }
-  
-  // @media only screen and (min-width: 550px) {
-  //   width: 75px;
-  //   height: 75px;
-  //   margin-right: 24px;
-  // }
-  
-  // @media only screen and (min-width: 720px) { 
-  //   width: 54px;
-  //   height: 54px;
-  //   margin-right: 18px;
-  // }
-
-  // @media only screen and (min-width: 950px) { 
-  //   width: 66px;
-  //   height: 66px;
-  //   margin-right: 21px;
-  // }
-
-  // @media only screen and (min-width: 1150px) { 
-  //   width: 75px;
-  //   height: 75px;
-  //   margin-right: 24px;
-  //   margin-left: -6px;
-  // }
-// }
