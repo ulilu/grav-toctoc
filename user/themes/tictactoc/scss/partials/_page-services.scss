@@ -116,7 +116,16 @@
     }
 
     @media only screen and (min-width: 720px) {
+      width: calc(50% + 30px);
       padding: 0;
+      
+      &:first-of-type {
+        margin: 0 0 0 -30px;
+      }
+
+      &:last-of-type {
+        margin: 0 -30px 0 0;
+      }
       
       &:first-of-type:after {
         display: block;
@@ -226,8 +235,8 @@
     color: $color-white;
     font-size: 24px;
     line-height: 30px;
-    padding: 24px;
-    margin: -24px -24px 24px;
+    padding: 18px 24px;
+    margin: -24px -24px 18px;
     
     @media only screen and (min-width: 420px) {
       border-top-left-radius: 6px;
