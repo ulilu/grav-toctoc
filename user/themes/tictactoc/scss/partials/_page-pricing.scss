@@ -112,26 +112,32 @@
   }
   
   .list-total {
-    // margin-top: -11px;
-    font-size: 24px;
+    font-size: 30px;
     list-style-type: none;
-    // padding: 18px 0;
-    padding: 12px 0 24px;
+    padding: 9px 0 24px;
     border-top: 2px solid $color-greywalls0;
-    line-height: 60px;
-    // height: 92px;
+    line-height: 48px;
     margin: 12px 0 0;
     font-weight: normal;
     @include fontweight(regular);
     
-    @media only screen and (min-width: 500px) {
+    @media only screen and (min-width: 420px) {
       font-size: 36px;
     }
+    
+    @media only screen and (min-width: 500px) {
+      line-height: 54px;
+      padding: 18px 0;
+    }
 
-    // @media only screen and (min-width: 800px) {
-    //   padding: 12px 18px 12px 27px;
-    //   margin: 12px -30px 0;
-    // }
+    @media only screen and (min-width: 720px) {
+      padding: 12px 0 24px;
+    }
+
+    @media only screen and (min-width: 960px) {
+      padding: 18px 0;
+    }
+
     
     .price-info {
       font-size: 15px;
