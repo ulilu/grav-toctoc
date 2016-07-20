@@ -162,8 +162,7 @@
            720px, 1200px, 120px, 200px);
            
     @include fluid-type(font-size, 
-    320px, 720px, 18px, 21px, 
-           720px, 1200px, 21px, 24px);
+    320px, 1200px, 12px, 24px);
   }
 
   .subtitle__price {
