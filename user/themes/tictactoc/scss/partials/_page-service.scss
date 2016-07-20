@@ -171,9 +171,14 @@
     320px, 1200px, 10px, 24px);
   }
 
-  .subtitle__price {
+  .subtitle__price,
+  .subtitle__price-unit {
     
     @include fluid-type(font-size, 
     320px, 1200px, 36px, 66px);
+  }
+
+  .subtitle__price-unit {
+    
   }
 }
