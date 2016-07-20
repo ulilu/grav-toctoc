@@ -87,6 +87,7 @@
 
   .cell--service {
     padding: 0 0 36px;
+    margin: 0 -24px;
     
     &:first-of-type:after {
       // @include dotted-border('right', 10, 'D7CAAD');
@@ -204,9 +205,13 @@
     float: none; 
     z-index: 3;
     background-color: $color-white;
-    padding: 18px;
-    margin: 0 24px 18px;
+    padding: 24px;
+    margin: 0 0 24px;
     width: auto !important;
+    
+    @media only screen and (min-width: 420px) {
+      margin: 0 24px 24px;
+    }
   }
 
   .card:hover:before {
@@ -217,10 +222,13 @@
     color: $color-white;
     font-size: 24px;
     line-height: 30px;
-    padding: 18px;
-    margin: -18px -18px 18px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    padding: 24px;
+    margin: -24px -24px 24px;
+    
+    @media only screen and (min-width: 420px) {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
   }
 
   @media only screen and (min-width:1150px) {
