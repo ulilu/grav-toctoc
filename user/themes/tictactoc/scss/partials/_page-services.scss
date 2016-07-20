@@ -199,13 +199,17 @@
     }
 
     @media only screen and (min-width:1150px) {
-      max-width: 500px;
-      left: calc((100% - 600px) + 30px );
+      max-width: 530px;
+      // left: calc((100% - 600px) + 30px );
       
       &:after {
         width: 50vw;
         width: calc(100% + 70px);
         // left: calc(((50vw - 600px) + 30px) * -1);
+      }
+
+      .cell--service:first-of-type & {
+        padding-left: calc((100% - 600px) + 60px);
       }
     }
   }
