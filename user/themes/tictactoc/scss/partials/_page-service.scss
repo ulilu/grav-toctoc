@@ -158,18 +158,15 @@
     font-family: Linotte-SemiBold;
     
     @include fluid-type(width height, 
-    320px, 720px, 72px, 120px, 
-           720px, 1200px, 120px, 200px);
+    320px, 1200px, 90px, 200px);
            
     @include fluid-type(font-size, 
-    320px, 1200px, 12px, 24px);
+    320px, 1200px, 10px, 24px);
   }
 
   .subtitle__price {
-    font-size: 72px;
     
     @include fluid-type(font-size, 
-    320px, 720px, 42px, 54px, 
-           720px, 1200px, 54px, 72px);
+    320px, 1200px, 42px, 72px);
   }
 }
