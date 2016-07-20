@@ -42,7 +42,17 @@
     }
   }
 
+  @media only screen and (min-width: 1200px) {
 
+    .footer__nav {
+      float: left;
+    }
+
+    .footer__copyright {
+      float: right;
+    }
+  }
+  
   .copyright {
     display: inline-block;
     padding: 0 9px;  
