@@ -96,7 +96,7 @@
     margin: 0 auto;
     font-size: 21px;
     line-height: 30px;
-    padding-right: 25%;
+    padding-right: 20%;
     
     @media only screen and (min-width: 550px) { 
       font-size: 24px;
@@ -156,9 +156,21 @@
     /* transform: rotate(6deg); */
     /* transform: scale(0.6); */
     font-family: Linotte-SemiBold;
+    
+    @include fluid-type(width height, 
+    320px, 720px, 72px, 120px, 
+           720px, 1200px, 120px, 200px);
+           
+    @include fluid-type(font-size, 
+    320px, 720px, 18px, 21px, 
+           720px, 1200px, 21px, 24px);
   }
 
   .subtitle__price {
     font-size: 72px;
+    
+    @include fluid-type(font-size, 
+    320px, 720px, 42px, 54px, 
+           720px, 1200px, 54px, 72px);
   }
 }
