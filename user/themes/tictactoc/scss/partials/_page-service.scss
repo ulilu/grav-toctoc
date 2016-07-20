@@ -136,26 +136,28 @@
   .subtitle__badge {
     display: block;
     position: absolute;
-    top: -78px;
-    right: 30px;
-    width: 150px;
-    height: 150px;
-    background: #efe8d8;
+    top: -106px;
+    left: 80%;
+    width: 200px;
+    height: 200px;
+    background: #fff;
     z-index: 100;
     border-radius: 100%;
-    padding: 37px 10px;
+    padding: 32px 10px;
     margin: 0;
     color: #c63641;
-    font-size: 30px;
-    line-height: 30px;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 2px;
+    color: $color-skyblue1;
+    font-size: 27px;
+    line-height: 54px;
+    /* border: 4px solid #c63641; */
+    /* box-shadow: 0 5px 0; */
+    text-align: center;
+    /* transform: rotate(6deg); */
+    /* transform: scale(0.6); */
+    font-family: Linotte-SemiBold;
   }
 
   .subtitle__price {
-    font-family: Linotte-SemiBold;
-    transform: rotate(6deg);
-    text-align: center;
-    font-size: 48px;
+    font-size: 72px;
   }
 }
