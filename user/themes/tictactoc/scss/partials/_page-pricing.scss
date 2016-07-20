@@ -121,12 +121,13 @@
     font-weight: normal;
     @include fontweight(regular);
     
-    @media only screen and (min-width: 420px) {
-      font-size: 36px;
+    @media only screen and (min-width: 450px) {
+      line-height: 54px;
+      padding: 18px 0;
     }
     
     @media only screen and (min-width: 500px) {
-      line-height: 54px;
+      font-size: 36px;
       padding: 18px 0;
     }
 
@@ -154,7 +155,7 @@
       display: block;
       text-align: center;
       
-      @media only screen and (min-width: 420px) {
+      @media only screen and (min-width: 450px) {
         display: inline-block;
         float: right;
       }
