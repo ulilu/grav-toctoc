@@ -19,7 +19,7 @@
 <section class="block  block--stretch  block--service">
 
 	<div class="block block--subtitle bgcolor-{{ page.header.page_color }}">
-		<h2 class="stage__subtitle"><a class="subtitle__badge" href="{% if langswitcher.current == 'en' %}{{ page.find('/pricing').url() }}{% elseif langswitcher.current == 'fr' %}{{ page.find('/tarifs').url() }}{% endif %}">{{ page.header.pricing_info }} <strong class="subtitle__price">{{ page.header.pricing_price }}</strong></a> {{ page.header.subtitle }}</h2>
+		<h2 class="stage__subtitle"><a class="subtitle__badge  color-{{ page.header.page_color }}" href="{% if langswitcher.current == 'en' %}{{ page.find('/pricing').url() }}{% elseif langswitcher.current == 'fr' %}{{ page.find('/tarifs').url() }}{% endif %}">{{ page.header.pricing_info }} <strong class="subtitle__price">{{ page.header.pricing_price }}</strong></a> {{ page.header.subtitle }}</h2>
 	</div>
 
 	<div class="block">
