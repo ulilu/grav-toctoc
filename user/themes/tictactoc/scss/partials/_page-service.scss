@@ -143,13 +143,12 @@
     margin: -12% -12px 18px 18px;
     color: $color-skyblue1;
     text-align: center;
-    transform: rotate(6deg) scale(0.98);
     font-family: Linotte-SemiBold;
-    padding: 3vw 0;
+    padding: 2.8vw 0;
     @include material-card1();
     
     @include fluid-type(width height, 
-    320px, 1200px, 100px, 200px);
+    320px, 1200px, 100px, 190px);
     
     @include fluid-type(line-height, 
     320px, 1200px, 30px, 54px);
