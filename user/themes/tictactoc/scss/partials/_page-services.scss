@@ -209,7 +209,7 @@
       }
 
       .cell--service:first-of-type & {
-        padding-left: calc((100% - 600px) + 60px);
+        margin-left: calc((100% - 600px) + 60px);
       }
     }
   }
