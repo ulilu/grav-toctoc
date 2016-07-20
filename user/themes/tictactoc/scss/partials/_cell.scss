@@ -57,6 +57,7 @@
   z-index: 1;
   padding: 18px 24px;
   margin-bottom: 30px;
+  border-radius: 6px;
   
   &.tt-olivier:after {
     display: none;
@@ -114,6 +115,34 @@
   }
 }
 
+
+.page-service,
+.page-example {
+
+  @media only screen and (min-width: 650px) { 
+    .cell-feature {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    .cell-info {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+
+  @media only screen and (min-width: 720px) { 
+    .cell-feature {
+      border-radius: 0;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+    .cell-info {
+      border-radius: 0;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+}
 
 
 /**
