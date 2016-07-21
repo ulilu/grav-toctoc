@@ -14,15 +14,15 @@
 	  position: absolute;
 		z-index: 10;
 		width: 200px;
-		left: -60px;
+		right: -60px;
 		bottom: 18px;
 		font-size: 24px;
 		color: #fff;
 		text-align: center;
-		transform: rotate(45deg);
+		transform: rotate(-45deg);
 		padding: 4px 0 3px;
 	  background: $color-seagreen2;
-	  box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+	  // box-shadow: 2px 2px 0 rgba(0,0,0,.3);
 	  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
 	    backface-visibility: hidden;
 	  -webkit-font-smoothing: antialiased;
