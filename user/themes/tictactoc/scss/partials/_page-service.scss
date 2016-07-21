@@ -140,7 +140,7 @@
     background: #fff;
     z-index: 100;
     border-radius: 100%;
-    margin: -12% -12px 18px 12px;
+    margin: -12% -12px 18px 6px;
     color: $color-skyblue1;
     text-align: center;
     font-family: Linotte-SemiBold;
@@ -148,7 +148,7 @@
     @include material-card1();
     
     @include fluid-type(width height, 
-    320px, 1200px, 100px, 200px);
+    320px, 1200px, 100px, 192px);
     
     @include fluid-type(line-height, 
     320px, 1200px, 30px, 54px);
