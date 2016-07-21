@@ -17,6 +17,11 @@
   background: #fff url(loader.gif) no-repeat center;
 }
 
+/*
+ *  Somehow IE 10-11 do not automatically update the inline style "opacity:0" 
+ *  after the image has loaded. For this case, we need to override the 
+ *  inline-style with an !important declaration.
+ */
 .lazyloaded {
-	opacity: 1;
+	opacity: 1 !important;
 }
