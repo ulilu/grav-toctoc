@@ -242,6 +242,7 @@
       border: 12px solid #FEFEFE;
       border-radius: 6px;
       transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
       background: $color-seagreen3;
       z-index: -1;
       box-shadow: 1px 0 12px rgba(0,0,0,0.33);
