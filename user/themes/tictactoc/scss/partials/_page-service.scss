@@ -21,15 +21,22 @@
     }
   }
 
-  .icon--service {
-    margin: 0 18px;
+  .icon--service-page {
+    display: inline-block;
+    margin: 0 18px 0 -3px;
     
+    @include fluid-type(width height, 
+      320px, 1200px, 48px, 82px);
+             
+    @include fluid-type(margin-right, 
+      320px, 1200px, 12px, 30px);
+
+    margin-left: 0 18px;
     @media only screen and (min-width: 600px) {
-      margin: 0 24px;
+      margin-left: 24px;
     }
-    
     @media only screen and (min-width: 1200px) {
-      margin: 0 30px 0 0;
+      margin-left: 0;
     }
   }
  

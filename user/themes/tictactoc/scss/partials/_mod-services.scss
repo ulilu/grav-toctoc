@@ -131,15 +131,3 @@
     }
   }
 }
-
-
-.icon--service-page {
-  display: inline-block;
-  margin-left: -3px;
-  
-  @include fluid-type(width height, 
-    320px, 1200px, 48px, 75px);
-           
-  @include fluid-type(margin-right, 
-    320px, 1200px, 12px, 24px);
-}
