@@ -5,4 +5,44 @@
 
 .page-example {
   background: $color-greywalls2;
+  
+  .stage {
+  	overflow: hidden;
+  }
+  
+  .stage__badge {
+	  position: absolute;
+	  z-index: 10;
+	  width: 150px;
+	  right: -45px;
+	  top: 15px;
+	  font-size: 18px;
+	  color: $color-white;
+	  text-align: center;
+	  transform: rotate(45deg);
+	  padding: 4px 0 3px;
+	  background: $color-seagreen2;
+	  // box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+	  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+	    backface-visibility: hidden;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	  @include fontweight(semibold);
+	  
+	  &:before {
+	    content: attr(data-exampletype);
+	  }
+	  
+	  &[data-exampletype="Lieu"],
+	  &[data-exampletype="Place"] {
+	    background: $color-blue1;
+	    // background: $color-skyblue2
+	  }
+
+	  &[data-exampletype="Circuit"],
+	  &[data-exampletype="Tour"] {
+	    background: $color-green1;
+	    // background: $color-seagreen2;
+	  }
+	}
 }
