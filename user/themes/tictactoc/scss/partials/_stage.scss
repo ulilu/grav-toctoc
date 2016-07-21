@@ -75,3 +75,39 @@
     object-position: bottom;  // SAME PROBLEM
   }
 }
+
+
+.stage__badge {
+  position: absolute;
+  z-index: 10;
+  width: 200px;
+  right: -60px;
+  bottom: 18px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  padding: 4px 0 3px;
+  background: $color-seagreen2;
+  // box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include fontweight(semibold);
+  
+  &:before {
+    content: attr(data-exampletype);
+  }
+  
+  &[data-exampletype="Lieu"],
+  &[data-exampletype="Place"] {
+    background: $color-blue1;
+  }
+
+  &[data-exampletype="Circuit"],
+  &[data-exampletype="Tour"] {
+    background: $color-green1;
+  }
+}
