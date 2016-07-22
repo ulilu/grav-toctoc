@@ -146,9 +146,11 @@
 
 
 /**
- *  Where is this implemented?
+ *  Necessary to keep an image contained in its box
+ *  Especially under IE up to 10.
  */
 .cell-image {
+  overflow: hidden;
   
   img {
     width: 100%;
