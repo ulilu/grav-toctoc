@@ -160,7 +160,7 @@
     padding-bottom: 12px;
 
     /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateY(-50%) translateZ(0);
+    -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
 
     &.is-hidden {
@@ -194,9 +194,9 @@
 .timeline-row:hover > .timeline-row__img img {
   @media only screen and (min-width: 1000px) {
     // animation: cd-bounce-3 4s linear infinite;
-    // -ms-transform-origin: 50% 300%; /* IE 9 */
-    // -webkit-transform-origin: 50% 300%; /* Chrome, Safari, Opera */
-    // transform-origin: 50% 300%;
+    -ms-transform-origin: 50% 0; /* IE 9 */
+    -webkit-transform-origin: 50% 0; /* Chrome, Safari, Opera */
+    transform-origin: 50% 0;
     -ms-transform: scale(1.2) translateY(-50%);
     -webkit-transform: scale(1.2) translateY(-50%);
     transform: scale(1.2) translateY(-50%) translateZ(0);
