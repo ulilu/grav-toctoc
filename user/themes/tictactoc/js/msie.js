@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     /*
      *  Stage image on example page
      */
-    if( document.querySelector('.stage__img') ) {
+    if ( document.querySelector('.stage__img') ) {
 
       // assign HTMLCollection with parents of images with objectFit to variable
       var stage = document.querySelector('.stage__img');
@@ -42,37 +42,84 @@ document.addEventListener("DOMContentLoaded", function(event) {
       
       // Add background-position: center center
       stage.style.backgroundPosition = 'center '+ imageAlign;
-    }
-
 
     /*
      *  Card image on example list page / homepage / service page
      *  Image row images on example page
      */
     // assign HTMLCollection with parents of images with objectFit to variable
-    var container = document.querySelectorAll('.hero__bg, .card__img');
+
+    }  else if ( document.querySelector('.hero__bg') ) {
     
-    // Loop through HTMLCollection
-    for(var i = 0; i < container.length; i++) {
+      var container = document.querySelectorAll('.hero__bg');
       
-      // Asign image source to variable
-      var imageSource = container[i].querySelector('img').src;
+      // Loop through HTMLCollection
+      for(var i = 0; i < container.length; i++) {
+        
+        // Asign image source to variable
+        var imageSource = container[i].querySelector('img').src;
+        
+        // Hide image
+        container[i].querySelector('img').style.opacity = '0';
+        
+        // Add background-size: cover
+        container[i].style.backgroundSize = 'cover';
+        
+        // Add background-image: and put image source here
+        container[i].style.backgroundImage = 'url(' + imageSource + ')';
+        
+        // Add background-position: center center
+        container[i].style.backgroundPosition = 'center center';
+      }
+
+    } else if ( document.querySelector('.card__img') ) {
+
+      var container = document.querySelectorAll('.card__img');
       
-      // Hide image
-      container[i].querySelector('img').style.opacity = '0';
+      // Loop through HTMLCollection
+      for(var i = 0; i < container.length; i++) {
+        
+        // Asign image source to variable
+        var imageSource = container[i].querySelector('img').src;
+        
+        // Hide image
+        container[i].querySelector('img').style.opacity = '0';
+        
+        // Add background-size: cover
+        container[i].style.backgroundSize = 'cover';
+        
+        // Add background-image: and put image source here
+        container[i].style.backgroundImage = 'url(' + imageSource + ')';
+        
+        // Add background-position: center center
+        container[i].style.backgroundPosition = 'center center';
+      }
+
+    } else if ( document.querySelector('.cell__img') ) {
+
+      var container = document.querySelectorAll('.cell__img');
       
-      // Add background-size: cover
-      container[i].style.backgroundSize = 'cover';
-      
-      // Add background-image: and put image source here
-      container[i].style.backgroundImage = 'url(' + imageSource + ')';
-      
-      // Add background-position: center center
-      container[i].style.backgroundPosition = 'center center';
+      // Loop through HTMLCollection
+      for(var i = 0; i < container.length; i++) {
+        
+        // Asign image source to variable
+        var imageSource = container[i].querySelector('img').src;
+        
+        // Hide image
+        container[i].querySelector('img').style.opacity = '0';
+        
+        // Add background-size: cover
+        container[i].style.backgroundSize = 'cover';
+        
+        // Add background-image: and put image source here
+        container[i].style.backgroundImage = 'url(' + imageSource + ')';
+        
+        // Add background-position: center center
+        container[i].style.backgroundPosition = 'center center';
+      }
     }
 
-  }
-  else {
+  } else {
     // You don't have to worry
     console.log('No worries, your browser supports objectFit')
   }
