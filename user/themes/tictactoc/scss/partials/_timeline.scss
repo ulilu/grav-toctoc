@@ -47,10 +47,14 @@
       z-index: 2;
       width: 1px;
       height: 100%;
-      // left: 13px;
       left: calc(50% - 6px);
       top: 0;
       @include dotted-border('right', 10, '8EBDD4', 0);
+    }
+
+    &:first-of-type:before {
+      height: calc(100% + 24px);
+      top: -24px;
     }
 
 
