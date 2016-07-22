@@ -47,6 +47,8 @@
     // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 40%, rgba(0,0,0,0) );
     background: rgba(61, 49, 50, 0.85);
     padding: 12px 0;
+    -ms-transform: none;
+    -webkit-transform: none;
     transform: none;
     // mix-blend-mode: hard-light;
     
