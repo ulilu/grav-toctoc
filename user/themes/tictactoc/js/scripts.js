@@ -42,7 +42,7 @@ $(document).ready(function() {
     semibold.load(null, 5000)
   ]).then(function () {
     console.log('Linotte light, regular & semibold have loaded');
-    fontawesome.load(null, 5000).then(function () {  
+    fontawesome.load(null, 10000).then(function () {  
       console.log('Fontawesome has loaded');
       html.className -= " fonts-loading";
       html.className += " fonts-loaded";
