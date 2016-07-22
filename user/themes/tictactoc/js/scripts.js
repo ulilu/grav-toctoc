@@ -48,6 +48,11 @@ $(document).ready(function() {
       html.className += " fonts-loaded";
       createCookie('fonts-loaded', '1', 1); 
       /* sessionStorage.fontsLoaded = true; */
+    }).then(undefined, function () {
+      console.log('Fontawesome loading failed, using fallback font');
+      html.className -= " fonts-loading";
+      html.className += " fonts-failed";
+      /* sessionStorage.fontsLoaded = false; */
     });
   });
 
