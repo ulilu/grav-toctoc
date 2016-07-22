@@ -49,7 +49,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
      */
     // assign HTMLCollection with parents of images with objectFit to variable
 
-    }  else if ( document.querySelector('.hero__bg') ) {
+    }  
+
+    if ( document.querySelector('.hero__bg') ) {
+
       console.log("hero__bg = " + document.querySelector('.hero__bg'));
 
       var container = document.querySelectorAll('.hero__bg');
@@ -73,7 +76,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         container[i].style.backgroundPosition = 'center center';
       }
 
-    } else if ( document.querySelector('.card__img') ) {
+    }
+
+    if ( document.querySelector('.card__img') ) {
 
       console.log("card__img = " + document.querySelector('.card__img'));
 
@@ -98,7 +103,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         container[i].style.backgroundPosition = 'center center';
       }
 
-    } else if ( document.querySelector('.cell__img') ) {
+    } 
+
+    if ( document.querySelector('.cell__img') ) {
 
       console.log("cell__img = " + document.querySelector('.cell__img'));
 
@@ -123,7 +130,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         container[i].style.backgroundPosition = 'center center';
       }
 
-    } else if ( document.querySelector('.image-row') ) {
+    }
+
+    if ( document.querySelector('.image-row') ) {
 
       console.log("image-row = " + document.querySelector('.image-row'));
 

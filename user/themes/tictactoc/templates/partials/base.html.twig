@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+{# The following produces a FOIT but it looks better than the FOUT that would occur, if we remove the loaded-class #}
 <!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
-<html lang="{% if langswitcher.current == 'fr' %}fr{% elseif langswitcher.current == 'en' %}en{% endif %}" class="fonts-loaded">{# this produces a FOIT but it looks better than the FOUT that would occur, if we remove the loaded-class #}
+<html lang="{% if langswitcher.current == 'fr' %}fr{% elseif langswitcher.current == 'en' %}en{% endif %}" class="fonts-loaded">
 <!--#else -->
 <html lang="{% if langswitcher.current == 'fr' %}fr{% elseif langswitcher.current == 'en' %}en{% endif %}">
 <!--#endif -->
