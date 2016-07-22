@@ -48,7 +48,7 @@
       width: 1px;
       height: 100%;
       // left: 13px;
-      left: calc(50% - 12px);
+      left: calc(50% - 6px);
       top: 0;
       @include dotted-border('right', 10, '8EBDD4', 0);
     }
@@ -176,7 +176,7 @@
       // position: absolute;
       z-index: 3;
       // left: 50%;
-      margin: 0 0 0 -66px;
+      margin: 0 0 0 -60px;
       // bounce out animation:
       //-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
       //transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
