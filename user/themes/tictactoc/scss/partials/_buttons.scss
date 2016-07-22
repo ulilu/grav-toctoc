@@ -84,6 +84,8 @@
 
   &:active {
     color: $color-white;
+    -ms-transform: translateY(3px);
+    -webkit-transform: translateY(3px);
     transform: translateY(3px);
     border: 0;
     margin-bottom: 3px !important;

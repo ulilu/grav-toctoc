@@ -30,8 +30,10 @@
     color: $color-white;
     margin: 0 auto;
     text-shadow: 1px 0 6px #000;
+    -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    
     
     @media only screen and (min-width: 1200px) { 
       width: 1140px;  /* 1. */
