@@ -137,7 +137,7 @@ $fontweight : to-upper-case(str-slice($weight, 1, 1)) + str-slice($weight, 2);
 	$widthpx : #{$width}px;
 	$outsetpx : #{$outset}px;
 	
-	border-#{$side}-width: 1px;
+	border-#{$side}-width: $widthpx;
 	border-#{$side}-style: dotted;
 	border-#{$side}-color: #{'#' + $color};
   // border-#{$side}: 1px solid transparent;
