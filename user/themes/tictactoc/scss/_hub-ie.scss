@@ -13,11 +13,9 @@
 	max-height: 50vm; 
 }
 
-@media only screen and (min-width: 1000px) {
 	
-	.timeline-row:first-of-type:before {
-    height: calc(100% + 15px);
-    top: -150px;
-  }
+.timeline-row:first-of-type:before {
+  height: calc(100% + 15px) !important;
+  top: -15px !important;
 }
     
