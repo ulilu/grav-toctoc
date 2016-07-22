@@ -107,11 +107,16 @@
   @media only screen and (min-width: 420px) {  
     /**
      *  1. Using this to vertically align in relation to .timeline-row__info
+     *  Unfortunately IE9 doesn't understand :(
      */
-    display: flex;  // 1.
-    align-items: center;  // 1.
+    // display: flex;  // 1.
+    // align-items: center;  // 1.
     position: absolute;
     height: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     padding-bottom: 18px;
     
   
@@ -172,7 +177,7 @@
       // position: absolute;
       z-index: 3;
       // left: 50%;
-      margin: 0 0 0 -63px;
+      margin: 0 0 0 -66px;
       // bounce out animation:
       //-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
       //transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
@@ -183,6 +188,9 @@
       -moz-osx-font-smoothing: grayscale;
       -webkit-transition-duration: 0.4s;
       transition-duration: 0.4s;
+      -ms-transform-origin: 50% 300%; /* IE 9 */
+      -webkit-transform-origin: 50% 300%; /* Chrome, Safari, Opera */
+      transform-origin: 50% 300%;
     }
   }
 }
