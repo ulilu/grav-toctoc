@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // assign HTMLCollection with parents of images with objectFit to variable
 
     }  else if ( document.querySelector('.hero__bg') ) {
-    
+      console.log("hero__bg = " + document.querySelector('.hero__bg'));
+
       var container = document.querySelectorAll('.hero__bg');
       
       // Loop through HTMLCollection
@@ -73,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
 
     } else if ( document.querySelector('.card__img') ) {
+
+      console.log("card__img = " + document.querySelector('.card__img'));
 
       var container = document.querySelectorAll('.card__img');
       
@@ -97,6 +100,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     } else if ( document.querySelector('.cell__img') ) {
 
+      console.log("cell__img = " + document.querySelector('.cell__img'));
+
       var container = document.querySelectorAll('.cell__img');
       
       // Loop through HTMLCollection
@@ -119,6 +124,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
 
     } else if ( document.querySelector('.image-row') ) {
+
+      console.log("image-row = " + document.querySelector('.image-row'));
 
       var container = document.querySelectorAll('.image-row');
       
