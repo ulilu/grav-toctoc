@@ -17,8 +17,12 @@ $(document).ready(function() {
     document.cookie = name+"="+value+expires+"; path=/";
   }
       
-
-
+  /* 
+   *  Using cookies / session storage / promises to set webfonts:
+   *  https://www.bramstein.com/writing/web-font-loading-patterns.html
+   *  The original script works from IE10+ - i made some changes to it to
+   *  get it to work on IE 9 without errors.
+   */
   var html = document.documentElement;
   html.className += " fonts-loading";
 
@@ -35,7 +39,11 @@ $(document).ready(function() {
       weight: 400
   });
 
-
+/*  Apparently, IE does not understand promises.
+ *  nevertheless - the code below seems to work - or at least
+ *  does not interfere on IE - and all fonts look ok.
+ *  It was however necessary to take out the .catch-function...
+ */
   Promise.all([
     light.load(null, 5000),
     regular.load(null, 5000),
@@ -44,7 +52,7 @@ $(document).ready(function() {
     console.log('Linotte light, regular & semibold have loaded');
     fontawesome.load(null, 5000).then(function () {  
       console.log('Fontawesome has loaded');
-      html.className -= " fonts-loading";
+      html.className =- " fonts-loading";
       html.className += " fonts-loaded";
       createCookie('fonts-loaded', '1', 1); 
       /* sessionStorage.fontsLoaded = true; */
