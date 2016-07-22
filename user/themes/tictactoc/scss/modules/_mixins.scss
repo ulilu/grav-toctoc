@@ -137,10 +137,10 @@ $fontweight : to-upper-case(str-slice($weight, 1, 1)) + str-slice($weight, 2);
 	$widthpx : #{$width}px;
 	$outsetpx : #{$outset}px;
 	
-	// border-#{$side}: $widthpx;
-	// border-style: dotted;
-	// border-color: #{'#' + $color};
-  border: 1px solid transparent;
+	border-#{$side}-width: $widthpx;
+	border-#{$side}-style: dotted;
+	border-#{$side}-color: #{'#' + $color};
+  // border-#{$side}: 1px solid transparent;
 	@if $side == 'top' {
     border-image: url("data:image/svg+xml;charset=utf8,
   		%3Csvg xmlns='http://www.w3.org/2000/svg' 
