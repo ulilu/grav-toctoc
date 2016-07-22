@@ -32,10 +32,6 @@
       left: 0;
       z-index: 4;
       width: 100%;
-      // @include dotted-border('bottom', 10, 'D7CAAD');
-      // @include dotted-border('bottom', 10, 'DFCA85');
-      // @include dotted-border('bottom', 10, 'D1BD8B');
-      // @include dotted-border('bottom', 10, 'ebcb7b');
       @include dotted-border('bottom', 10, 'dec586');
     }
   }
@@ -60,10 +56,6 @@
         width: 1px;
         height: 100%;
         border: none;
-        // @include dotted-border('right', 10, 'D7CAAD');
-        // @include dotted-border('right', 10, 'DFCA85');
-        // @include dotted-border('right', 10, 'D1BD8B');
-        // @include dotted-border('right', 10, 'ebcb7b');
         @include dotted-border('right', 10, 'dec586');
       }
 
