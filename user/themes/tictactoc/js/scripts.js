@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 
   var html = document.documentElement;
-  html.classList.add('fonts-loading');
+  html.addClass('fonts-loading');
 
   var light = new FontFaceObserver('Linotte-Light', {
       weight: 400
@@ -44,14 +44,14 @@ $(document).ready(function() {
     console.log('Linotte light, regular & semibold have loaded');
     fontawesome.load(null, 5000).then(function () {  
       console.log('Fontawesome has loaded');
-      html.classList.remove('fonts-loading');
-      html.classList.add('fonts-loaded');
+      html.removeClass('fonts-loading');
+      html.addClass('fonts-loaded');
       createCookie('fonts-loaded', '1', 1); 
       /* sessionStorage.fontsLoaded = true; */
     }).catch(function () {
       console.log('Fontawesome loading failed, using fallback font');
-      html.classList.remove('fonts-loading');
-      html.classList.add('fonts-failed');
+      html.removeClass('fonts-loading');
+      html.addClass('fonts-failed');
       /* sessionStorage.fontsLoaded = false; */
     });
   });
