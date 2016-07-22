@@ -14,8 +14,36 @@
 }
 
 	
-.timeline-row:first-of-type:before {
-  height: calc(100% + 18px) !important;
-  top: -18px !important;
+.timeline-row {
+
+	@media only screen and (min-width: 1000px) {
+
+		&:before {
+			border-right-width: 6px;
+		}
+
+		&:first-of-type:before {
+  		height: calc(100% + 15px) !important;
+  		top: -15px !important;
+  	}
+  }
 }
-    
+
+.block--howto h1 {
+	@media only screen and (min-width: 1000px) {
+		border-bottom-width: 6px !important;
+	}
+}
+ 
+
+.cell--service { 
+	
+	&:first-of-type:after {
+		border-bottom-width: 6px !important;
+		
+		@media only screen and (min-width: 720px) {
+			border-bottom-width: 0;
+			border-right-width: 6px !important;
+		}
+	}
+}   
