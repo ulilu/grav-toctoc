@@ -12,3 +12,12 @@
 .image-row img {
 	max-height: 50vm; 
 }
+
+.timeline-row:first-of-type:before {
+
+  @media only screen and (min-width: 1000px) {
+    height: calc(100% + 15px);
+    top: -15px;
+  }
+}
+    
