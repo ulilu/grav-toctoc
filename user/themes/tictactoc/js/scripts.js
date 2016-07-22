@@ -41,7 +41,21 @@ $(document).ready(function() {
     regular.load(null, 5000),
     semibold.load(null, 5000),
     fontawesome.load(null, 5000)
-  ]);
+  ]).then(function () {
+    console.log('Linotte light, regular & semibold have loaded');
+    fontawesome.load(null, 5000).then(function () {  
+      console.log('Fontawesome has loaded');
+      html.className -= " fonts-loading";
+      html.className += " fonts-loaded";
+      createCookie('fonts-loaded', '1', 1); 
+      /* sessionStorage.fontsLoaded = true; */
+    }).catch(function () {
+      console.log('Fontawesome loading failed, using fallback font');
+      html.className -= " fonts-loading";
+      html.className += " fonts-failed";
+      /* sessionStorage.fontsLoaded = false; */
+    });
+  });
 
 
   /*
