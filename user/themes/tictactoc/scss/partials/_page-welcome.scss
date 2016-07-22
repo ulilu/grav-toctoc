@@ -64,7 +64,8 @@
   bottom: 0;
   display: table-cell;
   vertical-align: bottom;
-  max-width: 1200px;
+  // max-width: 1200px;
+  width: 100%;
   padding: 0 !important;
   margin: 0 auto;
   transition: all 0.3s ease-out;
@@ -86,7 +87,8 @@
   }
 
   @media only screen and (min-width: 1200px) {
-    padding-left: calc(((100vw - 100%) / 2) + 30px);
+    // padding-left: calc(((100vw - 100%) / 2) + 30px);
+    padding-left: calc(((100% - 1200px) / 2) + 30px);
   }
 }
 
@@ -101,12 +103,15 @@
   }
 
   @media only screen and (min-width: 720px) {
-  	max-width: calc(((100vw - 100%) / 2) + 720px);
+  	// max-width: calc(((100vw - 100%) / 2) + 720px);
+    width: 720px;
   	border-top-right-radius: 30px;
   }
 
   @media only screen and (min-width: 1200px) {
-  	padding-left: calc(((100vw - 100%) / 2) + 30px);
+  	// padding-left: calc(((100vw - 100%) / 2) + 30px);
+    width: calc(((100% - 1200px) / 2) + 720px);
+    padding-left: calc(((100% - 1200px) / 2) + 30px);
   }
 }
 

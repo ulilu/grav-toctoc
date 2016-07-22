@@ -12,6 +12,8 @@
     {% block head %}
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <link rel="alternate" hreflang="fr" href="http://www.toctoc-marseille.fr"/>
+        <link rel="alternate" hreflang="en" href="http://www.toctoc-marseille.com"/>
         <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
         {% include 'partials/metadata.html.twig' %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
@@ -30,10 +32,10 @@
 
          {% block stylesheets %}
             {% do assets.addCss('theme://css/font-awesome.min.css', 101) %}
-            {% do assets.addCss('theme://css/style.css', 1) %}
+            {% do assets.addCss('theme://css/style.css', 10) %}
 
             {% if browser.getBrowser == 'msie' %}
-                {% do assets.addCss('theme://css/styles-ie.css') %}
+                {% do assets.addCss('theme://css/styles-ie.css', 5) %}
             {% endif %}
 
         {% endblock %}
