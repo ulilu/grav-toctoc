@@ -136,13 +136,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       console.log("image-row = " + document.querySelector('.image-row'));
 
-      var container = document.querySelectorAll('.image-row [rel="lightbox"]');
+      var container = document.querySelectorAll('.image-row');
       
       // Loop through HTMLCollection
       for(var i = 0; i < container.length; i++) {
         
         // Asign image source to variable
-        var imageSource = container[i].querySelector('img').src;
+        var imageSource = container[i].querySelector('img').getAttribute("data-src");
         
         // Hide image
         container[i].querySelector('img').style.opacity = '0';
