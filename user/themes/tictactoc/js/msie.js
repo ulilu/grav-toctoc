@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       console.log("image-row = " + document.querySelector('.image-row'));
 
-      var container = document.querySelectorAll('.image-row');
+      var container = document.querySelectorAll('.image-row a');
       
       // Loop through HTMLCollection
       for(var i = 0; i < container.length; i++) {
