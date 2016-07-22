@@ -26,6 +26,10 @@
   		height: calc(100% + 18px) !important;
   		top: -18px !important;
   	}
+
+  	&:last-of-type:after {
+  		left: calc(50% - 6px);
+  	}
   }
 }
 
