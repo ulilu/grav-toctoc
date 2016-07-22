@@ -132,11 +132,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     }
 
-    if ( document.querySelector('.image-row') ) {
+    if ( document.querySelector('.image-row a') ) {
 
-      console.log("image-row = " + document.querySelector('.image-row'));
+      console.log("image-row a = " + document.querySelector('.image-row a'));
 
-      var container = document.querySelectorAll('.image-row');
+      var container = document.querySelectorAll('.image-row a');
       
       // Loop through HTMLCollection
       for(var i = 0; i < container.length; i++) {
