@@ -28,7 +28,7 @@ $(document).ready(function() {
   var regular = new FontFaceObserver('Linotte-Regular', {
       weight: 400
   });
-  var semibold = new FontFaceObserver('Linotte-Semibold', {
+  var semibold = new FontFaceObserver('Linotte-SemiBold', {
       weight: 400
   });
   var fontawesome = new FontFaceObserver('FontAwesome', {
