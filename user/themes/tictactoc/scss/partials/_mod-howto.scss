@@ -50,7 +50,7 @@
       // width: 50%;
       text-align: center;
       padding-bottom: 24px;
-      @include dotted-border('bottom', 12, '8EBDD4');
+      @include dotted-border('bottom', 10, '8EBDD4', 0);
 
       // unfortunately this is impossible to match up on all browsers. therefore we bette leave it out.
       // &:after {
