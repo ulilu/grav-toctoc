@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for(var i = 0; i < container.length; i++) {
         
         // Asign image source to variable
-        var imageSource = container[i].querySelector('img').src;
+        var imageSource = container[i].querySelector('img').getAttribute("data-src");
         
         // Hide image
         container[i].querySelector('img').style.opacity = '0';
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for(var i = 0; i < container.length; i++) {
         
         // Asign image source to variable
-        var imageSource = container[i].querySelector('img').src;
+        var imageSource = container[i].querySelector('img').getAttribute("data-src");
         
         // Hide image
         container[i].querySelector('img').style.opacity = '0';
