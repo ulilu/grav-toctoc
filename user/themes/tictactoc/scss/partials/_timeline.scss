@@ -113,16 +113,15 @@
     // align-items: center;  // 1.
     position: absolute;
     height: 100%;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
     padding-bottom: 18px;
     
   
     img {
-      // top: 0;
+      top: 50%;
       left: 0;
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
       width: 75px;
       height: 75px;
     }
