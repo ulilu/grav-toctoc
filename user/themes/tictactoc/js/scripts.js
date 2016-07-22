@@ -39,8 +39,7 @@ $(document).ready(function() {
   Promise.all([
     light.load(null, 5000),
     regular.load(null, 5000),
-    semibold.load(null, 5000),
-    fontawesome.load(null, 5000)
+    semibold.load(null, 5000)
   ]).then(function () {
     console.log('Linotte light, regular & semibold have loaded');
     fontawesome.load(null, 5000).then(function () {  
