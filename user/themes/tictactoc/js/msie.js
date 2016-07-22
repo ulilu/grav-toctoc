@@ -105,11 +105,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     } 
 
-    if ( document.querySelector('.cell__img') ) {
+    if ( document.querySelector('.cell-image') ) {
 
-      console.log("cell__img = " + document.querySelector('.cell__img'));
+      console.log("cell-image = " + document.querySelector('.cell-image'));
 
-      var container = document.querySelectorAll('.cell__img');
+      var container = document.querySelectorAll('.cell-image');
       
       // Loop through HTMLCollection
       for(var i = 0; i < container.length; i++) {
