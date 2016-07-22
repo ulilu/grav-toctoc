@@ -28,7 +28,7 @@
   	}
 
   	&:last-of-type:after {
-  		left: calc(50% - 6px);
+  		left: calc(50% - 6px) !important;
   	}
   }
 }
