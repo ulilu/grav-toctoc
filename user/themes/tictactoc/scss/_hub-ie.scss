@@ -19,7 +19,7 @@
 	@media only screen and (min-width: 1000px) {
 
 		&:before {
-			border-right-width: 6px;
+			border-right-width: 6px !important;
 		}
 
 		&:first-of-type:before {
@@ -37,7 +37,7 @@
  
 
 .cell--service { 
-	
+
 	&:first-of-type:after {
 		border-bottom-width: 6px !important;
 		
