@@ -118,9 +118,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         container[i].style.backgroundPosition = 'center center';
       }
 
-    } else if ( document.querySelector('figure a') ) {
+    } else if ( document.querySelector('.image-row') ) {
 
-      var container = document.querySelectorAll('figure a');
+      var container = document.querySelectorAll('.image-row');
       
       // Loop through HTMLCollection
       for(var i = 0; i < container.length; i++) {
