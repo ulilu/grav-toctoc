@@ -36,7 +36,7 @@
       // @include dotted-border('bottom', 10, 'DFCA85');
       // @include dotted-border('bottom', 10, 'D1BD8B');
       // @include dotted-border('bottom', 10, 'ebcb7b');
-      @include dotted-border('bottom', 10, 'dec586');
+      @include dotted-border('bottom', 12, 'dec586');
     }
   }
 
@@ -64,7 +64,7 @@
         // @include dotted-border('right', 10, 'DFCA85');
         // @include dotted-border('right', 10, 'D1BD8B');
         // @include dotted-border('right', 10, 'ebcb7b');
-        @include dotted-border('right', 10, 'dec586');
+        @include dotted-border('right', 12, 'dec586');
       }
 
       .page-welcome &:after {
