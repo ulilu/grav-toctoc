@@ -188,9 +188,6 @@
       -moz-osx-font-smoothing: grayscale;
       -webkit-transition-duration: 0.4s;
       transition-duration: 0.4s;
-      -ms-transform-origin: 50% 300%; /* IE 9 */
-      -webkit-transform-origin: 50% 300%; /* Chrome, Safari, Opera */
-      transform-origin: 50% 300%;
     }
   }
 }
@@ -198,6 +195,9 @@
 .timeline-row:hover > .timeline-row__img img {
   @media only screen and (min-width: 1000px) {
     // animation: cd-bounce-3 4s linear infinite;
+    -ms-transform-origin: 50% 300%; /* IE 9 */
+    -webkit-transform-origin: 50% 300%; /* Chrome, Safari, Opera */
+    transform-origin: 50% 300%;
     transform: translateZ(0);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
