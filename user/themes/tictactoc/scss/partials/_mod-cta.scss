@@ -26,11 +26,9 @@
     content: "";
     display: table-cell;
     position: relative;
-    width: 1px;
-    height: 100px;
     vertical-align: middle;
-    @include fluid-type(height,
-      320px, 720px, 60px, 100px);
+    @include fluid-type(width height,
+      320px, 720px, 92px, 112px);
   }
 
   &:after {
@@ -43,11 +41,11 @@
     background: url(../img/logo_icon3.svg) no-repeat;
     background-size: 100% 100%;
     @include fluid-type(width height,
-      320px, 720px, 60px, 100px);
+      320px, 720px, 80px, 100px);
   }
 
   span {
-    padding-left: 90px;
+    // padding-left: 90px;
     vertical-align: middle;
     display: table-cell;
     position: relative;
