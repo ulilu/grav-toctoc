@@ -41,6 +41,7 @@
     top: 0;
     margin: -6px 0 0 -12px;
     background: url(../img/logo_icon3.svg) no-repeat;
+    background-size: 100% 100%;
     @include fluid-type(width height,
       320px, 720px, 60px, 100px);
   }
