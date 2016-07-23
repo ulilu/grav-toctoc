@@ -14,15 +14,15 @@
 
         {% for index, item in page.translatedLanguages %}
 
-            <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ page.rawRoute }}{{ grav.pages.dispatch(item).routeCanonical }}"/>
-
-        {% endfor %}
-
-        {% for index, item in page.translatedLanguages %}
-
             {% if index == page.language %}
+
                 <link rel="canonical" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{{ grav.pages.dispatch(item).routeCanonical }}"/>
+
+                <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{{ grav.pages.dispatch(item).routeCanonical }}"/>
+
             {% endif %}
+
+            <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{{ page.rawRoute }}"/>
 
         {% endfor %}
 
