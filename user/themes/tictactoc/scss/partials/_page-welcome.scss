@@ -230,7 +230,7 @@
       bottom: -12px;
       border: 12px solid $color-white;
       border-radius: 6px;
-      box-shadow: 1px 0 12px rgba(0,0,0,0.33);
+      box-shadow: 1px 0 12px rgba(0,0,0,0.25);
       // @include boxshadow02(0.1);
       background: $color-seagreen5;
     }
@@ -250,7 +250,7 @@
       -ms-transform: rotate(-3deg);
       background: $color-seagreen4;
       z-index: -1;
-      box-shadow: 1px 0 12px rgba(0,0,0,0.33);
+      box-shadow: 1px 0 12px rgba(0,0,0,0.25);
       // @include boxshadow02(0.1);
     }
   }
