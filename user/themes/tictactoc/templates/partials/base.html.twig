@@ -13,7 +13,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
         {% for index, item in page.translatedLanguages %}
-            <link rel="alternate" hreflang="{{page.language}}" href="http://www.toctoc-marseille.fr/fr{{grav.pages.dispatch(item).routeCanonical}}"/>
+
+            {% if item == "en" %}
+                <link rel="alternate" hreflang="{{page.language}}" href="http://www.toctoc-marseille.com/en{{grav.pages.dispatch(item).routeCanonical}}"/>
+            {% elseif item == "fr" %}
+                <link rel="alternate" hreflang="{{page.language}}" href="http://www.toctoc-marseille.fr/fr{{grav.pages.dispatch(item).routeCanonical}}"/>
+            {% endif %}
+
         {% endfor %}
 
         <link rel="alternate" hreflang="fr" href="http://www.toctoc-marseille.fr/fr{{ page.rawRoute }}"/>
