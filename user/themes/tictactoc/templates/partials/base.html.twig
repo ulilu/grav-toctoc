@@ -34,7 +34,7 @@
             {% do assets.addCss('theme://css/font-awesome.min.css', 101) %}
             {% do assets.addCss('theme://css/style.css', 1) %}
 
-            {% if (browser.getBrowser == 'msie') or (browser.getBrowser == 'Edge') %}
+            {% if (browser.getBrowser == 'msie') or (browser.getBrowser == 'edge') %}
                 {% do assets.addCss('theme://css/styles-ie.css') %}
             {% endif %}
 
@@ -55,7 +55,7 @@
             {% do assets.addJs('theme://js/fittext_uli.js') %} 
             {% do assets.addJs('theme://js/scripts.js') %} 
 
-            {% if (browser.getBrowser == 'msie') or (browser.getBrowser == 'Edge') %}
+            {% if (browser.getBrowser == 'msie') or (browser.getBrowser == 'edge') %}
                 {% do assets.addJs('theme://js/msie.js') %}
             {% endif %}
 
