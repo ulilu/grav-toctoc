@@ -15,9 +15,9 @@
         {% for index, item in page.translatedLanguages %}
 
             {% if item == "en" %}
-                <link rel="alternate" hreflang="{{page.language}}" href="http://www.toctoc-marseille.com/en{{grav.pages.dispatch(item).routeCanonical}}"/>
+                <link rel="alternate" hreflang="{{item}}" href="http://www.toctoc-marseille.com/en{{grav.pages.dispatch(item).routeCanonical}}"/>
             {% elseif item == "fr" %}
-                <link rel="alternate" hreflang="{{page.language}}" href="http://www.toctoc-marseille.fr/fr{{grav.pages.dispatch(item).routeCanonical}}"/>
+                <link rel="alternate" hreflang="{{item}}" href="http://www.toctoc-marseille.fr/fr{{grav.pages.dispatch(item).routeCanonical}}"/>
             {% endif %}
 
         {% endfor %}
