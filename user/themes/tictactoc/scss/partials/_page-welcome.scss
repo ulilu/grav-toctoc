@@ -344,10 +344,10 @@
     padding: 0;
     
     > .block {
-      padding: 30px !important;
+      padding: 30px 24px 30px 30px !important;
       
       @media only screen and (min-width:1200px) {
-        padding: 36px 30px 36px 0 !important;
+        padding: 36px -6px 36px 0 !important;
       }
     }
     
