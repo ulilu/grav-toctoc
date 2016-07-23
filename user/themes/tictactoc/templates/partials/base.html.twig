@@ -55,7 +55,7 @@
             {% do assets.addJs('theme://js/fittext_uli.js') %} 
             {% do assets.addJs('theme://js/scripts.js') %} 
 
-            {% if browser.getBrowser == 'msie' %}
+            {% if (browser.getBrowser == 'msie') or (browser.getBrowser == 'Edge') %}
                 {% do assets.addJs('theme://js/msie.js') %}
             {% endif %}
 
