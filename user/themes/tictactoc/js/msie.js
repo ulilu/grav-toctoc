@@ -148,6 +148,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     }
 
+    if ( document.querySelector('.cell__img') ) {
+
+      console.log(".cell__img = " + document.querySelector('.cell__img'));
+
+      var container = document.querySelectorAll('.cell__img');
+
+      // Loop through HTMLCollection
+      for(var i = 0; i < container.length; i++) {
+        
+        var imageSource = container[i].querySelector('img').getAttribute("src"); 
+        
+        // Hide image
+        container[i].querySelector('img').style.opacity = '0';
+        
+        // Add background-size: cover
+        container[i].style.backgroundSize = 'cover';
+        
+        // Add background-image: and put image source here
+        container[i].style.backgroundImage = 'url(' + imageSource + ')';
+        
+        // Add background-position: center center
+        container[i].style.backgroundPosition = 'center center';
+      }
+
+    }
+
     if ( document.querySelector('.image-row a') ) {
 
       console.log("image-row a = " + document.querySelector('.image-row a'));
