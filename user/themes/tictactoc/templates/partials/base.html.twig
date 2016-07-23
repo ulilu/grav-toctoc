@@ -14,11 +14,10 @@
 
         {% for index, item in page.translatedLanguages %}
 
-            {% if index == "en" %}
+           
                 <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{index}}{% endif %}/{{index}}/{{item}}"/>
-            {% else %}
-                <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.fr/fr{{grav.pages.dispatch(item).routeCanonical}}"/>
-            {% endif %}
+          
+       
 
         {% endfor %}
 
