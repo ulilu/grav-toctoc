@@ -14,7 +14,7 @@
 
         {% for index, item in page.translatedLanguages %}
 
-            {% if index < 2 %}
+            {% if index < 1 %}
                 <link rel="alternate" hreflang="{{item}}" href="http://www.toctoc-marseille.com/en{{grav.pages.dispatch(item).routeCanonical}}"/>
             {% else %}
                 <link rel="alternate" hreflang="{{item}}" href="http://www.toctoc-marseille.fr/fr{{grav.pages.dispatch(item).routeCanonical}}"/>
