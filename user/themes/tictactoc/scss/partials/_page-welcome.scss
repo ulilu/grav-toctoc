@@ -232,7 +232,7 @@
       border-radius: 6px;
       box-shadow: 1px 0 12px rgba(0,0,0,0.33);
       // @include boxshadow02(0.1);
-      background: $color-seagreen4;
+      background: $color-seagreen5;
     }
 
     &:after {
@@ -244,11 +244,11 @@
       top: -5%;
       right: -5%;
       bottom: -5%;
-      border: 12px solid #FEFEFE;
+      border: 12px solid $color-seagreen6;
       border-radius: 6px;
       transform: rotate(-3deg);
       -ms-transform: rotate(-3deg);
-      background: $color-seagreen3;
+      background: $color-seagreen4;
       z-index: -1;
       box-shadow: 1px 0 12px rgba(0,0,0,0.33);
       // @include boxshadow02(0.1);
