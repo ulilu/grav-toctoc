@@ -174,24 +174,12 @@
 }
 
 .nav__link--home {
-  line-height: 39px;
+  line-height: 42px;
   font-size: 24px;
   padding: 0;
   width: auto;
   min-width: 48px;
-  
-  .active > &,
-  .focus > & {
-    line-height: 42px;
-  }
-    
-  @media only screen and (min-width: 800px) {
-    .hover > &,
-    .active > & {
-      line-height: 42px;
-    }
-  }
-  
+
 
   
   &[class*="fa-"]:before {
