@@ -43,10 +43,10 @@
     left: auto;
     bottom: 0;
     width: 100%;
-    max-width: 100%;
+    // max-width: 100%;
     // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 40%, rgba(0,0,0,0) );
     background: rgba(61, 49, 50, 0.85);
-    padding: 12px 0 15px;
+    padding: 12px 30px 15px 0;
     -ms-transform: none;
     -webkit-transform: none;
     transform: none;
@@ -55,6 +55,16 @@
     // @media only screen and (min-width: 750px) {
     //   padding: 15px 0;
     // }
+    
+    @media only screen and (min-width: 600px) {
+      width: auto;
+      border-top-right-radius: 12px;
+    } 
+    
+    @media only screen and (min-width: 900px) {
+      max-width: 590px;
+      border-top-right-radius: 24px;
+    }    
 
     @media only screen and (min-width: 1200px) {
       text-indent: calc((100% - 1140px) / 2);
