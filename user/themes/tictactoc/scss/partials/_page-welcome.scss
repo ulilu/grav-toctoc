@@ -506,8 +506,11 @@
     }
 
     .cell-image__frame--border {
-      margin: 9px;
-      box-shadow: 1px 0 9px rgba(0,0,0,0.33);
+
+      @media only screen and (min-width:720px) {
+        margin: 9px;
+        box-shadow: 1px 0 9px rgba(0,0,0,0.33);
+      }
       
       @media only screen and (min-width:1000px) {
           margin: 18px;
