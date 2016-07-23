@@ -11,6 +11,11 @@
     {% block head %}
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+        {% for index, item in page.translatedLanguages %}
+            {{grav.pages.dispatch(item).routeCanonical}}
+        {% endfor %}
+
         <link rel="alternate" hreflang="fr" href="http://www.toctoc-marseille.fr/fr{{ page.rawRoute }}"/>
         <link rel="alternate" hreflang="en" href="http://www.toctoc-marseille.com/en{{ page.rawRoute }}"/>
         <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
