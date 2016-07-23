@@ -13,7 +13,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
         {% for index, item in page.translatedLanguages %}
-            <link rel="alternate" hreflang="{{translatedLanguages[index].language}}" href="http://www.toctoc-marseille.fr/fr{{grav.pages.dispatch(item).routeCanonical}}"/>
+            <link rel="alternate" hreflang="{{item.language}}" href="http://www.toctoc-marseille.fr/fr{{grav.pages.dispatch(item).routeCanonical}}"/>
         {% endfor %}
 
         <link rel="alternate" hreflang="fr" href="http://www.toctoc-marseille.fr/fr{{ page.rawRoute }}"/>
