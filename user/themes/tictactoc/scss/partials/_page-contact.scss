@@ -34,7 +34,7 @@
   li {
     display: block;
     float: left;
-    width: calc(99.999% / 8);
+    width: calc(99.999% / 8);  // necessary for IE 9+
     overflow: hidden;
     margin: 0;
     

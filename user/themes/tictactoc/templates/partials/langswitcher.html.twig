@@ -7,7 +7,14 @@
         {% set lang_url = page.url %}
         {% set active_class = 'active' %}
     {% else %}
-        {% set lang_url = base_url_simple ~ langobj.getLanguageURLPrefix(key)~langswitcher.page_route ?: '/' %}
+
+    		{% if key == "en" %}
+    			{% set lang_url = "www.toctoc-Marseille.com/" ~ langobj.getLanguageURLPrefix(key)~langswitcher.page_route ?: '/' %}
+        	
+        {% else if key == "fr" %}
+        	{% set lang_url = "www.toctoc-Marseille.fr/" ~ langobj.getLanguageURLPrefix(key)~langswitcher.page_route ?: '/' %}
+        {% endif %}
+
         {% set active_class = '' %}
     {% endif %}
 
