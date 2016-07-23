@@ -14,15 +14,10 @@
 
         {% for index, item in page.translatedLanguages %}
 
-           
-                <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{index}}{% endif %}/{{index}}/{{item}}"/>
-          
-       
+            <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{index}}{% endif %}/{{index}}{{item}}"/>
 
         {% endfor %}
 
-        <link rel="alternate" hreflang="fr" href="http://www.toctoc-marseille.fr/fr{{ page.rawRoute }}"/>
-        <link rel="alternate" hreflang="en" href="http://www.toctoc-marseille.com/en{{ page.rawRoute }}"/>
         <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
         {% include 'partials/metadata.html.twig' %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
