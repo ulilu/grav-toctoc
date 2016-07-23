@@ -16,7 +16,7 @@
 
             {% if item == "en" %}
                 <link rel="alternate" hreflang="{{item}}" href="http://www.toctoc-marseille.com/en{{grav.pages.dispatch(item).routeCanonical}}"/>
-            {% elseif item == "fr" %}
+            {% else %}
                 <link rel="alternate" hreflang="{{item}}" href="http://www.toctoc-marseille.fr/fr{{grav.pages.dispatch(item).routeCanonical}}"/>
             {% endif %}
 
