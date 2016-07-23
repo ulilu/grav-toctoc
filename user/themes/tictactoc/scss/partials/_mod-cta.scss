@@ -25,22 +25,23 @@
     content: "";
     display: inline-block;
     position: relative;
-    float: left;
-    margin: -6px 12px 0 -12px;
     width: 90px;
     height: 100px;
     vertical-align: middle;
-    background: url(../img/logo_icon3.svg) no-repeat;
-    // background-size: 70%;
+    margin-right: 12px;
   }
 
   &:after {
     content: "";
     display: inline-block;
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: -6px 0 0 -12px;
     width: 90px;
     height: 100px;
-    vertical-align: middle;
+    background: url(../img/logo_icon3.svg) no-repeat;
+    // background-size: 70%;
   }
   
   a {
