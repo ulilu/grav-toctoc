@@ -152,14 +152,32 @@
 .cell-image {
   overflow: hidden;
   
-  img {
+  img,
+  .cell-image__frame {
     width: 100%;
     min-height: 240px;
     max-height: 40vh;
     object-fit: cover;
     margin-bottom: 24px;
+    border: 12px solid;
+    border-radius: 3px;
+
+    @media only screen and (min-width: 800px) {
+      max-height: initial;
+      height: 330px;
+    }
   }
 }
+
+.cell-image__frame {
+
+  img {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+  }
+}
+
 /**
  * New code for Loulou image in "About" page:
   min-height: 300px;
