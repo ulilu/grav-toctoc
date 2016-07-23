@@ -19,8 +19,7 @@
   margin: 0;
   @include fontweight(regular);
   @include fluid-type(font-size, 
-    320px, 900px, 24px, 36px, 
-           1100px, 1200px, 36px, 30px);
+    320px, 900px, 24px, 30px);
 
   &:before {
     content: "";
