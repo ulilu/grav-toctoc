@@ -32,10 +32,10 @@
 
          {% block stylesheets %}
             {% do assets.addCss('theme://css/font-awesome.min.css', 101) %}
-            {% do assets.addCss('theme://css/style.css', 10) %}
+            {% do assets.addCss('theme://css/style.css', 1) %}
 
             {% if browser.getBrowser == 'msie' %}
-                {% do assets.addCss('theme://css/styles-ie.css', 5) %}
+                {% do assets.addCss('theme://css/styles-ie.css', 2) %}
             {% endif %}
 
         {% endblock %}
