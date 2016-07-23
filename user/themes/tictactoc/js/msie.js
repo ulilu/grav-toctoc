@@ -121,12 +121,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log(".cell-image__frame = " + document.querySelector('.cell-image__frame'));
 
       var container = document.querySelectorAll('.cell-image__frame');
-      
+      var imageSource = "";
+
       // Loop through HTMLCollection
       for(var i = 0; i < container.length; i++) {
         
+        if ( container[i].querySelector('img').getAttribute("src") ) {
         // Asign image source to variable
-        var imageSource = container[i].querySelector('img').getAttribute("src");
+          imageSource = container[i].querySelector('img').getAttribute("src"); 
+        } else {
+          imageSource = container[i].querySelector('img').getAttribute("data-src"); 
+        }
         
         // Hide image
         container[i].querySelector('img').style.opacity = '0';
