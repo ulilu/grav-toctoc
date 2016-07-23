@@ -492,12 +492,21 @@
     .cell-image {
       padding-bottom: 24px;
       
+      @media only screen and (min-width: 720px) {
+        padding-right: 48px;
+      }
+
+      @media only screen and (min-width: 860px) {
+        padding-right: 54px;
+      }
+      
       @media only screen and (min-width: 1000px) {
         padding-right: 60px;
       } 
     }
 
     .cell-image__frame--border {
+      margin: 9px;
       box-shadow: 1px 0 9px rgba(0,0,0,0.33);
       
       @media only screen and (min-width:1000px) {
