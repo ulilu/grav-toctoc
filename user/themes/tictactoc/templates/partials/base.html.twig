@@ -34,7 +34,7 @@
             {% do assets.addCss('theme://css/font-awesome.min.css', 101) %}
             {% do assets.addCss('theme://css/style.css', 1) %}
 
-            {% if browser.getBrowser == 'msie' OR 'edge' %}
+            {% if browser.getBrowser == 'msie' | 'edge' %}
                 {% do assets.addCss('theme://css/styles-ie.css') %}
             {% endif %}
 
