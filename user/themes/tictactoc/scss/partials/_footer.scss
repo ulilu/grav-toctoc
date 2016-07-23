@@ -79,7 +79,9 @@
       position: absolute;
       right: 0;
       top: 50%;
-      transform: translateY(-65%);
+      -ms-transform: translateY(-61.8%);
+      -webkit-transform: translateY(-61.8%);
+      transform: translateY(-61.8%);
       display: block;
       width: 16px;
       height: 16px;
