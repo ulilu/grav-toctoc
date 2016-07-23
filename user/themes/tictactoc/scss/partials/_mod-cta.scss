@@ -27,7 +27,7 @@
     position: relative;
     vertical-align: middle;
     @include fluid-type(width height,
-      320px, 720px, 80px, 100px);
+      320px, 720px, 80px, 110px);
   }
 
   &:after {
@@ -44,7 +44,6 @@
   }
 
   span {
-    // padding-left: 90px;
     vertical-align: middle;
     display: table-cell;
     position: relative;
