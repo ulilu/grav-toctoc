@@ -116,11 +116,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     } 
 
-    if ( document.querySelector('.cell-image a') ) {
+    if ( document.querySelector('.cell-image a[rel="lightbox"]') ) {
 
-      console.log("cell-image a = " + document.querySelector('.cell-image a'));
+      console.log("cell-image a[rel="lightbox"] = " + document.querySelector('.cell-image a[rel="lightbox"]'));
 
-      var container = document.querySelectorAll('.cell-image a');
+      var container = document.querySelectorAll('.cell-image a[rel="lightbox"]');
       
       // Loop through HTMLCollection
       for(var i = 0; i < container.length; i++) {
