@@ -497,6 +497,34 @@
       } 
     }
 
+    .cell-image__frame--border {
+        box-shadow: 1px 0 12px rgba(0,0,0,0.33);
+        // @include boxshadow02(0.1);
+        // background: $color-seagreen4;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 110%;
+        position: absolute;
+        left: -5%;
+        top: -5%;
+        right: -5%;
+        bottom: -5%;
+        border: 12px solid #FEFEFE;
+        border-radius: 6px;
+        -ms-transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+        background: $color-seagreen3;
+        z-index: -1;
+        box-shadow: 1px 0 12px rgba(0,0,0,0.33);
+        // @include boxshadow02(0.1);
+      }
+      
+    }
+
     p	{
 			margin-bottom: 24px;
       
