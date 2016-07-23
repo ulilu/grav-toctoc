@@ -16,6 +16,7 @@
   position: relative;
   color: $color-logo1;
   line-height: 160%;
+  margin: 0;
   @include fontweight(regular);
   @include fluid-type(font-size, 
     320px, 900px, 24px, 36px, 
