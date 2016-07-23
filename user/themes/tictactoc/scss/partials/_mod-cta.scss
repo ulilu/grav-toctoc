@@ -24,7 +24,7 @@
   
   &:before {
     content: "";
-    display: inline-block;
+    display: table-cell;
     position: relative;
     width: 1px;
     height: 100px;
@@ -38,16 +38,16 @@
     left: 0;
     top: 0;
     margin: -6px 0 0 -12px;
-    width: 90px;
+    width: 100px;
     height: 100px;
     background: url(../img/logo_icon3.svg) no-repeat;
     // background-size: 70%;
   }
 
   span {
-    text-indent: 102px;
+    padding-left: 102px;
     vertical-align: middle;
-    display: inline-block;
+    display: table-cell;
     position: relative;
   }
   
