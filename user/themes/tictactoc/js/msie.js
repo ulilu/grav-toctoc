@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for(var i = 0; i < container.length; i++) {
         
         // Asign image source to variable
-        var imageSource = container[i].querySelector('img').getAttribute("data-src");
+        var imageSource = container[i].querySelector('img').getAttribute("src");
         
         // Hide image
         container[i].querySelector('img').style.opacity = '0';
