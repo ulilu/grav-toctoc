@@ -154,12 +154,12 @@
   
   img,
   .cell-image__frame {
+    color: #fff;
     width: 100%;
     min-height: 240px;
     max-height: 40vh;
     object-fit: cover;
     margin-bottom: 24px;
-    border: 12px solid;
     border-radius: 3px;
 
     @media only screen and (min-width: 800px) {
@@ -170,12 +170,17 @@
 }
 
 .cell-image__frame {
+  overflow: hidden;
 
   img {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
   }
+}
+
+.cell-image__frame--border {
+  border: 12px solid currentColor;
 }
 
 /**
