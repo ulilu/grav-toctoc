@@ -22,7 +22,7 @@
 
             {% else %}
 
-                <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{{ item.routeCanonical }}"/>
+                <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{{ page.rawRoute }}"/>
 
             {% endif %}
 
