@@ -16,13 +16,13 @@
 
             {% if index == page.language %}
 
-                <link rel="canonical" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{% if !(page.home) %}{{ grav.pages.dispatch(item).routeCanonical }}{% endif %}"/>
+                <link rel="canonical" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{% if not page.home %}{{ grav.pages.dispatch(item).routeCanonical }}{% endif %}"/>
 
-                <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{% if !(page.home) %}{{ grav.pages.dispatch(item).routeCanonical }}{% endif %}"/>
+                <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{% if not page.home %}{{ grav.pages.dispatch(item).routeCanonical }}{% endif %}"/>
 
             {% else %}
 
-                <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{% if !(page.home) %}{{ item }}{% endif %}"/>
+                <link rel="alternate" hreflang="{{index}}" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{% if not page.home %}{{ item }}{% endif %}"/>
 
             {% endif %}
 
