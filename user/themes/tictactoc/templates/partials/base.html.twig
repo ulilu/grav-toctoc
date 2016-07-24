@@ -14,6 +14,8 @@
 
         {% for index, item in page.translatedLanguages %}
 
+            {% if page.home %}toc {% endif %}
+
             {% if index == page.language %}
 
                 <link rel="canonical" href="http://www.toctoc-marseille.{% if index == "en" %}com{% else %}{{ index }}{% endif %}/{{ index }}{{ grav.pages.dispatch(item).routeCanonical }}"/>
