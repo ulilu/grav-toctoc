@@ -76,77 +76,14 @@ h1, h2, h3, h4, h5, h6	{
   // font-family: $font-regular;
 }
 
-// h1 {
-//   // font-size: 10vW; // = 32px in 320px, 64px in 640px, 96px in 960px, 
-  
-//   font-size: 36px;
-//   line-height: 42px;
-  
-//   @media only screen and (min-width:480px) {
-//     font-size: 42px;
-//     line-height: 48px;
-//   }
-
-//   @media only screen and (min-width:640px) {
-//     font-size: 48px;
-//     line-height: 54px;
-//   }
-// }
-
-// h2  {
-//   font-size: 36px;
-//   line-height: 42px;
-// }
-
-// h3	{
-//   font-size: 30px;
-//   line-height: 36px;
-// }
 
 
 .fontsize-alpha {
-  // font-size: 9vw !important;
-  // font-size: calc(4vw - ( ( 1vw * 1vw ) / 10));  // unfortunately this doesnt work
-  font-size: 9vw;
-  line-height: 120%;
-  
-  // @media only screen and (min-width: 450px) {
-  //   font-size: 54px !important;
-  //   line-height: 60px;
-  // }
-  
-  // @media only screen and (min-width: 550px) {
-  //   font-size: 72px !important;
-  //   line-height: 78px; 
-  // }
-  
-  @media only screen and (min-width: 800px) {
-    font-size: 72px;
-  }
-
-  // @media only screen and (min-width: 1200px) {
-  //   font-size: 81px !important;
-  // }
+  @include fluid-type(font-size, 320px, 900px, 30px, 72px);
 }
 
 .fontsize-beta {
-    font-size: 5.5vw !important;
-    line-height: 138%;
-
-  // @media only screen and (min-width: 400px) {
-  //   font-size: 36px !important;
-  //   line-height: 40px;
-  // }
-  
-  @media only screen and (min-width: 450px) {
-    font-size: 24px !important;
-    // line-height: 48px;
-  }
-
-  @media only screen and (min-width: 720px) {
-    font-size: 30px !important;
-    // line-height: 48px;
-  }
+  @include fluid-type(font-size, 320px, 720px, 18px, 30px);
 }
 
 
@@ -224,23 +161,19 @@ h1, h2, h3, h4, h5, h6	{
 
 .logo-main {
   position: relative;
-  width: 75%;
- 
-  
-  img,
-  svg {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 14px 6px 14px 9px;
-
-    @media only screen and (min-width: 750px) {
-      margin-left: 2%;
-    }
-  }
+  width: 67%;
   
   a {
     display: block;
-    color: currentColor;
+  }
+}
+
+.toctoc-logo {
+  display: inline-block;
+  margin: 14px 6px 14px 9px;
+
+  @media only screen and (min-width: 750px) {
+    margin-left: 2%;
   }
 }
 
@@ -286,8 +219,9 @@ h1, h2, h3, h4, h5, h6	{
   // font-family: $font-regular;
   list-style: none;
   margin: 0 !important;
-  transform: none;
+  -ms-transform: none;
   -webkit-transform: none;
+  transform: none;
 }
 
 .langswitcher li {
@@ -333,7 +267,6 @@ h1, h2, h3, h4, h5, h6	{
   border: none;
   text-decoration: none;
   cursor: default;
-  font-family: Linotte-Semibold; 
   border-bottom: 1px solid #fff !important;
 }
 
@@ -346,7 +279,7 @@ h1, h2, h3, h4, h5, h6	{
 
 .nav-bar {
   position: relative;
-  height: 51px;
+  height: 54px;
 
   @media only screen and (min-width: 1200px) {
     overflow: visible;
@@ -356,12 +289,14 @@ h1, h2, h3, h4, h5, h6	{
 .main-nav__wrapper {
   position: relative;
   z-index: 2;
-  width: 100%;
+  width: 100vw;
+  max-width: 1200px;
   overflow: hidden;
   background: $color-redwine;
 
   @media only screen and (min-width: 800px) {
     overflow: visible;
+    width: 100%;
   }
 
   @media only screen and (min-width: 1200px) {
@@ -391,7 +326,7 @@ h1, h2, h3, h4, h5, h6	{
   -webkit-transform: translate3d(0,0,0);
   
   @media only screen and (min-width: 800px) {
-    margin: 0 0 -24px;
+    // margin: 0 0 -24px;
     display: table;
     overflow: auto;
     padding: 6px;
@@ -400,22 +335,23 @@ h1, h2, h3, h4, h5, h6	{
 }
 
 
-.main-nav__item {
+.nav__item {
   position: relative;
   display: table-cell;
-  vertical-align: middle;
   width: 1%;
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: middle;
   text-align: center;
   margin: 0;
   padding: 0 3px;
 
-  &:first-of-type{
+  &:first-of-type:not(.nav__item--sub) {
     width: 0.5%;
-    min-width: 48px;
-    padding-left: 0;
+    padding: 0 3px 0 0;
   }
 
-  &:last-of-type{
+  &:last-of-type:not(.nav__item--sub) {
     padding-right: 48px;
     
     @media only screen and (min-width: 800px) {
@@ -425,42 +361,41 @@ h1, h2, h3, h4, h5, h6	{
 }
 
 
-.main-nav__item--home a {
-  display: block;
-  line-height: 36px;
-  font-size: 24px;
-  color: #fff;
-  text-align: center;
-  padding: 0 12px;
-  min-width: 48px;
-  
-  &.fa:before {
-    padding-right: 0;
-  }
-}
-
-.main-nav__link {
+.nav__link {
   display: block;
   padding: 6px;
   white-space: nowrap;
-  color: #fff;
-  font-size: 18px;
+  color: $color-white;
+  border-radius: 3px;
 
-  .active &,
-  .focus &,
-  &:hover {
-    background: #fff;
-    border-radius: 3px;
-  }
-
-  &:hover {
-    color: currentColor;
-  }
-
-  .active &,
-  .focus &,
-  .active &:hover {
+  .active > &,
+  .focus > & {
     color: $color-logo1 !important;
+    background-color: $color-white;
+  }
+
+  @media only screen and (min-width: 800px) {
+    &:hover,
+    .active > &:hover  {
+      color: $color-logo1 !important;
+      background-color: $color-white;
+    }
+  }
+}
+
+.nav__link--home {
+  line-height: 39px;
+  font-size: 24px;
+  padding: 0;
+  width: auto;
+  min-width: 48px;
+
+  &[class*="fa-"]:before {
+    padding-right: 0;
+  }
+
+  @media only screen and (min-width: 800px) {
+    padding: 0 12px;
   }
 }
 
@@ -474,45 +409,44 @@ h1, h2, h3, h4, h5, h6	{
   display: none;
   position: absolute;
   left: -3px;
-  padding: 6px 6px 0;
-  width: 200px;
+  width: 100%;
+  width: calc(100% + 6px);
+  min-width: 150px;
+  max-width: 270px;
   overflow: hidden;
-  background: $color-redwine;
+  background: $color-rouge1;
+  padding: 6px 6px 0;
+  margin: 0;
   
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
 }
 
-.sub-nav__item {
+.nav__item--sub {
   display: block;
-  position: relative;
+  width: 100%;
+  padding: 0;
   margin-bottom: 6px;
 }
 
-.sub-nav__link {
+.nav__link--sub {
   display: block;
   width: 100%;
-  padding: 6px;
-  border-radius: 3px;
-  color: $color-white;
-  
-  &:hover {
-    background: $color-white;
-    color: $color-logo1;
-  }
 }
 
 
-.main-nav__item:hover {
+.nav__item:hover {
 
-  > a {
-    background: white;
-    border-radius: 3px;
+  > .nav__link {
     color: $color-logo1;
+    background-color: $color-white;
   }
 
   .sub-nav {
-    display: block;
+
+    @media only screen and (min-width: 800px) {
+      display: block;
+    }
   }
 }
 
@@ -521,18 +455,24 @@ h1, h2, h3, h4, h5, h6	{
     Page welcome
 \*---------------------------------------------------------------------------*/
 
+
+/*------------------------------------*\
+  BLOCK: Hero (similar to .stage)
+\*------------------------------------*/
+
 .hero {
-	position: relative;
+  position: relative;
   z-index: 1;
   margin: -24px 0 0;
 }
+  
   
 .hero__text {
   position: absolute;
   bottom: 0;
   display: table-cell;
   vertical-align: bottom;
-  max-width: 1200px;
+  width: 100%;
   padding: 0 !important;
   margin: 0 auto;
   transition: all 0.3s ease-out;
@@ -543,14 +483,10 @@ h1, h2, h3, h4, h5, h6	{
   position: relative;
   z-index: 10;
   left: 0;
-  font-size: 18px;
 }
 
 .hero__title {
-	// font-family: $font-regular;
-	font-weight: 400;
-	// line-height: 120%;
-	text-shadow: 1px 0 6px #000;
+  text-shadow: 1px 0 16px #000;
   padding-left: 24px;
   
   @media only screen and (min-width: 480px) {
@@ -558,35 +494,28 @@ h1, h2, h3, h4, h5, h6	{
   }
 
   @media only screen and (min-width: 1200px) {
-    padding-left: calc(((100vw - 100%) / 2) + 30px);
+    padding-left: calc(((100% - 1200px) / 2) + 30px);
   }
 }
 
 .hero__subtitle {
-  // line-height: 130%;
-	padding: 12px 24px 12px;
-	margin-bottom: 0;
-	color: $color-skyblue5;
-  
-  @media only screen and (min-width: 420px) {
-    // font-size: 4.3vw;
-  }
+  padding: 12px 24px 12px;
+  margin-bottom: 0;
+  background: rgba(61, 49, 50, 0.85);
+  color: $color-white;
 
   @media only screen and (min-width: 480px) {
-  	padding-left: 30px;
-  }
-  
-  @media only screen and (min-width: 700px) {
-    // font-size: 30px;
+    padding-left: 30px;
   }
 
   @media only screen and (min-width: 720px) {
-  	max-width: calc(((100vw - 100%) / 2) + 720px);
-  	border-top-right-radius: 30px;
+    width: 720px;
+    border-top-right-radius: 30px;
   }
 
   @media only screen and (min-width: 1200px) {
-  	padding-left: calc(((100vw - 100%) / 2) + 30px);
+    width: calc(((100% - 1200px) / 2) + 720px);
+    padding-left: calc(((100% - 1200px) / 2) + 30px);
   }
 }
 
@@ -602,14 +531,15 @@ h1, h2, h3, h4, h5, h6	{
   height: 70vh;
   transition: all 0.3s ease-out;
   max-height: 300px;
+  background: $color-seagreen5;
   
   @media only screen and (min-width: 600px) { max-height: 400px; }
   @media only screen and (min-width: 900px) { max-height: 500px; }
   @media only screen and (min-width: 1200px) { max-height: 600px; }
 
-	/*
-	 *	1. For this to work in IE, we need to set the img as bgimg with msie.js
-	 */
+  /*
+   *  1. For this to work in IE, we need to set the img as bgimg with msie.js
+   */
   video, img {
     position: absolute;
     display: inline-block;
@@ -625,7 +555,6 @@ h1, h2, h3, h4, h5, h6	{
     @media only screen and (min-width: 900px) { max-height: 500px; }
     @media only screen and (min-width: 1200px) { max-height: 600px; }
   }
-
 }
 
 
@@ -637,23 +566,22 @@ h1, h2, h3, h4, h5, h6	{
   z-index: 1; // necessary for containing icon to appear
   padding-bottom: 36px;
   background: linear-gradient(to bottom, $color-seagreen5, $color-seagreen6);
-  border-bottom: 12px solid #fff;
-
-  p {
-  	font-size: 18px;
-		line-height: 160%;
-    
-    @media only screen and (min-width: 900px) { 
-      font-size: 21px;
-    }
+  border-bottom: 12px solid $color-white;
+  
+  /*
+   *  Bonne Mère icon 
+   */
+  &:after { 
+    background-size: 460px;
+    background-position: left 3vw bottom -40px;
   }
 
   p:last-of-type {
-  	margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   h2 {
-  	margin-top: 6px;
+    margin-top: 6px;
   }
 }
 
@@ -680,10 +608,28 @@ h1, h2, h3, h4, h5, h6	{
       top: -12px;
       right: -12px;
       bottom: -12px;
-      border: 12px solid #FFF;
+      border: 12px solid $color-white;
       border-radius: 6px;
-      box-shadow: 1px 0 12px rgba(0,0,0,0.33);
+      box-shadow: 1px 0 12px rgba(0,0,0,0.25);
+      background: $color-seagreen5;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 110%;
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      right: -5%;
+      bottom: -5%;
+      border: 12px solid $color-seagreen6;
+      border-radius: 6px;
+      transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
       background: $color-seagreen4;
+      z-index: -1;
+      box-shadow: 1px 0 12px rgba(0,0,0,0.25);
     }
   }
 }
@@ -701,6 +647,7 @@ h1, h2, h3, h4, h5, h6	{
   width: 100%;
   height: 100%;
 }
+
 
 
 /*
