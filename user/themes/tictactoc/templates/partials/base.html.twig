@@ -68,6 +68,7 @@
             {% do assets.addJs('theme://js/lazysizes.min.js') %} 
             {% do assets.addJs('theme://js/fittext_uli.js') %} 
             {% do assets.addJs('theme://js/scripts.js') %} 
+            {% do assets.addInlineJs(script), 'group':'inlinejs'}) %}
 
             {% if browser.getBrowser == 'msie' or browser.getBrowser == 'edge' %}
                 {% do assets.addJs('theme://js/msie.js') %}
