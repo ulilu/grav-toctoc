@@ -60,8 +60,8 @@
 
 
         {% block javascripts %}
-            {% do assets.add('jquery', {'priority': 101, 'group':'criticaljs'}) %}
-            {% do assets.addJs('theme://js/fontfaceobserver.js', {'priority': 100, 'group':'criticaljs'}) %}
+            {% do assets.add('jquery', {'priority': 101}) %}
+            {% do assets.addJs('theme://js/fontfaceobserver.js', {'priority': 100}) %}
 
             {% do assets.addJs('theme://js/headroom.min.js') %}
             {% do assets.addJs('theme://js/jQuery.headroom.min.js') %}
@@ -77,10 +77,6 @@
                 {% do assets.addJs('theme://js/html5shiv.min.js') %}
             {% endif %}
             
-        {% endblock %}
-        
-        {% block topassets %}
-            {{ assets.js('criticaljs') }}
         {% endblock %}
 
 
