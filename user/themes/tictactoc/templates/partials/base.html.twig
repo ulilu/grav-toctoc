@@ -117,6 +117,7 @@
 
 
         {% block bottomassetsinline %}
+            {% do assets.addInlineJs(script) %}
         {% endblock %}
 
     </body>
