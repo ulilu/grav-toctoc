@@ -38,7 +38,7 @@
     });
   });
 {% endset %}
-{% do assets.addInlineJs(script) %}
+{% do assets.addInlineJs(script), 'group':'inlinejs'}) %}
 
 <section class="block  block--stretch  block--{{ page.header.blockname }}">
     

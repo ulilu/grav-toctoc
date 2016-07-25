@@ -115,6 +115,11 @@
             {{ assets.js() }}
         {% endblock %}
 
+
+        {% block bottomassetsinline %}
+            {{ assets.js('inlinejs') }}
+        {% endblock %}
+
     </body>
 
     {% endspaceless %}
