@@ -11,7 +11,7 @@
 {% set settings = config.get('plugins.lightslider')|merge(settings) %}
 {% set unique_id = 'ls-' ~ random_string(10) %}
 
-{% set script %}
+{% do assets.addInlineJs("
     console.log("wtf");
 
   $(document).ready(function() {
@@ -39,11 +39,7 @@
         enableDrag: {{ settings.enableDrag|default('true') }}
     });
   });
-{% endset %}
-
-{% block javascript %}
-    {% do assets.addInlineJs(script) %}
-{% endblock %}
+", 100) %}
 
 <section class="huhu block  block--stretch  block--{{ page.header.blockname }}">
     
