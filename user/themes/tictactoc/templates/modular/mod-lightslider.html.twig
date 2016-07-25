@@ -19,7 +19,7 @@
         slideMove: {{ settings.slideMove|default(3) }},
         slideMargin: {{ settings.slideMargin|default(5) }},
         mode: '{{ settings.mode|default('slide') }}',
-        cssEasing: '{{ settings.cssEasing|default('ease') }}',
+        cssEasing: '{{ settings.cssEasing|default('linear') }}',
         easing: '{{ settings.easing|default('') }}',
         speed: {{ settings.speed|default(1000) }},
         auto: {{ settings.auto|default('false') }},
@@ -41,7 +41,7 @@
 {% endset %}
 
 {% block bottomassetsinline %}
-    {% do assets.addInlineJs(script) %}
+    {% do assets.addInlineJs(script, {'group':'bottomjsinline'}) %}
 {% endblock %}
 
 <section class="block  block--stretch  block--{{ page.header.blockname }}">
