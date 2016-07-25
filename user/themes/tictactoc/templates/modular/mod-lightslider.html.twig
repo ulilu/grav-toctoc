@@ -13,6 +13,7 @@
 
 {% set script %}
   $(document).ready(function() {
+  console.log("is on");
     $("#{{ unique_id }}").lightSlider({
         item: {{ settings.item|default(1) }},
         slideMove: {{ settings.slideMove|default(3) }},
