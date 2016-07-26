@@ -11,35 +11,6 @@
 {% set settings = config.get('plugins.lightslider')|merge(settings) %}
 {% set unique_id = 'ls-' ~ random_string(10) %}
 
-{% set script %}
-    console.log("wtf2");
-
-  $(document).ready(function() {
-    $("#{{ unique_id }}").lightSlider({
-        item: {{ settings.item|default(1) }},
-        slideMove: {{ settings.slideMove|default(3) }},
-        slideMargin: {{ settings.slideMargin|default(5) }},
-        mode: '{{ settings.mode|default('slide') }}',
-        cssEasing: '{{ settings.cssEasing|default('linear') }}',
-        easing: '{{ settings.easing|default('') }}',
-        speed: {{ settings.speed|default(1000) }},
-        auto: {{ settings.auto|default('false') }},
-        loop: {{ settings.loop|default('false') }},
-        pause: {{ settings.pause|default(2000) }},
-        controls: {{ settings.controls|default('true') }},
-        keyPress: {{ settings.keyPress|default('true') }},
-        adaptiveHeight: {{ settings.adaptiveHeight|default('true') }},
-        vertical: {{ settings.vertical|default('false') }},
-        verticalHeight: {{ settings.verticalHeight|default(500) }},
-        pager: {{ settings.pager|default('true') }},
-        gallery: {{ settings.gallery|default('false') }},
-        galleryMargin: {{ settings.gallery_margin|default(5) }},
-        thumbMargin: {{ settings.gallery_thumb_margin|default(5) }},
-        enableTouch: {{ settings.enableTouch|default('true') }},
-        enableDrag: {{ settings.enableDrag|default('true') }}
-    });
-  });
-{% endset %}
 
 {% block javascript %}
 $(document).ready(function() {
@@ -69,7 +40,7 @@ $(document).ready(function() {
   });
 {% endblock %}
 
-<section class="wha block  block--stretch  block--{{ page.header.blockname }}">
+<section class="das block  block--stretch  block--{{ page.header.blockname }}">
     
     <div class="block block--headline">
         <h1>{{ page.title }}</h1>
