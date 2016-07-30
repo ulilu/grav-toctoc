@@ -80,6 +80,7 @@
     position: relative;
     left: -24px;
     top: -12px;
+    width: -webkit-calc(100% + 48px);
     width: calc(100% + 48px);
     height: 100%;
     color: $color-white !important;

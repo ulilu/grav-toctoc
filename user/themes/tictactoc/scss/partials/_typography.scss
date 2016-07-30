@@ -251,8 +251,6 @@ small {
 .fontsize-alpha {
   @include fluid-type(font-size, 320px, 900px, 30px, 72px);
   // font-size: 9vw !important;
-  // font-size: calc(4vw - ( ( 1vw * 1vw ) / 10));  // unfortunately this doesnt work
-  // font-size: 9vw;
   // line-height: 120%;
   
   // @media only screen and (min-width: 450px) {

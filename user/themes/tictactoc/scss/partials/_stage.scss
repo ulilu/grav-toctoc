@@ -24,6 +24,7 @@
     z-index: 2;
     left: 50%;
     bottom: 30px;
+    width: 85%; // Fallback
     width: -webkit-calc(100% - 60px);
     width: calc(100% - 60px);
     max-width: 1200px;

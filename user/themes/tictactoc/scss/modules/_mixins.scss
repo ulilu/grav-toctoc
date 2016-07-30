@@ -54,6 +54,7 @@ h1 {
 
     @media screen and (min-width: $min1-vw) {
       @each $property in $properties {
+        #{$property}: -webkit-calc(#{$min1-value} + #{strip-unit($max1-value - $min1-value)} * (100vw - #{$min1-vw}) / #{strip-unit($max1-vw - $min1-vw)});
         #{$property}: calc(#{$min1-value} + #{strip-unit($max1-value - $min1-value)} * (100vw - #{$min1-vw}) / #{strip-unit($max1-vw - $min1-vw)});
       }
     }
@@ -68,6 +69,7 @@ h1 {
 
       @media screen and (min-width: $min2-vw) {
         @each $property in $properties {
+          #{$property}: -webkit-calc(#{$min2-value} + #{strip-unit($max2-value - $min2-value)} * (100vw - #{$min2-vw}) / #{strip-unit($max2-vw - $min2-vw)});
           #{$property}: calc(#{$min2-value} + #{strip-unit($max2-value - $min2-value)} * (100vw - #{$min2-vw}) / #{strip-unit($max2-vw - $min2-vw)});
         }
       }

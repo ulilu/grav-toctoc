@@ -30,6 +30,7 @@
 
     @media only screen and (min-width: 800px) {
       display: table;
+      height: -webkit-calc(100vh - 188px);
       height: calc(100vh - 188px);
     }
 
@@ -98,6 +99,7 @@
     }
 
     @media only screen and (min-width: 720px) {
+      width: -webkit-calc(50% + 30px);
       width: calc(50% + 30px);
       padding: 0;
       
@@ -188,6 +190,7 @@
       
       &:after {
         width: 50vw;
+        width: -webkit-calc(100% + 70px);
         width: calc(100% + 70px);
         // left: calc(((50vw - 600px) + 30px) * -1);
       }
@@ -197,6 +200,7 @@
   .cell--service:first-of-type .headline--service {
 
     @media only screen and (min-width:1150px) {
+      padding-left: -webkit-calc((100% - 600px) + 60px);
       padding-left: calc((100% - 600px) + 60px);
     }
   }
@@ -239,6 +243,7 @@
 
     .card.item__summary  {
       max-width: 500px;
+      left: -webkit-calc((100% - 600px) + 30px );
       left: calc((100% - 600px) + 30px );
     }
 

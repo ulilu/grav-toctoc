@@ -47,12 +47,16 @@
       z-index: 2;
       width: 1px;
       height: 100%;
+      left: 49%;
+      left: -webkit-calc(50% - 6px);
       left: calc(50% - 6px);
       top: 0;
       @include dotted-border('right', 10, '8EBDD4', 0);
     }
 
     &:first-of-type:before {
+      height: 103%;
+      height: -webkit-calc(100% + 24px);
       height: calc(100% + 24px);
       top: -24px;
     }
@@ -280,6 +284,8 @@
       position: absolute;
       right: 100%;
       // top: 15px;
+      top: 45%;
+      top: -webkit-calc(50% - 15px);
       top: calc(50% - 15px);
       width: 0;
       height: 0;
@@ -360,6 +366,8 @@
    *  1. Only needed on how it works page
    */
   @media only screen and (min-width: 1000px) {
+    width: 42%;
+    width: -webkit-calc(50% - 80px);
     width: calc(50% - 80px);
     margin-left: 0;
     // margin-top: -30px;  // 1.
@@ -411,6 +419,8 @@
       position: absolute;
       display: table-cell;
       top: 40%;
+      left: 119%;
+      left: -webkit-calc(100% + 192px);
       left: calc(100% + 192px);
       right: auto;
       z-index: 2;
