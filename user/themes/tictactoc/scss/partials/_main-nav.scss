@@ -289,8 +289,8 @@
   left: 0;
   
   @media only screen and (min-width: 1200px) {
-    left: -webkit-calc((100vw - 1200px) / 2 );
-    left: calc((100vw - 1200px) / 2 );
+    left: -webkit-calc(((100vw - 16px) - 1200px) / 2 );
+    left: calc(((100vw - 16px) - 1200px) / 2 );
     // margin-bottom: -45px;  // to prevent the collapse of the empty space, formerly occupied by the nav-bar with position: relative;
   }
   
