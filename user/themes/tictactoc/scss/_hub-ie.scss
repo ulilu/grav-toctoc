@@ -83,3 +83,31 @@ img,
 .page-service .stage__title {
 	padding: 0 30px 15px 0 !important;
 }
+
+
+
+@-ms-keyframes slideDown {
+  0% {
+      -ms-transform: translateY(-100%);
+  }
+  100% {
+      -ms-transform: translateY(.1%);
+  }
+}
+
+@-ms-keyframes slideUp {
+  0% {
+      -ms-transform: translateY(.1%);
+  }
+  100% {
+      -ms-transform: translateY(-100%);
+  }
+}
+
+.animated.slideDown {
+  -ms-animation-name: slideDown;
+}
+
+.animated.slideUp {
+  -ms-animation-name: slideUp;
+}
