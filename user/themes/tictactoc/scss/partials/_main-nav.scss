@@ -271,6 +271,7 @@
 
 
 .headroom {
+    position: relative;
     z-index: 1000;
     transition: transform .25s ease-in-out;
     will-change: transform
