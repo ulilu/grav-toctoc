@@ -273,21 +273,17 @@
 .headroom {
     z-index: 1000;
     transition: transform .25s ease-in-out;
-    will-change: transform;
+    will-change: transform
 }
 
 .headroom--top {
   position: relative;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 
 .headroom--not-top {
   position: fixed !important;
   width: 100%;
   top: 0;
-  
   // margin-bottom: -45px;  // to prevent the collapse of the empty space, formerly occupied by the nav-bar with position: relative;
   
   .main-nav__wrapper {
@@ -318,42 +314,42 @@
 }
 @-ms-keyframes slideDown {
   0% {
-      -ms-transform: translateY(-100%)
+      -ms-transform: translate(0, -100%)
   }
   100% {
-      -ms-transform: translateY(0)
+      -ms-transform: translate(0, 0)
   }
 }
 @-webkit-keyframes slideDown {
   0% {
-      -webkit-transform: translateY(-100%)
+      -webkit-transform: translate(0, -100%)
   }
   100% {
-      -webkit-transform: translateY(0)
+      -webkit-transform: translate(0, 0)
   }
 }
 @-moz-keyframes slideDown {
   0% {
-      -moz-transform: translateY(-100%)
+      -moz-transform: translate(0, -100%)
   }
   100% {
-      -moz-transform: translateY(0)
+      -moz-transform: translate(0, 0)
   }
 }
 @-o-keyframes slideDown {
   0% {
-      -o-transform: translateY(-100%)
+      -o-transform: translate(0, -100%)
   }
   100% {
-      -o-transform: translateY(0)
+      -o-transform: translate(0, 0)
   }
 }
 @keyframes slideDown {
   0% {
-      transform: translateY(-100%)
+      transform: translate(0, -100%)
   }
   100% {
-      transform: translateY(0)
+      transform: translate(0, 0)
   }
 }
 .animated.slideDown {
@@ -365,42 +361,42 @@
 }
 @-ms-keyframes slideUp {
   0% {
-      -ms-transform: translateY(0)
+      -ms-transform: translate(0, 0)
   }
   100% {
-      -ms-transform: translateY(-100%)
+      -ms-transform: translate(0, -100%)
   }
 }
 @-webkit-keyframes slideUp {
   0% {
-      -webkit-transform: translateY(0)
+      -webkit-transform: translate(0, 0)
   }
   100% {
-      -webkit-transform: translateY(-100%)
+      -webkit-transform: translate(0, -100%)
   }
 }
 @-moz-keyframes slideUp {
   0% {
-      -moz-transform: translateY(0)
+      -moz-transform: translate(0, 0)
   }
   100% {
-      -moz-transform: translateY(-100%)
+      -moz-transform: translate(0, -100%)
   }
 }
 @-o-keyframes slideUp {
   0% {
-      -o-transform: translateY(0)
+      -o-transform: translate(0, 0)
   }
   100% {
-      -o-transform: translateY(-100%)
+      -o-transform: translate(0, -100%)
   }
 }
 @keyframes slideUp {
   0% {
-      transform: translateY(0)
+      transform: translate(0, 0)
   }
   100% {
-      transform: translateY(-100%)
+      transform: translate(0, -100%)
   }
 }
 .animated.slideUp {
