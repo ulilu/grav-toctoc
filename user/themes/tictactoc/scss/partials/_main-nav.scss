@@ -272,7 +272,7 @@
 .headroom {
     z-index: 1000;
     transition: transform .25s ease-in-out;
-    // will-change: transform;
+    will-change: transform;
 }
 
 .headroom--top {
@@ -284,7 +284,6 @@
   // width: 100%;
   top: 0;
   left: auto;
-  // margin-bottom: -45px;  // to prevent the collapse of the empty space, formerly occupied by the nav-bar with position: relative;
   
   .main-nav__wrapper {
     border-top-left-radius: 0;
@@ -315,7 +314,7 @@
       -webkit-transform: translateY(-100%)
   }
   100% {
-      -webkit-transform: translateY(0)
+      -webkit-transform: translateY(0.1%)
   }
 }
 @-moz-keyframes slideDown {
@@ -323,7 +322,7 @@
       -moz-transform: translateY(-100%)
   }
   100% {
-      -moz-transform: translateY(0)
+      -moz-transform: translateY(0.1%)
   }
 }
 @-o-keyframes slideDown {
@@ -331,7 +330,7 @@
       -o-transform: translateY(-100%)
   }
   100% {
-      -o-transform: translateY(0)
+      -o-transform: translateY(0.1%)
   }
 }
 @keyframes slideDown {
@@ -339,7 +338,7 @@
       transform: translateY(-100%)
   }
   100% {
-      transform: translateY(0)
+      transform: translateY(0.1%)
   }
 }
 .animated.slideDown {
@@ -350,7 +349,7 @@
 }
 @-webkit-keyframes slideUp {
   0% {
-      -webkit-transform: translateY(0)
+      -webkit-transform: translateY(0.1%)
   }
   100% {
       -webkit-transform: translateY(-100%)
@@ -358,7 +357,7 @@
 }
 @-moz-keyframes slideUp {
   0% {
-      -moz-transform: translateY(0)
+      -moz-transform: translateY(0.1%)
   }
   100% {
       -moz-transform: translateY(-100%)
@@ -366,7 +365,7 @@
 }
 @-o-keyframes slideUp {
   0% {
-      -o-transform: translateY(0)
+      -o-transform: translateY(0.1%)
   }
   100% {
       -o-transform: translateY(-100%)
@@ -374,7 +373,7 @@
 }
 @keyframes slideUp {
   0% {
-      transform: translateY(0)
+      transform: translateY(0.1%)
   }
   100% {
       transform: translateY(-100%)
