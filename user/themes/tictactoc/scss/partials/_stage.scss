@@ -19,6 +19,7 @@
 
 .stage {
   position: relative;
+  z-index: 1;
   // height: 70vH;
   // max-height: 300px;
   margin: -24px auto 0;
@@ -29,44 +30,9 @@
    *  Headline inside stage
    *  1. Limiting its width to the block content width below
    */
-  h1 {
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    bottom: 30px;
-    width: 85%; // Fallback
-    width: -webkit-calc(100% - 60px);
-    width: calc(100% - 60px);
-    max-width: 1200px;
-    color: $color-white;
-    margin: 0 auto;
-    text-shadow: 1px 0 6px #000;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    
-    
-    @media only screen and (min-width: 1200px) { 
-      width: 1140px;  /* 1. */
-    }
-  }
-
-  // &:after {
-  //   content: "";
-  //   display: block;
-  //   width: 100%;
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   right: 0;
-  //   bottom: 0;
-    // background: linear-gradient(190deg, rgba(0, 0, 47, 0.6), rgba(54, 36, 36, 0) 30%, rgba(54, 36, 36, 0) 50%, #362424 94%);
-    // background: linear-gradient(190deg, rgba(56,34,34,0) 0%,rgba(56,34,34,0) 50%,rgba(56,34,34,0.75) 90%);
-    
-    // background: linear-gradient(190deg, rgba(33, 92, 158, 0.54), rgba(46, 34, 34, 0) 30%, rgba(46, 34, 34, 0) 67%, rgba(46, 34, 34, 0.9) 90%);
-    // mix-blend-mode: hard-light;
-  // }
 }
+
+
 
 .stage__img {
   img {
@@ -88,6 +54,47 @@
     object-position: bottom;  // SAME PROBLEM
   }
 }
+
+
+
+.stage__title {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 30px;
+    width: 85%; // Fallback
+    width: -webkit-calc(100% - 60px);
+    width: calc(100% - 60px);
+    max-width: 1200px;
+    color: $color-white;
+    margin: 0 auto;
+    text-shadow: 1px 0 6px #000;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
+    
+    @media only screen and (min-width: 1200px) { 
+      width: 1140px;  /* 1. */
+    }
+
+  // &:after {
+  //   content: "";
+  //   display: block;
+  //   width: 100%;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background: linear-gradient(190deg, rgba(0, 0, 47, 0.6), rgba(54, 36, 36, 0) 30%, rgba(54, 36, 36, 0) 50%, #362424 94%);
+  //   background: linear-gradient(190deg, rgba(56,34,34,0) 0%,rgba(56,34,34,0) 50%,rgba(56,34,34,0.75) 90%);
+    
+  //   background: linear-gradient(190deg, rgba(33, 92, 158, 0.54), rgba(46, 34, 34, 0) 30%, rgba(46, 34, 34, 0) 67%, rgba(46, 34, 34, 0.9) 90%);
+  //   mix-blend-mode: hard-light;
+  // }
+}
+
 
 
 .stage__badge {

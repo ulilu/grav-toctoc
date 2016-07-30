@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="stage  hero">
 
 	<div class="hero__text">
 		{{ page.content }}
@@ -16,7 +16,7 @@
 		<iframe src="http://www.webcam-hd.fr/public-frames/Marseille.php" width="100%" height="400" frameborder="0"></iframe>
 	#}
 
-	<div class="hero__bg">
+	<div class="stage__img  hero__img">
     {{ page.media[page.header.image].quality(60).derivatives(400, 1600, 300).sizes('100vw').html(page.title, page.title, page.header.imagealign) }}
 	</div>
 
