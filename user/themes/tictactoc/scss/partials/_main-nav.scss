@@ -275,7 +275,7 @@
     position: relative;
     z-index: 1000;
     transition: transform .25s ease-in-out;
-    will-change: transform
+    will-change: transform;
 }
 
 .headroom--top {
@@ -286,6 +286,7 @@
   position: fixed !important;
   width: 100%;
   top: 0;
+  left: 0;
   // margin-bottom: -45px;  // to prevent the collapse of the empty space, formerly occupied by the nav-bar with position: relative;
   
   .main-nav__wrapper {
