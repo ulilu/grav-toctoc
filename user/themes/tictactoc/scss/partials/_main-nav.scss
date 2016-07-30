@@ -5,7 +5,6 @@
 .nav-bar {
   position: relative;
   height: 54px;
-  width: 100%;
 }
 
 .main-nav__wrapper {
@@ -112,9 +111,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;  /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */
-  -ms-transform: translate3d(0,0,0);
   -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   
   @include fontweight(regular);
   
@@ -202,7 +199,6 @@
   position: absolute;
   left: -3px;
   width: 100%;
-  width: -webkit-calc(100% + 6px);
   width: calc(100% + 6px);
   min-width: 150px;
   max-width: 270px;
@@ -274,13 +270,13 @@
 
 
 .headroom {
-    position: relative;
     z-index: 1000;
     transition: transform .25s ease-in-out;
-    will-change: transform;
+    will-change: transform
 }
 
 .headroom--top {
+  position: relative;
 }
 
 .headroom--not-top {
@@ -305,23 +301,13 @@
 .animated {
   -webkit-animation-duration: .5s;
   -moz-animation-duration: .5s;
-  -ms-animation-duration: .5s;
   -o-animation-duration: .5s;
   animation-duration: .5s;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
   will-change: transform, opacity;
-}
-@-ms-keyframes slideDown {
-  0% {
-      -ms-transform: translateY(-100%)
-  }
-  100% {
-      -ms-transform: translateY(0)
-  }
 }
 @-webkit-keyframes slideDown {
   0% {
@@ -358,17 +344,8 @@
 .animated.slideDown {
   -webkit-animation-name: slideDown;
   -moz-animation-name: slideDown;
-  -ms-animation-name: slideDown;
   -o-animation-name: slideDown;
   animation-name: slideDown;
-}
-@-ms-keyframes slideUp {
-  0% {
-      -ms-transform: translateY(0)
-  }
-  100% {
-      -ms-transform: translateY(-100%)
-  }
 }
 @-webkit-keyframes slideUp {
   0% {
@@ -405,7 +382,6 @@
 .animated.slideUp {
   -webkit-animation-name: slideUp;
   -moz-animation-name: slideUp;
-  -ms-animation-name: slideUp;
   -o-animation-name: slideUp;
   animation-name: slideUp;
 }
