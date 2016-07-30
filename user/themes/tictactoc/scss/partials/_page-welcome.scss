@@ -197,6 +197,7 @@
 .block--welcome {
   z-index: 1; // necessary for containing icon to appear
   padding-bottom: 36px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $color-seagreen5), color-stop(1, $color-seagreen6));
   background: -webkit-linear-gradient(top, $color-seagreen5, $color-seagreen6);
   background: linear-gradient(to bottom, $color-seagreen5, $color-seagreen6);
   border-bottom: 12px solid $color-white;
