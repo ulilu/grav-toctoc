@@ -46,31 +46,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }  
 
 
-    /*
-     *  Hero BG on welcome page
-     */
-    if ( document.querySelector('.hero__bg') ) {
-
-      console.log("hero__bg = " + document.querySelector('.hero__bg'));
-
-      var container = document.querySelectorAll('.hero__bg');
-        
-      // Assign image source to variable
-      var imageSource = container.querySelector('img').getAttribute("src"); 
-      
-      // Hide image
-      container.querySelector('img').style.opacity = '0';
-      
-      // Add background-size: cover
-      container.style.backgroundSize = 'cover';
-      
-      // Add background-image: and put image source here
-      container.style.backgroundImage = 'url(' + imageSource + ')';
-      
-      // Add background-position: center center
-      container.style.backgroundPosition = 'center center';
-    }
-
 
     /*
      *  Card image on example list page / homepage / service page
