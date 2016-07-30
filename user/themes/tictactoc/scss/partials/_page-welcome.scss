@@ -127,7 +127,7 @@
   // fallback for old browser that dont understand vh unit
   @include fluid-type(height, 
     300px, 600px, 300px, 400px, 
-           601px, 1200px, 400px, 550px);
+           601px, 1200px, 401px, 550px);
 
   // height: 70vh !important;
   // @include fluid-type(max-height, 
@@ -145,9 +145,7 @@
   // max-height: 300px;
   background: $color-seagreen5;
   
-  // @media only screen and (min-width: 600px) { max-height: 400px; }
-  // @media only screen and (min-width: 900px) { max-height: 500px; }
-  // @media only screen and (min-width: 1200px) { max-height: 600px; }
+
 
 	/*
 	 *	1. For this to work in IE, we need to set the img as bgimg with msie.js
@@ -163,9 +161,7 @@
     // transition: all 0.3s ease-out;
     // max-height: 300px;
     
-    // @media only screen and (min-width: 600px) { max-height: 400px; }
-    // @media only screen and (min-width: 900px) { max-height: 500px; }
-    // @media only screen and (min-width: 1200px) { max-height: 600px; }
+
   }
 
   /* 
