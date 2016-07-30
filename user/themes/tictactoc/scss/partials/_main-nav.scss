@@ -281,8 +281,9 @@
 
 .headroom--not-top {
   position: fixed !important;
-  width: 100%;
-  // top: 0;
+  // width: 100%;
+  top: 0;
+  left: auto;
   // margin-bottom: -45px;  // to prevent the collapse of the empty space, formerly occupied by the nav-bar with position: relative;
   
   .main-nav__wrapper {
