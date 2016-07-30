@@ -336,10 +336,10 @@
 }
 @keyframes slideDown {
   0% {
-      transform: translateY(-100%);
+      transform: translateY(-100%) translateX(0);
   }
   100% {
-      transform: translateY(.1%);
+      transform: translateY(.1%) translateX(0);
   }
 }
 
@@ -377,10 +377,10 @@
 }
 @keyframes slideUp {
   0% {
-      transform: translateY(.1%);
+      transform: translateY(.1%) translateX(0);
   }
   100% {
-      transform: translateY(-100%);
+      transform: translateY(-100%) translateX(0);
   }
 }
 
