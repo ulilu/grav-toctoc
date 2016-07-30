@@ -69,11 +69,14 @@
   }
 
 
+  /*
+   *  Even though this later gets overridden, we need to set it to 50%
+   *  in order to make mobile safari < 7 correctly strech the table-cell.
+   */
   a {
     display: table-cell;
     position: relative;
-    border: 1px solid #ccc;
-    width: 50%;
+    width: 50%;  // 1.
     height: 100%;
     
     @media only screen and (min-width: 750px) {
