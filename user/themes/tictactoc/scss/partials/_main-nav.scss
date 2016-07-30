@@ -309,44 +309,7 @@
   animation-fill-mode: both;
   will-change: transform, opacity;
 }
-@-webkit-keyframes slideDown {
-  0% {
-      -webkit-transform: translateY(-100%)
-  }
-  100% {
-      -webkit-transform: translateY(0.1%)
-  }
-}
-@-moz-keyframes slideDown {
-  0% {
-      -moz-transform: translateY(-100%)
-  }
-  100% {
-      -moz-transform: translateY(0.1%)
-  }
-}
-@-o-keyframes slideDown {
-  0% {
-      -o-transform: translateY(-100%)
-  }
-  100% {
-      -o-transform: translateY(0.1%)
-  }
-}
-@keyframes slideDown {
-  0% {
-      transform: translateY(-100%)
-  }
-  100% {
-      transform: translateY(0.1%)
-  }
-}
-.animated.slideDown {
-  -webkit-animation-name: slideDown;
-  -moz-animation-name: slideDown;
-  -o-animation-name: slideDown;
-  animation-name: slideDown;
-}
+
 @-webkit-keyframes slideUp {
   0% {
       -webkit-transform: translateY(0.1%)
