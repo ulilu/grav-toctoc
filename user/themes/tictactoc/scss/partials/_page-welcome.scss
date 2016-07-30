@@ -123,9 +123,14 @@
 .hero__bg,
 .hero__bg img {
   width: 100%;
-  height: 70vh;
   transition: all 0.3s ease-out;
+  
+  // fallback for old browser that dont understand vh unit
+  @include fluid-type(height, 
+    300px, 600px, 300px, 400px, 
+           601px, 1200px, 400px, 600px);
 
+  height: 70vh;
   @include fluid-type(max-height, 
     300px, 600px, 300px, 400px, 
            601px, 1200px, 400px, 600px);
