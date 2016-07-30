@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log("stage__img = " + document.querySelector('.stage__img'));
         
       // Assign image source to variable
-      var imageSource = stage.querySelector('img').getAttribute("src"); 
+      var imageSource = stage.querySelector('img').src; 
 
       // Assign image source to variable
       var imageAlign = stage.querySelector('img').className;
