@@ -124,7 +124,7 @@ $(document).ready(function() {
   // https://github.com/WickyNilliams/headroom.js
   // http://wicky.nillia.ms/headroom.js/
 $("nav").headroom({
-  "offset": 90,
+  "offset": 200,
   "tolerance": 5,
   "classes": {
     "initial": "animated",
