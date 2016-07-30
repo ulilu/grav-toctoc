@@ -5,6 +5,7 @@
 .nav-bar {
   position: relative;
   height: 54px;
+  width: 100%;
 }
 
 .main-nav__wrapper {
@@ -111,7 +112,9 @@
   overflow-x: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;  /* to make the element "flickable" under ios, safari & chrome - see: https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */
+  -ms-transform: translate3d(0,0,0);
   -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
   
   @include fontweight(regular);
   
@@ -278,19 +281,12 @@
 }
 
 .headroom--top {
-  position: relative;
-  -ms-transform: (0,0);
-  -webkit-transform: (0,0);
-  -moz-transform: (0,0);
-  -o-transform: (0,0);
-  transform: (0,0);
 }
 
 .headroom--not-top {
   position: fixed !important;
   width: 100%;
   top: 0;
-  left: 0;
   // margin-bottom: -45px;  // to prevent the collapse of the empty space, formerly occupied by the nav-bar with position: relative;
   
   .main-nav__wrapper {
@@ -321,42 +317,42 @@
 }
 @-ms-keyframes slideDown {
   0% {
-      -ms-transform: translate(0, -100%)
+      -ms-transform: translateY(-100%)
   }
   100% {
-      -ms-transform: translate(0, 0)
+      -ms-transform: translateY(0)
   }
 }
 @-webkit-keyframes slideDown {
   0% {
-      -webkit-transform: translate(0, -100%)
+      -webkit-transform: translateY(-100%)
   }
   100% {
-      -webkit-transform: translate(0, 0)
+      -webkit-transform: translateY(0)
   }
 }
 @-moz-keyframes slideDown {
   0% {
-      -moz-transform: translate(0, -100%)
+      -moz-transform: translateY(-100%)
   }
   100% {
-      -moz-transform: translate(0, 0)
+      -moz-transform: translateY(0)
   }
 }
 @-o-keyframes slideDown {
   0% {
-      -o-transform: translate(0, -100%)
+      -o-transform: translateY(-100%)
   }
   100% {
-      -o-transform: translate(0, 0)
+      -o-transform: translateY(0)
   }
 }
 @keyframes slideDown {
   0% {
-      transform: translate(0, -100%)
+      transform: translateY(-100%)
   }
   100% {
-      transform: translate(0, 0)
+      transform: translateY(0)
   }
 }
 .animated.slideDown {
@@ -368,42 +364,42 @@
 }
 @-ms-keyframes slideUp {
   0% {
-      -ms-transform: translate(0, 0)
+      -ms-transform: translateY(0)
   }
   100% {
-      -ms-transform: translate(0, -100%)
+      -ms-transform: translateY(-100%)
   }
 }
 @-webkit-keyframes slideUp {
   0% {
-      -webkit-transform: translate(0, 0)
+      -webkit-transform: translateY(0)
   }
   100% {
-      -webkit-transform: translate(0, -100%)
+      -webkit-transform: translateY(-100%)
   }
 }
 @-moz-keyframes slideUp {
   0% {
-      -moz-transform: translate(0, 0)
+      -moz-transform: translateY(0)
   }
   100% {
-      -moz-transform: translate(0, -100%)
+      -moz-transform: translateY(-100%)
   }
 }
 @-o-keyframes slideUp {
   0% {
-      -o-transform: translate(0, 0)
+      -o-transform: translateY(0)
   }
   100% {
-      -o-transform: translate(0, -100%)
+      -o-transform: translateY(-100%)
   }
 }
 @keyframes slideUp {
   0% {
-      transform: translate(0, 0)
+      transform: translateY(0)
   }
   100% {
-      transform: translate(0, -100%)
+      transform: translateY(-100%)
   }
 }
 .animated.slideUp {
