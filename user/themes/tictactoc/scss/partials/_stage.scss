@@ -4,11 +4,11 @@
 
 .stage,
 .stage__img img {
-  height: 70vH;
+  // height: 70vH;
   // max-height: 300px;
   transition: all 0.3s ease-in-out;
   
-  @include fluid-type(max-height, 
+  @include fluid-type(height, 
     300px, 600px, 300px, 400px, 
            601px, 1200px, 400px, 600px);
   
