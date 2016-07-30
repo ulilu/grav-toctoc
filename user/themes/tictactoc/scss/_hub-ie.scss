@@ -97,10 +97,10 @@ img,
 
 @-ms-keyframes slideUp {
   0% {
-      -ms-transform: translateY(.1%);
+      -ms-transform: translateX(.1%);
   }
   100% {
-      -ms-transform: translateY(-100%);
+      -ms-transform: translateX(-100%);
   }
 }
 
