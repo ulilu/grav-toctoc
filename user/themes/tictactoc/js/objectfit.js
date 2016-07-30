@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       stage.style.backgroundImage = 'url(' + imageSource + ')';
       
       // Add background-position: center center
-      stage.style.backgroundPosition = 'center center';
+      stage.style.backgroundPosition = 'center '+ imageAlign;
     }  
 
 
