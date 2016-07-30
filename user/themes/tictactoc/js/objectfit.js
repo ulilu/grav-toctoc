@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       console.log("stage__img = " + document.querySelector('.stage__img'));
         
-      // Asign image source to variable
-      var imageSource = stage.querySelector('img').src;
+      // Assign image source to variable
+      var imageSource = stage.querySelector('img').getAttribute("src"); 
 
-      // Asign image source to variable
+      // Assign image source to variable
       var imageAlign = stage.querySelector('img').className;
       if( !imageAlign ){ imageAlign = 'center';}
       
@@ -54,25 +54,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log("hero__bg = " + document.querySelector('.hero__bg'));
 
       var container = document.querySelectorAll('.hero__bg');
+        
+      // Assign image source to variable
+      var imageSource = container.querySelector('img').getAttribute("src"); 
       
-      // Loop through HTMLCollection
-      for(var i = 0; i < container.length; i++) {
-        
-        // Asign image source to variable
-        var imageSource = container[i].querySelector('img').src;
-        
-        // Hide image
-        container[i].querySelector('img').style.opacity = '0';
-        
-        // Add background-size: cover
-        container[i].style.backgroundSize = 'cover';
-        
-        // Add background-image: and put image source here
-        container[i].style.backgroundImage = 'url(' + imageSource + ')';
-        
-        // Add background-position: center center
-        container[i].style.backgroundPosition = 'center center';
-      }
+      // Hide image
+      container.querySelector('img').style.opacity = '0';
+      
+      // Add background-size: cover
+      container.style.backgroundSize = 'cover';
+      
+      // Add background-image: and put image source here
+      container.style.backgroundImage = 'url(' + imageSource + ')';
+      
+      // Add background-position: center center
+      container.style.backgroundPosition = 'center center';
     }
 
 
@@ -89,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // Loop through HTMLCollection
       for(var i = 0; i < container.length; i++) {
         
-        // Asign image source to variable
+        // Assign image source to variable
         var imageSource = container[i].querySelector('img').getAttribute("data-src");
         
         // Hide image
@@ -119,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for(var i = 0; i < container.length; i++) {
         
         if ( container[i].querySelector('img').getAttribute("src") ) {
-        // Asign image source to variable
+        // Assign image source to variable
           imageSource = container[i].querySelector('img').getAttribute("src"); 
         } else {
           imageSource = container[i].querySelector('img').getAttribute("data-src"); 
@@ -177,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // Loop through HTMLCollection
       for(var i = 0; i < container.length; i++) {
         
-        // Asign image source to variable
+        // Assign image source to variable
         var imageSource = container[i].querySelector('img').getAttribute("data-src");
         
         // Hide image
