@@ -206,16 +206,7 @@
   Keyframe animations of sailing boat
 \*------------------------------------*/
 
-@-ms-keyframes slideDown {
-  0%{
-    -ms-transform: translate3d(-65%, 0, 0);
-  }
-  100%{
-    -ms-transform: translate3d(80%, 0, 0);
-  }
-}
-
-@-webkit-keyframes slideDown {
+@-webkit-keyframes iconslide {
   0%{
     -ms-transform: translate3d(-65%, 0, 0);
   }
@@ -238,15 +229,6 @@
 /*------------------------------------*\
   Keyframe animations of rotating sun
 \*------------------------------------*/
-
-@-ms-keyframes iconrotate {
-  0%{
-    -ms-transform: rotate(0);
-  }
-  100%{
-    -ms-transform: rotate(59.9deg);
-  }
-}
 
 @-webkit-keyframes iconrotate {
   0%{
