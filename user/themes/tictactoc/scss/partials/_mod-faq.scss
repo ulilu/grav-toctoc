@@ -33,11 +33,15 @@
   border-top: 2px solid $color-skyblue5;
 
   &.is-open {
+    -ms-animation: bgfade-2 .4s;
+    -webkit-animation: bgfade-2 .4s;
     animation: bgfade-2 .4s;
     background: rgba(255,255,255,1);
   }
 
   &.is-closing {
+    -ms-animation: bgfade-1 .4s;
+    -webkit-animation: bgfade-1 .4s;
     animation: bgfade-1 .4s;
   }
   
@@ -72,11 +76,15 @@
   padding: 0 24px;
 
   &.is-visible {
+    -ms-animation: bgfade-2 .4s;
+    -webkit-animation: bgfade-2 .4s;
     animation: bgfade-2 .4s;
     background: rgba(255,255,255,1);
   }
 
   &.is-closing {
+    -ms-animation: bgfade-1 .4s;
+    -webkit-animation: bgfade-1 .4s;
     animation: bgfade-1 .4s;
   }
 
@@ -104,12 +112,50 @@
 }
 
 
+@-ms-keyframes bgfade-1 {
+  0% {
+    background: rgba(255,255,255,1);
+  }
+  100% {
+    background: rgba(255,255,255,0);
+  }
+}
+
+@-webkit-keyframes bgfade-1 {
+  0% {
+    background: rgba(255,255,255,1);
+  }
+  100% {
+    background: rgba(255,255,255,0);
+  }
+}
+
 @keyframes bgfade-1 {
   0% {
     background: rgba(255,255,255,1);
   }
   100% {
     background: rgba(255,255,255,0);
+  }
+}
+
+
+
+@-ms-keyframes bgfade-2 {
+  0% {
+    background: rgba(255,255,255,0);
+  }
+  100% {
+    background: rgba(255,255,255,1);
+  }
+}
+
+@-webkit-keyframes bgfade-2 {
+  0% {
+    background: rgba(255,255,255,0);
+  }
+  100% {
+    background: rgba(255,255,255,1);
   }
 }
 

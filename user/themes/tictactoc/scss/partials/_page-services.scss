@@ -135,7 +135,11 @@
             
           margin-bottom: 0;
           transition: all .4s ease-out;
+          -ms-transform: scale(1.0);
+          -webkit-transform: scale(1.0);
           transform: scale(1.0);
+          -ms-transform-origin: 50% 100%;
+          -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
         }
       }
@@ -144,7 +148,11 @@
         background-size: 110% !important; // only for IE
         
         img {
+          -ms-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
           transform: scale(1.1);
+          -ms-transform-origin: 50% 100%;
+          -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;  /* pan towards bottom of image */
         }
       }

@@ -33,8 +33,12 @@
       background-size: contain;
       background-repeat: no-repeat;
       pointer-events: none;
+      -ms-transform: translateZ(0);
+      -webkit-transform: translateZ(0);
       transform: translateZ(0);
       backface-visibility: hidden;
+      -ms-animation: iconrotate 15s linear infinite;
+      -webkit-animation: iconrotate 15s linear infinite;
       animation: iconrotate 15s linear infinite;
       z-index: -1;
     }
@@ -50,6 +54,8 @@
     background-repeat: repeat-x;
     background-position: left 500px bottom -44px;
     pointer-events: none;
+    -ms-animation: iconslide 60s ease-in infinite;
+    -webkit-animation: iconslide 60s ease-in infinite;
     animation: iconslide 60s ease-in infinite;
     -webkit-filter: invert(100%);
     filter: invert(100%);
@@ -196,8 +202,26 @@
 
 
 /*------------------------------------*\
-  Keyframe Animations
+  Keyframe animations of sailing boat
 \*------------------------------------*/
+
+@-ms-keyframes slideDown {
+  0%{
+    -ms-transform: translate3d(-65%, 0, 0);
+  }
+  100%{
+    -ms-transform: translate3d(80%, 0, 0);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0%{
+    -ms-transform: translate3d(-65%, 0, 0);
+  }
+  100%{
+    -ms-transform: translate3d(80%, 0, 0);
+  }
+}
 
 @keyframes iconslide {
   0%{
@@ -205,6 +229,30 @@
   }
   100%{
     transform: translate3d(80%, 0, 0);
+  }
+}
+
+
+
+/*------------------------------------*\
+  Keyframe animations of rotating sun
+\*------------------------------------*/
+
+@-ms-keyframes iconrotate {
+  0%{
+    -ms-transform: rotate(0);
+  }
+  100%{
+    -ms-transform: rotate(59.9deg);
+  }
+}
+
+@-webkit-keyframes iconrotate {
+  0%{
+    -webkit-transform: rotate(0);
+  }
+  100%{
+    -webkit-transform: rotate(59.9deg);
   }
 }
 
