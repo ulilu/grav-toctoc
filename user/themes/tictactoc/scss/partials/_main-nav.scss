@@ -273,11 +273,12 @@
 .headroom {
     z-index: 1000;
     transition: transform .25s ease-in-out;
-    will-change: transform
+    will-change: transform;
 }
 
 .headroom--top {
   position: relative;
+  left: 0;
 }
 
 .headroom--not-top {
