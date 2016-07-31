@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var imageSource = container[i].querySelector('img').getAttribute("data-src");
         
         // Hide image
-        container[i].querySelector('img').style.content = imageSource;
+        container[i].querySelector('img').style.fontFamily = imageSource;
         
         container[i].querySelector('img').style.opacity = '0';
 
