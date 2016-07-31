@@ -43,6 +43,15 @@ h1 {
 //  Modified by uli to accomodate an optional second "fluid resize" stage
 //  via an @if clause
 //
+
+//
+//  160731
+//  New info: http://caniuse.com/#search=calc
+//  Safari & iOS Safari (both 6 and 7) does not support viewport units 
+//  (vw, vh, etc) in calc().
+//
+//  Well, Shit.
+//
 // =========================================================================
 
 @mixin fluid-type($properties, $min1-vw, $max1-vw, $min1-value, $max1-value, $min2-vw: null, $max2-vw: null, $min2-value: null, $max2-value: null) {
