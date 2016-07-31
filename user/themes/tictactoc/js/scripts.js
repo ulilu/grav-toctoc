@@ -123,9 +123,10 @@ $(document).ready(function() {
   // Sticky header via headroom.js
   // https://github.com/WickyNilliams/headroom.js
   // http://wicky.nillia.ms/headroom.js/
+
 $("nav").headroom({
   "offset": 90,
-  "tolerance": 5,
+  "tolerance": 50,  // used to be 5, now more permissive
   "classes": {
     "initial": "animated",
     "pinned": "slideDown",
