@@ -9,6 +9,90 @@
 {%  endif %}
 
 {% set settings = config.get('plugins.lightslider')|merge(settings) %}
+<!--  Important: Because we need to set the lightslider inline js block
+just before </body>, we can't use the regular script, which would be here normally:
+
+$(document).ready(function() {
+  $("# { unique_id }}").lightSlider({
+    item: { settings.item|default(1) }},
+    slideMove: { settings.slideMove|default(3) }},
+    slideMargin: { settings.slideMargin|default(5) }},
+    mode: '{ settings.mode|default('slide') }}',
+    cssEasing: '{ settings.cssEasing|default('ease') }}',
+    easing: '{ settings.easing|default('') }}',
+    speed: { settings.speed|default(1000) }},
+    auto: { settings.auto|default('false') }},
+    loop: { settings.loop|default('false') }},
+    pause: { settings.pause|default(2000) }},
+    controls: { settings.controls|default('true') }},
+    keyPress: { settings.keyPress|default('true') }},
+    adaptiveHeight: { settings.adaptiveHeight|default('true') }},
+    vertical: { settings.vertical|default('false') }},
+    verticalHeight: { settings.verticalHeight|default(500) }},
+    pager: { settings.pager|default('true') }},
+    gallery: { settings.gallery|default('false') }},
+    galleryMargin: { settings.gallery_margin|default(5) }},
+    thumbMargin: { settings.gallery_thumb_margin|default(5) }},
+    enableTouch: { settings.enableTouch|default('true') }},
+    enableDrag: { settings.enableDrag|default('true') }}
+  });
+});
+
+sadly, the following solution doesn't work either (suggested by Gingah):
+https://getgrav.org/forum#!/getgrav/plugin-development:relocate-lighslider-plugin
+
+
+set script %}
+...js inline block...
+endset %}
+do assets.addInlineJs(script) %}
+
+
+well, it does at first, but only if the content isn't cached yet. If it is cached, all subsequent (cached) page loads do not contain the lightslider inline js.
+
+after trying my hardest and even modifying the lightslider.php plugin code, i found a much more elegant solution thanks to the github issues linked in franchan's comment: https://getgrav.org/forum#!/getgrav/plugin-development:relocate-lighslider-plugin
+
+specifically rhuksters github-comment:
+
+"Also i've updated the Assets plugin to work with cached pages. It basically does what you mentioned above by storing the assets in Grav's cache for future use when the page is cached, and the inline assets tags have been processed and striped put."
+
+Now i just use Grav's Assets plugin, put the js codeblock directly on the modular page like so:
+
+
+{assets:inline_js}
+$(document).ready(function() {
+  $(".js-lightslider").lightSlider({
+    item: 1,
+    slideMove: 0,
+    slideMargin: 0,
+    mode: 'slide',
+    cssEasing: 'linear',
+    easing: 'linear',
+    loop: true,
+    auto: true,
+    pager: false,
+    controls: false,
+    keyPress: false,
+    pause: 12000,
+    speed: 400,
+    adaptiveHeight: false,
+    vertical: false,
+    verticalHeight: 500,
+    gallery: false,
+    galleryMargin: 15,
+    thumbMargin: 5,
+    enableDrag: false,
+    enableTouch: false
+  });
+});
+{/assets}
+
+
+and it all works :)
+
+I think i could even remove the lightslider settings in the front matter.
+
+ //-->
 
 <section class="block  block--stretch  block--{{ page.header.blockname }}">
     
