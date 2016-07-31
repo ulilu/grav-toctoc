@@ -126,7 +126,7 @@ $(document).ready(function() {
 
 $("nav").headroom({
   "offset": 90,
-  "tolerance": 50,  // used to be 5, now more permissive
+  "tolerance": 25,  // used to be 5, now more permissive
   "classes": {
     "initial": "animated",
     "pinned": "slideDown",
