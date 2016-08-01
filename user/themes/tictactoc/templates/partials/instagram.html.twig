@@ -1,12 +1,13 @@
 {#
 	Very Important:
-	The <pre>-tag, used in this list, is to prevent the cdn-plugin
-	from trying to process Instagrams fotos (which are already on a cdn). One could use <code> as well, as these tags do not get processed by the plugin, as seen here:
+	The <code>-tag, used in this list, is to prevent the cdn-plugin
+	from trying to process Instagrams fotos (which are already on a cdn). One could use <pre> as well, as both tags do not get processed by the plugin, as seen here:
 	https://github.com/getgrav/grav-plugin-cdn/blob/develop/cdn.php (line 61)
+	But pre comes with additional margin and therefore the inline-element <code> is better suited
 	#}
 
 <ul class="instagram-photos">
-{% for post in feed|slice(0, count)  %}
+{% for post in feed|slice(1, count)  %}
     <li><a href="{{ post.link }}" target="_blank"><code><img class="lazyload" data-src="{{ post.image }}" alt=""></code></a>
 {% endfor %}
 </ul>
