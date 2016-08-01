@@ -1,5 +1,5 @@
 <ul class="instagram-photos">
 {% for post in feed|slice(0, count)  %}
-    <li><a href="{{ post.link }}" target="_blank"><img class="lazyload" data-src="{{ post.image }}" alt=""></a>
+    <li><a href="{{ post.link }}" target="_blank"><img class="lazyload" data-src="{{ post.image }}?nocdn" alt=""></a>
 {% endfor %}
 </ul>
