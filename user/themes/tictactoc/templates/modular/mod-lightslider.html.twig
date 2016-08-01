@@ -9,8 +9,10 @@
 {%  endif %}
 
 {% set settings = config.get('plugins.lightslider')|merge(settings) %}
-<!--  Important: Because we need to set the lightslider inline js block
-just before </body>, we can't use the regular script, which would be here normally:
+
+{% comment %}
+Important: Because we need to set the lightslider inline js block
+just before the /body>, we can't use the regular script, which would be here normally:
 
 $(document).ready(function() {
   $("# { unique_id }}").lightSlider({
@@ -95,7 +97,19 @@ I think i could even remove the lightslider settings in the front matter.
 ... upon further inspection:
 Well seeing that the code below references some of these settings (% if settings.slider_type == 'text' %}, i better leave them in...
 
- //-->
+BUT, Alas, the story does not end there.... Unfortunately, upon activating the Assets Plugin, the contact form on the contact page suddenly disappeared. Completely. And i don't know why. But apparently this ain't just my problem:
+https://github.com/getgrav/grav-plugin-assets/issues/3
+
+Also - the "En savoir +" buttons on the welcome page suddenly lost their text, while the same buttons wit the same code on the services-page still worked as normal. WTF?
+
+Sooo, i disabled the Assets plugin. Damn. And now?
+
+
+
+Back to the tweaked lightslider plugin for the moment...
+
+
+{# endcomment #}
 
 <section class="block  block--stretch  block--{{ page.header.blockname }}">
     
