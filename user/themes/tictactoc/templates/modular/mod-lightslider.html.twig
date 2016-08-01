@@ -10,7 +10,8 @@
 
 {% set settings = config.get('plugins.lightslider')|merge(settings) %}
 
-{# comment #}
+{# comment 
+    
 Important: Because we need to set the lightslider inline js block
 just before the /body>, we can't use the regular script, which would be here normally:
 
@@ -109,7 +110,7 @@ Sooo, i disabled the Assets plugin. Damn. And now?
 Back to the tweaked lightslider plugin for the moment...
 
 
-{# endcomment #}
+endcomment #}
 
 <section class="block  block--stretch  block--{{ page.header.blockname }}">
     
