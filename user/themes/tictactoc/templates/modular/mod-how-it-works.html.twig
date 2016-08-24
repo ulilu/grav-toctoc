@@ -22,7 +22,7 @@
 
 				<figcaption class="timeline-row__info">
 					
-					<h2><a class="color-{{ step.color }}" href="{% if langswitcher.current == 'en' %}{{ page.find('/how-it-works').url() }}{% elseif langswitcher.current == 'fr' %}{{ page.find('/comment-ca-marche').url() }}{% endif %}#step{{ loop.index0 }}">{{ loop.index }}. {{ step.title }}</a></h2>
+					<h2><a class="color-{{ step.color }}" href="{% if grav.language.language == 'en' %}{{ page.find('/how-it-works').url() }}{% elseif grav.language.language == 'fr' %}{{ page.find('/comment-ca-marche').url() }}{% endif %}#step{{ loop.index0 }}">{{ loop.index }}. {{ step.title }}</a></h2>
 
 				</figcaption>
 			</figure>

@@ -10,7 +10,7 @@
 		<h3 class="bgcolor-{{ page.header.page_color }}">{{ page.header.subtitle }}</h3>
 		<p>{{ page.header.blurb }}</p>
 
-		<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>{% if langswitcher.current == 'fr' %}En savoir +{% elseif langswitcher.current == 'en' %}Tell me more{% endif %}</strong></span>
+		<span class="btn btn-{{ page.header.page_color|trim('0..9') }} btn-m"><i></i><strong>{% if grav.language.language == 'fr' %}En savoir +{% elseif grav.language.language == 'en' %}Tell me more{% endif %}</strong></span>
 	</span>
 
 

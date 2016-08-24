@@ -1,7 +1,7 @@
 {% for meta in page.metadata %}
 
 
-	{% if meta.name and langswitcher.current == 'fr' %}
+	{% if meta.name and grav.language.language == 'fr' %}
 		{% if meta.name[:3] == 'fr-' %}
 
 			<meta name="{{ meta.name[3:] }}" {% if meta.content %}content="{{ meta.content }}" {% endif %}/>
@@ -13,7 +13,7 @@
 		{% endif %}
 
 
-	{% elseif meta.name and langswitcher.current == 'en' %}
+	{% elseif meta.name and grav.language.language == 'en' %}
 		{% if meta.name[:3] == 'en-' %}
 
 			<meta name="{{ meta.name[3:] }}" {% if meta.content %}content="{{ meta.content }}" {% endif %}/>
