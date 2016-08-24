@@ -4,7 +4,7 @@
 		{{ page.content }}
 
 		<ul class="filter">
-	    <li><a href="#" data-category-name="js-category-all" class="js-selected">{% if langswitcher.current == 'fr' %}Toutes catégories{% elseif langswitcher.current == 'en' %}Show all{% endif %}</a>
+	    <li><a href="#" data-category-name="js-category-all" class="js-selected">A{% if langswitcher.current == 'fr' %}Toutes catégories{% elseif langswitcher.current == 'en' %}Show all{% endif %}</a>
 	    {% for item in page.header.categories %}
 	        <li><a href="#" data-category-name="js-category-{{ item.name }}">{{ item.name|capitalize }}</a>{% endfor %}
 		</ul>
