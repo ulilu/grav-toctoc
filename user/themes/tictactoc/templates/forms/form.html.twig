@@ -1,6 +1,6 @@
 <div class="alert">{{ form.message }}</div>
 
-<form name="contact-form" class="contact-form"
+<form name="{{ form.name }}" class="contact-form"
       action="{{ form.action ? base_url ~ form.action : page.url }}"
       method="{{ form.method|upper|default('POST') }}">
   
