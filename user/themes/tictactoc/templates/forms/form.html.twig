@@ -10,8 +10,6 @@ https://github.com/getgrav/grav-plugin-assets/issues/3
   
   <div class="cell cell-in-row cell-60">
 
-    {{ dump(page.header.form.fields) }}
-
     {% for field in form.fields if (field.type) == 'textarea' %}
     {% set value = form.value(field.name) %}
       <div class="formline--textarea">
