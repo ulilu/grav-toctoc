@@ -8,6 +8,6 @@
 
 <ul class="instagram-photos">
 {% for post in feed|slice(0, count)  %}
-    <li><a href="{{ post.link }}" target="_blank"><code><img class="lazyload" data-src="{{ post.image }}" alt=""></code></a>
+    <li><a href="{{ post.link }}" target="_blank"><code><img class="lazyload" data-src="{{ post.image.nocdn }}" alt=""></code></a>
 {% endfor %}
 </ul>
