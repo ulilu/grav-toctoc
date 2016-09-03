@@ -23,6 +23,6 @@
     "normalize-css": "^4.1.1",
     "main": "https://raw.githubusercontent.com/h5bp/html5-boilerplate/master/dist/css/main.css",
     "fontfaceobserver": "^1.7.1",
-    "headroom.js": "https://npmcdn.com/headroom.js/bower.zip"
+    "headroom.js": "https://unpkg.com/headroom.js/bower.zip"
   }
 }
