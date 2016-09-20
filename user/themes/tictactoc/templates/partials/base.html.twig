@@ -56,6 +56,7 @@
 
         {# Critical path inline styles get set via Custom CSS-Plugin in Grav Adminpanel.
         #}
+        {{ assets.css('criticalcss') }}
 
         {% block javascripts %}
             {% do assets.add('jquery', 101) %}
